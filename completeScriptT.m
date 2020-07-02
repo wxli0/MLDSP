@@ -16,13 +16,14 @@ clc ;
 %read fasta files; give datasetName with complete path
 % dataSet = 'C:\Users\GURJIT\Downloads\BcereusGroup\BcereusGroup'; 
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Primates';
-dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Sample4';
+% dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Sample4';
+dataSet = '/Users/wanxinli/Desktop/project/MLDSP/SampleRep';
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
 %otherwise change as shown below and uncomment the testing code towards end
 %testingSet = 'F:\Exterm17Dec\Test4\Test\HalophileBacteria';
 seqToTest=100; % 0 to test all sequences, or any value upto number of available sequences
-minSeqLen = 50000;    % e.g. 50000 shorter sequences will be omited, change to 0 for considering shorter sequences
-maxSeqLen = 0; %random fragment from longer sequences will be used, change to 0 for using original length of all sequences
+minSeqLen = 500000;    % e.g. 50000 shorter sequences will be omited, change to 0 for considering shorter sequences
+maxSeqLen = 1000000; %random fragment from longer sequences will be used, change to 0 for using original length of all sequences
 fragsPerSeq = 1; %e.g. 3 shorter sequences will be considered as they are, multiple non-overlapping fragments will be used for longer sequences 
 %default is 1 fragment of length = maxSeqLen per sequence; if fragsPerSeq>1
 %then for each sequence, script selects non-overlapping fragments upto 'selected value' minimum(fragsPerSeq, maximum possible fragments)
