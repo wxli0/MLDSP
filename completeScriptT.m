@@ -17,14 +17,14 @@ clc ;
 % dataSet = 'C:\Users\GURJIT\Downloads\BcereusGroup\BcereusGroup'; 
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Primates';
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Sample4';
-dataSet = '/Users/wanxinli/Desktop/project/MLDSP/archaea-bacteria-small';
+dataSet = '/Users/wanxinli/Desktop/project/MLDSP/samples/order_200_1e5_2e5';
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
 %otherwise change as shown below and uncomment the testing code towards end
 %testingSet = 'F:\Exterm17Dec\Test4\Test\HalophileBacteria';
 seqToTest=100; % 0 to test all sequences, or any value upto number of available sequences
-% minSeqLen = 50000;    % e.g. 50000 shorter sequences will be omited, change to 0 for considering shorter sequences
-minSeqLen = 500000;
-maxSeqLen = 0;
+minSeqLen = 0;    % e.g. 50000 shorter sequences will be omited, change to 0 for considering shorter sequences
+% minSeqLen = 100000; % tried 500000
+maxSeqLen = 0; % todo: check pruned sequence length, start position, only ACGT
 % maxSeqLen = 1000000; %random fragment from longer sequences will be used, change to 0 for using original length of all sequences
 fragsPerSeq = 1; %e.g. 3 shorter sequences will be considered as they are, multiple non-overlapping fragments will be used for longer sequences 
 %default is 1 fragment of length = maxSeqLen per sequence; if fragsPerSeq>1
@@ -33,7 +33,7 @@ fragsPerSeq = 1; %e.g. 3 shorter sequences will be considered as they are, multi
 %select method
 methodsList = {'CGR(ChaosGameRepresentation)','Purine-Pyrimidine','Integer','Integer (other variant)','Real','Doublet','Codons','Atomic','EIIP','PairedNumeric','JustA','JustC','JustG','JustT','PuPyCGR','1DPuPyCGR'};
 methodNum=1; %change method number referring the variable above (between 1 and 16)
-kVal = 6; % used only for CGR-based representations(if methodNum=1,15,16)
+kVal = 9; % used only for CGR-based representations(if methodNum=1,15,16)
 
 selectedFolder = dataSet;
 fprintf('Reading sequences .... \n');%load('Bac2500seq.mat');
@@ -44,8 +44,7 @@ fprintf('Reading sequences .... \n');%load('Bac2500seq.mat');
 %(removing smaller sequences may change the cluster size later)
 %otherwise reduce the size of larger clusters by the assigned value
 maxClusSize = 5000;
-[AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExterns(dataSet,maxClusSize);
-
+[AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExterns(dataSet,maxClusSize)
 %***Misclassified labels required***
 % value 0 runs in parallel and hence faster
 % 0 - for confusion matrix and classification accuracy scores 
@@ -91,7 +90,7 @@ if(methodNum==1 || methodNum==15)
     end
     lg = lgl;
     fm=cell2mat(lgl(:));
-    disMat = f_dis(fm,'cor',0,1);
+    disMat = f_dis(fm,'cor',0, 1); 
 else
     if(methodNum==16)
         cgrLen = power(2,kVal);
