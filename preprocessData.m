@@ -7,10 +7,14 @@ function [SeqNw,AcNw,ptsNw,tSeq] = preprocessData(Seq,AcNmb,numberOfClusters,poi
     eId = pointsPerCluster{1};
     id=1;
     
+    continueCnt = 0;
     for i=1:numberOfClusters
         cnt=0;        
-        for j=sId:eId            
+        for j=sId:eId
+            fprintf("AcNum is: %s \n", string(AcNmb{j}));
+            fprintf("length is: %d \n", length(Seq{j}));
             if(length(Seq{j})<minSeqLen)
+                continueCnt = continueCnt+1;
                 continue;
             end
             if(maxSeqLen==0 || length(Seq{j})<=maxSeqLen)
@@ -50,5 +54,7 @@ function [SeqNw,AcNw,ptsNw,tSeq] = preprocessData(Seq,AcNmb,numberOfClusters,poi
         ptsNw{i}=cnt;
         tSeq=length(SeqNw);
     end
+    fprintf("cnt is: %d \n", cnt);
+    fprintf("continueCnt is: %d \n", continueCnt);
 end
 

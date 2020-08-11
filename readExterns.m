@@ -32,6 +32,7 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
     AcNmb = {};
     FNm = {};
     
+    fprintf('numberOfClusters is: %d \n', numberOfClusters);
     for i=1:numberOfClusters
         folderPath = strcat(testingSet,'/',clusterNames{i});
         cd(folderPath);
@@ -41,6 +42,8 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
         fileNames = allInfo(1,:);
         if(pts{i} <= szLimit)
             pointsPerCluster{i}=pts{i};
+            fprintf('pointsPerCluster is: %d \n', pointsPerCluster{i});
+
             seqTemp = cell(1,pts{i});
             acTemp = cell(1,pts{i});
             fnTemp = cell(1,pts{i});
@@ -70,6 +73,8 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
             end
         end  
         Seq = [Seq seqTemp];
+        len = size(Seq);
+        fprintf('Seq size in readExterns is: %s \n', mat2str(len))
         AcNmb = [AcNmb acTemp];
         FNm = [FNm fnTemp];
         cd(testingSet);
