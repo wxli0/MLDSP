@@ -9,6 +9,8 @@ import urllib.request
 import wget
 import re
 import glob
+from bs4 import BeautifulSoup
+import requests
 # from pandas import query
 
 # tax_name = sys.argv[1]
@@ -28,9 +30,10 @@ upper = int(float(upper_str))
 sample_size = int(sample_size)
 
 outdir_full = "/h/wanxinli/MLDSP/data/samples/"+outdir
-if os.path.exists(outdir_full):
-    shutil.rmtree(outdir_full, ignore_errors=True)
-os.mkdir(outdir_full)
+# if os.path.exists(outdir_full):
+#     shutil.rmtree(outdir_full, ignore_errors=True)
+if not os.path.exists(outdir_full):
+    os.mkdir(outdir_full)
 
 cluster_tsv = pd.read_csv("/h/wanxinli/MLDSP/data/preprocess/sp_clusters_r89.tsv", sep='\t', header = 0, index_col = 1)
 entire_species = []
@@ -58,21 +61,27 @@ def prune_seq(entire_seq, seq_len, start_point):
             count += 1
         if count == seq_len:
             break
-    return entire_seq[start_point, i+1]
+    print(start_point)
+    print(i)
+    return entire_seq[start_point:(i+1)]
+
+def list_fd(url, ext=''):
+    page = requests.get(url).text
+    print(page)
+    soup = BeautifulSoup(page, 'html.parser')
+    return [url  + node.get('href') for node in soup.find_all('a') if node.get('href').endswith(ext)]
 
 
-# print(entire_species)
+
 # auto select for now
 # species_clusters = random.sample(entire_species, cluster_num)
-# species_clusters = ['s__Helicobacter pylori_BU', 's__Helicobacter pylori_C']
-species_clusters = ['s__Bacteroides caccae', 's__Bacteroides fragilis', 's__Bacteroides thetaiotaomicron', 's__Bacteroides uniformis', 's__Bacteroides xylanisolvens']
-# species_clusters = ['s__Campylobacter_D jejuni', 's__Campylobacter_D coli', 's__Bacillus altitudinis', 's__Bacillus paralicheniformis', 's__Bacillus velezensis', 's__Bacillus_A anthracis', 's__Bacillus_A cereus', 's__Bacillus_A pseudomycoides']
-# species_clusters = ['s__Burkholderia cepacia', 's__Burkholderia cenocepacia', 's__Burkholderia mallei', 's__Burkholderia multivorans', 's__Burkholderia stagnalis', 's__Burkholderia vietnamiensis']
-base_url = 'ftp://ftp.ncbi.nlm.nih.gov/genomes/all/'
+species_clusters = ['s__Helicobacter pylori_BU', 's__Helicobacter pylori_C', 's__Campylobacter_D jejuni', 's__Campylobacter_D coli', 's__Bacillus altitudinis', 's__Bacillus paralicheniformis', 's__Bacillus velezensis', 's__Bacillus_A anthracis', 's__Bacillus_A cereus', 's__Bacillus_A pseudomycoides']
+# species_clusters = ['s__Bacteroides caccae', 's__Bacteroides fragilis', 's__Bacteroides thetaiotaomicron', 's__Bacteroides uniformis', 's__Bacteroides xylanisolvens', 's__Burkholderia cepacia', 's__Burkholderia cenocepacia', 's__Burkholderia mallei', 's__Burkholderia multivorans', 's__Burkholderia stagnalis', 's__Burkholderia vietnamiensis']
+# base_url = 'ftp://ftp.ncbi.nlm.nih.gov/genomes/all/'
+base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
 for cluster in species_clusters:
     print("cluster is:", cluster)
     all_genome_ids = cluster_tsv.loc[cluster]['Clustered_genomes'].split(',')
-    # print(all_genome_ids)
     cur_sample_size = sample_size
     if sample_size > len(all_genome_ids):
         cur_sample_size = len(all_genome_ids)
@@ -90,41 +99,23 @@ for cluster in species_clusters:
         block4 = id[13:16]
         print(block1, block2,block3, block4)
         partial_url = base_url+block1+'/'+block2+'/'+block3+'/'+block4 +'/'
-        print(partial_url)
-        tmp_file_name = 'tmp_'+block1+block2+block3+'.txt'
         try:
-            wget.download(partial_url, tmp_file_name)
-            print("one")
-            tmp_output = open(tmp_file_name, 'r').read()
-            tmp_output = tmp_output[::-1]
-            print("tmp_output is:")
-            print(tmp_output)
-            # block5 = tmp_output[-27:-1]
-            # print("after split is:",  tmp_output.split('\\s|\t'))
-            block5 = tmp_output.split()[0]
-            block5 = block5[::-1]
-            print("block5 is:", block5)
-            if block1 == "GCA":
-                block5 = block5.replace('GCF', 'GCA')
-            if block1 == "GCF":
-                block5 = block5.replace('GCA', 'GCF')
+            partial_url_dirs =  list_fd(partial_url)
+            print("partial_url_dirs are:", partial_url_dirs)
+            block5 = partial_url_dirs[1]
 
-            # tmp_output = tmp_output.split('\\s')
-            # print(tmp_output)  
-            # block5 = re.findall(r"GC", tmp_output)
-            # print(block5)
-            download_url = partial_url+block5+'/'+block5+'_genomic.fna.gz'
-            dest = cluster_dir_full+'/'+block5+'_genomic.fna.gz'
+            last_index = block5.split("/", 9)[-1][:-1]
+            download_url = block5+last_index+'_genomic.fna.gz'
+
+            dest = cluster_dir_full+'/'+last_index+'_genomic.fna.gz'
             print("dest is:", dest)
             print("download_url is:", download_url)
             urllib.request.urlretrieve(download_url, dest)
-            print("two")
             f = gzip.open(dest, 'r')
-            print("three")
             file_content = f.read()
             file_content = file_content.decode('utf-8')
-            fna_path = cluster_dir_full+'/'+block5+"_genomic.fna"
-            f_out = open(cluster_dir_full+'/'+block5+"_genomic.fna", 'w+')
+            fna_path = cluster_dir_full+'/'+last_index+"_genomic.fna"
+            f_out = open(cluster_dir_full+'/'+last_index+"_genomic.fna", 'w+')
             f_out.write(file_content)
             f.close()
             f_out.close()
@@ -147,9 +138,10 @@ for cluster in species_clusters:
                 print("INFO: "+fna_path+" is removed")
                 continue
             for i in range(4):
-                print("i is:", i)
                 seq_len = random.randint(lower, min(upper, max_len))
-                random_start = random.randint(0, first_start_point(max_len, seq_len))
+                print(seq_len)
+                tmp = first_start_point(max_seq, seq_len)
+                random_start = random.randint(0, tmp)
                 cur_max_seq = prune_seq(max_seq, seq_len, random_start)
                 cur_fna_path = cluster_dir_full+"/"+max_name+str(i)+".fasta"
                 out_file= open(cur_fna_path,"a+")
@@ -158,8 +150,9 @@ for cluster in species_clusters:
                 out_file.write(">"+max_name+str(i)+"\n")
                 out_file.write(cur_max_seq)
             os.remove(fna_path)
-        except:
+        except Exception as e:
             print("ERROR:", "an error has occurred")
+            print(e)
             pass
 
 for file in glob.glob("tmp*"):
