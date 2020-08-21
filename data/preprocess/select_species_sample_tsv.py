@@ -137,13 +137,18 @@ for cluster in species_clusters:
                 print("INFO: len is", max_len)
                 print("INFO: "+fna_path+" is removed")
                 continue
+            base = 0
             for i in range(4):
                 seq_len = random.randint(lower, min(upper, max_len))
                 print(seq_len)
                 tmp = first_start_point(max_seq, seq_len)
                 random_start = random.randint(0, tmp)
-                cur_max_seq = prune_seq(max_seq, seq_len, random_start)
-                cur_fna_path = cluster_dir_full+"/"+max_name+str(i)+".fasta"
+                cur_max_seq = prune_seq(max_seq, seq_len, random_start)                    
+                cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
+                if i == 0:
+                    while os.path.exists(cur_fna_path):
+                        base += 4
+                        cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
                 out_file= open(cur_fna_path,"a+")
                 out_file.seek(0)
                 out_file.truncate()
