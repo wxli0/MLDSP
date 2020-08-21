@@ -40,6 +40,27 @@ for index, row in cluster_tsv.iterrows():
     if len(row['Clustered_genomes'].split(',')) > thres and index not in existing_species:
         entire_species.append(index)
 
+def first_start_point(entire_seq, seq_len):
+    entire_seq_len = len(entire_seq)
+    count = 0
+    for i in reversed(range(entire_seq_len)):
+        if entire_seq[i] in 'ACGT':
+            count += 1
+        if count == seq_len:
+            break
+    return i
+
+def prune_seq(entire_seq, seq_len, start_point):
+    entire_seq_len = len(entire_seq)
+    count = 0
+    for i in range(start_point, entire_seq_len):
+        if entire_seq[i] in 'ACGT':
+            count += 1
+        if count == seq_len:
+            break
+    return entire_seq[start_point, i+1]
+
+
 # print(entire_species)
 # auto select for now
 # species_clusters = random.sample(entire_species, cluster_num)
@@ -128,8 +149,8 @@ for cluster in species_clusters:
             for i in range(4):
                 print("i is:", i)
                 seq_len = random.randint(lower, min(upper, max_len))
-                random_start = random.randint(0, max_len-seq_len)
-                cur_max_seq = max_seq[random_start:(random_start+seq_len)]
+                random_start = random.randint(0, first_start_point(max_len, seq_len))
+                cur_max_seq = prune_seq(max_seq, seq_len, random_start)
                 cur_fna_path = cluster_dir_full+"/"+max_name+str(i)+".fasta"
                 out_file= open(cur_fna_path,"a+")
                 out_file.seek(0)
