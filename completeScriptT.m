@@ -17,7 +17,7 @@ clc ;
 % dataSet = 'C:\Users\GURJIT\Downloads\BcereusGroup\BcereusGroup'; 
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Primates';
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/Primates';
-dataSet = '/home/w328li/MLDSP-desktop/samples/species_50_1e5_2e5_21';
+dataSet = '/home/w328li/MLDSP-desktop/samples/species_100_1e5_2e5_21';
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
 %otherwise change as shown below and uncomment the testing code towards end
 %testingSet = 'F:\Exterm17Dec\Test4\Test\HalophileBacteria';
