@@ -32,7 +32,7 @@ fragsPerSeq = 1; %e.g. 3 shorter sequences will be considered as they are, multi
 
 %select method
 methodsList = {'CGR(ChaosGameRepresentation)','Purine-Pyrimidine','Integer','Integer (other variant)','Real','Doublet','Codons','Atomic','EIIP','PairedNumeric','JustA','JustC','JustG','JustT','PuPyCGR','1DPuPyCGR'};
-methodNum=3; %change method number referring the variable above (between 1 and 16)
+methodNum=1; %change method number referring the variable above (between 1 and 16)
 kVal = 9; % used only for CGR-based representations(if methodNum=1,15,16)
 
 selectedFolder = dataSet;
