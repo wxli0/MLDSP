@@ -16,8 +16,8 @@ clc ;
 %read fasta files; give datasetName with complete path
 % dataSet = 'C:\Users\GURJIT\Downloads\BcereusGroup\BcereusGroup'; 
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Primates';
-% dataSet = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/Primates';
-dataSet = '/home/w328li/MLDSP-desktop/samples/species_50_1e5_2e5_21';
+dataSet = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/Primates';
+% dataSet = '/home/w328li/MLDSP-desktop/samples/species_50_1e5_2e5_21';
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
 %otherwise change as shown below and uncomment the testing code towards end
 %testingSet = 'F:\Exterm17Dec\Test4\Test\HalophileBacteria';
@@ -220,7 +220,7 @@ fprintf('**** Processing completed ****\n');
 % writematrix(cscore,'classScore3.xlsx');
 % 
 for i=1:length(cMat)
-    disp(s.ClassifierModel{i})
+    print
     cm = cMat{i};
     cMatrix = 0;
     for k = 1:folds

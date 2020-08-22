@@ -11,6 +11,7 @@ import re
 import glob
 from bs4 import BeautifulSoup
 import requests
+import ssl
 # from pandas import query
 
 # tax_name = sys.argv[1]
@@ -29,19 +30,20 @@ lower = int(float(lower_str))
 upper = int(float(upper_str))
 sample_size = int(sample_size)
 
-outdir_full = "/h/wanxinli/MLDSP/data/samples/"+outdir
+base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/data/"
+outdir_full = base_path+"samples/"+outdir
 # if os.path.exists(outdir_full):
 #     shutil.rmtree(outdir_full, ignore_errors=True)
 if not os.path.exists(outdir_full):
-    os.mkdir(outdir_full)
+    os.makedirs(outdir_full)
 
-cluster_tsv = pd.read_csv("/h/wanxinli/MLDSP/data/preprocess/sp_clusters_r89.tsv", sep='\t', header = 0, index_col = 1)
-entire_species = []
-existing_species = ['s__CAG-791 sp003447895','s__Simonsiella muelleri', 's__Campylobacter_A pinnipediorum','s__Streptococcus sp001587175', 's__CG1-02-40-82 sp001819495','s__Thalassotalea sp001913705','s__Fibrobacter sp900313675','s__UBA1304 sp002307295','s__HTCC2207 sp002685715','s__UBA3465 sp002730875']
-thres = 30
-for index, row in cluster_tsv.iterrows():
-    if len(row['Clustered_genomes'].split(',')) > thres and index not in existing_species:
-        entire_species.append(index)
+cluster_tsv = pd.read_csv(base_path+"preprocess/sp_clusters_r89.tsv", sep='\t', header = 0, index_col = 1)
+# entire_species = []
+# existing_species = ['s__CAG-791 sp003447895','s__Simonsiella muelleri', 's__Campylobacter_A pinnipediorum','s__Streptococcus sp001587175', 's__CG1-02-40-82 sp001819495','s__Thalassotalea sp001913705','s__Fibrobacter sp900313675','s__UBA1304 sp002307295','s__HTCC2207 sp002685715','s__UBA3465 sp002730875']
+# thres = 30
+# for index, row in cluster_tsv.iterrows():
+#     if len(row['Clustered_genomes'].split(',')) > thres and index not in existing_species:
+#         entire_species.append(index)
 
 def first_start_point(entire_seq, seq_len):
     entire_seq_len = len(entire_seq)
@@ -75,10 +77,14 @@ def list_fd(url, ext=''):
 
 # auto select for now
 # species_clusters = random.sample(entire_species, cluster_num)
-species_clusters = ['s__Helicobacter pylori_BU', 's__Helicobacter pylori_C', 's__Campylobacter_D jejuni', 's__Campylobacter_D coli', 's__Bacillus altitudinis', 's__Bacillus paralicheniformis', 's__Bacillus velezensis', 's__Bacillus_A anthracis', 's__Bacillus_A cereus', 's__Bacillus_A pseudomycoides']
-# species_clusters = ['s__Bacteroides caccae', 's__Bacteroides fragilis', 's__Bacteroides thetaiotaomicron', 's__Bacteroides uniformis', 's__Bacteroides xylanisolvens', 's__Burkholderia cepacia', 's__Burkholderia cenocepacia', 's__Burkholderia mallei', 's__Burkholderia multivorans', 's__Burkholderia stagnalis', 's__Burkholderia vietnamiensis']
+# species_clusters = ['s__Bacteroides caccae', 's__Helicobacter pylori_BU']
+sample_size = 20
+# species_clusters = ['s__Helicobacter pylori_C', 's__Campylobacter_D jejuni', 's__Campylobacter_D coli', 's__Bacillus altitudinis', 's__Bacillus paralicheniformis', 's__Bacillus velezensis', 's__Bacillus_A anthracis', 's__Bacillus_A cereus', 's__Bacillus_A pseudomycoides']
+species_clusters = ['s__Bacteroides caccae', 's__Bacteroides fragilis', 's__Bacteroides thetaiotaomicron', 's__Bacteroides uniformis', 's__Bacteroides xylanisolvens', 's__Burkholderia cepacia', 's__Burkholderia cenocepacia', 's__Burkholderia mallei', 's__Burkholderia multivorans', 's__Burkholderia stagnalis', 's__Burkholderia vietnamiensis']
 # base_url = 'ftp://ftp.ncbi.nlm.nih.gov/genomes/all/'
+ssl._create_default_https_context = ssl._create_unverified_context
 base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
+dup_try = 5
 for cluster in species_clusters:
     print("cluster is:", cluster)
     all_genome_ids = cluster_tsv.loc[cluster]['Clustered_genomes'].split(',')
@@ -138,7 +144,7 @@ for cluster in species_clusters:
                 print("INFO: "+fna_path+" is removed")
                 continue
             base = 0
-            for i in range(4):
+            for i in range(dup_try):
                 seq_len = random.randint(lower, min(upper, max_len))
                 print(seq_len)
                 tmp = first_start_point(max_seq, seq_len)
@@ -147,7 +153,7 @@ for cluster in species_clusters:
                 cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
                 if i == 0:
                     while os.path.exists(cur_fna_path):
-                        base += 4
+                        base += dup_try
                         cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
                 out_file= open(cur_fna_path,"a+")
                 out_file.seek(0)
