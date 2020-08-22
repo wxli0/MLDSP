@@ -16,6 +16,6 @@ for sub_dir in os.listdir(dir):
     print(files_num)
     if target_num <= 0:
         continue
-    selected_files = np.random.choice(file_names, final_num-files_num)
+    selected_files = np.random.choice(file_names, target_num)
     for file in selected_files:
         os.remove(dir+"/"+sub_dir+"/"+file)
