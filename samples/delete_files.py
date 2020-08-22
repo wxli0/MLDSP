@@ -11,7 +11,7 @@ final_num = int(sys.argv[2])
 for sub_dir in os.listdir(dir):
     file_names = os.listdir(dir+"/"+sub_dir)
     files_num = len(file_names)
-    target_num = final_num-files_num
+    target_num = files_num-final_num
     print(final_num)
     print(files_num)
     if target_num <= 0:
