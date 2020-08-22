@@ -17,7 +17,7 @@ clc ;
 % dataSet = 'C:\Users\GURJIT\Downloads\BcereusGroup\BcereusGroup'; 
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Primates';
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Sample4';
-dataSet = '/Users/wanxinli/Desktop/project/MLDSP/samples/Primates';
+dataSet = '/home/w328li/MLDSP-desktop/samples/species_50_1e5_2e5_21';
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
 %otherwise change as shown below and uncomment the testing code towards end
 %testingSet = 'F:\Exterm17Dec\Test4\Test\HalophileBacteria';
@@ -117,52 +117,52 @@ end
 fprintf('Performing Multi-dimensional scaling .... \n');
 [Y,eigvals] = cmdscale(disMat,3);
 
-%3D  plot
-fprintf('Generating 3D plot .... \n');
-index=1;
-counter=1;
-Cluster = zeros(1,totalSeq);
-for i=1:totalSeq   
-    Cluster(i)=index;
-    if(counter==pointsPerCluster{index})
-        index=index+1;
-        counter=0;
-    end
-    counter= counter+1;
-end
-uniqueClusters  = unique(Cluster);
-cmap = distinguishable_colors(numberOfClusters);
-hf = figure;
-hold on;
-for h=1:numberOfClusters
-    cIndex = Cluster == uniqueClusters(h);
-    plot3(Y(cIndex,1),Y(cIndex,2),Y(cIndex,3),'.','markersize', 15, 'Color',cmap(h,:),'DisplayName',clusterNames{h});
-end
-view(3), axis vis3d, box on, datacursormode on
-xlabel('x'), ylabel('y'), zlabel('z')
-tname = strcat(selectedFolder,' (',int2str(totalSeq),' Sequences',')');
-title(tname)
-hdt = datacursormode(hf);
-set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
-legend('show');
+%%3D  plot
+%fprintf('Generating 3D plot .... \n');
+%index=1;
+%counter=1;
+%Cluster = zeros(1,totalSeq);
+%for i=1:totalSeq   
+%    Cluster(i)=index;
+%    if(counter==pointsPerCluster{index})
+%        index=index+1;
+%        counter=0;
+%    end
+%    counter= counter+1;
+%end
+%uniqueClusters  = unique(Cluster);
+%cmap = distinguishable_colors(numberOfClusters);
+%hf = figure;
+%hold on;
+%for h=1:numberOfClusters
+%    cIndex = Cluster == uniqueClusters(h);
+%    plot3(Y(cIndex,1),Y(cIndex,2),Y(cIndex,3),'.','markersize', 15, 'Color',cmap(h,:),'DisplayName',clusterNames{h});
+%end
+%view(3), axis vis3d, box on, datacursormode on
+%xlabel('x'), ylabel('y'), zlabel('z')
+%tname = strcat(selectedFolder,' (',int2str(totalSeq),' Sequences',')');
+%title(tname)
+%hdt = datacursormode(hf);
+%set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
+%legend('show');
 
 
-%Phylogenetic Tree
-treeLbl=cell(1,length(AcNmb));
-id=1;
-for i=1:numberOfClusters
-    for j=1:pointsPerCluster{i}
-        aid=strcat(clusterNames{i},'_',AcNmb{id});
-        %aid=AcNmb{id};
-        treeLbl{id} = regexprep(aid,'[^a-zA-Z0-9]','_');
-        id=id+1;
-    end
-end
-UPGMAtree = seqlinkage(disMat,'UPGMA',treeLbl);
-phytreewrite('UPTree.tree',UPGMAtree,'Branchnames',false);
-
-NJtree = seqneighjoin(disMat,'equivar',treeLbl);
-phytreewrite('NJTree.tree',NJtree,'Branchnames',false);
+%%Phylogenetic Tree
+%treeLbl=cell(1,length(AcNmb));
+%id=1;
+%for i=1:numberOfClusters
+%    for j=1:pointsPerCluster{i}
+%        aid=strcat(clusterNames{i},'_',AcNmb{id});
+%        %aid=AcNmb{id};
+%        treeLbl{id} = regexprep(aid,'[^a-zA-Z0-9]','_');
+%        id=id+1;
+%    end
+%end
+%UPGMAtree = seqlinkage(disMat,'UPGMA',treeLbl);
+%phytreewrite('UPTree.tree',UPGMAtree,'Branchnames',false);
+%
+%NJtree = seqneighjoin(disMat,'equivar',treeLbl);
+%phytreewrite('NJTree.tree',NJtree,'Branchnames',false);
 
 
 %Classification Code
