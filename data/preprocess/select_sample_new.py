@@ -25,8 +25,8 @@ upper_str = sys.argv[4]
 # family
 cluster_names = []
 if tax_name == "family":
-    cluster_names = ['f__Actinomycetaceae', 'f__Bifidobacteriaceae', 'f__Cellulomonadaceae', 'f__Dermatophilaceae', 'f__Micrococcaceae']
-
+    # cluster_names = ['f__Actinomycetaceae', 'f__Bifidobacteriaceae', 'f__Cellulomonadaceae', 'f__Dermatophilaceae', 'f__Micrococcaceae']
+    cluster_names = ['f__Mycobacteriaceae', 'f__Micromonosporaceae', 'f__Pseudonocardiaceae', 'f__Nocardioidaceae', 'f__Propionibacteriaceae']
 cluster_num = len(cluster_names)
 
 outdir = tax_name+"_"+sample_size+"_"+lower_str+"_"+upper_str+"_"+str(cluster_num)
