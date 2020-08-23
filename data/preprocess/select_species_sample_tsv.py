@@ -76,7 +76,7 @@ def list_fd(url, ext=''):
 
 # auto select for now
 # species_clusters = random.sample(entire_species, cluster_num)
-species_clusters = ['s__Bacteroides caccae']
+species_clusters = ['s__Bacteroides xylanisolvens']
 # species_clusters = ['s__Helicobacter pylori_BU', 's__Helicobacter pylori_C', 's__Campylobacter_D jejuni', 's__Campylobacter_D coli', 's__Bacillus altitudinis', 's__Bacillus paralicheniformis', 's__Bacillus velezensis', 's__Bacillus_A anthracis', 's__Bacillus_A cereus', 's__Bacillus_A pseudomycoides']
 # species_clusters = ['s__Bacteroides caccae', 's__Bacteroides fragilis', 's__Bacteroides thetaiotaomicron', 's__Bacteroides uniformis', 's__Bacteroides xylanisolvens', 's__Burkholderia cepacia', 's__Burkholderia cenocepacia', 's__Burkholderia mallei', 's__Burkholderia multivorans', 's__Burkholderia stagnalis', 's__Burkholderia vietnamiensis']
 # base_url = 'ftp://ftp.ncbi.nlm.nih.gov/genomes/all/'
