@@ -66,7 +66,6 @@ cluster_tsv[next_tax_name] = cluster_tsv['GTDB_taxonomy'].apply(get_target_next_
 cluster_tsv = cluster_tsv.drop(['GTDB_taxonomy'], axis=1)
 
 for cluster_name in cluster_names:
-    cluster_name = "f__Enterobacteriaceae" # todo: make this into a loop
     cluster_tsv_cur = cluster_tsv.loc[cluster_tsv[tax_name] == cluster_name]
 
     cluster_tsv_cur = cluster_tsv_cur.drop([tax_name], axis=1)
