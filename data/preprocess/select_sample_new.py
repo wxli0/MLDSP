@@ -82,6 +82,8 @@ for cluster_name in cluster_names:
         os.makedirs(outdir_full)
     for next_tax in cluster_tsv_cur.index:
         next_tax_sample_size = int(sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
+        print("next_tax_samples_size is:", next_tax_sample_size)
+        print("number of rep genomes is:", len(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr']))
         selected_genomes.extend(random.sample(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr'], next_tax_sample_size))
     cluster_dir_full = outdir_full+'/'+cluster_name
     if not os.path.exists(cluster_dir_full):
