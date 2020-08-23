@@ -22,8 +22,12 @@ sample_size = sys.argv[2]
 lower_str = sys.argv[3]
 upper_str = sys.argv[4]
 
+# family
+cluster_names = []
+if tax_name == "family":
+    cluster_names = ['f__Actinomycetaceae', 'f__Bifidobacteriaceae', 'f__Cellulomonadaceae', 'f__Dermatophilaceae', 'f__Micrococcaceae']
 
-cluster_num = 5
+cluster_num = len(cluster_names)
 
 outdir = tax_name+"_"+sample_size+"_"+lower_str+"_"+upper_str+"_"+str(cluster_num)
 lower = int(float(lower_str))
@@ -32,8 +36,8 @@ sample_size = int(sample_size)
 
 
 random_seq = True
-# base_path = "/home/w328li/MLDSP-desktop/"
-base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/"
+base_path = "/home/w328li/MLDSP-desktop/"
+# base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/"
 outdir_full = base_path+"samples/"+outdir
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -61,26 +65,27 @@ cluster_tsv[next_tax_name] = cluster_tsv['GTDB_taxonomy'].apply(get_target_next_
 
 cluster_tsv = cluster_tsv.drop(['GTDB_taxonomy'], axis=1)
 
-cluster_name = "f__Enterobacteriaceae" # todo: make this into a loop
-cluster_tsv = cluster_tsv.loc[cluster_tsv[tax_name] == cluster_name]
+for cluster_name in cluster_names:
+    cluster_name = "f__Enterobacteriaceae" # todo: make this into a loop
+    cluster_tsv_cur = cluster_tsv.loc[cluster_tsv[tax_name] == cluster_name]
 
-cluster_tsv = cluster_tsv.drop([tax_name], axis=1)
+    cluster_tsv_cur = cluster_tsv_cur.drop([tax_name], axis=1)
 
-cluster_tsv = cluster_tsv.groupby(next_tax_name)['Representative_genome'].apply(list).reset_index().set_index(next_tax_name)
-cluster_tsv.rename(columns = {'Representative_genome':'Representative_genome_arr'}, inplace = True)
-cluster_tsv['species_ratio'] = cluster_tsv['Representative_genome_arr'].apply(len)
-cluster_tsv['species_ratio'] = cluster_tsv['species_ratio']/sum(cluster_tsv['species_ratio'])
-print(cluster_tsv)
+    cluster_tsv_cur = cluster_tsv_cur.groupby(next_tax_name)['Representative_genome'].apply(list).reset_index().set_index(next_tax_name)
+    cluster_tsv_cur.rename(columns = {'Representative_genome':'Representative_genome_arr'}, inplace = True)
+    cluster_tsv_cur['species_ratio'] = cluster_tsv_cur['Representative_genome_arr'].apply(len)
+    cluster_tsv_cur['species_ratio'] = cluster_tsv_cur['species_ratio']/sum(cluster_tsv_cur['species_ratio'])
+    print(cluster_tsv_cur)
 
-selected_genomes = []
-outdir_full = base_path+"samples/"+outdir
-if not os.path.exists(outdir_full):
-    os.makedirs(outdir_full)
-for next_tax in cluster_tsv.index:
-    next_tax_sample_size = int(sample_size * cluster_tsv.loc[next_tax,:]['species_ratio'])
-    selected_genomes.extend(random.sample(cluster_tsv.loc[next_tax,:]['Representative_genome_arr'], next_tax_sample_size))
-cluster_dir_full = outdir_full+'/'+cluster_name
-if not os.path.exists(cluster_dir_full):
-    os.makedirs(cluster_dir_full)
-print(selected_genomes)
-download_genomes(selected_genomes, cluster_dir_full, lower, upper)
+    selected_genomes = []
+    outdir_full = base_path+"samples/"+outdir
+    if not os.path.exists(outdir_full):
+        os.makedirs(outdir_full)
+    for next_tax in cluster_tsv_cur.index:
+        next_tax_sample_size = int(sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
+        selected_genomes.extend(random.sample(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr'], next_tax_sample_size))
+    cluster_dir_full = outdir_full+'/'+cluster_name
+    if not os.path.exists(cluster_dir_full):
+        os.makedirs(cluster_dir_full)
+    print(selected_genomes)
+    download_genomes(selected_genomes, cluster_dir_full, lower, upper)
