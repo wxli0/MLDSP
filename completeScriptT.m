@@ -16,8 +16,8 @@ clc ;
 %read fasta files; give datasetName with complete path
 % dataSet = 'C:\Users\GURJIT\Downloads\BcereusGroup\BcereusGroup'; 
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Primates';
-% dataSet = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/Primates';
-dataSet = '/home/w328li/MLDSP-desktop/samples/species_100_1e5_2e5_21';
+dataSet = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/Primates';
+% dataSet = '/home/w328li/MLDSP-desktop/samples/species_100_1e5_2e5_21';
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
 %otherwise change as shown below and uncomment the testing code towards end
 %testingSet = 'F:\Exterm17Dec\Test4\Test\HalophileBacteria';
@@ -219,19 +219,19 @@ fprintf('**** Processing completed ****\n');
 % LbRows = {'True_Predictor',cl{1:end}};
 % writematrix(cscore,'classScore3.xlsx');
 % 
-for i=1:length(cMat)
-    disp(s.ClassifierModel{i})
-    cm = cMat{i};
-    cMatrix = 0;
-    for k = 1:folds
-        disp(cm{k});
+% for i=1:length(cMat)
+%     disp(s.ClassifierModel{i})
+%     cm = cMat{i};
+%     cMatrix = 0;
+%     for k = 1:folds
+%         disp(cm{k});
         % cMatrix = cMatrix+cm{k};
-    end
+    % end
     % cMatrix = [cl.' cMatrix];
     % cMatrix = [LbRows;cMatrix];
     % sheetNum = i+1;
     % writematrix(cMatrix,'classScore3.xlsx','Sheet',sheetNum);
-end
+% end
 % 
 % %write distance matrix
 % Lbs=[];

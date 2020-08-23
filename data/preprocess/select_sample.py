@@ -18,9 +18,8 @@ sample_size = sys.argv[2]
 lower_str = sys.argv[3]
 upper_str = sys.argv[4]
 
-cluster_num = float('inf')
-if len(sys.argv) == 6:
-    cluster_num = int(sys.argv[5])
+
+cluster_num = int(sys.argv[5])
 
 outdir = tax_name+"_"+sample_size+"_"+lower_str+"_"+upper_str+"_"+str(cluster_num)
 lower = int(float(lower_str))
@@ -28,11 +27,11 @@ upper = int(float(upper_str))
 sample_size = int(sample_size)
 
 random_seq = True
+base_path = "/home/w328li/MLDSP-desktop/"
 
-outdir_full = "/h/wanxinli/MLDSP/data/samples/"+outdir
-if os.path.exists(outdir_full):
-    shutil.rmtree(outdir_full, ignore_errors=True)
-os.mkdir(outdir_full)
+outdir_full = base_path+"samples/"+outdir
+if not os.path.exists(outdir_full):
+    os.mkdir(outdir_full)
 
 indices = {"domain":2, "phylum":3, "class":4, "order":5, "family":6, "genus":7}
 next_taxs = {"domain":"phylum", "phylum":"class", "class":"order", "order":"family", "family":"genus", "genus":"species"}
@@ -43,7 +42,7 @@ index_name = index_names[tax_name]
 next_tax = next_taxs[tax_name]
 
 # preprocess tsv file
-bac120_total = pd.read_csv("/h/wanxinli/MLDSP/data/preprocess/bac120_taxonomy.tsv", sep='\t|;', engine='python', header=None, index_col=0)
+bac120_total = pd.read_csv(base_path+"data/preprocess/bac120_taxonomy.tsv", sep='\t|;', engine='python', header=None, index_col=0)
 bac120_total = bac120_total[[index]]
 
 bac120_subset = pd.DataFrame(columns = ['id',tax_name])
