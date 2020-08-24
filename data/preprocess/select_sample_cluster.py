@@ -36,8 +36,10 @@ if tax_name == "genus": # genus 20
     # cluster_names = ['g__Actinomyces', 'g__Pauljensenia', 'g__Bifidobacterium', 'g__Cryobacterium', 'g__Curtobacterium', 'g__Microbacterium', 'g__Rathayibacter', 'g__Glutamicibacter', 'g__Pseudarthrobacter', 'g__Rothia', 'g__Corynebacterium', 'g__Mycobacterium', 'g__Nocardia', 'g__Rhodococcus', 'g__Amycolatopsis', 'g__Pseudonocardia', 'g__Kitasatospora', 'g__Streptomyces', 'g__Bacteroides', 'g__Prevotella']
     # cluster_names = ['g__Clostridioides', 'g__Paeniclostridium', 'g__Chlamydia', 'g__Chlamydophila']
     cluster_names = ['g__Pseudonocardia', 'g__Cryobacterium']
-# cluster_num = len(cluster_names) 
-cluster_num = 20 # todo: remote this line later
+if tax_name == "order":
+    cluster_names = ['o__Actinomycetales', 'o__Mycobacteriales', 'o__Streptomycetales', 'o__Coriobacteriales', 'o__Bacteroidales', 'o__Chitinophagales', 'o__Flavobacteriales', 'o__Sphingobacteriales', 'o__Balneolales', 'o__Acholeplasmatales', 'o__Bacillales', 'o__Erysipelotrichales', 'o__Lactobacillales', 'o__Mycoplasmatales', 'o__Staphylococcales', 'o__RF39', 'o__RFN20', 'o__Lachnospirales', 'o__Oscillospirales', 'o__Peptostreptococcales', 'o__Tissierellales', 'o__Christensenellales']
+cluster_num = len(cluster_names) 
+# cluster_num = 20 # todo: remote this line later
 
 outdir = tax_name+"_"+sample_size+"_"+lower_str+"_"+upper_str+"_"+str(cluster_num)
 lower = int(float(lower_str))
