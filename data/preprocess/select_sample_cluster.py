@@ -10,23 +10,29 @@ from Bio import SeqIO
 import math
 from helpers import download_genomes
 import ssl
+import platform
 
 
 
 # argv[1]: taxonomy name [2]: sample_num [3]: prune lower [4]: prune upper
-# e.g. python3 select_sample_new.py family 50 1e5 2e5
+# e.g. python3 select_sample_cluster.py family 50 1e5 2e5
 # does not work for domain
 
 tax_name = sys.argv[1]
 sample_size = sys.argv[2]
-lower_str = sys.argv[3]
-upper_str = sys.argv[4]
+lower_str = "1e5" # optional
+upper_str = "2e5" # optional
+if len(sys.argv) == 5:
+    lower_str = sys.argv[3]
+    upper_str = sys.argv[4]
 
 # family
 cluster_names = []
-if tax_name == "family":
+if tax_name == "family":  # family 8
     # cluster_names = ['f__Actinomycetaceae', 'f__Bifidobacteriaceae', 'f__Cellulomonadaceae', 'f__Dermatophilaceae', 'f__Micrococcaceae']
     cluster_names = ['f__Mycobacteriaceae', 'f__Micromonosporaceae', 'f__Pseudonocardiaceae', 'f__Nocardioidaceae', 'f__Propionibacteriaceae']
+if tax_name == "genus": # genus 2
+    cluster_names = ['g__Actinomyces', 'g__Pauljensenia']
 cluster_num = len(cluster_names)
 
 outdir = tax_name+"_"+sample_size+"_"+lower_str+"_"+upper_str+"_"+str(cluster_num)
@@ -36,8 +42,9 @@ sample_size = int(sample_size)
 
 
 random_seq = True
-base_path = "/home/w328li/MLDSP-desktop/"
-# base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/"
+base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
+if platform.platform() == 'Linux-5.3.0-61-generic-x86_64-with-debian-buster-sid':
+    base_path = "/home/w328li/MLDSP-desktop/"
 outdir_full = base_path+"samples/"+outdir
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -51,7 +58,7 @@ index = indices[tax_name]
 next_tax_name = next_taxs[tax_name]
 
 cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters_r89.tsv", sep='\t', header = 0, index_col = None)
-cluster_tsv = cluster_tsv[['Representative_genome', 'GTDB_taxonomy']]
+cluster_tsv = cluster_tsv[['Representative_genome', 'GTDB_taxonomy', 'GTDB_species']]
 
 def get_target_col(tax_text):
     return tax_text.split(";")[index]
@@ -61,7 +68,10 @@ def get_target_next_col(tax_text):
 
 
 cluster_tsv[tax_name] = cluster_tsv['GTDB_taxonomy'].apply(get_target_col)
-cluster_tsv[next_tax_name] = cluster_tsv['GTDB_taxonomy'].apply(get_target_next_col)
+if tax_name == "genus":
+    cluster_tsv.rename(columns = {'GTDB_species':'species'}, inplace = True)
+else:
+    cluster_tsv[next_tax_name] = cluster_tsv['GTDB_taxonomy'].apply(get_target_next_col)
 
 cluster_tsv = cluster_tsv.drop(['GTDB_taxonomy'], axis=1)
 
@@ -81,7 +91,7 @@ for cluster_name in cluster_names:
     if not os.path.exists(outdir_full):
         os.makedirs(outdir_full)
     for next_tax in cluster_tsv_cur.index:
-        next_tax_sample_size = int(sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
+        next_tax_sample_size = math.ceil(sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
         # print("next_tax_samples_size is:", next_tax_sample_size)
         # print("number of rep genomes is:", len(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr']))
         if len(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr']) < next_tax_sample_size:
