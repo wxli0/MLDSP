@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 
 base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
-dup_time = 4
+dup_time = 5
 
 def list_fd(url, ext=''):
     page = requests.get(url).text
@@ -99,7 +99,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper):
                     cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
                     if i == 0:
                         while os.path.exists(cur_fna_path):
-                            base += dup_time
+                            base += 1
                             cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
                     out_file= open(cur_fna_path,"a+")
                     out_file.seek(0)

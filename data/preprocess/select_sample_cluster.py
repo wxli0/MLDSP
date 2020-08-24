@@ -32,7 +32,7 @@ if tax_name == "family":  # family 8
     # cluster_names = ['f__Actinomycetaceae', 'f__Bifidobacteriaceae', 'f__Cellulomonadaceae', 'f__Dermatophilaceae', 'f__Micrococcaceae']
     cluster_names = ['f__Mycobacteriaceae', 'f__Micromonosporaceae', 'f__Pseudonocardiaceae', 'f__Nocardioidaceae', 'f__Propionibacteriaceae']
 if tax_name == "genus": # genus 20
-    cluster_names = ['g__Actinomyces', 'g__Pauljensenia', 'g__Cryobacterium', 'g__Curtobacterium', 'g__Microbacterium', 'g__Glutamicibacter', 'g__Pseudarthrobacter', 'g__Rothia', 'g__Rhodococcus', 'g__Amycolatopsis', 'g__Pseudonocardia', 'g__Kitasatospora', 'g__Bacteroides']
+    cluster_names = ['g__Pseudonocardia', 'g__Kitasatospora', 'g__Rathayibacter', 'g__Actinomyces', 'g__Glutamicibacter', 'g__Pseudarthrobacter', 'g__Curtobacterium', 'g__Cryobacterium', 'g__Rothia', 'g__Pauljensenia']
     # cluster_names = ['g__Actinomyces', 'g__Pauljensenia', 'g__Bifidobacterium', 'g__Cryobacterium', 'g__Curtobacterium', 'g__Microbacterium', 'g__Rathayibacter', 'g__Glutamicibacter', 'g__Pseudarthrobacter', 'g__Rothia', 'g__Corynebacterium', 'g__Mycobacterium', 'g__Nocardia', 'g__Rhodococcus', 'g__Amycolatopsis', 'g__Pseudonocardia', 'g__Kitasatospora', 'g__Streptomyces', 'g__Bacteroides', 'g__Prevotella']
 # cluster_num = len(cluster_names) 
 cluster_num = 20 # todo: remote this line later
