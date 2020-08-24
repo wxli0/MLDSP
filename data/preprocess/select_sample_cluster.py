@@ -34,7 +34,8 @@ if tax_name == "family":  # family 8
 if tax_name == "genus": # genus 20
     # cluster_names = ['g__Pauljensenia']
     # cluster_names = ['g__Actinomyces', 'g__Pauljensenia', 'g__Bifidobacterium', 'g__Cryobacterium', 'g__Curtobacterium', 'g__Microbacterium', 'g__Rathayibacter', 'g__Glutamicibacter', 'g__Pseudarthrobacter', 'g__Rothia', 'g__Corynebacterium', 'g__Mycobacterium', 'g__Nocardia', 'g__Rhodococcus', 'g__Amycolatopsis', 'g__Pseudonocardia', 'g__Kitasatospora', 'g__Streptomyces', 'g__Bacteroides', 'g__Prevotella']
-    cluster_names = ['g__Clostridioides', 'g__Paeniclostridium', 'g__Chlamydia', 'g__Chlamydophila']
+    # cluster_names = ['g__Clostridioides', 'g__Paeniclostridium', 'g__Chlamydia', 'g__Chlamydophila']
+    cluster_names = ['g__Pseudonocardia', 'g__Cryobacterium']
 # cluster_num = len(cluster_names) 
 cluster_num = 20 # todo: remote this line later
 
