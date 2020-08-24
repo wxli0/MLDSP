@@ -45,7 +45,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         % me = getMisclassifiedEntries(alabels(testInd), plabel1)
         % disp(keys(me))
         % disp(values(me))
-        disp(cMat1{i})
+        % disp(cMat1{i})
+        printMisclassifiedEntriesCM(cMat1{i})
         
         %linear-svm
         if(n==2)
