@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 
 base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
-dup_time = 3
+dup_time = 4
 
 def list_fd(url, ext=''):
     page = requests.get(url).text
