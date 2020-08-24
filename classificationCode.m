@@ -42,6 +42,11 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         'ClassNames', cn);
         plabel1 = predict(c1,testSet);
         cMat1{i} = confusionmat(alabels(testInd),plabel1,'Order',ord);
+        % me = getMisclassifiedEntries(alabels(testInd), plabel1)
+        % disp(keys(me))
+        % disp(values(me))
+        % disp(cMat1{i})
+        printMisclassifiedEntriesCM(cMat1{i})
         
         %linear-svm
         if(n==2)

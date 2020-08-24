@@ -219,19 +219,19 @@ fprintf('**** Processing completed ****\n');
 % LbRows = {'True_Predictor',cl{1:end}};
 % writematrix(cscore,'classScore3.xlsx');
 % 
-for i=1:length(cMat)
-    disp(s.ClassifierModel{i})
-    cm = cMat{i};
-    cMatrix = 0;
-    for k = 1:folds
-        disp(cm{k});
+% for i=1:length(cMat)
+%     disp(s.ClassifierModel{i})
+%     cm = cMat{i};
+%     cMatrix = 0;
+%     for k = 1:folds
+%         disp(cm{k});
         % cMatrix = cMatrix+cm{k};
-    end
+    % end
     % cMatrix = [cl.' cMatrix];
     % cMatrix = [LbRows;cMatrix];
     % sheetNum = i+1;
     % writematrix(cMatrix,'classScore3.xlsx','Sheet',sheetNum);
-end
+% end
 % 
 % %write distance matrix
 % Lbs=[];
