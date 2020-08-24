@@ -17,7 +17,7 @@ clc ;
 % dataSet = 'C:\Users\GURJIT\Downloads\BcereusGroup\BcereusGroup'; 
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP/Primates';
 % dataSet = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/Primates';
-dataSet = '/home/w328li/MLDSP-desktop/samples/species_100_1e5_2e5_21';
+dataSet = '/home/w328li/MLDSP-desktop/samples/family_100_1e5_2e5_8';
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
 %otherwise change as shown below and uncomment the testing code towards end
 %testingSet = 'F:\Exterm17Dec\Test4\Test\HalophileBacteria';
@@ -32,7 +32,7 @@ fragsPerSeq = 1; %e.g. 3 shorter sequences will be considered as they are, multi
 
 %select method
 methodsList = {'CGR(ChaosGameRepresentation)','Purine-Pyrimidine','Integer','Integer (other variant)','Real','Doublet','Codons','Atomic','EIIP','PairedNumeric','JustA','JustC','JustG','JustT','PuPyCGR','1DPuPyCGR'};
-methodNum=1; %change method number referring the variable above (between 1 and 16)
+methodNum=3; %change method number referring the variable above (between 1 and 16)
 kVal = 9; % used only for CGR-based representations(if methodNum=1,15,16)
 
 selectedFolder = dataSet;
