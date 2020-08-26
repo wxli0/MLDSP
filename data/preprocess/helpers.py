@@ -100,7 +100,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, dup_ti
                     if i == 0:
                         while os.path.exists(cur_fna_path):
                             base += 1
-                    cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
+                            cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
                     out_file= open(cur_fna_path,"a+")
                     out_file.seek(0)
                     out_file.truncate()
