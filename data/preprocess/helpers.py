@@ -14,7 +14,6 @@ import urllib.request
 import json
 
 base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
-dup_time = 2
 
 def list_fd(url, ext=''):
     page = requests.get(url).text
@@ -44,7 +43,7 @@ def prune_seq(entire_seq, seq_len, start_point):
     print(i)
     return entire_seq[start_point:(i+1)]
 
-def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper):
+def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, dup_time = 1):
     for id in selected_genome_ids:
             block1 = id[3:6]
             block2= id[7:10]
@@ -91,7 +90,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper):
                     print("INFO: "+fna_path+" is removed")
                     continue
                 base = 0
-                for i in range(1):
+                for i in range(dup_time):
                     seq_len = random.randint(lower, min(upper, max_len))
                     print(seq_len)
                     tmp = first_start_point(max_seq, seq_len)
@@ -101,7 +100,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper):
                     if i == 0:
                         while os.path.exists(cur_fna_path):
                             base += 1
-                            cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
+                    cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
                     out_file= open(cur_fna_path,"a+")
                     out_file.seek(0)
                     out_file.truncate()

@@ -95,7 +95,7 @@ for cluster_name in cluster_names:
     if use_factor:
         real_sample_size = int(species_num * sample_factor)
     for next_tax in cluster_tsv_cur.index:
-        next_tax_sample_size = math.ceil(sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
+        next_tax_sample_size = math.ceil(real_sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
         # print("next_tax_samples_size is:", next_tax_sample_size)
         # print("number of rep genomes is:", len(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr']))
         if len(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr']) < next_tax_sample_size:
