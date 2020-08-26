@@ -114,6 +114,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, dup_ti
 
 # parse json input
 def parse_json_input(input_file_name):
+    dup_time = 1
     json_input = json.load(open(input_file_name))
     sample_factor = 0
     sample_size = 0
@@ -131,4 +132,6 @@ def parse_json_input(input_file_name):
         lower = json_input['lower']
     if 'upper' in json_input:
         upper = json_input['upper']
-    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper)
+    if 'dup_time' in json_input:
+        dup_time = json_input['dup_time']
+    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), dup_time

@@ -14,7 +14,7 @@ import platform
 import json
 
 
-sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper = parse_json_input(sys.argv[1])
+sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, dup_time = parse_json_input(sys.argv[1])
 
 
 
@@ -105,4 +105,4 @@ for cluster_name in cluster_names:
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
     print(selected_genomes)
-    download_genomes(selected_genomes, cluster_dir_full, lower, upper)
+    download_genomes(selected_genomes, cluster_dir_full, lower, upper, dup_time = dup_time)
