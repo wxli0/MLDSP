@@ -11,6 +11,7 @@ import math
 import requests
 from bs4 import BeautifulSoup
 import urllib.request
+import json
 
 base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
 dup_time = 2
@@ -111,3 +112,24 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper):
                 print("ERROR:", "an error has occurred")
                 print(e)
                 pass
+
+# parse json input
+def parse_json_input(input_file_name):
+    json_input = json.load(open(input_file_name))
+    sample_factor = 0
+    sample_size = 0
+    tax_name = json_input['tax_name']
+    use_factor = json_input['use_factor']
+    cluster_names = json_input['cluster_names']
+    if json_input['use_factor']:
+        sample_factor = json_input['sample_factor']
+    else:
+        sample_size = json_input['sample_size']
+    cluster_num = len(cluster_names)
+    lower = 1e5
+    upper = 2e5
+    if 'lower' in json_input:
+        lower = json_input['lower']
+    if 'upper' in json_input:
+        upper = json_input['upper']
+    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper)
