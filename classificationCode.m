@@ -175,3 +175,26 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     
 end
 
+function [] = printMisclassifiedEntriesCM(cm)
+    global falseEntries 
+    fprintf("printing misclassified entries\n")
+    for i = 1:size(cm, 1)
+        for j = 1:size(cm, 2)
+            if i == j
+                continue
+            end
+            if cm(i, j) ~= 0
+                fprintf("(%d,%d):%d\n", i, j, cm(i,j));
+                % global falseEntries
+                % disp([i,j])
+                % fprintf('here\n')
+                % disp(falseEntries)
+                % if isKey(falseEntries, [num2str(i),',', num2str(j)])
+                %     falseEntries([num2str(i),',',num2str(j)]) = [falseEntries([num2str(i),',',num2str(j)]),cm(i,j)];
+                % else
+                %     falseEntries([num2str(i),',',num2str(j)]) = [cm(i,j)];
+                % end
+            end
+        end
+    end
+end      
