@@ -8,8 +8,8 @@ from Bio import SeqIO
 
 input_folder = sys.argv[1]
 
-src = '/home/w328li/MLDSP-desktop/samples/'+input_folder+'/'
-dest = '/home/w328li/BlindKameris-desktop/data/'+input_folder+'/'
+src = '/home/w328li/MLDSP-desktop/samples/'+input_folder
+dest = '/home/w328li/BlindKameris-desktop/data/'+input_folder
 
 if os.path.exists(dest):
     shutil.rmtree(dest, ignore_errors=True)
@@ -23,7 +23,7 @@ for file in glob.glob(dest+'/'+'?__*'):
     shutil.rmtree(file)
 
 for file in os.listdir(dest):
-    fna_path = dest+file
+    fna_path = dest+"/"+file
     fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
     final_seq = ''
     for fasta in fasta_sequences:
