@@ -17,10 +17,16 @@ import json
 sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num = parse_json_input(sys.argv[1])
 
 outdir = ""
-if use_factor:
-    outdir = tax_name+"_"+str(sample_factor)+"_"+str(lower)+"_"+str(upper)+"_"+str(cluster_num)
+if not use_const_len:
+    if use_factor:
+        outdir = tax_name+"_"+str(sample_factor)+"_"+str(lower)+"_"+str(upper)+"_"+str(cluster_num)
+    else:
+        outdir = tax_name+"_"+str(sample_size)+"_"+str(lower)+"_"+str(upper)+"_"+str(cluster_num)
 else:
-    outdir = tax_name+"_"+str(sample_size)+"_"+str(lower)+"_"+str(upper)+"_"+str(cluster_num)
+    if use_factor:
+        outdir = tax_name+"_"+str(sample_factor)+"_"+str(const_len)+"_"+str(frags_num)+"_"+str(cluster_num)
+    else:
+        outdir = tax_name+"_"+str(sample_size)+"_"+str(const_len)+"_"+str(frags_num)+"_"+str(cluster_num)
 
 random_seq = True
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
