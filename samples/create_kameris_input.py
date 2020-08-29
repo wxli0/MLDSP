@@ -30,8 +30,10 @@ for file in os.listdir(dest):
         name, sequence = fasta.id, str(fasta.seq)
         if final_seq != '':
             final_seq = 'N'+sequence
+        else:
+            final_seq = sequence
     out_file= open(fna_path,"a+")
     out_file.seek(0)
     out_file.truncate()
-    out_file.write(">"+file+'.fasta'+"\n")
+    out_file.write(">"+file+"\n")
     out_file.write(final_seq)
