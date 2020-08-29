@@ -13,9 +13,9 @@ close all;
 clear all;
 clc ;
 dataSet = 'Primates'
-basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/'
-if isunix
-    basePath = '/home/w328li/MLDSP-desktop/samples/';
+basePath = '/home/w328li/MLDSP-desktop/samples/';
+if isunix & ismac
+    basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/'
 end
 dataSetPath = strcat(basePath, dataSet)
 kVal = 3; % used only for CGR-based representations(if methodNum=1,15,16,17)
@@ -61,34 +61,34 @@ end
 lg = lgl;
 fm=cell2mat(lgl(:));
 disMat = f_dis(fm,'cor',0,1);
-[Y,eigvals] = cmdscale(disMat,3);
-fprintf('Generating 3D plot .... \n');
-index=1;
-counter=1;
-Cluster = zeros(1,totalSeq);
-for i=1:totalSeq
-    Cluster(i)=index;
-    if(counter==pointsPerCluster{index})
-        index=index+1;
-        counter=0;
-    end
-    counter= counter+1;
-end
-uniqueClusters  = unique(Cluster);
-cmap = distinguishable_colors(numberOfClusters);
-hf = figure;
-hold on;
-for h=1:numberOfClusters
-cIndex = Cluster == uniqueClusters(h);
-plot3(Y(cIndex,1),Y(cIndex,2),Y(cIndex,3),'.','markersize', 15, 'Color',cmap(h,:),'DisplayName',clusterNames{h});
-end
-view(3), axis vis3d, box on, datacursormode on
-xlabel('x'), ylabel('y'), zlabel('z')
-tname = strcat(selectedFolder,' (',int2str(totalSeq),' Sequences',')');
-title(tname)
-hdt = datacursormode(hf);
-set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
-legend('show');
+% [Y,eigvals] = cmdscale(disMat,3);
+% fprintf('Generating 3D plot .... \n');
+% index=1;
+% counter=1;
+% Cluster = zeros(1,totalSeq);
+% for i=1:totalSeq
+%     Cluster(i)=index;
+%     if(counter==pointsPerCluster{index})
+%         index=index+1;
+%         counter=0;
+%     end
+%     counter= counter+1;
+% end
+% uniqueClusters  = unique(Cluster);
+% cmap = distinguishable_colors(numberOfClusters);
+% hf = figure;
+% hold on;
+% for h=1:numberOfClusters
+% cIndex = Cluster == uniqueClusters(h);
+% plot3(Y(cIndex,1),Y(cIndex,2),Y(cIndex,3),'.','markersize', 15, 'Color',cmap(h,:),'DisplayName',clusterNames{h});
+% end
+% view(3), axis vis3d, box on, datacursormode on
+% xlabel('x'), ylabel('y'), zlabel('z')
+% tname = strcat(selectedFolder,' (',int2str(totalSeq),' Sequences',')');
+% title(tname)
+% hdt = datacursormode(hf);
+% set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
+% legend('show');
 
 clear a;
 clear s;
@@ -99,7 +99,8 @@ for i=1:numberOfClusters
     end
 end
 ATestlg = [disMat a];
-rng(15,'twister');
+% rng(15,'twister');
+
 alabels = a;
 fprintf('Performing classification .... \n');
 folds=10;
