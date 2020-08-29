@@ -37,15 +37,12 @@ def first_start_point(entire_seq, seq_len):
 
 def prune_seq(entire_seq, seq_len, start_point):
     entire_seq_len = len(entire_seq)
-    print("entire_seq_len is:", entire_seq_len)
     count = 0
     for i in range(start_point, entire_seq_len):
         if entire_seq[i] in 'ACGT':
             count += 1
         if count == seq_len:
             break
-    print(start_point)
-    print(i)
     return entire_seq[start_point:(i+1)]
 
 
@@ -58,16 +55,11 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
             print(block1, block2,block3, block4)
             partial_url = base_url+block1+'/'+block2+'/'+block3+'/'+block4 +'/'
             try:
-                print("one")
                 partial_url_dirs =  list_fd(partial_url)
                 block5 = partial_url_dirs[1]
-                print("two")
                 last_index = block5.split("/", 9)[-1][:-1]
                 download_url = block5+last_index+'_genomic.fna.gz'
-                print("three")
                 dest = cluster_dir_full+'/'+last_index+'_genomic.fna.gz'
-                print("dest is:", dest)
-                print("download_url is:", download_url)
                 urllib.request.urlretrieve(download_url, dest)
                 f = gzip.open(dest, 'r')
                 file_content = f.read()
@@ -135,7 +127,6 @@ def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num
 
 
 def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path):
-    print("in download_const_genome")
     gap_num = frags_num-1
     gap_remaining_len = max_len - frags_num*const_len
     gap_lens = []
@@ -147,7 +138,6 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     cur_fna_path = cluster_dir_full+"/"+max_name+".fasta"
     for i in range(frags_num):
         cur_seq = prune_seq(max_seq, const_len, random_start)
-        print("prune_seq done")
         append_write = 'a'
         if i == 0:
             append_write = 'w'
