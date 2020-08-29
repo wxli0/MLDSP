@@ -1,6 +1,5 @@
 function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = readExternsBac(testingSet, maxClusSize)
     path = pwd;
-    %testingSet = 'C:\Users\GURJIT\Documents\MATLAB\MLDSP\DataBase\ExtTherm';
     cd(testingSet);
     cList = dir;
     cList=cList(~ismember({cList.name},{'.','..'}));

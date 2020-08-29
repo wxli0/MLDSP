@@ -36,14 +36,8 @@ for i=1:totalSeq
     tCGR=zeros(2^kVal);
     for j=1:length(ss)
         sq = ss{j};
-        tCGR1=cgr(sq,'ACGT',kVal);
-        sqr=seqrcomplement(sq);
-        tCGR2=cgr(sqr,'ACGT',kVal);    
-        if(j==1)               
-            tCGR=tCGR1+tCGR2;
-        else
-            tCGR=tCGR+tCGR1+tCGR2;
-        end
+        tCGRNw=cgr(sq,'ACGT',kVal);
+        tCGR=tCGR+tCGRNw;
     end  
     allCGR{i}=tCGR;
 end

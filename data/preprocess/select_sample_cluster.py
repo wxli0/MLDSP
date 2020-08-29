@@ -14,7 +14,7 @@ import platform
 import json
 
 
-sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, dup_time = parse_json_input(sys.argv[1])
+sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num = parse_json_input(sys.argv[1])
 
 outdir = ""
 if use_factor:
@@ -55,9 +55,7 @@ cluster_tsv = cluster_tsv.drop(['GTDB_taxonomy'], axis=1)
 
 for cluster_name in cluster_names:
     cluster_tsv_cur = cluster_tsv.loc[cluster_tsv[tax_name] == cluster_name]
-
     cluster_tsv_cur = cluster_tsv_cur.drop([tax_name], axis=1)
-
     cluster_tsv_cur = cluster_tsv_cur.groupby(next_tax_name)['Representative_genome'].apply(list).reset_index().set_index(next_tax_name)
     cluster_tsv_cur.rename(columns = {'Representative_genome':'Representative_genome_arr'}, inplace = True)
     cluster_tsv_cur['species_ratio'] = cluster_tsv_cur['Representative_genome_arr'].apply(len)
@@ -81,4 +79,4 @@ for cluster_name in cluster_names:
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
     print(selected_genomes)
-    download_genomes(selected_genomes, cluster_dir_full, lower, upper, dup_time = dup_time)
+    download_genomes(selected_genomes, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num)
