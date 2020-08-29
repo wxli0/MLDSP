@@ -30,7 +30,7 @@ else:
 
 random_seq = True
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
-if platform.platform() == 'Linux-5.3.0-61-generic-x86_64-with-debian-buster-sid':
+if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP-desktop/"
 outdir_full = base_path+"samples/"+outdir
 ssl._create_default_https_context = ssl._create_unverified_context
