@@ -14,6 +14,9 @@ clear all;
 clc ;
 dataSet = 'Primates'
 basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/'
+if isunix
+    basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
+end
 dataSetPath = strcat(basePath, dataSet)
 kVal = 3; % used only for CGR-based representations(if methodNum=1,15,16,17)
 
