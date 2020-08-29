@@ -37,6 +37,7 @@ def first_start_point(entire_seq, seq_len):
 
 def prune_seq(entire_seq, seq_len, start_point):
     entire_seq_len = len(entire_seq)
+    print("entire_seq_len is:", entire_seq_len)
     count = 0
     for i in range(start_point, entire_seq_len):
         if entire_seq[i] in 'ACGT':
@@ -57,12 +58,13 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
             print(block1, block2,block3, block4)
             partial_url = base_url+block1+'/'+block2+'/'+block3+'/'+block4 +'/'
             try:
+                print("one")
                 partial_url_dirs =  list_fd(partial_url)
                 block5 = partial_url_dirs[1]
-
+                print("two")
                 last_index = block5.split("/", 9)[-1][:-1]
                 download_url = block5+last_index+'_genomic.fna.gz'
-
+                print("three")
                 dest = cluster_dir_full+'/'+last_index+'_genomic.fna.gz'
                 print("dest is:", dest)
                 print("download_url is:", download_url)
@@ -103,6 +105,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                         print("INFO: "+fna_path+" is removed")
                         continue
                     else:
+                        print("before download_const_genome")
                         download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path)
 
             except Exception as e:
@@ -132,6 +135,7 @@ def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num
 
 
 def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path):
+    print("in download_const_genome")
     gap_num = frags_num-1
     gap_remaining_len = max_len - frags_num*const_len
     gap_lens = []
@@ -143,14 +147,16 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     cur_fna_path = cluster_dir_full+"/"+max_name+".fasta"
     for i in range(frags_num):
         cur_seq = prune_seq(max_seq, const_len, random_start)
-        append_write = 'w'
+        print("prune_seq done")
+        append_write = 'a'
         if i == 0:
-            append_write = 'a'
+            append_write = 'w'
         out_file= open(cur_fna_path, append_write)
         out_file.write(">"+max_name+str(i)+"\n")
         out_file.write(cur_seq+"\n")
         out_file.close()
-        random_start = gap_lens[i]
+        if not i == (frags_num-1):
+            random_start += gap_lens[i]
     os.remove(fna_path)
 
 
