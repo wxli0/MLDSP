@@ -16,9 +16,9 @@ methodNum=1; %change method number referring the variable above (between 1 and 1
 two_fragments = false;
 
 clc ;
-basePath = '/home/w328li/MLDSP-desktop/samples/';
+basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
 if isunix
-    basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
+    basePath = '/home/w328li/MLDSP-desktop/samples/';
 end
 dataSet = strcat(basePath, testSetName);
 testingSet = 'NoData';% change to 'NoData' if there is no testing set
