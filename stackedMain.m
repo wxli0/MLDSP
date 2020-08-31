@@ -12,13 +12,13 @@
 close all;
 clear all;
 clc ;
-dataSet = 'Primates'
+dataSet = 'family_const_nonfactor_multifrag'
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
     basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/'
 end
 dataSetPath = strcat(basePath, dataSet)
-kVal = 3; % used only for CGR-based representations(if methodNum=1,15,16,17)
+kVal = 9; % used only for CGR-based representations(if methodNum=1,15,16,17)
 
 selectedFolder = dataSetPath;
 fprintf('Reading sequences .... \n');%load('Bac2500seq.mat');
