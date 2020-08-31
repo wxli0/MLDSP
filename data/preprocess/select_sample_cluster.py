@@ -13,10 +13,8 @@ import ssl
 import platform
 import json
 
-print("before parse")
 sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num = parse_json_input(sys.argv[1])
 
-print("starting")
 print(parse_json_input(sys.argv[1]))
 outdir = tax_name
 if use_const_len:
@@ -90,4 +88,5 @@ for cluster_name in cluster_names:
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
     print(selected_genomes)
+    print("before download_genomes")
     download_genomes(selected_genomes, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num)

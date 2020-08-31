@@ -91,6 +91,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                     else:
                         download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num, cluster_dir_full, fna_path)
                 else:
+                    print("enter right clause")
                     if max_len < (frags_num*const_len):
                         os.remove(fna_path)
                         print("INFO: len is", max_len)
