@@ -77,7 +77,6 @@ for cluster_name in cluster_names:
         os.makedirs(outdir_full)
     real_sample_size = sample_size
     if use_factor:
-        print("enter use_factor")
         real_sample_size = int(species_num * sample_factor)
     for next_tax in cluster_tsv_cur.index:
         next_tax_sample_size = math.ceil(real_sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
