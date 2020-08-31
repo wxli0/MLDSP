@@ -16,17 +16,21 @@ import json
 
 sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num = parse_json_input(sys.argv[1])
 
-outdir = ""
-if not use_const_len:
-    if use_factor:
-        outdir = tax_name+"_"+str(sample_factor)+"_"+str(lower)+"_"+str(upper)+"_"+str(cluster_num)
-    else:
-        outdir = tax_name+"_"+str(sample_size)+"_"+str(lower)+"_"+str(upper)+"_"+str(cluster_num)
+print("starting")
+print(parse_json_input(sys.argv[1]))
+outdir = tax_name
+if use_const_len:
+    outdir += "_const"
 else:
-    if use_factor:
-        outdir = tax_name+"_"+str(sample_factor)+"_"+str(const_len)+"_"+str(frags_num)+"_"+str(cluster_num)
-    else:
-        outdir = tax_name+"_"+str(sample_size)+"_"+str(const_len)+"_"+str(frags_num)+"_"+str(cluster_num)
+    outdir += "_nonconst"
+if use_factor:
+    outdir += "_factor"
+else:
+    outdir += "_nonfactor"
+if frags_num >= 2:
+    outdir += "_multifrag"
+else:
+    outdir += "singlefrag"
 
 random_seq = True
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
@@ -75,6 +79,7 @@ for cluster_name in cluster_names:
         os.makedirs(outdir_full)
     real_sample_size = sample_size
     if use_factor:
+        print("enter use_factor")
         real_sample_size = int(species_num * sample_factor)
     for next_tax in cluster_tsv_cur.index:
         next_tax_sample_size = math.ceil(real_sample_size * cluster_tsv_cur.loc[next_tax,:]['species_ratio'])
