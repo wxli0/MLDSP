@@ -178,6 +178,8 @@ def parse_json_input(input_file_name):
         upper = json_input['upper']
     if 'frags_num' in json_input:
         frags_num = json_input['frags_num']
-    if use_factor:
+    if use_const_len:
         const_len = json_input['const_len']
+    if use_factor:
+        sample_factor = json_input['sample_factor']
     return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num
