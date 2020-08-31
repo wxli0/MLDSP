@@ -12,7 +12,7 @@
 close all;
 clear all;
 clc ;
-dataSet = 'family_const_nonfactor_multifrag'
+dataSet = 'genus_const_factor_multifrag'
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
     basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/'
