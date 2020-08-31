@@ -13,7 +13,7 @@ import ssl
 import platform
 import json
 
-sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num = parse_json_input(sys.argv[1])
+sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num, id = parse_json_input(sys.argv[1])
 
 print(parse_json_input(sys.argv[1]))
 outdir = tax_name
@@ -28,7 +28,9 @@ else:
 if frags_num >= 2:
     outdir += "_multifrag"
 else:
-    outdir += "singlefrag"
+    outdir += "+singlefrag"
+if id is not None:
+    outdir +="_"+id
 
 random_seq = True
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally

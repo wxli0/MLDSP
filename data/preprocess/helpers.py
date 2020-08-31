@@ -164,6 +164,7 @@ def parse_json_input(input_file_name):
     frags_num = 1
     use_const_len = json_input['use_const_len']
     const_len = None
+    id = None
 
     if json_input['use_factor']:
         sample_factor = json_input['sample_factor']
@@ -182,4 +183,6 @@ def parse_json_input(input_file_name):
         const_len = json_input['const_len']
     if use_factor:
         sample_factor = json_input['sample_factor']
-    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num
+    if 'id' in json_input:
+        id = json_input['id']
+    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, id
