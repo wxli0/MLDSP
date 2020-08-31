@@ -47,6 +47,8 @@ def prune_seq(entire_seq, seq_len, start_point):
 
 
 def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num):
+    print("const_len is:", const_len)
+    print("frags_num is:", frags_num)
     for id in selected_genome_ids:
             block1 = id[3:6]
             block2= id[7:10]
