@@ -85,13 +85,13 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                     #     max_len = len(sequence_real)
                     #     max_seq = sequence # max_seq should contain 'X'
                     #     max_name = name
-                    max_len += len(sequence_real)
                     print("max_len is:", max_len)
                     print("sequence_real len is:", len(sequence_real))
                     if len(sequence_real) > max_len:
                         max_name = name
                     if sequence is None:
                         continue
+                    max_len += len(sequence_real)
                     max_seq += ('N'+ sequence)
                 if not use_const_len: # use variable length in [lower, upper]
                     if max_len < lower:
