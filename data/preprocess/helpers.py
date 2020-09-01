@@ -134,7 +134,9 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     gap_remaining_len = max_len - frags_num*const_len
     gap_lens = []
     while gap_num > 0:
-        gap_lens.append(random.randint(0, gap_remaining_len))
+        cur_gap_len = random.randint(0, gap_remaining_len)
+        gap_lens.append(cur_gap_len)
+        gap_remaining_len -= cur_gap_len
         gap_num -=1
     seq_remaining_len = max_len-frags_num*const_len-np.sum(gap_lens)
     random_start = random.randint(0, seq_remaining_len)
