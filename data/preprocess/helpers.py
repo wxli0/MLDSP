@@ -154,6 +154,7 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
         if i == 0:
             append_write = 'w'
         out_file= open(cur_fna_path, append_write)
+        print("max_name is:", max_name)
         out_file.write(">"+max_name+str(i)+"\n")
         out_file.write(cur_seq+"\n")
         out_file.close()
