@@ -88,6 +88,8 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                     max_len += len(sequence_real)
                     if max_len > max_len:
                         max_name = name
+                    if sequence is None:
+                        continue
                     max_seq += ('N'+ sequence)
                 if not use_const_len: # use variable length in [lower, upper]
                     if max_len < lower:
