@@ -12,7 +12,7 @@
 close all;
 clear all;
 clc ;
-dataSet = 'genus_const_factor_multifrag'
+dataSet = 'Primates'
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
     basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/'
@@ -39,8 +39,12 @@ for i=1:totalSeq
     tCGR=zeros(2^kVal);
     for j=1:length(ss)
         sq = ss{j};
-        tCGRNw=cgr(sq,'ACGT',kVal);
-        tCGR=tCGR+tCGRNw;
+        sqSeg = regexp(sq, '[^ATCG]', 'split')
+        for m=1:length(sqSeg)
+            seg = sqSeg{m};
+            tCGRNw=cgr(seg,'ACGT',kVal);
+            tCGR=tCGR+tCGRNw;
+        end
     end  
     allCGR{i}=tCGR;
 end
