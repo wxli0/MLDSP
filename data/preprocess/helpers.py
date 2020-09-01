@@ -75,15 +75,20 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
 
                 fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
                 max_len = 0
-                max_seq = None
+                max_seq = ''
                 max_name = None
+                ######## tmp fix for now ############
                 for fasta in fasta_sequences:
                     name, sequence = fasta.id, str(fasta.seq)
                     sequence_real = ''.join( c for c in sequence if  c in 'ACGT') # prune irrelevant chars
-                    if len(sequence_real) > max_len:
-                        max_len = len(sequence_real)
-                        max_seq = sequence # max_seq should contain 'X'
+                    # if len(sequence_real) > max_len:
+                    #     max_len = len(sequence_real)
+                    #     max_seq = sequence # max_seq should contain 'X'
+                    #     max_name = name
+                    max_len += len(sequence_real)
+                    if max_len > max_len:
                         max_name = name
+                    max_seq += ('N'+ sequence)
                 if not use_const_len: # use variable length in [lower, upper]
                     if max_len < lower:
                         os.remove(fna_path)
