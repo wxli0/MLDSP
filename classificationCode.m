@@ -60,7 +60,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
 %                 fprintf(fmt, falseSeq);
                 fprintf("display falseSeq\n");
                 disp(falseSeq{1});
-                fprintf("%d\n", count(falseSeq{1}, "A"));
+%                 validCount =  count(falseSeq{1}, "A")+ count(falseSeq{1}, "T")+ count(falseSeq{1}, "C")+ count(falseSeq{1}, "G");
+                fprintf("invalid count is %d\n", count(falseSeq{1}, "N"));
             end
         end
 
