@@ -111,9 +111,9 @@ folds=10;
 if (totalSeq<folds)
     folds = totalSeq;
 end
-[accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq);
+[accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, Seq);
 acc = [accuracy avg_accuracy];
 s.ClassifierModel=cellstr(clNames.');
 s.Accuracy=cell2mat(acc).';
-ClassificationAccuracyScores = struct2table(s)
+ClassificationAccuracyScores = struct2table(s);
 

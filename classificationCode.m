@@ -1,4 +1,4 @@
-function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq )
+function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq, Seq )
     %10-fold cross validation
     %classification accuracy for 6 classifiers
     %linear-discriminant, linear svm, quadratic svm, fine knn,
@@ -31,8 +31,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         trainInd = find(AllTrainInd);
         trainSet = disMat(trainInd,trainInd);
         testSet = disMat(testInd,trainInd);
-        % disp(testInd)
-        % disp(trainInd)
 
         %linear-discriminant
         c1 = fitcdiscr(...
@@ -46,13 +44,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat1{i} = confusionmat(alabels(testInd),plabel1,'Order',ord);
         printMisclassifiedEntriesCM(cMat1{i})
 
-        % predict one by one
-        % for j = 1:length(AllTestInd)
-        %     testSetNow = disMat(trainInd, j)
-        %     plabelCur = predict(c1, testSetNow)
-        %     fprint("ref label is: %d", alabels{j})
-
-        % end
         fmt=['testInd =' repmat(' %1.0f',1,numel(testInd)) '\n'];
         fprintf(fmt,testInd)
         disp(cMat1{i})
@@ -60,6 +51,20 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         fprintf(fmt, plabel1)
         fmt=['alabels(testInd) =' repmat(' %1.0f',1,numel(alabels(testInd))) '\n'];
         fprintf(fmt, alabels(testInd))
+        % print misclassified testid and sequence
+        for k = 1:length(plabel1)
+            testIndArray = alabels(testInd);
+            if plabel1(k) ~= testIndArray(k)
+                falseSeq = Seq(testInd(k));
+%                 fmt=['seq  =' repmat(' %1.0f',1,falseSeq) '\n'];
+%                 fprintf(fmt, falseSeq);
+                fprintf("display falseSeq\n");
+                disp(falseSeq);
+            end
+        end
+
+
+
 
         
         %linear-svm
