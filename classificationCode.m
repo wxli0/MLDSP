@@ -59,7 +59,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
 %                 fmt=['seq  =' repmat(' %1.0f',1,falseSeq) '\n'];
 %                 fprintf(fmt, falseSeq);
                 fprintf("display falseSeq\n");
-                disp(falseSeq);
+                disp(falseSeq{1});
+                fprintf("%d\n", count(falseSeq{1}, "A"));
             end
         end
 
