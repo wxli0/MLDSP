@@ -28,7 +28,7 @@ else:
 if frags_num >= 2:
     outdir += "_multifrag"
 else:
-    outdir += "+singlefrag"
+    outdir += "_singlefrag"
 if id is not None:
     outdir +="_"+id
 
