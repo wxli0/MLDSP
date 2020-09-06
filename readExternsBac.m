@@ -12,6 +12,7 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
     for i=1:numberOfClusters
         clusterNames{i} = cList(i).name;
         folderPath = strcat(cList(i).folder,'/',cList(i).name);
+        disp(cList(i).name)
         cd(folderPath);
         allFiles = [dir('**/*.fasta');dir('**/*.fna');dir('**/*.txt');];%dir ('**/*.fasta');
         allFiles=allFiles(~startsWith({allFiles.name},{'.'}));
