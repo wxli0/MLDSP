@@ -1,4 +1,4 @@
-function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq)
+function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq, AcNum)
     %10-fold cross validation
     %classification accuracy for 6 classifiers
     %linear-discriminant, linear svm, quadratic svm, fine knn,
@@ -54,17 +54,11 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         % print misclassified testid and sequence
         for k = 1:length(plabel1)
             testIndArray = alabels(testInd);
-            % if plabel1(k) ~= testIndArray(k)
-                % falseSeq = Seq(testInd(k));
             if plabel1(k) ~= testIndArray(k)
                 fprintf("testInd is: %d\n", testInd(k));
+                fprintf("fileId is:")
+                disp(AcNum(k))
             end
-%                 fmt=['seq  =' repmat(' %1.0f',1,falseSeq) '\n'];
-%                 fprintf(fmt, falseSeq);
-                % fprintf("display falseSeq\n");
-                % disp(falseSeq{1});
-%                 validCount =  count(falseSeq{1}, "A")+ count(falseSeq{1}, "T")+ count(falseSeq{1}, "C")+ count(falseSeq{1}, "G");
-                % fprintf("invalid count is %d\n", count(falseSeq{1}, "N"));
         end
 
 
