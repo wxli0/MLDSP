@@ -55,7 +55,7 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
                 % Sequence = regexprep(Sequence,'[^A,^C, ^G, ^T]','','ignorecase');
                 seqTemp{j} = Sequence;
                 acTemp{j} = Header; 
-                fnTemp{j} = sbName;
+                fnTemp{j} = strcat(folderPath, '/', sbName);
             end            
         else
             pointsPerCluster{i}=szLimit;
