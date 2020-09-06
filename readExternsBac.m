@@ -55,7 +55,7 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
                 % Sequence = regexprep(Sequence,'[^A,^C, ^G, ^T]','','ignorecase');
                 seqTemp{j} = Sequence;
                 acTemp{j} = Header; 
-                fnTemp{j} = sbName(1:length(sbName)-4);
+                fnTemp{j} = sbName;
             end            
         else
             pointsPerCluster{i}=szLimit;
@@ -70,7 +70,7 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
                 % Sequence = regexprep(Sequence,'[^A,^C, ^G, ^T]','','ignorecase');
                 seqTemp{j} = Sequence;
                 acTemp{j} = Header; 
-                fnTemp{j} = sbName(1:length(sbName)-4); 
+                fnTemp{j} = sbName; 
             end
         end  
         Seq = [Seq seqTemp];
