@@ -44,18 +44,18 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat1{i} = confusionmat(alabels(testInd),plabel1,'Order',ord);
         printMisclassifiedEntriesCM(cMat1{i})
 
-        fmt=['testInd =' repmat(' %1.0f',1,numel(testInd)) '\n'];
-        fprintf(fmt,testInd)
-        disp(cMat1{i})
-        fmt=['plabel1 =' repmat(' %1.0f',1,numel(plabel1)) '\n'];
-        fprintf(fmt, plabel1)
-        fmt=['alabels(testInd) =' repmat(' %1.0f',1,numel(alabels(testInd))) '\n'];
-        fprintf(fmt, alabels(testInd))
+        % fmt=['testInd =' repmat(' %1.0f',1,numel(testInd)) '\n'];
+        % fprintf(fmt,testInd)
+        % disp(cMat1{i})
+        % fmt=['plabel1 =' repmat(' %1.0f',1,numel(plabel1)) '\n'];
+        % fprintf(fmt, plabel1)
+        % fmt=['alabels(testInd) =' repmat(' %1.0f',1,numel(alabels(testInd))) '\n'];
+        % fprintf(fmt, alabels(testInd))
         % print misclassified testid and sequence
         for k = 1:length(plabel1)
-            testIndArray = alabels(testInd);
-            if plabel1(k) ~= testIndArray(k)
-                fprintf("testInd is: %d\n", testInd(k));
+            alabelsArray = alabels(testInd);
+            if plabel1(k) ~= alabelsArray(k)
+                fprintf("predicted is: %d, ref is %d \n", plabel1(k), alabelsArray(k))
                 fprintf("fileId is:")
                 disp(AcNum(k))
             end
@@ -198,7 +198,6 @@ end
 
 function [] = printMisclassifiedEntriesCM(cm)
     global falseEntries 
-    fprintf("printing misclassified entries\n")
     for i = 1:size(cm, 1)
         for j = 1:size(cm, 2)
             if i == j
@@ -206,15 +205,6 @@ function [] = printMisclassifiedEntriesCM(cm)
             end
             if cm(i, j) ~= 0
                 fprintf("(%d,%d):%d\n", i, j, cm(i,j));
-                % global falseEntries
-                % disp([i,j])
-                % fprintf('here\n')
-                % disp(falseEntries)
-                % if isKey(falseEntries, [num2str(i),',', num2str(j)])
-                %     falseEntries([num2str(i),',',num2str(j)]) = [falseEntries([num2str(i),',',num2str(j)]),cm(i,j)];
-                % else
-                %     falseEntries([num2str(i),',',num2str(j)]) = [cm(i,j)];
-                % end
             end
         end
     end
