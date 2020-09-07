@@ -91,4 +91,4 @@ def select_one_file(id, cluster_name, const_len=100000, frags_num=3):
         print(e)
         pass
 
-select_one_file()
+select_one_file(id, cluster_name)
