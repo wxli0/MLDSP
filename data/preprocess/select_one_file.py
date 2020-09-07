@@ -59,7 +59,7 @@ def select_one_file(genome_id, cluster_name, const_len=100000, frags_num=3):
         fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
         max_len = 0
         max_seq = ''
-        max_name = genome_id
+        max_name = genome_id[:-6]
         ######## tmp fix for now ############
         for fasta in fasta_sequences:
             _, sequence = fasta.id, str(fasta.seq)
