@@ -165,8 +165,9 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
         out_file.close()
         if not i == (frags_num-1):
             random_start += gap_lens[i]
+    print('before remove')
     os.remove(fna_path)
-
+    print("after remove")
 
 # parse json input
 def parse_json_input(input_file_name):
