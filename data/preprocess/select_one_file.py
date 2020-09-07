@@ -81,7 +81,6 @@ def select_one_file(genome_id, cluster_name, const_len=100000, frags_num=3):
             os.remove(fna_path)
             print("INFO: len is", max_len)
             print("INFO: "+fna_path+" is removed")
-            continue
         else:
             print("before download_const_genome")
             download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path)
