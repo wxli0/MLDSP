@@ -67,6 +67,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                 file_content = f.read()
                 file_content = file_content.decode('utf-8')
                 fna_path = cluster_dir_full+'/'+last_index+"_genomic.fna"
+                print("fna_path is:", fna_path)
                 f_out = open(cluster_dir_full+'/'+last_index+"_genomic.fna", 'w+')
                 f_out.write(file_content)
                 f.close()
