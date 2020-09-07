@@ -16,12 +16,12 @@ import json
 import numpy as np
 import platform
 
-# argv[1]: id
+# argv[1]: genome_id
 # argv[2]: outdir
 # argv[3]: cluster
 # e.g. python3 select_one_file.py RS_GCF_000520495.1.fasta class_const_factor_multifrag_1 c__Halobacteria 
 
-input_file = sys.argv[1] # id
+input_file = sys.argv[1] # genome_id
 outdir = sys.argv[2] # outdir
 cluster_name = sys.argv[3] # cluster
 
@@ -30,13 +30,13 @@ if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP-desktop/"
 outdir_full = base_path+"samples/"+outdir
 
-def select_one_file(id, cluster_name, const_len=100000, frags_num=3):
+def select_one_file(genome_id, cluster_name, const_len=100000, frags_num=3):
     cluster_dir_full = outdir_full+'/'+cluster_name
    
-    block1 = id[3:6]
-    block2= id[7:10]
-    block3 = id[10:13]
-    block4 = id[13:16]
+    block1 = genome_id[3:6]
+    block2= genome_id[7:10]
+    block3 = genome_id[10:13]
+    block4 = genome_id[13:16]
     print(block1, block2,block3, block4)
     partial_url = base_url+block1+'/'+block2+'/'+block3+'/'+block4 +'/'
     try:
@@ -59,10 +59,10 @@ def select_one_file(id, cluster_name, const_len=100000, frags_num=3):
         fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
         max_len = 0
         max_seq = ''
-        max_name = id
+        max_name = genome_id
         ######## tmp fix for now ############
         for fasta in fasta_sequences:
-            _, sequence = fasta.id, str(fasta.seq)
+            _, sequence = fasta.genome_id, str(fasta.seq)
             sequence_real = ''.join( c for c in sequence if  c in 'ACGT') # prune irrelevant chars
             # if len(sequence_real) > max_len:
             #     max_len = len(sequence_real)
@@ -91,4 +91,4 @@ def select_one_file(id, cluster_name, const_len=100000, frags_num=3):
         print(e)
         pass
 
-select_one_file(id, cluster_name)
+select_one_file(genome_id, cluster_name)
