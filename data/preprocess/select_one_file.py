@@ -1,12 +1,36 @@
 import sys
+from helpers import download_const_genome, base_url, list_fd
+import os
+import csv
+import pandas as pd
+import os
+import random
+import shutil
+import gzip
+from Bio import SeqIO
+import math
+import requests
+from bs4 import BeautifulSoup
+import urllib.request
+import json
+import numpy as np
 
-# argv[1]: input file
-# argv[2]: output file
+# argv[1]: id
+# argv[2]: outdir
+# argv[3]: cluster
+# e.g. python3 select_one_file.py order_const_factor_multifrag_5
 
-input_file = sys.argv[1] # id in selected_genomes
-output_file = sys.argv[2]
+input_file = sys.argv[1] # id
+outdir = sys.argv[2] # outdir
+cluster_name = sys.argv[3] # cluster
 
-def select_one_file(id, cluster_dir_full, const_len, frags_num):
+base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
+if platform.platform()[:5] == 'Linux':
+    base_path = "/home/w328li/MLDSP-desktop/"
+outdir_full = base_path+"samples/"+outdir
+
+def select_one_file(id, cluster_name, const_len=100000, frags_num=3):
+    cluster_dir_full = outdir_full+'/'+cluster_name
    
     block1 = id[3:6]
     block2= id[7:10]
@@ -24,7 +48,7 @@ def select_one_file(id, cluster_dir_full, const_len, frags_num):
         f = gzip.open(dest, 'r')
         file_content = f.read()
         file_content = file_content.decode('utf-8')
-        fna_path = cluster_dir_full+'/'+last_index+"_genomic.fna"
+        fna_path = cluster_dir_full+'/'+last_index+"_alter"+"_genomic.fna"
         f_out = open(cluster_dir_full+'/'+last_index+"_genomic.fna", 'w+')
         f_out.write(file_content)
         f.close()
@@ -34,10 +58,10 @@ def select_one_file(id, cluster_dir_full, const_len, frags_num):
         fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
         max_len = 0
         max_seq = ''
-        max_name = id+'.fasta'
+        max_name = id
         ######## tmp fix for now ############
         for fasta in fasta_sequences:
-            name, sequence = fasta.id, str(fasta.seq)
+            _, sequence = fasta.id, str(fasta.seq)
             sequence_real = ''.join( c for c in sequence if  c in 'ACGT') # prune irrelevant chars
             # if len(sequence_real) > max_len:
             #     max_len = len(sequence_real)
@@ -50,7 +74,7 @@ def select_one_file(id, cluster_dir_full, const_len, frags_num):
             if sequence is None:
                 continue
             max_len += len(sequence_real)
-            max_seq += ('N'+ sequence)
+            max_seq += ('O'+ sequence)
     
             if max_len < (frags_num*const_len):
                 os.remove(fna_path)
@@ -65,3 +89,5 @@ def select_one_file(id, cluster_dir_full, const_len, frags_num):
         print("ERROR:", "an error has occurred")
         print(e)
         pass
+
+select_one_file()
