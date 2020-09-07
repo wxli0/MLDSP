@@ -50,7 +50,7 @@ def select_one_file(genome_id, cluster_name, const_len=100000, frags_num=3):
         file_content = f.read()
         file_content = file_content.decode('utf-8')
         fna_path = cluster_dir_full+'/'+last_index+"_alter"+"_genomic.fna"
-        f_out = open(cluster_dir_full+'/'+last_index+"_alter"+_genomic.fna", 'w+')
+        f_out = open(cluster_dir_full+'/'+last_index+"_alter"+"_genomic.fna", 'w+')
         f_out.write(file_content)
         f.close()
         f_out.close()
