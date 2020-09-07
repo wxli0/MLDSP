@@ -14,11 +14,12 @@ from bs4 import BeautifulSoup
 import urllib.request
 import json
 import numpy as np
+import platform
 
 # argv[1]: id
 # argv[2]: outdir
 # argv[3]: cluster
-# e.g. python3 select_one_file.py order_const_factor_multifrag_5
+# e.g. python3 select_one_file.py RS_GCF_000520495.1.fasta class_const_factor_multifrag_1 c__Halobacteria 
 
 input_file = sys.argv[1] # id
 outdir = sys.argv[2] # outdir
