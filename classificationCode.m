@@ -57,7 +57,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             if plabel1(k) ~= alabelsArray(k)
                 fprintf("predicted is: %d, ref is %d \n", plabel1(k), alabelsArray(k))
                 fprintf("fileId is:")
-                disp(AcNum(k))
+                disp(AcNum(testInd(k)))
             end
         end
 
