@@ -76,7 +76,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                 fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
                 max_len = 0
                 max_seq = ''
-                max_name = id+'.fasta'
+                max_name = id
                 ######## tmp fix for now ############
                 for fasta in fasta_sequences:
                     _, sequence = fasta.id, str(fasta.seq)
