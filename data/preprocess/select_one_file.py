@@ -21,9 +21,10 @@ import platform
 # argv[3]: cluster
 # e.g. python3 select_one_file.py RS_GCF_000520495.1.fasta class_const_factor_multifrag_1 c__Halobacteria 
 
-outdir = sys.argv[1] # outdir
-cluster_name = sys.argv[2] # cluster
-genome_id = sys.argv[3] # genome_id
+cmd_arg = sys.argv[1].split('/')
+outdir = cmd_arg[0] # outdir
+cluster_name = cmd_arg[1] # cluster
+genome_id = cmd_arg[2] # genome_id
 
 
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
