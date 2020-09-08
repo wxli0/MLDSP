@@ -21,9 +21,10 @@ import platform
 # argv[3]: cluster
 # e.g. python3 select_one_file.py RS_GCF_000520495.1.fasta class_const_factor_multifrag_1 c__Halobacteria 
 
-genome_id = sys.argv[1] # genome_id
-outdir = sys.argv[2] # outdir
-cluster_name = sys.argv[3] # cluster
+outdir = sys.argv[1] # outdir
+cluster_name = sys.argv[2] # cluster
+genome_id = sys.argv[3] # genome_id
+
 
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
