@@ -44,8 +44,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat1{i} = confusionmat(alabels(testInd),plabel1,'Order',ord);
         printMisclassifiedEntriesCM(cMat1{i})
 
-        % fmt=['testInd =' repmat(' %1.0f',1,numel(testInd)) '\n'];
-        % fprintf(fmt,testInd)
+        fmt=['testInd =' repmat(' %1.0f',1,numel(testInd)) '\n'];
+        fprintf(fmt,testInd)
         % disp(cMat1{i})
         % fmt=['plabel1 =' repmat(' %1.0f',1,numel(plabel1)) '\n'];
         % fprintf(fmt, plabel1)

@@ -85,7 +85,7 @@ def select_one_file(genome_id, cluster_name, const_len=100000, frags_num=3):
             print("INFO: "+fna_path+" is removed")
         else:
             print("before download_const_genome")
-            download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path)
+            download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter=True)
 
     except Exception as e:
         print("ERROR:", "an error has occurred")

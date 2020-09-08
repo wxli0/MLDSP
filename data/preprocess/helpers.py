@@ -139,7 +139,7 @@ def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num
     os.remove(fna_path)
 
 
-def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path):
+def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter = False):
     gap_num = frags_num-1
     gap_remaining_len = max_len - frags_num*const_len
     gap_lens = []
@@ -152,7 +152,10 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     random_start = random.randint(0, seq_remaining_len)
     print("max_name is:", max_name)
 
-    cur_fna_path = cluster_dir_full+"/"+max_name+"_alter"+".fasta"
+    cur_fna_path = cluster_dir_full+"/"+max_name+".fasta"
+    if alter:
+        cur_fna_path = cluster_dir_full+"/"+max_name+"_alter"+".fasta"
+
     for i in range(frags_num):
         cur_seq = prune_seq(max_seq, const_len, random_start)
         append_write = 'a'
