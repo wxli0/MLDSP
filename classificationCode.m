@@ -10,8 +10,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     % Western University, Canada     %
     % email: grandha8@uwo.ca         %
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    seed = 98;
-    rng(seed);
+    % seed = 98;
+    % rng(seed);
     cv = cvpartition(totalSeq,'kfold',folds);
     cMat1=cell(1,folds);
     cMat2=cell(1,folds);
