@@ -93,7 +93,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                     if sequence is None:
                         continue
                     max_len += len(sequence_real)
-                    max_seq += ('N'+ sequence)
+                    max_seq += ('O'+ sequence)
                 if not use_const_len: # use variable length in [lower, upper]
                     if max_len < lower:
                         os.remove(fna_path)
