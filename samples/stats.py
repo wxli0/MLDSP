@@ -18,6 +18,6 @@ for fasta in fasta_sequences:
     print("C count is:", C_count)
     print("G count is:", G_count)
     print("O count is:", O_count)
-    print(re.sub('A|C|T|G', '', sequence)
+    print(re.sub('A|C|T|G', '', sequence))
     invalid_count = len(sequence)-(A_count+C_count+T_count+G_count)
     print("invalid_count is:", invalid_count)  
