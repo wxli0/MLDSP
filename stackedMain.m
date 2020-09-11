@@ -30,7 +30,6 @@ fprintf('Reading sequences .... \n');%load('Bac2500seq.mat');
 %otherwise reduce the size of larger clusters by the assigned value
 maxClusSize = 50000;
 [acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize);
-%[allCGR,ptsNw] = redefineClus(numberOfClusters, pointsPerCluster, Seq, Fnm, kVal, maxSeqLen);
 AcNmb = Fnm;
 totalSeq = length(Seq);
 allCGR = cell(1,totalSeq);
@@ -76,7 +75,6 @@ for i=1:numberOfClusters
     end
 end
 ATestlg = [disMat a];
-% rng(15,'twister');
 
 alabels = a;
 fprintf('Performing classification .... \n');
