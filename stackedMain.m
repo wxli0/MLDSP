@@ -1,14 +1,4 @@
-% ML-DSP
-% the main program that user needs to run for the results.
-% default dataSet is Primates
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Author: Gurjit Singh Randhawa  %
-% Department of Computer Science,%
-% Western University, Canada     %
-% email: grandha8@uwo.ca         %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%clear workspace
+%clear workspace, config
 close all;
 clear all;
 clc ;
@@ -19,19 +9,16 @@ if isunix & ismac
 end
 dataSetPath = strcat(basePath, dataSet)
 kVal = 9; % used only for CGR-based representations(if methodNum=1,15,16,17)
-
 selectedFolder = dataSetPath;
-fprintf('Reading sequences .... \n');%load('Bac2500seq.mat');
 
-%**********cluster size options*****
-%run the following with a limit on the cluster size (randomly select the sequences)
-%maxClusSize = 0 limit all cluster sizes by the size of smallest cluster;
-%(removing smaller sequences may change the cluster size later)
-%otherwise reduce the size of larger clusters by the assigned value
-maxClusSize = 50000;
+% read sequences
+fprintf('Reading sequences .... \n');
+maxClusSize = 50000; %  0 if limit all cluster sizes by the size of smallest cluster;
 [acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize);
 AcNmb = Fnm;
 totalSeq = length(Seq);
+
+% construct cgr
 allCGR = cell(1,totalSeq);
 for i=1:totalSeq
     ss = Seq{i};
@@ -55,7 +42,7 @@ for i=1:totalSeq
     lg{i} = abs(f{i});
 end
 
-%pointsPerCluster=ptsNw;
+% compute distance matrix
 fprintf('Computing Distance matrix .... \n');
 lgl = cell(1,totalSeq);
 parfor i=1:totalSeq
@@ -66,6 +53,7 @@ fm=cell2mat(lgl(:));
 disMat = f_dis(fm,'cor',0,1);
 [Y,eigvals] = cmdscale(disMat,3);
 
+% create labels
 clear a;
 clear s;
 a=[];
@@ -74,10 +62,10 @@ for i=1:numberOfClusters
         a=[a; i];
     end
 end
-ATestlg = [disMat a];
 
-alabels = a;
+% perform classification
 fprintf('Performing classification .... \n');
+alabels = a;
 folds=10;
 if (totalSeq<folds)
     folds = totalSeq;
