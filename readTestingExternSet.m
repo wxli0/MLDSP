@@ -25,12 +25,16 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
         SeqT = cell(1,pts);
         AcNmbT = cell(1,pts);
         FNmT = cell(1,pts);
-        parfor j=1:pts
+        for j=1:pts
             sbName = fileNames{j};
             [Header, Sequence] = fastaread(sbName);    
+            if ischar(Sequence)
+                Sequence = {Sequence};
+                Header = {Header};
+            end
             SeqT{j} = Sequence;
             AcNmbT{j} = Header; 
-            FNmT{j} = sbName(1:length(sbName)-6);
+            FNmT{j} = sbName;
         end
     else
         fprintf("ERROR should not enter here")

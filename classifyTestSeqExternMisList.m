@@ -9,7 +9,17 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         
         if(numMethod==1 || numMethod>=15)             
             if(numMethod == 1)
-                nSeq{r} = cgr(Sq,'ACGT',kVal);
+                tCGR=zeros(2^kVal);
+                for j=1:length(Sq)
+                    sq = Sq{j};
+                    sqSeg = regexp(sq, '[^ATCG]', 'split');
+                    for m=1:length(sqSeg)
+                        seg = sqSeg{m};
+                        tCGRNw=cgr(seg,'ACGT',kVal);
+                        tCGR=tCGR+tCGRNw;
+                    end
+                end 
+                nSeq{r} = tCGR;
                 lgN = abs(fft(nSeq{r}));
                 lgNew{r} = reshape(lgN,1,[]); 
             elseif(numMethod==15) 
