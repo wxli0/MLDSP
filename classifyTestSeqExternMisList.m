@@ -4,7 +4,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     fVec = cell(1,numTestSeq);
     lgNew = cell(1,numTestSeq);
     totalSeq = length(disMat);
-    parfor r=1:numTestSeq
+    for r=1:numTestSeq
         Sq = upper(SeqTest{r});
         
         if(numMethod==1 || numMethod>=15)             
@@ -172,9 +172,11 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     mList5=cell(2,numTestSeq);
     mList6=cell(2,numTestSeq);        
     pMat = zeros(6,length(clusterNames));
+    fprintf("numTestSeq is: %d\n", numTestSeq)
     for s=1:numTestSeq
         testV = testVV(s,1:totalSeq);%testV = fVec{s};
         clabel = predict(cModel1,testV);
+        disp(clabel)
         pMat(1,clabel)= pMat(1,clabel)+1;
         clabe2 = predict(cModel2,testV);
         pMat(2,clabe2)= pMat(2,clabe2)+1;

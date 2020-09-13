@@ -3,11 +3,14 @@ close all;
 clear all;
 clc ;
 dataSet = 'Primates'
+testSet = 'Haplorrhini'
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
     basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
 end
+methodNum = 1
 dataSetPath = strcat(basePath, dataSet)
+testSetPath = strcat(basePath, testSet)
 kVal = 9; % used only for CGR-based representations(if methodNum=1,15,16,17)
 selectedFolder = dataSetPath;
 
@@ -17,6 +20,7 @@ maxClusSize = 50000; %  0 if limit all cluster sizes by the size of smallest clu
 [acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize);
 AcNmb = Fnm;
 totalSeq = length(Seq);
+[maxLen, minLen, meanLen, medLen] = lengthCalc(Seq);
 
 % construct cgr
 allCGR = cell(1,totalSeq);
@@ -70,11 +74,31 @@ folds=10;
 if (totalSeq<folds)
     folds = totalSeq;
 end
-[accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb);
-acc = [accuracy avg_accuracy];
-s.ClassifierModel=cellstr(clNames.');
-s.Accuracy=cell2mat(acc).';
-ClassificationAccuracyScores = struct2table(s);
-disp(ClassificationAccuracyScores);
+if (strcmp(testSet, ''))
+    [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb);
+    acc = [accuracy avg_accuracy];
+    s.ClassifierModel=cellstr(clNames.');
+    s.Accuracy=cell2mat(acc).';
+    ClassificationAccuracyScores = struct2table(s);
+    disp(ClassificationAccuracyScores);
+end
+
+if (~strcmp(testSet,''))
+    minSeqLen = 0
+    maxSeqLen = 0
+    seqToTest = 0
+    [tab,mList1,mList2,mList3,mList4,mList5,mList6]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest);
+    tabc=table2cell(tab);
+    tabc=[tab.Properties.VariableNames;tabc];
+    tabc = string(tabc);
+    writematrix(tabc,'testingMatrix4.xlsx');
+    writematrix(string(mList1.'),'testingMatrix4.xlsx','Sheet',2);  
+    writematrix(string(mList2.'),'testingMatrix4.xlsx','Sheet',3);  
+    writematrix(string(mList3.'),'testingMatrix4.xlsx','Sheet',4);  
+    writematrix(string(mList4.'),'testingMatrix4.xlsx','Sheet',5);  
+    writematrix(string(mList5.'),'testingMatrix4.xlsx','Sheet',6); 
+    writematrix(string(mList6.'),'testingMatrix4.xlsx','Sheet',7);  
+end
+
 
 fprintf('Process completed \n')

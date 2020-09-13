@@ -9,9 +9,16 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     path = pwd;
     cd(dataSet);
-    allFiles = [dir('**/*.fasta');dir('**/*.fna');];%dir ('**/*.fasta');
+    fprintf("dataSet is:")
+    disp(dataSet)
+    allFiles = [dir('*.fasta');dir('*.fna');dir('*.txt');];
+    allFiles=allFiles(~startsWith({allFiles.name},{'.'}));
+    fprintf("allFiles are:\n")
+    disp(allFiles)
     allInfo = struct2cell(allFiles);
     fileNames = allInfo(1,:);
+    fprintf("fileNames are:")
+    disp(fileNames)
     pts = length(allFiles);
      
     if(maxClusSize==0 || pts<=maxClusSize)        
@@ -21,12 +28,12 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
         parfor j=1:pts
             sbName = fileNames{j};
             [Header, Sequence] = fastaread(sbName);    
-            Sequence = regexprep(Sequence,'[^A,^C, ^G, ^T]','','ignorecase');
             SeqT{j} = Sequence;
             AcNmbT{j} = Header; 
             FNmT{j} = sbName(1:length(sbName)-6);
         end
     else
+        fprintf("ERROR should not enter here")
         rng(15,'twister');
         p = randperm(pts,maxClusSize);
         SeqT = cell(1,maxClusSize);
@@ -37,7 +44,7 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
             [Header, Sequence] = fastaread(sbName);    
             Sequence = regexprep(Sequence,'[^A,^C, ^G, ^T]','','ignorecase');
             SeqT{j} = Sequence;
-            AcNmbT{j} = Header; 
+            AcNmbT{j} = sbName; 
             FNmT{j} = sbName(1:length(sbName)-6); 
         end
     end
@@ -46,6 +53,8 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     FNm={};
     id=1;
     for i=1:length(SeqT)
+        fprintf("SeqT is:")
+        disp(SeqT)
         lnt = length(SeqT{i});
         if(lnt>=minSeqLen)
             if(lnt<maxSeqLen || maxSeqLen==0)
