@@ -92,12 +92,12 @@ if (~strcmp(testSet,''))
     tabc=[tab.Properties.VariableNames;tabc];
     tabc = string(tabc);
     writematrix(tabc,'testingMatrix4.xlsx');
-    writematrix(string(mList1.'),'testingMatrix4.xlsx','Sheet',2);  
-    writematrix(string(mList2.'),'testingMatrix4.xlsx','Sheet',3);  
-    writematrix(string(mList3.'),'testingMatrix4.xlsx','Sheet',4);  
-    writematrix(string(mList4.'),'testingMatrix4.xlsx','Sheet',5);  
-    writematrix(string(mList5.'),'testingMatrix4.xlsx','Sheet',6); 
-    writematrix(string(mList6.'),'testingMatrix4.xlsx','Sheet',7);  
+    writematrix(string(mList1(1)),'testingMatrix4.xlsx','Sheet',2);  
+    writematrix(string(mList2(1)),'testingMatrix4.xlsx','Sheet',3);  
+    writematrix(string(mList3(1)),'testingMatrix4.xlsx','Sheet',4);  
+    writematrix(string(mList4(1)),'testingMatrix4.xlsx','Sheet',5);  
+    writematrix(string(mList5(1)),'testingMatrix4.xlsx','Sheet',6); 
+    writematrix(string(mList6(1)),'testingMatrix4.xlsx','Sheet',7);  
 end
 
 

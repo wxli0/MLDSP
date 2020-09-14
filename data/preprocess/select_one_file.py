@@ -33,7 +33,7 @@ if platform.platform()[:5] == 'Linux':
 outdir_full = base_path+"samples/"+outdir
 
 def select_one_file(genome_id, cluster_name, const_len=100000, frags_num=3):
-    cluster_dir_full = outdir_full+'/'+cluster_name
+    cluster_dir_full = outdir_full
    
     block1 = genome_id[3:6]
     block2= genome_id[7:10]
