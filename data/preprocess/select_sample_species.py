@@ -43,9 +43,13 @@ cluster_tsv = cluster_tsv[['GTDB_species','Clustered_genomes']].set_index('GTDB_
 for cluster_name in cluster_names:
     all_genome_ids = cluster_tsv.loc[cluster_name]['Clustered_genomes'].split(',')
     all_genome_size = len(all_genome_ids)
-    if all_genome_size < sample_size:
-        sample_size = all_genome_size
-    selected_genomes = random.sample(all_genome_ids, sample_size)
+    real_sample_size = sample_size
+    if use_factor:
+        real_sample_size = int(all_genome_size*sample_factor)
+    elif all_genome_size < real_sample_size:
+        real_sample_size = all_genome_size
+
+    selected_genomes = random.sample(all_genome_ids, real_sample_size)
 
     outdir_full = base_path+"samples/"+outdir
     cluster_dir_full = outdir_full+'/'+cluster_name
