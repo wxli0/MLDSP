@@ -32,7 +32,6 @@ else:
 if id is not None:
     outdir +="_"+id
 
-random_seq = True
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP-desktop/"

@@ -47,8 +47,6 @@ def prune_seq(entire_seq, seq_len, start_point):
 
 
 def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num):
-    print("const_len is:", const_len)
-    print("frags_num is:", frags_num)
     for id in selected_genome_ids:
             block1 = id[3:6]
             block2= id[7:10]
@@ -61,6 +59,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                 block5 = partial_url_dirs[1]
                 last_index = block5.split("/", 9)[-1][:-1]
                 download_url = block5+last_index+'_genomic.fna.gz'
+                print("download_url is:", download_url)
                 dest = cluster_dir_full+'/'+last_index+'_genomic.fna.gz'
                 urllib.request.urlretrieve(download_url, dest)
                 f = gzip.open(dest, 'r')
