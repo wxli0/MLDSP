@@ -12,8 +12,8 @@ for sub_dir in os.listdir(dir):
     file_names = os.listdir(dir+"/"+sub_dir)
     files_num = len(file_names)
     target_num = files_num-final_num
-    if target_num <= 0:
-        os.rmdir(dir)
+    if target_num < 0:
+        os.rmdir(dir+"/"+sub_dir)
         continue
     selected_files = np.random.choice(file_names, target_num, replace=False)
     for file in selected_files:
