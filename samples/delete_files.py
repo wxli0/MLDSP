@@ -4,6 +4,7 @@
 import numpy as np
 import sys
 import os
+import shutil
 
 dir = sys.argv[1]
 final_num = int(sys.argv[2])
@@ -13,7 +14,7 @@ for sub_dir in os.listdir(dir):
     files_num = len(file_names)
     target_num = files_num-final_num
     if target_num < 0:
-        os.rmdir(dir+"/"+sub_dir)
+        shutil.rmtree(dir+"/"+sub_dir, ignore_errors=True)
         continue
     selected_files = np.random.choice(file_names, target_num, replace=False)
     for file in selected_files:
