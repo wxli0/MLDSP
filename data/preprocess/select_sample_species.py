@@ -44,7 +44,7 @@ for cluster_name in cluster_names:
     all_genome_ids = cluster_tsv.loc[cluster_name]['Clustered_genomes'].split(',')
     all_genome_size = len(all_genome_ids)
     if all_genome_size < sample_size:
-        continue
+        sample_size = all_genome_size
     selected_genomes = random.sample(all_genome_ids, sample_size)
 
     outdir_full = base_path+"samples/"+outdir
