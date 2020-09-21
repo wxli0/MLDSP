@@ -89,4 +89,4 @@ for cluster_name in cluster_names:
         os.makedirs(cluster_dir_full)
     print(selected_genomes)
     print("before download_genomes")
-    download_genomes(selected_genomes, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num)
+    download_genomes(selected_genomes, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter)
