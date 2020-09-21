@@ -46,7 +46,7 @@ def prune_seq(entire_seq, seq_len, start_point):
     return entire_seq[start_point:(i+1)]
 
 
-def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num):
+def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter):
     for id in selected_genome_ids:
             block1 = id[3:6]
             block2= id[7:10]
@@ -110,7 +110,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                         continue
                     else:
                         print("before download_const_genome")
-                        download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path)
+                        download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter)
 
             except Exception as e:
                 print("ERROR:", "an error has occurred")
@@ -184,6 +184,7 @@ def parse_json_input(input_file_name):
     use_const_len = json_input['use_const_len']
     const_len = None
     id = None
+    alter = False
 
     if json_input['use_factor']:
         sample_factor = json_input['sample_factor']
@@ -204,4 +205,6 @@ def parse_json_input(input_file_name):
         sample_factor = json_input['sample_factor']
     if 'id' in json_input:
         id = json_input['id']
-    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, id
+    if 'alter' in json_input:
+        alter = json_input['alter']
+    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id
