@@ -61,6 +61,7 @@ else:
     cluster_tsv[next_tax_name] = cluster_tsv['GTDB_taxonomy'].apply(get_target_next_col)
 
 cluster_tsv = cluster_tsv.drop(['GTDB_taxonomy'], axis=1)
+print(cluster_tsv)
 
 for cluster_name in cluster_names:
     cluster_tsv_cur = cluster_tsv.loc[cluster_tsv[tax_name] == cluster_name]
