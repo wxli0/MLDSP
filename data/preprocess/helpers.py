@@ -152,8 +152,8 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     print("max_name is:", max_name)
 
     cur_fna_path = cluster_dir_full+"/"+max_name+".fasta"
-    if alter:
-        cur_fna_path = cluster_dir_full+"/"+max_name+"_alter"+".fasta"
+    if alter is not None:
+        cur_fna_path = cluster_dir_full+"/"+max_name+"_"+alter+".fasta"
 
     for i in range(frags_num):
         cur_seq = prune_seq(max_seq, const_len, random_start)
@@ -184,7 +184,7 @@ def parse_json_input(input_file_name):
     use_const_len = json_input['use_const_len']
     const_len = None
     id = None
-    alter = False
+    alter = None
 
     if json_input['use_factor']:
         sample_factor = json_input['sample_factor']
