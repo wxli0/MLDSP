@@ -29,6 +29,8 @@ if frags_num >= 2:
 else:
     outdir += "_singlefrag"
 if id is not None:
+    print(outdir)
+    print(id)
     outdir +="_"+id
 
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
