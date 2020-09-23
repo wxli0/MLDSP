@@ -1,0 +1,95 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+dataSet =
+
+    'genus_const_factor_multifrag_2'
+
+
+testSet =
+
+  0x0 empty char array
+
+
+methodNum =
+
+     1
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP-desktop/samples/genus_const_factor_multifrag_2'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP-desktop/samples/'
+
+Reading sequences .... 
+display cluster name
+g__Clavibacter
+display cluster name
+g__Cryobacterium
+display cluster name
+g__Curtobacterium
+display cluster name
+g__Leifsonia
+display cluster name
+g__Leucobacter
+display cluster name
+g__Microbacterium
+display cluster name
+g__Rathayibacter
+display cluster name
+g__Schumannella
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Computing Distance matrix .... 
+Performing classification .... 
+testInd = 8 17 22 33 44 55 65 68 78 84 106 126 132 136 140 141 144 145 160 176 179 184 220 226 229 241 244 295 299 303
+(1,6):1
+testInd = 6 10 16 19 25 30 31 48 49 57 66 74 92 100 112 127 131 134 139 171 185 196 204 215 227 238 250 257 260 284 298
+predicted is: 6, ref is 1 
+fileId is:    '/home/w328li/MLDSP-desktop/samples/genus_const_factor_multifrag_2/g__Clavibacter/RS_GCF_003067705.1_alter.fasta'
+
+testInd = 7 9 14 15 23 77 82 83 88 89 96 98 113 117 119 120 169 191 200 207 209 224 234 240 256 265 274 275 281 297 300
+testInd = 1 11 37 56 71 79 93 101 111 130 143 148 155 157 159 164 166 182 187 202 225 232 246 248 249 253 259 266 270 276 292
+testInd = 3 4 5 13 18 50 60 62 72 73 80 91 125 133 146 147 163 165 167 173 214 217 233 235 236 242 243 277 278 285 289
+testInd = 12 26 27 29 35 45 47 51 61 67 110 124 138 150 153 154 195 205 210 219 245 251 258 267 272 273 280 282 283 286
+(3,6):1
+testInd = 20 28 34 38 39 40 43 52 53 58 63 87 95 99 109 151 152 156 186 188 193 221 231 254 255 262 271 287 294 302
+predicted is: 6, ref is 3 
+fileId is:    '/home/w328li/MLDSP-desktop/samples/genus_const_factor_multifrag_2/g__Curtobacterium/RS_GCF_001571045.1_alter.fasta'
+
+testInd = 24 64 69 76 90 94 97 105 107 115 128 135 137 149 161 168 172 177 190 199 206 212 223 230 263 264 268 288 296 301
+(5,4):2
+testInd = 32 36 42 54 81 102 103 104 108 121 122 123 142 162 170 175 180 181 194 197 201 208 218 222 228 261 269 279 291 304
+predicted is: 4, ref is 5 
+fileId is:    '/home/w328li/MLDSP-desktop/samples/genus_const_factor_multifrag_2/g__Leucobacter/RS_GCF_003858425.1_alter.fasta'
+
+predicted is: 4, ref is 5 
+fileId is:    '/home/w328li/MLDSP-desktop/samples/genus_const_factor_multifrag_2/g__Leucobacter/RS_GCF_003859945.1_alter.fasta'
+
+testInd = 2 21 41 46 59 70 75 85 86 114 116 118 129 158 174 178 183 189 192 198 203 211 213 216 237 239 247 252 290 293
+        ClassifierModel         Accuracy
+    ________________________    ________
+
+    {'LinearDiscriminant'  }      98.7  
+    {'LinearSVM'           }      93.1  
+    {'QuadraticSVM'        }      95.4  
+    {'FineKNN'             }      89.8  
+    {'SubspaceDiscriminant'}      98.7  
+    {'SubspaceKNN'         }      89.1  
+    {'AverageAccuracy'     }      94.1  
+
+Process completed 
+[?1l>
