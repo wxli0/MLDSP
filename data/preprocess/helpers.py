@@ -161,9 +161,13 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
         if i == 0:
             append_write = 'w'
         print("i is:", i)
+        print("one")
         out_file= open(cur_fna_path, append_write)
+        print("two")
         out_file.write(">"+max_name+str(i)+"\n")
+        print("three")
         out_file.write(cur_seq+"\n")
+        print("four")
         out_file.close()
         if not i == (frags_num-1):
             random_start += gap_lens[i]
