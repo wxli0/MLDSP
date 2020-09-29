@@ -156,7 +156,7 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
         cur_fna_path = cluster_dir_full+"/"+max_name+"_"+alter+".fasta"
 
     for i in range(frags_num):
-        cur_seq = prune_seq(max_seq, const_len, random_start)
+        cur_seq, random_start = prune_seq(max_seq, const_len, random_start)
         append_write = 'a'
         if i == 0:
             append_write = 'w'
@@ -166,11 +166,12 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
         print("two")
         out_file.write(">"+max_name+str(i)+"\n")
         print("three")
+        print(cur_seq)
         out_file.write(cur_seq+"\n")
         print("four")
         out_file.close()
-        if not i == (frags_num-1):
-            random_start += gap_lens[i]
+        # if not i == (frags_num-1):
+        #     random_start += gap_lens[i]
     print('before remove')
     os.remove(fna_path)
     print("after remove")
