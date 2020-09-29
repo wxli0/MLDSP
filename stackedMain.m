@@ -2,8 +2,8 @@
 close all;
 clear all;
 clc ;
-dataSet = 'Primates'
-testSet = 'Haplorrhini'
+dataSet = 'order_const_factor_multifrag_15'
+testSet = ''
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
     basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
@@ -11,7 +11,7 @@ end
 methodNum = 1
 dataSetPath = strcat(basePath, dataSet)
 testSetPath = strcat(basePath, testSet)
-kVal = 9; % used only for CGR-based representations(if methodNum=1,15,16,17)
+kVal = 7; % used only for CGR-based representations(if methodNum=1,15,16,17)
 selectedFolder = dataSetPath;
 
 % read sequences
