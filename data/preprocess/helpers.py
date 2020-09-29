@@ -43,7 +43,7 @@ def prune_seq(entire_seq, seq_len, start_point):
             count += 1
         if count == seq_len:
             break
-    return entire_seq[start_point:(i+1)]
+    return entire_seq[start_point:(i+1)], i+1
 
 
 def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter):
@@ -162,7 +162,6 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
             append_write = 'w'
         print("i is:", i)
         out_file= open(cur_fna_path, append_write)
-        print("opened")
         out_file.write(">"+max_name+str(i)+"\n")
         out_file.write(cur_seq+"\n")
         out_file.close()
@@ -208,3 +207,7 @@ def parse_json_input(input_file_name):
     if 'alter' in json_input:
         alter = json_input['alter']
     return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id
+
+def parse_json_test_input(input_file_name):
+    json_input = json.load(open(input_file_name))
+    return json_input['taxon'], json_input['frag_num'], json_input['const_len'], json_input['outdir']

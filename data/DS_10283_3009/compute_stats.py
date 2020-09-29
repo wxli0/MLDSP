@@ -17,22 +17,22 @@ import pandas as pd
 
 
 # compute taxon distribution in 913 MAGS
-# xlsx = pd.read_excel("41467_2018_3317_MOESM4_ESM.xlsx")
-# est_taxons = xlsx['Estimated taxon']
-# print(est_taxons)
-# taxon_dict = {}
-# for t in est_taxons:
-#     if t not in taxon_dict:
-#         taxon_dict[t] = 1
-#     else:
-#         taxon_dict[t] += 1
-# print(taxon_dict)
+xlsx = pd.read_excel("41467_2018_3317_MOESM4_ESM.xlsx")
+est_taxons = xlsx['Estimated taxon']
+print(est_taxons)
+taxon_dict = {}
+for t in est_taxons:
+    if t not in taxon_dict:
+        taxon_dict[t] = 1
+    else:
+        taxon_dict[t] += 1
+print(taxon_dict)
 
 # get file names of a taxon
 xlsx = pd.read_excel("41467_2018_3317_MOESM4_ESM.xlsx")
 file_names = []
 for index, row in xlsx.iterrows():
-    if row['Estimated taxon'] == 'g__Olsenella':
+    if row['Estimated taxon'] == 'g__Acidaminococcus':
         file_names.append(row['RUG'])
     
 print(file_names)
