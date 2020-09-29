@@ -166,7 +166,7 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
         print("two")
         out_file.write(">"+max_name+str(i)+"\n")
         print("three")
-        print(cur_seq)
+        # print(cur_seq)
         out_file.write(cur_seq+"\n")
         print("four")
         out_file.close()
