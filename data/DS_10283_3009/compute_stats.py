@@ -28,21 +28,21 @@ for t in est_taxons:
         taxon_dict[t] += 1
 print(taxon_dict)
 
-# get file names of a taxon
-xlsx = pd.read_excel("41467_2018_3317_MOESM4_ESM.xlsx")
-file_names = []
-for index, row in xlsx.iterrows():
-    if row['Estimated taxon'] == 'g__Acidaminococcus':
-        file_names.append(row['RUG'])
+# # get file names of a taxon
+# xlsx = pd.read_excel("41467_2018_3317_MOESM4_ESM.xlsx")
+# file_names = []
+# for index, row in xlsx.iterrows():
+#     if row['Estimated taxon'] == 'g__Acidaminococcus':
+#         file_names.append(row['RUG'])
     
-print(file_names)
+# print(file_names)
 
-for file in file_names:
-    print(file)
-    fasta_sequences = SeqIO.parse(open('genomes/'+file+'.fa'),'fasta') 
-    max = 0
-    for fasta in fasta_sequences:
-        _, sequence = fasta.id, str(fasta.seq)
-        if len(sequence) > max:
-            max = len(sequence)
-    print(max)
+# for file in file_names:
+#     print(file)
+#     fasta_sequences = SeqIO.parse(open('genomes/'+file+'.fa'),'fasta') 
+#     max = 0
+#     for fasta in fasta_sequences:
+#         _, sequence = fasta.id, str(fasta.seq)
+#         if len(sequence) > max:
+#             max = len(sequence)
+#     print(max)
