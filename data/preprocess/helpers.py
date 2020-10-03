@@ -208,4 +208,4 @@ def parse_json_input(input_file_name):
 
 def parse_json_test_input(input_file_name):
     json_input = json.load(open(input_file_name))
-    return json_input['taxon'], json_input['frag_num'], json_input['const_len'], json_input['outdir']
+    return json_input['taxon_place'], json_input['taxon'], json_input['frag_num'], json_input['const_len'], json_input['outdir']
