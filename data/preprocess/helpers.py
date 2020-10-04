@@ -182,6 +182,7 @@ def parse_json_input(input_file_name):
     const_len = None
     id = None
     alter = None
+    outdir = None
 
     if json_input['use_factor']:
         sample_factor = json_input['sample_factor']
@@ -204,7 +205,9 @@ def parse_json_input(input_file_name):
         id = json_input['id']
     if 'alter' in json_input:
         alter = json_input['alter']
-    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id
+    if 'outdir' in json_input:
+        outdir = json_input['outdir']
+    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id, outdir
 
 def parse_json_test_input(input_file_name):
     json_input = json.load(open(input_file_name))
