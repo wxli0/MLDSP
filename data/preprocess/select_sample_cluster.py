@@ -16,8 +16,8 @@ import json
 sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num, alter, id, outdir = parse_json_input(sys.argv[1])
 
 print(parse_json_input(sys.argv[1]))
-outdir = tax_name
 if not outdir:
+    outdir = tax_name
     if use_const_len:
         outdir += "_const"
     else:
