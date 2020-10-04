@@ -152,9 +152,9 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     print("max_name is:", max_name)
 
     for cur_rep in range(rep_time):
-        cur_fna_path = cluster_dir_full+"/"+max_name+"_"+cur_rep+".fasta"
+        cur_fna_path = cluster_dir_full+"/"+max_name+"_"+str(cur_rep)+".fasta"
         if alter is not None:
-            cur_fna_path = cluster_dir_full+"/"+max_name+"_"+cur_rep+"_"+alter+".fasta"
+            cur_fna_path = cluster_dir_full+"/"+max_name+"_"+str(cur_rep)+"_"+alter+".fasta"
 
         for i in range(frags_num):
             cur_seq, random_start = prune_seq(max_seq, const_len, random_start)
