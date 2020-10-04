@@ -210,7 +210,7 @@ def parse_json_input(input_file_name):
     if 'outdir' in json_input:
         outdir = json_input['outdir']
     if 'rep_time' in json_input:
-        outdir = json_input['rep_time']
+        rep_time = json_input['rep_time']
     return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id, outdir, rep_time
 
 def parse_json_test_input(input_file_name):
