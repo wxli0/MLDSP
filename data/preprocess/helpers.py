@@ -46,7 +46,7 @@ def prune_seq(entire_seq, seq_len, start_point):
     return entire_seq[start_point:(i+1)], i+1
 
 
-def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter):
+def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter, rep_time):
     for id in selected_genome_ids:
             block1 = id[3:6]
             block2= id[7:10]
@@ -110,7 +110,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                         continue
                     else:
                         print("before download_const_genome")
-                        download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter)
+                        download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter, rep_time)
 
             except Exception as e:
                 print("ERROR:", "an error has occurred")
@@ -138,7 +138,7 @@ def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num
     os.remove(fna_path)
 
 
-def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter = False):
+def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter, rep_time):
     gap_num = frags_num-1
     gap_remaining_len = max_len - frags_num*const_len
     gap_lens = []
@@ -151,23 +151,24 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     random_start = random.randint(0, seq_remaining_len)
     print("max_name is:", max_name)
 
-    cur_fna_path = cluster_dir_full+"/"+max_name+".fasta"
-    if alter is not None:
-        cur_fna_path = cluster_dir_full+"/"+max_name+"_"+alter+".fasta"
+    for cur_rep in range(rep_time):
+        cur_fna_path = cluster_dir_full+"/"+max_name+"_"+cur_rep+".fasta"
+        if alter is not None:
+            cur_fna_path = cluster_dir_full+"/"+max_name+"_"+cur_rep+"_"+alter+".fasta"
 
-    for i in range(frags_num):
-        cur_seq, random_start = prune_seq(max_seq, const_len, random_start)
-        append_write = 'a'
-        if i == 0:
-            append_write = 'w'
-        print("i is:", i)
-        out_file= open(cur_fna_path, append_write)
-        out_file.write(">"+max_name+str(i)+"\n")
-        out_file.write(cur_seq+"\n")
-        out_file.close()
-    print('before remove')
-    os.remove(fna_path)
-    print("after remove")
+        for i in range(frags_num):
+            cur_seq, random_start = prune_seq(max_seq, const_len, random_start)
+            append_write = 'a'
+            if i == 0:
+                append_write = 'w'
+            print("i is:", i)
+            out_file= open(cur_fna_path, append_write)
+            out_file.write(">"+max_name+str(i)+"\n")
+            out_file.write(cur_seq+"\n")
+            out_file.close()
+        print('before remove')
+        os.remove(fna_path)
+        print("after remove")
 
 # parse json input
 def parse_json_input(input_file_name):
@@ -183,6 +184,7 @@ def parse_json_input(input_file_name):
     id = None
     alter = None
     outdir = None
+    rep_time = 1
 
     if json_input['use_factor']:
         sample_factor = json_input['sample_factor']
@@ -207,7 +209,9 @@ def parse_json_input(input_file_name):
         alter = json_input['alter']
     if 'outdir' in json_input:
         outdir = json_input['outdir']
-    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id, outdir
+    if 'rep_time' in json_input:
+        outdir = json_input['rep_time']
+    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id, outdir, rep_time
 
 def parse_json_test_input(input_file_name):
     json_input = json.load(open(input_file_name))
