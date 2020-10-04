@@ -166,9 +166,9 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
             out_file.write(">"+max_name+str(i)+"\n")
             out_file.write(cur_seq+"\n")
             out_file.close()
-        print('before remove')
-        os.remove(fna_path)
-        print("after remove")
+    print('before remove')
+    os.remove(fna_path)
+    print("after remove")
 
 # parse json input
 def parse_json_input(input_file_name):
