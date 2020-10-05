@@ -26,4 +26,5 @@ for index, row in results_table.iterrows():
         to_print.append(row['MAG'])
 
 print(to_print)
+print(len(to_print))
 
