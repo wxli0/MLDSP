@@ -2,8 +2,8 @@
 close all;
 clear all;
 clc ;
-dataSet = 'order_const_factor_multifrag_15'
-testSet = ''
+dataSet = 'f__Lachnospiraceae_dataset/p__Firmicutes_A_exclude_f__Lachnospiraceae'
+testSet = 'MAG/f__Lachnospiraceae'
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
     basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
