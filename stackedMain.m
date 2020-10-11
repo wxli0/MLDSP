@@ -101,4 +101,4 @@ if (~strcmp(testSet,''))
 end
 
 
-fprintf('Process completed \n')
+% fprintf('Process completed \n')
