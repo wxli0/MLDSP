@@ -195,6 +195,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         if i == 1:
             fprintf("confusion matrix for LinearDiscriminant is:\n")
             disp(cMatrix)
+        end
         accuracy{i} = round((trace(cMatrix)/totalSeq)*100,1);
     end    
     avg_acc = round(sum([accuracy{:}])/length(accuracy),1);
