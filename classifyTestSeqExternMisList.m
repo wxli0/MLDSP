@@ -197,7 +197,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         pMat(5,clabe5)= pMat(5,clabe5)+1;
         clabe6 = predict(cModel6,testV);
         pMat(6,clabe6)= pMat(6,clabe6)+1;
-        print("%d,%d,%d,%d,%d,%d\n", clabel, clabe2, clabe3, clabe4, clabe4, clabe5, clabe6)
+        fprintf("%d,%d,%d,%d,%d,%d\n", clabel, clabe2, clabe3, clabe4, clabe4, clabe5, clabe6)
         mList1{1,s}=AcNmbTest{s};
         mList2{1,s}=AcNmbTest{s};
         mList3{1,s}=AcNmbTest{s};
