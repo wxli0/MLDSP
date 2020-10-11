@@ -192,7 +192,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         if( sum(cMatrix(:))~=totalSeq)
             totalSeq
         end
-        if i == 1:
+        if (i == 1)
             fprintf("confusion matrix for LinearDiscriminant is:\n")
             disp(cMatrix)
         end
