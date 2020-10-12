@@ -57,7 +57,8 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
             try:
                 partial_url_dirs =  list_fd(partial_url)
                 block5 = partial_url_dirs[1]
-                print(block5)
+                print("partial_url_dirs is:", partial_url_dirs)
+                print("block5 is:", block5)
                 last_index = block5.split("/", 9)[-1][:-1]
                 download_url = block5+last_index+'_genomic.fna.gz'
                 print("download_url is:", download_url)
