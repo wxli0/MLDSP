@@ -55,4 +55,4 @@ for cluster_name in cluster_names:
     cluster_dir_full = outdir_full+'/'+cluster_name
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
-    download_genomes(selected_genomes, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter)
+    download_genomes(selected_genomes, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter, rep_time=1)
