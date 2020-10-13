@@ -1,0 +1,979 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+dataSet =
+
+    'g__RC9/d__Bacteria'
+
+
+testSet =
+
+    'MAG/g__RC9'
+
+
+methodNum =
+
+     1
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP-desktop/samples/g__RC9/d__Bacteria'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP-desktop/samples/MAG/g__RC9'
+
+Reading sequences .... 
+display cluster name
+p__Actinobacteriota
+display cluster name
+p__Bacteroidota
+display cluster name
+p__Chloroflexota
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Computing Distance matrix .... 
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+
+seqToTest =
+
+     0
+
+dataSet is:/home/w328li/MLDSP-desktop/samples/MAG/g__RC9
+allFiles are:
+  52x1 struct array with fields:
+
+    name
+    folder
+    date
+    bytes
+    isdir
+    datenum
+
+fileNames are:  Columns 1 through 11
+
+    'RUG142.fasta'    'RUG173.fasta'    'RUG193.fasta'    'RUG205.fasta'    'RUG250.fasta'    'RUG253.fasta'    'RUG257.fasta'    'RUG331.fasta'    'RUG345.fasta'    'RUG352.fasta'    'RUG386.fasta'
+
+  Columns 12 through 22
+
+    'RUG387.fasta'    'RUG392.fasta'    'RUG395.fasta'    'RUG406.fasta'    'RUG421.fasta'    'RUG436.fasta'    'RUG470.fasta'    'RUG478.fasta'    'RUG481.fasta'    'RUG487.fasta'    'RUG489.fasta'
+
+  Columns 23 through 33
+
+    'RUG510.fasta'    'RUG523.fasta'    'RUG528.fasta'    'RUG544.fasta'    'RUG553.fasta'    'RUG564.fasta'    'RUG568.fasta'    'RUG579.fasta'    'RUG583.fasta'    'RUG590.fasta'    'RUG603.fasta'
+
+  Columns 34 through 44
+
+    'RUG615.fasta'    'RUG619.fasta'    'RUG625.fasta'    'RUG629.fasta'    'RUG634.fasta'    'RUG645.fasta'    'RUG667.fasta'    'RUG679.fasta'    'RUG707.fasta'    'RUG717.fasta'    'RUG720.fasta'
+
+  Columns 45 through 52
+
+    'RUG722.fasta'    'RUG773.fasta'    'RUG784.fasta'    'RUG790.fasta'    'RUG818.fasta'    'RUG826.fasta'    'hRUG873.fasta'    'hRUG909.fasta'
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+SeqT is:  Columns 1 through 14
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 15 through 28
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 29 through 42
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+  Columns 43 through 52
+
+    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}    {1x4 cell}
+
+numTestSeq is: 52
+2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,1,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,2,2,2,2,2,2
+2,[?1l>
