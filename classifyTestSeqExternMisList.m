@@ -209,7 +209,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         mList4{2,s}=clusterNames{clabe4};
         mList5{2,s}=clusterNames{clabe5};
         mList6{2,s}=clusterNames{clabe6};
-        fprintf("%d,%d,%d,%d,%d,%d\n", clabel, clabe2, clabe3, clabe4, clabe4, clabe5, clabe6)
+        fprintf("%d,%d,%d,%d,%d,%d\n", clabel, clabe2, clabe3, clabe4, clabe5, clabe6)
     end     
 end
 
