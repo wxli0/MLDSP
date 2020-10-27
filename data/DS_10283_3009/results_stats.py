@@ -2,6 +2,8 @@ import pandas as pd
 import sys
 import operator
 
+# for GTDB-Tk classification
+
 # one_taxon = sys.argv[1] # e.g. genus
 # taxon_name = sys.argv[2] # e.g. g__Prevotella
 results_table = pd.read_excel("paper_results.xlsx", sheet_name = "Table S5", skiprows = [0,1])
@@ -28,10 +30,10 @@ print(results_table)
 
 # print(to_print)
 # print(len(to_print))
-
-print(results_table['genus'])
+tar_taxon = 'genus'
+print(results_table[tar_taxon])
 dict = {}
-for s in list(results_table['genus']):
+for s in list(results_table[tar_taxon]):
     if s in dict:
         dict[s] += 1
     else:
