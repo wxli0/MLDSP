@@ -90,6 +90,7 @@ for i=1:length(clusterStart)
         pdisMat = disMat(clusterStart{i}:(clusterStart{i}+pointsPerCluster{i}-1), clusterStart{j}:(clusterStart{i}+pointsPerCluster{j}-1));
         pdisMat = pdisMat';
         pdisMat = pdisMat(:)';
+        disp(pdisMat)
         fprintf("%s and %s avg dissimilarity is: %f\n", clusterNames{i}, clusterNames{j}, mean(pdisMat))
     end
 end
