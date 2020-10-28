@@ -2,7 +2,7 @@
 close all;
 clear all;
 clc ;
-dataSet = 'g__C941_ce/o__Bacteroidales_exclude_g__C941'
+dataSet = 'Primates'
 testSet = ''
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
@@ -55,8 +55,41 @@ end
 lg = lgl;
 fm=cell2mat(lgl(:));
 disMat = f_dis(fm,'cor',0,1);
-disp(disMat);
 [Y,eigvals] = cmdscale(disMat,3);
+
+% disp(disMat);
+
+fprintf('diplaying disMat .... \n');
+pdisMat = disMat(1:115,1:115)';
+pdisMat = pdisMat(:)';
+disp(mean(pdisMat));
+
+pdisMat1 = disMat(116:148,1:115)';
+pdisMat1 = pdisMat1(:)';
+disp(mean(pdisMat1));
+
+pdisMat2 = disMat(116:148,116:148)';
+pdisMat2 = pdisMat2(:)';
+disp(mean(pdisMat2));
+
+
+clusterStart = pointsPerCluster;
+for i=1:length(clusterStart)
+    if i==1
+        clusterStart{i} = 1;
+    else
+        clusterStart{i} = clusterStart{i-1}+pointsPerCluster{i-1};
+    end
+end
+
+for i=1:length(clusterStart)
+    for j=i:length(clusterStart)
+        pdisMat = disMat(clusterStart{i}:(clusterStart{i}+pointsPerCluster{i}-1), clusterStart{j}:(clusterStart{i}+pointsPerCluster{j}-1));
+        pdisMat = pdisMat';
+        pdisMat = pdisMat(:)';
+        fprintf("%s and %s avg dissimilarity is: %f\n", clusterNames{i}, clusterNames{j}, mean(pdisMat))
+    end
+end
 
 % %3D  plot
 % fprintf('Generating 3D plot .... \n');
@@ -131,4 +164,4 @@ if (~strcmp(testSet,''))
 end
 
 
-% fprintf('Process completed \n')
+fprintf('Process completed \n')
