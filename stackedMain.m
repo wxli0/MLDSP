@@ -2,8 +2,11 @@
 close all;
 clear all;
 clc ;
-dataSet = 'Primates'
-testSet = ''
+
+dataSet = 'g__C941_ce/o__Bacteroidales_exclude_g__C941_pruned'
+testSet = 'MAG/g__C941'
+% testSet = ''
+
 basePath = '/home/w328li/MLDSP-desktop/samples/';
 if isunix & ismac
     basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
