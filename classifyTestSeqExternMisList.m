@@ -103,6 +103,8 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     sId = totalSeq+1;
     eId = length(disMattt);
     testVV = disMattt(sId:eId,1:totalSeq);
+    fprintf("testVV is:\n");
+    disp(testVV)
     
     cn = unique(alabels);
     %discriminant
