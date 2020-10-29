@@ -187,31 +187,34 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     fprintf("numTestSeq is: %d\n", numTestSeq)
     for s=1:numTestSeq
         testV = testVV(s,1:totalSeq);%testV = fVec{s};
-        clabel = predict(cModel1,testV);
-        pMat(1,clabel)= pMat(1,clabel)+1;
-        clabe2 = predict(cModel2,testV);
-        pMat(2,clabe2)= pMat(2,clabe2)+1;
-        clabe3 = predict(cModel3,testV);
-        pMat(3,clabe3)= pMat(3,clabe3)+1;
-        clabe4 = predict(cModel4,testV);
-        pMat(4,clabe4)= pMat(4,clabe4)+1;
-        clabe5 = predict(cModel5,testV);
-        pMat(5,clabe5)= pMat(5,clabe5)+1;
-        clabe6 = predict(cModel6,testV);
-        pMat(6,clabe6)= pMat(6,clabe6)+1;
+        % clabel1 = predict(cModel1,testV);
+        [clabel1,score,cost] = predict(cModel1, testV)
+        fprintf("score is\n");
+        disp(score);
+        pMat(1,clabel1)= pMat(1,clabel1)+1;
+        clabel2 = predict(cModel2,testV);
+        pMat(2,clabel2)= pMat(2,clabel2)+1;
+        clabel3 = predict(cModel3,testV);
+        pMat(3,clabel3)= pMat(3,clabel3)+1;
+        clabel4 = predict(cModel4,testV);
+        pMat(4,clabel4)= pMat(4,clabel4)+1;
+        clabel5 = predict(cModel5,testV);
+        pMat(5,clabel5)= pMat(5,clabel5)+1;
+        clabel6 = predict(cModel6,testV);
+        pMat(6,clabel6)= pMat(6,clabel6)+1;
         mList1{1,s}=AcNmbTest{s};
         mList2{1,s}=AcNmbTest{s};
         mList3{1,s}=AcNmbTest{s};
         mList4{1,s}=AcNmbTest{s};
         mList5{1,s}=AcNmbTest{s};
         mList6{1,s}=AcNmbTest{s};
-        mList1{2,s}=clusterNames{clabel};
-        mList2{2,s}=clusterNames{clabe2};
-        mList3{2,s}=clusterNames{clabe3};
-        mList4{2,s}=clusterNames{clabe4};
-        mList5{2,s}=clusterNames{clabe5};
-        mList6{2,s}=clusterNames{clabe6};
-        fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel, clabel, clabe2, clabe3, clabe4, clabe5, clabe6)
+        mList1{2,s}=clusterNames{clabel1};
+        mList2{2,s}=clusterNames{clabel2};
+        mList3{2,s}=clusterNames{clabel3};
+        mList4{2,s}=clusterNames{clabel4};
+        mList5{2,s}=clusterNames{clabel5};
+        mList6{2,s}=clusterNames{clabel6};
+        fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end     
 end
 
