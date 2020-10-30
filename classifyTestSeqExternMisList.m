@@ -188,13 +188,13 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     for s=1:numTestSeq
         testV = testVV(s,1:totalSeq);%testV = fVec{s};
         % clabel1 = predict(cModel1,testV);
-        [clabel1, score1] = predict(cModel1, testV)
+        [clabel1, score1, ~] = predict(cModel1, testV)
         pMat(1,clabel1)= pMat(1,clabel1)+1;
         [clabel2, ~, ~, score2] = predict(cModel2,testV)
         pMat(2,clabel2)= pMat(2,clabel2)+1;
         [clabel3, ~, ~, score3] = predict(cModel3,testV)
         pMat(3,clabel3)= pMat(3,clabel3)+1;
-        [clabel4, score4] = predict(cModel4,testV)
+        [clabel4, score4, ~] = predict(cModel4,testV)
         pMat(4,clabel4)= pMat(4,clabel4)+1;
         [clabel5, score5] = predict(cModel5,testV)
         pMat(5,clabel5)= pMat(5,clabel5)+1;
