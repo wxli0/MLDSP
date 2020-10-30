@@ -57,8 +57,8 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     FNm={};
     id=1;
     for i=1:length(SeqT)
-        fprintf("SeqT is:")
-        disp(SeqT)
+        % fprintf("SeqT is:")
+        % disp(SeqT)
         lnt = length(SeqT{i});
         if(lnt>=minSeqLen)
             if(lnt<maxSeqLen || maxSeqLen==0)
