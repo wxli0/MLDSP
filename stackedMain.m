@@ -154,7 +154,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [tab,mList1,mList2,mList3,mList4,mList5,mList6]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest);
+    [tab,mList1,mList2,mList3,mList4,mList5,mList6]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart);
     tabc=table2cell(tab);
     tabc=[tab.Properties.VariableNames;tabc];
     tabc = string(tabc);

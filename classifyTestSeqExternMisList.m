@@ -1,4 +1,4 @@
-function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen)
+function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart)
     numTestSeq = length(SeqTest);
     nSeq = cell(1,numTestSeq);
     fVec = cell(1,numTestSeq);
@@ -99,10 +99,24 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     end
     lgg = [lg lgNew];
     fmm=cell2mat(lgg(:));
-    disMattt = f_dis(fmm,'cor',0,1);
+    disMatWithTest = f_dis(fmm,'cor',0,1);
     sId = totalSeq+1;
-    eId = length(disMattt);
-    testVV = disMattt(sId:eId,1:totalSeq);
+    eId = length(disMatWithTest);
+    disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
+
+    for i = 1:numTestSeq
+        for j=1:length(clusterStart)
+            endIndex = totalSeq
+            if j != length(clusterStart)
+                endIndex = clusterStart{j+1}-1
+            end
+            pdisMat = disMat(i, clusterStart{j}:endIndex));
+            pdisMat = pdisMat';
+            pdisMat = pdisMat(:)';
+            disp(pdisMat)
+            fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat))
+        end
+    end
     
     cn = unique(alabels);
     %discriminant
@@ -186,7 +200,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     pMat = zeros(6,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq)
     for s=1:numTestSeq
-        testV = testVV(s,1:totalSeq);%testV = fVec{s};
+        testV = disMatTrainTest(s,1:totalSeq);%testV = fVec{s};
         % clabel1 = predict(cModel1,testV);
         [clabel1, score1, ~] = predict(cModel1, testV)
         pMat(1,clabel1)= pMat(1,clabel1)+1;
