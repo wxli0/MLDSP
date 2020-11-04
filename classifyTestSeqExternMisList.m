@@ -113,7 +113,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
             pdisMat = disMat(i, clusterStart{j}:endIndex);
             pdisMat = pdisMat';
             pdisMat = pdisMat(:)';
-            disp(pdisMat)
+            % disp(pdisMat)
             fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
         end
     end
