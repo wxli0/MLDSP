@@ -106,15 +106,15 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
 
     for i = 1:numTestSeq
         for j=1:length(clusterStart)
-            endIndex = totalSeq
-            if j != length(clusterStart)
-                endIndex = clusterStart{j+1}-1
+            endIndex = totalSeq;
+            if (j ~= length(clusterStart))
+                endIndex = clusterStart{j+1}-1;
             end
             pdisMat = disMat(i, clusterStart{j}:endIndex));
             pdisMat = pdisMat';
             pdisMat = pdisMat(:)';
             disp(pdisMat)
-            fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat))
+            fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
         end
     end
     
