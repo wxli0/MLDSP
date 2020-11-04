@@ -110,7 +110,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
             if (j ~= length(clusterStart))
                 endIndex = clusterStart{j+1}-1;
             end
-            pdisMat = disMat(i, clusterStart{j}:endIndex));
+            pdisMat = disMat(i, clusterStart{j}:endIndex);
             pdisMat = pdisMat';
             pdisMat = pdisMat(:)';
             disp(pdisMat)
