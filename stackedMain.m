@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'g__C941_ce/o__Bacteroidales_exclude_g__C941_pruned'
-testSet = 'MAG/g__C941'
+dataSet = 'g__prevotella_ce/o__Bacteroidales_g__Prevotella_MAGs_pruned'
+testSet = ''
 % testSet = ''
 
 basePath = '/home/w328li/MLDSP-desktop/samples/';
@@ -25,7 +25,7 @@ AcNmb = Fnm;
 totalSeq = length(Seq);
 [maxLen, minLen, meanLen, medLen] = lengthCalc(Seq);
 
-% construct cgr
+% construct double-stranded cgr
 allCGR = cell(1,totalSeq);
 for i=1:totalSeq
     ss = Seq{i};
@@ -36,7 +36,9 @@ for i=1:totalSeq
         for m=1:length(sqSeg)
             seg = sqSeg{m};
             tCGRNw=cgr(seg,'ACGT',kVal);
-            tCGR=tCGR+tCGRNw;
+            segComp = seqrcomplement(sq);
+            tCGRNwComp = cgr(segComp,'ACGT',kVal);    
+            tCGR = tCGR+tCGRNw+tCGRNwComp;
         end
     end  
     allCGR{i}=tCGR;
@@ -61,20 +63,6 @@ disMat = f_dis(fm,'cor',0,1);
 [Y,eigvals] = cmdscale(disMat,3);
 
 % disp(disMat);
-
-fprintf('diplaying disMat .... \n');
-pdisMat = disMat(1:115,1:115)';
-pdisMat = pdisMat(:)';
-disp(mean(pdisMat));
-
-pdisMat1 = disMat(116:148,1:115)';
-pdisMat1 = pdisMat1(:)';
-disp(mean(pdisMat1));
-
-pdisMat2 = disMat(116:148,116:148)';
-pdisMat2 = pdisMat2(:)';
-disp(mean(pdisMat2));
-
 
 clusterStart = pointsPerCluster;
 for i=1:length(clusterStart)
@@ -154,7 +142,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [tab,mList1,mList2,mList3,mList4,mList5,mList6]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart);
+    [tab,mList1,mList2,mList3,mList4,mList5,mList6]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, testSet);
     tabc=table2cell(tab);
     tabc=[tab.Properties.VariableNames;tabc];
     tabc = string(tabc);
