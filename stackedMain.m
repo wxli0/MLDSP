@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'g__prevotella_ce/o__Bacteroidales_g__Prevotella_MAGs_pruned'
-testSet = ''
+dataSet = 'g__Prevotella_ce/c__Bacteroidia_exclude_g__Prevotella'
+testSet = 'MAG/g__Prevotella'
 % testSet = ''
 
 basePath = '/home/w328li/MLDSP-desktop/samples/';
@@ -75,11 +75,10 @@ end
 
 for i=1:length(clusterStart)
     for j=i:length(clusterStart)
-        pdisMat = disMat(clusterStart{i}:(clusterStart{i}+pointsPerCluster{i}-1), clusterStart{j}:(clusterStart{i}+pointsPerCluster{j}-1));
+        pdisMat = disMat(clusterStart{i}:(clusterStart{i}+pointsPerCluster{i}-1), clusterStart{j}:(clusterStart{j}+pointsPerCluster{j}-1));
         pdisMat = pdisMat';
         pdisMat = pdisMat(:)';
-        disp(pdisMat)
-        fprintf("%s and %s avg dissimilarity is: %f\n", clusterNames{i}, clusterNames{j}, mean(pdisMat))
+        fprintf("%s and %s avg dissimilarity is: %f\n", clusterNames{i}, clusterNames{j}, nanmean(pdisMat))
     end
 end
 
