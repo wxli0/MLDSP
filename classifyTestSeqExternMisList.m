@@ -104,8 +104,8 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     eId = length(disMatWithTest);
     disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
 
-    [status, msg, msgID] = mkdir('outputs/'+dataSet)
-    [status, msg, msgID] = mkdir('outputs/'+dataSet+'histograms/')
+    [status, msg, msgID] = mkdir(strcat('outputs/',dataSet))
+    [status, msg, msgID] = mkdir(strcat('outputs/',dataSet,'histograms/'))
     for i = 1:numTestSeq
         for j=1:length(clusterStart)
             endIndex = totalSeq;
