@@ -25,7 +25,7 @@ AcNmb = Fnm;
 totalSeq = length(Seq);
 [maxLen, minLen, meanLen, medLen] = lengthCalc(Seq);
 
-% construct double-stranded cgr
+% construct single-stranded cgr
 allCGR = cell(1,totalSeq);
 for i=1:totalSeq
     ss = Seq{i};
@@ -36,9 +36,13 @@ for i=1:totalSeq
         for m=1:length(sqSeg)
             seg = sqSeg{m};
             tCGRNw=cgr(seg,'ACGT',kVal);
-            segComp = seqrcomplement(sq);
-            tCGRNwComp = cgr(segComp,'ACGT',kVal);    
-            tCGR = tCGR+tCGRNw+tCGRNwComp;
+	    %fprintf('tCGRNw done\n');
+            % segComp = seqrcomplement(sq);
+	    %fprintf('segComp done\n');
+            % tCGRNwComp = cgr(segComp,'ACGT',kVal);    
+	    %fprintf('tCGRNwComp done\n');
+            % tCGR = tCGR+tCGRNw+tCGRNwComp;
+	    tCGR = tCGR+tCGRNw;
         end
     end  
     allCGR{i}=tCGR;
