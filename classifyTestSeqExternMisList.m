@@ -1,4 +1,4 @@
-function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, testSet)
+function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
     numTestSeq = length(SeqTest);
     nSeq = cell(1,numTestSeq);
     fVec = cell(1,numTestSeq);
@@ -104,6 +104,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     eId = length(disMatWithTest);
     disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
 
+    [status, msg, msgID] = mkdir('outputs/'+dataSet+'histograms/')
     for i = 1:numTestSeq
         for j=1:length(clusterStart)
             endIndex = totalSeq;
@@ -115,10 +116,10 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
             pdisMat = pdisMat(:)';
             % disp(pdisMat)
             
-            % f=figure;
-            % hist(pdisMat);
-            % saveas(f, 'outputs/histogram/'+testSet+str(i)+"-"+clusterNames{j}+'.png')
-            % fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
+            f=figure;
+            hist(pdisMat);
+            saveas(f, 'outputs/'+dataSet+'histograms/'+str(i)+"-"+clusterNames{j}+'.png')
+            fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
         end
     end
     
