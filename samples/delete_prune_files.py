@@ -16,3 +16,6 @@ for sub_dir in os.listdir(dir):
     if target_num < 0:
         shutil.rmtree(dir+"/"+sub_dir, ignore_errors=True)
         continue
+    selected_files = np.random.choice(file_names, target_num, replace=False)
+    for file in selected_files:
+        os.remove(dir+"/"+sub_dir+"/"+file)
