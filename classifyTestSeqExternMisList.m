@@ -119,7 +119,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
             
             f=figure;
             hist(pdisMat);
-            saveas(f, strcat('outputs/',dataSet,'histograms/',str(i),"-",clusterNames{j},'.png'))
+            saveas(f, strcat('outputs/',dataSet,'histograms/',string(i),"-",clusterNames{j},'.png'))
             fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
         end
     end
