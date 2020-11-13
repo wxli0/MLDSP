@@ -3,7 +3,7 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'g__Prevotella_ce/c__Bacteroidia_exclude_g__Prevotella/'
+dataSet = 'g__Prevotella_ce/o__Bacteroidales_exclude_g__Prevotella/'
 splitDataSet = split(dataSet, '/');
 parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
@@ -40,12 +40,12 @@ for i=1:totalSeq
             seg = sqSeg{m};
             tCGRNw=cgr(seg,'ACGT',kVal);
 	    %fprintf('tCGRNw done\n');
-            % segComp = seqrcomplement(sq);
+            segComp = seqrcomplement(seg);
 	    %fprintf('segComp done\n');
-            % tCGRNwComp = cgr(segComp,'ACGT',kVal);    
+            tCGRNwComp = cgr(segComp,'ACGT',kVal);    
 	    %fprintf('tCGRNwComp done\n');
-            % tCGR = tCGR+tCGRNw+tCGRNwComp;
-	    tCGR = tCGR+tCGRNw;
+            tCGR = tCGR+tCGRNw+tCGRNwComp;
+	    %tCGR = tCGR+tCGRNw;
         end
     end  
     allCGR{i}=tCGR;
