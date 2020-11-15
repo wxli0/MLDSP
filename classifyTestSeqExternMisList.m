@@ -104,23 +104,23 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     eId = length(disMatWithTest);
     disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
 
-    [status, msg, msgID] = mkdir(strcat('outputs/',dataSet))
-    [status, msg, msgID] = mkdir(strcat('outputs/',dataSet,'histograms/'))
+    % [status, msg, msgID] = mkdir(strcat('outputs/',dataSet))
+    % [status, msg, msgID] = mkdir(strcat('outputs/',dataSet,'histograms/'))
     for i = 1:numTestSeq
         for j=1:length(clusterStart)
             endIndex = totalSeq;
             if (j ~= length(clusterStart))
                 endIndex = clusterStart{j+1}-1;
             end
-            % pdisMat = disMat(i, clusterStart{j}:endIndex);
-            % pdisMat = pdisMat';
-            % pdisMat = pdisMat(:)';
+            pdisMat = disMat(i, clusterStart{j}:endIndex);
+            pdisMat = pdisMat';
+            pdisMat = pdisMat(:)';
             % % disp(pdisMat)
             % 
             % f=figure;
             % histogram(pdisMat, 'Normalization', 'probability');
             % saveas(f, strcat('outputs/',dataSet,'histograms/',string(i),"-",clusterNames{j},'.png'))
-            % fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
+            fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
         end
     end
     
