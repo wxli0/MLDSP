@@ -3,11 +3,11 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'g__Prevotella_ce/c__Bacteroidia_exclude_g__Prevotella/'
+dataSet = 'Gextra_o__Bacteroidales_exclude_g__Prevotella_outer/Gextra_o__Bacteroidales_exclude_g__Prevotella/'
 splitDataSet = split(dataSet, '/');
 parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
-testSet = 'MAG/g__Prevotella/'
+testSet = 'Gextra_g__Prevotella_L0/Gextra_L1/g__Prevotella/'
 % testSet = ''
 
 basePath = '/home/w328li/MLDSP-desktop/samples/';
@@ -40,12 +40,12 @@ for i=1:totalSeq
             seg = sqSeg{m};
             tCGRNw=cgr(seg,'ACGT',kVal);
 	    %fprintf('tCGRNw done\n');
-            % segComp = seqrcomplement(sq);
+            segComp = seqrcomplement(seg);
 	    %fprintf('segComp done\n');
-            % tCGRNwComp = cgr(segComp,'ACGT',kVal);    
+            tCGRNwComp = cgr(segComp,'ACGT',kVal);    
 	    %fprintf('tCGRNwComp done\n');
-            % tCGR = tCGR+tCGRNw+tCGRNwComp;
-	    tCGR = tCGR+tCGRNw;
+            tCGR = tCGR+tCGRNw+tCGRNwComp;
+	    %tCGR = tCGR+tCGRNw;
         end
     end  
     allCGR{i}=tCGR;
@@ -117,8 +117,8 @@ title(tname)
 hdt = datacursormode(hf);
 set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
 legend('show');
-mkdir(strcat('outputs/3D/', parentSet));
-saveas(hf, strcat('outputs/3D/', parentSet, '/', childSet, '.fig'));
+%mkdir(strcat('outputs/3D/', parentSet));
+%saveas(hf, strcat('outputs/3D/', parentSet, '/', childSet, '.fig'));
 
 % create labels
 clear a;
