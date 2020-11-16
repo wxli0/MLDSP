@@ -206,19 +206,18 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     pMat = zeros(6,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq)
     for s=1:numTestSeq
-        testV = disMatTrainTest(s,1:totalSeq);%testV = fVec{s};
-        % clabel1 = predict(cModel1,testV);
-        [clabel1, score1, ~] = predict(cModel1, testV)
+        testV = disMatTrainTest(s,1:totalSeq);
+        [clabel1, score1, ~] = predict(cModel1, testV); 
         pMat(1,clabel1)= pMat(1,clabel1)+1;
-        [clabel2, ~, ~, score2] = predict(cModel2,testV)
+        [clabel2, ~, ~, score2] = predict(cModel2,testV);   
         pMat(2,clabel2)= pMat(2,clabel2)+1;
-        [clabel3, ~, ~, score3] = predict(cModel3,testV)
+        [clabel3, ~, ~, score3] = predict(cModel3,testV);    
         pMat(3,clabel3)= pMat(3,clabel3)+1;
-        [clabel4, score4, ~] = predict(cModel4,testV)
+        [clabel4, score4, ~] = predict(cModel4,testV);
         pMat(4,clabel4)= pMat(4,clabel4)+1;
-        [clabel5, score5] = predict(cModel5,testV)
+        [clabel5, score5] = predict(cModel5,testV);
         pMat(5,clabel5)= pMat(5,clabel5)+1;
-        [clabel6, score6] = predict(cModel6,testV)
+        [clabel6, score6] = predict(cModel6,testV);
         pMat(6,clabel6)= pMat(6,clabel6)+1;
         mList1{1,s}=AcNmbTest{s};
         mList2{1,s}=AcNmbTest{s};
@@ -232,6 +231,18 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         mList4{2,s}=clusterNames{clabel4};
         mList5{2,s}=clusterNames{clabel5};
         mList6{2,s}=clusterNames{clabel6};
+        fprintf("clabel1 = %s\n", clabel1);
+        fprintf("score1 = %s\n", num2str(score1, "%.12f"));
+        fprintf("clabel2 = %s\n", clabel2);
+        fprintf("score2 = %s\n", num2str(score2, "%.12f"));
+        fprintf("clabel3 = %s\n", clabel3);
+        fprintf("score3 = %s\n", num2str(score3, "%.12f"));
+        fprintf("clabel4 = %s\n", clabel4);
+        fprintf("score4 = %s\n", num2str(score4, "%.12f"));
+        fprintf("clabel5 = %s\n", clabel5);
+        fprintf("score5 = %s\n", num2str(score5, "%.12f"));
+        fprintf("clabel6 = %s\n", clabel6);
+        fprintf("score6 = %s\n", num2str(score6, "%.12f"));
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end     
 end
