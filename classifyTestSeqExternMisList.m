@@ -232,17 +232,17 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         mList5{2,s}=clusterNames{clabel5};
         mList6{2,s}=clusterNames{clabel6};
         fprintf("clabel1 = %s\n", clabel1);
-        fprintf("score1 = %s\n", num2str(score1, "%.12f"));
+        fprintf("score1 = %s\n", num2str(score1, "%.12f "));
         fprintf("clabel2 = %s\n", clabel2);
-        fprintf("score2 = %s\n", num2str(score2, "%.12f"));
+        fprintf("score2 = %s\n", num2str(score2, "%.12f "));
         fprintf("clabel3 = %s\n", clabel3);
-        fprintf("score3 = %s\n", num2str(score3, "%.12f"));
+        fprintf("score3 = %s\n", num2str(score3, "%.12f "));
         fprintf("clabel4 = %s\n", clabel4);
-        fprintf("score4 = %s\n", num2str(score4, "%.12f"));
+        fprintf("score4 = %s\n", num2str(score4, "%.12f "));
         fprintf("clabel5 = %s\n", clabel5);
-        fprintf("score5 = %s\n", num2str(score5, "%.12f"));
+        fprintf("score5 = %s\n", num2str(score5, "%.12f "));
         fprintf("clabel6 = %s\n", clabel6);
-        fprintf("score6 = %s\n", num2str(score6, "%.12f"));
+        fprintf("score6 = %s\n", num2str(score6, "%.12f "));
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end     
 end
