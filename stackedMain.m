@@ -10,9 +10,9 @@ childSet = splitDataSet{2,:};
 testSet = 'Gextra_g__Prevotella_L0/Gextra_L1/g__Prevotella/'
 % testSet = ''
 
-basePath = '/home/w328li/MLDSP-desktop/samples/';
+basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
-    basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
+    basePath = '/Users/wanxinli/Desktop/project/MLDSP/samples/';
 end
 methodNum = 1
 dataSetPath = strcat(basePath, dataSet)
