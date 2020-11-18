@@ -248,6 +248,6 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end   
     disp(score1Matrix)
-    writematrix(score1Matrix, dataSet, 'Sheet', 'linear-discriminant-score')  
+    writematrix(score1Matrix, 'M.xls', 'Sheet', 'linear-discriminant-score')  
 end
 
