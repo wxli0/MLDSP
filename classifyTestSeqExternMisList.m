@@ -272,7 +272,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     T5 = array2table(score5Matrix,'VariableNames',header)
     T6 = array2table(score6Matrix,'VariableNames',header)
     
-    writetable(score1Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
+    writetable(score1Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', '1');  
     writetable(score2Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
     writetable(score3Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
     writetable(score4Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'fine-knn-score');  
