@@ -265,7 +265,8 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     end   
     disp(clusterNames)
     disp([clusterNames score1Matrix])
-    writematrix([clusterNames score1Matrix], strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
+    score1Matrix.Properties.VariableNames(1:length(clusterNames)) = clusterNames 
+    writematrix([score1Matrix], strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
     writematrix(score2Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
     writematrix(score3Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
     writematrix(score4Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'fine-knn-score');  
