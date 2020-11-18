@@ -263,8 +263,9 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("score6 = %s\n", num2str(score6));
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end   
-    header = {[clusterNames "prediction"]}
-    writematrix([header score1Matrix], strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
+    disp(clusterNames)
+    disp([clusterNames score1Matrix])
+    writematrix([clusterNames score1Matrix], strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
     writematrix(score2Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
     writematrix(score3Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
     writematrix(score4Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'fine-knn-score');  
