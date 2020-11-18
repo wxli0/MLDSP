@@ -205,11 +205,11 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     mList6=cell(2,numTestSeq);        
     pMat = zeros(6,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq);
-    score1Matrix = {};
+    score1Matrix = zeros(length(clusterNames), totalSeq);
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel1, score1, ~] = predict(cModel1, testV); 
-        score1Matrix = [score1Matrix score1];
+        score1Matrix(s,:) = score1;
         pMat(1,clabel1)= pMat(1,clabel1)+1;
         [clabel2, ~, ~, score2] = predict(cModel2,testV);   
         pMat(2,clabel2)= pMat(2,clabel2)+1;
