@@ -237,7 +237,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         mList4{2,s}=clusterNames{clabel4};
         mList5{2,s}=clusterNames{clabel5};
         mList6{2,s}=clusterNames{clabel6};
-        score1 = [score1 strcat(clusterNames{clabel1}{:})];
+        score1 = [score1 clabel1];
         score1Matrix(s,:) = score1;
         score2 = [score2 clabel2];
         score2Matrix(s,:) = score2;
@@ -264,6 +264,8 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end   
 
+    for i in 1:length(clusterNames):
+        clusterNames{i} = strcat(string(i), '-', clusterNames{i});
     header = [clusterNames, 'prediction'];
     T1 = array2table(score1Matrix,'VariableNames',header)
     T2 = array2table(score2Matrix,'VariableNames',header)
