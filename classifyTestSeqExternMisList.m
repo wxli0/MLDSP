@@ -263,18 +263,21 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("score6 = %s\n", num2str(score6));
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end   
-    disp(clusterNames)
-    disp([clusterNames score1Matrix])
-    header = [clusterNames, 'prediction'];
-    T = array2table(score1Matrix,'VariableNames',header)
-    writetable(T,'M.xlsx','Sheet',1);  
 
-    % writematrix(score1Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
-    % writematrix(score2Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
-    % writematrix(score3Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
-    % writematrix(score4Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'fine-knn-score');  
-    % writematrix(score5Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-knn-score');  
-    % writematrix(score6Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-discriminant-score');  
+    header = [clusterNames, 'prediction'];
+    T1 = array2table(score1Matrix,'VariableNames',header)
+    T2 = array2table(score2Matrix,'VariableNames',header)
+    T3 = array2table(score3Matrix,'VariableNames',header)
+    T4 = array2table(score4Matrix,'VariableNames',header)
+    T5 = array2table(score5Matrix,'VariableNames',header)
+    T6 = array2table(score6Matrix,'VariableNames',header)
+    
+    writetable(score1Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
+    writetable(score2Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
+    writetable(score3Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
+    writetable(score4Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'fine-knn-score');  
+    writetable(score5Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-knn-score');  
+    writetable(score6Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-discriminant-score');  
 
 end
 
