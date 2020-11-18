@@ -206,11 +206,14 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     pMat = zeros(6,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq);
     score1Matrix = zeros(numTestSeq, length(clusterNames)+1);
+    score2Matrix = zeros(numTestSeq, length(clusterNames)+1);
+    score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
+    score4Matrix = zeros(numTestSeq, length(clusterNames)+1);
+    score5Matrix = zeros(numTestSeq, length(clusterNames)+1);
+    score6Matrix = zeros(numTestSeq, length(clusterNames)+1);
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel1, score1, ~] = predict(cModel1, testV); 
-        score1 = [score1 clabel1]
-        score1Matrix(s,:) = score1;
         pMat(1,clabel1)= pMat(1,clabel1)+1;
         [clabel2, ~, ~, score2] = predict(cModel2,testV);   
         pMat(2,clabel2)= pMat(2,clabel2)+1;
@@ -234,6 +237,18 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         mList4{2,s}=clusterNames{clabel4};
         mList5{2,s}=clusterNames{clabel5};
         mList6{2,s}=clusterNames{clabel6};
+        score1 = [score1 clabel1];
+        score1Matrix(s,:) = score1;
+        score2 = [score2 clabel2];
+        score2Matrix(s,:) = score2;
+        score3 = [score3 clabel3];
+        score3Matrix(s,:) = score3;
+        score4 = [score4 clabel4];
+        score4Matrix(s,:) = score4;
+        score5 = [score5 clabel5];
+        score5Matrix(s,:) = score5;
+        score6 = [score6 clabel6];
+        score6Matrix(s,:) = score6;
         fprintf("clabel1 = %d\n", clabel1);
         fprintf("score1 = %s\n", num2str(score1));
         fprintf("clabel2 = %d\n", clabel2);
@@ -248,7 +263,13 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("score6 = %s\n", num2str(score6));
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end   
-    disp(score1Matrix)
-    writematrix(score1Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score')  
+
+    writematrix(score1Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
+    writematrix(score2Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
+    writematrix(score3Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
+    writematrix(score4Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'fine-knn-score');  
+    writematrix(score5Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-knn-score');  
+    writematrix(score6Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-discriminant-score');  
+
 end
 
