@@ -205,7 +205,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     mList6=cell(2,numTestSeq);        
     pMat = zeros(6,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq);
-    score1Matrix = zeros(length(clusterNames), totalSeq);
+    score1Matrix = zeros(totalSeq, len(clusterNames));
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel1, score1, ~] = predict(cModel1, testV); 
