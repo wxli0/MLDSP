@@ -4,7 +4,7 @@ import platform
 from Bio import SeqIO
 import os
 sys.path.insert(0, '/Users/wanxinli/Desktop/project/MLDSP-desktop/data/preprocess/')
-sys.path.insert(0, '/home/w328li/MLDSP-desktop/data/preprocess/')
+sys.path.insert(0, '/home/w328li/MLDSP/data/preprocess/')
 from helpers import parse_json_test_input, prune_seq
 import random
 import numpy as np
@@ -14,7 +14,7 @@ xlsx = pd.read_excel("41467_2018_3317_MOESM4_ESM.xlsx")
     
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
-    base_path = "/home/w328li/MLDSP-desktop/"
+    base_path = "/home/w328li/MLDSP/"
 outdir_full = base_path+"samples/"+outdir
 input_base_path = base_path+"data/DS_10283_3009/genomes/"
 
