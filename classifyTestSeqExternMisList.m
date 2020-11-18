@@ -265,7 +265,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     end   
     disp(clusterNames)
     disp([clusterNames score1Matrix])
-    header = {'T1', 'T2', 'T3', 'prediction'};
+    header = [clusterNames, 'prediction'];
     T = array2table(score1Matrix,'VariableNames',{'x_axis','y_axis','z_axis', 'prediction'})
     writetable(T,'M.xlsx','Sheet',1);  
 
