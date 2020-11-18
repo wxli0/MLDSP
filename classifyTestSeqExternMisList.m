@@ -264,8 +264,9 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end   
 
-    for i in 1:length(clusterNames):
+    for i in 1:length(clusterNames)
         clusterNames{i} = strcat(string(i), '-', clusterNames{i});
+    end
     header = [clusterNames, 'prediction'];
     T1 = array2table(score1Matrix,'VariableNames',header)
     T2 = array2table(score2Matrix,'VariableNames',header)
