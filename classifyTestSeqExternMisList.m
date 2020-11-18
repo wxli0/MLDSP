@@ -205,10 +205,11 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     mList6=cell(2,numTestSeq);        
     pMat = zeros(6,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq);
-    score1Matrix = zeros(totalSeq, length(clusterNames));
+    score1Matrix = zeros(totalSeq, length(clusterNames)+1);
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel1, score1, ~] = predict(cModel1, testV); 
+        score1 = [score1 clabel1]
         score1Matrix(s,:) = score1;
         pMat(1,clabel1)= pMat(1,clabel1)+1;
         [clabel2, ~, ~, score2] = predict(cModel2,testV);   
@@ -248,6 +249,6 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
     end   
     disp(score1Matrix)
-    writematrix(score1Matrix, 'M.xls', 'Sheet', 'linear-discriminant-score')  
+    writematrix(score1Matrix, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score')  
 end
 
