@@ -265,7 +265,7 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     end   
 
     for i=1:length(clusterNames)
-        clusterNames{i} = char([string(i) '-' clusterNames{i}])
+        clusterNames{i} = [num2str(i) '-' clusterNames{i}]
     end
     disp(clusterNames)
     header = [clusterNames, 'prediction']
