@@ -118,7 +118,7 @@ end
 % set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
 % legend('show');
 % mkdir(strcat('outputs/3D/', parentSet));
-saveas(hf, strcat('outputs/3D/', parentSet, '/', childSet, '.fig'));
+% saveas(hf, strcat('outputs/3D/', parentSet, '/', childSet, '.fig'));
 
 % create labels
 clear a;
