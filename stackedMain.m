@@ -3,12 +3,12 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'Gextra_o__Bacteroidales_exclude_g__Prevotella_outer/Gextra_o__Bacteroidales_exclude_g__Prevotella/'
+dataSet = 'g__Prevotella/o__Bacteroidales'
 splitDataSet = split(dataSet, '/');
 parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
-testSet = 'Gextra_g__Prevotella_L0/Gextra_L1/g__Prevotella/'
 % testSet = ''
+testSet = 'MAG/g__Prevotella/'
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
@@ -117,8 +117,8 @@ title(tname)
 hdt = datacursormode(hf);
 set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
 legend('show');
-%mkdir(strcat('outputs/3D/', parentSet));
-%saveas(hf, strcat('outputs/3D/', parentSet, '/', childSet, '.fig'));
+mkdir(strcat('outputs/3D/', parentSet));
+saveas(hf, strcat('outputs/3D/', parentSet, '/', childSet, '.fig'));
 
 % create labels
 clear a;
