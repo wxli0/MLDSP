@@ -39,13 +39,9 @@ for i=1:totalSeq
         for m=1:length(sqSeg)
             seg = sqSeg{m};
             tCGRNw=cgr(seg,'ACGT',kVal);
-	    %fprintf('tCGRNw done\n');
             segComp = seqrcomplement(seg);
-	    %fprintf('segComp done\n');
             tCGRNwComp = cgr(segComp,'ACGT',kVal);    
-	    %fprintf('tCGRNwComp done\n');
             tCGR = tCGR+tCGRNw+tCGRNwComp;
-	    %tCGR = tCGR+tCGRNw;
         end
     end  
     allCGR{i}=tCGR;
