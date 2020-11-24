@@ -127,9 +127,6 @@ if (~strcmp(testSet,''))
     for i=1:length(alabels)
         index = 0;
         for k=1:length(labelCat);
-            disp(labelCat{k})
-            disp(alabels(i))
-            fprintf('answer is: %d\n', strcmp(labelCat{k},alabels(i)));
             if strcmp(labelCat{k},int2str(alabels(i)))
                 index = k;
                 break
@@ -154,7 +151,8 @@ if (~strcmp(testSet,''))
         end
     end
 
-    estBeta = mvregress(disMat,Y3(:,1:(end-1)));
+    % estBeta = mvregress(disMat,Y3(:,1:(end-1)));
+    estBeta = mvregress(disMat,Y3);
 
 
     [AcNmbTest,SeqTest, pnts,Fnm] = readTestingExternSet(testSetPath,minSeqLen,maxSeqLen,maxClusSize);
