@@ -196,7 +196,7 @@ if (~strcmp(testSet,''))
         scoreMatrix(s,:) = testV*estBeta;
     end
     T = array2table(scoreMatrix,'VariableNames',clusterNames)
-    writetable(T1, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'LS-LDA-score');
+    writetable(T, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'LS-LDA-score');
 end
 
 
