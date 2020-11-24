@@ -16,7 +16,9 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
                     for m=1:length(sqSeg)
                         seg = sqSeg{m};
                         tCGRNw=cgr(seg,'ACGT',kVal);
-                        tCGR=tCGR+tCGRNw;
+                        segComp = seqrcomplement(seg);
+                        tCGRNwComp = cgr(segComp,'ACGT',kVal);    
+                        tCGR = tCGR+tCGRNw+tCGRNwComp;
                     end
                 end 
                 nSeq{r} = tCGR;
