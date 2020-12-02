@@ -123,7 +123,7 @@ if (~strcmp(testSet,''))
     labelCat = categories(categorical(alabels));
     labelCount = countcats(categorical(alabels));
     totalCount = sum(labelCount);
-    % first round for yi != j
+    fprintf("before constructing Y3\n");
     for i=1:length(alabels)
         if strcmp(alabels(i), labelCat{1})
             Y3(i) = 1;
@@ -131,10 +131,13 @@ if (~strcmp(testSet,''))
             Y3(i) = -1;
         end
     end
+    fprintf("after constructing Y3\n");
 
 
     % estBeta = mvregress(disMat,Y3(:,1:(end-1)));
     estBeta = mvregress(disMat,Y3);
+    fprintf("after training mvr\n");
+
 
 
     [AcNmbTest,SeqTest, pnts,Fnm] = readTestingExternSet(testSetPath,minSeqLen,maxSeqLen,maxClusSize);
