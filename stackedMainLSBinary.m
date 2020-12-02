@@ -126,9 +126,9 @@ if (~strcmp(testSet,''))
     % first round for yi != j
     for i=1:length(alabels)
         if strcmp(alabels(i), labelCat{1})
-            Y3(i) = 1
+            Y3(i) = 1;
         else
-            Y3(i) = -1
+            Y3(i) = -1;
         end
     end
 
