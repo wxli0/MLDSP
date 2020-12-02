@@ -123,7 +123,6 @@ if (~strcmp(testSet,''))
     labelCat = categories(categorical(alabels));
     labelCount = countcats(categorical(alabels));
     totalCount = sum(labelCount);
-    fprintf("before constructing Y3\n");
     for i=1:length(alabels)
         if strcmp(int2str(alabels(i)), labelCat{1})
             Y3(i,1) = 1;
@@ -131,13 +130,11 @@ if (~strcmp(testSet,''))
             Y3(i,1) = -1;
         end
     end
-    fprintf("after constructing Y3\n");
 
 
     % estBeta = mvregress(disMat,Y3(:,1:(end-1)));
     estBeta = regress(Y3, disMat);
-    fprintf("after training mvr\n");
-    disp(Y3)
+
 
 
 
