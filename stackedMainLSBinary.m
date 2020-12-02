@@ -174,14 +174,13 @@ if (~strcmp(testSet,''))
     eId = length(disMatWithTest);
     disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
 
-    scoreMatrix = zeros(numTestSeq, length(clusterNames));
+    scoreMatrix = zeros(numTestSeq, 1);
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
-        % fprintf('prediction is: \n')
-        % disp(testV*estBeta)
+
         scoreMatrix(s,:) = testV*estBeta;
     end
-    T = array2table(scoreMatrix,'VariableNames',clusterNames)
+    T = array2table(scoreMatrix,'VariableNames',['f(x)'])
     writetable(T, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'LS-binary-score');
 end
 
