@@ -9,6 +9,8 @@ parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
 % testSet = ''
 testSet = 'MAG/g__C941'
+splitTestSet = split(testSet, '/');
+magSet = splitTestSet{2,:};
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
@@ -178,7 +180,7 @@ if (~strcmp(testSet,''))
         scoreMatrix(s,:) = testV*estBeta;
     end
     T = array2table(scoreMatrix,'VariableNames',{'f(x)'})
-    writetable(T, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'LS-binary-score');
+    writetable(T, strcat("outputs/", dataSet, ".xls"), 'Sheet', strcat(magSet,'-LS-binary-score'));
 end
 
 
