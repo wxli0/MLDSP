@@ -125,7 +125,7 @@ if (~strcmp(testSet,''))
     totalCount = sum(labelCount);
     fprintf("before constructing Y3\n");
     for i=1:length(alabels)
-        if strcmp(alabels(i), labelCat{1})
+        if strcmp(alabels(i), int2str(labelCat{1}))
             Y3(i,1) = 1;
         else
             Y3(i,1) = -1;
