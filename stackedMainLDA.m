@@ -3,12 +3,14 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'g__C941_ce/o__Bacteroidales_exclude_g__C941_cp'
+dataSet = 'g__C941/o__Bacteroidales_pruned1'
 splitDataSet = split(dataSet, '/');
 parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
 % testSet = ''
-testSet = 'MAG/MAG_g__C941'
+testSet = 'MAG/g__C941'
+splitMagSet = split(testSet, '/');
+magSet = splitMagSet{2,:};
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
@@ -196,7 +198,7 @@ if (~strcmp(testSet,''))
         scoreMatrix(s,:) = testV*estBeta;
     end
     T = array2table(scoreMatrix,'VariableNames',clusterNames)
-    writetable(T, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'LS-LDA-score');
+    writetable(T, strcat("outputs/", dataSet, ".xls"), 'Sheet', strcat(magSet, '-LS-LDA-score'));
 end
 
 
