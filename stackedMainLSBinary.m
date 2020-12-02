@@ -119,16 +119,16 @@ if (~strcmp(testSet,''))
     seqToTest = 0
 
     % construct Y3
-    Y3 = zeros(length(alabels));
+    Y3 = zeros(length(alabels),1);
     labelCat = categories(categorical(alabels));
     labelCount = countcats(categorical(alabels));
     totalCount = sum(labelCount);
     fprintf("before constructing Y3\n");
     for i=1:length(alabels)
         if strcmp(alabels(i), labelCat{1})
-            Y3(i) = 1;
+            Y3(i,1) = 1;
         else
-            Y3(i) = -1;
+            Y3(i,1) = -1;
         end
     end
     fprintf("after constructing Y3\n");
