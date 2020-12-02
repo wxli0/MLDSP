@@ -135,7 +135,7 @@ if (~strcmp(testSet,''))
 
 
     % estBeta = mvregress(disMat,Y3(:,1:(end-1)));
-    estBeta = regress(disMat,Y3);
+    estBeta = regress(Y3, disMat);
     fprintf("after training mvr\n");
     disp(Y3)
 
