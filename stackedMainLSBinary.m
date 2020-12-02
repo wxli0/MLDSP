@@ -180,7 +180,7 @@ if (~strcmp(testSet,''))
 
         scoreMatrix(s,:) = testV*estBeta;
     end
-    T = array2table(scoreMatrix,'VariableNames',['f(x)'])
+    T = array2table(scoreMatrix,'VariableNames',{'f(x)'})
     writetable(T, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'LS-binary-score');
 end
 
