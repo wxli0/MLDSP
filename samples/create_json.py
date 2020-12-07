@@ -3,7 +3,7 @@ import sys
 import json
 
 input_dir = sys.argv[1]
-input_base_path = '/home/w328li/MLDSP-desktop/samples/'
+input_base_path = '/home/w328li/MLDSP/samples/'
 input_dir_path = input_base_path+input_dir+"/"
 output_dir_path = '/home/w328li/BlindKameris-new/data/'
 clusters = os.listdir(input_dir_path)
