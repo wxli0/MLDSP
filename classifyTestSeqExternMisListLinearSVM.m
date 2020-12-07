@@ -157,7 +157,7 @@ function [pMat,mList2] = classifyTestSeqExternMisList(testPath, numMethod,disMat
     disp(clusterNames)
     header = [clusterNames, 'prediction']
     T2 = array2table(score2Matrix,'VariableNames',header)
-    writetable(T2, strcat("outputs/", dataSet, ".xls"), 'Sheet', strcat(magSet, '-linear-svm-pbscore'));  
+    writetable(T2, strcat("outputs/", dataSet, ".xls"), 'Sheet', strcat(magSet, '-LSVM-pb'));  
 
 end
 
