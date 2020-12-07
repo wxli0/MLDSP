@@ -1,4 +1,6 @@
 function [pMat,mList2] = classifyTestSeqExternMisList(testPath, numMethod,disMat,alabels,lg,clusterNames,kVal,mLen, clusterStart, dataSet, magSet)
+    minSeqLen = 0
+    maxSeqLen = 0
     [AcNmbTest,SeqTest, pnts,Fnm] = readTestingExternSet(testPath,minSeqLen,maxSeqLen,maxClusSize);
 
     numTestSeq = length(SeqTest);
