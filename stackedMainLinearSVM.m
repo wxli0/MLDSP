@@ -9,7 +9,7 @@ parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
 % testSet = ''
 testSet = 'MAG/g__Prevotella/'
-splitTestSet = split(childSet, '/');
+splitTestSet = split(testSet, '/');
 magSet = splitTestSet{2,:};
 
 basePath = '/home/w328li/MLDSP/samples/';
