@@ -9,6 +9,8 @@ parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
 % testSet = ''
 testSet = 'MAG/g__Prevotella/'
+splitTestSet = split(childSet, '/');
+magSet = splitTestSet{2,:};
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
@@ -112,10 +114,7 @@ if (strcmp(testSet, ''))
 end
 
 if (~strcmp(testSet,''))
-    minSeqLen = 0
-    maxSeqLen = 0
-    seqToTest = 0
-    classifyTestSeqExternMisList(methodNum,disMat,alabels,lg,clusterNames,kVal,medLen, clusterStart, dataSet)
+    classifyTestSeqExternMisListLinearSVM(methodNum,disMat,alabels,lg,clusterNames,kVal,medLen, clusterStart, dataSet, magSet)
 end
 
 

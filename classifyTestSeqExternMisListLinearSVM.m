@@ -1,4 +1,4 @@
-function [pMat,mList2] = classifyTestSeqExternMisList(numMethod,disMat,alabels,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
+function [pMat,mList2] = classifyTestSeqExternMisList(numMethod,disMat,alabels,lg,clusterNames,kVal,mLen, clusterStart, dataSet, magSet)
     [AcNmbTest,SeqTest, pnts,Fnm] = readTestingExternSet(dSet,minSeqLen,maxSeqLen,maxClusSize);
 
     numTestSeq = length(SeqTest);
@@ -78,17 +78,6 @@ function [pMat,mList2] = classifyTestSeqExternMisList(numMethod,disMat,alabels,l
                nSq = nsTemp((I+1):length(nsTemp)); 
             end
             
-%             I = mLen-length(nSq);
-%             if(I>0)
-%                 nsTemp = wextend('1','asym',nSq,I);
-%                 nsNew = nsTemp((I+1):length(nsTemp));
-%             elseif(I<0)
-%                 nsNew=nSq(1:mLen);
-%             else
-%                 nsNew = nSq;
-%             end
-%             nSeq{r} = nsNew;  
-            
             nSeq{r} = nSq; 	
 		    lgNew{r} = abs(fft(nSeq{r}));  
         end
@@ -108,8 +97,6 @@ function [pMat,mList2] = classifyTestSeqExternMisList(numMethod,disMat,alabels,l
     eId = length(disMatWithTest);
     disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
 
-    % [status, msg, msgID] = mkdir(strcat('outputs/',dataSet))
-    % [status, msg, msgID] = mkdir(strcat('outputs/',dataSet,'histograms/'))
     for i = 1:numTestSeq
         for j=1:length(clusterStart)
             endIndex = totalSeq;
@@ -119,11 +106,7 @@ function [pMat,mList2] = classifyTestSeqExternMisList(numMethod,disMat,alabels,l
             pdisMat = disMat(i, clusterStart{j}:endIndex);
             pdisMat = pdisMat';
             pdisMat = pdisMat(:)';
-            % % disp(pdisMat)
-            % 
-            % f=figure;
-            % histogram(pdisMat, 'Normalization', 'probability');
-            % saveas(f, strcat('outputs/',dataSet,'histograms/',string(i),"-",clusterNames{j},'.png'))
+
             fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
         end
     end
@@ -171,7 +154,7 @@ function [pMat,mList2] = classifyTestSeqExternMisList(numMethod,disMat,alabels,l
     disp(clusterNames)
     header = [clusterNames, 'prediction']
     T2 = array2table(score2Matrix,'VariableNames',header)
-    writetable(T2, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
+    writetable(T2, strcat("outputs/", dataSet, ".xls"), 'Sheet', strcat(magSet, '-linear-svm-pbscore'));  
 
 end
 
