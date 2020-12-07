@@ -114,7 +114,7 @@ if (strcmp(testSet, ''))
 end
 
 if (~strcmp(testSet,''))
-    classifyTestSeqExternMisListLinearSVM(methodNum,disMat,alabels,lg,clusterNames,kVal,medLen, clusterStart, dataSet, magSet)
+    classifyTestSeqExternMisListLinearSVM(testSetPath, methodNum,disMat,alabels,lg,clusterNames,kVal,medLen, clusterStart, dataSet, magSet)
 end
 
 
