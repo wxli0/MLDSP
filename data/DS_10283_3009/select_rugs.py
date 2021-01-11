@@ -3,6 +3,8 @@ import pandas as pd
 import platform
 from Bio import SeqIO
 import os
+
+# e.g. python3 select_rugs.py mags_g__CAG-791.json
 sys.path.insert(0, '/Users/wanxinli/Desktop/project/MLDSP-desktop/data/preprocess/')
 sys.path.insert(0, '/home/w328li/MLDSP/data/preprocess/')
 from helpers import parse_json_test_input, prune_seq
