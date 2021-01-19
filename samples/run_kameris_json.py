@@ -1,8 +1,11 @@
 import os
+import sys
 
-files = ["o__Bacteroidales_eval_wrapper", "o__Chitinophagales_eval_wrapper", "o__Cytophagales_eval_wrapper", "o__Flavobacteriales_eval_wrapper", "o__Sphingobacteriales_eval_wrapper"]
+dir = sys.argv[1]
+files = os.listdir(dir)
 
 for file in files:
+    file = file+"_eval_wrapper"
     os.system("python3 create_kameris_input.py "+file)
     os.system("python3 create_json.py "+file)
 
