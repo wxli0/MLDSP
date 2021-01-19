@@ -13,3 +13,4 @@ for file in files:
     if not os.path.exists(file+'_eval_wrapper'):
         os.mkdir(file+'_eval_wrapper')
     copy_tree(os.path.join(dir, file+'_eval'), os.path.join(file+'_eval_wrapper', file+'_eval'))
+    print("done copying", file)
