@@ -3,7 +3,7 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'g__C941/o__Bacteroidales_pruned1'
+dataSet = 'g__C941/o__Bacteroidales_pruned3'
 splitDataSet = split(dataSet, '/');
 parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};

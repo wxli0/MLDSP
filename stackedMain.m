@@ -3,12 +3,12 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'g__Prevotella/o__Bacteroidales'
+dataSet = 'g__C941/o__Bacteroidales_pruned'
 splitDataSet = split(dataSet, '/');
 parentSet = splitDataSet{1,:};
 childSet = splitDataSet{2,:};
 % testSet = ''
-testSet = 'MAG/g__Prevotella/'
+testSet = 'MAG/g__C941/'
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
