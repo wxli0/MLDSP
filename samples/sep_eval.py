@@ -2,9 +2,12 @@ import os
 import sys
 import random
 import math
+from shutil import copy
 
-train_dir = sys.argv[1]
-eval_dir= train_dir+'_eval'
+complete_dir = sys.argv[1]
+copy(complete_dir, complete_dir+'_train')
+train_dir = complete_dir+'_train'
+eval_dir= complete_dir+'_eval'
 os.mkdir(eval_dir)
 
 # create a new eval_dir
