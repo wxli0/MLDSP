@@ -46,7 +46,7 @@ for file in os.listdir(input_base_path):
         gap_lens.append(cur_gap_len)
         gap_remaining_len -= cur_gap_len
         gap_num -=1
-    cur_fna_path = outdir_full+"/"+entire_name+".fasta"
+    cur_fna_path = outdir_full+"/"+entire_name[:-3]+".fasta"
     
     seq_remaining_len = entire_len-frags_num*const_len-np.sum(gap_lens)
     random_start = random.randint(0, seq_remaining_len)
