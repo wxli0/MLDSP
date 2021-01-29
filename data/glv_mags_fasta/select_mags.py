@@ -1,7 +1,8 @@
+import sys
+
 sys.path.insert(0, '/Users/wanxinli/Desktop/project/MLDSP-desktop/data/preprocess/')
 sys.path.insert(0, '/home/w328li/MLDSP/data/preprocess/')
 
-import sys
 import pandas as pd 
 import platform
 from Bio import SeqIO
