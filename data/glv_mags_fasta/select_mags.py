@@ -19,13 +19,13 @@ base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/"
 outdir_full = base_path+"samples/"+outdir
-input_base_path = base_path+"data/glv_mags_fasta/genomes"
+input_base_path = base_path+"data/glv_mags_fasta/genomes/"
 
 
 frags_num = 4
 const_len = 100000
 for file in os.listdir(input_base_path):
-    fasta_sequences = SeqIO.parse(open(input_base_path+file+".fa"),'fasta') 
+    fasta_sequences = SeqIO.parse(open(input_base_path+file),'fasta') 
     entire_seq = ''
     entire_name = file
     entire_len = 0
