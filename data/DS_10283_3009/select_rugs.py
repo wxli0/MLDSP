@@ -12,7 +12,6 @@ import random
 import numpy as np
 
 taxon_place, taxon_name, frags_num, const_len, outdir = parse_json_test_input(sys.argv[1])
-xlsx = pd.read_excel("41467_2018_3317_MOESM4_ESM.xlsx")
     
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
