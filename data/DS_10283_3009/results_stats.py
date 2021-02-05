@@ -30,7 +30,7 @@ print(results_table)
 
 # print(to_print)
 # print(len(to_print))
-tar_taxon = 'phylum'
+tar_taxon = 'order'
 print(results_table[tar_taxon])
 dict = {}
 for s in list(results_table[tar_taxon]):
