@@ -4,9 +4,6 @@ clear all;
 clc ;
 
 dataSet = 'everything'
-splitDataSet = split(dataSet, '/');
-parentSet = splitDataSet{1,:};
-childSet = splitDataSet{2,:};
 testSet = ''
 % testSet = 'MAG/g__C941/'
 
