@@ -1,4 +1,4 @@
-function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
+function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
     numTestSeq = length(SeqTest);
     nSeq = cell(1,numTestSeq);
     fVec = cell(1,numTestSeq);
@@ -165,53 +165,21 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
                 'Coding', 'onevsall', ...
                 'ClassNames', cn); 
 
-    %Fine KNN
-    cModel4 = fitcknn(...
-                disMat, ...
-                alabels, ...
-                'Distance', 'Euclidean', ...
-                'Exponent', [], ...
-                'NumNeighbors', 1, ...
-                'DistanceWeight', 'Equal', ...
-                'Standardize', true, ...
-                'ClassNames', cn);
 
-    %subspace-discriminant
-    subspaceDimension = max(1, min(74, length(disMat) - 1));
-    cModel5 = fitcensemble(...
-                disMat, ...
-                alabels, ...
-                'Method', 'Subspace', ...
-                'NumLearningCycles', 30, ...
-                'Learners', 'discriminant', ...
-                'NPredToSample', subspaceDimension, ...
-                'ClassNames', cn);
+
        
-    %subspace knn
-    subspaceDimension = max(1, min(74, length(disMat) - 1));
-    cModel6 = fitcensemble(...
-                disMat, ...
-                alabels, ...
-                'Method', 'Subspace', ...
-                'NumLearningCycles', 30, ...
-                'Learners', 'knn', ...
-                'NPredToSample', subspaceDimension, ...
-                'ClassNames', cn);  
+
     
     mList1=cell(2,numTestSeq);
     mList2=cell(2,numTestSeq);
     mList3=cell(2,numTestSeq);
-    mList4=cell(2,numTestSeq);
-    mList5=cell(2,numTestSeq);
-    mList6=cell(2,numTestSeq);        
-    pMat = zeros(6,length(clusterNames));
+     
+    pMat = zeros(3,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq);
     score1Matrix = zeros(numTestSeq, length(clusterNames)+1);
     score2Matrix = zeros(numTestSeq, length(clusterNames)+1);
     score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
-    score4Matrix = zeros(numTestSeq, length(clusterNames)+1);
-    score5Matrix = zeros(numTestSeq, length(clusterNames)+1);
-    score6Matrix = zeros(numTestSeq, length(clusterNames)+1);
+
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel1, score1, ~] = predict(cModel1, testV); 
@@ -220,36 +188,22 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         pMat(2,clabel2)= pMat(2,clabel2)+1;
         [clabel3, ~, ~, score3] = predict(cModel3,testV);    
         pMat(3,clabel3)= pMat(3,clabel3)+1;
-        [clabel4, score4, ~] = predict(cModel4,testV);
-        pMat(4,clabel4)= pMat(4,clabel4)+1;
-        [clabel5, score5] = predict(cModel5,testV);
-        pMat(5,clabel5)= pMat(5,clabel5)+1;
-        [clabel6, score6] = predict(cModel6,testV);
-        pMat(6,clabel6)= pMat(6,clabel6)+1;
+
         mList1{1,s}=AcNmbTest{s};
         mList2{1,s}=AcNmbTest{s};
         mList3{1,s}=AcNmbTest{s};
-        mList4{1,s}=AcNmbTest{s};
-        mList5{1,s}=AcNmbTest{s};
-        mList6{1,s}=AcNmbTest{s};
+
         mList1{2,s}=clusterNames{clabel1};
         mList2{2,s}=clusterNames{clabel2};
         mList3{2,s}=clusterNames{clabel3};
-        mList4{2,s}=clusterNames{clabel4};
-        mList5{2,s}=clusterNames{clabel5};
-        mList6{2,s}=clusterNames{clabel6};
+
         score1 = [score1 clabel1];
         score1Matrix(s,:) = score1;
         score2 = [pbscore2 clabel2];
         score2Matrix(s,:) = score2;
         score3 = [score3 clabel3];
         score3Matrix(s,:) = score3;
-        score4 = [score4 clabel4];
-        score4Matrix(s,:) = score4;
-        score5 = [score5 clabel5];
-        score5Matrix(s,:) = score5;
-        score6 = [score6 clabel6];
-        score6Matrix(s,:) = score6;
+
         fprintf("clabel1 = %d\n", clabel1);
         fprintf("score1 = %s\n", num2str(score1));
         fprintf("clabel2 = %d\n", clabel2);
@@ -257,12 +211,8 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
         fprintf("clabel3 = %d\n", clabel3);
         fprintf("score3 = %s\n", num2str(score3));
         fprintf("clabel4 = %d\n", clabel4);
-        fprintf("score4 = %s\n", num2str(score4));
-        fprintf("clabel5 = %d\n", clabel5);
-        fprintf("score5 = %s\n", num2str(score5));
-        fprintf("clabel6 = %d\n", clabel6);
-        fprintf("score6 = %s\n", num2str(score6));
-        fprintf("%d,%d,%d,%d,%d,%d,%d\n", clabel1, clabel1, clabel2, clabel3, clabel4, clabel5, clabel6)
+
+        fprintf("%d,%d,%d\n", clabel1, clabel2, clabel3)
     end   
 
     for i=1:length(clusterNames)
@@ -270,19 +220,16 @@ function [pMat,mList1,mList2,mList3,mList4,mList5,mList6] = classifyTestSeqExter
     end
     disp(clusterNames)
     header = [clusterNames, 'prediction']
+    
+    fprintf("score2Matrix is \n");
+    disp(score2Matrix)
     T1 = array2table(score1Matrix,'VariableNames',header)
-    T2 = array2table(score2Matrix,'VariableNames',header)
+    T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', AcNmbTest))
     T3 = array2table(score3Matrix,'VariableNames',header)
-    T4 = array2table(score4Matrix,'VariableNames',header)
-    T5 = array2table(score5Matrix,'VariableNames',header)
-    T6 = array2table(score6Matrix,'VariableNames',header)
 
     writetable(T1, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
     writetable(T2, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
     writetable(T3, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
-    writetable(T4, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'fine-knn-score');  
-    writetable(T5, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-knn-score');  
-    writetable(T6, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'subspace-discriminant-score');  
 
 end
 

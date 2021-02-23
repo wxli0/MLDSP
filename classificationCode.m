@@ -1,6 +1,6 @@
 function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq, AcNum)
     %10-fold cross validation
-    %classification accuracy for 6 classifiers
+    %classification accuracy for 4 classifiers
     %linear-discriminant, linear svm, quadratic svm, fine knn,
     %subspace-discriminant, subspace-knn
     %only first four classifiers are used for more than 2000 sequences
@@ -16,9 +16,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     cMat1=cell(1,folds);
     cMat2=cell(1,folds);
     cMat3=cell(1,folds);
-    cMat4=cell(1,folds);
-    cMat5=cell(1,folds);
-    cMat6=cell(1,folds);
+
     cn=unique(alabels);
     n = length(cn);
     ord = [];
@@ -48,12 +46,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
 
         fmt=['testInd =' repmat(' %1.0f',1,numel(testInd)) '\n'];
         fprintf(fmt,testInd)
-        % disp(cMat1{i})
-        % fmt=['plabel1 =' repmat(' %1.0f',1,numel(plabel1)) '\n'];
-        % fprintf(fmt, plabel1)
-        % fmt=['alabels(testInd) =' repmat(' %1.0f',1,numel(alabels(testInd))) '\n'];
-        % fprintf(fmt, alabels(testInd))
-        % print misclassified testid and sequence
+
         for k = 1:length(plabel1)
             alabelsArray = alabels(testInd);
             if plabel1(k) ~= alabelsArray(k)
@@ -62,9 +55,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
                 disp(AcNum(testInd(k)))
             end
         end
-
-
-
 
         
         %linear-svm
@@ -131,61 +121,14 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             plabel3 = predict(c3,testSet); 
             cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);            
         end
-        
-        %fine-knn
-        c4 = fitcknn(...
-        trainSet, ...
-        alabels(trainInd), ...
-        'Distance', 'Euclidean', ...
-        'Exponent', [], ...
-        'NumNeighbors', 1, ...
-        'DistanceWeight', 'Equal', ...
-        'Standardize', true, ...
-        'ClassNames', cn);
-        plabel4 = predict(c4,testSet);
-        cMat4{i} = confusionmat(alabels(testInd),plabel4,'Order',ord); 
-
-        % next 2 classifiers are used for less than 2000 sequences for time efficiency
-        if(totalSeq<=20000)
-            %subspace-discriminant
-            subspaceDimension = max(1, min(74, length(trainSet) - 1));
-            c5 = fitcensemble(...
-            trainSet, ...
-            alabels(trainInd), ...
-            'Method', 'Subspace', ...
-            'NumLearningCycles', 30, ...
-            'Learners', 'discriminant', ...
-            'NPredToSample', subspaceDimension, ...
-            'ClassNames', cn);
-            plabel5 = predict(c5,testSet);
-            cMat5{i} = confusionmat(alabels(testInd),plabel5,'Order',ord); 
-
-            %subspace knn
-            subspaceDimension = max(1, min(74, length(trainSet) - 1));
-            c6 = fitcensemble(...
-            trainSet, ...
-            alabels(trainInd), ...
-            'Method', 'Subspace', ...
-            'NumLearningCycles', 30, ...
-            'Learners', 'knn', ...
-            'NPredToSample', subspaceDimension, ...
-            'ClassNames', cn);
-            plabel6 = predict(c6,testSet);
-            cMat6{i} = confusionmat(alabels(testInd),plabel6,'Order',ord); 
-        end
     end
 
     cMat{1}=cMat1;
     cMat{2}=cMat2;
     cMat{3}=cMat3;
-    cMat{4}=cMat4;
-    if(totalSeq<=20000)
-        cMat{5}=cMat5;
-        cMat{6}=cMat6;
-        clNames = {"LinearDiscriminant","LinearSVM","QuadraticSVM","FineKNN","SubspaceDiscriminant","SubspaceKNN","AverageAccuracy"};
-    else
-        clNames = {"LinearDiscriminant","LinearSVM","QuadraticSVM","FineKNN",'AverageAccuracy'};
-    end
+    
+    clNames = {"LinearDiscriminant","LinearSVM","QuadraticSVM"};
+    
     accuracy=cell(1,length(cMat));
    
     for i=1:length(accuracy)
@@ -197,10 +140,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         if( sum(cMatrix(:))~=totalSeq)
             totalSeq
         end
-        if (i == 1)
-            fprintf("confusion matrix for LinearDiscriminant is:\n")
-            disp(cMatrix)
-        end
+        fprintf("confusion matrix for %d is:\n", i)
+        disp(cMatrix)
         accuracy{i} = round((trace(cMatrix)/totalSeq)*100,1);
     end    
     avg_acc = round(sum([accuracy{:}])/length(accuracy),1);
