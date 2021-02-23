@@ -20,8 +20,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     cMat5=cell(1,folds);
     cMat6=cell(1,folds);
     cn=unique(alabels);
-    scores2 = [];
-    plabels2 = []; 
     n = length(cn);
     ord = [];
     for xx=1:n
@@ -81,8 +79,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'Standardize', true, ...
             'ClassNames', cn);
             [plabel2, score2] = predict(c2,testSet);
-            scores2=[scores2 score2];
-            plabels2=[plabels2 plabel2];
             cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
         else
             template = templateSVM(...
@@ -103,9 +99,9 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             plabels2=[plabels2 plabel2];
             cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
         end
-        disp(alabels)
-        disp(plabels2)
-        disp(scores2)
+        disp(alabels(testInd))
+        disp(plabel2)
+        disp(score2)
 
         %quad-svm
         if(cn==2)
