@@ -185,6 +185,10 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,nu
         [clabel1, score1, ~] = predict(cModel1, testV); 
         pMat(1,clabel1)= pMat(1,clabel1)+1;
         [clabel2, ~, pbscore2] = predict(cModel2,testV);   
+        fprintf("pbscore2 is:\n")
+        disp(pbscore2)
+        fprintf("clabel2 is:\n")
+        disp(clabel2)
         pMat(2,clabel2)= pMat(2,clabel2)+1;
         [clabel3, ~, ~, score3] = predict(cModel3,testV);    
         pMat(3,clabel3)= pMat(3,clabel3)+1;

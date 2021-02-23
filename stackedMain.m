@@ -113,17 +113,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [tab,mList1,mList2,mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
-    tabc=table2cell(tab);
-    tabc=[tab.Properties.VariableNames;tabc];
-    tabc = string(tabc);
-    % writematrix(tabc,'testingMatrix4.xlsx');
-    % writematrix(string(mList1(1)),'testingMatrix4.xlsx','Sheet',2);  
-    % writematrix(string(mList2(1)),'testingMatrix4.xlsx','Sheet',3);  
-    % writematrix(string(mList3(1)),'testingMatrix4.xlsx','Sheet',4);  
-    % writematrix(string(mList4(1)),'testingMatrix4.xlsx','Sheet',5);  
-    % writematrix(string(mList5(1)),'testingMatrix4.xlsx','Sheet',6); 
-    % writematrix(string(mList6(1)),'testingMatrix4.xlsx','Sheet',7);  
+    [mList1,mList2,mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
 end
 
 

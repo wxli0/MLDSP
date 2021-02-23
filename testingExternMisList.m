@@ -1,4 +1,4 @@
-function [tab,mList1,mList2,mList3] = testingExternMisList(dSet,numMethod,disMat,alabels,lg,clusterNames,kVal,mLen,minSeqLen,maxSeqLen,maxClusSize, clusterStart, dataSet)
+function [mList1,mList2,mList3] = testingExternMisList(dSet,numMethod,disMat,alabels,lg,clusterNames,kVal,mLen,minSeqLen,maxSeqLen,maxClusSize, clusterStart, dataSet)
      warning('off','all');
     %read and clean testing data
     [AcNmbTest,SeqTest, pnts,Fnm] = readTestingExternSet(dSet,minSeqLen,maxSeqLen,maxClusSize);
