@@ -217,7 +217,6 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,nu
         fprintf("pbscore2 = %s\n", num2str(score2));
         fprintf("clabel3 = %d\n", clabel3);
         fprintf("score3 = %s\n", num2str(score3));
-        fprintf("clabel4 = %d\n", clabel4);
 
         fprintf("%d,%d,%d\n", clabel1, clabel2, clabel3)
     end   
