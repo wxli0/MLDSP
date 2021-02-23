@@ -11,7 +11,7 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     cd(dataSet);
     fprintf("dataSet is:")
     disp(dataSet)
-    allFiles = [dir('*.fasta');dir('*.fna');dir('*.txt');];
+    allFiles = [dir('*.fasta');dir('*.fna');dir('*.txt');dir('*.fa')];
     allFiles=allFiles(~startsWith({allFiles.name},{'.'}));
     fprintf("allFiles are:\n")
     disp(allFiles)
