@@ -82,36 +82,6 @@ for i=1:length(clusterStart)
     end
 end
 
-% %3D  plot
-% fprintf('Generating 3D plot .... \n');
-% index=1;
-% counter=1;
-% Cluster = zeros(1,totalSeq);
-% for i=1:totalSeq   
-%     Cluster(i)=index;
-%     if(counter==pointsPerCluster{index})
-%         index=index+1;
-%         counter=0;
-%     end
-%     counter= counter+1;
-% end
-% uniqueClusters  = unique(Cluster);
-% cmap = distinguishable_colors(numberOfClusters);
-% hf = figure;
-% hold on;
-% for h=1:numberOfClusters
-%     cIndex = Cluster == uniqueClusters(h);
-%     plot3(Y(cIndex,1),Y(cIndex,2),Y(cIndex,3),'.','markersize', 15, 'Color',cmap(h,:),'DisplayName',clusterNames{h});
-% end
-% % view(3), axis vis3d, box on, datacursormode on
-% xlabel('x'), ylabel('y'), zlabel('z')
-% tname = strcat(selectedFolder,' (',int2str(totalSeq),' Sequences',')');
-% title(tname)
-% hdt = datacursormode(hf);
-% set(hdt,'UpdateFcn',{@myupdatefcn,Y,Fnm})
-% legend('show');
-% mkdir(strcat('outputs/3D/', parentSet));
-% saveas(hf, strcat('outputs/3D/', parentSet, '/', childSet, '.fig'));
 
 % create labels
 clear a;
@@ -143,7 +113,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [tab,mList1,mList2,mList3,mList4,mList5,mList6]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
+    [tab,mList1,mList2,mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
     tabc=table2cell(tab);
     tabc=[tab.Properties.VariableNames;tabc];
     tabc = string(tabc);
