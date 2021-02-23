@@ -220,11 +220,11 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,nu
     end
     disp(clusterNames)
     header = [clusterNames, 'prediction']
-    
+
     fprintf("score2Matrix is \n");
     disp(score2Matrix)
     T1 = array2table(score1Matrix,'VariableNames',header)
-    T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', AcNmbTest))
+    T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', AcNmbTest)
     T3 = array2table(score3Matrix,'VariableNames',header)
 
     writetable(T1, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
