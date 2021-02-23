@@ -181,7 +181,6 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,nu
     score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
     if (length(clusterNames)==2)
         score2Matrix = zeros(numTestSeq, length(clusterNames));
-        score3Matrix = zeros(numTestSeq, length(clusterNames));
     end
 
     for s=1:numTestSeq
