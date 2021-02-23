@@ -78,7 +78,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'BoxConstraint', 1, ...
             'Standardize', true, ...
             'ClassNames', cn);
-            [plabel2, score2] = predict(c2,testSet);
+            [plabel2, score2] = predict(c2,testSet)
             cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
         else
             template = templateSVM(...
@@ -94,14 +94,13 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'FitPosterior',true, ...
             'Coding', 'onevsall', ...
             'ClassNames', cn);
-            [plabel2, ~, ~, score2] = predict(c2,testSet);
-            scores2=[scores2 score2];
+            [plabel2, ~, ~, score2] = predict(c2,testSet)
             plabels2=[plabels2 plabel2];
             cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
         end
+
+        fprintf("alabels are:\n")
         disp(alabels(testInd))
-        disp(plabel2)
-        disp(score2)
 
         %quad-svm
         if(cn==2)
