@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'everything'
-testSet = ''
+dataSet = 'everything_0.1'
+testSet = 'genomes'
 % testSet = 'MAG/g__C941/'
 
 basePath = '/home/w328li/MLDSP/samples/';
