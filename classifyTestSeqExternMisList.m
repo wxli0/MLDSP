@@ -228,7 +228,7 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
     header = [clusterNames, 'prediction']
     header2 = [clusterNames, 'prediction']
     if (length(clusterNames)==2)
-        header2 = [clusterNames{1}+'-'+clusterNames{2}, 'prediction']
+        header2 = [clusterNames{1} '-' clusterNames{2}, 'prediction']
     end
 
 
