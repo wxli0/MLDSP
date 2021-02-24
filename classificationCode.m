@@ -100,17 +100,15 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         [plabel3, ~, ~, score3] = predict(cModel3,testSet)    
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
         score3Matrix = [score3, plabel3, alabels(testInd)]    
-        disp(testAcNum)
-        disp(size(testAcNum))
  
         T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testFnm)
-        writetable(T1, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
+        writetable(T1, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', strcat('linear-discriminant-score', num2str(i)));  
 
         T2 = array2table(score2Matrix,'VariableNames',header2, 'RowNames', testFnm)
-        writetable(T2, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-svm-score');  
+        writetable(T2, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', strcat('linear-svm-score', num2str(i)));  
 
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
-        writetable(T3, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
+        writetable(T3, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', strcat('quadratic-svm-score', num2str(i)));  
 
 
 

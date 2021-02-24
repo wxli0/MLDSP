@@ -3,7 +3,7 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'everything_0.1'
+dataSet = 'Primates'
 testSet = ''
 
 basePath = '/home/w328li/MLDSP/samples/';
