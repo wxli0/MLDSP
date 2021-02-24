@@ -93,7 +93,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         [plabel3, ~, ~, score3] = predict(cModel3,testSet)    
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
         score3Matrix = [score3, plabel3, alabels(testInd)]    
-        disp(AcNum)
+        disp(testAcNum)
+        disp(size(testAcNum))
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testAcNum)
         writetable(T3, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
 
