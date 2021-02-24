@@ -8,7 +8,7 @@ testSet = ''
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
-    basePath = '/Users/wanxinli/Desktop/project/MLDSP/samples/';
+    basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
 end
 methodNum = 1
 dataSetPath = strcat(basePath, dataSet)
@@ -100,10 +100,12 @@ if (totalSeq<folds)
     folds = totalSeq;
 end
 if (strcmp(testSet, ''))
-    [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb, clusterNames);
+    [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb, clusterNames, dataSet);
     acc = [accuracy avg_accuracy];
     s.ClassifierModel=cellstr(clNames.');
     s.Accuracy=cell2mat(acc).';
+    disp(cellstr(clNames.'))
+    disp(acc)
     ClassificationAccuracyScores = struct2table(s);
     disp(ClassificationAccuracyScores);
 end

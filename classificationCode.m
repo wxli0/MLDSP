@@ -1,4 +1,4 @@
-function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq, AcNum, clusterNames)
+function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq, AcNum, clusterNames, dataSet)
     %10-fold cross validation
     %classification accuracy for 4 classifiers
     %linear-discriminant, linear svm, quadratic svm, fine knn,
@@ -24,8 +24,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         ord=[ord xx];
     end
 
-    header = [clusterNames, 'prediction']
-    header2 = [clusterNames, 'prediction']
+    header = [clusterNames, 'prediction', 'actual']
+    header2 = [clusterNames, 'prediction', 'actual']
     if (length(clusterNames)==2)
         header2 = [clusterNames]
     end
@@ -51,6 +51,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         fprintf("classifying using LDA\n")
         [plabel1, score1, ~] = predict(c1,testSet)
         cMat1{i} = confusionmat(alabels(testInd),plabel1,'Order',ord);
+        score1Matrix = [score1, plabel1, alabels(testInd)]    
 
         %Linear SVM
         fprintf("training linear SVM \n")
@@ -70,6 +71,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         fprintf("classifying using LSVM\n")
         [plabel2, ~, score2] = predict(c2,testSet)
         cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
+        score2Matrix = [score2, plabel2, alabels(testInd)]    
 
         fprintf("alabels are:\n")
         disp(alabels(testInd))
@@ -95,8 +97,15 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         score3Matrix = [score3, plabel3, alabels(testInd)]    
         disp(testAcNum)
         disp(size(testAcNum))
+ 
+        T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testAcNum)
+        writetable(T1, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
+
+        T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', testAcNum)
+        writetable(T2, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-svm-score');  
+
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testAcNum)
-        writetable(T3, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
+        writetable(T3, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
 
 
 
@@ -106,7 +115,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     cMat{2}=cMat2;
     cMat{3}=cMat3;
     
-    clNames = {"LinearDiscriminant","LinearSVM","QuadraticSVM"};
+    clNames = {"LinearDiscriminant","LinearSVM","QuadraticSVM", "AvgAccuracy"};
     
     accuracy=cell(1,length(cMat));
    
