@@ -61,6 +61,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'ClassNames', cn);
 
         fprintf("classifying using LSVM\n")
+        disp(testSet)
         [plabel2, ~, score2] = predict(c2,testSet)
         cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
 
@@ -83,7 +84,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'Coding', 'onevsall', ...
             'ClassNames', cn); 
         fprintf("classifying using QSVM\n")
-        [plabel3, ~, ~, score3] = predict(cModel3,testV);    
+        [plabel3, ~, ~, score3] = predict(cModel3,testSet);    
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);            
     end
 
