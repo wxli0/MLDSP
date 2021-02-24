@@ -42,7 +42,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         'FillCoeffs', 'off', ...
         'ClassNames', cn);
         fprintf("classifying using LDA\n")
-        plabel1 = predict(c1,testSet);
+        [plabel1, score1, ~] = predict(c1,testSet)
         cMat1{i} = confusionmat(alabels(testInd),plabel1,'Order',ord);
 
         %Linear SVM
@@ -84,7 +84,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'Coding', 'onevsall', ...
             'ClassNames', cn); 
         fprintf("classifying using QSVM\n")
-        [plabel3, ~, ~, score3] = predict(cModel3,testSet);    
+        [plabel3, ~, ~, score3] = predict(cModel3,testSet)    
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);            
     end
 
