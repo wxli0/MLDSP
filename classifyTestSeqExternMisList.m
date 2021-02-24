@@ -232,12 +232,18 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
     end
 
 
-    fprintf("score2Matrix is \n");
+    testFnm = []
+    for f = 1:length(Fnm)
+        splitAcNum = split(Fnm{f}, '/')
+        testFnm = [testFnm, splitAcNum(end)]
+    end
+
     disp(score2Matrix)
-    T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', Fnm)
-    disp(Fnm)
-    T2 = array2table(score2Matrix,'VariableNames',header2, 'RowNames', Fnm)
-    T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', Fnm)
+    T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testFnm)
+    disp(testFnm)
+
+    T2 = array2table(score2Matrix,'VariableNames',header2, 'RowNames', testFnm)
+    T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
 
     writetable(T1, strcat("outputs/test-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
     writetable(T2, strcat("outputs/test-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-svm-score');  
