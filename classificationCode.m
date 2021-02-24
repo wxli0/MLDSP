@@ -1,4 +1,4 @@
-function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq, AcNum)
+function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabels, folds, totalSeq, AcNum, clusterNames)
     %10-fold cross validation
     %classification accuracy for 4 classifiers
     %linear-discriminant, linear svm, quadratic svm, fine knn,
@@ -22,6 +22,12 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     ord = [];
     for xx=1:n
         ord=[ord xx];
+    end
+
+    header = [clusterNames, 'prediction']
+    header2 = [clusterNames, 'prediction']
+    if (length(clusterNames)==2)
+        header2 = [clusterNames]
     end
 
     for i = 1:folds
@@ -61,7 +67,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'ClassNames', cn);
 
         fprintf("classifying using LSVM\n")
-        disp(testSet)
         [plabel2, ~, score2] = predict(c2,testSet)
         cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
 
@@ -85,7 +90,12 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'ClassNames', cn); 
         fprintf("classifying using QSVM\n")
         [plabel3, ~, ~, score3] = predict(cModel3,testSet)    
-        cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);            
+        cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
+        score3Matrix = [score3, plabel3, alabels(testInd)]    
+        disp(AcNum)
+        T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', AcNum)
+
+
     end
 
     cMat{1}=cMat1;

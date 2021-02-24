@@ -17,8 +17,6 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     % disp(allFiles)
     allInfo = struct2cell(allFiles);
     fileNames = allInfo(1,:);
-    % fprintf("fileNames are:")
-    % disp(fileNames)
     pts = length(allFiles);
      
     if(maxClusSize==0 || pts<=maxClusSize)        

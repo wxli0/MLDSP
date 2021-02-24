@@ -100,7 +100,7 @@ if (totalSeq<folds)
     folds = totalSeq;
 end
 if (strcmp(testSet, ''))
-    [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb);
+    [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb, clusterNames);
     acc = [accuracy avg_accuracy];
     s.ClassifierModel=cellstr(clNames.');
     s.Accuracy=cell2mat(acc).';
