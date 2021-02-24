@@ -230,6 +230,7 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,nu
     fprintf("score2Matrix is \n");
     disp(score2Matrix)
     T1 = array2table(score1Matrix,'VariableNames',header)
+    disp(cellfun(@(v)v(1),AcNmbTest))
     T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', cellfun(@(v)v(1),AcNmbTest))
     T3 = array2table(score3Matrix,'VariableNames',header)
 
