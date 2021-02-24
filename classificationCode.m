@@ -37,6 +37,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         trainInd = find(AllTrainInd);
         trainSet = disMat(trainInd,trainInd);
         testSet = disMat(testInd,trainInd);
+        testAcNum = AcNum(testInd)
 
         %linear-discriminant
         fprintf("training LDA\n")
@@ -93,7 +94,9 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
         score3Matrix = [score3, plabel3, alabels(testInd)]    
         disp(AcNum)
-        T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', AcNum)
+        T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testAcNum)
+        writetable(T3, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
+
 
 
     end

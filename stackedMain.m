@@ -19,7 +19,7 @@ selectedFolder = dataSetPath;
 % read sequences
 fprintf('Reading sequences .... \n');
 maxClusSize = 50000; %  0 if limit all cluster sizes by the size of smallest cluster;
-[acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize)
+[acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize);
 AcNmb = Fnm;
 totalSeq = length(Seq);
 [maxLen, minLen, meanLen, medLen] = lengthCalc(Seq);
