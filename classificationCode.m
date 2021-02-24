@@ -27,7 +27,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     header = [clusterNames, 'prediction', 'actual']
     header2 = [clusterNames, 'prediction', 'actual']
     if (length(clusterNames)==2)
-        header2 = [clusterNames]
+        header2 = {'combined', 'prediction', 'actual'}
     end
 
     for i = 1:folds
@@ -38,6 +38,11 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         trainSet = disMat(trainInd,trainInd);
         testSet = disMat(testInd,trainInd);
         testAcNum = AcNum(testInd)
+        testFnm = []
+        for f = 1:length(testAcNum)
+            splitAcNum = split(testAcNum{f}, '/')
+            testFnm = [testFnm, splitAcNum(end)]
+        end
 
         %linear-discriminant
         fprintf("training LDA\n")
@@ -98,13 +103,13 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         disp(testAcNum)
         disp(size(testAcNum))
  
-        T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testAcNum)
+        T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testFnm)
         writetable(T1, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
 
-        T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', testAcNum)
+        T2 = array2table(score2Matrix,'VariableNames',header2, 'RowNames', testFnm)
         writetable(T2, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-svm-score');  
 
-        T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testAcNum)
+        T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
         writetable(T3, strcat("outputs/train-", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
 
 
