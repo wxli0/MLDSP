@@ -93,7 +93,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
         score3Matrix = [score3, plabel3, alabels(testInd)]    
         disp(AcNum)
-        T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', AcNum)
+        T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', AcNum)
 
 
     end
