@@ -6,6 +6,6 @@ function [mList1,mList2,mList3] = testingExternMisList(dSet,numMethod,disMat,ala
     numberOfClusters = length(clusterNames);
     
     %testing
-    [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet);
+    [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet);
 
 end

@@ -1,4 +1,4 @@
-function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
+function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
     numTestSeq = length(SeqTest);
     nSeq = cell(1,numTestSeq);
     fVec = cell(1,numTestSeq);
@@ -230,8 +230,8 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,nu
     fprintf("score2Matrix is \n");
     disp(score2Matrix)
     T1 = array2table(score1Matrix,'VariableNames',header)
-    disp(cellfun(@(v)v(1),AcNmbTest))
-    T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', cellfun(@(v)v(1),AcNmbTest))
+    disp(Fnm)
+    T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', Fnm)
     T3 = array2table(score3Matrix,'VariableNames',header)
 
     writetable(T1, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
