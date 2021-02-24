@@ -234,14 +234,14 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
 
     fprintf("score2Matrix is \n");
     disp(score2Matrix)
-    T1 = array2table(score1Matrix,'VariableNames',header)
+    T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', Fnm)
     disp(Fnm)
     T2 = array2table(score2Matrix,'VariableNames',header2, 'RowNames', Fnm)
-    T3 = array2table(score3Matrix,'VariableNames',header)
+    T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', Fnm)
 
-    writetable(T1, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-discriminant-score');  
-    writetable(T2, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'linear-svm-score');  
-    writetable(T3, strcat("outputs/", dataSet, ".xls"), 'Sheet', 'quadratic-svm-score');  
+    writetable(T1, strcat("outputs/", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
+    writetable(T2, strcat("outputs/", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'linear-svm-score');  
+    writetable(T3, strcat("outputs/", dataSet, ".xls"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
 
 end
 

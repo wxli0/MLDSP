@@ -14,7 +14,7 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     allFiles = [dir('*.fasta');dir('*.fna');dir('*.txt');dir('*.fa')];
     allFiles=allFiles(~startsWith({allFiles.name},{'.'}));
     fprintf("allFiles are:\n")
-    disp(allFiles)
+    % disp(allFiles)
     allInfo = struct2cell(allFiles);
     fileNames = allInfo(1,:);
     % fprintf("fileNames are:")

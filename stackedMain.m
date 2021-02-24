@@ -4,8 +4,7 @@ clear all;
 clc ;
 
 dataSet = 'everything_0.1'
-testSet = 'genomes'
-% testSet = 'MAG/g__C941/'
+testSet = ''
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
