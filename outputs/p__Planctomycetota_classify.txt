@@ -1,0 +1,197 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+dataSet =
+
+    'p__Planctomycetota'
+
+
+testSet =
+
+    'rumen_mags/p__Planctomycetota'
+
+
+methodNum =
+
+     1
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/p__Planctomycetota'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/rumen_mags/p__Planctomycetota'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Computing Distance matrix .... 
+c__Brocadiae and c__Brocadiae avg dissimilarity is: 0.039117
+c__Brocadiae and c__Phycisphaerae avg dissimilarity is: 0.096041
+c__Brocadiae and c__Planctomycetes avg dissimilarity is: 0.082534
+c__Brocadiae and c__UBA1135 avg dissimilarity is: 0.134691
+c__Phycisphaerae and c__Phycisphaerae avg dissimilarity is: 0.071302
+c__Phycisphaerae and c__Planctomycetes avg dissimilarity is: 0.069587
+c__Phycisphaerae and c__UBA1135 avg dissimilarity is: 0.089495
+c__Planctomycetes and c__Planctomycetes avg dissimilarity is: 0.057862
+c__Planctomycetes and c__UBA1135 avg dissimilarity is: 0.094687
+c__UBA1135 and c__UBA1135 avg dissimilarity is: 0.086499
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+
+seqToTest =
+
+     0
+
+dataSet is:/home/w328li/MLDSP/samples/rumen_mags/p__Planctomycetota
+allFiles are:
+Seq 1 and c__Brocadiae avg dissimilarity is: 0.028502
+Seq 1 and c__Phycisphaerae avg dissimilarity is: 0.103838
+Seq 1 and c__Planctomycetes avg dissimilarity is: 0.086020
+Seq 1 and c__UBA1135 avg dissimilarity is: 0.150112
+Seq 2 and c__Brocadiae avg dissimilarity is: 0.121300
+Seq 2 and c__Phycisphaerae avg dissimilarity is: 0.077011
+Seq 2 and c__Planctomycetes avg dissimilarity is: 0.084422
+Seq 2 and c__UBA1135 avg dissimilarity is: 0.073304
+Seq 3 and c__Brocadiae avg dissimilarity is: 0.029076
+Seq 3 and c__Phycisphaerae avg dissimilarity is: 0.099305
+Seq 3 and c__Planctomycetes avg dissimilarity is: 0.087279
+Seq 3 and c__UBA1135 avg dissimilarity is: 0.138751
+numTestSeq is: 3
+2,3
+2,4
+2,3
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-c__Brocadiae'}    {'c__Phycisphaerae'}    {'c__Planctomycetes'}    {'c__UBA1135'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-c__Brocadiae'}    {'2-c__Phycisphaerae'}    {'c__Planctomycetes'}    {'c__UBA1135'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-c__Brocadiae'}    {'2-c__Phycisphaerae'}    {'3-c__Planctomycetes'}    {'c__UBA1135'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-c__Brocadiae'}    {'2-c__Phycisphaerae'}    {'3-c__Planctomycetes'}    {'4-c__UBA1135'}
+
+    '1-c__Brocadiae'    '2-c__Phycisphaerae'    '3-c__Planctomycetes'    '4-c__UBA1135'
+
+
+header =
+
+  1x5 cell array
+
+    {'1-c__Brocadiae'}    {'2-c__Phycisphaerae'}    {'3-c__Planctomycetes'}    {'4-c__UBA1135'}    {'prediction'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG284.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'RUG284.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG636.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'RUG284.fasta'}    {'RUG636.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG695.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'RUG284.fasta'}    {'RUG636.fasta'}    {'RUG695.fasta'}
+
+
+T2 =
+
+  3x5 table
+
+                    1-c__Brocadiae    2-c__Phycisphaerae    3-c__Planctomycetes    4-c__UBA1135    prediction
+                    ______________    __________________    ___________________    ____________    __________
+
+    RUG284.fasta      0.00082989           0.58991                 0.29495            0.11431          2     
+    RUG636.fasta      1.5127e-06           0.54561              0.00036893            0.45402          2     
+    RUG695.fasta       0.0038129            0.5842                 0.40706          0.0049269          2     
+
+
+T3 =
+
+  3x5 table
+
+                    1-c__Brocadiae    2-c__Phycisphaerae    3-c__Planctomycetes    4-c__UBA1135    prediction
+                    ______________    __________________    ___________________    ____________    __________
+
+    RUG284.fasta      1.224e-05           0.0004698                0.95068           0.048842          3     
+    RUG636.fasta      0.0053669              0.4414             0.00029503            0.55294          4     
+    RUG695.fasta      0.0053665            0.058393                0.92904          0.0072017          3     
+
+Process completed 
+>> IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.>> 
+>> exit()
+[?1l>
