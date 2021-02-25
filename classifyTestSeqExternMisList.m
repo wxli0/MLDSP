@@ -147,6 +147,7 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
                 disMat, ...
                 alabels, ...
                 'Learners', template, ...
+                'FitPosterior',true, ...
                 'Coding', 'onevsall', ...
                 'ClassNames', cn);
   
@@ -179,15 +180,12 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
     score1Matrix = zeros(numTestSeq, length(clusterNames)+1);
     score2Matrix = zeros(numTestSeq, length(clusterNames)+1);
     score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
-    if (length(clusterNames)==2)
-        score2Matrix = zeros(numTestSeq, length(clusterNames));
-    end
 
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel1, score1, ~] = predict(cModel1, testV); 
         pMat(1,clabel1)= pMat(1,clabel1)+1;
-        [clabel2, ~, pbscore2] = predict(cModel2,testV);   
+        [clabel2, ~, ~, pbscore2] = predict(cModel2,testV);   
         fprintf("pbscore2 is:\n")
         disp(pbscore2)
         fprintf("clabel2 is:\n")
@@ -211,13 +209,6 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
         score3 = [score3 clabel3];
         score3Matrix(s,:) = score3;
 
-        fprintf("clabel1 = %d\n", clabel1);
-        fprintf("score1 = %s\n", num2str(score1));
-        fprintf("clabel2 = %d\n", clabel2);
-        fprintf("score2 = %s\n", num2str(score2));
-        fprintf("clabel3 = %d\n", clabel3);
-        fprintf("score3 = %s\n", num2str(score3));
-
         fprintf("%d,%d,%d\n", clabel1, clabel2, clabel3)
     end   
 
@@ -226,10 +217,6 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
     end
     disp(clusterNames)
     header = [clusterNames, 'prediction']
-    header2 = [clusterNames, 'prediction']
-    if (length(clusterNames)==2)
-        header2 = [clusterNames]
-    end
 
 
     testFnm = []
@@ -238,11 +225,9 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
         testFnm = [testFnm, splitAcNum(end)]
     end
 
-    disp(score2Matrix)
     T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testFnm)
-    disp(testFnm)
 
-    T2 = array2table(score2Matrix,'VariableNames',header2, 'RowNames', testFnm)
+    T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', testFnm)
     T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
 
     writetable(T1, strcat("outputs/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  

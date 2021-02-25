@@ -25,10 +25,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     end
 
     header = [clusterNames, 'prediction', 'actual']
-    header2 = [clusterNames, 'prediction', 'actual']
-    if (length(clusterNames)==2)
-        header2 = {'combined', 'prediction', 'actual'}
-    end
 
     for i = 1:folds
         AllTestInd = test(cv,i);
@@ -70,11 +66,12 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             trainSet, ...
             alabels(trainInd), ...
             'Learners', template, ...
+            'FitPosterior',true, ...
             'Coding', 'onevsall', ...
             'ClassNames', cn);
 
         fprintf("classifying using LSVM\n")
-        [plabel2, ~, score2] = predict(c2,testSet)
+        [plabel2, ~, ~, score2] = predict(c2,testSet)
         cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
         score2Matrix = [score2, plabel2, alabels(testInd)]    
 
@@ -104,7 +101,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testFnm)
         writetable(T1, strcat("outputs/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('linear-discriminant-score', num2str(i)));  
 
-        T2 = array2table(score2Matrix,'VariableNames',header2, 'RowNames', testFnm)
+        T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', testFnm)
         writetable(T2, strcat("outputs/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('linear-svm-score', num2str(i)));  
 
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
