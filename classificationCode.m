@@ -40,20 +40,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             testFnm = [testFnm, splitAcNum(end)]
         end
 
-        %linear-discriminant
-        fprintf("training LDA\n")
-        c1 = fitcdiscr(...
-        trainSet, ...
-        alabels(trainInd), ...
-        'DiscrimType', 'linear', ...
-        'Gamma', 0, ...
-        'FillCoeffs', 'off', ...
-        'ClassNames', cn);
-        fprintf("classifying using LDA\n")
-        [plabel1, score1, ~] = predict(c1,testSet)
-        cMat1{i} = confusionmat(alabels(testInd),plabel1,'Order',ord);
-        score1Matrix = [score1, plabel1, alabels(testInd)]    
-
         %Linear SVM
         fprintf("training linear SVM \n")
         template = templateSVM(...
@@ -75,8 +61,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
         score2Matrix = [score2, plabel2, alabels(testInd)]    
 
-        fprintf("alabels are:\n")
-        disp(alabels(testInd))
 
         %QSVM   
         fprintf("training QSVM\n")
@@ -98,9 +82,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
         score3Matrix = [score3, plabel3, alabels(testInd)]    
  
-        T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testFnm)
-        writetable(T1, strcat("outputs/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('linear-discriminant-score', num2str(i)));  
-
         T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', testFnm)
         writetable(T2, strcat("outputs/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('linear-svm-score', num2str(i)));  
 
@@ -111,11 +92,10 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
 
     end
 
-    cMat{1}=cMat1;
-    cMat{2}=cMat2;
-    cMat{3}=cMat3;
+    cMat{1}=cMat2;
+    cMat{2}=cMat3;
     
-    clNames = {"LinearDiscriminant","LinearSVM","QuadraticSVM", "AvgAccuracy"};
+    clNames = {"LinearSVM","QuadraticSVM", "AvgAccuracy"};
     
     accuracy=cell(1,length(cMat));
    
@@ -135,17 +115,3 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
     avg_acc = round(sum([accuracy{:}])/length(accuracy),1);
     
 end
-
-function [] = printMisclassifiedEntriesCM(cm)
-    global falseEntries 
-    for i = 1:size(cm, 1)
-        for j = 1:size(cm, 2)
-            if i == j
-                continue
-            end
-            if cm(i, j) ~= 0
-                fprintf("(%d,%d):%d\n", i, j, cm(i,j));
-            end
-        end
-    end
-end      

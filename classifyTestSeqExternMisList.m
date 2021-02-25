@@ -1,4 +1,4 @@
-function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
+function [pMat,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, numMethod,disMat,alabels,SeqTest,lg,clusterNames,kVal,mLen, clusterStart, dataSet)
     numTestSeq = length(SeqTest);
     nSeq = cell(1,numTestSeq);
     fVec = cell(1,numTestSeq);
@@ -127,14 +127,6 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
     end
     
     cn = unique(alabels);
-    %discriminant
-    cModel1 = fitcdiscr(...
-            disMat, ...
-            alabels, ...
-            'DiscrimType', 'linear', ...
-            'Gamma', 0, ...
-            'FillCoeffs', 'off', ...
-            'ClassNames', cn);
 
     %Linear SVM
     template = templateSVM(...
@@ -167,49 +159,34 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
                 'ClassNames', cn); 
 
 
-
-       
-
     
-    mList1=cell(2,numTestSeq);
     mList2=cell(2,numTestSeq);
     mList3=cell(2,numTestSeq);
      
     pMat = zeros(3,length(clusterNames));
     fprintf("numTestSeq is: %d\n", numTestSeq);
-    score1Matrix = zeros(numTestSeq, length(clusterNames)+1);
     score2Matrix = zeros(numTestSeq, length(clusterNames)+1);
     score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
 
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
-        [clabel1, score1, ~] = predict(cModel1, testV); 
-        pMat(1,clabel1)= pMat(1,clabel1)+1;
         [clabel2, ~, ~, pbscore2] = predict(cModel2,testV);   
-        fprintf("pbscore2 is:\n")
-        disp(pbscore2)
-        fprintf("clabel2 is:\n")
-        disp(clabel2)
         pMat(2,clabel2)= pMat(2,clabel2)+1;
         [clabel3, ~, ~, score3] = predict(cModel3,testV);    
         pMat(3,clabel3)= pMat(3,clabel3)+1;
 
-        mList1{1,s}=AcNmbTest{s};
         mList2{1,s}=AcNmbTest{s};
         mList3{1,s}=AcNmbTest{s};
 
-        mList1{2,s}=clusterNames{clabel1};
         mList2{2,s}=clusterNames{clabel2};
         mList3{2,s}=clusterNames{clabel3};
 
-        score1 = [score1 clabel1];
-        score1Matrix(s,:) = score1;
         score2 = [pbscore2 clabel2];
         score2Matrix(s,:) = score2;
         score3 = [score3 clabel3];
         score3Matrix(s,:) = score3;
 
-        fprintf("%d,%d,%d\n", clabel1, clabel2, clabel3)
+        fprintf("%d,%d\n",  clabel2, clabel3)
     end   
 
     for i=1:length(clusterNames)
@@ -225,12 +202,10 @@ function [pMat,mList1,mList2,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fn
         testFnm = [testFnm, splitAcNum(end)]
     end
 
-    T1 = array2table(score1Matrix,'VariableNames',header, 'RowNames', testFnm)
 
     T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', testFnm)
     T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
 
-    writetable(T1, strcat("outputs/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'linear-discriminant-score');  
     writetable(T2, strcat("outputs/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'linear-svm-score');  
     writetable(T3, strcat("outputs/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
 
