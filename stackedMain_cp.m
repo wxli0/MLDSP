@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'everything_0.1_subset_2'
-testSet = 'genomes'
+dataSet = 'd__Bacteria_0.5'
+testSet = 'rumen_mags/d__Bacteria'
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac

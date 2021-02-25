@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'Primates'
-testSet = 'Primates/Haplorrhini'
+dataSet = 'd__Bacteria_0.5'
+testSet = ''
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
@@ -95,7 +95,7 @@ end
 % perform classification
 fprintf('Performing classification .... \n');
 alabels = a;
-folds=10;
+folds=5;
 if (totalSeq<folds)
     folds = totalSeq;
 end
