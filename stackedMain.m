@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'd__Bacteria_0.5'
-testSet = ''
+dataSet = 'Primates'
+testSet = 'Primates/Haplorrhini'
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
