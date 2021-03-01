@@ -3,12 +3,12 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'd__Bacteria_0.5'
-testSet = 'rumen_mags/d__Bacteria'
+dataSet = 'p__Fibrobacterota'
+testSet = 'rumen_mags/p__Fibrobacterota'
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
-    basePath = '/Users/wanxinli/Desktop/project/MLDSP/samples/';
+    basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
 end
 methodNum = 1
 dataSetPath = strcat(basePath, dataSet)
@@ -19,7 +19,7 @@ selectedFolder = dataSetPath;
 % read sequences
 fprintf('Reading sequences .... \n');
 maxClusSize = 50000; %  0 if limit all cluster sizes by the size of smallest cluster;
-[acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize)
+[acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize);
 AcNmb = Fnm;
 totalSeq = length(Seq);
 [maxLen, minLen, meanLen, medLen] = lengthCalc(Seq);
@@ -95,15 +95,17 @@ end
 % perform classification
 fprintf('Performing classification .... \n');
 alabels = a;
-folds=10;
+folds=5;
 if (totalSeq<folds)
     folds = totalSeq;
 end
 if (strcmp(testSet, ''))
-    [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb, clusterNames);
+    [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb, clusterNames, dataSet);
     acc = [accuracy avg_accuracy];
     s.ClassifierModel=cellstr(clNames.');
     s.Accuracy=cell2mat(acc).';
+    disp(cellstr(clNames.'))
+    disp(acc)
     ClassificationAccuracyScores = struct2table(s);
     disp(ClassificationAccuracyScores);
 end
@@ -112,7 +114,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [mList1,mList2,mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
+    [mList2,mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
 end
 
 
