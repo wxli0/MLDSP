@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'c__Negativicutes'
-testSet = ''
+dataSet = 'Primates'
+testSet = 'Primates/Haplorrhini'
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
@@ -114,7 +114,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [mList2,mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
+    [mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
 end
 
 

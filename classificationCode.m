@@ -38,28 +38,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         for f = 1:length(testAcNum)
             splitAcNum = split(testAcNum{f}, '/')
             testFnm = [testFnm, splitAcNum(end)]
-        end
-
-        %Linear SVM
-        fprintf("training linear SVM \n")
-        template = templateSVM(...
-            'KernelFunction', 'linear', ...
-            'PolynomialOrder', [], ...
-            'KernelScale', 'auto', ...
-            'BoxConstraint', 1, ...
-            'Standardize', true);
-        c2 = fitcecoc(...
-            trainSet, ...
-            alabels(trainInd), ...
-            'Learners', template, ...
-            'FitPosterior',true, ...
-            'Coding', 'onevsall', ...
-            'ClassNames', cn);
-
-        fprintf("classifying using LSVM\n")
-        [plabel2, ~, ~, score2] = predict(c2,testSet)
-        cMat2{i} = confusionmat(alabels(testInd),plabel2,'Order',ord);
-        score2Matrix = [score2, plabel2, alabels(testInd)]    
+        end 
 
 
         %QSVM   
@@ -82,9 +61,6 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
         score3Matrix = [score3, plabel3, alabels(testInd)]    
  
-        T2 = array2table(score2Matrix,'VariableNames',header, 'RowNames', testFnm)
-        writetable(T2, strcat("outputs/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('linear-svm-score', num2str(i)));  
-
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
         writetable(T3, strcat("outputs/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('quadratic-svm-score', num2str(i)));  
 
@@ -92,10 +68,9 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
 
     end
 
-    cMat{1}=cMat2;
-    cMat{2}=cMat3;
+    cMat{1}=cMat3;
     
-    clNames = {"LinearSVM","QuadraticSVM", "AvgAccuracy"};
+    clNames = {"QuadraticSVM", "AvgAccuracy"};
     
     accuracy=cell(1,length(cMat));
    
