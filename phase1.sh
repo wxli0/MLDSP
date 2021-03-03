@@ -1,12 +1,22 @@
 #!/bin/bash
 
-output1="outputs/$1.txt"
-matlab -r "run addme;stackedMain('$1');exit"|tee ${output1}
-echo "INFO:done stackedMain('$1')"
+prog_output1 = "outputs/train-$1.txt"
+if [ -f ${prog_output1} ]; then
+    output1="outputs/$1.txt"
+    matlab -r "run addme;stackedMain('$1');exit"|tee ${output1}
+    echo "INFO:done stackedMain('$1')"
+else
+    echo "INFO:skip stackedMain('$1')"
+fi
 
-output2=output1="outputs/$1_classify.txt"
-matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
-echo "INFO:done stackedMain('$1', 'rumen_mags/$1')"
+prog_output2 = "outputs/test-$1.txt"
+if [ -f ${prog_output2} ]; then
+    output2="outputs/$1_classify.txt"
+    matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
+    echo "INFO:done stackedMain('$1', 'rumen_mags/$1')"
+else
+    echo "INFO:skip stackedMain('$1', 'rumen_mags/$1')"
+fi
 
 dir="/home/w328li/BlindKameris-new/"
 cd ${dir}
