@@ -20,6 +20,8 @@ fi
 
 dir="/home/w328li/BlindKameris-new/"
 cd ${dir}
+echo "INFO: done cd ${dir}"
+
 src1="/home/w328li/MLDSP/outputs/train-$1.xlsx"
 dest1="outputs/$1_train.xlsx"
 cp ${src1} ${dest1}
@@ -35,3 +37,12 @@ src2="/home/w328li/MLDSP/outputs/test-$1.xlsx"
 dest2="/home/w328li/BlindKameris-new/outputs/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
+
+output3="outputs/$1.xlsx"
+rej="rejection_threshold/$1.json"
+python3 preprocess_test.py ${output3} ${rej}
+echo "INFO:done preprocess_test.py ${output3} ${rej}"
+
+
+python3 add_MLDSP_pred.py ${output3}
+echo "INFO: done add_MLDSP_pred.py ${output3}"
