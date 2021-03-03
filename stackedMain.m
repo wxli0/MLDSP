@@ -1,7 +1,7 @@
 function [] = stackedMain(dataSet, testSet)
     %clear workspace, config
     close all;
-    clear all;
+    % clear all;
     clc ;
     if nargin < 2
         testSet=''
