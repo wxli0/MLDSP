@@ -1,6 +1,6 @@
 #!/bin/bash
 
-prog_output1 = "outputs/train-$1.txt"
+prog_output1="outputs/train-$1.txt"
 if [ -f ${prog_output1} ]; then
     output1="outputs/$1.txt"
     matlab -r "run addme;stackedMain('$1');exit"|tee ${output1}
@@ -9,7 +9,7 @@ else
     echo "INFO:skip stackedMain('$1')"
 fi
 
-prog_output2 = "outputs/test-$1.txt"
+prog_output2="outputs/test-$1.txt"
 if [ -f ${prog_output2} ]; then
     output2="outputs/$1_classify.txt"
     matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
