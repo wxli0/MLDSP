@@ -5,7 +5,7 @@ matlab -r "run addme;stackedMain('$1');exit"|tee ${output1}
 echo "INFO:done stackedMain('$1')"
 
 output2=output1="outputs/$1_classify.txt"
-matlab -r "run addme;stackedMain($1, rumen_mags/$1);exit"|tee ${output2}
+matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
 echo "INFO:done stackedMain('$1', 'rumen_mags/$1')"
 
 dir="/home/w328li/BlindKameris-new/"
