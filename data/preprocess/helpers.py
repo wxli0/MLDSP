@@ -159,6 +159,7 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
         if alter is not None:
             cur_fna_path = cluster_dir_full+"/"+max_name+"_"+str(cur_rep)+"_"+alter+".fasta"
 
+        i = 0
         for i in range(frags_num):
             cur_seq, random_start = prune_seq(max_seq, const_len, random_start)
             append_write = 'a'
