@@ -86,5 +86,6 @@ for file in select_files:
         out_file.write(">"+entire_name+str(i)+"\n")
         out_file.write(cur_seq+"\n")
         out_file.close()
+    print("outside the loop")
 
 
