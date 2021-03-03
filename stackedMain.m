@@ -3,7 +3,7 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'c__Clostridia'
+% dataSet = 'c__Coriobacteriia'
 testSet = ''
 
 basePath = '/home/w328li/MLDSP/samples/';

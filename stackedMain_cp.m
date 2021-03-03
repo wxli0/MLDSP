@@ -3,8 +3,8 @@ close all;
 clear all;
 clc ;
 
-dataSet = 'p__Fibrobacterota'
-testSet = 'rumen_mags/p__Fibrobacterota'
+dataSet = 'c__Coriobacteriia'
+testSet = 'rumen_mags/c__Coriobacteriia'
 
 basePath = '/home/w328li/MLDSP/samples/';
 if isunix & ismac
@@ -114,7 +114,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [mList2,mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
+    [mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
 end
 
 
