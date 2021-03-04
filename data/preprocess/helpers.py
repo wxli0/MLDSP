@@ -55,71 +55,71 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
             block4 = id[13:16]
             print(block1, block2,block3, block4)
             partial_url = base_url+block1+'/'+block2+'/'+block3+'/'+block4 +'/'
-            # try:
-            partial_url_dirs =  list_fd(partial_url)
-            block5 = partial_url_dirs[1]
-            print("partial_url_dirs is:", partial_url_dirs)
-            print("block5 is:", block5)
-            last_index = block5.split("/", 9)[-1][:-1]
-            download_url = block5+last_index+'_genomic.fna.gz'
-            print("download_url is:", download_url)
-            dest = cluster_dir_full+'/'+last_index+'_genomic.fna.gz'
-            urllib.request.urlretrieve(download_url, dest)
-            f = gzip.open(dest, 'r')
-            file_content = f.read()
-            file_content = file_content.decode('utf-8')
-            fna_path = cluster_dir_full+'/'+last_index+"_genomic.fna"
-            print("fna_path is:", fna_path)
-            f_out = open(cluster_dir_full+'/'+last_index+"_genomic.fna", 'w+')
-            f_out.write(file_content)
-            f.close()
-            f_out.close()
-            os.remove(dest)
+            try:
+                partial_url_dirs =  list_fd(partial_url)
+                block5 = partial_url_dirs[1]
+                print("partial_url_dirs is:", partial_url_dirs)
+                print("block5 is:", block5)
+                last_index = block5.split("/", 9)[-1][:-1]
+                download_url = block5+last_index+'_genomic.fna.gz'
+                print("download_url is:", download_url)
+                dest = cluster_dir_full+'/'+last_index+'_genomic.fna.gz'
+                urllib.request.urlretrieve(download_url, dest)
+                f = gzip.open(dest, 'r')
+                file_content = f.read()
+                file_content = file_content.decode('utf-8')
+                fna_path = cluster_dir_full+'/'+last_index+"_genomic.fna"
+                print("fna_path is:", fna_path)
+                f_out = open(cluster_dir_full+'/'+last_index+"_genomic.fna", 'w+')
+                f_out.write(file_content)
+                f.close()
+                f_out.close()
+                os.remove(dest)
 
-            if not full:
-                fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
-                max_len = 0
-                max_seq = ''
-                max_name = id
-                ######## tmp fix for now ############
-                for fasta in fasta_sequences:
-                    _, sequence = fasta.id, str(fasta.seq)
-                    sequence_real = ''.join( c for c in sequence if  c in 'ACGT') # prune irrelevant chars
-                    # if len(sequence_real) > max_len:
-                    #     max_len = len(sequence_real)
-                    #     max_seq = sequence # max_seq should contain 'X'
-                    #     max_name = name
-                    print("max_len is:", max_len)
-                    print("sequence_real len is:", len(sequence_real))
-                    # if len(sequence_real) > max_len:
-                    #     max_name = name
-                    if sequence is None:
-                        continue
-                    max_len += len(sequence_real)
-                    max_seq += ('O'+ sequence)
-                if not use_const_len: # use variable length in [lower, upper]
-                    if max_len < lower:
-                        os.remove(fna_path)
-                        print("INFO: len is", max_len)
-                        print("INFO: "+fna_path+" is removed")
-                        continue
+                if not full:
+                    fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
+                    max_len = 0
+                    max_seq = ''
+                    max_name = id
+                    ######## tmp fix for now ############
+                    for fasta in fasta_sequences:
+                        _, sequence = fasta.id, str(fasta.seq)
+                        sequence_real = ''.join( c for c in sequence if  c in 'ACGT') # prune irrelevant chars
+                        # if len(sequence_real) > max_len:
+                        #     max_len = len(sequence_real)
+                        #     max_seq = sequence # max_seq should contain 'X'
+                        #     max_name = name
+                        print("max_len is:", max_len)
+                        print("sequence_real len is:", len(sequence_real))
+                        # if len(sequence_real) > max_len:
+                        #     max_name = name
+                        if sequence is None:
+                            continue
+                        max_len += len(sequence_real)
+                        max_seq += ('O'+ sequence)
+                    if not use_const_len: # use variable length in [lower, upper]
+                        if max_len < lower:
+                            os.remove(fna_path)
+                            print("INFO: len is", max_len)
+                            print("INFO: "+fna_path+" is removed")
+                            continue
+                        else:
+                            download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num, cluster_dir_full, fna_path)
                     else:
-                        download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num, cluster_dir_full, fna_path)
-                else:
-                    print("enter right clause")
-                    if max_len < (frags_num*const_len):
-                        os.remove(fna_path)
-                        print("INFO: len is", max_len)
-                        print("INFO: "+fna_path+" is removed")
-                        continue
-                    else:
-                        print("before download_const_genome")
-                        download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter, rep_time)
+                        print("enter right clause")
+                        if max_len < (frags_num*const_len):
+                            os.remove(fna_path)
+                            print("INFO: len is", max_len)
+                            print("INFO: "+fna_path+" is removed")
+                            continue
+                        else:
+                            print("before download_const_genome")
+                            download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter, rep_time)
 
-            # except Exception as e:
-            #     print("ERROR:", "an error has occurred")
-            #     print(e)
-            #     pass
+            except Exception as e:
+                print("ERROR:", "an error has occurred")
+                print(e)
+                pass
 
 
 def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num, cluster_dir_full, fna_path):
