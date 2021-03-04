@@ -6,7 +6,7 @@ import sys
 import os
 import shutil
 
-# e.g.  python3 count_files.py o__Christensenellales
+# e.g.  python3 count_files.py o__Christensenellales 10
 dir = sys.argv[1]
 final_num = int(sys.argv[2])
 

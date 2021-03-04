@@ -1,5 +1,17 @@
 #!/bin/bash
 
+sample_dir="sample/$1"
+if [ ! -d ${sample_dir} ]; then
+    python3 run_select_sample.py $1
+    echo "INFO:done python3 run_select_sample.py $1"
+else
+    echo "INFO:skip python3 run_select_sample.py $1"
+fi
+
+final_num=15
+python3 samples/delete_files $1 $final_num
+echo "INFO:done python3 samples/delete_files $1 $final_num"
+
 prog_output1="outputs/train-$1.xlsx"
 if [ ! -f ${prog_output1} ]; then
     output1="outputs/$1.txt"
