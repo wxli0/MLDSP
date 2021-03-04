@@ -38,6 +38,7 @@ def first_start_point(entire_seq, seq_len):
 def prune_seq(entire_seq, seq_len, start_point):
     entire_seq_len = len(entire_seq)
     count = 0
+    i = 0
     for i in range(start_point, entire_seq_len):
         if entire_seq[i] in 'ACGT':
             count += 1
