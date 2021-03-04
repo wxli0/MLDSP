@@ -35,7 +35,7 @@ elif taxon.startswith('g'):
 
 gtdb_df = pd.read_csv(taxon_path, index_col=None, header=0)
 
-clusters = gtdb_df.loc[gtdb_df[rank] == taxon][next_rank].tolist()
+clusters = list(set(gtdb_df.loc[gtdb_df[rank] == taxon][next_rank].tolist()))
 
 sample_dict = {
     "tax_name": next_rank,
