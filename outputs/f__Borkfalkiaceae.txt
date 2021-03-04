@@ -1,0 +1,3530 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+methodNum =
+
+     1
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/f__Borkfalkiaceae'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Computing Distance matrix .... 
+g__Borkfalkia and g__Borkfalkia avg dissimilarity is: 0.016273
+g__Borkfalkia and g__QALS01 avg dissimilarity is: 0.027951
+g__Borkfalkia and g__UBA10281 avg dissimilarity is: 0.041585
+g__Borkfalkia and g__UBA11940 avg dissimilarity is: 0.039443
+g__Borkfalkia and g__UBA7597 avg dissimilarity is: 0.037048
+g__Borkfalkia and g__UMGS1004 avg dissimilarity is: 0.063415
+g__QALS01 and g__QALS01 avg dissimilarity is: 0.015503
+g__QALS01 and g__UBA10281 avg dissimilarity is: 0.038260
+g__QALS01 and g__UBA11940 avg dissimilarity is: 0.041394
+g__QALS01 and g__UBA7597 avg dissimilarity is: 0.035659
+g__QALS01 and g__UMGS1004 avg dissimilarity is: 0.070714
+g__UBA10281 and g__UBA10281 avg dissimilarity is: 0.012358
+g__UBA10281 and g__UBA11940 avg dissimilarity is: 0.043637
+g__UBA10281 and g__UBA7597 avg dissimilarity is: 0.036605
+g__UBA10281 and g__UMGS1004 avg dissimilarity is: 0.090644
+g__UBA11940 and g__UBA11940 avg dissimilarity is: 0.024729
+g__UBA11940 and g__UBA7597 avg dissimilarity is: 0.052496
+g__UBA11940 and g__UMGS1004 avg dissimilarity is: 0.077332
+g__UBA7597 and g__UBA7597 avg dissimilarity is: 0.009370
+g__UBA7597 and g__UMGS1004 avg dissimilarity is: 0.093179
+g__UMGS1004 and g__UMGS1004 avg dissimilarity is: 0.015281
+Performing classification .... 
+
+header =
+
+  1x8 cell array
+
+    {'g__Borkfalkia'}    {'g__QALS01'}    {'g__UBA10281'}    {'g__UBA11940'}    {'g__UBA7597'}    {'g__UMGS1004'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 21
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_003343765.1_2.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_003343765.1_2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_900557285.1_3.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_003343765.1_2.fasta'}    {'GB_GCA_900557285.1_3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'RS_GCF_004134775.1_1.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_003343765.1_2.fasta'}    {'GB_GCA_900557285.1_3.fasta'}    {'RS_GCF_004134775.1_1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_0.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_003343765.1_2.fasta'}    {'GB_GCA_900557285.1_3.fasta'}    {'RS_GCF_004134775.1_1.fasta'}    {'GB_GCA_900540805.1_0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_1.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_003343765.1_2.fasta'}    {'GB_GCA_900557285.1_3.fasta'}    {'RS_GCF_004134775.1_1.fasta'}    {'GB_GCA_900540805.1_0.fasta'}    {'GB_GCA_900540805.1_1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_2.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_003343765.1_2.f...'}    {'GB_GCA_900557285.1_3.f...'}    {'RS_GCF_004134775.1_1.f...'}    {'GB_GCA_900540805.1_0.f...'}    {'GB_GCA_900540805.1_1.f...'}    {'GB_GCA_900540805.1_2.f...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_4.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_003343765.1...'}    {'GB_GCA_900557285.1...'}    {'RS_GCF_004134775.1...'}    {'GB_GCA_900540805.1...'}    {'GB_GCA_900540805.1...'}    {'GB_GCA_900540805.1...'}    {'GB_GCA_900540805.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900552625.1_1.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900555925.1_3.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Column 9
+
+    {'GB_GCA_9005559...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900548285.1_2.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                            }
+    {'home'                              }
+    {'w328li'                            }
+    {'MLDSP'                             }
+    {'samples'                           }
+    {'f__Borkfalkiaceae'                 }
+    {'g__UBA10281'                       }
+    {'GCA_000437515.1_MGS727_genomic.fna'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_003503945.1_2.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_900549005.1_1.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_002474405.1_2.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_900542935.1_1.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_003343805.1_0.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_003343805.1_4.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}
+
+  Column 17
+
+    {'GB_GCA_0033438...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900547645.1_0.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0033438...'}    {'GB_GCA_9005476...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900547645.1_2.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0033438...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005476...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900548845.1_3.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0033438...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005488...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__UMGS1004'                         }
+    {'GCA_900547645.1_UMGS1004_genomic.fna'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005559...'}    {'GB_GCA_9005482...'}    {'GCA_000437515....'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0033438...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005488...'}    {'GCA_900547645....'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     2
+     1
+     2
+     2
+     2
+     2
+     2
+     2
+     3
+     3
+     4
+     4
+     5
+     5
+     6
+     6
+     6
+     6
+     6
+     6
+
+
+score3 =
+
+    1.0000         0         0         0         0         0
+    0.4937    0.5063    0.0000    0.0000    0.0000    0.0000
+    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+    0.1446    0.1446    0.1446    0.2768    0.1446    0.1446
+         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0
+         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    0.4937    0.5063    0.0000    0.0000    0.0000    0.0000    2.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+    0.1446    0.1446    0.1446    0.2768    0.1446    0.1446    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+
+
+T3 =
+
+  21x8 table
+
+                                            g__Borkfalkia    g__QALS01    g__UBA10281    g__UBA11940    g__UBA7597    g__UMGS1004    prediction    actual
+                                            _____________    _________    ___________    ___________    __________    ___________    __________    ______
+
+    GB_GCA_003343765.1_2.fasta                       1              0              0              0             0              0         1           1   
+    GB_GCA_900557285.1_3.fasta                 0.49368        0.50632      4.337e-13      4.337e-13     4.337e-13      4.337e-13         2           1   
+    RS_GCF_004134775.1_1.fasta                       1              0              0              0             0              0         1           1   
+    GB_GCA_900540805.1_0.fasta                       0              1              0              0             0              0         2           2   
+    GB_GCA_900540805.1_1.fasta                       0              1              0              0             0              0         2           2   
+    GB_GCA_900540805.1_2.fasta                       0              1              0              0             0              0         2           2   
+    GB_GCA_900540805.1_4.fasta                       0              1              0              0             0              0         2           2   
+    GB_GCA_900552625.1_1.fasta                       0              1              0              0             0              0         2           2   
+    GB_GCA_900555925.1_3.fasta                       0              1              0              0             0              0         2           2   
+    GB_GCA_900548285.1_2.fasta                       0              0              1              0             0              0         3           3   
+    GCA_000437515.1_MGS727_genomic.fna               0              0              1              0             0              0         3           3   
+    GB_GCA_003503945.1_2.fasta                 0.14465        0.14465        0.14465        0.27676       0.14465        0.14465         4           4   
+    GB_GCA_900549005.1_1.fasta                       0              0              0              1             0              0         4           4   
+    GB_GCA_002474405.1_2.fasta                       0              0              0              0             1              0         5           5   
+    GB_GCA_900542935.1_1.fasta                       0              0              0              0             1              0         5           5   
+    GB_GCA_003343805.1_0.fasta                       0              0              0              0             0              1         6           6   
+    GB_GCA_003343805.1_4.fasta                       0              0              0              0             0              1         6           6   
+    GB_GCA_900547645.1_0.fasta                       0              0              0              0             0              1         6           6   
+    GB_GCA_900547645.1_2.fasta                       0              0              0              0             0              1         6           6   
+    GB_GCA_900548845.1_3.fasta                       0              0              0              0             0              1         6           6   
+    GCA_900547645.1_UMGS1004_genomic.fna             0              0              0              0             0              1         6           6   
+
+
+testAcNum =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 22
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_900557285.1_2.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_900557285.1_2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'RS_GCF_004134775.1_0.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_900557285.1_2.fasta'}    {'RS_GCF_004134775.1_0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'RS_GCF_004134775.1_3.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_900557285.1_2.fasta'}    {'RS_GCF_004134775.1_0.fasta'}    {'RS_GCF_004134775.1_3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'RS_GCF_004134775.1_5.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_900557285.1_2.fasta'}    {'RS_GCF_004134775.1_0.fasta'}    {'RS_GCF_004134775.1_3.fasta'}    {'RS_GCF_004134775.1_5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                                 }
+    {'home'                                   }
+    {'w328li'                                 }
+    {'MLDSP'                                  }
+    {'samples'                                }
+    {'f__Borkfalkiaceae'                      }
+    {'g__Borkfalkia'                          }
+    {'GCA_003343765.1_ASM334376v1_genomic.fna'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_900557285.1_2.fasta'}    {'RS_GCF_004134775.1_0.fasta'}    {'RS_GCF_004134775.1_3.fasta'}    {'RS_GCF_004134775.1_5.fasta'}    {'GCA_003343765.1_ASM334376v1_g...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__Borkfalkia'                       }
+    {'GCA_900557285.1_UMGS2031_genomic.fna'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_900557285.1_2.f...'}    {'RS_GCF_004134775.1_0.f...'}    {'RS_GCF_004134775.1_3.f...'}    {'RS_GCF_004134775.1_5.f...'}    {'GCA_003343765.1_ASM334...'}    {'GCA_900557285.1_UMGS20...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900552625.1_3.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_900557285.1...'}    {'RS_GCF_004134775.1...'}    {'RS_GCF_004134775.1...'}    {'RS_GCF_004134775.1...'}    {'GCA_003343765.1_AS...'}    {'GCA_900557285.1_UM...'}    {'GB_GCA_900552625.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900555925.1_0.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                             }
+    {'home'                               }
+    {'w328li'                             }
+    {'MLDSP'                              }
+    {'samples'                            }
+    {'f__Borkfalkiaceae'                  }
+    {'g__QALS01'                          }
+    {'GCA_900540805.1_UMGS285_genomic.fna'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Column 9
+
+    {'GCA_900540805....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__QALS01'                           }
+    {'GCA_900552625.1_UMGS1535_genomic.fna'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 10
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_000437515.1_3.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 11
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900548285.1_4.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 12
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900554485.1_0.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 13
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_003503945.1_0.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 14
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_900549005.1_0.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 15
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                                 }
+    {'home'                                   }
+    {'w328li'                                 }
+    {'MLDSP'                                  }
+    {'samples'                                }
+    {'f__Borkfalkiaceae'                      }
+    {'g__UBA11940'                            }
+    {'GCA_003503945.1_ASM350394v1_genomic.fna'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 16
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GCA_003503945....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_002474405.1_0.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 16
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GCA_003503945....'}
+
+  Column 17
+
+    {'GB_GCA_0024744...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_002474405.1_4.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 16
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GCA_003503945....'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0024744...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_900542935.1_3.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 16
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GCA_003503945....'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_900542935.1_4.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 16
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GCA_003503945....'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_9005429...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                                 }
+    {'home'                                   }
+    {'w328li'                                 }
+    {'MLDSP'                                  }
+    {'samples'                                }
+    {'f__Borkfalkiaceae'                      }
+    {'g__UBA7597'                             }
+    {'GCA_003448195.1_ASM344819v1_genomic.fna'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 16
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GCA_003503945....'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_9005429...'}    {'GCA_003448195....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900548845.1_2.fasta'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GCA_003343765....'}    {'GCA_900557285....'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}
+
+  Columns 9 through 16
+
+    {'GCA_900540805....'}    {'GCA_900552625....'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_0035039...'}    {'GB_GCA_9005490...'}    {'GCA_003503945....'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0024744...'}    {'GB_GCA_9005429...'}    {'GB_GCA_9005429...'}    {'GCA_003448195....'}    {'GB_GCA_9005488...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     1
+     1
+     1
+     2
+     2
+     2
+     2
+     3
+     3
+     3
+     4
+     4
+     4
+     5
+     5
+     5
+     5
+     5
+     6
+
+
+score3 =
+
+     1     0     0     0     0     0
+     1     0     0     0     0     0
+     1     0     0     0     0     0
+     1     0     0     0     0     0
+     1     0     0     0     0     0
+     1     0     0     0     0     0
+     0     1     0     0     0     0
+     0     1     0     0     0     0
+     0     1     0     0     0     0
+     0     1     0     0     0     0
+     0     0     1     0     0     0
+     0     0     1     0     0     0
+     0     0     1     0     0     0
+     0     0     0     1     0     0
+     0     0     0     1     0     0
+     0     0     0     1     0     0
+     0     0     0     0     1     0
+     0     0     0     0     1     0
+     0     0     0     0     1     0
+     0     0     0     0     1     0
+     0     0     0     0     1     0
+     0     0     0     0     0     1
+
+
+score3Matrix =
+
+     1     0     0     0     0     0     1     1
+     1     0     0     0     0     0     1     1
+     1     0     0     0     0     0     1     1
+     1     0     0     0     0     0     1     1
+     1     0     0     0     0     0     1     1
+     1     0     0     0     0     0     1     1
+     0     1     0     0     0     0     2     2
+     0     1     0     0     0     0     2     2
+     0     1     0     0     0     0     2     2
+     0     1     0     0     0     0     2     2
+     0     0     1     0     0     0     3     3
+     0     0     1     0     0     0     3     3
+     0     0     1     0     0     0     3     3
+     0     0     0     1     0     0     4     4
+     0     0     0     1     0     0     4     4
+     0     0     0     1     0     0     4     4
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     0     1     6     6
+
+
+T3 =
+
+  22x8 table
+
+                                               g__Borkfalkia    g__QALS01    g__UBA10281    g__UBA11940    g__UBA7597    g__UMGS1004    prediction    actual
+                                               _____________    _________    ___________    ___________    __________    ___________    __________    ______
+
+    GB_GCA_900557285.1_2.fasta                       1              0             0              0             0              0             1           1   
+    RS_GCF_004134775.1_0.fasta                       1              0             0              0             0              0             1           1   
+    RS_GCF_004134775.1_3.fasta                       1              0             0              0             0              0             1           1   
+    RS_GCF_004134775.1_5.fasta                       1              0             0              0             0              0             1           1   
+    GCA_003343765.1_ASM334376v1_genomic.fna          1              0             0              0             0              0             1           1   
+    GCA_900557285.1_UMGS2031_genomic.fna             1              0             0              0             0              0             1           1   
+    GB_GCA_900552625.1_3.fasta                       0              1             0              0             0              0             2           2   
+    GB_GCA_900555925.1_0.fasta                       0              1             0              0             0              0             2           2   
+    GCA_900540805.1_UMGS285_genomic.fna              0              1             0              0             0              0             2           2   
+    GCA_900552625.1_UMGS1535_genomic.fna             0              1             0              0             0              0             2           2   
+    GB_GCA_000437515.1_3.fasta                       0              0             1              0             0              0             3           3   
+    GB_GCA_900548285.1_4.fasta                       0              0             1              0             0              0             3           3   
+    GB_GCA_900554485.1_0.fasta                       0              0             1              0             0              0             3           3   
+    GB_GCA_003503945.1_0.fasta                       0              0             0              1             0              0             4           4   
+    GB_GCA_900549005.1_0.fasta                       0              0             0              1             0              0             4           4   
+    GCA_003503945.1_ASM350394v1_genomic.fna          0              0             0              1             0              0             4           4   
+    GB_GCA_002474405.1_0.fasta                       0              0             0              0             1              0             5           5   
+    GB_GCA_002474405.1_4.fasta                       0              0             0              0             1              0             5           5   
+    GB_GCA_900542935.1_3.fasta                       0              0             0              0             1              0             5           5   
+    GB_GCA_900542935.1_4.fasta                       0              0             0              0             1              0             5           5   
+    GCA_003448195.1_ASM344819v1_genomic.fna          0              0             0              0             1              0             5           5   
+    GB_GCA_900548845.1_2.fasta                       0              0             0              0             0              1             6           6   
+
+
+testAcNum =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 22
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_003343765.1_1.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_003343765.1_1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_003343765.1_3.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_003343765.1_1.fasta'}    {'GB_GCA_003343765.1_3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_900557285.1_1.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_003343765.1_1.fasta'}    {'GB_GCA_003343765.1_3.fasta'}    {'GB_GCA_900557285.1_1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_3.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_003343765.1_1.fasta'}    {'GB_GCA_003343765.1_3.fasta'}    {'GB_GCA_900557285.1_1.fasta'}    {'GB_GCA_900540805.1_3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_7.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_003343765.1_1.fasta'}    {'GB_GCA_003343765.1_3.fasta'}    {'GB_GCA_900557285.1_1.fasta'}    {'GB_GCA_900540805.1_3.fasta'}    {'GB_GCA_900540805.1_7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900552625.1_0.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_003343765.1_1.f...'}    {'GB_GCA_003343765.1_3.f...'}    {'GB_GCA_900557285.1_1.f...'}    {'GB_GCA_900540805.1_3.f...'}    {'GB_GCA_900540805.1_7.f...'}    {'GB_GCA_900552625.1_0.f...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900552625.1_2.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_003343765.1...'}    {'GB_GCA_003343765.1...'}    {'GB_GCA_900557285.1...'}    {'GB_GCA_900540805.1...'}    {'GB_GCA_900540805.1...'}    {'GB_GCA_900552625.1...'}    {'GB_GCA_900552625.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900552625.1_5.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_000437515.1_0.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Column 9
+
+    {'GB_GCA_0004375...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_000437515.1_2.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900548285.1_0.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900556195.1_2.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__UBA10281'                         }
+    {'GCA_900548285.1_UMGS1072_genomic.fna'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_900549005.1_2.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_900549005.1_3.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__UBA11940'                         }
+    {'GCA_900549005.1_UMGS1143_genomic.fna'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}    {'GCA_900549005....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_002474405.1_3.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}    {'GCA_900549005....'}
+
+  Column 17
+
+    {'GB_GCA_0024744...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_003448195.1_3.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}    {'GCA_900549005....'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                                 }
+    {'home'                                   }
+    {'w328li'                                 }
+    {'MLDSP'                                  }
+    {'samples'                                }
+    {'f__Borkfalkiaceae'                      }
+    {'g__UBA7597'                             }
+    {'GCA_002474405.1_ASM247440v1_genomic.fna'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}    {'GCA_900549005....'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GCA_002474405....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_003343805.1_1.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}    {'GCA_900549005....'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GCA_002474405....'}    {'GB_GCA_0033438...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                                 }
+    {'home'                                   }
+    {'w328li'                                 }
+    {'MLDSP'                                  }
+    {'samples'                                }
+    {'f__Borkfalkiaceae'                      }
+    {'g__UMGS1004'                            }
+    {'GCA_003343805.1_ASM334380v1_genomic.fna'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}    {'GCA_900549005....'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GCA_002474405....'}    {'GB_GCA_0033438...'}    {'GCA_003343805....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__UMGS1004'                         }
+    {'GCA_900548845.1_UMGS1133_genomic.fna'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005526...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0004375...'}    {'GB_GCA_0004375...'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005561...'}    {'GCA_900548285....'}    {'GB_GCA_9005490...'}    {'GB_GCA_9005490...'}    {'GCA_900549005....'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GCA_002474405....'}    {'GB_GCA_0033438...'}    {'GCA_003343805....'}    {'GCA_900548845....'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     2
+     2
+     2
+     2
+     2
+     3
+     3
+     3
+     3
+     3
+     4
+     4
+     4
+     5
+     5
+     5
+     6
+     6
+     6
+
+
+score3 =
+
+    1.0000         0         0         0         0         0
+    1.0000         0         0         0         0         0
+    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+    0.0000    0.9179    0.0000    0.0000    0.0821    0.0000
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0
+         0         0         0    1.0000         0         0
+         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0
+         0         0         0         0    1.0000         0
+         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+    0.0000    0.9179    0.0000    0.0000    0.0821    0.0000    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+
+
+T3 =
+
+  22x8 table
+
+                                               g__Borkfalkia    g__QALS01    g__UBA10281    g__UBA11940    g__UBA7597    g__UMGS1004    prediction    actual
+                                               _____________    _________    ___________    ___________    __________    ___________    __________    ______
+
+    GB_GCA_003343765.1_1.fasta                          1              0             0              0              0             0          1           1   
+    GB_GCA_003343765.1_3.fasta                          1              0             0              0              0             0          1           1   
+    GB_GCA_900557285.1_1.fasta                          1              0             0              0              0             0          1           1   
+    GB_GCA_900540805.1_3.fasta                          0              1             0              0              0             0          2           2   
+    GB_GCA_900540805.1_7.fasta                          0              1             0              0              0             0          2           2   
+    GB_GCA_900552625.1_0.fasta                          0              1             0              0              0             0          2           2   
+    GB_GCA_900552625.1_2.fasta                          0              1             0              0              0             0          2           2   
+    GB_GCA_900552625.1_5.fasta                   2.22e-14        0.91786      2.22e-14       2.22e-14       0.082135      2.22e-14          2           2   
+    GB_GCA_000437515.1_0.fasta                          0              0             1              0              0             0          3           3   
+    GB_GCA_000437515.1_2.fasta                          0              0             1              0              0             0          3           3   
+    GB_GCA_900548285.1_0.fasta                          0              0             1              0              0             0          3           3   
+    GB_GCA_900556195.1_2.fasta                          0              0             1              0              0             0          3           3   
+    GCA_900548285.1_UMGS1072_genomic.fna                0              0             1              0              0             0          3           3   
+    GB_GCA_900549005.1_2.fasta                          0              0             0              1              0             0          4           4   
+    GB_GCA_900549005.1_3.fasta                          0              0             0              1              0             0          4           4   
+    GCA_900549005.1_UMGS1143_genomic.fna                0              0             0              1              0             0          4           4   
+    GB_GCA_002474405.1_3.fasta                          0              0             0              0              1             0          5           5   
+    GB_GCA_003448195.1_3.fasta                          0              0             0              0              1             0          5           5   
+    GCA_002474405.1_ASM247440v1_genomic.fna             0              0             0              0              1             0          5           5   
+    GB_GCA_003343805.1_1.fasta                          0              0             0              0              0             1          6           6   
+    GCA_003343805.1_ASM334380v1_genomic.fna             0              0             0              0              0             1          6           6   
+    GCA_900548845.1_UMGS1133_genomic.fna                0              0             0              0              0             1          6           6   
+
+
+testAcNum =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 22
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'RS_GCF_004134775.1_2.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'RS_GCF_004134775.1_2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'RS_GCF_004134775.1_4.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'RS_GCF_004134775.1_2.fasta'}    {'RS_GCF_004134775.1_4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_6.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'RS_GCF_004134775.1_2.fasta'}    {'RS_GCF_004134775.1_4.fasta'}    {'GB_GCA_900540805.1_6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900552625.1_4.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'RS_GCF_004134775.1_2.fasta'}    {'RS_GCF_004134775.1_4.fasta'}    {'GB_GCA_900540805.1_6.fasta'}    {'GB_GCA_900552625.1_4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900555925.1_1.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'RS_GCF_004134775.1_2.fasta'}    {'RS_GCF_004134775.1_4.fasta'}    {'GB_GCA_900540805.1_6.fasta'}    {'GB_GCA_900552625.1_4.fasta'}    {'GB_GCA_900555925.1_1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900555925.1_2.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'RS_GCF_004134775.1_2.f...'}    {'RS_GCF_004134775.1_4.f...'}    {'GB_GCA_900540805.1_6.f...'}    {'GB_GCA_900552625.1_4.f...'}    {'GB_GCA_900555925.1_1.f...'}    {'GB_GCA_900555925.1_2.f...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900555925.1_4.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'RS_GCF_004134775.1...'}    {'RS_GCF_004134775.1...'}    {'GB_GCA_900540805.1...'}    {'GB_GCA_900552625.1...'}    {'GB_GCA_900555925.1...'}    {'GB_GCA_900555925.1...'}    {'GB_GCA_900555925.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_000437515.1_1.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900548285.1_1.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Column 9
+
+    {'GB_GCA_9005482...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900554485.1_1.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900556195.1_0.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900556195.1_1.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__UBA10281'                         }
+    {'GCA_900554485.1_UMGS1728_genomic.fna'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_003503945.1_3.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_003979335.1_0.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_003979335.1_1.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_0039793...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_002474405.1_1.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_0039793...'}
+
+  Column 17
+
+    {'GB_GCA_0024744...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_003448195.1_0.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_0039793...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_900542935.1_2.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_0039793...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GB_GCA_9005429...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                             }
+    {'home'                               }
+    {'w328li'                             }
+    {'MLDSP'                              }
+    {'samples'                            }
+    {'f__Borkfalkiaceae'                  }
+    {'g__UBA7597'                         }
+    {'GCA_900542935.1_UMGS509_genomic.fna'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_0039793...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GB_GCA_9005429...'}    {'GCA_900542935....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_003343805.1_3.fasta'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_0039793...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GB_GCA_9005429...'}    {'GCA_900542935....'}    {'GB_GCA_0033438...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900548845.1_0.fasta'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'RS_GCF_0041347...'}    {'RS_GCF_0041347...'}    {'GB_GCA_9005408...'}    {'GB_GCA_9005526...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_9005559...'}    {'GB_GCA_0004375...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}    {'GB_GCA_9005561...'}    {'GB_GCA_9005561...'}    {'GCA_900554485....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_0039793...'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0024744...'}    {'GB_GCA_0034481...'}    {'GB_GCA_9005429...'}    {'GCA_900542935....'}    {'GB_GCA_0033438...'}    {'GB_GCA_9005488...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     2
+     2
+     2
+     2
+     2
+     3
+     3
+     3
+     3
+     3
+     3
+     4
+     4
+     4
+     5
+     5
+     5
+     5
+     6
+     6
+
+
+score3 =
+
+    1.0000         0         0         0         0         0
+    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+    0.0000    0.5296    0.0000    0.4704    0.0000    0.0000
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0
+         0         0         0    1.0000         0         0
+         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0
+         0         0         0         0    1.0000         0
+         0         0         0         0    1.0000         0
+         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+    0.0000    0.5296    0.0000    0.4704    0.0000    0.0000    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+
+
+T3 =
+
+  22x8 table
+
+                                            g__Borkfalkia    g__QALS01    g__UBA10281    g__UBA11940    g__UBA7597    g__UMGS1004    prediction    actual
+                                            _____________    _________    ___________    ___________    __________    ___________    __________    ______
+
+    RS_GCF_004134775.1_2.fasta                        1             0              0             0               0             0         1           1   
+    RS_GCF_004134775.1_4.fasta                        1             0              0             0               0             0         1           1   
+    GB_GCA_900540805.1_6.fasta                        0             1              0             0               0             0         2           2   
+    GB_GCA_900552625.1_4.fasta                        0             1              0             0               0             0         2           2   
+    GB_GCA_900555925.1_1.fasta                        0             1              0             0               0             0         2           2   
+    GB_GCA_900555925.1_2.fasta                        0             1              0             0               0             0         2           2   
+    GB_GCA_900555925.1_4.fasta               1.6662e-12       0.52962     1.6662e-12       0.47038      1.6662e-12    1.6662e-12         2           2   
+    GB_GCA_000437515.1_1.fasta                        0             0              1             0               0             0         3           3   
+    GB_GCA_900548285.1_1.fasta                        0             0              1             0               0             0         3           3   
+    GB_GCA_900554485.1_1.fasta                        0             0              1             0               0             0         3           3   
+    GB_GCA_900556195.1_0.fasta                        0             0              1             0               0             0         3           3   
+    GB_GCA_900556195.1_1.fasta                        0             0              1             0               0             0         3           3   
+    GCA_900554485.1_UMGS1728_genomic.fna              0             0              1             0               0             0         3           3   
+    GB_GCA_003503945.1_3.fasta                        0             0              0             1               0             0         4           4   
+    GB_GCA_003979335.1_0.fasta                        0             0              0             1               0             0         4           4   
+    GB_GCA_003979335.1_1.fasta                        0             0              0             1               0             0         4           4   
+    GB_GCA_002474405.1_1.fasta                        0             0              0             0               1             0         5           5   
+    GB_GCA_003448195.1_0.fasta                        0             0              0             0               1             0         5           5   
+    GB_GCA_900542935.1_2.fasta                        0             0              0             0               1             0         5           5   
+    GCA_900542935.1_UMGS509_genomic.fna               0             0              0             0               1             0         5           5   
+    GB_GCA_003343805.1_3.fasta                        0             0              0             0               0             1         6           6   
+    GB_GCA_900548845.1_0.fasta                        0             0              0             0               0             1         6           6   
+
+
+testAcNum =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 21
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_003343765.1_0.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_003343765.1_0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'GB_GCA_900557285.1_0.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_003343765.1_0.fasta'}    {'GB_GCA_900557285.1_0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__Borkfalkia'             }
+    {'RS_GCF_004134775.1_6.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_003343765.1_0.fasta'}    {'GB_GCA_900557285.1_0.fasta'}    {'RS_GCF_004134775.1_6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                                 }
+    {'home'                                   }
+    {'w328li'                                 }
+    {'MLDSP'                                  }
+    {'samples'                                }
+    {'f__Borkfalkiaceae'                      }
+    {'g__Borkfalkia'                          }
+    {'GCF_004134775.1_ASM413477v1_genomic.fna'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_003343765.1_0.fasta'}    {'GB_GCA_900557285.1_0.fasta'}    {'RS_GCF_004134775.1_6.fasta'}    {'GCF_004134775.1_ASM413477v1_genomic.fna'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__QALS01'                 }
+    {'GB_GCA_900540805.1_5.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_003343765.1_0.fasta'}    {'GB_GCA_900557285.1_0.fasta'}    {'RS_GCF_004134775.1_6.fasta'}    {'GCF_004134775.1_ASM413477v1_g...'}    {'GB_GCA_900540805.1_5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__QALS01'                           }
+    {'GCA_900555925.1_UMGS1884_genomic.fna'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_003343765.1_0.f...'}    {'GB_GCA_900557285.1_0.f...'}    {'RS_GCF_004134775.1_6.f...'}    {'GCF_004134775.1_ASM413...'}    {'GB_GCA_900540805.1_5.f...'}    {'GCA_900555925.1_UMGS18...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900548285.1_3.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_003343765.1...'}    {'GB_GCA_900557285.1...'}    {'RS_GCF_004134775.1...'}    {'GCF_004134775.1_AS...'}    {'GB_GCA_900540805.1...'}    {'GCA_900555925.1_UM...'}    {'GB_GCA_900548285.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900554485.1_2.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA10281'               }
+    {'GB_GCA_900556195.1_3.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Column 9
+
+    {'GB_GCA_9005561...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                              }
+    {'home'                                }
+    {'w328li'                              }
+    {'MLDSP'                               }
+    {'samples'                             }
+    {'f__Borkfalkiaceae'                   }
+    {'g__UBA10281'                         }
+    {'GCA_900556195.1_UMGS1915_genomic.fna'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_003503945.1_1.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_003979335.1_2.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA11940'               }
+    {'GB_GCA_900549005.1_4.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                                 }
+    {'home'                                   }
+    {'w328li'                                 }
+    {'MLDSP'                                  }
+    {'samples'                                }
+    {'f__Borkfalkiaceae'                      }
+    {'g__UBA11940'                            }
+    {'GCA_003979335.1_ASM397933v1_genomic.fna'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_003448195.1_1.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}    {'GB_GCA_0034481...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_003448195.1_2.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}    {'GB_GCA_0034481...'}    {'GB_GCA_0034481...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UBA7597'                }
+    {'GB_GCA_900542935.1_0.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}    {'GB_GCA_0034481...'}    {'GB_GCA_0034481...'}
+
+  Column 17
+
+    {'GB_GCA_9005429...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_003343805.1_2.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}    {'GB_GCA_0034481...'}    {'GB_GCA_0034481...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900547645.1_1.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}    {'GB_GCA_0034481...'}    {'GB_GCA_0034481...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}    {'GB_GCA_9005476...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900547645.1_3.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}    {'GB_GCA_0034481...'}    {'GB_GCA_0034481...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005476...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'f__Borkfalkiaceae'         }
+    {'g__UMGS1004'               }
+    {'GB_GCA_900548845.1_1.fasta'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0033437...'}    {'GB_GCA_9005572...'}    {'RS_GCF_0041347...'}    {'GCF_004134775....'}    {'GB_GCA_9005408...'}    {'GCA_900555925....'}    {'GB_GCA_9005482...'}    {'GB_GCA_9005544...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_9005561...'}    {'GCA_900556195....'}    {'GB_GCA_0035039...'}    {'GB_GCA_0039793...'}    {'GB_GCA_9005490...'}    {'GCA_003979335....'}    {'GB_GCA_0034481...'}    {'GB_GCA_0034481...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_9005429...'}    {'GB_GCA_0033438...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005476...'}    {'GB_GCA_9005488...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     1
+     2
+     2
+     3
+     3
+     3
+     3
+     4
+     4
+     4
+     4
+     5
+     5
+     3
+     6
+     6
+     6
+     6
+
+
+score3 =
+
+    1.0000         0         0         0         0         0
+    1.0000         0         0         0         0         0
+    1.0000         0         0         0         0         0
+    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0
+         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0
+    0.1394    0.1394    0.3028    0.1394    0.1394    0.1394
+         0         0    1.0000         0         0         0
+         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0
+    0.0000    0.1157    0.0000    0.8843    0.0000    0.0000
+    0.1481    0.1481    0.1481    0.2595    0.1481    0.1481
+         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0
+         0         0         0         0    1.0000         0
+    0.0000    0.0000    0.5121    0.0000    0.4879    0.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+         0         0         0         0         0    1.0000
+
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+    0.1394    0.1394    0.3028    0.1394    0.1394    0.1394    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+    0.0000    0.1157    0.0000    0.8843    0.0000    0.0000    4.0000    4.0000
+    0.1481    0.1481    0.1481    0.2595    0.1481    0.1481    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+    0.0000    0.0000    0.5121    0.0000    0.4879    0.0000    3.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+
+
+T3 =
+
+  21x8 table
+
+                                               g__Borkfalkia    g__QALS01    g__UBA10281    g__UBA11940    g__UBA7597    g__UMGS1004    prediction    actual
+                                               _____________    _________    ___________    ___________    __________    ___________    __________    ______
+
+    GB_GCA_003343765.1_0.fasta                           1              0            0               0             0              0         1           1   
+    GB_GCA_900557285.1_0.fasta                           1              0            0               0             0              0         1           1   
+    RS_GCF_004134775.1_6.fasta                           1              0            0               0             0              0         1           1   
+    GCF_004134775.1_ASM413477v1_genomic.fna              1              0            0               0             0              0         1           1   
+    GB_GCA_900540805.1_5.fasta                           0              1            0               0             0              0         2           2   
+    GCA_900555925.1_UMGS1884_genomic.fna                 0              1            0               0             0              0         2           2   
+    GB_GCA_900548285.1_3.fasta                           0              0            1               0             0              0         3           3   
+    GB_GCA_900554485.1_2.fasta                     0.13944        0.13944      0.30282         0.13944       0.13944        0.13944         3           3   
+    GB_GCA_900556195.1_3.fasta                           0              0            1               0             0              0         3           3   
+    GCA_900556195.1_UMGS1915_genomic.fna                 0              0            1               0             0              0         3           3   
+    GB_GCA_003503945.1_1.fasta                           0              0            0               1             0              0         4           4   
+    GB_GCA_003979335.1_2.fasta                    2.22e-14        0.11566     2.22e-14         0.88434      2.22e-14       2.22e-14         4           4   
+    GB_GCA_900549005.1_4.fasta                     0.14809        0.14809      0.14809         0.25953       0.14809        0.14809         4           4   
+    GCA_003979335.1_ASM397933v1_genomic.fna              0              0            0               1             0              0         4           4   
+    GB_GCA_003448195.1_1.fasta                           0              0            0               0             1              0         5           5   
+    GB_GCA_003448195.1_2.fasta                           0              0            0               0             1              0         5           5   
+    GB_GCA_900542935.1_0.fasta                   7.304e-13      7.304e-13      0.51211       7.304e-13       0.48789      7.304e-13         3           5   
+    GB_GCA_003343805.1_2.fasta                           0              0            0               0             0              1         6           6   
+    GB_GCA_900547645.1_1.fasta                           0              0            0               0             0              1         6           6   
+    GB_GCA_900547645.1_3.fasta                           0              0            0               0             0              1         6           6   
+    GB_GCA_900548845.1_1.fasta                           0              0            0               0             0              1         6           6   
+
+confusion matrix for 1 is:
+    17     1     0     0     0     0
+     0    22     0     0     0     0
+     0     0    20     0     0     0
+     0     0     0    15     0     0
+     0     0     1     0    16     0
+     0     0     0     0     0    16
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [98.1000]    [98.1000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      98.1  
+    {'AvgAccuracy' }      98.1  
+
+Process completed 
+[?1l>
