@@ -14,7 +14,7 @@ else
 fi
 
 final_num=15
-python3 samples/delete_files.py $1 $final_num
+python3 samples/delete_files.py samples/$1 $final_num
 echo "INFO:done python3 samples/delete_files.py samples/$1 $final_num"
 
 prog_output1="outputs/train-$1.xlsx"
