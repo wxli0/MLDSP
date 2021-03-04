@@ -17,6 +17,11 @@ final_num=15
 python3 samples/delete_files.py samples/$1 $final_num
 echo "INFO:done python3 samples/delete_files.py samples/$1 $final_num"
 
+final_num=50
+python3 samples/delete_prune_files.py samples/$1 $final_num
+echo "INFO:done python3 samples/delete_prune_files.py samples/$1 $final_num"
+
+
 prog_output1="outputs/train-$1.xlsx"
 if [ ! -f ${prog_output1} ]; then
     output1="outputs/$1.txt"
