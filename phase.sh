@@ -1,16 +1,21 @@
 #!/bin/bash
 
 sample_dir="sample/$1"
+dir="data/preprocess"
+json_path="non_clade_exclusion/$1.json"
 if [ ! -d ${sample_dir} ]; then
     python3 run_select_sample.py $1
+    cd $dir
+    python3 select_sample_cluster.py $json_path
+    cd ../..
     echo "INFO:done python3 run_select_sample.py $1"
 else
     echo "INFO:skip python3 run_select_sample.py $1"
 fi
 
 final_num=15
-python3 samples/delete_files $1 $final_num
-echo "INFO:done python3 samples/delete_files $1 $final_num"
+python3 samples/delete_files.py $1 $final_num
+echo "INFO:done python3 samples/delete_files.py $1 $final_num"
 
 prog_output1="outputs/train-$1.xlsx"
 if [ ! -f ${prog_output1} ]; then
