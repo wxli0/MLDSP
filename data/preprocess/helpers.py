@@ -115,10 +115,10 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, use_co
                             print("before download_const_genome")
                             download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter, rep_time)
 
-            except Exception as e:
-                print("ERROR:", "an error has occurred")
-                print(e)
-                pass
+            # except Exception as e:
+            #     print("ERROR:", "an error has occurred")
+            #     print(e)
+            #     pass
 
 
 def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num, cluster_dir_full, fna_path):
