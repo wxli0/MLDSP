@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sample_dir="sample/$1"
+sample_dir="samples/$1"
 dir="data/preprocess"
 json_path="non_clade_exclusion/$1.json"
 if [ ! -d ${sample_dir} ]; then
