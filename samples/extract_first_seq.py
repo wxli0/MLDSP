@@ -12,7 +12,7 @@ for file in os.listdir(input_path):
     out_file= open(output_file_path, 'w')
     for fasta in fasta_sequences:
         id, seq = fasta.id, str(fasta.seq)
-        out_file.write(">"+id+"\n")
+        out_file.write(">"+id+"|"+file +"\n")
         out_file.write(seq+"\n")
         out_file.close()
         break
