@@ -37,6 +37,7 @@ base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP-desktop/"
 outdir_full = base_path+"samples/"+outdir
+print("outdir_full is:", outdir_full)
 ssl._create_default_https_context = ssl._create_unverified_context
 
 cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters.tsv", sep='\t', header = 0, index_col = None)

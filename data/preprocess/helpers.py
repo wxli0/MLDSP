@@ -54,13 +54,13 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
             block2= id[7:10]
             block3 = id[10:13]
             block4 = id[13:16]
-            print(block1, block2,block3, block4)
+            # print(block1, block2,block3, block4)
             partial_url = base_url+block1+'/'+block2+'/'+block3+'/'+block4 +'/'
             try:
                 partial_url_dirs =  list_fd(partial_url)
                 block5 = partial_url_dirs[1]
                 print("partial_url_dirs is:", partial_url_dirs)
-                print("block5 is:", block5)
+                # print("block5 is:", block5)
                 last_index = block5.split("/", 9)[-1][:-1]
                 download_url = block5+last_index+'_genomic.fna.gz'
                 print("download_url is:", download_url)
@@ -70,7 +70,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
                 file_content = f.read()
                 file_content = file_content.decode('utf-8')
                 fna_path = cluster_dir_full+'/'+last_index+"_genomic.fna"
-                print("fna_path is:", fna_path)
+                # print("fna_path is:", fna_path)
                 f_out = open(cluster_dir_full+'/'+last_index+"_genomic.fna", 'w+')
                 f_out.write(file_content)
                 f.close()
@@ -90,8 +90,8 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
                         #     max_len = len(sequence_real)
                         #     max_seq = sequence # max_seq should contain 'X'
                         #     max_name = name
-                        print("max_len is:", max_len)
-                        print("sequence_real len is:", len(sequence_real))
+                        # print("max_len is:", max_len)
+                        # print("sequence_real len is:", len(sequence_real))
                         # if len(sequence_real) > max_len:
                         #     max_name = name
                         if sequence is None:
@@ -167,14 +167,14 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
             append_write = 'a'
             if i == 0:
                 append_write = 'w'
-            print("i is:", i)
+            # print("i is:", i)
             out_file= open(cur_fna_path, append_write)
             out_file.write(">"+max_name+str(i)+"\n")
             out_file.write(cur_seq+"\n")
             out_file.close()
-    print('before remove')
+    # print('before remove')
     os.remove(fna_path)
-    print("after remove")
+    # print("after remove")
 
 # parse json input
 def parse_json_input(input_file_name):
