@@ -5,19 +5,25 @@ dir="data/preprocess"
 json_path="non_clade_exclusion/$1.json"
 if [ ! -d ${sample_dir} ]; then
     python3 run_select_sample.py $1
-    cd $dir
-    python3 select_sample_cluster.py $json_path
-    cd ../..
     echo "INFO:done python3 run_select_sample.py $1"
+    cd $dir
+    if [[ $dir == s__* ]]; then
+        python3 select_sample_species.py $json_path
+        echo "INFO:python3 select_sample_species.py $json_path"
+    elif
+        python3 select_sample_cluster.py $json_path
+        echo "INFO:python3 select_sample_cluster.py $json_path"
+    fi
+    cd ../..
 else
     echo "INFO:skip python3 run_select_sample.py $1"
 fi
 
-final_num=15
+final_num=5
 python3 samples/delete_files.py samples/$1 $final_num
 echo "INFO:done python3 samples/delete_files.py samples/$1 $final_num"
 
-final_num=50
+final_num=20
 python3 samples/delete_prune_files.py samples/$1 $final_num
 echo "INFO:done python3 samples/delete_prune_files.py samples/$1 $final_num"
 

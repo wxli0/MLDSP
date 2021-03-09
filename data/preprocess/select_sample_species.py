@@ -13,7 +13,9 @@ import ssl
 import platform
 import json
 
-sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, lower, upper, use_const_len, const_len, frags_num, alter, id= parse_json_input(sys.argv[1]) # for species, dont use factor
+sample_factor, sample_size, tax_name, use_factor, cluster_num, \
+    cluster_names, lower, upper, use_const_len, const_len, frags_num, \
+        alter, id, outdir, rep_time = parse_json_input(sys.argv[1])
 
 outdir = tax_name
 if use_const_len:
@@ -37,7 +39,7 @@ if platform.platform()[:5] == 'Linux':
 outdir_full = base_path+"samples/"+outdir
 ssl._create_default_https_context = ssl._create_unverified_context
 
-cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters_r89.tsv", sep='\t', header = 0, index_col = None)
+cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters.tsv", sep='\t', header = 0, index_col = None)
 cluster_tsv = cluster_tsv[['GTDB_species','Clustered_genomes']].set_index('GTDB_species')
 
 for cluster_name in cluster_names:
@@ -55,4 +57,6 @@ for cluster_name in cluster_names:
     cluster_dir_full = outdir_full+'/'+cluster_name
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
-    download_genomes(selected_genomes, cluster_dir_full, lower, upper, use_const_len, const_len, frags_num, alter, rep_time=1)
+    download_genomes(selected_genomes, cluster_dir_full, lower, \
+        upper, use_const_len, const_len, frags_num, alter, rep_time=rep_time)
+
