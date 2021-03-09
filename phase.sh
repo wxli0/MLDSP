@@ -7,7 +7,7 @@ if [ ! -d ${sample_dir} ]; then
     python3 run_select_sample.py $1
     echo "INFO:done python3 run_select_sample.py $1"
     cd $dir
-    if [[ $dir == g__* ]]; then
+    if [[ $1 == g__* ]]; then
         python3 select_sample_species.py $json_path
         echo "INFO:python3 select_sample_species.py $json_path"
     else
