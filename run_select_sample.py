@@ -46,7 +46,7 @@ sample_dict = {
     "frags_num": 4,
     "cluster_names": clusters,
     "outdir": taxon,
-    "rep_time": 20
+    "rep_time": 10
 }
 
 
