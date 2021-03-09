@@ -3,7 +3,7 @@ import os
 from Bio import SeqIO
 
 
-input_path = "/home/w328li/MLDSP/data/DS_10283_3009/genomes"
+input_path = "/home/w328li/MLDSP/data/DS_10283_3009/genomes/"
 output_path = "/home/w328li/MLDSP/samples/rumen_mags/all_full_first/"
 
 for file in os.listdir(input_path):
