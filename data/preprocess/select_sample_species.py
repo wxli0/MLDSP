@@ -17,25 +17,26 @@ sample_factor, sample_size, tax_name, use_factor, cluster_num, \
     cluster_names, lower, upper, use_const_len, const_len, frags_num, \
         alter, id, outdir, rep_time = parse_json_input(sys.argv[1])
 
-outdir = tax_name
-if use_const_len:
-    outdir += "_const"
-else:
-    outdir += "_nonconst"
-if use_factor:
-    outdir += "_factor"
-else:
-    outdir += "_nonfactor"
-if frags_num >= 2:
-    outdir += "_multifrag"
-else:
-    outdir += "_singlefrag"
-if id is not None:
-    outdir +="_"+id
+if not outdir:
+    outdir = tax_name
+    if use_const_len:
+        outdir += "_const"
+    else:
+        outdir += "_nonconst"
+    if use_factor:
+        outdir += "_factor"
+    else:
+        outdir += "_nonfactor"
+    if frags_num >= 2:
+        outdir += "_multifrag"
+    else:
+        outdir += "_singlefrag"
+    if id is not None:
+        outdir +="_"+id
 
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
-    base_path = "/home/w328li/MLDSP-desktop/"
+    base_path = "/home/w328li/MLDSP/"
 outdir_full = base_path+"samples/"+outdir
 print("outdir_full is:", outdir_full)
 ssl._create_default_https_context = ssl._create_unverified_context
