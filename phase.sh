@@ -20,12 +20,12 @@ else
 fi
 
 final_num=10
-python3 samples/delete_files.py samples/$1 $final_num
-echo "INFO:done python3 samples/delete_files.py samples/$1 $final_num"
+python3 samples/delete_small_cluster.py samples/$1 $final_num
+echo "INFO:done python3 samples/delete_small_cluster.py samples/$1 $final_num"
 
 final_num=30
-python3 samples/delete_prune_files.py samples/$1 $final_num
-echo "INFO:done python3 samples/delete_prune_files.py samples/$1 $final_num"
+python3 samples/delete_extra_files.py samples/$1 $final_num
+echo "samples/delete_extra_files.py samples/$1 $final_num"
 
 
 prog_output1="outputs/train-$1.xlsx"

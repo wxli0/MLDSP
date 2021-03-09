@@ -10,6 +10,7 @@ import shutil
 dir = sys.argv[1]
 final_num = int(sys.argv[2])
 
+# delete folder with file num < final_num
 for sub_dir in os.listdir(dir):
     file_names = os.listdir(dir+"/"+sub_dir)
     files_num = len(file_names)
