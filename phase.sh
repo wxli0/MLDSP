@@ -19,11 +19,11 @@ else
     echo "INFO:skip python3 run_select_sample.py $1"
 fi
 
-final_num=15
+final_num=10
 python3 samples/delete_files.py samples/$1 $final_num
 echo "INFO:done python3 samples/delete_files.py samples/$1 $final_num"
 
-final_num=50
+final_num=30
 python3 samples/delete_prune_files.py samples/$1 $final_num
 echo "INFO:done python3 samples/delete_prune_files.py samples/$1 $final_num"
 
