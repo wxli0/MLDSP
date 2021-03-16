@@ -1,0 +1,5154 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+methodNum =
+
+     1
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/g__UBA1232'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Computing Distance matrix .... 
+s__UBA1232 sp002309115 and s__UBA1232 sp002309115 avg dissimilarity is: 0.003815
+s__UBA1232 sp002309115 and s__UBA1232 sp002315995 avg dissimilarity is: 0.033696
+s__UBA1232 sp002309115 and s__UBA1232 sp002372015 avg dissimilarity is: 0.052605
+s__UBA1232 sp002309115 and s__UBA1232 sp004561775 avg dissimilarity is: 0.054142
+s__UBA1232 sp002309115 and s__UBA1232 sp900316795 avg dissimilarity is: 0.010170
+s__UBA1232 sp002309115 and s__UBA1232 sp900322025 avg dissimilarity is: 0.052478
+s__UBA1232 sp002309115 and s__UBA1232 sp900544815 avg dissimilarity is: 0.054103
+s__UBA1232 sp002315995 and s__UBA1232 sp002315995 avg dissimilarity is: 0.003910
+s__UBA1232 sp002315995 and s__UBA1232 sp002372015 avg dissimilarity is: 0.036263
+s__UBA1232 sp002315995 and s__UBA1232 sp004561775 avg dissimilarity is: 0.042398
+s__UBA1232 sp002315995 and s__UBA1232 sp900316795 avg dissimilarity is: 0.025083
+s__UBA1232 sp002315995 and s__UBA1232 sp900322025 avg dissimilarity is: 0.036178
+s__UBA1232 sp002315995 and s__UBA1232 sp900544815 avg dissimilarity is: 0.029853
+s__UBA1232 sp002372015 and s__UBA1232 sp002372015 avg dissimilarity is: 0.003460
+s__UBA1232 sp002372015 and s__UBA1232 sp004561775 avg dissimilarity is: 0.055706
+s__UBA1232 sp002372015 and s__UBA1232 sp900316795 avg dissimilarity is: 0.037320
+s__UBA1232 sp002372015 and s__UBA1232 sp900322025 avg dissimilarity is: 0.004178
+s__UBA1232 sp002372015 and s__UBA1232 sp900544815 avg dissimilarity is: 0.019256
+s__UBA1232 sp004561775 and s__UBA1232 sp004561775 avg dissimilarity is: 0.004223
+s__UBA1232 sp004561775 and s__UBA1232 sp900316795 avg dissimilarity is: 0.050801
+s__UBA1232 sp004561775 and s__UBA1232 sp900322025 avg dissimilarity is: 0.055213
+s__UBA1232 sp004561775 and s__UBA1232 sp900544815 avg dissimilarity is: 0.051057
+s__UBA1232 sp900316795 and s__UBA1232 sp900316795 avg dissimilarity is: 0.004467
+s__UBA1232 sp900316795 and s__UBA1232 sp900322025 avg dissimilarity is: 0.037580
+s__UBA1232 sp900316795 and s__UBA1232 sp900544815 avg dissimilarity is: 0.038290
+s__UBA1232 sp900322025 and s__UBA1232 sp900322025 avg dissimilarity is: 0.003502
+s__UBA1232 sp900322025 and s__UBA1232 sp900544815 avg dissimilarity is: 0.019592
+s__UBA1232 sp900544815 and s__UBA1232 sp900544815 avg dissimilarity is: 0.003816
+Performing classification .... 
+
+header =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'s__UBA1232 sp0...'}    {'s__UBA1232 sp0...'}    {'s__UBA1232 sp0...'}    {'s__UBA1232 sp0...'}    {'s__UBA1232 sp9...'}    {'s__UBA1232 sp9...'}    {'s__UBA1232 sp9...'}    {'prediction'}
+
+  Column 9
+
+    {'actual'}
+
+
+testAcNum =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 30
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_11.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_002309115.1_11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_2.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_002309115.1_11.fasta'}    {'GB_GCA_002309115.1_2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_5.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_002309115.1_11.fasta'}    {'GB_GCA_002309115.1_2.fasta'}    {'GB_GCA_002309115.1_5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_10.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_002309115.1_11.fasta'}    {'GB_GCA_002309115.1_2.fasta'}    {'GB_GCA_002309115.1_5.fasta'}    {'GB_GCA_002315995.1_10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_11.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_002309115.1_11.fasta'}    {'GB_GCA_002309115.1_2.fasta'}    {'GB_GCA_002309115.1_5.fasta'}    {'GB_GCA_002315995.1_10.fasta'}    {'GB_GCA_002315995.1_11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_13.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_002309115.1_11....'}    {'GB_GCA_002309115.1_2.f...'}    {'GB_GCA_002309115.1_5.f...'}    {'GB_GCA_002315995.1_10....'}    {'GB_GCA_002315995.1_11....'}    {'GB_GCA_002315995.1_13....'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_17.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_18.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_3.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Column 9
+
+    {'GB_GCA_0023159...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_5.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_8.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_11.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_3.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004561775.1_11.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004561775.1_18.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_4.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_2.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Column 17
+
+    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_1.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_15.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_5.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_8.fasta'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_15.fasta'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_16.fasta'}
+
+
+testFnm =
+
+  1x23 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 23
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_19.fasta'}
+
+
+testFnm =
+
+  1x24 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_0.fasta'}
+
+
+testFnm =
+
+  1x25 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Column 25
+
+    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_14.fasta'}
+
+
+testFnm =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 26
+
+    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_15.fasta'}
+
+
+testFnm =
+
+  1x27 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 27
+
+    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_17.fasta'}
+
+
+testFnm =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 28
+
+    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_4.fasta'}
+
+
+testFnm =
+
+  1x29 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 29
+
+    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_7.fasta'}
+
+
+testFnm =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 30
+
+    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     2
+     2
+     2
+     5
+     2
+     2
+     2
+     5
+     3
+     3
+     4
+     4
+     4
+     4
+     5
+     5
+     5
+     5
+     6
+     6
+     6
+     7
+     7
+     7
+     7
+     7
+     7
+
+
+score3 =
+
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+    0.0000    0.4826    0.0000    0.0000    0.5174    0.0000    0.0000
+         0    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+    0.0000    0.4826    0.0000    0.0000    0.5174    0.0000    0.0000
+         0         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0         0
+    0.1149    0.1149    0.1149    0.3108    0.1149    0.1149    0.1149
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0         0    1.0000         0         0
+    0.0716    0.0000    0.0000    0.0000    0.9284    0.0000    0.0000
+         0         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+    0.0000    0.4826    0.0000    0.0000    0.5174    0.0000    0.0000    5.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+    0.0000    0.4826    0.0000    0.0000    0.5174    0.0000    0.0000    5.0000    2.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+    0.1149    0.1149    0.1149    0.3108    0.1149    0.1149    0.1149    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+    0.0716    0.0000    0.0000    0.0000    0.9284    0.0000    0.0000    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+
+
+T3 =
+
+  30x9 table
+
+                                   s__UBA1232 sp002309115    s__UBA1232 sp002315995    s__UBA1232 sp002372015    s__UBA1232 sp004561775    s__UBA1232 sp900316795    s__UBA1232 sp900322025    s__UBA1232 sp900544815    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002309115.1_11.fasta                  1                         0                         0                         0                        0                          0                         0               1           1   
+    GB_GCA_002309115.1_2.fasta                   1                         0                         0                         0                        0                          0                         0               1           1   
+    GB_GCA_002309115.1_5.fasta                   1                         0                         0                         0                        0                          0                         0               1           1   
+    GB_GCA_002315995.1_10.fasta                  0                         1                         0                         0                        0                          0                         0               2           2   
+    GB_GCA_002315995.1_11.fasta                  0                         1                         0                         0                        0                          0                         0               2           2   
+    GB_GCA_002315995.1_13.fasta                  0                         1                         0                         0                        0                          0                         0               2           2   
+    GB_GCA_002315995.1_17.fasta          2.945e-12                   0.48263                 2.945e-12                 2.945e-12                  0.51737                  2.945e-12                 2.945e-12               5           2   
+    GB_GCA_002315995.1_18.fasta                  0                         1                         0                         0                        0                          0                         0               2           2   
+    GB_GCA_002315995.1_3.fasta                   0                         1                         0                         0                        0                          0                         0               2           2   
+    GB_GCA_002315995.1_5.fasta                   0                         1                         0                         0                        0                          0                         0               2           2   
+    GB_GCA_002315995.1_8.fasta           2.945e-12                   0.48263                 2.945e-12                 2.945e-12                  0.51737                  2.945e-12                 2.945e-12               5           2   
+    GB_GCA_002372015.1_11.fasta                  0                         0                         1                         0                        0                          0                         0               3           3   
+    GB_GCA_002372015.1_3.fasta                   0                         0                         1                         0                        0                          0                         0               3           3   
+    GB_GCA_004561775.1_11.fasta            0.11487                   0.11487                   0.11487                   0.31078                  0.11487                    0.11487                   0.11487               4           4   
+    GB_GCA_004561775.1_18.fasta                  0                         0                         0                         1                        0                          0                         0               4           4   
+    GB_GCA_004561775.1_4.fasta                   0                         0                         0                         1                        0                          0                         0               4           4   
+    GB_GCA_004563065.1_2.fasta                   0                         0                         0                         1                        0                          0                         0               4           4   
+    GB_GCA_900316795.1_1.fasta                   0                         0                         0                         0                        1                          0                         0               5           5   
+    GB_GCA_900316795.1_15.fasta           0.071646                  2.22e-14                  2.22e-14                  2.22e-14                  0.92835                   2.22e-14                  2.22e-14               5           5   
+    GB_GCA_900316795.1_5.fasta                   0                         0                         0                         0                        1                          0                         0               5           5   
+    GB_GCA_900316795.1_8.fasta                   0                         0                         0                         0                        1                          0                         0               5           5   
+    GB_GCA_900322025.1_15.fasta                  0                         0                         0                         0                        0                          1                         0               6           6   
+    GB_GCA_900322025.1_16.fasta                  0                         0                         0                         0                        0                          1                         0               6           6   
+    GB_GCA_900322025.1_19.fasta                  0                         0                         0                         0                        0                          1                         0               6           6   
+    GB_GCA_900544815.1_0.fasta                   0                         0                         0                         0                        0                          0                         1               7           7   
+    GB_GCA_900544815.1_14.fasta                  0                         0                         0                         0                        0                          0                         1               7           7   
+    GB_GCA_900544815.1_15.fasta                  0                         0                         0                         0                        0                          0                         1               7           7   
+    GB_GCA_900544815.1_17.fasta                  0                         0                         0                         0                        0                          0                         1               7           7   
+    GB_GCA_900544815.1_4.fasta                   0                         0                         0                         0                        0                          0                         1               7           7   
+    GB_GCA_900544815.1_7.fasta                   0                         0                         0                         0                        0                          0                         1               7           7   
+
+
+testAcNum =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 30
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_15.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_002309115.1_15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_16.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_002309115.1_15.fasta'}    {'GB_GCA_002309115.1_16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_3.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_002309115.1_15.fasta'}    {'GB_GCA_002309115.1_16.fasta'}    {'GB_GCA_002309115.1_3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_4.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_002309115.1_15.fasta'}    {'GB_GCA_002309115.1_16.fasta'}    {'GB_GCA_002309115.1_3.fasta'}    {'GB_GCA_002309115.1_4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_8.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_002309115.1_15.fasta'}    {'GB_GCA_002309115.1_16.fasta'}    {'GB_GCA_002309115.1_3.fasta'}    {'GB_GCA_002309115.1_4.fasta'}    {'GB_GCA_002309115.1_8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_9.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_002309115.1_15....'}    {'GB_GCA_002309115.1_16....'}    {'GB_GCA_002309115.1_3.f...'}    {'GB_GCA_002309115.1_4.f...'}    {'GB_GCA_002309115.1_8.f...'}    {'GB_GCA_002309115.1_9.f...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_1.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002315995.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_14.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_15.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Column 9
+
+    {'GB_GCA_0023159...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_15.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_18.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_5.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_7.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004561775.1_15.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004561775.1_16.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_2.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_7.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Column 17
+
+    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_8.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_7.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_14.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_2.fasta'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_6.fasta'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_0.fasta'}
+
+
+testFnm =
+
+  1x23 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 23
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_18.fasta'}
+
+
+testFnm =
+
+  1x24 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_2.fasta'}
+
+
+testFnm =
+
+  1x25 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Column 25
+
+    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_3.fasta'}
+
+
+testFnm =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 26
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_5.fasta'}
+
+
+testFnm =
+
+  1x27 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 27
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_7.fasta'}
+
+
+testFnm =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 28
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_8.fasta'}
+
+
+testFnm =
+
+  1x29 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 29
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_3.fasta'}
+
+
+testFnm =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 30
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     1
+     1
+     1
+     2
+     2
+     2
+     3
+     3
+     3
+     3
+     4
+     4
+     4
+     4
+     4
+     4
+     5
+     5
+     5
+     6
+     6
+     6
+     6
+     6
+     6
+     6
+     7
+
+
+score3 =
+
+     1     0     0     0     0     0     0
+     1     0     0     0     0     0     0
+     1     0     0     0     0     0     0
+     1     0     0     0     0     0     0
+     1     0     0     0     0     0     0
+     1     0     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     0     1     0     0     0     0
+     0     0     1     0     0     0     0
+     0     0     1     0     0     0     0
+     0     0     1     0     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     0     1     0     0
+     0     0     0     0     1     0     0
+     0     0     0     0     1     0     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     0     1
+
+
+score3Matrix =
+
+     1     0     0     0     0     0     0     1     1
+     1     0     0     0     0     0     0     1     1
+     1     0     0     0     0     0     0     1     1
+     1     0     0     0     0     0     0     1     1
+     1     0     0     0     0     0     0     1     1
+     1     0     0     0     0     0     0     1     1
+     0     1     0     0     0     0     0     2     2
+     0     1     0     0     0     0     0     2     2
+     0     1     0     0     0     0     0     2     2
+     0     0     1     0     0     0     0     3     3
+     0     0     1     0     0     0     0     3     3
+     0     0     1     0     0     0     0     3     3
+     0     0     1     0     0     0     0     3     3
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     0     1     0     0     5     5
+     0     0     0     0     1     0     0     5     5
+     0     0     0     0     1     0     0     5     5
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     0     1     7     7
+
+
+T3 =
+
+  30x9 table
+
+                                   s__UBA1232 sp002309115    s__UBA1232 sp002315995    s__UBA1232 sp002372015    s__UBA1232 sp004561775    s__UBA1232 sp900316795    s__UBA1232 sp900322025    s__UBA1232 sp900544815    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002309115.1_15.fasta              1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002309115.1_16.fasta              1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002309115.1_3.fasta               1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002309115.1_4.fasta               1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002309115.1_8.fasta               1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002309115.1_9.fasta               1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002315995.1_1.fasta               0                         1                         0                         0                         0                         0                         0                   2           2   
+    GB_GCA_002315995.1_14.fasta              0                         1                         0                         0                         0                         0                         0                   2           2   
+    GB_GCA_002315995.1_15.fasta              0                         1                         0                         0                         0                         0                         0                   2           2   
+    GB_GCA_002372015.1_15.fasta              0                         0                         1                         0                         0                         0                         0                   3           3   
+    GB_GCA_002372015.1_18.fasta              0                         0                         1                         0                         0                         0                         0                   3           3   
+    GB_GCA_002372015.1_5.fasta               0                         0                         1                         0                         0                         0                         0                   3           3   
+    GB_GCA_002372015.1_7.fasta               0                         0                         1                         0                         0                         0                         0                   3           3   
+    GB_GCA_004561775.1_15.fasta              0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004561775.1_16.fasta              0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004561775.1_2.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004561775.1_7.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004561775.1_8.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004563065.1_7.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_900316795.1_14.fasta              0                         0                         0                         0                         1                         0                         0                   5           5   
+    GB_GCA_900316795.1_2.fasta               0                         0                         0                         0                         1                         0                         0                   5           5   
+    GB_GCA_900316795.1_6.fasta               0                         0                         0                         0                         1                         0                         0                   5           5   
+    GB_GCA_900322025.1_0.fasta               0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_18.fasta              0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_2.fasta               0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_3.fasta               0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_5.fasta               0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_7.fasta               0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_8.fasta               0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900544815.1_3.fasta               0                         0                         0                         0                         0                         0                         1                   7           7   
+
+
+testAcNum =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 30
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_10.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_002309115.1_10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_12.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_002309115.1_10.fasta'}    {'GB_GCA_002309115.1_12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_14.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_002309115.1_10.fasta'}    {'GB_GCA_002309115.1_12.fasta'}    {'GB_GCA_002309115.1_14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_18.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_002309115.1_10.fasta'}    {'GB_GCA_002309115.1_12.fasta'}    {'GB_GCA_002309115.1_14.fasta'}    {'GB_GCA_002309115.1_18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_19.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_002309115.1_10.fasta'}    {'GB_GCA_002309115.1_12.fasta'}    {'GB_GCA_002309115.1_14.fasta'}    {'GB_GCA_002309115.1_18.fasta'}    {'GB_GCA_002309115.1_19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_4.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_002309115.1_10....'}    {'GB_GCA_002309115.1_12....'}    {'GB_GCA_002309115.1_14....'}    {'GB_GCA_002309115.1_18....'}    {'GB_GCA_002309115.1_19....'}    {'GB_GCA_002315995.1_4.f...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_7.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_1.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_10.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Column 9
+
+    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_13.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_17.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_9.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004561775.1_14.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004561775.1_19.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004563065.1_12.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004563065.1_16.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_3.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Column 17
+
+    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_0.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_16.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_18.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_4.fasta'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_9.fasta'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_13.fasta'}
+
+
+testFnm =
+
+  1x23 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 23
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_4.fasta'}
+
+
+testFnm =
+
+  1x24 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_9.fasta'}
+
+
+testFnm =
+
+  1x25 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Column 25
+
+    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_1.fasta'}
+
+
+testFnm =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 26
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_10.fasta'}
+
+
+testFnm =
+
+  1x27 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 27
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_5.fasta'}
+
+
+testFnm =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 28
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_6.fasta'}
+
+
+testFnm =
+
+  1x29 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 29
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_8.fasta'}
+
+
+testFnm =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 30
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     1
+     1
+     2
+     2
+     3
+     3
+     3
+     3
+     3
+     4
+     4
+     4
+     4
+     4
+     5
+     5
+     5
+     5
+     5
+     6
+     6
+     6
+     7
+     7
+     7
+     7
+     7
+
+
+score3 =
+
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0         0
+    0.1269    0.1269    0.1269    0.1269    0.2386    0.1269    0.1269
+         0         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0         0    1.0000
+    0.1269    0.1269    0.1269    0.1269    0.1269    0.1269    0.2386
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+    0.1269    0.1269    0.1269    0.1269    0.2386    0.1269    0.1269    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+    0.1269    0.1269    0.1269    0.1269    0.1269    0.1269    0.2386    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+
+
+T3 =
+
+  30x9 table
+
+                                   s__UBA1232 sp002309115    s__UBA1232 sp002315995    s__UBA1232 sp002372015    s__UBA1232 sp004561775    s__UBA1232 sp900316795    s__UBA1232 sp900322025    s__UBA1232 sp900544815    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002309115.1_10.fasta                 1                         0                         0                         0                         0                         0                         0                1           1   
+    GB_GCA_002309115.1_12.fasta                 1                         0                         0                         0                         0                         0                         0                1           1   
+    GB_GCA_002309115.1_14.fasta                 1                         0                         0                         0                         0                         0                         0                1           1   
+    GB_GCA_002309115.1_18.fasta                 1                         0                         0                         0                         0                         0                         0                1           1   
+    GB_GCA_002309115.1_19.fasta                 1                         0                         0                         0                         0                         0                         0                1           1   
+    GB_GCA_002315995.1_4.fasta                  0                         1                         0                         0                         0                         0                         0                2           2   
+    GB_GCA_002315995.1_7.fasta                  0                         1                         0                         0                         0                         0                         0                2           2   
+    GB_GCA_002372015.1_1.fasta                  0                         0                         1                         0                         0                         0                         0                3           3   
+    GB_GCA_002372015.1_10.fasta                 0                         0                         1                         0                         0                         0                         0                3           3   
+    GB_GCA_002372015.1_13.fasta                 0                         0                         1                         0                         0                         0                         0                3           3   
+    GB_GCA_002372015.1_17.fasta                 0                         0                         1                         0                         0                         0                         0                3           3   
+    GB_GCA_002372015.1_9.fasta                  0                         0                         1                         0                         0                         0                         0                3           3   
+    GB_GCA_004561775.1_14.fasta                 0                         0                         0                         1                         0                         0                         0                4           4   
+    GB_GCA_004561775.1_19.fasta                 0                         0                         0                         1                         0                         0                         0                4           4   
+    GB_GCA_004563065.1_12.fasta                 0                         0                         0                         1                         0                         0                         0                4           4   
+    GB_GCA_004563065.1_16.fasta                 0                         0                         0                         1                         0                         0                         0                4           4   
+    GB_GCA_004563065.1_3.fasta                  0                         0                         0                         1                         0                         0                         0                4           4   
+    GB_GCA_900316795.1_0.fasta                  0                         0                         0                         0                         1                         0                         0                5           5   
+    GB_GCA_900316795.1_16.fasta                 0                         0                         0                         0                         1                         0                         0                5           5   
+    GB_GCA_900316795.1_18.fasta           0.12689                   0.12689                   0.12689                   0.12689                   0.23865                   0.12689                   0.12689                5           5   
+    GB_GCA_900316795.1_4.fasta                  0                         0                         0                         0                         1                         0                         0                5           5   
+    GB_GCA_900316795.1_9.fasta                  0                         0                         0                         0                         1                         0                         0                5           5   
+    GB_GCA_900322025.1_13.fasta                 0                         0                         0                         0                         0                         1                         0                6           6   
+    GB_GCA_900322025.1_4.fasta                  0                         0                         0                         0                         0                         1                         0                6           6   
+    GB_GCA_900322025.1_9.fasta                  0                         0                         0                         0                         0                         1                         0                6           6   
+    GB_GCA_900544815.1_1.fasta                  0                         0                         0                         0                         0                         0                         1                7           7   
+    GB_GCA_900544815.1_10.fasta           0.12689                   0.12689                   0.12689                   0.12689                   0.12689                   0.12689                   0.23865                7           7   
+    GB_GCA_900544815.1_5.fasta                  0                         0                         0                         0                         0                         0                         1                7           7   
+    GB_GCA_900544815.1_6.fasta                  0                         0                         0                         0                         0                         0                         1                7           7   
+    GB_GCA_900544815.1_8.fasta                  0                         0                         0                         0                         0                         0                         1                7           7   
+
+
+testAcNum =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 30
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_0.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_002309115.1_0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_6.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_002309115.1_0.fasta'}    {'GB_GCA_002309115.1_6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_7.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_002309115.1_0.fasta'}    {'GB_GCA_002309115.1_6.fasta'}    {'GB_GCA_002309115.1_7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_0.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_002309115.1_0.fasta'}    {'GB_GCA_002309115.1_6.fasta'}    {'GB_GCA_002309115.1_7.fasta'}    {'GB_GCA_002315995.1_0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_19.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_002309115.1_0.fasta'}    {'GB_GCA_002309115.1_6.fasta'}    {'GB_GCA_002309115.1_7.fasta'}    {'GB_GCA_002315995.1_0.fasta'}    {'GB_GCA_002315995.1_19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_6.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_002309115.1_0.f...'}    {'GB_GCA_002309115.1_6.f...'}    {'GB_GCA_002309115.1_7.f...'}    {'GB_GCA_002315995.1_0.f...'}    {'GB_GCA_002315995.1_19....'}    {'GB_GCA_002315995.1_6.f...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_0.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002372015.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_16.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_19.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Column 9
+
+    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_2.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_4.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_6.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_0.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004561775.1_10.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_3.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_9.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004563065.1_11.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Column 17
+
+    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004563065.1_14.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_4.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_5.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_10.fasta'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_11.fasta'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_12.fasta'}
+
+
+testFnm =
+
+  1x23 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 23
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_7.fasta'}
+
+
+testFnm =
+
+  1x24 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_1.fasta'}
+
+
+testFnm =
+
+  1x25 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+  Column 25
+
+    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_17.fasta'}
+
+
+testFnm =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+  Columns 25 through 26
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900322025'    }
+    {'GB_GCA_900322025.1_6.fasta'}
+
+
+testFnm =
+
+  1x27 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+  Columns 25 through 27
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_13.fasta'}
+
+
+testFnm =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+  Columns 25 through 28
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_19.fasta'}
+
+
+testFnm =
+
+  1x29 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+  Columns 25 through 29
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_9.fasta'}
+
+
+testFnm =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045617...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+  Columns 25 through 30
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     2
+     2
+     2
+     3
+     3
+     3
+     3
+     3
+     3
+     4
+     4
+     4
+     4
+     4
+     4
+     4
+     4
+     5
+     5
+     5
+     5
+     6
+     6
+     6
+     7
+     7
+     7
+
+
+score3 =
+
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+    1.0000         0         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0    1.0000         0         0         0         0         0
+         0         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0         0
+         0         0    1.0000         0         0         0         0
+    0.0000    0.0000    0.9284    0.0000    0.0000    0.0716    0.0000
+    0.0000    0.0000    0.9284    0.0000    0.0000    0.0716    0.0000
+         0         0    1.0000         0         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0    1.0000         0         0         0
+         0         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0         0
+         0         0         0         0    1.0000         0         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0    1.0000         0
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+         0         0         0         0         0         0    1.0000
+
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+    0.0000    0.0000    0.9284    0.0000    0.0000    0.0716    0.0000    3.0000    3.0000
+    0.0000    0.0000    0.9284    0.0000    0.0000    0.0716    0.0000    3.0000    3.0000
+         0         0    1.0000         0         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0    1.0000         0         0    5.0000    5.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0    1.0000         0    6.0000    6.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+         0         0         0         0         0         0    1.0000    7.0000    7.0000
+
+
+T3 =
+
+  30x9 table
+
+                                   s__UBA1232 sp002309115    s__UBA1232 sp002315995    s__UBA1232 sp002372015    s__UBA1232 sp004561775    s__UBA1232 sp900316795    s__UBA1232 sp900322025    s__UBA1232 sp900544815    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002309115.1_0.fasta                   1                         0                        0                          0                         0                         0                         0               1           1   
+    GB_GCA_002309115.1_6.fasta                   1                         0                        0                          0                         0                         0                         0               1           1   
+    GB_GCA_002309115.1_7.fasta                   1                         0                        0                          0                         0                         0                         0               1           1   
+    GB_GCA_002315995.1_0.fasta                   0                         1                        0                          0                         0                         0                         0               2           2   
+    GB_GCA_002315995.1_19.fasta                  0                         1                        0                          0                         0                         0                         0               2           2   
+    GB_GCA_002315995.1_6.fasta                   0                         1                        0                          0                         0                         0                         0               2           2   
+    GB_GCA_002372015.1_0.fasta                   0                         0                        1                          0                         0                         0                         0               3           3   
+    GB_GCA_002372015.1_16.fasta                  0                         0                        1                          0                         0                         0                         0               3           3   
+    GB_GCA_002372015.1_19.fasta                  0                         0                        1                          0                         0                         0                         0               3           3   
+    GB_GCA_002372015.1_2.fasta            2.22e-14                  2.22e-14                  0.92835                   2.22e-14                  2.22e-14                  0.071646                  2.22e-14               3           3   
+    GB_GCA_002372015.1_4.fasta            2.22e-14                  2.22e-14                  0.92835                   2.22e-14                  2.22e-14                  0.071646                  2.22e-14               3           3   
+    GB_GCA_002372015.1_6.fasta                   0                         0                        1                          0                         0                         0                         0               3           3   
+    GB_GCA_004561775.1_0.fasta                   0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_004561775.1_10.fasta                  0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_004561775.1_3.fasta                   0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_004561775.1_9.fasta                   0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_004563065.1_11.fasta                  0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_004563065.1_14.fasta                  0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_004563065.1_4.fasta                   0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_004563065.1_5.fasta                   0                         0                        0                          1                         0                         0                         0               4           4   
+    GB_GCA_900316795.1_10.fasta                  0                         0                        0                          0                         1                         0                         0               5           5   
+    GB_GCA_900316795.1_11.fasta                  0                         0                        0                          0                         1                         0                         0               5           5   
+    GB_GCA_900316795.1_12.fasta                  0                         0                        0                          0                         1                         0                         0               5           5   
+    GB_GCA_900316795.1_7.fasta                   0                         0                        0                          0                         1                         0                         0               5           5   
+    GB_GCA_900322025.1_1.fasta                   0                         0                        0                          0                         0                         1                         0               6           6   
+    GB_GCA_900322025.1_17.fasta                  0                         0                        0                          0                         0                         1                         0               6           6   
+    GB_GCA_900322025.1_6.fasta                   0                         0                        0                          0                         0                         1                         0               6           6   
+    GB_GCA_900544815.1_13.fasta                  0                         0                        0                          0                         0                         0                         1               7           7   
+    GB_GCA_900544815.1_19.fasta                  0                         0                        0                          0                         0                         0                         1               7           7   
+    GB_GCA_900544815.1_9.fasta                   0                         0                        0                          0                         0                         0                         1               7           7   
+
+
+testAcNum =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 30
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002309115'    }
+    {'GB_GCA_002309115.1_1.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'GB_GCA_002309115.1_1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_13.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'GB_GCA_002309115.1_1.fasta'}    {'GB_GCA_002309115.1_13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002309115'     }
+    {'GB_GCA_002309115.1_17.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'GB_GCA_002309115.1_1.fasta'}    {'GB_GCA_002309115.1_13.fasta'}    {'GB_GCA_002309115.1_17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_12.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'GB_GCA_002309115.1_1.fasta'}    {'GB_GCA_002309115.1_13.fasta'}    {'GB_GCA_002309115.1_17.fasta'}    {'GB_GCA_002315995.1_12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002315995'     }
+    {'GB_GCA_002315995.1_16.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'GB_GCA_002309115.1_1.fasta'}    {'GB_GCA_002309115.1_13.fasta'}    {'GB_GCA_002309115.1_17.fasta'}    {'GB_GCA_002315995.1_12.fasta'}    {'GB_GCA_002315995.1_16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_2.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'GB_GCA_002309115.1_1.f...'}    {'GB_GCA_002309115.1_13....'}    {'GB_GCA_002309115.1_17....'}    {'GB_GCA_002315995.1_12....'}    {'GB_GCA_002315995.1_16....'}    {'GB_GCA_002315995.1_2.f...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002315995'    }
+    {'GB_GCA_002315995.1_9.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002309115.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}    {'GB_GCA_002315995.1...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_12.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp002372015'     }
+    {'GB_GCA_002372015.1_14.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Column 9
+
+    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp002372015'    }
+    {'GB_GCA_002372015.1_8.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 10
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004561775.1_5.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 11
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_1.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 12
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004563065.1_10.fasta'}
+
+
+testFnm =
+
+  1x13 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 13
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004563065.1_17.fasta'}
+
+
+testFnm =
+
+  1x14 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 14
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp004561775'     }
+    {'GB_GCA_004563065.1_18.fasta'}
+
+
+testFnm =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 15
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_6.fasta'}
+
+
+testFnm =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp004561775'    }
+    {'GB_GCA_004563065.1_9.fasta'}
+
+
+testFnm =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Column 17
+
+    {'GB_GCA_0045630...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_13.fasta'}
+
+
+testFnm =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 18
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_17.fasta'}
+
+
+testFnm =
+
+  1x19 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 19
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900316795'     }
+    {'GB_GCA_900316795.1_19.fasta'}
+
+
+testFnm =
+
+  1x20 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 20
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900316795'    }
+    {'GB_GCA_900316795.1_3.fasta'}
+
+
+testFnm =
+
+  1x21 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 21
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_10.fasta'}
+
+
+testFnm =
+
+  1x22 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 22
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_11.fasta'}
+
+
+testFnm =
+
+  1x23 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 23
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_12.fasta'}
+
+
+testFnm =
+
+  1x24 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900322025'     }
+    {'GB_GCA_900322025.1_14.fasta'}
+
+
+testFnm =
+
+  1x25 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Column 25
+
+    {'GB_GCA_9003220...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_11.fasta'}
+
+
+testFnm =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 26
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_12.fasta'}
+
+
+testFnm =
+
+  1x27 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 27
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_16.fasta'}
+
+
+testFnm =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 28
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'g__UBA1232'                 }
+    {'s__UBA1232 sp900544815'     }
+    {'GB_GCA_900544815.1_18.fasta'}
+
+
+testFnm =
+
+  1x29 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 29
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'g__UBA1232'                }
+    {'s__UBA1232 sp900544815'    }
+    {'GB_GCA_900544815.1_2.fasta'}
+
+
+testFnm =
+
+  1x30 cell array
+
+  Columns 1 through 8
+
+    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023091...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023159...'}    {'GB_GCA_0023720...'}
+
+  Columns 9 through 16
+
+    {'GB_GCA_0023720...'}    {'GB_GCA_0023720...'}    {'GB_GCA_0045617...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}    {'GB_GCA_0045630...'}
+
+  Columns 17 through 24
+
+    {'GB_GCA_0045630...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003167...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}    {'GB_GCA_9003220...'}
+
+  Columns 25 through 30
+
+    {'GB_GCA_9003220...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}    {'GB_GCA_9005448...'}
+
+training QSVM
+classifying using QSVM
+
+plabel3 =
+
+     1
+     1
+     1
+     2
+     2
+     2
+     2
+     3
+     3
+     3
+     4
+     4
+     4
+     4
+     4
+     4
+     4
+     5
+     5
+     5
+     5
+     6
+     6
+     6
+     6
+     7
+     7
+     7
+     7
+     7
+
+
+score3 =
+
+     1     0     0     0     0     0     0
+     1     0     0     0     0     0     0
+     1     0     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     0     1     0     0     0     0
+     0     0     1     0     0     0     0
+     0     0     1     0     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0
+     0     0     0     0     1     0     0
+     0     0     0     0     1     0     0
+     0     0     0     0     1     0     0
+     0     0     0     0     1     0     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0
+     0     0     0     0     0     0     1
+     0     0     0     0     0     0     1
+     0     0     0     0     0     0     1
+     0     0     0     0     0     0     1
+     0     0     0     0     0     0     1
+
+
+score3Matrix =
+
+     1     0     0     0     0     0     0     1     1
+     1     0     0     0     0     0     0     1     1
+     1     0     0     0     0     0     0     1     1
+     0     1     0     0     0     0     0     2     2
+     0     1     0     0     0     0     0     2     2
+     0     1     0     0     0     0     0     2     2
+     0     1     0     0     0     0     0     2     2
+     0     0     1     0     0     0     0     3     3
+     0     0     1     0     0     0     0     3     3
+     0     0     1     0     0     0     0     3     3
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     1     0     0     0     4     4
+     0     0     0     0     1     0     0     5     5
+     0     0     0     0     1     0     0     5     5
+     0     0     0     0     1     0     0     5     5
+     0     0     0     0     1     0     0     5     5
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     1     0     6     6
+     0     0     0     0     0     0     1     7     7
+     0     0     0     0     0     0     1     7     7
+     0     0     0     0     0     0     1     7     7
+     0     0     0     0     0     0     1     7     7
+     0     0     0     0     0     0     1     7     7
+
+
+T3 =
+
+  30x9 table
+
+                                   s__UBA1232 sp002309115    s__UBA1232 sp002315995    s__UBA1232 sp002372015    s__UBA1232 sp004561775    s__UBA1232 sp900316795    s__UBA1232 sp900322025    s__UBA1232 sp900544815    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002309115.1_1.fasta               1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002309115.1_13.fasta              1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002309115.1_17.fasta              1                         0                         0                         0                         0                         0                         0                   1           1   
+    GB_GCA_002315995.1_12.fasta              0                         1                         0                         0                         0                         0                         0                   2           2   
+    GB_GCA_002315995.1_16.fasta              0                         1                         0                         0                         0                         0                         0                   2           2   
+    GB_GCA_002315995.1_2.fasta               0                         1                         0                         0                         0                         0                         0                   2           2   
+    GB_GCA_002315995.1_9.fasta               0                         1                         0                         0                         0                         0                         0                   2           2   
+    GB_GCA_002372015.1_12.fasta              0                         0                         1                         0                         0                         0                         0                   3           3   
+    GB_GCA_002372015.1_14.fasta              0                         0                         1                         0                         0                         0                         0                   3           3   
+    GB_GCA_002372015.1_8.fasta               0                         0                         1                         0                         0                         0                         0                   3           3   
+    GB_GCA_004561775.1_5.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004563065.1_1.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004563065.1_10.fasta              0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004563065.1_17.fasta              0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004563065.1_18.fasta              0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004563065.1_6.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_004563065.1_9.fasta               0                         0                         0                         1                         0                         0                         0                   4           4   
+    GB_GCA_900316795.1_13.fasta              0                         0                         0                         0                         1                         0                         0                   5           5   
+    GB_GCA_900316795.1_17.fasta              0                         0                         0                         0                         1                         0                         0                   5           5   
+    GB_GCA_900316795.1_19.fasta              0                         0                         0                         0                         1                         0                         0                   5           5   
+    GB_GCA_900316795.1_3.fasta               0                         0                         0                         0                         1                         0                         0                   5           5   
+    GB_GCA_900322025.1_10.fasta              0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_11.fasta              0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_12.fasta              0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900322025.1_14.fasta              0                         0                         0                         0                         0                         1                         0                   6           6   
+    GB_GCA_900544815.1_11.fasta              0                         0                         0                         0                         0                         0                         1                   7           7   
+    GB_GCA_900544815.1_12.fasta              0                         0                         0                         0                         0                         0                         1                   7           7   
+    GB_GCA_900544815.1_16.fasta              0                         0                         0                         0                         0                         0                         1                   7           7   
+    GB_GCA_900544815.1_18.fasta              0                         0                         0                         0                         0                         0                         1                   7           7   
+    GB_GCA_900544815.1_2.fasta               0                         0                         0                         0                         0                         0                         1                   7           7   
+
+confusion matrix for 1 is:
+    20     0     0     0     0     0     0
+     0    18     0     0     2     0     0
+     0     0    20     0     0     0     0
+     0     0     0    30     0     0     0
+     0     0     0     0    20     0     0
+     0     0     0     0     0    20     0
+     0     0     0     0     0     0    20
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [98.7000]    [98.7000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      98.7  
+    {'AvgAccuracy' }      98.7  
+
+Process completed 
+[?1l>

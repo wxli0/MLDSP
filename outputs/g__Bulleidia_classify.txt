@@ -1,0 +1,851 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+methodNum =
+
+     1
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/g__Bulleidia'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/rumen_mags/g__Bulleidia'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: The Cluster reported an error while destroying a job. The error was: Could not open file "/home/w328li/.matlab/local_cluster_jobs/R2019b/Job49.in.mat", the error returned was: Unable to read
+file '/home/w328li/.matlab/local_cluster_jobs/R2019b/Job49.in.mat'. No such file or directory...] 
+[> In parallel.internal.cluster/CJSJobMethods/destroyOneJob (line 79)
+  In parallel.job.CJSConcurrentJob>@(job)CJSJobMethods.destroyOneJob(job.Parent,job,job.Support,job.SupportID) (line 52)
+  In parallel.job/CJSConcurrentJob/destroyJob (line 52)
+  In parallel.Job>iDeleteJobs (line 1532)
+  In parallel.internal.cluster.hetfun (line 57)
+  In parallel/Job/delete (line 1312)
+  In parallel/Cluster/hDeleteOneJob (line 1030)
+  In parallel.internal.pool.InteractiveClient>iDeleteJobs (line 860)
+  In parallel.internal.pool/InteractiveClient/pRemoveOldJobs (line 475)
+  In parallel.internal.pool/InteractiveClient/start (line 311)
+  In parallel.Pool>iStartClient (line 796)
+  In parallel/Pool/hBuildPool (line 585)
+  In parallel.internal.pool.doParpool (line 18)
+  In parpool (line 98)
+  In parallel.internal.pool/PoolArrayManager/getOrAutoCreateWithCleanup (line 60)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In parallel_function (line 418)
+  In readExternsBac (line 48)
+  In stackedMain (line 23)] 
+Connected to the parallel pool (number of workers: 12).
+Computing Distance matrix .... 
+s__Bulleidia extructa and s__Bulleidia extructa avg dissimilarity is: 0.003304
+s__Bulleidia extructa and s__Bulleidia massiliense avg dissimilarity is: 0.083885
+s__Bulleidia extructa and s__Bulleidia massiliensis avg dissimilarity is: 0.140568
+s__Bulleidia extructa and s__Bulleidia moorei avg dissimilarity is: 0.028867
+s__Bulleidia extructa and s__Bulleidia sp000701725 avg dissimilarity is: 0.088234
+s__Bulleidia extructa and s__Bulleidia sp002372175 avg dissimilarity is: 0.122635
+s__Bulleidia extructa and s__Bulleidia sp003446295 avg dissimilarity is: 0.103644
+s__Bulleidia extructa and s__Bulleidia sp900314345 avg dissimilarity is: 0.114414
+s__Bulleidia extructa and s__Bulleidia sp900314905 avg dissimilarity is: 0.142867
+s__Bulleidia extructa and s__Bulleidia sp900315065 avg dissimilarity is: 0.072771
+s__Bulleidia extructa and s__Bulleidia sp900315225 avg dissimilarity is: 0.056096
+s__Bulleidia extructa and s__Bulleidia sp900319505 avg dissimilarity is: 0.097642
+s__Bulleidia extructa and s__Bulleidia sp900320455 avg dissimilarity is: 0.112757
+s__Bulleidia extructa and s__Bulleidia sp900539965 avg dissimilarity is: 0.033468
+s__Bulleidia extructa and s__Bulleidia sp900554555 avg dissimilarity is: 0.034547
+s__Bulleidia extructa and s__Bulleidia timonensis avg dissimilarity is: 0.114915
+s__Bulleidia massiliense and s__Bulleidia massiliense avg dissimilarity is: 0.004199
+s__Bulleidia massiliense and s__Bulleidia massiliensis avg dissimilarity is: 0.041633
+s__Bulleidia massiliense and s__Bulleidia moorei avg dissimilarity is: 0.052772
+s__Bulleidia massiliense and s__Bulleidia sp000701725 avg dissimilarity is: 0.023844
+s__Bulleidia massiliense and s__Bulleidia sp002372175 avg dissimilarity is: 0.044939
+s__Bulleidia massiliense and s__Bulleidia sp003446295 avg dissimilarity is: 0.030486
+s__Bulleidia massiliense and s__Bulleidia sp900314345 avg dissimilarity is: 0.024244
+s__Bulleidia massiliense and s__Bulleidia sp900314905 avg dissimilarity is: 0.041533
+s__Bulleidia massiliense and s__Bulleidia sp900315065 avg dissimilarity is: 0.020941
+s__Bulleidia massiliense and s__Bulleidia sp900315225 avg dissimilarity is: 0.044102
+s__Bulleidia massiliense and s__Bulleidia sp900319505 avg dissimilarity is: 0.012951
+s__Bulleidia massiliense and s__Bulleidia sp900320455 avg dissimilarity is: 0.027901
+s__Bulleidia massiliense and s__Bulleidia sp900539965 avg dissimilarity is: 0.068414
+s__Bulleidia massiliense and s__Bulleidia sp900554555 avg dissimilarity is: 0.049904
+s__Bulleidia massiliense and s__Bulleidia timonensis avg dissimilarity is: 0.034079
+s__Bulleidia massiliensis and s__Bulleidia massiliensis avg dissimilarity is: 0.005040
+s__Bulleidia massiliensis and s__Bulleidia moorei avg dissimilarity is: 0.091601
+s__Bulleidia massiliensis and s__Bulleidia sp000701725 avg dissimilarity is: 0.034998
+s__Bulleidia massiliensis and s__Bulleidia sp002372175 avg dissimilarity is: 0.038169
+s__Bulleidia massiliensis and s__Bulleidia sp003446295 avg dissimilarity is: 0.028861
+s__Bulleidia massiliensis and s__Bulleidia sp900314345 avg dissimilarity is: 0.034478
+s__Bulleidia massiliensis and s__Bulleidia sp900314905 avg dissimilarity is: 0.005051
+s__Bulleidia massiliensis and s__Bulleidia sp900315065 avg dissimilarity is: 0.044924
+s__Bulleidia massiliensis and s__Bulleidia sp900315225 avg dissimilarity is: 0.084779
+s__Bulleidia massiliensis and s__Bulleidia sp900319505 avg dissimilarity is: 0.033202
+s__Bulleidia massiliensis and s__Bulleidia sp900320455 avg dissimilarity is: 0.022940
+s__Bulleidia massiliensis and s__Bulleidia sp900539965 avg dissimilarity is: 0.119875
+s__Bulleidia massiliensis and s__Bulleidia sp900554555 avg dissimilarity is: 0.087493
+s__Bulleidia massiliensis and s__Bulleidia timonensis avg dissimilarity is: 0.027148
+s__Bulleidia moorei and s__Bulleidia moorei avg dissimilarity is: 0.004355
+s__Bulleidia moorei and s__Bulleidia sp000701725 avg dissimilarity is: 0.056442
+s__Bulleidia moorei and s__Bulleidia sp002372175 avg dissimilarity is: 0.073741
+s__Bulleidia moorei and s__Bulleidia sp003446295 avg dissimilarity is: 0.063389
+s__Bulleidia moorei and s__Bulleidia sp900314345 avg dissimilarity is: 0.078157
+s__Bulleidia moorei and s__Bulleidia sp900314905 avg dissimilarity is: 0.094102
+s__Bulleidia moorei and s__Bulleidia sp900315065 avg dissimilarity is: 0.047198
+s__Bulleidia moorei and s__Bulleidia sp900315225 avg dissimilarity is: 0.035595
+s__Bulleidia moorei and s__Bulleidia sp900319505 avg dissimilarity is: 0.060516
+s__Bulleidia moorei and s__Bulleidia sp900320455 avg dissimilarity is: 0.073877
+s__Bulleidia moorei and s__Bulleidia sp900539965 avg dissimilarity is: 0.021160
+s__Bulleidia moorei and s__Bulleidia sp900554555 avg dissimilarity is: 0.005609
+s__Bulleidia moorei and s__Bulleidia timonensis avg dissimilarity is: 0.071021
+s__Bulleidia sp000701725 and s__Bulleidia sp000701725 avg dissimilarity is: 0.006761
+s__Bulleidia sp000701725 and s__Bulleidia sp002372175 avg dissimilarity is: 0.038022
+s__Bulleidia sp000701725 and s__Bulleidia sp003446295 avg dissimilarity is: 0.021726
+s__Bulleidia sp000701725 and s__Bulleidia sp900314345 avg dissimilarity is: 0.030339
+s__Bulleidia sp000701725 and s__Bulleidia sp900314905 avg dissimilarity is: 0.034795
+s__Bulleidia sp000701725 and s__Bulleidia sp900315065 avg dissimilarity is: 0.030580
+s__Bulleidia sp000701725 and s__Bulleidia sp900315225 avg dissimilarity is: 0.044775
+s__Bulleidia sp000701725 and s__Bulleidia sp900319505 avg dissimilarity is: 0.022029
+s__Bulleidia sp000701725 and s__Bulleidia sp900320455 avg dissimilarity is: 0.016974
+s__Bulleidia sp000701725 and s__Bulleidia sp900539965 avg dissimilarity is: 0.081364
+s__Bulleidia sp000701725 and s__Bulleidia sp900554555 avg dissimilarity is: 0.053614
+s__Bulleidia sp000701725 and s__Bulleidia timonensis avg dissimilarity is: 0.023678
+s__Bulleidia sp002372175 and s__Bulleidia sp002372175 avg dissimilarity is: 0.004082
+s__Bulleidia sp002372175 and s__Bulleidia sp003446295 avg dissimilarity is: 0.021252
+s__Bulleidia sp002372175 and s__Bulleidia sp900314345 avg dissimilarity is: 0.039970
+s__Bulleidia sp002372175 and s__Bulleidia sp900314905 avg dissimilarity is: 0.039006
+s__Bulleidia sp002372175 and s__Bulleidia sp900315065 avg dissimilarity is: 0.054493
+s__Bulleidia sp002372175 and s__Bulleidia sp900315225 avg dissimilarity is: 0.070235
+s__Bulleidia sp002372175 and s__Bulleidia sp900319505 avg dissimilarity is: 0.037583
+s__Bulleidia sp002372175 and s__Bulleidia sp900320455 avg dissimilarity is: 0.029549
+s__Bulleidia sp002372175 and s__Bulleidia sp900539965 avg dissimilarity is: 0.107205
+s__Bulleidia sp002372175 and s__Bulleidia sp900554555 avg dissimilarity is: 0.070941
+s__Bulleidia sp002372175 and s__Bulleidia timonensis avg dissimilarity is: 0.032646
+s__Bulleidia sp003446295 and s__Bulleidia sp003446295 avg dissimilarity is: 0.003393
+s__Bulleidia sp003446295 and s__Bulleidia sp900314345 avg dissimilarity is: 0.028541
+s__Bulleidia sp003446295 and s__Bulleidia sp900314905 avg dissimilarity is: 0.029109
+s__Bulleidia sp003446295 and s__Bulleidia sp900315065 avg dissimilarity is: 0.034800
+s__Bulleidia sp003446295 and s__Bulleidia sp900315225 avg dissimilarity is: 0.062017
+s__Bulleidia sp003446295 and s__Bulleidia sp900319505 avg dissimilarity is: 0.025761
+s__Bulleidia sp003446295 and s__Bulleidia sp900320455 avg dissimilarity is: 0.016334
+s__Bulleidia sp003446295 and s__Bulleidia sp900539965 avg dissimilarity is: 0.088773
+s__Bulleidia sp003446295 and s__Bulleidia sp900554555 avg dissimilarity is: 0.060673
+s__Bulleidia sp003446295 and s__Bulleidia timonensis avg dissimilarity is: 0.028160
+s__Bulleidia sp900314345 and s__Bulleidia sp900314345 avg dissimilarity is: 0.003249
+s__Bulleidia sp900314345 and s__Bulleidia sp900314905 avg dissimilarity is: 0.034000
+s__Bulleidia sp900314345 and s__Bulleidia sp900315065 avg dissimilarity is: 0.035955
+s__Bulleidia sp900314345 and s__Bulleidia sp900315225 avg dissimilarity is: 0.059131
+s__Bulleidia sp900314345 and s__Bulleidia sp900319505 avg dissimilarity is: 0.024255
+s__Bulleidia sp900314345 and s__Bulleidia sp900320455 avg dissimilarity is: 0.023192
+s__Bulleidia sp900314345 and s__Bulleidia sp900539965 avg dissimilarity is: 0.099797
+s__Bulleidia sp900314345 and s__Bulleidia sp900554555 avg dissimilarity is: 0.073222
+s__Bulleidia sp900314345 and s__Bulleidia timonensis avg dissimilarity is: 0.033980
+s__Bulleidia sp900314905 and s__Bulleidia sp900314905 avg dissimilarity is: 0.003534
+s__Bulleidia sp900314905 and s__Bulleidia sp900315065 avg dissimilarity is: 0.046710
+s__Bulleidia sp900314905 and s__Bulleidia sp900315225 avg dissimilarity is: 0.086360
+s__Bulleidia sp900314905 and s__Bulleidia sp900319505 avg dissimilarity is: 0.033693
+s__Bulleidia sp900314905 and s__Bulleidia sp900320455 avg dissimilarity is: 0.022592
+s__Bulleidia sp900314905 and s__Bulleidia sp900539965 avg dissimilarity is: 0.123358
+s__Bulleidia sp900314905 and s__Bulleidia sp900554555 avg dissimilarity is: 0.089728
+s__Bulleidia sp900314905 and s__Bulleidia timonensis avg dissimilarity is: 0.027098
+s__Bulleidia sp900315065 and s__Bulleidia sp900315065 avg dissimilarity is: 0.003924
+s__Bulleidia sp900315065 and s__Bulleidia sp900315225 avg dissimilarity is: 0.045518
+s__Bulleidia sp900315065 and s__Bulleidia sp900319505 avg dissimilarity is: 0.018739
+s__Bulleidia sp900315065 and s__Bulleidia sp900320455 avg dissimilarity is: 0.032001
+s__Bulleidia sp900315065 and s__Bulleidia sp900539965 avg dissimilarity is: 0.053230
+s__Bulleidia sp900315065 and s__Bulleidia sp900554555 avg dissimilarity is: 0.046412
+s__Bulleidia sp900315065 and s__Bulleidia timonensis avg dissimilarity is: 0.044736
+s__Bulleidia sp900315225 and s__Bulleidia sp900315225 avg dissimilarity is: 0.004418
+s__Bulleidia sp900315225 and s__Bulleidia sp900319505 avg dissimilarity is: 0.049296
+s__Bulleidia sp900315225 and s__Bulleidia sp900320455 avg dissimilarity is: 0.061323
+s__Bulleidia sp900315225 and s__Bulleidia sp900539965 avg dissimilarity is: 0.051544
+s__Bulleidia sp900315225 and s__Bulleidia sp900554555 avg dissimilarity is: 0.035047
+s__Bulleidia sp900315225 and s__Bulleidia timonensis avg dissimilarity is: 0.057915
+s__Bulleidia sp900319505 and s__Bulleidia sp900319505 avg dissimilarity is: 0.004637
+s__Bulleidia sp900319505 and s__Bulleidia sp900320455 avg dissimilarity is: 0.020921
+s__Bulleidia sp900319505 and s__Bulleidia sp900539965 avg dissimilarity is: 0.075683
+s__Bulleidia sp900319505 and s__Bulleidia sp900554555 avg dissimilarity is: 0.057618
+s__Bulleidia sp900319505 and s__Bulleidia timonensis avg dissimilarity is: 0.029676
+s__Bulleidia sp900320455 and s__Bulleidia sp900320455 avg dissimilarity is: 0.003443
+s__Bulleidia sp900320455 and s__Bulleidia sp900539965 avg dissimilarity is: 0.097776
+s__Bulleidia sp900320455 and s__Bulleidia sp900554555 avg dissimilarity is: 0.070008
+s__Bulleidia sp900320455 and s__Bulleidia timonensis avg dissimilarity is: 0.023563
+s__Bulleidia sp900539965 and s__Bulleidia sp900539965 avg dissimilarity is: 0.003402
+s__Bulleidia sp900539965 and s__Bulleidia sp900554555 avg dissimilarity is: 0.025107
+s__Bulleidia sp900539965 and s__Bulleidia timonensis avg dissimilarity is: 0.105436
+s__Bulleidia sp900554555 and s__Bulleidia sp900554555 avg dissimilarity is: 0.002823
+s__Bulleidia sp900554555 and s__Bulleidia timonensis avg dissimilarity is: 0.067224
+s__Bulleidia timonensis and s__Bulleidia timonensis avg dissimilarity is: 0.004987
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+
+seqToTest =
+
+     0
+
+dataSet is:/home/w328li/MLDSP/samples/rumen_mags/g__Bulleidia
+allFiles are:
+Seq 1 and s__Bulleidia extructa avg dissimilarity is: 0.003115
+Seq 1 and s__Bulleidia massiliense avg dissimilarity is: 0.082552
+Seq 1 and s__Bulleidia massiliensis avg dissimilarity is: 0.138306
+Seq 1 and s__Bulleidia moorei avg dissimilarity is: 0.027520
+Seq 1 and s__Bulleidia sp000701725 avg dissimilarity is: 0.086475
+Seq 1 and s__Bulleidia sp002372175 avg dissimilarity is: 0.120443
+Seq 1 and s__Bulleidia sp003446295 avg dissimilarity is: 0.101193
+Seq 1 and s__Bulleidia sp900314345 avg dissimilarity is: 0.112618
+Seq 1 and s__Bulleidia sp900314905 avg dissimilarity is: 0.140630
+Seq 1 and s__Bulleidia sp900315065 avg dissimilarity is: 0.070962
+Seq 1 and s__Bulleidia sp900315225 avg dissimilarity is: 0.054858
+Seq 1 and s__Bulleidia sp900319505 avg dissimilarity is: 0.095675
+Seq 1 and s__Bulleidia sp900320455 avg dissimilarity is: 0.110581
+Seq 1 and s__Bulleidia sp900539965 avg dissimilarity is: 0.032738
+Seq 1 and s__Bulleidia sp900554555 avg dissimilarity is: 0.033403
+Seq 1 and s__Bulleidia timonensis avg dissimilarity is: 0.112766
+Seq 2 and s__Bulleidia extructa avg dissimilarity is: 0.002986
+Seq 2 and s__Bulleidia massiliense avg dissimilarity is: 0.082045
+Seq 2 and s__Bulleidia massiliensis avg dissimilarity is: 0.139160
+Seq 2 and s__Bulleidia moorei avg dissimilarity is: 0.026621
+Seq 2 and s__Bulleidia sp000701725 avg dissimilarity is: 0.086912
+Seq 2 and s__Bulleidia sp002372175 avg dissimilarity is: 0.120099
+Seq 2 and s__Bulleidia sp003446295 avg dissimilarity is: 0.102043
+Seq 2 and s__Bulleidia sp900314345 avg dissimilarity is: 0.112825
+Seq 2 and s__Bulleidia sp900314905 avg dissimilarity is: 0.141527
+Seq 2 and s__Bulleidia sp900315065 avg dissimilarity is: 0.071454
+Seq 2 and s__Bulleidia sp900315225 avg dissimilarity is: 0.054750
+Seq 2 and s__Bulleidia sp900319505 avg dissimilarity is: 0.096038
+Seq 2 and s__Bulleidia sp900320455 avg dissimilarity is: 0.111401
+Seq 2 and s__Bulleidia sp900539965 avg dissimilarity is: 0.031820
+Seq 2 and s__Bulleidia sp900554555 avg dissimilarity is: 0.032297
+Seq 2 and s__Bulleidia timonensis avg dissimilarity is: 0.113099
+Seq 3 and s__Bulleidia extructa avg dissimilarity is: 0.003051
+Seq 3 and s__Bulleidia massiliense avg dissimilarity is: 0.085498
+Seq 3 and s__Bulleidia massiliensis avg dissimilarity is: 0.142244
+Seq 3 and s__Bulleidia moorei avg dissimilarity is: 0.029812
+Seq 3 and s__Bulleidia sp000701725 avg dissimilarity is: 0.089911
+Seq 3 and s__Bulleidia sp002372175 avg dissimilarity is: 0.124506
+Seq 3 and s__Bulleidia sp003446295 avg dissimilarity is: 0.105708
+Seq 3 and s__Bulleidia sp900314345 avg dissimilarity is: 0.116279
+Seq 3 and s__Bulleidia sp900314905 avg dissimilarity is: 0.144519
+Seq 3 and s__Bulleidia sp900315065 avg dissimilarity is: 0.074368
+Seq 3 and s__Bulleidia sp900315225 avg dissimilarity is: 0.057736
+Seq 3 and s__Bulleidia sp900319505 avg dissimilarity is: 0.099606
+Seq 3 and s__Bulleidia sp900320455 avg dissimilarity is: 0.114507
+Seq 3 and s__Bulleidia sp900539965 avg dissimilarity is: 0.034269
+Seq 3 and s__Bulleidia sp900554555 avg dissimilarity is: 0.035453
+Seq 3 and s__Bulleidia timonensis avg dissimilarity is: 0.116383
+Seq 4 and s__Bulleidia extructa avg dissimilarity is: 0.003827
+Seq 4 and s__Bulleidia massiliense avg dissimilarity is: 0.085704
+Seq 4 and s__Bulleidia massiliensis avg dissimilarity is: 0.143294
+Seq 4 and s__Bulleidia moorei avg dissimilarity is: 0.032298
+Seq 4 and s__Bulleidia sp000701725 avg dissimilarity is: 0.090135
+Seq 4 and s__Bulleidia sp002372175 avg dissimilarity is: 0.126872
+Seq 4 and s__Bulleidia sp003446295 avg dissimilarity is: 0.106545
+Seq 4 and s__Bulleidia sp900314345 avg dissimilarity is: 0.116435
+Seq 4 and s__Bulleidia sp900314905 avg dissimilarity is: 0.145494
+Seq 4 and s__Bulleidia sp900315065 avg dissimilarity is: 0.074755
+Seq 4 and s__Bulleidia sp900315225 avg dissimilarity is: 0.057401
+Seq 4 and s__Bulleidia sp900319505 avg dissimilarity is: 0.099744
+Seq 4 and s__Bulleidia sp900320455 avg dissimilarity is: 0.115220
+Seq 4 and s__Bulleidia sp900539965 avg dissimilarity is: 0.035596
+Seq 4 and s__Bulleidia sp900554555 avg dissimilarity is: 0.037825
+Seq 4 and s__Bulleidia timonensis avg dissimilarity is: 0.118375
+Seq 5 and s__Bulleidia extructa avg dissimilarity is: 0.003444
+Seq 5 and s__Bulleidia massiliense avg dissimilarity is: 0.080345
+Seq 5 and s__Bulleidia massiliensis avg dissimilarity is: 0.135327
+Seq 5 and s__Bulleidia moorei avg dissimilarity is: 0.025862
+Seq 5 and s__Bulleidia sp000701725 avg dissimilarity is: 0.083989
+Seq 5 and s__Bulleidia sp002372175 avg dissimilarity is: 0.117130
+Seq 5 and s__Bulleidia sp003446295 avg dissimilarity is: 0.098465
+Seq 5 and s__Bulleidia sp900314345 avg dissimilarity is: 0.109839
+Seq 5 and s__Bulleidia sp900314905 avg dissimilarity is: 0.137627
+Seq 5 and s__Bulleidia sp900315065 avg dissimilarity is: 0.069157
+Seq 5 and s__Bulleidia sp900315225 avg dissimilarity is: 0.052687
+Seq 5 and s__Bulleidia sp900319505 avg dissimilarity is: 0.093142
+Seq 5 and s__Bulleidia sp900320455 avg dissimilarity is: 0.108016
+Seq 5 and s__Bulleidia sp900539965 avg dissimilarity is: 0.032100
+Seq 5 and s__Bulleidia sp900554555 avg dissimilarity is: 0.031632
+Seq 5 and s__Bulleidia timonensis avg dissimilarity is: 0.109740
+Seq 6 and s__Bulleidia extructa avg dissimilarity is: 0.003044
+Seq 6 and s__Bulleidia massiliense avg dissimilarity is: 0.083780
+Seq 6 and s__Bulleidia massiliensis avg dissimilarity is: 0.141163
+Seq 6 and s__Bulleidia moorei avg dissimilarity is: 0.027481
+Seq 6 and s__Bulleidia sp000701725 avg dissimilarity is: 0.088712
+Seq 6 and s__Bulleidia sp002372175 avg dissimilarity is: 0.121803
+Seq 6 and s__Bulleidia sp003446295 avg dissimilarity is: 0.103665
+Seq 6 and s__Bulleidia sp900314345 avg dissimilarity is: 0.114831
+Seq 6 and s__Bulleidia sp900314905 avg dissimilarity is: 0.143577
+Seq 6 and s__Bulleidia sp900315065 avg dissimilarity is: 0.072655
+Seq 6 and s__Bulleidia sp900315225 avg dissimilarity is: 0.056345
+Seq 6 and s__Bulleidia sp900319505 avg dissimilarity is: 0.097838
+Seq 6 and s__Bulleidia sp900320455 avg dissimilarity is: 0.113088
+Seq 6 and s__Bulleidia sp900539965 avg dissimilarity is: 0.031967
+Seq 6 and s__Bulleidia sp900554555 avg dissimilarity is: 0.033231
+Seq 6 and s__Bulleidia timonensis avg dissimilarity is: 0.114929
+Seq 7 and s__Bulleidia extructa avg dissimilarity is: 0.003051
+Seq 7 and s__Bulleidia massiliense avg dissimilarity is: 0.085498
+Seq 7 and s__Bulleidia massiliensis avg dissimilarity is: 0.142244
+Seq 7 and s__Bulleidia moorei avg dissimilarity is: 0.029812
+Seq 7 and s__Bulleidia sp000701725 avg dissimilarity is: 0.089911
+Seq 7 and s__Bulleidia sp002372175 avg dissimilarity is: 0.124506
+Seq 7 and s__Bulleidia sp003446295 avg dissimilarity is: 0.105708
+Seq 7 and s__Bulleidia sp900314345 avg dissimilarity is: 0.116279
+Seq 7 and s__Bulleidia sp900314905 avg dissimilarity is: 0.144519
+Seq 7 and s__Bulleidia sp900315065 avg dissimilarity is: 0.074368
+Seq 7 and s__Bulleidia sp900315225 avg dissimilarity is: 0.057736
+Seq 7 and s__Bulleidia sp900319505 avg dissimilarity is: 0.099606
+Seq 7 and s__Bulleidia sp900320455 avg dissimilarity is: 0.114507
+Seq 7 and s__Bulleidia sp900539965 avg dissimilarity is: 0.034269
+Seq 7 and s__Bulleidia sp900554555 avg dissimilarity is: 0.035453
+Seq 7 and s__Bulleidia timonensis avg dissimilarity is: 0.116383
+Seq 8 and s__Bulleidia extructa avg dissimilarity is: 0.003827
+Seq 8 and s__Bulleidia massiliense avg dissimilarity is: 0.085704
+Seq 8 and s__Bulleidia massiliensis avg dissimilarity is: 0.143294
+Seq 8 and s__Bulleidia moorei avg dissimilarity is: 0.032298
+Seq 8 and s__Bulleidia sp000701725 avg dissimilarity is: 0.090135
+Seq 8 and s__Bulleidia sp002372175 avg dissimilarity is: 0.126872
+Seq 8 and s__Bulleidia sp003446295 avg dissimilarity is: 0.106545
+Seq 8 and s__Bulleidia sp900314345 avg dissimilarity is: 0.116435
+Seq 8 and s__Bulleidia sp900314905 avg dissimilarity is: 0.145494
+Seq 8 and s__Bulleidia sp900315065 avg dissimilarity is: 0.074755
+Seq 8 and s__Bulleidia sp900315225 avg dissimilarity is: 0.057401
+Seq 8 and s__Bulleidia sp900319505 avg dissimilarity is: 0.099744
+Seq 8 and s__Bulleidia sp900320455 avg dissimilarity is: 0.115220
+Seq 8 and s__Bulleidia sp900539965 avg dissimilarity is: 0.035596
+Seq 8 and s__Bulleidia sp900554555 avg dissimilarity is: 0.037825
+Seq 8 and s__Bulleidia timonensis avg dissimilarity is: 0.118375
+Seq 9 and s__Bulleidia extructa avg dissimilarity is: 0.003444
+Seq 9 and s__Bulleidia massiliense avg dissimilarity is: 0.080345
+Seq 9 and s__Bulleidia massiliensis avg dissimilarity is: 0.135327
+Seq 9 and s__Bulleidia moorei avg dissimilarity is: 0.025862
+Seq 9 and s__Bulleidia sp000701725 avg dissimilarity is: 0.083989
+Seq 9 and s__Bulleidia sp002372175 avg dissimilarity is: 0.117130
+Seq 9 and s__Bulleidia sp003446295 avg dissimilarity is: 0.098465
+Seq 9 and s__Bulleidia sp900314345 avg dissimilarity is: 0.109839
+Seq 9 and s__Bulleidia sp900314905 avg dissimilarity is: 0.137627
+Seq 9 and s__Bulleidia sp900315065 avg dissimilarity is: 0.069157
+Seq 9 and s__Bulleidia sp900315225 avg dissimilarity is: 0.052687
+Seq 9 and s__Bulleidia sp900319505 avg dissimilarity is: 0.093142
+Seq 9 and s__Bulleidia sp900320455 avg dissimilarity is: 0.108016
+Seq 9 and s__Bulleidia sp900539965 avg dissimilarity is: 0.032100
+Seq 9 and s__Bulleidia sp900554555 avg dissimilarity is: 0.031632
+Seq 9 and s__Bulleidia timonensis avg dissimilarity is: 0.109740
+Seq 10 and s__Bulleidia extructa avg dissimilarity is: 0.003044
+Seq 10 and s__Bulleidia massiliense avg dissimilarity is: 0.083780
+Seq 10 and s__Bulleidia massiliensis avg dissimilarity is: 0.141163
+Seq 10 and s__Bulleidia moorei avg dissimilarity is: 0.027481
+Seq 10 and s__Bulleidia sp000701725 avg dissimilarity is: 0.088712
+Seq 10 and s__Bulleidia sp002372175 avg dissimilarity is: 0.121803
+Seq 10 and s__Bulleidia sp003446295 avg dissimilarity is: 0.103665
+Seq 10 and s__Bulleidia sp900314345 avg dissimilarity is: 0.114831
+Seq 10 and s__Bulleidia sp900314905 avg dissimilarity is: 0.143577
+Seq 10 and s__Bulleidia sp900315065 avg dissimilarity is: 0.072655
+Seq 10 and s__Bulleidia sp900315225 avg dissimilarity is: 0.056345
+Seq 10 and s__Bulleidia sp900319505 avg dissimilarity is: 0.097838
+Seq 10 and s__Bulleidia sp900320455 avg dissimilarity is: 0.113088
+Seq 10 and s__Bulleidia sp900539965 avg dissimilarity is: 0.031967
+Seq 10 and s__Bulleidia sp900554555 avg dissimilarity is: 0.033231
+Seq 10 and s__Bulleidia timonensis avg dissimilarity is: 0.114929
+Seq 11 and s__Bulleidia extructa avg dissimilarity is: 0.003051
+Seq 11 and s__Bulleidia massiliense avg dissimilarity is: 0.085498
+Seq 11 and s__Bulleidia massiliensis avg dissimilarity is: 0.142244
+Seq 11 and s__Bulleidia moorei avg dissimilarity is: 0.029812
+Seq 11 and s__Bulleidia sp000701725 avg dissimilarity is: 0.089911
+Seq 11 and s__Bulleidia sp002372175 avg dissimilarity is: 0.124506
+Seq 11 and s__Bulleidia sp003446295 avg dissimilarity is: 0.105708
+Seq 11 and s__Bulleidia sp900314345 avg dissimilarity is: 0.116279
+Seq 11 and s__Bulleidia sp900314905 avg dissimilarity is: 0.144519
+Seq 11 and s__Bulleidia sp900315065 avg dissimilarity is: 0.074368
+Seq 11 and s__Bulleidia sp900315225 avg dissimilarity is: 0.057736
+Seq 11 and s__Bulleidia sp900319505 avg dissimilarity is: 0.099606
+Seq 11 and s__Bulleidia sp900320455 avg dissimilarity is: 0.114507
+Seq 11 and s__Bulleidia sp900539965 avg dissimilarity is: 0.034269
+Seq 11 and s__Bulleidia sp900554555 avg dissimilarity is: 0.035453
+Seq 11 and s__Bulleidia timonensis avg dissimilarity is: 0.116383
+Seq 12 and s__Bulleidia extructa avg dissimilarity is: 0.003827
+Seq 12 and s__Bulleidia massiliense avg dissimilarity is: 0.085704
+Seq 12 and s__Bulleidia massiliensis avg dissimilarity is: 0.143294
+Seq 12 and s__Bulleidia moorei avg dissimilarity is: 0.032298
+Seq 12 and s__Bulleidia sp000701725 avg dissimilarity is: 0.090135
+Seq 12 and s__Bulleidia sp002372175 avg dissimilarity is: 0.126872
+Seq 12 and s__Bulleidia sp003446295 avg dissimilarity is: 0.106545
+Seq 12 and s__Bulleidia sp900314345 avg dissimilarity is: 0.116435
+Seq 12 and s__Bulleidia sp900314905 avg dissimilarity is: 0.145494
+Seq 12 and s__Bulleidia sp900315065 avg dissimilarity is: 0.074755
+Seq 12 and s__Bulleidia sp900315225 avg dissimilarity is: 0.057401
+Seq 12 and s__Bulleidia sp900319505 avg dissimilarity is: 0.099744
+Seq 12 and s__Bulleidia sp900320455 avg dissimilarity is: 0.115220
+Seq 12 and s__Bulleidia sp900539965 avg dissimilarity is: 0.035596
+Seq 12 and s__Bulleidia sp900554555 avg dissimilarity is: 0.037825
+Seq 12 and s__Bulleidia timonensis avg dissimilarity is: 0.118375
+numTestSeq is: 12
+3
+3
+2
+3
+10
+3
+16
+12
+5
+16
+12
+9
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'s__Bulleidia m...'}    {'s__Bulleidia m...'}    {'s__Bulleidia m...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'s__Bulleidia m...'}    {'s__Bulleidia m...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'s__Bulleidia m...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'s__Bulleidia s...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'11-s__Bulleidi...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'11-s__Bulleidi...'}    {'12-s__Bulleidi...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'11-s__Bulleidi...'}    {'12-s__Bulleidi...'}    {'13-s__Bulleidi...'}    {'s__Bulleidia s...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'11-s__Bulleidi...'}    {'12-s__Bulleidi...'}    {'13-s__Bulleidi...'}    {'14-s__Bulleidi...'}    {'s__Bulleidia s...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'11-s__Bulleidi...'}    {'12-s__Bulleidi...'}    {'13-s__Bulleidi...'}    {'14-s__Bulleidi...'}    {'15-s__Bulleidi...'}    {'s__Bulleidia t...'}
+
+
+clusterNames =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'11-s__Bulleidi...'}    {'12-s__Bulleidi...'}    {'13-s__Bulleidi...'}    {'14-s__Bulleidi...'}    {'15-s__Bulleidi...'}    {'16-s__Bulleidi...'}
+
+  Columns 1 through 8
+
+    '1-s__Bulleidia e...'    '2-s__Bulleidia m...'    '3-s__Bulleidia m...'    '4-s__Bulleidia m...'    '5-s__Bulleidia s...'    '6-s__Bulleidia s...'    '7-s__Bulleidia s...'    '8-s__Bulleidia s...'
+
+  Columns 9 through 16
+
+    '9-s__Bulleidia s...'    '10-s__Bulleidia ...'    '11-s__Bulleidia ...'    '12-s__Bulleidia ...'    '13-s__Bulleidia ...'    '14-s__Bulleidia ...'    '15-s__Bulleidia ...'    '16-s__Bulleidia ...'
+
+
+header =
+
+  1x17 cell array
+
+  Columns 1 through 8
+
+    {'1-s__Bulleidia...'}    {'2-s__Bulleidia...'}    {'3-s__Bulleidia...'}    {'4-s__Bulleidia...'}    {'5-s__Bulleidia...'}    {'6-s__Bulleidia...'}    {'7-s__Bulleidia...'}    {'8-s__Bulleidia...'}
+
+  Columns 9 through 16
+
+    {'9-s__Bulleidia...'}    {'10-s__Bulleidi...'}    {'11-s__Bulleidi...'}    {'12-s__Bulleidi...'}    {'13-s__Bulleidi...'}    {'14-s__Bulleidi...'}    {'15-s__Bulleidi...'}    {'16-s__Bulleidi...'}
+
+  Column 17
+
+    {'prediction'}
+
+
+testFnm =
+
+     []
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG049.fasta'}
+
+
+testFnm =
+
+  1x1 cell array
+
+    {'RUG049.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG051.fasta'}
+
+
+testFnm =
+
+  1x2 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG052.fasta'}
+
+
+testFnm =
+
+  1x3 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG053.fasta'}
+
+
+testFnm =
+
+  1x4 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG054.fasta'}
+
+
+testFnm =
+
+  1x5 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG214.fasta'}
+
+
+testFnm =
+
+  1x6 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}    {'RUG214.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG388.fasta'}
+
+
+testFnm =
+
+  1x7 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}    {'RUG214.fasta'}    {'RUG388.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG503.fasta'}
+
+
+testFnm =
+
+  1x8 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}    {'RUG214.fasta'}    {'RUG388.fasta'}    {'RUG503.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'RUG521.fasta'}
+
+
+testFnm =
+
+  1x9 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}    {'RUG214.fasta'}    {'RUG388.fasta'}    {'RUG503.fasta'}    {'RUG521.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'hRUG874.fasta'}
+
+
+testFnm =
+
+  1x10 cell array
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}    {'RUG214.fasta'}    {'RUG388.fasta'}    {'RUG503.fasta'}    {'RUG521.fasta'}    {'hRUG874.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'hRUG876.fasta'}
+
+
+testFnm =
+
+  1x11 cell array
+
+  Columns 1 through 10
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}    {'RUG214.fasta'}    {'RUG388.fasta'}    {'RUG503.fasta'}    {'RUG521.fasta'}    {'hRUG874.fasta'}
+
+  Column 11
+
+    {'hRUG876.fasta'}
+
+
+splitAcNum =
+
+  1x1 cell array
+
+    {'hRUG895.fasta'}
+
+
+testFnm =
+
+  1x12 cell array
+
+  Columns 1 through 10
+
+    {'RUG049.fasta'}    {'RUG051.fasta'}    {'RUG052.fasta'}    {'RUG053.fasta'}    {'RUG054.fasta'}    {'RUG214.fasta'}    {'RUG388.fasta'}    {'RUG503.fasta'}    {'RUG521.fasta'}    {'hRUG874.fasta'}
+
+  Columns 11 through 12
+
+    {'hRUG876.fasta'}    {'hRUG895.fasta'}
+
+
+T3 =
+
+  12x17 table
+
+                     1-s__Bulleidia extructa    2-s__Bulleidia massiliense    3-s__Bulleidia massiliensis    4-s__Bulleidia moorei    5-s__Bulleidia sp000701725    6-s__Bulleidia sp002372175    7-s__Bulleidia sp003446295    8-s__Bulleidia sp900314345    9-s__Bulleidia sp900314905    10-s__Bulleidia sp900315065    11-s__Bulleidia sp900315225    12-s__Bulleidia sp900319505    13-s__Bulleidia sp900320455    14-s__Bulleidia sp900539965    15-s__Bulleidia sp900554555    16-s__Bulleidia timonensis    prediction
+                     _______________________    __________________________    ___________________________    _____________________    __________________________    __________________________    __________________________    __________________________    __________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    __________________________    __________
+
+    RUG049.fasta             0.020161                     0.020161                       0.69759                    0.020161                    0.020161                      0.020161                      0.020161                      0.020161                      0.020161                      0.020161                       0.020161                       0.020161                       0.020161                       0.020161                       0.020161                       0.020161                 3    
+    RUG051.fasta            0.0098302                    0.0098302                       0.85255                   0.0098302                   0.0098302                     0.0098302                     0.0098302                     0.0098302                     0.0098302                     0.0098302                      0.0098302                      0.0098302                      0.0098302                      0.0098302                      0.0098302                      0.0098302                 3    
+    RUG052.fasta           2.2204e-14                            1                    1.3347e-07                  2.2204e-14                  2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                 2    
+    RUG053.fasta            0.0045338                    0.0045338                       0.93199                   0.0045338                   0.0045338                     0.0045338                     0.0045338                     0.0045338                     0.0045338                     0.0045338                      0.0045338                      0.0045338                      0.0045338                      0.0045338                      0.0045338                      0.0045338                 3    
+    RUG054.fasta           2.2203e-14                   2.2203e-14                    0.00081516                  2.2203e-14                  2.2203e-14                    2.2203e-14                    2.2203e-14                    2.2203e-14                    2.2203e-14                       0.99918                     2.2203e-14                     2.2203e-14                     2.2203e-14                     2.2203e-14                     2.2203e-14                     2.2203e-14                10    
+    RUG214.fasta           8.2152e-14                   8.2152e-14                       0.40383                  8.2152e-14                     0.14904                       0.14904                    8.2152e-14                    8.2152e-14                    8.2152e-14                    8.2152e-14                        0.14904                     8.2152e-14                     8.2152e-14                     8.2152e-14                        0.14904                     8.2152e-14                 3    
+    RUG388.fasta           2.2204e-14                   2.2204e-14                    2.8732e-05                  2.2204e-14                  2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                        0.99997                16    
+    RUG503.fasta           2.2204e-14                   2.2204e-14                     2.271e-07                  2.2204e-14                  2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                     2.2204e-14                              1                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                12    
+    RUG521.fasta           2.9806e-11                   2.9806e-11                        0.1339                  2.9806e-11                      0.2887                    2.9806e-11                    2.9806e-11                        0.2887                    2.9806e-11                    2.9806e-11                     2.9806e-11                     2.9806e-11                     2.9806e-11                     2.9806e-11                         0.2887                     2.9806e-11                 5    
+    hRUG874.fasta          2.2204e-14                   2.2204e-14                    0.00025496                  2.2204e-14                  2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                    2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                     2.2204e-14                        0.99975                16    
+    hRUG876.fasta          2.2203e-14                   2.2203e-14                     0.0012078                  2.2203e-14                  2.2203e-14                    2.2203e-14                    2.2203e-14                    2.2203e-14                    2.2203e-14                    2.2203e-14                     2.2203e-14                        0.99879                     2.2203e-14                     2.2203e-14                     2.2203e-14                     2.2203e-14                12    
+    hRUG895.fasta          2.2239e-14                   2.2239e-14                    4.0519e-09                  2.2239e-14                    0.025137                    2.2239e-14                    2.2239e-14                    2.2239e-14                       0.89945                      0.025137                       0.025137                     2.2239e-14                     2.2239e-14                       0.025137                     2.2239e-14                     2.2239e-14                 9    
+
+Process completed 
+[?1l>
