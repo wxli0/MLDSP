@@ -1,5 +1,6 @@
 import pandas as pd 
 
+rank = "species"
 cluster_tsv = pd.read_excel("/Users/wanxinli/Desktop/project/MLDSP-desktop/outputs/gtdbtk/GTDB-Tk_classification.xlsx", header = 0, index_col = 0)
 cluster_tsv['GTDB_taxonomy'] = cluster_tsv[["classification"]]
 
@@ -13,5 +14,5 @@ cluster_tsv = cluster_tsv.drop(columns=['GTDB_taxonomy'])
 
 print(cluster_tsv)
 
-print("printing all genera")
-print(sorted(list(set(cluster_tsv['genus'].tolist()))))
+print("printing all", rank)
+print(sorted(list(set(cluster_tsv[rank].tolist()))))
