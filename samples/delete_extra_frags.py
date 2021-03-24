@@ -10,8 +10,8 @@ for file in os.listdir(dir):
     mode = 'w'
     total_len = 0
     for fasta in fasta_sequences:
-        total_len += len(sequence)
         id, sequence = fasta.id, str(fasta.seq) 
+        total_len += len(sequence)
         out_file= open(os.path.join(dir_split, file), mode=mode)
         out_file.write(">"+id+"\n")
         out_file.write(sequence+"\n")
