@@ -17,5 +17,6 @@ for file in os.listdir(dir):
         out_file.write(sequence+"\n")
         out_file.close()
         mode = 'a'
-        if total_len >= 2000000:
+        if total_len >= 200000:
             break
+    print(file, "done")
