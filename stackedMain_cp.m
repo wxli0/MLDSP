@@ -114,7 +114,7 @@ if (~strcmp(testSet,''))
     minSeqLen = 0
     maxSeqLen = 0
     seqToTest = 0
-    [mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
+    [mList3]=testingExternMisList(testSetPath, disMat,alabels,lg,clusterNames,kVal, maxClusSize, clusterStart, dataSet);
 end
 
 

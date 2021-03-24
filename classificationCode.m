@@ -34,10 +34,10 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         trainSet = disMat(trainInd,trainInd);
         testSet = disMat(testInd,trainInd);
         testAcNum = AcNum(testInd)
-        testFnm = []
+        testFnm = [];
         for f = 1:length(testAcNum)
             splitAcNum = split(testAcNum{f}, '/')
-            testFnm = [testFnm, splitAcNum(end)]
+            testFnm = [testFnm, splitAcNum(end)];
         end 
 
 
@@ -57,7 +57,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
             'Coding', 'onevsall', ...
             'ClassNames', cn); 
         fprintf("classifying using QSVM\n")
-        [plabel3, ~, ~, score3] = predict(cModel3,testSet)    
+        [plabel3, ~, ~, score3] = predict(cModel3,testSet);    
         cMat3{i} = confusionmat(alabels(testInd),plabel3,'Order',ord);   
         score3Matrix = [score3, plabel3, alabels(testInd)]    
  

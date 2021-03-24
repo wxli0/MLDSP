@@ -59,6 +59,15 @@ function [] = stackedMain(dataSet, testSet)
     fm=cell2mat(lgl(:));
     disMat = f_dis(fm,'cor',0,1);
 
+    clusterStart = pointsPerCluster;
+    for i=1:length(clusterStart)
+        if i==1
+            clusterStart{i} = 1;
+        else
+            clusterStart{i} = clusterStart{i-1}+pointsPerCluster{i-1};
+        end
+    end
+
 
     % create labels
     clear a;
@@ -91,8 +100,7 @@ function [] = stackedMain(dataSet, testSet)
     if (~strcmp(testSet,''))
         minSeqLen = 0
         maxSeqLen = 0
-        seqToTest = 0
-        [mList3]=testingExternMisList(testSetPath,methodNum,disMat,alabels,lg,clusterNames,kVal,medLen,minSeqLen,maxSeqLen,seqToTest, clusterStart, dataSet);
+        [mList3]=testingExternMisList(testSetPath,disMat,alabels,lg,clusterNames,kVal, maxClusSize, clusterStart, dataSet, minSeqLen,maxSeqLen);
     end
 
 
