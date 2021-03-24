@@ -12,10 +12,8 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
     for i=1:numberOfClusters
         clusterNames{i} = cList(i).name;
         folderPath = strcat(cList(i).folder,'/',cList(i).name);
-        % fprintf("display cluster name\n")
-        % disp(cList(i).name)
         cd(folderPath);
-        allFiles = [dir('**/*.fasta');dir('**/*.fna');dir('**/*.txt');];%dir ('**/*.fasta');
+        allFiles = [dir('**/*.fasta');dir('**/*.fna');dir('**/*.txt');];
         allFiles=allFiles(~startsWith({allFiles.name},{'.'}));
         pts{i}=length(allFiles); 
         cd(testingSet);
@@ -49,8 +47,8 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
                 sbName = fileNames{j};
                 [Header, Sequence] = fastaread(sbName);
                 if ischar(Sequence)
-                    Sequence = {Sequence}
-                    Header = {Header}    
+                    Sequence = {Sequence};
+                    Header = {Header};    
                 end
                 % Sequence = regexprep(Sequence,'[^A,^C, ^G, ^T]','','ignorecase');
                 seqTemp{j} = Sequence;

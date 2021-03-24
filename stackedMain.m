@@ -11,10 +11,9 @@ function [] = stackedMain(dataSet, testSet)
     if isunix & ismac
         basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
     end
-    methodNum = 1
     dataSetPath = strcat(basePath, dataSet)
     testSetPath = strcat(basePath, testSet)
-    kVal = 7; % used only for CGR-based representations(if methodNum=1,15,16,17)
+    kVal = 7; 
     selectedFolder = dataSetPath;
 
     % read sequences
@@ -23,9 +22,9 @@ function [] = stackedMain(dataSet, testSet)
     [acN, Seq, numberOfClusters, clusterNames, pointsPerCluster,Fnm] = readExternsBac(dataSetPath,maxClusSize);
     AcNmb = Fnm;
     totalSeq = length(Seq);
-    [maxLen, minLen, meanLen, medLen] = lengthCalc(Seq);
 
     % construct single-stranded cgr
+    fprintf('Generating CGRs.... \n');
     allCGR = cell(1,totalSeq);
     for i=1:totalSeq
         ss = Seq{i};
@@ -51,8 +50,7 @@ function [] = stackedMain(dataSet, testSet)
         lg{i} = abs(f{i});
     end
 
-    % compute distance matrix
-    fprintf('Computing Distance matrix .... \n');
+    fprintf('Computing disMat .... \n');
     lgl = cell(1,totalSeq);
     parfor i=1:totalSeq
         lgl{i} =  reshape(lg{i},1,[]);
@@ -60,27 +58,6 @@ function [] = stackedMain(dataSet, testSet)
     lg = lgl;
     fm=cell2mat(lgl(:));
     disMat = f_dis(fm,'cor',0,1);
-    [Y,eigvals] = cmdscale(disMat,3);
-
-    % disp(disMat);
-
-    clusterStart = pointsPerCluster;
-    for i=1:length(clusterStart)
-        if i==1
-            clusterStart{i} = 1;
-        else
-            clusterStart{i} = clusterStart{i-1}+pointsPerCluster{i-1};
-        end
-    end
-
-    for i=1:length(clusterStart)
-        for j=i:length(clusterStart)
-            pdisMat = disMat(clusterStart{i}:(clusterStart{i}+pointsPerCluster{i}-1), clusterStart{j}:(clusterStart{j}+pointsPerCluster{j}-1));
-            pdisMat = pdisMat';
-            pdisMat = pdisMat(:)';
-            fprintf("%s and %s avg dissimilarity is: %f\n", clusterNames{i}, clusterNames{j}, nanmean(pdisMat))
-        end
-    end
 
 
     % create labels
