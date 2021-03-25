@@ -2,6 +2,7 @@
 
 sample_dir="samples/$1"
 outdir="outputs_HGR"
+testdir="hgr_mags"
 
 prog_output1="${outdir}/train-$1.xlsx"
 if [ ! -f ${prog_output1} ]; then
@@ -15,10 +16,10 @@ fi
 prog_output2="${outdir}/test-$1.xlsx"
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}/$1_classify.txt"
-    matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
-    echo "INFO:done stackedMain('$1', 'rumen_mags/$1')"
+    matlab -r "run addme;stackedMain('$1', '${testdir}/$1');exit"|tee ${output2}
+    echo "INFO:done stackedMain('$1', '${testdir}/$1')"
 else
-    echo "INFO:skip stackedMain('$1', 'rumen_mags/$1')"
+    echo "INFO:skip stackedMain('$1', '${testdir}/$1')"
 fi
 
 dir="/home/w328li/BlindKameris-new/"
