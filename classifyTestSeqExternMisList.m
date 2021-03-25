@@ -77,10 +77,10 @@ function [pMat,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, disMat,alab
     header = [clusterNames, 'prediction']
 
 
-    testFnm = []
+    testFnm = [];
     for f = 1:length(Fnm)
-        splitAcNum = split(Fnm{f}, '/')
-        testFnm = [testFnm, splitAcNum(end)]
+        splitAcNum = split(Fnm{f}, '/');
+        testFnm = [testFnm, splitAcNum(end)];
     end
 
 

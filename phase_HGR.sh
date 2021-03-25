@@ -48,5 +48,5 @@ python3 preprocess_test.py ${output3} ${rej}
 echo "INFO:done preprocess_test.py ${output3} ${rej}"
 
 
-python3 add_MLDSP_pred.py ${output3}
-echo "INFO: done add_MLDSP_pred.py ${output3}"
+python3 add_HGR_pred.py ${output3}
+echo "INFO: done add_HGR_pred.py ${output3}"
