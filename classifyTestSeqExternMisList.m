@@ -29,26 +29,6 @@ function [pMat,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, disMat,alab
     sId = totalSeq+1;
     eId = length(disMatWithTest);
     disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
-
-    % [status, msg, msgID] = mkdir(strcat('outputs/',dataSet))
-    % [status, msg, msgID] = mkdir(strcat('outputs/',dataSet,'histograms/'))
-    % for i = 1:numTestSeq
-    %     for j=1:length(clusterStart)
-    %         endIndex = totalSeq;
-    %         if (j ~= length(clusterStart))
-    %             endIndex = clusterStart{j+1}-1;
-    %         end
-    %         pdisMat = disMat(i, clusterStart{j}:endIndex);
-    %         pdisMat = pdisMat';
-    %         pdisMat = pdisMat(:)';
-    %         % % disp(pdisMat)
-    %         % 
-    %         % f=figure;
-    %         % histogram(pdisMat, 'Normalization', 'probability');
-    %         % saveas(f, strcat('outputs/',dataSet,'histograms/',string(i),"-",clusterNames{j},'.png'))
-    %         fprintf("Seq %d and %s avg dissimilarity is: %f\n", i, clusterNames{j}, mean(pdisMat));
-    %     end
-    % end
     
     cn = unique(alabels);
   
@@ -106,7 +86,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, disMat,alab
 
     T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
 
-    writetable(T3, strcat("outputs/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
+    writetable(T3, strcat("outputs-HGR/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
 
 end
 
