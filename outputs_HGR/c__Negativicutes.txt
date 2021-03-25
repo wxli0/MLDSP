@@ -1,0 +1,2839 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/c__Negativicutes'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x5 cell array
+
+    {'o__Acidaminococcales'}    {'o__Selenomonadales'}    {'o__Veillonellales'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x32 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Acidaminococcus11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                        }
+    {'home'                          }
+    {'w328li'                        }
+    {'MLDSP'                         }
+    {'samples'                       }
+    {'c__Negativicutes'              }
+    {'o__Acidaminococcales'          }
+    {'label_Succiniclasticum10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Megamonas3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Megamonas4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera28.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera35.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera38.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella27.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella28.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella7.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.9922    0.0020    0.0058    1.0000    1.0000
+    0.9936    0.0009    0.0055    1.0000    1.0000
+    0.9599    0.0194    0.0207    1.0000    1.0000
+    0.9772    0.0092    0.0136    1.0000    1.0000
+    0.9813    0.0037    0.0150    1.0000    1.0000
+    0.9697    0.0009    0.0295    1.0000    1.0000
+    0.9757    0.0045    0.0198    1.0000    1.0000
+    0.0000    0.9626    0.0374    2.0000    2.0000
+    0.0000    0.9386    0.0614    2.0000    2.0000
+    0.0388    0.1784    0.7828    3.0000    2.0000
+    0.0000    0.1745    0.8255    3.0000    2.0000
+    0.0000    0.9623    0.0377    2.0000    2.0000
+    0.0003    0.9993    0.0003    2.0000    2.0000
+    0.0007    0.9986    0.0007    2.0000    2.0000
+    0.0000    0.0027    0.9973    3.0000    3.0000
+    0.0000    0.0491    0.9509    3.0000    3.0000
+    0.1365    0.5125    0.3510    2.0000    3.0000
+    0.0000    0.0094    0.9906    3.0000    3.0000
+    0.0000    0.0144    0.9856    3.0000    3.0000
+    0.0000    0.0075    0.9925    3.0000    3.0000
+    0.0003    0.0136    0.9861    3.0000    3.0000
+    0.0000    0.0273    0.9727    3.0000    3.0000
+    0.0000    0.0150    0.9850    3.0000    3.0000
+    0.0000    0.0305    0.9695    3.0000    3.0000
+    0.0000    0.0154    0.9846    3.0000    3.0000
+    0.0000    0.0131    0.9869    3.0000    3.0000
+    0.0000    0.0147    0.9853    3.0000    3.0000
+    0.0000    0.0213    0.9787    3.0000    3.0000
+    0.0000    0.0236    0.9764    3.0000    3.0000
+    0.0000    0.0124    0.9876    3.0000    3.0000
+    0.0000    0.0130    0.9870    3.0000    3.0000
+    0.0353    0.0552    0.9095    3.0000    3.0000
+
+
+T3 =
+
+  32x5 table
+
+                                      o__Acidaminococcales    o__Selenomonadales    o__Veillonellales    prediction    actual
+                                      ____________________    __________________    _________________    __________    ______
+
+    label_Acidaminococcus11.fasta              0.9922              0.0019826            0.0058193            1           1   
+    label_Acidaminococcus8.fasta              0.99361             0.00086025            0.0055312            1           1   
+    label_Succiniclasticum1.fasta             0.95987               0.019426             0.020705            1           1   
+    label_Succiniclasticum10.fasta            0.97724              0.0091722             0.013585            1           1   
+    label_Succiniclasticum6.fasta              0.9813              0.0036654             0.015033            1           1   
+    label_Succiniclasticum7.fasta             0.96967              0.0008645             0.029466            1           1   
+    label_Succiniclasticum9.fasta             0.97568              0.0044916             0.019833            1           1   
+    label_Megamonas3.fasta                 2.2199e-14                0.96263             0.037374            2           2   
+    label_Megamonas4.fasta                 2.2199e-14                0.93857             0.061434            2           2   
+    label_Pelosinus1.fasta                   0.038772                0.17838              0.78285            3           2   
+    label_Pelosinus2.fasta                 4.9403e-06                0.17452              0.82548            3           2   
+    label_Pelosinus5.fasta                  1.039e-10                0.96226             0.037736            2           2   
+    label_Selenomonas0.fasta               0.00033671                0.99933           0.00033666            2           2   
+    label_Selenomonas7.fasta                0.0007048                0.99859            0.0007048            2           2   
+    label_Dialister17.fasta                1.3659e-10              0.0026562              0.99734            3           3   
+    label_Dialister21.fasta                1.3121e-11               0.049088              0.95091            3           3   
+    label_Dialister25.fasta                   0.13653                0.51246              0.35101            2           3   
+    label_Dialister6.fasta                 7.3997e-07              0.0094129              0.99059            3           3   
+    label_Megasphaera15.fasta              1.6698e-13               0.014361              0.98564            3           3   
+    label_Megasphaera22.fasta              2.2608e-11              0.0074507              0.99255            3           3   
+    label_Megasphaera28.fasta              0.00030588               0.013558              0.98614            3           3   
+    label_Megasphaera35.fasta              5.2448e-13               0.027275              0.97273            3           3   
+    label_Megasphaera38.fasta              1.7753e-05                0.01496              0.98502            3           3   
+    label_Megasphaera9.fasta               3.3206e-07                 0.0305               0.9695            3           3   
+    label_Veillonella0.fasta               3.2975e-09               0.015389              0.98461            3           3   
+    label_Veillonella11.fasta              4.4197e-09               0.013105               0.9869            3           3   
+    label_Veillonella2.fasta               1.7732e-06               0.014676              0.98532            3           3   
+    label_Veillonella27.fasta              1.9646e-10               0.021271              0.97873            3           3   
+    label_Veillonella28.fasta              1.6316e-09               0.023626              0.97637            3           3   
+    label_Veillonella3.fasta               3.0941e-09               0.012356              0.98764            3           3   
+    label_Veillonella4.fasta               5.3337e-08               0.012965              0.98703            3           3   
+    label_Veillonella7.fasta                 0.035343               0.055161               0.9095            3           3   
+
+
+testAcNum =
+
+  1x33 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 33
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Megamonas0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Megamonas1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Selenomonadales'       }
+    {'label_Selenomonas12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera27.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera32.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera36.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella34.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.9679    0.0001    0.0320    1.0000    1.0000
+    0.9438    0.0001    0.0561    1.0000    1.0000
+    0.9556    0.0000    0.0444    1.0000    1.0000
+    0.9415    0.0004    0.0581    1.0000    1.0000
+    0.9555    0.0012    0.0432    1.0000    1.0000
+    0.8953    0.0025    0.1022    1.0000    1.0000
+    0.9618    0.0011    0.0371    1.0000    1.0000
+    0.0000    0.9472    0.0528    2.0000    2.0000
+    0.0000    0.9688    0.0312    2.0000    2.0000
+    0.0001    0.9974    0.0025    2.0000    2.0000
+    0.0023    0.9977    0.0000    2.0000    2.0000
+    0.0379    0.0037    0.9584    3.0000    3.0000
+    0.0000    0.0307    0.9693    3.0000    3.0000
+    0.2890    0.0001    0.7110    3.0000    3.0000
+    0.0355    0.0021    0.9624    3.0000    3.0000
+    0.0000    0.0312    0.9688    3.0000    3.0000
+    0.0000    0.0098    0.9902    3.0000    3.0000
+    0.0166    0.0538    0.9296    3.0000    3.0000
+    0.0000    0.0177    0.9823    3.0000    3.0000
+    0.0000    0.0120    0.9880    3.0000    3.0000
+    0.0000    0.0327    0.9673    3.0000    3.0000
+    0.0000    0.0182    0.9818    3.0000    3.0000
+    0.0000    0.0134    0.9866    3.0000    3.0000
+    0.0000    0.0048    0.9952    3.0000    3.0000
+    0.0109    0.0095    0.9796    3.0000    3.0000
+    0.0000    0.0104    0.9896    3.0000    3.0000
+    0.0000    0.0193    0.9807    3.0000    3.0000
+    0.0000    0.0088    0.9912    3.0000    3.0000
+    0.0000    0.0362    0.9638    3.0000    3.0000
+    0.0000    0.0127    0.9873    3.0000    3.0000
+    0.0000    0.0163    0.9837    3.0000    3.0000
+    0.0000    0.0306    0.9694    3.0000    3.0000
+    0.0000    0.0167    0.9833    3.0000    3.0000
+
+
+T3 =
+
+  33x5 table
+
+                                     o__Acidaminococcales    o__Selenomonadales    o__Veillonellales    prediction    actual
+                                     ____________________    __________________    _________________    __________    ______
+
+    label_Acidaminococcus3.fasta             0.96793             7.7129e-05             0.031988            1           1   
+    label_Acidaminococcus4.fasta             0.94384             5.3443e-05             0.056108            1           1   
+    label_Acidaminococcus9.fasta             0.95563             5.8321e-13             0.044367            1           1   
+    label_Succiniclasticum0.fasta            0.94152             0.00040865              0.05807            1           1   
+    label_Succiniclasticum2.fasta            0.95554              0.0012257             0.043236            1           1   
+    label_Succiniclasticum3.fasta            0.89527              0.0025432              0.10218            1           1   
+    label_Succiniclasticum5.fasta             0.9618              0.0010669             0.037135            1           1   
+    label_Megamonas0.fasta                2.2199e-14                0.94722             0.052778            2           2   
+    label_Megamonas1.fasta                2.2199e-14                0.96882             0.031184            2           2   
+    label_Selenomonas12.fasta             8.9505e-05                0.99736            0.0025472            2           2   
+    label_Selenomonas4.fasta               0.0022979                0.99768           2.1897e-05            2           2   
+    label_Dialister0.fasta                  0.037893               0.003682              0.95842            3           3   
+    label_Dialister10.fasta               4.9652e-07               0.030731              0.96927            3           3   
+    label_Dialister18.fasta                  0.28898             5.1481e-05              0.71097            3           3   
+    label_Dialister2.fasta                  0.035517              0.0020784               0.9624            3           3   
+    label_Dialister20.fasta               1.7157e-08               0.031227              0.96877            3           3   
+    label_Dialister23.fasta               1.5689e-07              0.0098373              0.99016            3           3   
+    label_Dialister4.fasta                  0.016642               0.053761               0.9296            3           3   
+    label_Dialister5.fasta                2.3434e-10               0.017701               0.9823            3           3   
+    label_Dialister7.fasta                 4.739e-11               0.011957              0.98804            3           3   
+    label_Megasphaera2.fasta              6.6793e-06               0.032711              0.96728            3           3   
+    label_Megasphaera27.fasta             6.4709e-06               0.018219              0.98177            3           3   
+    label_Megasphaera32.fasta             4.0797e-08               0.013437              0.98656            3           3   
+    label_Megasphaera36.fasta             1.9356e-10              0.0048005               0.9952            3           3   
+    label_Megasphaera4.fasta                0.010888              0.0094949              0.97962            3           3   
+    label_Megasphaera5.fasta              7.7878e-08               0.010395               0.9896            3           3   
+    label_Veillonella10.fasta              1.138e-07               0.019344              0.98066            3           3   
+    label_Veillonella12.fasta             7.2665e-09              0.0088459              0.99115            3           3   
+    label_Veillonella13.fasta             3.0616e-09               0.036205               0.9638            3           3   
+    label_Veillonella15.fasta             1.7733e-09               0.012668              0.98733            3           3   
+    label_Veillonella17.fasta              2.228e-09               0.016272              0.98373            3           3   
+    label_Veillonella18.fasta             1.9835e-10               0.030646              0.96935            3           3   
+    label_Veillonella34.fasta             1.6841e-11               0.016658              0.98334            3           3   
+
+
+testAcNum =
+
+  1x33 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 33
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Acidaminococcus10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Acidaminococcus12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Acidaminococcus14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Selenomonadales'     }
+    {'label_Pelosinus10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Selenomonadales'       }
+    {'label_Selenomonas10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera29.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera30.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera34.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera39.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella8.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.9910    0.0000    0.0090    1.0000    1.0000
+    0.9905    0.0000    0.0095    1.0000    1.0000
+    0.9899    0.0000    0.0101    1.0000    1.0000
+    0.9894    0.0000    0.0106    1.0000    1.0000
+    0.9745    0.0000    0.0255    1.0000    1.0000
+    0.9614    0.0000    0.0386    1.0000    1.0000
+    0.0000    0.9906    0.0094    2.0000    2.0000
+    0.0000    0.9935    0.0065    2.0000    2.0000
+    0.0000    0.9926    0.0074    2.0000    2.0000
+    0.0000    0.9893    0.0107    2.0000    2.0000
+    0.0000    0.2961    0.7039    3.0000    2.0000
+    0.0004    0.9996    0.0000    2.0000    2.0000
+    0.0000    1.0000    0.0000    2.0000    2.0000
+    0.0006    0.0001    0.9994    3.0000    3.0000
+    0.0000    0.2309    0.7691    3.0000    3.0000
+    0.0000    0.0040    0.9960    3.0000    3.0000
+    0.0000    0.0077    0.9923    3.0000    3.0000
+    0.0000    0.0010    0.9990    3.0000    3.0000
+    0.0000    0.0009    0.9991    3.0000    3.0000
+    0.0000    0.0012    0.9988    3.0000    3.0000
+    0.0000    0.0010    0.9990    3.0000    3.0000
+    0.0018    0.0047    0.9934    3.0000    3.0000
+    0.0006    0.0006    0.9988    3.0000    3.0000
+    0.0000    0.0007    0.9993    3.0000    3.0000
+    0.0296    0.0725    0.8979    3.0000    3.0000
+    0.0001    0.0068    0.9931    3.0000    3.0000
+    0.0000    0.0110    0.9889    3.0000    3.0000
+    0.0000    0.0097    0.9903    3.0000    3.0000
+    0.0000    0.0091    0.9909    3.0000    3.0000
+    0.0000    0.0016    0.9984    3.0000    3.0000
+    0.0000    0.0047    0.9953    3.0000    3.0000
+    0.0259    0.0107    0.9635    3.0000    3.0000
+    0.0000    0.0002    0.9998    3.0000    3.0000
+
+
+T3 =
+
+  33x5 table
+
+                                     o__Acidaminococcales    o__Selenomonadales    o__Veillonellales    prediction    actual
+                                     ____________________    __________________    _________________    __________    ______
+
+    label_Acidaminococcus10.fasta            0.99104             1.7748e-11             0.008961            1           1   
+    label_Acidaminococcus12.fasta            0.99052             2.4919e-11            0.0094793            1           1   
+    label_Acidaminococcus14.fasta             0.9899             3.3686e-07             0.010099            1           1   
+    label_Acidaminococcus2.fasta             0.98936             2.5736e-05             0.010612            1           1   
+    label_Acidaminococcus6.fasta             0.97452             6.6864e-07             0.025475            1           1   
+    label_Acidaminococcus7.fasta             0.96136             4.8509e-13             0.038637            1           1   
+    label_Pelosinus10.fasta               8.0783e-07                0.99062            0.0093743            2           2   
+    label_Pelosinus4.fasta                4.4244e-06                 0.9935            0.0064971            2           2   
+    label_Pelosinus8.fasta                2.2587e-07                0.99263            0.0073705            2           2   
+    label_Pelosinus9.fasta                2.4233e-07                0.98935             0.010654            2           2   
+    label_Selenomonas10.fasta             2.1145e-07                0.29609              0.70391            3           2   
+    label_Selenomonas3.fasta              0.00038849                0.99961           5.9739e-09            2           2   
+    label_Selenomonas8.fasta              2.8843e-05                0.99997           1.0249e-06            2           2   
+    label_Dialister13.fasta               0.00056142             5.6131e-05              0.99938            3           3   
+    label_Dialister14.fasta               6.4231e-14                0.23089              0.76911            3           3   
+    label_Dialister19.fasta               5.5803e-06              0.0039577              0.99604            3           3   
+    label_Dialister22.fasta               4.7695e-06              0.0076767              0.99232            3           3   
+    label_Megasphaera10.fasta             3.2264e-07              0.0010278              0.99897            3           3   
+    label_Megasphaera12.fasta             2.1494e-06             0.00093361              0.99906            3           3   
+    label_Megasphaera16.fasta             1.3441e-05              0.0012126              0.99877            3           3   
+    label_Megasphaera21.fasta             8.2627e-07                0.00104              0.99896            3           3   
+    label_Megasphaera29.fasta              0.0018387              0.0047443              0.99342            3           3   
+    label_Megasphaera30.fasta             0.00059628             0.00058644              0.99882            3           3   
+    label_Megasphaera34.fasta             1.9223e-06             0.00068959              0.99931            3           3   
+    label_Megasphaera39.fasta                0.02956               0.072549              0.89789            3           3   
+    label_Megasphaera7.fasta              7.1248e-05              0.0067884              0.99314            3           3   
+    label_Veillonella14.fasta             2.3601e-05               0.011031              0.98895            3           3   
+    label_Veillonella19.fasta             3.3014e-07              0.0096957               0.9903            3           3   
+    label_Veillonella22.fasta             3.0329e-05              0.0090526              0.99092            3           3   
+    label_Veillonella23.fasta             5.6546e-07              0.0016215              0.99838            3           3   
+    label_Veillonella5.fasta              6.1679e-06              0.0046596              0.99533            3           3   
+    label_Veillonella6.fasta                0.025876               0.010668              0.96346            3           3   
+    label_Veillonella8.fasta              9.7081e-07             0.00015785              0.99984            3           3   
+
+
+testAcNum =
+
+  1x32 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                        }
+    {'home'                          }
+    {'w328li'                        }
+    {'MLDSP'                         }
+    {'samples'                       }
+    {'c__Negativicutes'              }
+    {'o__Acidaminococcales'          }
+    {'label_Succiniclasticum11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                        }
+    {'home'                          }
+    {'w328li'                        }
+    {'MLDSP'                         }
+    {'samples'                       }
+    {'c__Negativicutes'              }
+    {'o__Acidaminococcales'          }
+    {'label_Succiniclasticum12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Megamonas5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera37.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera40.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella26.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella32.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Veillonella9.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.0000    0.0761    0.9239    3.0000    1.0000
+    0.4352    0.2225    0.3424    1.0000    1.0000
+    0.8870    0.0018    0.1112    1.0000    1.0000
+    0.9984    0.0001    0.0015    1.0000    1.0000
+    0.0000    0.9848    0.0152    2.0000    2.0000
+    0.0000    0.9894    0.0106    2.0000    2.0000
+    0.0000    0.9898    0.0102    2.0000    2.0000
+    0.0000    1.0000    0.0000    2.0000    2.0000
+    0.0000    1.0000    0.0000    2.0000    2.0000
+    0.0000    1.0000    0.0000    2.0000    2.0000
+    0.0000    1.0000    0.0000    2.0000    2.0000
+    0.0000    0.0107    0.9893    3.0000    3.0000
+    0.0000    0.0069    0.9931    3.0000    3.0000
+    0.0000    0.0015    0.9985    3.0000    3.0000
+    0.0000    0.0439    0.9561    3.0000    3.0000
+    0.0006    0.0007    0.9987    3.0000    3.0000
+    0.0000    0.0087    0.9913    3.0000    3.0000
+    0.0000    0.0057    0.9943    3.0000    3.0000
+    0.0000    0.0046    0.9954    3.0000    3.0000
+    0.0000    0.1281    0.8719    3.0000    3.0000
+    0.0000    0.0022    0.9978    3.0000    3.0000
+    0.0000    0.0034    0.9966    3.0000    3.0000
+    0.0000    0.0070    0.9930    3.0000    3.0000
+    0.0000    0.0095    0.9905    3.0000    3.0000
+    0.0000    0.0134    0.9866    3.0000    3.0000
+    0.0000    0.0032    0.9968    3.0000    3.0000
+    0.0000    0.0077    0.9923    3.0000    3.0000
+    0.0000    0.0060    0.9940    3.0000    3.0000
+    0.0000    0.0022    0.9978    3.0000    3.0000
+    0.0000    0.0027    0.9973    3.0000    3.0000
+    0.0000    0.0180    0.9820    3.0000    3.0000
+    0.0000    0.0045    0.9955    3.0000    3.0000
+
+
+T3 =
+
+  32x5 table
+
+                                      o__Acidaminococcales    o__Selenomonadales    o__Veillonellales    prediction    actual
+                                      ____________________    __________________    _________________    __________    ______
+
+    label_Acidaminococcus0.fasta           1.4733e-09               0.076146              0.92385            3           1   
+    label_Succiniclasticum11.fasta            0.43516                0.22245              0.34239            1           1   
+    label_Succiniclasticum12.fasta            0.88701              0.0018352              0.11116            1           1   
+    label_Succiniclasticum4.fasta             0.99839              0.0001164            0.0014976            1           1   
+    label_Megamonas5.fasta                 2.2198e-14                0.98476             0.015242            2           2   
+    label_Pelosinus3.fasta                 2.2198e-14                0.98936             0.010645            2           2   
+    label_Pelosinus7.fasta                 2.2198e-14                0.98976             0.010243            2           2   
+    label_Selenomonas2.fasta               2.2205e-14                      1           3.3872e-07            2           2   
+    label_Selenomonas5.fasta               2.2205e-14                      1           3.2285e-09            2           2   
+    label_Selenomonas6.fasta               2.2204e-14                0.99999           1.0378e-05            2           2   
+    label_Selenomonas9.fasta               2.2204e-14                      1           1.0893e-07            2           2   
+    label_Dialister1.fasta                 2.3495e-09               0.010672              0.98933            3           3   
+    label_Dialister15.fasta                2.5489e-14              0.0069048               0.9931            3           3   
+    label_Dialister16.fasta                1.0552e-13              0.0015236              0.99848            3           3   
+    label_Dialister24.fasta                2.2199e-14               0.043927              0.95607            3           3   
+    label_Dialister8.fasta                 0.00060655             0.00065727              0.99874            3           3   
+    label_Megasphaera1.fasta               2.2199e-14              0.0087057              0.99129            3           3   
+    label_Megasphaera11.fasta              2.2198e-14              0.0057321              0.99427            3           3   
+    label_Megasphaera17.fasta                2.22e-14              0.0045926              0.99541            3           3   
+    label_Megasphaera18.fasta              1.6354e-10                 0.1281               0.8719            3           3   
+    label_Megasphaera23.fasta              2.2198e-14              0.0021808              0.99782            3           3   
+    label_Megasphaera24.fasta              2.0814e-11              0.0034262              0.99657            3           3   
+    label_Megasphaera25.fasta              5.5436e-12              0.0070304              0.99297            3           3   
+    label_Megasphaera37.fasta              2.2198e-14              0.0094568              0.99054            3           3   
+    label_Megasphaera40.fasta              2.2198e-14               0.013415              0.98658            3           3   
+    label_Veillonella1.fasta               4.0379e-14              0.0031727              0.99683            3           3   
+    label_Veillonella16.fasta              3.3161e-14              0.0077203              0.99228            3           3   
+    label_Veillonella20.fasta              2.2198e-14              0.0060474              0.99395            3           3   
+    label_Veillonella21.fasta              9.1784e-14              0.0022281              0.99777            3           3   
+    label_Veillonella26.fasta              5.5806e-14              0.0027002               0.9973            3           3   
+    label_Veillonella32.fasta              2.2199e-14               0.017951              0.98205            3           3   
+    label_Veillonella9.fasta               5.1493e-14              0.0044846              0.99552            3           3   
+
+
+testAcNum =
+
+  1x32 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Acidaminococcus13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Negativicutes'            }
+    {'o__Acidaminococcales'        }
+    {'label_Acidaminococcus5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                       }
+    {'home'                         }
+    {'w328li'                       }
+    {'MLDSP'                        }
+    {'samples'                      }
+    {'c__Negativicutes'             }
+    {'o__Acidaminococcales'         }
+    {'label_Succiniclasticum8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Megamonas2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Selenomonadales'    }
+    {'label_Pelosinus6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Selenomonadales'      }
+    {'label_Selenomonas1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Selenomonadales'       }
+    {'label_Selenomonas11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                 }
+    {'home'                   }
+    {'w328li'                 }
+    {'MLDSP'                  }
+    {'samples'                }
+    {'c__Negativicutes'       }
+    {'o__Veillonellales'      }
+    {'label_Dialister12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Negativicutes'      }
+    {'o__Veillonellales'     }
+    {'label_Dialister9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera26.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera31.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera33.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera41.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Megasphaera42.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Negativicutes'        }
+    {'o__Veillonellales'       }
+    {'label_Megasphaera8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella29.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella30.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella31.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Negativicutes'         }
+    {'o__Veillonellales'        }
+    {'label_Veillonella33.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.9690    0.0000    0.0310    1.0000    1.0000
+    0.9980    0.0000    0.0020    1.0000    1.0000
+    0.9972    0.0000    0.0028    1.0000    1.0000
+    0.9278    0.0000    0.0722    1.0000    1.0000
+    0.0000    0.9983    0.0017    2.0000    2.0000
+    0.0001    0.9748    0.0252    2.0000    2.0000
+    0.2392    0.7571    0.0037    2.0000    2.0000
+    0.0000    0.9999    0.0001    2.0000    2.0000
+    0.0000    1.0000    0.0000    2.0000    2.0000
+    0.0352    0.0000    0.9648    3.0000    3.0000
+    0.0051    0.0000    0.9949    3.0000    3.0000
+    0.0345    0.0000    0.9655    3.0000    3.0000
+    0.0851    0.0000    0.9149    3.0000    3.0000
+    0.0015    0.0015    0.9971    3.0000    3.0000
+    0.0011    0.0011    0.9979    3.0000    3.0000
+    0.0005    0.0005    0.9990    3.0000    3.0000
+    0.0012    0.0012    0.9976    3.0000    3.0000
+    0.0005    0.0005    0.9990    3.0000    3.0000
+    0.0078    0.0000    0.9922    3.0000    3.0000
+    0.0090    0.0000    0.9910    3.0000    3.0000
+    0.0078    0.0000    0.9922    3.0000    3.0000
+    0.0007    0.0007    0.9986    3.0000    3.0000
+    0.0065    0.0000    0.9935    3.0000    3.0000
+    0.0119    0.0000    0.9881    3.0000    3.0000
+    0.0019    0.0019    0.9962    3.0000    3.0000
+    0.0262    0.0000    0.9738    3.0000    3.0000
+    0.0009    0.0009    0.9981    3.0000    3.0000
+    0.0095    0.0000    0.9905    3.0000    3.0000
+    0.0041    0.0000    0.9959    3.0000    3.0000
+    0.0045    0.0000    0.9955    3.0000    3.0000
+    0.0021    0.0021    0.9959    3.0000    3.0000
+    0.0030    0.0000    0.9970    3.0000    3.0000
+
+
+T3 =
+
+  32x5 table
+
+                                     o__Acidaminococcales    o__Selenomonadales    o__Veillonellales    prediction    actual
+                                     ____________________    __________________    _________________    __________    ______
+
+    label_Acidaminococcus1.fasta             0.96898             2.2198e-14             0.031023            1           1   
+    label_Acidaminococcus13.fasta            0.99796             2.2198e-14            0.0020381            1           1   
+    label_Acidaminococcus5.fasta             0.99723             2.2198e-14            0.0027708            1           1   
+    label_Succiniclasticum8.fasta            0.92777             3.1379e-12             0.072233            1           1   
+    label_Megamonas2.fasta                2.2198e-14                0.99826            0.0017419            2           2   
+    label_Pelosinus0.fasta                7.7894e-05                0.97476             0.025161            2           2   
+    label_Pelosinus6.fasta                   0.23916                 0.7571            0.0037441            2           2   
+    label_Selenomonas1.fasta              4.7268e-06                 0.9999           9.3318e-05            2           2   
+    label_Selenomonas11.fasta             9.4665e-09                0.99996           4.3635e-05            2           2   
+    label_Dialister11.fasta                 0.035237               9.49e-10              0.96476            3           3   
+    label_Dialister12.fasta                0.0050864             3.9577e-11              0.99491            3           3   
+    label_Dialister3.fasta                  0.034517             1.2965e-12              0.96548            3           3   
+    label_Dialister9.fasta                  0.085083             5.8579e-09              0.91492            3           3   
+    label_Megasphaera0.fasta               0.0014691              0.0014691              0.99706            3           3   
+    label_Megasphaera13.fasta               0.001062               0.001062              0.99788            3           3   
+    label_Megasphaera14.fasta              0.0004916             0.00049159              0.99902            3           3   
+    label_Megasphaera19.fasta              0.0012242               0.001224              0.99755            3           3   
+    label_Megasphaera20.fasta             0.00047671              0.0004767              0.99905            3           3   
+    label_Megasphaera26.fasta              0.0077767             1.1661e-08              0.99222            3           3   
+    label_Megasphaera3.fasta               0.0089774             1.8745e-09              0.99102            3           3   
+    label_Megasphaera31.fasta              0.0077742              1.075e-09              0.99223            3           3   
+    label_Megasphaera33.fasta             0.00070579             0.00070577              0.99859            3           3   
+    label_Megasphaera41.fasta              0.0065331             4.7951e-11              0.99347            3           3   
+    label_Megasphaera42.fasta                0.01189             3.6621e-10              0.98811            3           3   
+    label_Megasphaera6.fasta               0.0019014              0.0019014               0.9962            3           3   
+    label_Megasphaera8.fasta                0.026241             6.1583e-11              0.97376            3           3   
+    label_Veillonella24.fasta             0.00094278             0.00094235              0.99811            3           3   
+    label_Veillonella25.fasta              0.0094897             1.7797e-09              0.99051            3           3   
+    label_Veillonella29.fasta              0.0041039             3.7737e-10               0.9959            3           3   
+    label_Veillonella30.fasta              0.0045495             8.7802e-10              0.99545            3           3   
+    label_Veillonella31.fasta              0.0020556              0.0020553              0.99589            3           3   
+    label_Veillonella33.fasta              0.0030492             7.4559e-11              0.99695            3           3   
+
+confusion matrix for 1 is:
+    27     0     1
+     0    27     3
+     0     1   103
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [96.9000]    [96.9000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      96.9  
+    {'AvgAccuracy' }      96.9  
+
+Process completed 
+[?1l>

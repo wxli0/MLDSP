@@ -1,0 +1,6157 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/c__Bacilli'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+    {'o__Bacillales'}    {'o__Lactobacillales'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x72 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 33 through 40
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 41 through 48
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 49 through 56
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 57 through 64
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 65 through 72
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus26.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus27.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus31.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus36.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus38.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus44.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus46.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus51.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus56.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus57.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus59.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus63.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus64.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus68.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus69.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus76.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Listeria0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus38.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Granulicatella0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Granulicatella2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Granulicatella4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus100.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus101.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus106.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus39.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus41.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus46.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus56.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus57.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus70.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus75.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus78.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus85.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus86.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus93.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus96.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Pediococcus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus34.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus39.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus46.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus49.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus52.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus62.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus66.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Lactobacillales'    }
+    {'label_Weissella1.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    1.0000    0.0000    1.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  72x4 table
+
+                                    o__Bacillales    o__Lactobacillales    prediction    actual
+                                    _____________    __________________    __________    ______
+
+    label_Bacillus17.fasta                1              2.2204e-14            1           1   
+    label_Bacillus20.fasta                1              2.2204e-14            1           1   
+    label_Bacillus26.fasta                1              2.2204e-14            1           1   
+    label_Bacillus27.fasta                1              2.2204e-14            1           1   
+    label_Bacillus31.fasta                1              2.2204e-14            1           1   
+    label_Bacillus36.fasta                1              2.2204e-14            1           1   
+    label_Bacillus38.fasta                1              2.2204e-14            1           1   
+    label_Bacillus4.fasta                 1              2.2204e-14            1           1   
+    label_Bacillus44.fasta                1              2.2204e-14            1           1   
+    label_Bacillus46.fasta                1              2.2204e-14            1           1   
+    label_Bacillus51.fasta                1              2.2204e-14            1           1   
+    label_Bacillus56.fasta                1              2.2204e-14            1           1   
+    label_Bacillus57.fasta                1              2.2204e-14            1           1   
+    label_Bacillus59.fasta                1              2.2204e-14            1           1   
+    label_Bacillus6.fasta                 1              2.2204e-14            1           1   
+    label_Bacillus63.fasta                1              2.2204e-14            1           1   
+    label_Bacillus64.fasta                1              2.2204e-14            1           1   
+    label_Bacillus68.fasta                1              2.2204e-14            1           1   
+    label_Bacillus69.fasta                1              2.2204e-14            1           1   
+    label_Bacillus76.fasta                1              2.2204e-14            1           1   
+    label_Bacillus8.fasta                 1              2.2204e-14            1           1   
+    label_Bacillus9.fasta                 1              2.2204e-14            1           1   
+    label_Listeria0.fasta                 1              2.2204e-14            1           1   
+    label_Paenibacillus13.fasta           1              2.2204e-14            1           1   
+    label_Paenibacillus19.fasta           1              2.2204e-14            1           1   
+    label_Paenibacillus3.fasta            1              2.2204e-14            1           1   
+    label_Enterococcus18.fasta            0                       1            2           2   
+    label_Enterococcus2.fasta             0                       1            2           2   
+    label_Enterococcus22.fasta            0                       1            2           2   
+    label_Enterococcus38.fasta            0                       1            2           2   
+    label_Enterococcus4.fasta             0                       1            2           2   
+    label_Enterococcus6.fasta             0                       1            2           2   
+    label_Granulicatella0.fasta           0                       1            2           2   
+    label_Granulicatella2.fasta           0                       1            2           2   
+    label_Granulicatella4.fasta           0                       1            2           2   
+    label_Lactobacillus0.fasta            0                       1            2           2   
+    label_Lactobacillus100.fasta          0                       1            2           2   
+    label_Lactobacillus101.fasta          0                       1            2           2   
+    label_Lactobacillus106.fasta          0                       1            2           2   
+    label_Lactobacillus12.fasta           0                       1            2           2   
+    label_Lactobacillus13.fasta           0                       1            2           2   
+    label_Lactobacillus19.fasta           0                       1            2           2   
+    label_Lactobacillus24.fasta           0                       1            2           2   
+    label_Lactobacillus39.fasta           0                       1            2           2   
+    label_Lactobacillus41.fasta           0                       1            2           2   
+    label_Lactobacillus46.fasta           0                       1            2           2   
+    label_Lactobacillus56.fasta           0                       1            2           2   
+    label_Lactobacillus57.fasta           0                       1            2           2   
+    label_Lactobacillus70.fasta           0                       1            2           2   
+    label_Lactobacillus75.fasta           0                       1            2           2   
+    label_Lactobacillus78.fasta           0                       1            2           2   
+    label_Lactobacillus85.fasta           0                       1            2           2   
+    label_Lactobacillus86.fasta           0                       1            2           2   
+    label_Lactobacillus93.fasta           0                       1            2           2   
+    label_Lactobacillus96.fasta           0                       1            2           2   
+    label_Leuconostoc6.fasta              0                       1            2           2   
+    label_Leuconostoc9.fasta              0                       1            2           2   
+    label_Pediococcus0.fasta              0                       1            2           2   
+    label_Streptococcus0.fasta            0                       1            2           2   
+    label_Streptococcus15.fasta           0                       1            2           2   
+    label_Streptococcus25.fasta           0                       1            2           2   
+    label_Streptococcus34.fasta           0                       1            2           2   
+    label_Streptococcus39.fasta           0                       1            2           2   
+    label_Streptococcus4.fasta            0                       1            2           2   
+    label_Streptococcus46.fasta           0                       1            2           2   
+    label_Streptococcus49.fasta           0                       1            2           2   
+    label_Streptococcus5.fasta            0                       1            2           2   
+    label_Streptococcus52.fasta           0                       1            2           2   
+    label_Streptococcus62.fasta           0                       1            2           2   
+    label_Streptococcus66.fasta           1              2.2204e-14            1           2   
+    label_Streptococcus9.fasta            0                       1            2           2   
+    label_Weissella1.fasta                0                       1            2           2   
+
+
+testAcNum =
+
+  1x73 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 33 through 40
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 41 through 48
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 49 through 56
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 57 through 64
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 65 through 72
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 73
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus29.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus35.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus37.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus39.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus40.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus41.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus42.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus45.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus50.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus52.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus55.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus60.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus61.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus65.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus66.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus72.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus73.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus78.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus81.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus36.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus41.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus44.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus47.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Granulicatella3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Granulicatella5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus107.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus32.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus47.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus48.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus54.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus58.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus66.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus68.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus81.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus88.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus94.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus98.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus27.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus29.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus38.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus50.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus53.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus58.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus61.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus65.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus8.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.9999    0.0001    1.0000    1.0000
+    0.9993    0.0007    1.0000    1.0000
+    0.9995    0.0005    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9802    0.0198    1.0000    1.0000
+    0.9898    0.0102    1.0000    1.0000
+    0.9999    0.0001    1.0000    1.0000
+    0.9972    0.0028    1.0000    1.0000
+    0.9998    0.0002    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9999    0.0001    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9994    0.0006    1.0000    1.0000
+    0.9727    0.0273    1.0000    1.0000
+    0.9992    0.0008    1.0000    1.0000
+    0.9996    0.0004    1.0000    1.0000
+    0.9984    0.0016    1.0000    1.0000
+    0.9999    0.0001    1.0000    1.0000
+    0.9998    0.0002    1.0000    1.0000
+    0.9813    0.0187    1.0000    1.0000
+    0.9978    0.0022    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9997    0.0003    1.0000    1.0000
+    0.9995    0.0005    1.0000    1.0000
+    0.9999    0.0001    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0001    0.9999    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0761    0.9239    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0003    0.9997    2.0000    2.0000
+    0.0011    0.9989    2.0000    2.0000
+    0.0001    0.9999    2.0000    2.0000
+    0.0002    0.9998    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0007    0.9993    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  73x4 table
+
+                                    o__Bacillales    o__Lactobacillales    prediction    actual
+                                    _____________    __________________    __________    ______
+
+    label_Bacillus14.fasta              0.99995          5.4945e-05            1           1   
+    label_Bacillus16.fasta              0.99932          0.00068165            1           1   
+    label_Bacillus19.fasta               0.9995          0.00050335            1           1   
+    label_Bacillus25.fasta              0.99997          2.8245e-05            1           1   
+    label_Bacillus29.fasta              0.98023            0.019774            1           1   
+    label_Bacillus3.fasta               0.98984            0.010156            1           1   
+    label_Bacillus35.fasta              0.99989          0.00010608            1           1   
+    label_Bacillus37.fasta              0.99716           0.0028423            1           1   
+    label_Bacillus39.fasta              0.99982          0.00017971            1           1   
+    label_Bacillus40.fasta              0.99996           4.009e-05            1           1   
+    label_Bacillus41.fasta              0.99987          0.00013315            1           1   
+    label_Bacillus42.fasta              0.99997           3.267e-05            1           1   
+    label_Bacillus45.fasta              0.99943          0.00057136            1           1   
+    label_Bacillus5.fasta               0.97267             0.02733            1           1   
+    label_Bacillus50.fasta               0.9992          0.00079938            1           1   
+    label_Bacillus52.fasta              0.99957          0.00042757            1           1   
+    label_Bacillus55.fasta              0.99842           0.0015808            1           1   
+    label_Bacillus60.fasta              0.99991          8.5714e-05            1           1   
+    label_Bacillus61.fasta              0.99978          0.00022498            1           1   
+    label_Bacillus65.fasta              0.98127             0.01873            1           1   
+    label_Bacillus66.fasta              0.99781            0.002185            1           1   
+    label_Bacillus7.fasta               0.99999          1.2345e-05            1           1   
+    label_Bacillus72.fasta                    1          4.4482e-06            1           1   
+    label_Bacillus73.fasta              0.99974          0.00026013            1           1   
+    label_Bacillus78.fasta              0.99952           0.0004821            1           1   
+    label_Bacillus81.fasta              0.99987          0.00013058            1           1   
+    label_Paenibacillus1.fasta                1          2.1725e-11            1           1   
+    label_Paenibacillus21.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus4.fasta                1          2.2204e-14            1           1   
+    label_Paenibacillus7.fasta                1          2.2204e-14            1           1   
+    label_Paenibacillus8.fasta                1          2.2204e-14            1           1   
+    label_Enterococcus10.fasta       1.5262e-05             0.99998            2           2   
+    label_Enterococcus11.fasta       7.8827e-07                   1            2           2   
+    label_Enterococcus12.fasta       9.9691e-05              0.9999            2           2   
+    label_Enterococcus21.fasta       6.7873e-06             0.99999            2           2   
+    label_Enterococcus24.fasta        2.753e-07                   1            2           2   
+    label_Enterococcus36.fasta       3.0562e-06                   1            2           2   
+    label_Enterococcus41.fasta         0.076071             0.92393            2           2   
+    label_Enterococcus44.fasta       9.4973e-10                   1            2           2   
+    label_Enterococcus47.fasta       3.4829e-10                   1            2           2   
+    label_Enterococcus8.fasta        4.5306e-07                   1            2           2   
+    label_Granulicatella3.fasta      0.00029245             0.99971            2           2   
+    label_Granulicatella5.fasta       0.0010551             0.99894            2           2   
+    label_Lactobacillus107.fasta     9.7951e-05              0.9999            2           2   
+    label_Lactobacillus11.fasta      0.00023534             0.99976            2           2   
+    label_Lactobacillus15.fasta      8.4241e-06             0.99999            2           2   
+    label_Lactobacillus32.fasta      0.00068951             0.99931            2           2   
+    label_Lactobacillus47.fasta      1.3056e-13                   1            2           2   
+    label_Lactobacillus48.fasta      6.3149e-13                   1            2           2   
+    label_Lactobacillus5.fasta       4.1953e-07                   1            2           2   
+    label_Lactobacillus54.fasta      5.7387e-06             0.99999            2           2   
+    label_Lactobacillus58.fasta      2.9603e-05             0.99997            2           2   
+    label_Lactobacillus66.fasta      1.0029e-06                   1            2           2   
+    label_Lactobacillus68.fasta      4.2564e-07                   1            2           2   
+    label_Lactobacillus7.fasta       1.8808e-07                   1            2           2   
+    label_Lactobacillus81.fasta      1.9451e-05             0.99998            2           2   
+    label_Lactobacillus88.fasta      4.6324e-08                   1            2           2   
+    label_Lactobacillus94.fasta      9.7113e-07                   1            2           2   
+    label_Lactobacillus98.fasta      1.2276e-05             0.99999            2           2   
+    label_Leuconostoc3.fasta         2.3591e-08                   1            2           2   
+    label_Streptococcus14.fasta      1.2599e-06                   1            2           2   
+    label_Streptococcus2.fasta       1.0251e-06                   1            2           2   
+    label_Streptococcus21.fasta      1.1639e-05             0.99999            2           2   
+    label_Streptococcus24.fasta      7.7084e-07                   1            2           2   
+    label_Streptococcus27.fasta       1.375e-08                   1            2           2   
+    label_Streptococcus29.fasta      4.2026e-08                   1            2           2   
+    label_Streptococcus38.fasta      2.5441e-06                   1            2           2   
+    label_Streptococcus50.fasta      4.1504e-06                   1            2           2   
+    label_Streptococcus53.fasta       1.749e-07                   1            2           2   
+    label_Streptococcus58.fasta      9.6756e-08                   1            2           2   
+    label_Streptococcus61.fasta      1.3822e-06                   1            2           2   
+    label_Streptococcus65.fasta       1.465e-07                   1            2           2   
+    label_Streptococcus8.fasta       2.8739e-06                   1            2           2   
+
+
+testAcNum =
+
+  1x73 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 33 through 40
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 41 through 48
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 49 through 56
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 57 through 64
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 65 through 72
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 73
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus33.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus34.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus70.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus79.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Listeria1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus24.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus27.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus29.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus31.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus32.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus33.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus43.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus48.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Granulicatella1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus105.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus29.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus30.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus33.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus34.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus38.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus51.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus52.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus61.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus62.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus71.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus72.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus74.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus77.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus80.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus90.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus91.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus97.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus22.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus30.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus32.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus35.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus40.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus41.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus47.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus48.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus54.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus63.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus64.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus67.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus7.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9757    0.0243    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.0000    1.0000    2.0000    1.0000
+    0.0000    1.0000    2.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  73x4 table
+
+                                    o__Bacillales    o__Lactobacillales    prediction    actual
+                                    _____________    __________________    __________    ______
+
+    label_Bacillus15.fasta                    1           4.183e-06            1           1   
+    label_Bacillus18.fasta                    1          4.5743e-06            1           1   
+    label_Bacillus22.fasta              0.97568            0.024324            1           1   
+    label_Bacillus24.fasta              0.99999          1.4254e-05            1           1   
+    label_Bacillus33.fasta                    1          9.2423e-10            1           1   
+    label_Bacillus34.fasta                    1           6.526e-09            1           1   
+    label_Bacillus70.fasta                    1          2.1005e-08            1           1   
+    label_Bacillus79.fasta                    1          8.7552e-10            1           1   
+    label_Listeria1.fasta               0.99999          9.4329e-06            1           1   
+    label_Paenibacillus11.fasta      1.4569e-05             0.99999            2           1   
+    label_Paenibacillus12.fasta      2.9938e-06                   1            2           1   
+    label_Paenibacillus17.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus18.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus22.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus23.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus24.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus6.fasta                1          2.2204e-14            1           1   
+    label_Paenibacillus9.fasta                1          2.2204e-14            1           1   
+    label_Enterococcus0.fasta          4.87e-10                   1            2           2   
+    label_Enterococcus1.fasta        1.7861e-11                   1            2           2   
+    label_Enterococcus17.fasta       6.9315e-08                   1            2           2   
+    label_Enterococcus19.fasta       7.7753e-07                   1            2           2   
+    label_Enterococcus25.fasta       2.1438e-11                   1            2           2   
+    label_Enterococcus27.fasta       2.6357e-13                   1            2           2   
+    label_Enterococcus29.fasta       6.9066e-11                   1            2           2   
+    label_Enterococcus3.fasta        2.0765e-10                   1            2           2   
+    label_Enterococcus31.fasta       4.8216e-10                   1            2           2   
+    label_Enterococcus32.fasta       5.8672e-11                   1            2           2   
+    label_Enterococcus33.fasta       2.6645e-14                   1            2           2   
+    label_Enterococcus43.fasta       1.0986e-09                   1            2           2   
+    label_Enterococcus48.fasta       3.5527e-14                   1            2           2   
+    label_Enterococcus5.fasta        1.0687e-09                   1            2           2   
+    label_Enterococcus9.fasta        2.9989e-12                   1            2           2   
+    label_Granulicatella1.fasta      1.2856e-06                   1            2           2   
+    label_Lactobacillus105.fasta     2.7534e-14                   1            2           2   
+    label_Lactobacillus2.fasta        4.333e-11                   1            2           2   
+    label_Lactobacillus22.fasta      4.4589e-12                   1            2           2   
+    label_Lactobacillus25.fasta      1.5632e-13                   1            2           2   
+    label_Lactobacillus29.fasta      1.0316e-10                   1            2           2   
+    label_Lactobacillus30.fasta      7.7745e-07                   1            2           2   
+    label_Lactobacillus33.fasta      8.4293e-09                   1            2           2   
+    label_Lactobacillus34.fasta      3.8451e-08                   1            2           2   
+    label_Lactobacillus38.fasta      2.8313e-12                   1            2           2   
+    label_Lactobacillus4.fasta        3.963e-11                   1            2           2   
+    label_Lactobacillus51.fasta               0                   1            2           2   
+    label_Lactobacillus52.fasta               0                   1            2           2   
+    label_Lactobacillus61.fasta      2.6934e-13                   1            2           2   
+    label_Lactobacillus62.fasta      2.8986e-11                   1            2           2   
+    label_Lactobacillus71.fasta      2.3379e-12                   1            2           2   
+    label_Lactobacillus72.fasta      5.0121e-11                   1            2           2   
+    label_Lactobacillus74.fasta      1.9457e-07                   1            2           2   
+    label_Lactobacillus77.fasta      7.4783e-07                   1            2           2   
+    label_Lactobacillus80.fasta      7.1318e-10                   1            2           2   
+    label_Lactobacillus90.fasta      1.8705e-12                   1            2           2   
+    label_Lactobacillus91.fasta      2.4885e-12                   1            2           2   
+    label_Lactobacillus97.fasta      6.6724e-12                   1            2           2   
+    label_Leuconostoc1.fasta                  0                   1            2           2   
+    label_Leuconostoc5.fasta                  0                   1            2           2   
+    label_Streptococcus18.fasta       3.367e-09                   1            2           2   
+    label_Streptococcus22.fasta      1.5747e-08                   1            2           2   
+    label_Streptococcus3.fasta       1.5344e-09                   1            2           2   
+    label_Streptococcus30.fasta      3.3711e-11                   1            2           2   
+    label_Streptococcus32.fasta      7.0537e-10                   1            2           2   
+    label_Streptococcus35.fasta      1.1591e-11                   1            2           2   
+    label_Streptococcus40.fasta               0                   1            2           2   
+    label_Streptococcus41.fasta               0                   1            2           2   
+    label_Streptococcus47.fasta       1.946e-07                   1            2           2   
+    label_Streptococcus48.fasta      1.9781e-06                   1            2           2   
+    label_Streptococcus54.fasta               0                   1            2           2   
+    label_Streptococcus63.fasta      8.7759e-09                   1            2           2   
+    label_Streptococcus64.fasta      1.1362e-11                   1            2           2   
+    label_Streptococcus67.fasta       4.181e-09                   1            2           2   
+    label_Streptococcus7.fasta       5.8455e-08                   1            2           2   
+
+
+testAcNum =
+
+  1x73 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 33 through 40
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 41 through 48
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 49 through 56
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 57 through 64
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 65 through 72
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 73
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus43.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus47.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus48.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus49.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus54.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus67.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus71.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus80.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Listeria3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus34.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus35.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus37.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus40.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus46.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus104.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus14.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus18.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus27.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus31.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus37.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus42.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus43.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus44.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus49.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus55.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus59.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus63.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus64.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus69.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus73.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus84.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus89.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus92.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus95.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus99.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus16.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus19.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus23.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus26.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus28.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus31.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus33.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus36.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus37.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus42.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus45.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus55.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus59.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Streptococcus6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus68.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Lactobacillales'    }
+    {'label_Weissella2.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.5665    0.4335    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  73x4 table
+
+                                    o__Bacillales    o__Lactobacillales    prediction    actual
+                                    _____________    __________________    __________    ______
+
+    label_Bacillus0.fasta                    1           2.2204e-14            1           1   
+    label_Bacillus11.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus2.fasta                    1           2.2204e-14            1           1   
+    label_Bacillus23.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus43.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus47.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus48.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus49.fasta                   1           1.2113e-12            1           1   
+    label_Bacillus54.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus67.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus71.fasta                   1           2.2204e-14            1           1   
+    label_Bacillus80.fasta                   1           2.2204e-14            1           1   
+    label_Listeria3.fasta              0.56652              0.43348            1           1   
+    label_Paenibacillus14.fasta              1           2.2204e-14            1           1   
+    label_Paenibacillus16.fasta              1           2.2204e-14            1           1   
+    label_Paenibacillus5.fasta               1           2.2204e-14            1           1   
+    label_Enterococcus13.fasta               0                    1            2           2   
+    label_Enterococcus14.fasta               0                    1            2           2   
+    label_Enterococcus15.fasta               0                    1            2           2   
+    label_Enterococcus16.fasta               0                    1            2           2   
+    label_Enterococcus20.fasta               0                    1            2           2   
+    label_Enterococcus23.fasta               0                    1            2           2   
+    label_Enterococcus34.fasta               0                    1            2           2   
+    label_Enterococcus35.fasta               0                    1            2           2   
+    label_Enterococcus37.fasta               0                    1            2           2   
+    label_Enterococcus40.fasta               0                    1            2           2   
+    label_Enterococcus46.fasta               0                    1            2           2   
+    label_Lactobacillus1.fasta               0                    1            2           2   
+    label_Lactobacillus10.fasta              0                    1            2           2   
+    label_Lactobacillus104.fasta             0                    1            2           2   
+    label_Lactobacillus14.fasta              0                    1            2           2   
+    label_Lactobacillus16.fasta              0                    1            2           2   
+    label_Lactobacillus18.fasta              0                    1            2           2   
+    label_Lactobacillus20.fasta              0                    1            2           2   
+    label_Lactobacillus23.fasta              0                    1            2           2   
+    label_Lactobacillus27.fasta              0                    1            2           2   
+    label_Lactobacillus31.fasta              0                    1            2           2   
+    label_Lactobacillus37.fasta              0                    1            2           2   
+    label_Lactobacillus42.fasta              0                    1            2           2   
+    label_Lactobacillus43.fasta              0                    1            2           2   
+    label_Lactobacillus44.fasta              0                    1            2           2   
+    label_Lactobacillus49.fasta              0                    1            2           2   
+    label_Lactobacillus55.fasta              0                    1            2           2   
+    label_Lactobacillus59.fasta              0                    1            2           2   
+    label_Lactobacillus63.fasta              0                    1            2           2   
+    label_Lactobacillus64.fasta              0                    1            2           2   
+    label_Lactobacillus69.fasta              0                    1            2           2   
+    label_Lactobacillus73.fasta              0                    1            2           2   
+    label_Lactobacillus84.fasta              0                    1            2           2   
+    label_Lactobacillus89.fasta              0                    1            2           2   
+    label_Lactobacillus92.fasta              0                    1            2           2   
+    label_Lactobacillus95.fasta              0                    1            2           2   
+    label_Lactobacillus99.fasta              0                    1            2           2   
+    label_Streptococcus1.fasta               0                    1            2           2   
+    label_Streptococcus12.fasta              0                    1            2           2   
+    label_Streptococcus13.fasta              0                    1            2           2   
+    label_Streptococcus16.fasta              0                    1            2           2   
+    label_Streptococcus19.fasta              0                    1            2           2   
+    label_Streptococcus20.fasta              0                    1            2           2   
+    label_Streptococcus23.fasta              0                    1            2           2   
+    label_Streptococcus26.fasta              0                    1            2           2   
+    label_Streptococcus28.fasta              0                    1            2           2   
+    label_Streptococcus31.fasta              0                    1            2           2   
+    label_Streptococcus33.fasta              0                    1            2           2   
+    label_Streptococcus36.fasta              0                    1            2           2   
+    label_Streptococcus37.fasta              0                    1            2           2   
+    label_Streptococcus42.fasta              0                    1            2           2   
+    label_Streptococcus45.fasta              0                    1            2           2   
+    label_Streptococcus55.fasta              0                    1            2           2   
+    label_Streptococcus59.fasta              0                    1            2           2   
+    label_Streptococcus6.fasta               0                    1            2           2   
+    label_Streptococcus68.fasta              0                    1            2           2   
+    label_Weissella2.fasta                   0                    1            2           2   
+
+
+testAcNum =
+
+  1x72 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 32
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 33 through 40
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 41 through 48
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 49 through 56
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 57 through 64
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 65 through 72
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Bacillus1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus13.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus28.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus30.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus32.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus53.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus58.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus62.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus74.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus75.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Bacillales'         }
+    {'label_Bacillus77.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Listeria2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char               }
+    {'home'                 }
+    {'w328li'               }
+    {'MLDSP'                }
+    {'samples'              }
+    {'c__Bacilli'           }
+    {'o__Bacillales'        }
+    {'label_Listeria4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus15.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Bacillales'             }
+    {'label_Paenibacillus2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus20.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Bacillales'              }
+    {'label_Paenibacillus25.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus26.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus28.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus30.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus39.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus42.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Enterococcus45.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Enterococcus7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus102.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus103.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                      }
+    {'home'                        }
+    {'w328li'                      }
+    {'MLDSP'                       }
+    {'samples'                     }
+    {'c__Bacilli'                  }
+    {'o__Lactobacillales'          }
+    {'label_Lactobacillus108.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus21.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus26.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus28.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus35.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus36.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus40.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus45.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus50.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus53.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus6.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus60.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus65.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus67.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus76.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus79.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus82.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus83.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Lactobacillus87.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                    }
+    {'home'                      }
+    {'w328li'                    }
+    {'MLDSP'                     }
+    {'samples'                   }
+    {'c__Bacilli'                }
+    {'o__Lactobacillales'        }
+    {'label_Lactobacillus9.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Leuconostoc10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'c__Bacilli'               }
+    {'o__Lactobacillales'       }
+    {'label_Leuconostoc11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc7.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'c__Bacilli'              }
+    {'o__Lactobacillales'      }
+    {'label_Leuconostoc8.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus17.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus43.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus44.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus51.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus56.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus57.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                     }
+    {'home'                       }
+    {'w328li'                     }
+    {'MLDSP'                      }
+    {'samples'                    }
+    {'c__Bacilli'                 }
+    {'o__Lactobacillales'         }
+    {'label_Streptococcus60.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Lactobacillales'    }
+    {'label_Weissella0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'c__Bacilli'            }
+    {'o__Lactobacillales'    }
+    {'label_Weissella3.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.9986    0.0014    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9999    0.0001    1.0000    1.0000
+    0.9968    0.0032    1.0000    1.0000
+    0.9995    0.0005    1.0000    1.0000
+    0.9994    0.0006    1.0000    1.0000
+    0.9994    0.0006    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9996    0.0004    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9999    0.0001    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9991    0.0009    1.0000    1.0000
+    0.9389    0.0611    1.0000    1.0000
+    0.9983    0.0017    1.0000    1.0000
+    0.9928    0.0072    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0005    0.9995    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0004    0.9996    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0001    0.9999    2.0000    2.0000
+    0.0001    0.9999    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0007    0.9993    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0005    0.9995    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0001    0.9999    2.0000    2.0000
+    0.0001    0.9999    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0001    0.9999    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+    0.0000    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  72x4 table
+
+                                    o__Bacillales    o__Lactobacillales    prediction    actual
+                                    _____________    __________________    __________    ______
+
+    label_Bacillus1.fasta               0.99855           0.0014494            1           1   
+    label_Bacillus10.fasta              0.99998          1.9539e-05            1           1   
+    label_Bacillus12.fasta              0.99992          8.3255e-05            1           1   
+    label_Bacillus13.fasta              0.99683           0.0031704            1           1   
+    label_Bacillus21.fasta              0.99952          0.00048018            1           1   
+    label_Bacillus28.fasta              0.99938          0.00062208            1           1   
+    label_Bacillus30.fasta              0.99939          0.00061265            1           1   
+    label_Bacillus32.fasta              0.99997          2.8464e-05            1           1   
+    label_Bacillus53.fasta              0.99963          0.00037295            1           1   
+    label_Bacillus58.fasta              0.99996          3.6923e-05            1           1   
+    label_Bacillus62.fasta              0.99992          7.7533e-05            1           1   
+    label_Bacillus74.fasta              0.99999          6.7613e-06            1           1   
+    label_Bacillus75.fasta              0.99914          0.00086213            1           1   
+    label_Bacillus77.fasta              0.93887            0.061135            1           1   
+    label_Listeria2.fasta               0.99831           0.0016923            1           1   
+    label_Listeria4.fasta               0.99284           0.0071646            1           1   
+    label_Paenibacillus0.fasta                1          1.2878e-09            1           1   
+    label_Paenibacillus10.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus15.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus2.fasta                1          2.2204e-14            1           1   
+    label_Paenibacillus20.fasta               1          2.2204e-14            1           1   
+    label_Paenibacillus25.fasta               1          2.2204e-14            1           1   
+    label_Enterococcus26.fasta       1.1806e-05             0.99999            2           2   
+    label_Enterococcus28.fasta       1.6574e-06                   1            2           2   
+    label_Enterococcus30.fasta        3.945e-06                   1            2           2   
+    label_Enterococcus39.fasta       4.5802e-05             0.99995            2           2   
+    label_Enterococcus42.fasta       3.2597e-05             0.99997            2           2   
+    label_Enterococcus45.fasta       0.00048909             0.99951            2           2   
+    label_Enterococcus7.fasta        3.2197e-06                   1            2           2   
+    label_Lactobacillus102.fasta     2.5937e-07                   1            2           2   
+    label_Lactobacillus103.fasta     2.1155e-05             0.99998            2           2   
+    label_Lactobacillus108.fasta     1.7405e-06                   1            2           2   
+    label_Lactobacillus17.fasta      2.5634e-05             0.99997            2           2   
+    label_Lactobacillus21.fasta      6.4381e-07                   1            2           2   
+    label_Lactobacillus26.fasta      7.3147e-07                   1            2           2   
+    label_Lactobacillus28.fasta      0.00038164             0.99962            2           2   
+    label_Lactobacillus3.fasta       5.5752e-06             0.99999            2           2   
+    label_Lactobacillus35.fasta      6.8405e-05             0.99993            2           2   
+    label_Lactobacillus36.fasta       8.832e-05             0.99991            2           2   
+    label_Lactobacillus40.fasta      1.0584e-05             0.99999            2           2   
+    label_Lactobacillus45.fasta      0.00067658             0.99932            2           2   
+    label_Lactobacillus50.fasta               0                   1            2           2   
+    label_Lactobacillus53.fasta      2.7978e-14                   1            2           2   
+    label_Lactobacillus6.fasta       9.1642e-08                   1            2           2   
+    label_Lactobacillus60.fasta      7.9951e-07                   1            2           2   
+    label_Lactobacillus65.fasta      7.2009e-06             0.99999            2           2   
+    label_Lactobacillus67.fasta       2.577e-06                   1            2           2   
+    label_Lactobacillus76.fasta      0.00048979             0.99951            2           2   
+    label_Lactobacillus79.fasta      1.6515e-05             0.99998            2           2   
+    label_Lactobacillus8.fasta       1.5347e-06                   1            2           2   
+    label_Lactobacillus82.fasta      8.4383e-06             0.99999            2           2   
+    label_Lactobacillus83.fasta      5.8846e-06             0.99999            2           2   
+    label_Lactobacillus87.fasta      1.2938e-10                   1            2           2   
+    label_Lactobacillus9.fasta         2.83e-05             0.99997            2           2   
+    label_Leuconostoc0.fasta         7.3801e-08                   1            2           2   
+    label_Leuconostoc10.fasta        5.5605e-05             0.99994            2           2   
+    label_Leuconostoc11.fasta        5.5624e-05             0.99994            2           2   
+    label_Leuconostoc2.fasta         1.0057e-07                   1            2           2   
+    label_Leuconostoc4.fasta         3.9754e-08                   1            2           2   
+    label_Leuconostoc7.fasta         5.2991e-05             0.99995            2           2   
+    label_Leuconostoc8.fasta         1.0467e-05             0.99999            2           2   
+    label_Streptococcus10.fasta      1.4558e-07                   1            2           2   
+    label_Streptococcus11.fasta      7.0059e-08                   1            2           2   
+    label_Streptococcus17.fasta      6.6143e-06             0.99999            2           2   
+    label_Streptococcus43.fasta      3.6949e-08                   1            2           2   
+    label_Streptococcus44.fasta      1.5485e-08                   1            2           2   
+    label_Streptococcus51.fasta      1.0684e-05             0.99999            2           2   
+    label_Streptococcus56.fasta      4.1261e-10                   1            2           2   
+    label_Streptococcus57.fasta      8.8378e-07                   1            2           2   
+    label_Streptococcus60.fasta      1.9019e-06                   1            2           2   
+    label_Weissella0.fasta           2.1207e-06                   1            2           2   
+    label_Weissella3.fasta           1.1902e-05             0.99999            2           2   
+
+confusion matrix for 1 is:
+   111     2
+     1   249
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [99.2000]    [99.2000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      99.2  
+    {'AvgAccuracy' }      99.2  
+
+Process completed 
+[?1l>
