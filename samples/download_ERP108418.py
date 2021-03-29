@@ -21,8 +21,7 @@ print(download_urls)
 
 # curl urls
 os.mkdir("ERP108418")
-os.system("cd ERP108418")
 for url in download_urls:
-    os.system("curl -O -L "+url)
-    print("curl -O -L "+url+" done")
+    os.system("(cd ERP108418 && curl -O -L "+url+")")
+    print("(cd ERP108418 && curl -O -L "+url+")"+" done")
 
