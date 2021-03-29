@@ -17,3 +17,7 @@ for mag in S2["MAG_ID_ENA"]:
         print(mag+".fa.gz" + " missing")
         missing.append(mag+".fa.gz")
 print("length of missing files are:", len(missing))
+
+for file in all_files:
+    if file[:-6] not in S2["MAG_ID_ENA"]:
+        print(file+" redundant")
