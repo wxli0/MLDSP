@@ -36,7 +36,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         testAcNum = AcNum(testInd)
         testFnm = [];
         for f = 1:length(testAcNum)
-            splitAcNum = split(testAcNum{f}, '/')
+            splitAcNum = split(testAcNum{f}, '/');
             testFnm = [testFnm, splitAcNum(end)];
         end 
 
