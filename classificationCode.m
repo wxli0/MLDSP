@@ -36,13 +36,13 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         testAcNum = AcNum(testInd)
         testFnm = [];
         for f = 1:length(testAcNum)
-            splitAcNum = split(testAcNum{f}, '/')
+            splitAcNum = split(testAcNum{f}, '/');
             testFnm = [testFnm, splitAcNum(end)];
         end 
 
 
         %QSVM   
-        fprintf("training QSVM\n")
+        fprintf("training QSVM, fold %d\n", 1)
         template = templateSVM(...
             'KernelFunction', 'polynomial', ...
             'PolynomialOrder', 2, ...
