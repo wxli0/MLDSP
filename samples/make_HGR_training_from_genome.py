@@ -45,15 +45,15 @@ print(next_rank_child_dict)
 parent_prefix = rank[0].lower()+"__"
 child_prefix = next_rank[0].lower()+"__"
 for parent, children in parent_child_dict.items():
-    os.mkdir("labeled_genome/"+parent_prefix+parent)
+    os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome/"+parent_prefix+parent)
     if len(children) == 0:
         continue
     for child in children:
         pos_genome = next_rank_child_dict[child]
         if len(pos_genome) == 0:
             continue 
-        os.mkdir("labeled_genome/"+parent_prefix+parent+"/"+child_prefix+child)
+        os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome/"+parent_prefix+parent+"/"+child_prefix+child)
         for genome in pos_genome:
-            if os.path.isfile("labeled_genome/label_"+genome+".fa"):
-                shutil.copyfile("labeled_genome/label_"+genome+".fa", \
-                    "labeled_genome/"+parent_prefix+parent+"/"+child_prefix+child+"/"+"label_"+genome+".fa")
+            if os.path.isfile("/mnt/sda/DeepMicrobes-data/labeled_genome/label_"+genome+".fa"):
+                shutil.copyfile("/mnt/sda/DeepMicrobes-data/labeled_genome/label_"+genome+".fa", \
+                    "/mnt/sda/DeepMicrobes-data/labeled_genome/"+parent_prefix+parent+"/"+child_prefix+child+"/"+"label_"+genome+".fa")
