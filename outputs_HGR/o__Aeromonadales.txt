@@ -1,0 +1,215 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/o__Aeromonadales'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+    {'f__Aeromonadaceae'}    {'f__Succinivibrionaceae'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x4 cell array
+
+    {'/home/w328li/MLDSP/samples/o__Aeromonad...'}    {'/home/w328li/MLDSP/samples/o__Aeromonad...'}    {'/home/w328li/MLDSP/samples/o__Aeromonad...'}    {'/home/w328li/MLDSP/samples/o__Aeromonad...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    0.7000    0.3000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                   f__Aeromonadaceae    f__Succinivibrionaceae    prediction    actual
+                                   _________________    ______________________    __________    ______
+
+    label_Aeromonas3.fasta                0.7                        0.3              1           1   
+    label_Aeromonas6.fasta                  1                 2.2204e-14              1           1   
+    label_Succinatimonas5.fasta             0                          1              2           2   
+    label_Succinatimonas6.fasta             0                          1              2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+
+
+T3 =
+
+  5x4 table
+
+                               f__Aeromonadaceae    f__Succinivibrionaceae    prediction    actual
+                               _________________    ______________________    __________    ______
+
+    label_Aeromonas1.fasta             1                  2.2204e-14              1           1   
+    label_Aeromonas11.fasta            1                  2.2204e-14              1           1   
+    label_Aeromonas12.fasta            1                  2.2204e-14              1           1   
+    label_Aeromonas4.fasta             1                  2.2204e-14              1           1   
+    label_Aeromonas7.fasta             1                  2.2204e-14              1           1   
+
+
+testAcNum =
+
+  1x5 cell array
+
+    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                   f__Aeromonadaceae    f__Succinivibrionaceae    prediction    actual
+                                   _________________    ______________________    __________    ______
+
+    label_Aeromonas0.fasta                 1                  2.2204e-14              1           1   
+    label_Aeromonas13.fasta                1                  2.2204e-14              1           1   
+    label_Aeromonas14.fasta                1                  2.2204e-14              1           1   
+    label_Aeromonas9.fasta                 1                  2.2204e-14              1           1   
+    label_Succinatimonas7.fasta            0                           1              2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                   f__Aeromonadaceae    f__Succinivibrionaceae    prediction    actual
+                                   _________________    ______________________    __________    ______
+
+    label_Aeromonas10.fasta                1                  2.2204e-14              1           1   
+    label_Aeromonas2.fasta                 1                  2.2204e-14              1           1   
+    label_Aeromonas8.fasta                 1                  2.2204e-14              1           1   
+    label_Succinatimonas1.fasta            0                           1              2           2   
+    label_Succinatimonas3.fasta            0                           1              2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}    {'/home/w328li/MLDSP/samples/o_...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.7368    0.2632    1.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                   f__Aeromonadaceae    f__Succinivibrionaceae    prediction    actual
+                                   _________________    ______________________    __________    ______
+
+    label_Aeromonas15.fasta                   1               2.2204e-14              1           1   
+    label_Aeromonas5.fasta                    1               2.2204e-14              1           1   
+    label_Succinatimonas0.fasta         0.73684                  0.26316              1           2   
+    label_Succinatimonas2.fasta               0                        1              2           2   
+    label_Succinatimonas4.fasta               0                        1              2           2   
+
+confusion matrix for 1 is:
+    16     0
+     1     7
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [95.8000]    [95.8000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      95.8  
+    {'AvgAccuracy' }      95.8  
+
+Process completed 
+[?1l>

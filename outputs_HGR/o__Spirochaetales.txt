@@ -1,0 +1,351 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/o__Spirochaetales'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'f__Brachyspira...'}    {'f__Spirochaeta...'}    {'prediction'}
+
+  Column 4
+
+    {'actual'}
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 10
+
+    {'/home/w328li/M...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    0.1818    0.8182    2.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                f__Brachyspiraceae    f__Spirochaetaceae    prediction    actual
+                                __________________    __________________    __________    ______
+
+    label_Brachyspira1.fasta         0.18182                 0.81818            2           1   
+    label_Brachyspira4.fasta               1              2.2204e-14            1           1   
+    label_Treponema0.fasta                 0                       1            2           2   
+    label_Treponema1.fasta                 0                       1            2           2   
+    label_Treponema21.fasta                0                       1            2           2   
+    label_Treponema26.fasta                0                       1            2           2   
+    label_Treponema31.fasta                0                       1            2           2   
+    label_Treponema36.fasta                0                       1            2           2   
+    label_Treponema7.fasta                 0                       1            2           2   
+    label_Treponema8.fasta                 0                       1            2           2   
+
+
+testAcNum =
+
+  1x11 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 11
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  11x4 table
+
+                                f__Brachyspiraceae    f__Spirochaetaceae    prediction    actual
+                                __________________    __________________    __________    ______
+
+    label_Brachyspira5.fasta            1                 2.2204e-14            1           1   
+    label_Brachyspira7.fasta            1                 2.2204e-14            1           1   
+    label_Brachyspira8.fasta            1                 2.2204e-14            1           1   
+    label_Treponema10.fasta             0                          1            2           2   
+    label_Treponema17.fasta             0                          1            2           2   
+    label_Treponema2.fasta              0                          1            2           2   
+    label_Treponema25.fasta             0                          1            2           2   
+    label_Treponema29.fasta             0                          1            2           2   
+    label_Treponema32.fasta             0                          1            2           2   
+    label_Treponema37.fasta             0                          1            2           2   
+    label_Treponema38.fasta             0                          1            2           2   
+
+
+testAcNum =
+
+  1x11 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 11
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  11x4 table
+
+                                f__Brachyspiraceae    f__Spirochaetaceae    prediction    actual
+                                __________________    __________________    __________    ______
+
+    label_Brachyspira0.fasta            1                 2.2204e-14            1           1   
+    label_Brachyspira2.fasta            1                 2.2204e-14            1           1   
+    label_Treponema12.fasta             0                          1            2           2   
+    label_Treponema14.fasta             0                          1            2           2   
+    label_Treponema16.fasta             0                          1            2           2   
+    label_Treponema18.fasta             0                          1            2           2   
+    label_Treponema27.fasta             0                          1            2           2   
+    label_Treponema28.fasta             0                          1            2           2   
+    label_Treponema30.fasta             0                          1            2           2   
+    label_Treponema4.fasta              0                          1            2           2   
+    label_Treponema9.fasta              0                          1            2           2   
+
+
+testAcNum =
+
+  1x11 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 11
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  11x4 table
+
+                                f__Brachyspiraceae    f__Spirochaetaceae    prediction    actual
+                                __________________    __________________    __________    ______
+
+    label_Brachyspira6.fasta            1                 2.2204e-14            1           1   
+    label_Treponema11.fasta             0                          1            2           2   
+    label_Treponema13.fasta             0                          1            2           2   
+    label_Treponema15.fasta             0                          1            2           2   
+    label_Treponema20.fasta             0                          1            2           2   
+    label_Treponema22.fasta             0                          1            2           2   
+    label_Treponema23.fasta             0                          1            2           2   
+    label_Treponema33.fasta             0                          1            2           2   
+    label_Treponema39.fasta             0                          1            2           2   
+    label_Treponema41.fasta             0                          1            2           2   
+    label_Treponema5.fasta              0                          1            2           2   
+
+
+testAcNum =
+
+  1x11 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 11
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.1860    0.8140    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  11x4 table
+
+                                f__Brachyspiraceae    f__Spirochaetaceae    prediction    actual
+                                __________________    __________________    __________    ______
+
+    label_Brachyspira3.fasta               1              2.2204e-14            1           1   
+    label_Brachyspira9.fasta               1              2.2204e-14            1           1   
+    label_Treponema19.fasta                0                       1            2           2   
+    label_Treponema24.fasta                0                       1            2           2   
+    label_Treponema3.fasta                 0                       1            2           2   
+    label_Treponema34.fasta                0                       1            2           2   
+    label_Treponema35.fasta          0.18605                 0.81395            2           2   
+    label_Treponema40.fasta                0                       1            2           2   
+    label_Treponema42.fasta                0                       1            2           2   
+    label_Treponema43.fasta                0                       1            2           2   
+    label_Treponema6.fasta                 0                       1            2           2   
+
+confusion matrix for 1 is:
+     9     1
+     0    44
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [98.1000]    [98.1000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      98.1  
+    {'AvgAccuracy' }      98.1  
+
+Process completed 
+[?1l>

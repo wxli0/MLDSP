@@ -1,0 +1,331 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/o__Pseudomonadales'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'f__Moraxellaceae'}    {'f__Pseudomonad...'}    {'prediction'}
+
+  Column 4
+
+    {'actual'}
+
+
+testAcNum =
+
+  1x9 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  9x4 table
+
+                                   f__Moraxellaceae    f__Pseudomonadaceae    prediction    actual
+                                   ________________    ___________________    __________    ______
+
+    label_Acinetobacter1.fasta            1                2.2204e-14             1           1   
+    label_Acinetobacter12.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter17.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter18.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter4.fasta            1                2.2204e-14             1           1   
+    label_Acinetobacter8.fasta            1                2.2204e-14             1           1   
+    label_Pseudomonas14.fasta             0                         1             2           2   
+    label_Pseudomonas7.fasta              0                         1             2           2   
+    label_Pseudomonas8.fasta              0                         1             2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 10
+
+    {'/home/w328li/M...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    0.5789    0.4211    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   f__Moraxellaceae    f__Pseudomonadaceae    prediction    actual
+                                   ________________    ___________________    __________    ______
+
+    label_Acinetobacter13.fasta              1             2.2204e-14             1           1   
+    label_Acinetobacter15.fasta        0.57895                0.42105             1           1   
+    label_Acinetobacter16.fasta              1             2.2204e-14             1           1   
+    label_Acinetobacter24.fasta              1             2.2204e-14             1           1   
+    label_Acinetobacter27.fasta              1             2.2204e-14             1           1   
+    label_Acinetobacter7.fasta               1             2.2204e-14             1           1   
+    label_Pseudomonas0.fasta                 0                      1             2           2   
+    label_Pseudomonas10.fasta                0                      1             2           2   
+    label_Pseudomonas15.fasta                0                      1             2           2   
+    label_Pseudomonas16.fasta                0                      1             2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 10
+
+    {'/home/w328li/M...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   f__Moraxellaceae    f__Pseudomonadaceae    prediction    actual
+                                   ________________    ___________________    __________    ______
+
+    label_Acinetobacter0.fasta            1                2.2204e-14             1           1   
+    label_Acinetobacter10.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter2.fasta            1                2.2204e-14             1           1   
+    label_Acinetobacter21.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter23.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter25.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter9.fasta            1                2.2204e-14             1           1   
+    label_Pseudomonas1.fasta              0                         1             2           2   
+    label_Pseudomonas18.fasta             0                         1             2           2   
+    label_Pseudomonas9.fasta              0                         1             2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 10
+
+    {'/home/w328li/M...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   f__Moraxellaceae    f__Pseudomonadaceae    prediction    actual
+                                   ________________    ___________________    __________    ______
+
+    label_Acinetobacter14.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter19.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter20.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter22.fasta           1                2.2204e-14             1           1   
+    label_Acinetobacter3.fasta            1                2.2204e-14             1           1   
+    label_Acinetobacter5.fasta            1                2.2204e-14             1           1   
+    label_Pseudomonas11.fasta             0                         1             2           2   
+    label_Pseudomonas17.fasta             0                         1             2           2   
+    label_Pseudomonas2.fasta              0                         1             2           2   
+    label_Pseudomonas5.fasta              0                         1             2           2   
+
+
+testAcNum =
+
+  1x9 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+    0.6410    0.3590    1.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  9x4 table
+
+                                   f__Moraxellaceae    f__Pseudomonadaceae    prediction    actual
+                                   ________________    ___________________    __________    ______
+
+    label_Acinetobacter11.fasta              1             2.2204e-14             1           1   
+    label_Acinetobacter26.fasta              1             2.2204e-14             1           1   
+    label_Acinetobacter6.fasta               1             2.2204e-14             1           1   
+    label_Pseudomonas12.fasta                0                      1             2           2   
+    label_Pseudomonas13.fasta          0.64103                0.35897             1           2   
+    label_Pseudomonas19.fasta                0                      1             2           2   
+    label_Pseudomonas3.fasta                 0                      1             2           2   
+    label_Pseudomonas4.fasta                 0                      1             2           2   
+    label_Pseudomonas6.fasta                 0                      1             2           2   
+
+confusion matrix for 1 is:
+    28     0
+     1    19
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [97.9000]    [97.9000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      97.9  
+    {'AvgAccuracy' }      97.9  
+
+Process completed 
+[?1l>

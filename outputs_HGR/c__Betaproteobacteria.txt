@@ -1,0 +1,501 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/c__Betaproteobacteria'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+    {'o__Burkholderiales'}    {'o__Neisseriales'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 26
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9340    0.0660    1.0000    2.0000
+    0.9340    0.0660    1.0000    2.0000
+
+
+T3 =
+
+  26x4 table
+
+                                  o__Burkholderiales    o__Neisseriales    prediction    actual
+                                  __________________    _______________    __________    ______
+
+    label_Achromobacter2.fasta               1            2.2204e-14           1           1   
+    label_Oxalobacter0.fasta                 1            2.2204e-14           1           1   
+    label_Ralstonia0.fasta                   1            2.2204e-14           1           1   
+    label_Sutterella1.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella102.fasta                1            2.2204e-14           1           1   
+    label_Sutterella103.fasta                1            2.2204e-14           1           1   
+    label_Sutterella11.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella13.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella19.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella27.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella37.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella40.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella50.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella56.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella61.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella69.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella71.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella8.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella80.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella83.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella9.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella95.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella96.fasta                 1            2.2204e-14           1           1   
+    label_Sutterella98.fasta                 1            2.2204e-14           1           1   
+    label_Neisseria3.fasta             0.93396              0.066038           1           2   
+    label_Neisseria6.fasta             0.93396              0.066038           1           2   
+
+
+testAcNum =
+
+  1x27 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 27
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  27x4 table
+
+                                  o__Burkholderiales    o__Neisseriales    prediction    actual
+                                  __________________    _______________    __________    ______
+
+    label_Achromobacter6.fasta            1               2.2204e-14           1           1   
+    label_Oxalobacter1.fasta              1               2.2204e-14           1           1   
+    label_Oxalobacter2.fasta              1               2.2204e-14           1           1   
+    label_Ralstonia2.fasta                1               2.2204e-14           1           1   
+    label_Ralstonia4.fasta                1               2.2204e-14           1           1   
+    label_Sutterella10.fasta              1               2.2204e-14           1           1   
+    label_Sutterella100.fasta             1               2.2204e-14           1           1   
+    label_Sutterella21.fasta              1               2.2204e-14           1           1   
+    label_Sutterella24.fasta              1               2.2204e-14           1           1   
+    label_Sutterella29.fasta              1               2.2204e-14           1           1   
+    label_Sutterella3.fasta               1               2.2204e-14           1           1   
+    label_Sutterella35.fasta              1               2.2204e-14           1           1   
+    label_Sutterella36.fasta              1               2.2204e-14           1           1   
+    label_Sutterella39.fasta              1               2.2204e-14           1           1   
+    label_Sutterella42.fasta              1               2.2204e-14           1           1   
+    label_Sutterella43.fasta              1               2.2204e-14           1           1   
+    label_Sutterella54.fasta              1               2.2204e-14           1           1   
+    label_Sutterella60.fasta              1               2.2204e-14           1           1   
+    label_Sutterella66.fasta              1               2.2204e-14           1           1   
+    label_Sutterella7.fasta               1               2.2204e-14           1           1   
+    label_Sutterella73.fasta              1               2.2204e-14           1           1   
+    label_Sutterella82.fasta              1               2.2204e-14           1           1   
+    label_Sutterella84.fasta              1               2.2204e-14           1           1   
+    label_Sutterella85.fasta              1               2.2204e-14           1           1   
+    label_Sutterella87.fasta              1               2.2204e-14           1           1   
+    label_Sutterella89.fasta              1               2.2204e-14           1           1   
+    label_Neisseria2.fasta                0                        1           2           2   
+
+
+testAcNum =
+
+  1x27 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 27
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9429    0.0571    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.9429    0.0571    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  27x4 table
+
+                                   o__Burkholderiales    o__Neisseriales    prediction    actual
+                                   __________________    _______________    __________    ______
+
+    label_Achromobacter10.fasta               1            2.2204e-14           1           1   
+    label_Achromobacter3.fasta                1            2.2204e-14           1           1   
+    label_Achromobacter5.fasta                1            2.2204e-14           1           1   
+    label_Achromobacter8.fasta                1            2.2204e-14           1           1   
+    label_Achromobacter9.fasta                1            2.2204e-14           1           1   
+    label_Sutterella12.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella17.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella18.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella20.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella23.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella31.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella34.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella38.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella47.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella49.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella51.fasta            0.94286              0.057143           1           1   
+    label_Sutterella62.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella64.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella68.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella72.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella78.fasta            0.94286              0.057143           1           1   
+    label_Sutterella86.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella90.fasta                  1            2.2204e-14           1           1   
+    label_Sutterella91.fasta                  1            2.2204e-14           1           1   
+    label_Neisseria4.fasta                    0                     1           2           2   
+    label_Neisseria5.fasta                    0                     1           2           2   
+    label_Neisseria7.fasta                    0                     1           2           2   
+
+
+testAcNum =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 26
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  26x4 table
+
+                                  o__Burkholderiales    o__Neisseriales    prediction    actual
+                                  __________________    _______________    __________    ______
+
+    label_Achromobacter0.fasta            1               2.2204e-14           1           1   
+    label_Ralstonia1.fasta                1               2.2204e-14           1           1   
+    label_Ralstonia3.fasta                1               2.2204e-14           1           1   
+    label_Sutterella14.fasta              1               2.2204e-14           1           1   
+    label_Sutterella16.fasta              1               2.2204e-14           1           1   
+    label_Sutterella22.fasta              1               2.2204e-14           1           1   
+    label_Sutterella25.fasta              1               2.2204e-14           1           1   
+    label_Sutterella26.fasta              1               2.2204e-14           1           1   
+    label_Sutterella28.fasta              1               2.2204e-14           1           1   
+    label_Sutterella32.fasta              1               2.2204e-14           1           1   
+    label_Sutterella33.fasta              1               2.2204e-14           1           1   
+    label_Sutterella4.fasta               1               2.2204e-14           1           1   
+    label_Sutterella44.fasta              1               2.2204e-14           1           1   
+    label_Sutterella46.fasta              1               2.2204e-14           1           1   
+    label_Sutterella48.fasta              1               2.2204e-14           1           1   
+    label_Sutterella52.fasta              1               2.2204e-14           1           1   
+    label_Sutterella57.fasta              1               2.2204e-14           1           1   
+    label_Sutterella58.fasta              1               2.2204e-14           1           1   
+    label_Sutterella59.fasta              1               2.2204e-14           1           1   
+    label_Sutterella70.fasta              1               2.2204e-14           1           1   
+    label_Sutterella74.fasta              1               2.2204e-14           1           1   
+    label_Sutterella81.fasta              1               2.2204e-14           1           1   
+    label_Sutterella88.fasta              1               2.2204e-14           1           1   
+    label_Sutterella94.fasta              1               2.2204e-14           1           1   
+    label_Neisseria0.fasta                0                        1           2           2   
+    label_Neisseria8.fasta                0                        1           2           2   
+
+
+testAcNum =
+
+  1x26 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 17 through 24
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 25 through 26
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  26x4 table
+
+                                  o__Burkholderiales    o__Neisseriales    prediction    actual
+                                  __________________    _______________    __________    ______
+
+    label_Achromobacter1.fasta            1               2.2204e-14           1           1   
+    label_Achromobacter4.fasta            1               2.2204e-14           1           1   
+    label_Achromobacter7.fasta            1               2.2204e-14           1           1   
+    label_Sutterella0.fasta               1               2.2204e-14           1           1   
+    label_Sutterella101.fasta             1               2.2204e-14           1           1   
+    label_Sutterella15.fasta              1               2.2204e-14           1           1   
+    label_Sutterella2.fasta               1               2.2204e-14           1           1   
+    label_Sutterella30.fasta              1               2.2204e-14           1           1   
+    label_Sutterella41.fasta              1               2.2204e-14           1           1   
+    label_Sutterella45.fasta              1               2.2204e-14           1           1   
+    label_Sutterella5.fasta               1               2.2204e-14           1           1   
+    label_Sutterella53.fasta              1               2.2204e-14           1           1   
+    label_Sutterella55.fasta              1               2.2204e-14           1           1   
+    label_Sutterella6.fasta               1               2.2204e-14           1           1   
+    label_Sutterella63.fasta              1               2.2204e-14           1           1   
+    label_Sutterella65.fasta              1               2.2204e-14           1           1   
+    label_Sutterella67.fasta              1               2.2204e-14           1           1   
+    label_Sutterella75.fasta              1               2.2204e-14           1           1   
+    label_Sutterella76.fasta              1               2.2204e-14           1           1   
+    label_Sutterella77.fasta              1               2.2204e-14           1           1   
+    label_Sutterella79.fasta              1               2.2204e-14           1           1   
+    label_Sutterella92.fasta              1               2.2204e-14           1           1   
+    label_Sutterella93.fasta              1               2.2204e-14           1           1   
+    label_Sutterella97.fasta              1               2.2204e-14           1           1   
+    label_Sutterella99.fasta              1               2.2204e-14           1           1   
+    label_Neisseria1.fasta                0                        1           2           2   
+
+confusion matrix for 1 is:
+   123     0
+     2     7
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [98.5000]    [98.5000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      98.5  
+    {'AvgAccuracy' }      98.5  
+
+Process completed 
+[?1l>

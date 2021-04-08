@@ -1,0 +1,213 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/f__Leuconostocaceae'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+    {'g__Leuconostoc'}    {'g__Weissella'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x4 cell array
+
+    {'/home/w328li/MLDSP/samples/f__Leuconost...'}    {'/home/w328li/MLDSP/samples/f__Leuconost...'}    {'/home/w328li/MLDSP/samples/f__Leuconost...'}    {'/home/w328li/MLDSP/samples/f__Leuconost...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                   g__Leuconostoc    g__Weissella    prediction    actual
+                                   ______________    ____________    __________    ______
+
+    label_GCF_000160595_0.fasta          1            2.2204e-14         1           1   
+    label_GCF_000160595_3.fasta          1            2.2204e-14         1           1   
+    label_GCF_000160575_4.fasta          0                     1         2           2   
+    label_GCF_000160575_5.fasta          0                     1         2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    0.6612    0.3388    1.0000    1.0000
+    0.6326    0.3674    1.0000    1.0000
+    0.6407    0.3593    1.0000    1.0000
+    0.6139    0.3861    1.0000    1.0000
+    0.6134    0.3866    1.0000    1.0000
+
+
+T3 =
+
+  5x4 table
+
+                                   g__Leuconostoc    g__Weissella    prediction    actual
+                                   ______________    ____________    __________    ______
+
+    label_20298_2_19_1.fasta          0.66118          0.33882           1           1   
+    label_20298_2_19_3.fasta          0.63258          0.36742           1           1   
+    label_20298_2_19_4.fasta          0.64065          0.35935           1           1   
+    label_GCF_000160595_1.fasta       0.61394          0.38606           1           1   
+    label_GCF_000160595_4.fasta       0.61344          0.38656           1           1   
+
+
+testAcNum =
+
+  1x5 cell array
+
+    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    0.9023    0.0977    1.0000    1.0000
+    0.8142    0.1858    1.0000    1.0000
+    0.8280    0.1720    1.0000    1.0000
+    0.8669    0.1331    1.0000    1.0000
+    0.2992    0.7008    2.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                   g__Leuconostoc    g__Weissella    prediction    actual
+                                   ______________    ____________    __________    ______
+
+    label_20298_2_19_0.fasta           0.9023          0.097702          1           1   
+    label_20298_2_19_5.fasta          0.81419           0.18581          1           1   
+    label_20298_2_19_6.fasta            0.828             0.172          1           1   
+    label_GCF_000160595_6.fasta       0.86689           0.13311          1           1   
+    label_GCF_000160575_6.fasta       0.29923           0.70077          2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}    {'/home/w328li/MLDSP/samples/f_...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    2.0000
+    0.7222    0.2778    1.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                   g__Leuconostoc    g__Weissella    prediction    actual
+                                   ______________    ____________    __________    ______
+
+    label_20298_2_19_2.fasta                1         2.2204e-14         1           1   
+    label_20298_2_19_8.fasta                1         2.2204e-14         1           1   
+    label_GCF_000160595_5.fasta             1         2.2204e-14         1           1   
+    label_GCF_000160575_1.fasta             1         2.2204e-14         1           2   
+    label_GCF_000160575_2.fasta       0.72222            0.27778         1           2   
+
+
+testAcNum =
+
+  1x4 cell array
+
+    {'/home/w328li/MLDSP/samples/f__Leuconost...'}    {'/home/w328li/MLDSP/samples/f__Leuconost...'}    {'/home/w328li/MLDSP/samples/f__Leuconost...'}    {'/home/w328li/MLDSP/samples/f__Leuconost...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    0.7369    0.2631    1.0000    1.0000
+    0.7371    0.2629    1.0000    1.0000
+    0.7374    0.2626    1.0000    2.0000
+    0.7377    0.2623    1.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                   g__Leuconostoc    g__Weissella    prediction    actual
+                                   ______________    ____________    __________    ______
+
+    label_20298_2_19_7.fasta          0.73693          0.26307           1           1   
+    label_GCF_000160595_2.fasta       0.73709          0.26291           1           1   
+    label_GCF_000160575_0.fasta       0.73743          0.26257           1           2   
+    label_GCF_000160575_3.fasta       0.73769          0.26231           1           2   
+
+confusion matrix for 1 is:
+    16     0
+     4     3
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [82.6000]    [82.6000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      82.6  
+    {'AvgAccuracy' }      82.6  
+
+Process completed 
+[?1l>

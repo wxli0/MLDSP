@@ -1,0 +1,249 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/f__Propionibacteriaceae'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'g__Propionibac...'}    {'g__Propionimic...'}    {'prediction'}
+
+  Column 4
+
+    {'actual'}
+
+
+testAcNum =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 4
+
+    {'/home/w328li/M...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+         0    1.0000    2.0000    2.0000
+    0.3158    0.6842    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                 g__Propionibacterium    g__Propionimicrobium    prediction    actual
+                                 ____________________    ____________________    __________    ______
+
+    label_20298_2_29_11.fasta                0                       1               2           2   
+    label_20298_2_29_14.fasta          0.31579                 0.68421               2           2   
+    label_20298_2_29_7.fasta                 0                       1               2           2   
+    label_20298_2_29_8.fasta                 0                       1               2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 5
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                 g__Propionibacterium    g__Propionimicrobium    prediction    actual
+                                 ____________________    ____________________    __________    ______
+
+    label_20298_3_1_1.fasta               1                   2.2204e-14             1           1   
+    label_20298_3_1_3.fasta               1                   2.2204e-14             1           1   
+    label_20298_3_1_4.fasta               1                   2.2204e-14             1           1   
+    label_20298_2_29_12.fasta             0                            1             2           2   
+    label_20298_2_29_15.fasta             0                            1             2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 5
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    0.2222    0.7778    2.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                   g__Propionibacterium    g__Propionimicrobium    prediction    actual
+                                   ____________________    ____________________    __________    ______
+
+    label_20298_3_1_0.fasta                    1                2.2204e-14             1           1   
+    label_GCF_000413335_0.fasta          0.22222                   0.77778             2           1   
+    label_20298_2_29_0.fasta                   0                         1             2           2   
+    label_20298_2_29_2.fasta                   0                         1             2           2   
+    label_20298_2_29_9.fasta                   0                         1             2           2   
+
+
+testAcNum =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 5
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  5x4 table
+
+                                 g__Propionibacterium    g__Propionimicrobium    prediction    actual
+                                 ____________________    ____________________    __________    ______
+
+    label_20298_3_1_2.fasta               1                   2.2204e-14             1           1   
+    label_20298_2_29_10.fasta             0                            1             2           2   
+    label_20298_2_29_16.fasta             0                            1             2           2   
+    label_20298_2_29_4.fasta              0                            1             2           2   
+    label_20298_2_29_5.fasta              0                            1             2           2   
+
+
+testAcNum =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 4
+
+    {'/home/w328li/M...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+         0    1.0000    2.0000    2.0000
+    0.3158    0.6842    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                 g__Propionibacterium    g__Propionimicrobium    prediction    actual
+                                 ____________________    ____________________    __________    ______
+
+    label_20298_2_29_1.fasta                 0                       1               2           2   
+    label_20298_2_29_13.fasta          0.31579                 0.68421               2           2   
+    label_20298_2_29_3.fasta                 0                       1               2           2   
+    label_20298_2_29_6.fasta                 0                       1               2           2   
+
+confusion matrix for 1 is:
+     5     1
+     0    17
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [95.7000]    [95.7000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      95.7  
+    {'AvgAccuracy' }      95.7  
+
+Process completed 
+[?1l>

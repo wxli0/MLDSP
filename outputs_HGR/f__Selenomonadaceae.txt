@@ -1,0 +1,495 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/f__Selenomonadaceae'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+    {'g__Megamona'}    {'g__Selenomonas'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x3 cell array
+
+    {'/home/w328li/ML...'}    {'/home/w328li/ML...'}    {'/home/w328li/ML...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'f__Selenomonadaceae'      }
+    {'g__Selenomonas'           }
+    {'label_Selenomonas10.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'f__Selenomonadaceae'      }
+    {'g__Selenomonas'           }
+    {'label_Selenomonas12.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas8.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    0.3750    0.6250    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  3x4 table
+
+                                 g__Megamona    g__Selenomonas    prediction    actual
+                                 ___________    ______________    __________    ______
+
+    label_Selenomonas10.fasta       0.375           0.625             2           2   
+    label_Selenomonas12.fasta           0               1             2           2   
+    label_Selenomonas8.fasta            0               1             2           2   
+
+
+testAcNum =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 4
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'f__Selenomonadaceae'   }
+    {'g__Megamona'           }
+    {'label_Megamonas0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'f__Selenomonadaceae'   }
+    {'g__Megamona'           }
+    {'label_Megamonas2.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'f__Selenomonadaceae'   }
+    {'g__Megamona'           }
+    {'label_Megamonas3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas2.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.2000    0.8000    2.0000    1.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                g__Megamona    g__Selenomonas    prediction    actual
+                                ___________    ______________    __________    ______
+
+    label_Megamonas0.fasta            1          2.2204e-14          1           1   
+    label_Megamonas2.fasta            1          2.2204e-14          1           1   
+    label_Megamonas3.fasta          0.2                 0.8          2           1   
+    label_Selenomonas2.fasta          0                   1          2           2   
+
+
+testAcNum =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 4
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'f__Selenomonadaceae'   }
+    {'g__Megamona'           }
+    {'label_Megamonas4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'f__Selenomonadaceae'   }
+    {'g__Megamona'           }
+    {'label_Megamonas5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas3.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas9.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    0.2667    0.7333    2.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                g__Megamona    g__Selenomonas    prediction    actual
+                                ___________    ______________    __________    ______
+
+    label_Megamonas4.fasta              1        2.2204e-14          1           1   
+    label_Megamonas5.fasta        0.26667           0.73333          2           1   
+    label_Selenomonas3.fasta            0                 1          2           2   
+    label_Selenomonas9.fasta            0                 1          2           2   
+
+
+testAcNum =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 4
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                }
+    {'home'                  }
+    {'w328li'                }
+    {'MLDSP'                 }
+    {'samples'               }
+    {'f__Selenomonadaceae'   }
+    {'g__Megamona'           }
+    {'label_Megamonas1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas1.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas5.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas6.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  4x4 table
+
+                                g__Megamona    g__Selenomonas    prediction    actual
+                                ___________    ______________    __________    ______
+
+    label_Megamonas1.fasta           1           2.2204e-14          1           1   
+    label_Selenomonas1.fasta         0                    1          2           2   
+    label_Selenomonas5.fasta         0                    1          2           2   
+    label_Selenomonas6.fasta         0                    1          2           2   
+
+
+testAcNum =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Column 4
+
+    {'/home/w328li/M...'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas0.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                   }
+    {'home'                     }
+    {'w328li'                   }
+    {'MLDSP'                    }
+    {'samples'                  }
+    {'f__Selenomonadaceae'      }
+    {'g__Selenomonas'           }
+    {'label_Selenomonas11.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas4.fasta'}
+
+
+splitAcNum =
+
+  8x1 cell array
+
+    {0x0 char                  }
+    {'home'                    }
+    {'w328li'                  }
+    {'MLDSP'                   }
+    {'samples'                 }
+    {'f__Selenomonadaceae'     }
+    {'g__Selenomonas'          }
+    {'label_Selenomonas7.fasta'}
+
+training QSVM
+classifying using QSVM
+
+score3Matrix =
+
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+
+
+T3 =
+
+  4x4 table
+
+                                 g__Megamona    g__Selenomonas    prediction    actual
+                                 ___________    ______________    __________    ______
+
+    label_Selenomonas0.fasta          0               1               2           2   
+    label_Selenomonas11.fasta         0               1               2           2   
+    label_Selenomonas4.fasta          0               1               2           2   
+    label_Selenomonas7.fasta          0               1               2           2   
+
+confusion matrix for 1 is:
+     4     2
+     0    13
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [89.5000]    [89.5000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      89.5  
+    {'AvgAccuracy' }      89.5  
+
+Process completed 
+[?1l>

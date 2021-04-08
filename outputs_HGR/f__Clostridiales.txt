@@ -1,0 +1,351 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/f__Clostridiales'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x5 cell array
+
+    {'g__Anaerococcus'}    {'g__Finegoldia'}    {'g__Peptoniphilus'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 15
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    0.9336    0.0100    0.0565    1.0000    1.0000
+    0.9121    0.0178    0.0701    1.0000    1.0000
+    0.9516    0.0299    0.0185    1.0000    1.0000
+    0.9989    0.0011    0.0000    1.0000    1.0000
+    0.9865    0.0019    0.0117    1.0000    1.0000
+    0.9036    0.0180    0.0784    1.0000    1.0000
+    0.5691    0.4265    0.0044    1.0000    1.0000
+    0.0018    0.9536    0.0446    2.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+    0.0209    0.0407    0.9384    3.0000    3.0000
+    0.0000    0.0009    0.9991    3.0000    3.0000
+    0.0000    0.0169    0.9831    3.0000    3.0000
+    0.0000    0.0061    0.9939    3.0000    3.0000
+    0.0000    0.1069    0.8931    3.0000    3.0000
+    0.0042    0.0195    0.9763    3.0000    3.0000
+
+
+T3 =
+
+  15x5 table
+
+                                   g__Anaerococcus    g__Finegoldia    g__Peptoniphilus    prediction    actual
+                                   _______________    _____________    ________________    __________    ______
+
+    label_GCF_000173355_1.fasta         0.93356         0.0099557           0.056486           1           1   
+    label_GCF_000173355_4.fasta         0.91206          0.017817           0.070122           1           1   
+    label_GCF_000173355_6.fasta         0.95159          0.029869           0.018546           1           1   
+    label_GCF_001487145_0.fasta          0.9989         0.0011001         4.6914e-06           1           1   
+    label_GCF_001487145_1.fasta         0.98646         0.0018514           0.011691           1           1   
+    label_UMGS1364_0.fasta              0.90363          0.018008           0.078361           1           1   
+    label_UMGS343_2.fasta               0.56911           0.42648          0.0044072           1           1   
+    label_20298_3_36_3.fasta          0.0017911           0.95363           0.044584           2           3   
+    label_20298_3_66_2.fasta                  0                 0                  1           3           3   
+    label_GCF_000311865_1.fasta        0.020937          0.040664             0.9384           3           3   
+    label_GCF_000321025_2.fasta      3.8011e-09        0.00092336            0.99908           3           3   
+    label_UMGS44_1.fasta             1.7833e-12          0.016856            0.98314           3           3   
+    label_UMGS45_1.fasta             3.7896e-08         0.0061048             0.9939           3           3   
+    label_UMGS62_2.fasta             2.6236e-14           0.10687            0.89313           3           3   
+    label_UMGS62_4.fasta              0.0042286          0.019495            0.97628           3           3   
+
+
+testAcNum =
+
+  1x16 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 16
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    0.8976    0.0310    0.0714    1.0000    1.0000
+    0.9535    0.0385    0.0081    1.0000    1.0000
+    0.9599    0.0191    0.0210    1.0000    1.0000
+    0.9296    0.0499    0.0205    1.0000    1.0000
+    0.9625    0.0007    0.0369    1.0000    1.0000
+    0.0005    0.7018    0.2977    2.0000    2.0000
+    0.0005    0.6835    0.3160    2.0000    2.0000
+    0.0000    0.5785    0.4215    2.0000    2.0000
+    0.0000    0.0000    1.0000    3.0000    3.0000
+    0.0000    0.0002    0.9998    3.0000    3.0000
+    0.0040    0.1075    0.8885    3.0000    3.0000
+    0.0019    0.1675    0.8306    3.0000    3.0000
+    0.0000    0.0203    0.9797    3.0000    3.0000
+    0.0000    0.0123    0.9877    3.0000    3.0000
+    0.0000    0.0137    0.9863    3.0000    3.0000
+    0.0000    0.0377    0.9623    3.0000    3.0000
+
+
+T3 =
+
+  16x5 table
+
+                                   g__Anaerococcus    g__Finegoldia    g__Peptoniphilus    prediction    actual
+                                   _______________    _____________    ________________    __________    ______
+
+    label_GCF_000173355_5.fasta         0.89758          0.031013          0.071408            1           1   
+    label_GCF_000321005_2.fasta         0.95346          0.038476         0.0080623            1           1   
+    label_GCF_001182725_1.fasta         0.95991          0.019074          0.021016            1           1   
+    label_UMGS343_3.fasta               0.92956          0.049936          0.020502            1           1   
+    label_UMGS594_4.fasta               0.96247        0.00066292          0.036869            1           1   
+    label_GCF_000154405_0.fasta      0.00052647            0.7018           0.29767            2           2   
+    label_GCF_000154405_3.fasta      0.00048518           0.68354           0.31598            2           2   
+    label_GCF_001407835_0.fasta      4.1011e-09           0.57846           0.42154            2           2   
+    label_20298_3_66_1.fasta         2.2204e-14        1.8636e-10                 1            3           3   
+    label_20298_3_66_6.fasta         2.6086e-10        0.00022214           0.99978            3           3   
+    label_GCF_000311865_0.fasta       0.0039649           0.10755           0.88849            3           3   
+    label_GCF_000311865_2.fasta       0.0019001           0.16745           0.83065            3           3   
+    label_GCF_001517665_1.fasta      1.3148e-08          0.020294           0.97971            3           3   
+    label_GCF_001517665_2.fasta      3.7086e-09          0.012305            0.9877            3           3   
+    label_GCF_001517665_3.fasta      6.6219e-09          0.013678           0.98632            3           3   
+    label_UMGS62_1.fasta             1.7209e-07           0.03769           0.96231            3           3   
+
+
+testAcNum =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 15
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    0.9779    0.0000    0.0221    1.0000    1.0000
+    0.9980    0.0000    0.0020    1.0000    1.0000
+    0.9964    0.0000    0.0036    1.0000    1.0000
+    0.9959    0.0000    0.0041    1.0000    1.0000
+    0.9812    0.0000    0.0188    1.0000    1.0000
+    0.9772    0.0000    0.0228    1.0000    1.0000
+    0.2948    0.2948    0.4104    3.0000    2.0000
+    0.0000    0.9677    0.0323    2.0000    2.0000
+    0.0043    0.0043    0.9913    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+    0.0026    0.0026    0.9948    3.0000    3.0000
+    0.0026    0.0026    0.9947    3.0000    3.0000
+    0.0014    0.0014    0.9972    3.0000    3.0000
+
+
+T3 =
+
+  15x5 table
+
+                                   g__Anaerococcus    g__Finegoldia    g__Peptoniphilus    prediction    actual
+                                   _______________    _____________    ________________    __________    ______
+
+    label_GCF_000173355_0.fasta         0.97789        2.2199e-14          0.022106            1           1   
+    label_GCF_000173355_2.fasta         0.99801        2.2198e-14         0.0019888            1           1   
+    label_UMGS343_0.fasta               0.99637        2.2198e-14         0.0036276            1           1   
+    label_UMGS343_1.fasta               0.99586        2.2198e-14         0.0041443            1           1   
+    label_UMGS594_1.fasta               0.98125        2.2198e-14          0.018752            1           1   
+    label_UMGS594_5.fasta               0.97722        2.2198e-14          0.022784            1           1   
+    label_GCF_000010185_1.fasta         0.29479           0.29479           0.41042            3           2   
+    label_GCF_000154405_1.fasta      2.2199e-14           0.96769          0.032311            2           2   
+    label_20298_3_36_1.fasta          0.0043316         0.0043316           0.99134            3           3   
+    label_20298_3_66_3.fasta                  0                 0                 1            3           3   
+    label_20298_3_66_4.fasta                  0                 0                 1            3           3   
+    label_20298_3_66_8.fasta                  0                 0                 1            3           3   
+    label_UMGS44_2.fasta              0.0026021         0.0026021            0.9948            3           3   
+    label_UMGS62_3.fasta              0.0026486         0.0026486            0.9947            3           3   
+    label_UMGS62_5.fasta              0.0014042         0.0014042           0.99719            3           3   
+
+
+testAcNum =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 15
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    0.9166    0.0149    0.0685    1.0000    1.0000
+    0.9699    0.0219    0.0082    1.0000    1.0000
+    0.9771    0.0140    0.0089    1.0000    1.0000
+    0.9310    0.0299    0.0391    1.0000    1.0000
+    0.9699    0.0221    0.0079    1.0000    1.0000
+    0.3360    0.5552    0.1088    2.0000    2.0000
+    0.0009    0.7430    0.2561    2.0000    2.0000
+    0.0003    0.0795    0.9201    3.0000    3.0000
+    0.0001    0.0735    0.9263    3.0000    3.0000
+    0.0023    0.0419    0.9559    3.0000    3.0000
+    0.1272    0.1278    0.7451    3.0000    3.0000
+    0.0000    0.0384    0.9616    3.0000    3.0000
+    0.0000    0.0214    0.9786    3.0000    3.0000
+    0.0006    0.0083    0.9912    3.0000    3.0000
+    0.0041    0.0024    0.9935    3.0000    3.0000
+
+
+T3 =
+
+  15x5 table
+
+                                   g__Anaerococcus    g__Finegoldia    g__Peptoniphilus    prediction    actual
+                                   _______________    _____________    ________________    __________    ______
+
+    label_GCF_000321005_0.fasta         0.91659          0.014878          0.068535            1           1   
+    label_GCF_000321005_1.fasta          0.9699          0.021895         0.0082066            1           1   
+    label_UMGS594_0.fasta               0.97711          0.013953         0.0089399            1           1   
+    label_UMGS594_2.fasta               0.93096          0.029898          0.039147            1           1   
+    label_UMGS594_3.fasta               0.96995          0.022147         0.0079047            1           1   
+    label_GCF_000010185_0.fasta         0.33597           0.55524           0.10878            2           2   
+    label_GCF_001407835_1.fasta      0.00087951           0.74303           0.25609            2           2   
+    label_20298_3_36_0.fasta         0.00033706          0.079525           0.92014            3           3   
+    label_20298_3_36_4.fasta         0.00014247           0.07353           0.92633            3           3   
+    label_20298_3_36_5.fasta          0.0022639          0.041858           0.95588            3           3   
+    label_GCF_000311865_3.fasta         0.12718           0.12777           0.74505            3           3   
+    label_GCF_001517665_0.fasta      1.8733e-05          0.038408           0.96157            3           3   
+    label_UMGS44_0.fasta             1.4793e-06          0.021444           0.97855            3           3   
+    label_UMGS45_0.fasta             0.00056067         0.0082604           0.99118            3           3   
+    label_UMGS45_4.fasta              0.0041147         0.0023992           0.99349            3           3   
+
+
+testAcNum =
+
+  1x15 cell array
+
+  Columns 1 through 8
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 9 through 15
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    0.9830    0.0167    0.0003    1.0000    1.0000
+    0.9946    0.0026    0.0029    1.0000    1.0000
+    0.9931    0.0012    0.0057    1.0000    1.0000
+    0.7383    0.0013    0.2604    1.0000    1.0000
+    0.0034    0.9903    0.0063    2.0000    2.0000
+    0.0000    0.0029    0.9971    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+    0.3816    0.4249    0.1934    2.0000    3.0000
+    0.0000    0.0000    1.0000    3.0000    3.0000
+    0.0000    0.0004    0.9996    3.0000    3.0000
+    0.0000    0.0000    1.0000    3.0000    3.0000
+    0.0001    0.0001    0.9999    3.0000    3.0000
+    0.0000    0.0006    0.9994    3.0000    3.0000
+    0.0000    0.0000    1.0000    3.0000    3.0000
+    0.0000    0.0125    0.9875    3.0000    3.0000
+
+
+T3 =
+
+  15x5 table
+
+                                   g__Anaerococcus    g__Finegoldia    g__Peptoniphilus    prediction    actual
+                                   _______________    _____________    ________________    __________    ______
+
+    label_GCF_000173355_3.fasta         0.98299          0.016707         0.00030569           1           1   
+    label_GCF_001182725_0.fasta         0.99459         0.0025524          0.0028531           1           1   
+    label_GCF_001182725_2.fasta         0.99308         0.0012021          0.0057161           1           1   
+    label_UMGS1364_1.fasta              0.73829         0.0012567            0.26045           1           1   
+    label_GCF_000154405_2.fasta        0.003422           0.99026          0.0063218           2           2   
+    label_20298_3_36_2.fasta         1.4192e-09         0.0029332            0.99707           3           3   
+    label_20298_3_66_0.fasta                  0                 0                  1           3           3   
+    label_20298_3_66_5.fasta            0.38164           0.42493            0.19342           2           3   
+    label_20298_3_66_7.fasta         2.3524e-13        2.2204e-14                  1           3           3   
+    label_GCF_000321025_0.fasta      1.1829e-08        0.00035921            0.99964           3           3   
+    label_GCF_000321025_1.fasta      5.7813e-08        2.4178e-05            0.99998           3           3   
+    label_UMGS44_3.fasta             5.1997e-05        6.2496e-05            0.99989           3           3   
+    label_UMGS45_2.fasta             1.6887e-07        0.00059461            0.99941           3           3   
+    label_UMGS45_3.fasta             2.7345e-05        5.1636e-06            0.99997           3           3   
+    label_UMGS62_0.fasta              6.413e-06          0.012452            0.98754           3           3   
+
+confusion matrix for 1 is:
+    27     0     0
+     0     7     1
+     0     2    39
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [96.1000]    [96.1000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      96.1  
+    {'AvgAccuracy' }      96.1  
+
+Process completed 
+[?1l>

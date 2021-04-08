@@ -1,0 +1,104 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/c__Gammaproteobacteria'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/hgr_mags/c__Gammaproteobacteria'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/home/w328li/MLDSP/samples/hgr_mags/c__Gammaproteobacteria
+numTestSeq is: 8
+2
+2
+2
+2
+1
+2
+2
+2
+
+clusterNames =
+
+  1x3 cell array
+
+    {'1-o__Aeromonadales'}    {'o__Enterobacter...'}    {'o__Pseudomonadales'}
+
+
+clusterNames =
+
+  1x3 cell array
+
+    {'1-o__Aeromonadales'}    {'2-o__Enterobact...'}    {'o__Pseudomonadales'}
+
+
+clusterNames =
+
+  1x3 cell array
+
+    {'1-o__Aeromonadales'}    {'2-o__Enterobact...'}    {'3-o__Pseudomona...'}
+
+    '1-o__Aeromonadales'    '2-o__Enterobacter...'    '3-o__Pseudomonadales'
+
+
+header =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-o__Aeromonad...'}    {'2-o__Enterobac...'}    {'3-o__Pseudomon...'}
+
+  Column 4
+
+    {'prediction'}
+
+
+T3 =
+
+  8x4 table
+
+                            1-o__Aeromonadales    2-o__Enterobacteriales    3-o__Pseudomonadales    prediction
+                            __________________    ______________________    ____________________    __________
+
+    even_MAG-GUT1861.fa           0.035205                0.96478                1.5344e-05             2     
+    even_MAG-GUT3427.fa           0.036845                0.96314                1.5479e-05             2     
+    even_MAG-GUT3435.fa           0.035724                0.96426                1.9581e-05             2     
+    even_MAG-GUT43440.fa        7.8696e-12                0.99612                 0.0038757             2     
+    even_MAG-GUT8151.fa            0.99803              0.0018819                9.2079e-05             1     
+    even_MAG-GUT91566.fa           0.04812                 0.9518                 8.344e-05             2     
+    even_MAG-GUT91702.fa        1.1659e-11                 0.9912                 0.0087992             2     
+    even_MAG-GUT91898.fa        4.6643e-12                0.99283                 0.0071709             2     
+
+Process completed 
+[?1l>

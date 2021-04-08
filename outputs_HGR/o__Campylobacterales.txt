@@ -1,0 +1,237 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/o__Campylobacterales'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+    {'f__Campylobacteraceae'}    {'f__Helicobacteraceae'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x7 cell array
+
+    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+    0.2500    0.7500    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  7x4 table
+
+                                  f__Campylobacteraceae    f__Helicobacteraceae    prediction    actual
+                                  _____________________    ____________________    __________    ______
+
+    label_Campylobacter3.fasta               1                  2.2204e-14             1           1   
+    label_Helicobacter0.fasta                0                           1             2           2   
+    label_Helicobacter15.fasta            0.25                        0.75             2           2   
+    label_Helicobacter18.fasta               0                           1             2           2   
+    label_Helicobacter22.fasta               0                           1             2           2   
+    label_Helicobacter7.fasta                0                           1             2           2   
+    label_Helicobacter8.fasta                0                           1             2           2   
+
+
+testAcNum =
+
+  1x7 cell array
+
+    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  7x4 table
+
+                                  f__Campylobacteraceae    f__Helicobacteraceae    prediction    actual
+                                  _____________________    ____________________    __________    ______
+
+    label_Campylobacter4.fasta              1                   2.2204e-14             1           1   
+    label_Campylobacter6.fasta              1                   2.2204e-14             1           1   
+    label_Campylobacter7.fasta              1                   2.2204e-14             1           1   
+    label_Helicobacter17.fasta              0                            1             2           2   
+    label_Helicobacter19.fasta              0                            1             2           2   
+    label_Helicobacter20.fasta              0                            1             2           2   
+    label_Helicobacter23.fasta              0                            1             2           2   
+
+
+testAcNum =
+
+  1x7 cell array
+
+    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    0.2143    0.7857    2.0000    1.0000
+    0.2143    0.7857    2.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  7x4 table
+
+                                  f__Campylobacteraceae    f__Helicobacteraceae    prediction    actual
+                                  _____________________    ____________________    __________    ______
+
+    label_Campylobacter0.fasta           0.21429                 0.78571               2           1   
+    label_Campylobacter1.fasta           0.21429                 0.78571               2           1   
+    label_Helicobacter10.fasta                 0                       1               2           2   
+    label_Helicobacter12.fasta                 0                       1               2           2   
+    label_Helicobacter2.fasta                  0                       1               2           2   
+    label_Helicobacter25.fasta                 0                       1               2           2   
+    label_Helicobacter9.fasta                  0                       1               2           2   
+
+
+testAcNum =
+
+  1x7 cell array
+
+    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  7x4 table
+
+                                  f__Campylobacteraceae    f__Helicobacteraceae    prediction    actual
+                                  _____________________    ____________________    __________    ______
+
+    label_Campylobacter5.fasta              1                   2.2204e-14             1           1   
+    label_Helicobacter1.fasta               0                            1             2           2   
+    label_Helicobacter11.fasta              0                            1             2           2   
+    label_Helicobacter14.fasta              0                            1             2           2   
+    label_Helicobacter24.fasta              0                            1             2           2   
+    label_Helicobacter3.fasta               0                            1             2           2   
+    label_Helicobacter5.fasta               0                            1             2           2   
+
+
+testAcNum =
+
+  1x7 cell array
+
+    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}    {'/home/w328li/MLDSP...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  7x4 table
+
+                                  f__Campylobacteraceae    f__Helicobacteraceae    prediction    actual
+                                  _____________________    ____________________    __________    ______
+
+    label_Campylobacter2.fasta              1                   2.2204e-14             1           1   
+    label_Helicobacter13.fasta              0                            1             2           2   
+    label_Helicobacter16.fasta              0                            1             2           2   
+    label_Helicobacter21.fasta              0                            1             2           2   
+    label_Helicobacter26.fasta              0                            1             2           2   
+    label_Helicobacter4.fasta               0                            1             2           2   
+    label_Helicobacter6.fasta               0                            1             2           2   
+
+confusion matrix for 1 is:
+     6     2
+     0    27
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [94.3000]    [94.3000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      94.3  
+    {'AvgAccuracy' }      94.3  
+
+Process completed 
+[?1l>
