@@ -58,8 +58,8 @@ echo "INFO:done cp ${src1} ${dest1}"
 
 python3 preprocess_train_to_pr.py ${dest1}
 echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-python3 run_precision_recall_b_taxon.py ${dest1}
-echo "INFO:done run_precision_recall_b_taxon.py ${dest1}"
+python3 precision_recall.py ${dest1}
+echo "INFO:done python3 precision_recall.py ${dest1}"
 
 src2="/home/w328li/MLDSP/outputs/test-$1.xlsx"
 dest2="/home/w328li/BlindKameris-new/outputs/$1.xlsx"

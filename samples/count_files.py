@@ -18,5 +18,5 @@ for dir in os.listdir(base_path+'/'+folder):
         for fasta in fasta_sequences:
             _, sequence = fasta.id, str(fasta.seq)
             total_len += len(sequence)
-    print(dir+":", file_num, "and total length:", total_len, "bp")
+    print(dir+":", file_num, "files", "and total length:", total_len, "bp")
 print("total number:", total)
