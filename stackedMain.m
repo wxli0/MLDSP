@@ -9,7 +9,7 @@ function [] = stackedMain(dataSet, testSet)
 
     basePath = '/home/w328li/MLDSP/samples/';
     if isunix & ismac
-        basePath = '/Users/wanxinli/Desktop/project/MLDSP-desktop/samples/';
+        basePath = '/mnt/sda/MLDSP-samples-r202/';
     end
     dataSetPath = strcat(basePath, dataSet)
     testSetPath = strcat(basePath, testSet)

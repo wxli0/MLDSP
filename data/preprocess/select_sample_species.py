@@ -37,11 +37,12 @@ if not outdir:
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/"
-outdir_full = base_path+"samples/"+outdir
+download_path = '/mnt/sda/MLDSP-samples-r202/'
+outdir_full = download_path+outdir
 print("outdir_full is:", outdir_full)
 ssl._create_default_https_context = ssl._create_unverified_context
 
-cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters.tsv", sep='\t', header = 0, index_col = None)
+cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
 cluster_tsv = cluster_tsv[['GTDB_species','Clustered_genomes']].set_index('GTDB_species')
 
 for cluster_name in cluster_names:

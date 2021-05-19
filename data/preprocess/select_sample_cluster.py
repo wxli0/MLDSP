@@ -38,7 +38,8 @@ if not outdir:
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/"
-outdir_full = base_path+"samples/"+outdir
+download_path = '/mnt/sda/MLDSP-samples-r202/'
+outdir_full = download_path+outdir
 ssl._create_default_https_context = ssl._create_unverified_context
 
 indices = {"domain":0, "phylum":1, "class":2, "order":3, "family":4, "genus":5}
@@ -48,7 +49,7 @@ index_names = {"domain": 'd__', 'phylum':'p__','class':'c__','order':'o__',"fami
 index = indices[tax_name]
 next_tax_name = next_taxs[tax_name]
 
-cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters.tsv", sep='\t', header = 0, index_col = None)
+cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
 cluster_tsv = cluster_tsv[['Representative_genome', 'GTDB_taxonomy', 'GTDB_species']]
 
 def get_target_col(tax_text):

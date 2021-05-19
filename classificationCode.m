@@ -62,7 +62,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode( disMat,alabe
         score3Matrix = [score3, plabel3, alabels(testInd)]    
  
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
-        writetable(T3, strcat("outputs/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('quadratic-svm-score', num2str(i)));  
+        writetable(T3, strcat("outputs-r202/train-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', strcat('quadratic-svm-score', num2str(i)));  
 
 
 
