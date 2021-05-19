@@ -79,7 +79,6 @@ for cluster_name in cluster_names:
     print(cluster_tsv_cur)
 
     selected_genomes = []
-    outdir_full = base_path+"samples/"+outdir
     if not os.path.exists(outdir_full):
         os.makedirs(outdir_full)
     real_sample_size = sample_size

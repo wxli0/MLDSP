@@ -57,7 +57,6 @@ for cluster_name in cluster_names:
 
     selected_genomes = random.sample(all_genome_ids, real_sample_size)
 
-    outdir_full = base_path+"samples/"+outdir
     cluster_dir_full = outdir_full+'/'+cluster_name
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
