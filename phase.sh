@@ -4,21 +4,21 @@ ver='r202'
 base_dir="/mnt/sda/MLDSP-samples-${ver}/"
 sample_dir="${base_dir}$1"
 dir="data/preprocess"
-json_path="non_clade_exclusion/$1.json"
+json_path="non-clade-exclusion-${ver}/$1.json"
 if [ ! -d ${sample_dir} ]; then
-    python3 run_select_sample.py $1
-    echo "INFO:done python3 run_select_sample.py $1"
+    python3 run_select_sample.py $1 $ver
+    echo "INFO:done python3 run_select_sample.py $1 $ver"
     cd $dir
     if [[ $1 == g__* ]]; then
-        python3 select_sample_species.py $json_path
-        echo "INFO:python3 select_sample_species.py $json_path"
+        python3 select_sample_species.py $json_path $ver
+        echo "INFO:python3 select_sample_species.py $json_pat $ver"
     else
-        python3 select_sample_cluster.py $json_path
-        echo "INFO:python3 select_sample_cluster.py $json_path"
+        python3 select_sample_cluster.py $json_path $ver
+        echo "INFO:python3 select_sample_cluster.py $json_path $ver"
     fi
     cd ../..
 else
-    echo "INFO:skip python3 run_select_sample.py $1"
+    echo "INFO:skip python3 run_select_sample.py $1 $ver"
 fi
 
 final_num=10

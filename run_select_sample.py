@@ -5,6 +5,7 @@ import platform
 import json 
 
 taxon = sys.argv[1]
+ver = sys.argv[2]
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/"
@@ -51,6 +52,6 @@ sample_dict = {
 
 
 
-sample_dict_path = base_path+'data/preprocess/non_clade_exclusion/'+taxon+".json"
+sample_dict_path = base_path+'data/preprocess/non-clade-exclusion-'+ver+'/'+taxon+".json"
 with open(sample_dict_path, 'w') as json_file:
     json.dump(sample_dict, json_file)

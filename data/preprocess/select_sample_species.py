@@ -37,7 +37,8 @@ if not outdir:
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/"
-download_path = '/mnt/sda/MLDSP-samples-r202/'
+ver=sys.argv[2]
+download_path = '/mnt/sda/MLDSP-samples-'+ver+'/'
 outdir_full = download_path+outdir
 print("outdir_full is:", outdir_full)
 ssl._create_default_https_context = ssl._create_unverified_context
