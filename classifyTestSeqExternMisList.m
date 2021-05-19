@@ -1,4 +1,4 @@
-function [pMat,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, disMat,alabels,SeqTest,lg,clusterNames,kVal,clusterStart, dataSet)
+function [pMat,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, disMat,alabels,SeqTest,lg,clusterNames,kVal,clusterStart, dataSet, ver_gtdb)
     numTestSeq = length(SeqTest);
     nSeq = cell(1,numTestSeq);
     fVec = cell(1,numTestSeq);
@@ -86,7 +86,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(AcNmbTest,Fnm, disMat,alab
 
     T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
 
-    writetable(T3, strcat("outputs-r202/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
+    writetable(T3, strcat("outputs-", ver_gtdb, "/test-", dataSet, ".xlsx"), 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
 
 end
 

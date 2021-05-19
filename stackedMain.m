@@ -7,10 +7,10 @@ function [] = stackedMain(dataSet, testSet)
         testSet=''
     end
 
-    basePath = '/home/w328li/MLDSP/samples/';
-    if isunix & ismac
-        basePath = '/mnt/sda/MLDSP-samples-r202/';
-    end
+    ver_gtdb = 'r202';
+
+    basePath = strcat('/mnt/sda/MLDSP-samples-', ver_gtdb, "/");
+
     dataSetPath = strcat(basePath, dataSet)
     testSetPath = strcat(basePath, testSet)
     kVal = 7; 
@@ -87,7 +87,7 @@ function [] = stackedMain(dataSet, testSet)
         folds = totalSeq;
     end
     if (strcmp(testSet, ''))
-        [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat,alabels, folds, totalSeq, AcNmb, clusterNames, dataSet);
+        [accuracy, avg_accuracy, clNames, cMat] = classificationCode(disMat, alabels, folds, totalSeq, AcNmb, clusterNames, dataSet, ver_gtdb);
         acc = [accuracy avg_accuracy];
         s.ClassifierModel=cellstr(clNames.');
         s.Accuracy=cell2mat(acc).';
@@ -100,7 +100,7 @@ function [] = stackedMain(dataSet, testSet)
     if (~strcmp(testSet,''))
         minSeqLen = 0
         maxSeqLen = 0
-        [mList3]=testingExternMisList(testSetPath,disMat,alabels,lg,clusterNames,kVal, maxClusSize, clusterStart, dataSet, minSeqLen,maxSeqLen);
+        [mList3]=testingExternMisList(testSetPath,disMat,alabels,lg,clusterNames,kVal, maxClusSize, clusterStart, dataSet, minSeqLen,maxSeqLen, ver_gtdb);
     end
 
 

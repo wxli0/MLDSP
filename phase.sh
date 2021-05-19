@@ -1,6 +1,7 @@
 #!/bin/bash
 
-base_dir="/mnt/sda/MLDSP-samples-r202/"
+ver='r202'
+base_dir="/mnt/sda/MLDSP-samples-${ver}/"
 sample_dir="${base_dir}$1"
 dir="data/preprocess"
 json_path="non_clade_exclusion/$1.json"
@@ -29,18 +30,18 @@ python3 samples/delete_extra_files.py ${sample_dir} $final_num
 echo "samples/delete_extra_files.py ${sample_dir} $final_num"
 
 
-prog_output1="outputs-r202/train-$1.xlsx"
+prog_output1="outputs-${ver}/train-$1.xlsx"
 if [ ! -f ${prog_output1} ]; then
-    output1="outputs-r202/$1.txt"
+    output1="outputs-${ver}/$1.txt"
     matlab -r "run addme;stackedMain('$1');exit"|tee ${output1}
     echo "INFO:done stackedMain('$1')"
 else
     echo "INFO:skip stackedMain('$1')"
 fi
 
-prog_output2="outputs-r202/test-$1.xlsx"
+prog_output2="outputs-${ver}/test-$1.xlsx"
 if [ ! -f ${prog_output2} ]; then
-    output2="outputs-r202/$1_classify.txt"
+    output2="outputs-${ver}/$1_classify.txt"
     matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
     echo "INFO:done stackedMain('$1', 'rumen_mags/$1')"
 else
@@ -51,8 +52,8 @@ dir="/home/w328li/BlindKameris-new/"
 cd ${dir}
 echo "INFO: done cd ${dir}"
 
-src1="/home/w328li/MLDSP/outputs-r202/train-$1.xlsx"
-dest1="outputs-r202/$1_train.xlsx"
+src1="/home/w328li/MLDSP/outputs-${ver}/train-$1.xlsx"
+dest1="outputs-${ver}/$1_train.xlsx"
 cp ${src1} ${dest1}
 echo "INFO:done cp ${src1} ${dest1}"
 
@@ -62,13 +63,13 @@ echo "INFO:done preprocess_train_to_pr.py ${dest1}"
 python3 precision_recall.py ${dest1}
 echo "INFO:done python3 precision_recall.py ${dest1}"
 
-src2="/home/w328li/MLDSP/outputs-r202/test-$1.xlsx"
-dest2="/home/w328li/BlindKameris-new/outputs-r202/$1.xlsx"
+src2="/home/w328li/MLDSP/outputs-${ver}/test-$1.xlsx"
+dest2="/home/w328li/BlindKameris-new/outputs-${ver}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
-output3="outputs-r202/$1.xlsx"
-rej="rejection-threshold-r202/$1.json"
+output3="outputs-${ver}/$1.xlsx"
+rej="rejection-threshold-${ver}/$1.json"
 python3 preprocess_test.py ${output3} ${rej}
 echo "INFO:done preprocess_test.py ${output3} ${rej}"
 
