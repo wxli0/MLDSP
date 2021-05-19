@@ -58,7 +58,9 @@ for cluster_name in cluster_names:
     selected_genomes = random.sample(all_genome_ids, real_sample_size)
 
     cluster_dir_full = outdir_full+'/'+cluster_name
+    print("cluster_dir_full is:", cluster_dir_full)
     if not os.path.exists(cluster_dir_full):
+        print("enter here")
         os.makedirs(cluster_dir_full)
     download_genomes(selected_genomes, cluster_dir_full, lower, \
         upper, use_const_len, const_len, frags_num, alter, rep_time=rep_time)
