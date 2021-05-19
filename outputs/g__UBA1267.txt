@@ -1,0 +1,365 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath =
+
+    '/home/w328li/MLDSP/samples/g__UBA1267'
+
+
+testSetPath =
+
+    '/home/w328li/MLDSP/samples/'
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'s__UBA1267 sp0...'}    {'s__UBA1267 sp0...'}    {'s__UBA1267 sp0...'}
+
+  Columns 4 through 5
+
+    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 12
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     0     1     0     2     2
+     0     1     0     2     2
+     0     0     1     3     3
+     0     0     1     3     3
+     0     0     1     3     3
+     0     0     1     3     3
+
+
+T3 =
+
+  12x5 table
+
+                                   s__UBA1267 sp002308115    s__UBA1267 sp002315255    s__UBA1267 sp002315555    prediction    actual
+                                   ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002308115.1_1.fasta               1                         0                         0                   1           1   
+    GB_GCA_002308115.1_12.fasta              1                         0                         0                   1           1   
+    GB_GCA_002308115.1_14.fasta              1                         0                         0                   1           1   
+    GB_GCA_002308115.1_19.fasta              1                         0                         0                   1           1   
+    GB_GCA_002308115.1_2.fasta               1                         0                         0                   1           1   
+    GB_GCA_002308115.1_3.fasta               1                         0                         0                   1           1   
+    GB_GCA_002315255.1_17.fasta              0                         1                         0                   2           2   
+    GB_GCA_002315255.1_4.fasta               0                         1                         0                   2           2   
+    GB_GCA_002315555.1_0.fasta               0                         0                         1                   3           3   
+    GB_GCA_002315555.1_13.fasta              0                         0                         1                   3           3   
+    GB_GCA_002315555.1_6.fasta               0                         0                         1                   3           3   
+    GB_GCA_002315555.1_8.fasta               0                         0                         1                   3           3   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 12
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     0     1     0     2     2
+     0     1     0     2     2
+     0     1     0     2     2
+     0     1     0     2     2
+     0     1     0     2     2
+     0     0     1     3     3
+     0     0     1     3     3
+     0     0     1     3     3
+
+
+T3 =
+
+  12x5 table
+
+                                   s__UBA1267 sp002308115    s__UBA1267 sp002315255    s__UBA1267 sp002315555    prediction    actual
+                                   ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002308115.1_13.fasta              1                         0                         0                   1           1   
+    GB_GCA_002308115.1_16.fasta              1                         0                         0                   1           1   
+    GB_GCA_002308115.1_17.fasta              1                         0                         0                   1           1   
+    GB_GCA_002308115.1_4.fasta               1                         0                         0                   1           1   
+    GB_GCA_002315255.1_10.fasta              0                         1                         0                   2           2   
+    GB_GCA_002315255.1_13.fasta              0                         1                         0                   2           2   
+    GB_GCA_002315255.1_14.fasta              0                         1                         0                   2           2   
+    GB_GCA_002315255.1_3.fasta               0                         1                         0                   2           2   
+    GB_GCA_002315255.1_7.fasta               0                         1                         0                   2           2   
+    GB_GCA_002315555.1_1.fasta               0                         0                         1                   3           3   
+    GB_GCA_002315555.1_14.fasta              0                         0                         1                   3           3   
+    GB_GCA_002315555.1_15.fasta              0                         0                         1                   3           3   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 12
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000         0         0    1.0000    1.0000
+    1.0000         0         0    1.0000    1.0000
+    1.0000         0         0    1.0000    1.0000
+    1.0000         0         0    1.0000    1.0000
+    0.2418    0.5165    0.2418    2.0000    2.0000
+    0.2418    0.5165    0.2418    2.0000    2.0000
+         0    1.0000         0    2.0000    2.0000
+         0    1.0000         0    2.0000    2.0000
+         0    1.0000         0    2.0000    2.0000
+         0         0    1.0000    3.0000    3.0000
+    0.2288    0.2288    0.5424    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+
+
+T3 =
+
+  12x5 table
+
+                                   s__UBA1267 sp002308115    s__UBA1267 sp002315255    s__UBA1267 sp002315555    prediction    actual
+                                   ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002308115.1_0.fasta                  1                         0                         0                1           1   
+    GB_GCA_002308115.1_10.fasta                 1                         0                         0                1           1   
+    GB_GCA_002308115.1_6.fasta                  1                         0                         0                1           1   
+    GB_GCA_002308115.1_9.fasta                  1                         0                         0                1           1   
+    GB_GCA_002315255.1_1.fasta            0.24176                   0.51648                   0.24176                2           2   
+    GB_GCA_002315255.1_11.fasta           0.24176                   0.51648                   0.24176                2           2   
+    GB_GCA_002315255.1_5.fasta                  0                         1                         0                2           2   
+    GB_GCA_002315255.1_6.fasta                  0                         1                         0                2           2   
+    GB_GCA_002315255.1_9.fasta                  0                         1                         0                2           2   
+    GB_GCA_002315555.1_17.fasta                 0                         0                         1                3           3   
+    GB_GCA_002315555.1_7.fasta            0.22878                   0.22878                   0.54243                3           3   
+    GB_GCA_002315555.1_9.fasta                  0                         0                         1                3           3   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 12
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     1     0     0     1     1
+     0     1     0     2     2
+     0     1     0     2     2
+     0     1     0     2     2
+     0     1     0     2     2
+     0     0     1     3     3
+     0     0     1     3     3
+     0     0     1     3     3
+     0     0     1     3     3
+
+
+T3 =
+
+  12x5 table
+
+                                   s__UBA1267 sp002308115    s__UBA1267 sp002315255    s__UBA1267 sp002315555    prediction    actual
+                                   ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002308115.1_15.fasta              1                         0                         0                   1           1   
+    GB_GCA_002308115.1_5.fasta               1                         0                         0                   1           1   
+    GB_GCA_002308115.1_7.fasta               1                         0                         0                   1           1   
+    GB_GCA_002308115.1_8.fasta               1                         0                         0                   1           1   
+    GB_GCA_002315255.1_0.fasta               0                         1                         0                   2           2   
+    GB_GCA_002315255.1_15.fasta              0                         1                         0                   2           2   
+    GB_GCA_002315255.1_18.fasta              0                         1                         0                   2           2   
+    GB_GCA_002315255.1_19.fasta              0                         1                         0                   2           2   
+    GB_GCA_002315555.1_10.fasta              0                         0                         1                   3           3   
+    GB_GCA_002315555.1_16.fasta              0                         0                         1                   3           3   
+    GB_GCA_002315555.1_19.fasta              0                         0                         1                   3           3   
+    GB_GCA_002315555.1_4.fasta               0                         0                         1                   3           3   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 4 through 6
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 7 through 9
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+  Columns 10 through 12
+
+    {'/home/w328li/M...'}    {'/home/w328li/M...'}    {'/home/w328li/M...'}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    0.5418    0.0000    0.4582    1.0000    1.0000
+    1.0000         0         0    1.0000    1.0000
+         0    1.0000         0    2.0000    2.0000
+         0    1.0000         0    2.0000    2.0000
+    0.2353    0.5294    0.2353    2.0000    2.0000
+         0    1.0000         0    2.0000    2.0000
+         0         0    1.0000    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+         0         0    1.0000    3.0000    3.0000
+
+
+T3 =
+
+  12x5 table
+
+                                   s__UBA1267 sp002308115    s__UBA1267 sp002315255    s__UBA1267 sp002315555    prediction    actual
+                                   ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002308115.1_11.fasta           0.54184                  2.501e-13                  0.45816                1           1   
+    GB_GCA_002308115.1_18.fasta                 1                          0                        0                1           1   
+    GB_GCA_002315255.1_12.fasta                 0                          1                        0                2           2   
+    GB_GCA_002315255.1_16.fasta                 0                          1                        0                2           2   
+    GB_GCA_002315255.1_2.fasta            0.23529                    0.52941                  0.23529                2           2   
+    GB_GCA_002315255.1_8.fasta                  0                          1                        0                2           2   
+    GB_GCA_002315555.1_11.fasta                 0                          0                        1                3           3   
+    GB_GCA_002315555.1_12.fasta                 0                          0                        1                3           3   
+    GB_GCA_002315555.1_18.fasta                 0                          0                        1                3           3   
+    GB_GCA_002315555.1_2.fasta                  0                          0                        1                3           3   
+    GB_GCA_002315555.1_3.fasta                  0                          0                        1                3           3   
+    GB_GCA_002315555.1_5.fasta                  0                          0                        1                3           3   
+
+confusion matrix for 1 is:
+    20     0     0
+     0    20     0
+     0     0    20
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [100]    [100]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      100   
+    {'AvgAccuracy' }      100   
+
+Process completed 
+[?1l>
