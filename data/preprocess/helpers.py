@@ -78,6 +78,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
                 os.remove(dest)
 
                 if not full:
+                    print("enter not full")
                     fasta_sequences = SeqIO.parse(open(fna_path),'fasta') 
                     max_len = 0
                     max_seq = ''
@@ -98,6 +99,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
                             continue
                         max_len += len(sequence_real)
                         max_seq += ('O'+ sequence)
+                    print("complete concate sequences")
                     if not use_const_len: # use variable length in [lower, upper]
                         if max_len < lower:
                             os.remove(fna_path)
