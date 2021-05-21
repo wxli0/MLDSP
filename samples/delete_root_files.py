@@ -5,11 +5,11 @@ import numpy as np
 dir = sys.argv[1]
 ver = sys.argv[2]
 if dir == 'root':
-    bac_files = os.listdir('/mnt/sda/MLSDP-samples-'+ver+'/root/bacteria')
+    bac_files = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Bacteria')
     delete_bac = np.random.choice(bac_files, int(len(bac_files)*0.9))
-    arc_files = os.listdir('/mnt/sda/MLSDP-samples-'+ver+'/root/archaea')
+    arc_files = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Archaea')
     delete_arc = np.random.choice(arc_files, int(len(arc_files)*0.9))
     for file in delete_bac:
-        os.remove('/mnt/sda/MLSDP-samples-'+ver+'/root/bacteria/'+file)
+        os.remove('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Bacteria/'+file)
     for file in delete_arc:
-        os.remove('/mnt/sda/MLSDP-samples-'+ver+'/root/archaea/'+file)
+        os.remove('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Archaea/'+file)
