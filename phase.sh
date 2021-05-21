@@ -32,8 +32,8 @@ if [[ $1 == g__* ]] || [[ $1 == f__* ]]; then
 fi
 
 if [ $1 == 'root' ]; then
-    python3 samples/delete_root_files $1 $ver
-    echo "python3 samples/delete_root_files $1 $ver"
+    python3 samples/delete_root_files.py $1 $ver
+    echo "python3 samples/delete_root_files.py $1 $ver"
 fi
 
 prog_output1="outputs-${ver}/train-$1.xlsx"
