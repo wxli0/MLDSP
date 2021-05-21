@@ -28,9 +28,8 @@ echo "INFO:done python3 samples/delete_small_cluster.py ${sample_dir} $final_num
 final_num=30
 if [[ $1 == g__* ]] || [[ $1 == f__* ]]; then 
     python3 samples/delete_extra_files.py ${sample_dir} $final_num
-    echo "samples/delete_extra_files.py ${sample_dir} $final_num
+    echo "samples/delete_extra_files.py ${sample_dir} $final_num"
 fi
-
 
 prog_output1="outputs-${ver}/train-$1.xlsx"
 if [ ! -f ${prog_output1} ]; then
