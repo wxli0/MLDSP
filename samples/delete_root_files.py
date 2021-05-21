@@ -8,7 +8,6 @@ if dir == 'root':
     bac_files = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Bacteria')
     delete_bac = np.random.choice(bac_files, int(len(bac_files)*0.9), replace=False)
     for file in delete_bac:
-        print(file)
         os.remove('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Bacteria/'+file)
 
     arc_files = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Archaea')
