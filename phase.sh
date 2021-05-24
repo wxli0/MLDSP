@@ -27,13 +27,13 @@ echo "INFO:done python3 samples/delete_small_cluster.py ${sample_dir} $final_num
 
 final_num=30
 if [[ $1 == g__* ]] || [[ $1 == f__* ]]; then 
-    python3 samples/prune_large_clusters.py ${sample_dir} $final_num
-    echo "samples/prune_large_clusters.py ${sample_dir} $final_num"
+    python3 samples/delete_extra_files.py ${sample_dir} $final_num
+    echo "samples/delete_extra_files.py ${sample_dir} $final_num"
 fi
 
 if [ $1 == 'root' ] || [ $1 == 'd__Archaea' ]; then
-    python3 samples/delete_root_files.py $1 $ver
-    echo "python3 samples/delete_root_files.py $1 $ver"
+    python3 samples/prune_large_clusters.py $1 $ver
+    echo "python3 samples/prune_large_clusters.py $1 $ver"
 fi
 
 prog_output1="outputs-${ver}/train-$1.xlsx"
