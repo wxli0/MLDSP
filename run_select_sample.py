@@ -10,7 +10,7 @@ base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/"
 
-taxon_path = base_path+"data/DS_10283_3009/taxon.csv"
+taxon_path = base_path+"data/preprocess/taxon-"+ver+".csv"
 
 rank_names = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 rank = ''
