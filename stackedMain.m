@@ -23,7 +23,7 @@ function [] = stackedMain(dataSet, testSet)
     AcNmb = Fnm;
     totalSeq = length(Seq);
 
-    % construct single-stranded cgr
+    % construct double-stranded cgr
     fprintf('Generating CGRs.... \n');
     allCGR = cell(1,totalSeq);
     for i=1:totalSeq

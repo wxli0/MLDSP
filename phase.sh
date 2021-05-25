@@ -31,7 +31,8 @@ if [[ $1 == g__* ]] || [[ $1 == f__* ]]; then
     echo "samples/delete_extra_files.py ${sample_dir} $final_num"
 fi
 
-if [ $1 == 'root' ] || [[ $1 == d__* ]]; then
+if [ $1 == 'root' ] || [[ $1 == d__* ]] || \
+[[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'p__Bacteroidota' ]]; then
     python3 samples/prune_large_clusters.py $1 $ver
     echo "python3 samples/prune_large_clusters.py $1 $ver"
 fi

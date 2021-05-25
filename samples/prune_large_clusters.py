@@ -14,7 +14,7 @@ if dir == 'root':
     delete_arc = np.random.choice(arc_files, int(len(arc_files)*0.9), replace=False)
     for file in delete_arc:
         os.remove('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Archaea/'+file)
-if dir.startswith('d__'):
+if dir.startswith('d__') or dir == 'p__Actinobacteriota' or dir == 'p__Bacteroidota':
     arc_dirs = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/'+dir)
     for d in arc_dirs:
         all_files = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/'+dir+'/'+d)
