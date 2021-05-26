@@ -26,7 +26,7 @@ function [] = stackedMain(dataSet, testSet)
     % construct double-stranded cgr
     fprintf('Generating CGRs.... \n');
     allCGR = cell(1,totalSeq);
-    for i=1:totalSeq
+    parfor i=1:totalSeq
         ss = Seq{i};
         tCGR=zeros(2^kVal);
         for j=1:length(ss)
