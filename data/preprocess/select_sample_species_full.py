@@ -35,10 +35,11 @@ if not outdir:
         outdir +="_"+id
 
 base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
+ver=sys.argv[2]
 if platform.platform()[:5] == 'Linux':
     base_path = "/home/w328li/MLDSP/"
-outdir_full = base_path+"samples/"+outdir
-print("outdir_full is:", outdir_full)
+download_path = '/mnt/sda/MLDSP-samples-'+ver+'/'
+outdir_full = download_path+outdir
 ssl._create_default_https_context = ssl._create_unverified_context
 
 cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
@@ -55,7 +56,6 @@ for cluster_name in cluster_names:
 
     selected_genomes = random.sample(all_genome_ids, real_sample_size)
 
-    outdir_full = base_path+"samples/"+outdir
     cluster_dir_full = outdir_full+'/'+cluster_name
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
