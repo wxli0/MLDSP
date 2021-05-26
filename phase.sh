@@ -32,7 +32,8 @@ if [[ $1 == g__* ]] || [[ $1 == f__* ]]; then
 fi
 
 if [ $1 == 'root' ] || [[ $1 == d__* ]] || \
-[[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'p__Bacteroidota' ]]; then
+[[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
+[[ $1 == 'p__Firmicutes_A' ]]; then
     python3 samples/prune_large_clusters.py $1 $ver
     echo "python3 samples/prune_large_clusters.py $1 $ver"
 fi
