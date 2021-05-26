@@ -33,7 +33,9 @@ fi
 
 if [ $1 == 'root' ] || [[ $1 == d__* ]] || \
 [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
-[[ $1 == 'p__Firmicutes_A' ]] || [ $1 == 'p__Cyanobacteria' ]; then
+[[ $1 == 'p__Firmicutes_A' ]] || [ $1 == 'p__Cyanobacteria' ] || \
+[[ $1 == 'c__Actinomycetia' ]] || [[ $1 == 'c__Bacteroidia' ]] || \
+[[ $1 == 'c__Clostridia' ]]; then
     python3 samples/prune_large_clusters.py $1 $ver
     echo "python3 samples/prune_large_clusters.py $1 $ver"
 fi
