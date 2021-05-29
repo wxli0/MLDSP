@@ -15,6 +15,7 @@ if dir == 'root':
     for file in delete_arc:
         os.remove('/mnt/sda/MLDSP-samples-'+ver+'/root/d__Archaea/'+file)
 if dir.startswith('d__') or dir == 'p__Actinobacteriota' or dir == 'p__Bacteroidota' \
+    or dir == 'p__Firmicutes' \
     or dir == 'p__Firmicutes_A' or dir == 'p__Cyanobacteria' or dir == 'c__Actinomycetia' \
         or dir == 'c__Bacteroidia' or dir == 'c__Clostridia':
     arc_dirs = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/'+dir)
