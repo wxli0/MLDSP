@@ -18,7 +18,8 @@ if dir.startswith('d__') or dir == 'p__Actinobacteriota' or dir == 'p__Bacteroid
     or dir == 'p__Firmicutes' \
     or dir == 'p__Firmicutes_A' or dir == 'p__Cyanobacteria' or dir == 'c__Actinomycetia' \
         or dir == 'c__Bacteroidia' or dir == 'c__Clostridia' or dir == 'o__Actinomycetales' \
-            or dir == 'o__Bacteroidales' or dir == 'o__Lachnospirales' or dir == 'c__Bacilli':
+            or dir == 'o__Bacteroidales' or dir == 'o__Lachnospirales' or dir == 'c__Bacilli' \
+                or dir == 'p__Proteobacteria':
     arc_dirs = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/'+dir)
     for d in arc_dirs:
         all_files = os.listdir('/mnt/sda/MLDSP-samples-'+ver+'/'+dir+'/'+d)
