@@ -4,8 +4,8 @@ import pandas as pd
 import shutil
 
 # e.g. python3 make_HGR_training_set Phylum
-true_path = "Table_S1.csv"
-S1 = pd.read_csv(true_path, skiprows=0, header=1)
+true_path = "Table_S1_new.csv"
+S1 = pd.read_csv(true_path, skiprows=0, header=0)
 print(S1)
 
 rank=sys.argv[1]
@@ -45,15 +45,15 @@ print(next_rank_child_dict)
 parent_prefix = rank[0].lower()+"__"
 child_prefix = next_rank[0].lower()+"__"
 for parent, children in parent_child_dict.items():
-    os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome/"+parent_prefix+parent)
+    os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome_r202/"+parent_prefix+parent)
     if len(children) == 0:
         continue
     for child in children:
         pos_genome = next_rank_child_dict[child]
         if len(pos_genome) == 0:
             continue 
-        os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome/"+parent_prefix+parent+"/"+child_prefix+child)
+        os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome_r202/"+parent_prefix+parent+"/"+child_prefix+child)
         for genome in pos_genome:
             if os.path.isfile("/mnt/sda/DeepMicrobes-data/labeled_genome/label_"+genome+".fa"):
                 shutil.copyfile("/mnt/sda/DeepMicrobes-data/labeled_genome/label_"+genome+".fa", \
-                    "/mnt/sda/DeepMicrobes-data/labeled_genome/"+parent_prefix+parent+"/"+child_prefix+child+"/"+"label_"+genome+".fa")
+                    "/mnt/sda/DeepMicrobes-data/labeled_genome_r202/"+parent_prefix+parent+"/"+child_prefix+child+"/"+"label_"+genome+".fa")
