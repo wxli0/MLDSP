@@ -54,6 +54,6 @@ for parent, children in parent_child_dict.items():
             continue 
         os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome_r202/"+parent_prefix+parent+"/"+child_prefix+child)
         for genome in pos_genome:
-            if os.path.isfile("/mnt/sda/DeepMicrobes-data/labeled_genome/label_"+genome+".fa"):
-                shutil.copyfile("/mnt/sda/DeepMicrobes-data/labeled_genome/label_"+genome+".fa", \
-                    "/mnt/sda/DeepMicrobes-data/labeled_genome_r202/"+parent_prefix+parent+"/"+child_prefix+child+"/"+"label_"+genome+".fa")
+            if os.path.isfile("/mnt/sda/DeepMicrobes-data/labeled_genome/"+genome+".fa"):
+                shutil.copyfile("/mnt/sda/DeepMicrobes-data/labeled_genome/"+genome+".fa", \
+                    "/mnt/sda/DeepMicrobes-data/labeled_genome_r202/"+parent_prefix+parent+"/"+child_prefix+child+"/"+genome+".fa")
