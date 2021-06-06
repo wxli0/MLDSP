@@ -47,19 +47,19 @@ fi
 prog_output1="outputs-${ver}/train-$1.xlsx"
 if [ ! -f ${prog_output1} ]; then
     output1="outputs-${ver}/$1.txt"
-    matlab -r "run addme;stackedMain('$1');exit"|tee ${output1}
-    echo "INFO:done stackedMain('$1')"
+    matlab -r "run addme;stackedMain('GTDB', '$1');exit"|tee ${output1}
+    echo "INFO:done stackedMain('GTDB', '$1')"
 else
-    echo "INFO:skip stackedMain('$1')"
+    echo "INFO:skip stackedMain('GTDB', '$1')"
 fi
 
 prog_output2="outputs-${ver}/test-$1.xlsx"
 if [ ! -f ${prog_output2} ]; then
     output2="outputs-${ver}/$1_classify.txt"
     matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
-    echo "INFO:done stackedMain('$1', 'rumen_mags/$1')"
+    echo "INFO:done stackedMain('GTDB', '$1', 'rumen_mags/$1')"
 else
-    echo "INFO:skip stackedMain('$1', 'rumen_mags/$1')"
+    echo "INFO:skip stackedMain('GTDB', '$1', 'rumen_mags/$1')"
 fi
 
 dir="/home/w328li/BlindKameris-new/"
