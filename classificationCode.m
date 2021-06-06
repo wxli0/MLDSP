@@ -65,6 +65,8 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode(dataType, dis
         outputPath = ""
         if strcmp(dataType, 'GTDB')
             outputPath = strcat("outputs-", ver_gtdb, "/train-", dataSet, ".xlsx");
+        elseif
+            outputPath = strcat("outputs-HGR-", ver_gtdb, "/train-", dataSet, ".xlsx");
         end
         writetable(T3, outputPath, 'WriteRowNames',true, 'Sheet', strcat('quadratic-svm-score', num2str(i)));  
 

@@ -12,6 +12,8 @@ function [] = stackedMain(dataType, dataSet, testSet)
     basePath = ""
     if strcmp(dataType, 'GTDB')
         basePath = strcat('/mnt/sda/MLDSP-samples-', ver_gtdb, "/");
+    elseif strcmp(dataType, 'HGR')
+        basePath = strcat("/mnt/sda/DeepMicrobes-data/labeled_genome-", ver_gtdb, "/");
     end
 
     dataSetPath = strcat(basePath, dataSet)
