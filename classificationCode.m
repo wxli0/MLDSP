@@ -63,7 +63,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode(dataType, dis
  
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
         outputPath = ""
-        if strcmp(dataType, 'GTDB'):
+        if strcmp(dataType, 'GTDB')
             outputPath = strcat("outputs-", ver_gtdb, "/train-", dataSet, ".xlsx");
         end
         writetable(T3, outputPath, 'WriteRowNames',true, 'Sheet', strcat('quadratic-svm-score', num2str(i)));  
