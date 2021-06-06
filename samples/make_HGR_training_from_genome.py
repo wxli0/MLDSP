@@ -42,8 +42,8 @@ for item in cleaned_pos:
 
 print(parent_child_dict)
 print(next_rank_child_dict)
-parent_prefix = rank[0].lower()+"__"
-child_prefix = next_rank[0].lower()+"__"
+parent_prefix = ""
+child_prefix = ""
 for parent, children in parent_child_dict.items():
     os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome_r202/"+parent_prefix+parent)
     if len(children) == 0:
