@@ -56,7 +56,7 @@ fi
 prog_output2="outputs-${ver}/test-$1.xlsx"
 if [ ! -f ${prog_output2} ]; then
     output2="outputs-${ver}/$1_classify.txt"
-    matlab -r "run addme;stackedMain('$1', 'rumen_mags/$1');exit"|tee ${output2}
+    matlab -r "run addme;stackedMain('GTDB', '$1', 'rumen_mags/$1');exit"|tee ${output2}
     echo "INFO:done stackedMain('GTDB', '$1', 'rumen_mags/$1')"
 else
     echo "INFO:skip stackedMain('GTDB', '$1', 'rumen_mags/$1')"
