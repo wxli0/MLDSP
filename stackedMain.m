@@ -32,6 +32,8 @@ function [] = stackedMain(dataType, dataSet, testSet)
     fprintf('Generating CGRs.... \n');
     allCGR = cell(1,totalSeq);
     parfor i=1:totalSeq
+        disp{i}
+        disp(Seq)
         ss = Seq{i};
         tCGR=zeros(2^kVal);
         for j=1:length(ss)
