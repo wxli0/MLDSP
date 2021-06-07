@@ -52,7 +52,7 @@ cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
 output3="${outdir}/$1.xlsx"
-rej="rejection_threshold/$1.json"
+rej="rejection-threshold-HGR-${ver}/$1.json"
 python3 preprocess_test.py ${output3} ${rej}
 echo "INFO:done preprocess_test.py ${output3} ${rej}"
 
