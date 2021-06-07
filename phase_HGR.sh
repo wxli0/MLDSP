@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ver="r202"
-base_dir="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
+base_dir=""
 outdir="outputs-HGR-${ver}"
 testdir="hgr_mags"
 split_pruned_dir="${base_dir}$1_split_pruned"
