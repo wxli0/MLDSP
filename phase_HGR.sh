@@ -4,7 +4,7 @@ ver="r202"
 base_dir=""
 outdir="outputs-HGR-${ver}"
 testdir="hgr_mags"
-split_pruned_dir="${base_dir}$1_split_pruned"
+split_pruned_dir="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}-$1_split_pruned"
 
 if [ ! -d ${split_pruned_dir} ]; then
     python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir}$1
