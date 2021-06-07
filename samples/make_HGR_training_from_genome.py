@@ -53,7 +53,7 @@ for parent, children in parent_child_dict.items():
         pos_genome = next_rank_child_dict[child]
         if len(pos_genome) == 0:
             continue 
-        os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome-202/"+parent_prefix+parent+"/"+child_prefix+child)
+        os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"+parent_prefix+parent+"/"+child_prefix+child)
         for genome in pos_genome:
             if os.path.isfile("/mnt/sda/DeepMicrobes-data/labeled_genome/"+genome+".fa"):
                 shutil.copyfile("/mnt/sda/DeepMicrobes-data/labeled_genome/"+genome+".fa", \
