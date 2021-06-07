@@ -5,7 +5,8 @@ base_dir=""
 outdir="outputs-HGR-${ver}"
 testdir="hgr_mags"
 base_dir2="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
-split_pruned_dir="${base_dir2}$1_split_pruned"
+split_pruned_dir_full="${base_dir2}$1_split_pruned"
+split_pruned_dir="${base_dir}$1_split_pruned"
 
 if [ ! -d ${split_pruned_dir} ]; then
     python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1
