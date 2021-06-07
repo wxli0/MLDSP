@@ -16,6 +16,7 @@ cleaned_pos.sort()
 # print(list(set(cleaned_pos)).sort())
 
 next_rank_dict = {
+    'Domain': 'Phylum',
     'Phylum': 'Class',
     'Class': 'Order',
     'Order': 'Family',
