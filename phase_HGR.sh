@@ -13,7 +13,7 @@ else
     echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir}$1"
 fi
 
-prog_output1="${outdir}/train-$1.xlsx"
+prog_output1="${outdir}/train-${split_pruned_dir}.xlsx"
 if [ ! -f ${prog_output1} ]; then
     output1="${outdir}/$1.txt"
     matlab -r "run addme;stackedMain('HGR', '${split_pruned_dir}');exit"|tee ${output1}
@@ -22,7 +22,7 @@ else
     echo "INFO:skip stackedMain('HGR', '${split_pruned_dir}')"
 fi
 
-prog_output2="${outdir}/test-$1.xlsx"
+prog_output2="${outdir}/test-${split_pruned_dir}.xlsx"
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}/$1_classify.txt"
     matlab -r "run addme;stackedMain('HGR', '${split_pruned_dir}', '${testdir}/$1');exit"|tee ${output2}
