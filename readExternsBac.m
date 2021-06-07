@@ -65,6 +65,10 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
             parfor j=1:szLimit
                 sbName = fileNames{p(j)};
                 [Header, Sequence] = fastaread(sbName);    
+                if ischar(Sequence)
+                    Sequence = {Sequence};
+                    Header = {Header};    
+                end
                 % Sequence = regexprep(Sequence,'[^A,^C, ^G, ^T]','','ignorecase');
                 seqTemp{j} = Sequence;
                 acTemp{j} = Header; 
