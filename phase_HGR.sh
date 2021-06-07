@@ -7,10 +7,10 @@ testdir="hgr_mags"
 split_pruned_dir="${base_dir}$1_split_pruned"
 
 if [ ! -d ${split_pruned_dir} ]; then
-    python3 ~/DeepMicrobes/scripts/split_fasta_5000.py $1
-    echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py $1"
+    python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir}$1
+    echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir}$1"
 else
-    echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py $1"
+    echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir}$1"
 fi
 
 prog_output1="${outdir}/train-$1.xlsx"
