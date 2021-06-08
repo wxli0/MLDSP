@@ -40,8 +40,8 @@ if [ $1 == 'root' ] || [[ $1 == d__* ]] || \
 [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'o__Lachnospirales' ]] || \
 [[ $1 == 'c__Bacilli' ]] || [[ $1 == 'p__Proteobacteria' ]] || \
 [[ $1 == 'c__Alphaproteobacteria' ]]; then
-    python3 samples/prune_large_clusters.py $1 $ver
-    echo "python3 samples/prune_large_clusters.py $1 $ver"
+    python3 samples/prune_large_clusters.py $1 $ver "GTDB"
+    echo "python3 samples/prune_large_clusters.py $1 $ver GTDB"
 fi
 
 prog_output1="outputs-${ver}/train-$1.xlsx"
@@ -74,8 +74,8 @@ echo "INFO:done cp ${src1} ${dest1}"
 
 python3 preprocess_train_to_pr.py ${dest1}
 echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-python3 precision_recall.py ${dest1}
-echo "INFO:done python3 precision_recall.py ${dest1}"
+python3 precision_recall.py ${dest1} "GTDB"
+echo "INFO:done python3 precision_recall.py ${dest1} GTDB"
 
 src2="/home/w328li/MLDSP/outputs-${ver}/test-$1.xlsx"
 dest2="/home/w328li/BlindKameris-new/outputs-${ver}/$1.xlsx"
