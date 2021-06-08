@@ -34,7 +34,6 @@ function [] = stackedMain(dataType, dataSet, testSet)
 
     fprintf("totalSeq is: %d\n", totalSeq)
     for i=1:totalSeq
-        fprintf("i is %d\n", i)
         ss = Seq{i};
         tCGR=zeros(2^kVal);
         for j=1:length(ss)
