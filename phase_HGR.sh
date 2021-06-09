@@ -15,7 +15,7 @@ else
     echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1"
 fi
 
-if [[ $1 == 'root' ]] or [[ $1 == 'p__Firmicutes_A' ]]; then
+if [[ $1 == 'root' ]] || [[ $1 == 'p__Firmicutes_A' ]]; then
     python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
     echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
 else
