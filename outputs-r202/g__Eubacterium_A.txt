@@ -1,0 +1,526 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__Eubacterium_A"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x8 cell array
+
+    {'s__Eubacterium...'}    {'s__Eubacterium...'}    {'s__Eubacterium...'}    {'s__Eubacterium...'}    {'s__Eubacterium...'}    {'s__Eubacterium...'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 25 through 28
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+    0.1362    0.1362    0.1362    0.1362    0.1362    0.3191    6.0000    6.0000
+
+
+T3 =
+
+  28x8 table
+
+                                   s__Eubacterium_A minutum    s__Eubacterium_A nodatum    s__Eubacterium_A sp000688015    s__Eubacterium_A sp001940235    s__Eubacterium_A sp900315125    s__Eubacterium_A sp900321685    prediction    actual
+                                   ________________________    ________________________    ____________________________    ____________________________    ____________________________    ____________________________    __________    ______
+
+    RS_GCF_003433295.1_11.fasta                  1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_003433295.1_19.fasta                  1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_003433295.1_4.fasta                   1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_000510425.1_0.fasta                   0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_1.fasta                   0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_11.fasta                  0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_15.fasta                  0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_16.fasta                  0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_18.fasta                  0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_2.fasta                   0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_8.fasta                   0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000688015.1_16.fasta                  0                           0                             1                               0                               0                               0                   3           3   
+    RS_GCF_000688015.1_9.fasta                   0                           0                             1                               0                               0                               0                   3           3   
+    RS_GCF_001940235.1_11.fasta                  0                           0                             0                               1                               0                               0                   4           4   
+    RS_GCF_001940235.1_5.fasta                   0                           0                             0                               1                               0                               0                   4           4   
+    GB_GCA_900315125.1_10.fasta                  0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_900315125.1_5.fasta                   0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_902786035.1_14.fasta                  0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_902786035.1_17.fasta                  0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_902786035.1_8.fasta                   0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_902786035.1_9.fasta                   0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_900314185.1_16.fasta                  0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902763055.1_14.fasta                  0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902781405.1_6.fasta                   0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902786065.1_0.fasta                   0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902786065.1_3.fasta                   0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902794515.1_16.fasta                  0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902804075.1_8.fasta             0.13617                     0.13617                       0.13617                         0.13617                         0.13617                         0.31914                   6           6   
+
+
+testAcNum =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 25 through 28
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+    0.0000    0.0000    0.0000    0.8877    0.1123    0.0000    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+
+
+T3 =
+
+  28x8 table
+
+                                   s__Eubacterium_A minutum    s__Eubacterium_A nodatum    s__Eubacterium_A sp000688015    s__Eubacterium_A sp001940235    s__Eubacterium_A sp900315125    s__Eubacterium_A sp900321685    prediction    actual
+                                   ________________________    ________________________    ____________________________    ____________________________    ____________________________    ____________________________    __________    ______
+
+    RS_GCF_003433295.1_15.fasta                   1                           0                             0                              0                               0                                0                  1           1   
+    RS_GCF_003433295.1_2.fasta                    1                           0                             0                              0                               0                                0                  1           1   
+    RS_GCF_003433295.1_3.fasta                    1                           0                             0                              0                               0                                0                  1           1   
+    RS_GCF_003433295.1_6.fasta                    1                           0                             0                              0                               0                                0                  1           1   
+    RS_GCF_003433295.1_7.fasta                    1                           0                             0                              0                               0                                0                  1           1   
+    RS_GCF_003433295.1_9.fasta                    1                           0                             0                              0                               0                                0                  1           1   
+    RS_GCF_000510425.1_12.fasta                   0                           1                             0                              0                               0                                0                  2           2   
+    RS_GCF_000510425.1_13.fasta                   0                           1                             0                              0                               0                                0                  2           2   
+    RS_GCF_000688015.1_10.fasta                   0                           0                             1                              0                               0                                0                  3           3   
+    RS_GCF_000688015.1_13.fasta                   0                           0                             1                              0                               0                                0                  3           3   
+    RS_GCF_000688015.1_18.fasta                   0                           0                             1                              0                               0                                0                  3           3   
+    RS_GCF_000688015.1_19.fasta                   0                           0                             1                              0                               0                                0                  3           3   
+    RS_GCF_000688015.1_7.fasta                    0                           0                             1                              0                               0                                0                  3           3   
+    RS_GCF_000688015.1_8.fasta                    0                           0                             1                              0                               0                                0                  3           3   
+    RS_GCF_001940235.1_1.fasta                    0                           0                             0                              1                               0                                0                  4           4   
+    RS_GCF_001940235.1_13.fasta                   0                           0                             0                              1                               0                                0                  4           4   
+    RS_GCF_001940235.1_14.fasta            2.22e-14                    2.22e-14                      2.22e-14                        0.88767                         0.11233                         2.22e-14                  4           4   
+    GB_GCA_900315125.1_0.fasta                    0                           0                             0                              0                               1                                0                  5           5   
+    GB_GCA_900315125.1_19.fasta                   0                           0                             0                              0                               1                                0                  5           5   
+    GB_GCA_902786035.1_10.fasta                   0                           0                             0                              0                               1                                0                  5           5   
+    GB_GCA_902786035.1_15.fasta                   0                           0                             0                              0                               1                                0                  5           5   
+    GB_GCA_902786035.1_19.fasta                   0                           0                             0                              0                               1                                0                  5           5   
+    GB_GCA_004556375.1_14.fasta                   0                           0                             0                              0                               0                                1                  6           6   
+    GB_GCA_900318435.1_11.fasta                   0                           0                             0                              0                               0                                1                  6           6   
+    GB_GCA_900318435.1_9.fasta                    0                           0                             0                              0                               0                                1                  6           6   
+    GB_GCA_900321685.1_7.fasta                    0                           0                             0                              0                               0                                1                  6           6   
+    GB_GCA_902757215.1_16.fasta                   0                           0                             0                              0                               0                                1                  6           6   
+    GB_GCA_902791555.1_9.fasta                    0                           0                             0                              0                               0                                1                  6           6   
+
+
+testAcNum =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 25 through 28
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+    0.1362    0.1362    0.1362    0.1362    0.1362    0.3191    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+
+
+T3 =
+
+  28x8 table
+
+                                   s__Eubacterium_A minutum    s__Eubacterium_A nodatum    s__Eubacterium_A sp000688015    s__Eubacterium_A sp001940235    s__Eubacterium_A sp900315125    s__Eubacterium_A sp900321685    prediction    actual
+                                   ________________________    ________________________    ____________________________    ____________________________    ____________________________    ____________________________    __________    ______
+
+    RS_GCF_003433295.1_10.fasta                  1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_003433295.1_12.fasta                  1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_003433295.1_14.fasta                  1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_003433295.1_17.fasta                  1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_003433295.1_18.fasta                  1                           0                             0                               0                               0                               0                   1           1   
+    RS_GCF_000510425.1_19.fasta                  0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_6.fasta                   0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000510425.1_7.fasta                   0                           1                             0                               0                               0                               0                   2           2   
+    RS_GCF_000688015.1_0.fasta                   0                           0                             1                               0                               0                               0                   3           3   
+    RS_GCF_000688015.1_12.fasta                  0                           0                             1                               0                               0                               0                   3           3   
+    RS_GCF_000688015.1_3.fasta                   0                           0                             1                               0                               0                               0                   3           3   
+    RS_GCF_000688015.1_6.fasta                   0                           0                             1                               0                               0                               0                   3           3   
+    RS_GCF_001940235.1_0.fasta                   0                           0                             0                               1                               0                               0                   4           4   
+    RS_GCF_001940235.1_18.fasta                  0                           0                             0                               1                               0                               0                   4           4   
+    RS_GCF_001940235.1_2.fasta                   0                           0                             0                               1                               0                               0                   4           4   
+    RS_GCF_001940235.1_6.fasta                   0                           0                             0                               1                               0                               0                   4           4   
+    GB_GCA_900315125.1_7.fasta                   0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_900315125.1_9.fasta                   0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_902786035.1_12.fasta                  0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_902786035.1_18.fasta                  0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_902786035.1_6.fasta                   0                           0                             0                               0                               1                               0                   5           5   
+    GB_GCA_900321685.1_3.fasta                   0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902757215.1_7.fasta                   0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902763055.1_7.fasta                   0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902781405.1_1.fasta                   0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902804075.1_16.fasta                  0                           0                             0                               0                               0                               1                   6           6   
+    GB_GCA_902804075.1_7.fasta             0.13617                     0.13617                       0.13617                         0.13617                         0.13617                         0.31914                   6           6   
+    RS_GCF_009695915.1_13.fasta                  0                           0                             0                               0                               0                               1                   6           6   
+
+
+testAcNum =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 25 through 28
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+     1     0     0     0     0     0     1     1
+     1     0     0     0     0     0     1     1
+     1     0     0     0     0     0     1     1
+     0     1     0     0     0     0     2     2
+     0     1     0     0     0     0     2     2
+     0     1     0     0     0     0     2     2
+     0     0     1     0     0     0     3     3
+     0     0     1     0     0     0     3     3
+     0     0     1     0     0     0     3     3
+     0     0     1     0     0     0     3     3
+     0     0     1     0     0     0     3     3
+     0     0     1     0     0     0     3     3
+     0     0     0     1     0     0     4     4
+     0     0     0     1     0     0     4     4
+     0     0     0     1     0     0     4     4
+     0     0     0     1     0     0     4     4
+     0     0     0     1     0     0     4     4
+     0     0     0     1     0     0     4     4
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     1     0     5     5
+     0     0     0     0     0     1     6     6
+     0     0     0     0     0     1     6     6
+     0     0     0     0     0     1     6     6
+     0     0     0     0     0     1     6     6
+     0     0     0     0     0     1     6     6
+
+
+T3 =
+
+  28x8 table
+
+                                   s__Eubacterium_A minutum    s__Eubacterium_A nodatum    s__Eubacterium_A sp000688015    s__Eubacterium_A sp001940235    s__Eubacterium_A sp900315125    s__Eubacterium_A sp900321685    prediction    actual
+                                   ________________________    ________________________    ____________________________    ____________________________    ____________________________    ____________________________    __________    ______
+
+    RS_GCF_003433295.1_0.fasta                1                           0                             0                               0                               0                               0                      1           1   
+    RS_GCF_003433295.1_5.fasta                1                           0                             0                               0                               0                               0                      1           1   
+    RS_GCF_003433295.1_8.fasta                1                           0                             0                               0                               0                               0                      1           1   
+    RS_GCF_000510425.1_17.fasta               0                           1                             0                               0                               0                               0                      2           2   
+    RS_GCF_000510425.1_3.fasta                0                           1                             0                               0                               0                               0                      2           2   
+    RS_GCF_000510425.1_5.fasta                0                           1                             0                               0                               0                               0                      2           2   
+    RS_GCF_000688015.1_11.fasta               0                           0                             1                               0                               0                               0                      3           3   
+    RS_GCF_000688015.1_14.fasta               0                           0                             1                               0                               0                               0                      3           3   
+    RS_GCF_000688015.1_15.fasta               0                           0                             1                               0                               0                               0                      3           3   
+    RS_GCF_000688015.1_17.fasta               0                           0                             1                               0                               0                               0                      3           3   
+    RS_GCF_000688015.1_4.fasta                0                           0                             1                               0                               0                               0                      3           3   
+    RS_GCF_000688015.1_5.fasta                0                           0                             1                               0                               0                               0                      3           3   
+    RS_GCF_001940235.1_10.fasta               0                           0                             0                               1                               0                               0                      4           4   
+    RS_GCF_001940235.1_15.fasta               0                           0                             0                               1                               0                               0                      4           4   
+    RS_GCF_001940235.1_17.fasta               0                           0                             0                               1                               0                               0                      4           4   
+    RS_GCF_001940235.1_19.fasta               0                           0                             0                               1                               0                               0                      4           4   
+    RS_GCF_001940235.1_7.fasta                0                           0                             0                               1                               0                               0                      4           4   
+    RS_GCF_001940235.1_8.fasta                0                           0                             0                               1                               0                               0                      4           4   
+    GB_GCA_900315125.1_11.fasta               0                           0                             0                               0                               1                               0                      5           5   
+    GB_GCA_900315125.1_13.fasta               0                           0                             0                               0                               1                               0                      5           5   
+    GB_GCA_900315125.1_15.fasta               0                           0                             0                               0                               1                               0                      5           5   
+    GB_GCA_902786035.1_16.fasta               0                           0                             0                               0                               1                               0                      5           5   
+    GB_GCA_902786035.1_2.fasta                0                           0                             0                               0                               1                               0                      5           5   
+    GB_GCA_004556375.1_1.fasta                0                           0                             0                               0                               0                               1                      6           6   
+    GB_GCA_902757215.1_13.fasta               0                           0                             0                               0                               0                               1                      6           6   
+    GB_GCA_902781405.1_5.fasta                0                           0                             0                               0                               0                               1                      6           6   
+    GB_GCA_902791555.1_18.fasta               0                           0                             0                               0                               0                               1                      6           6   
+    RS_GCF_009695915.1_9.fasta                0                           0                             0                               0                               0                               1                      6           6   
+
+
+testAcNum =
+
+  1x28 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 25 through 28
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    0.9278    0.0722    0.0000    0.0000    0.0000    0.0000    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+    1.0000         0         0         0         0         0    1.0000    1.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0    1.0000         0         0         0         0    2.0000    2.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0    1.0000         0         0         0    3.0000    3.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0    1.0000         0         0    4.0000    4.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0    1.0000         0    5.0000    5.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+         0         0         0         0         0    1.0000    6.0000    6.0000
+    0.0000    0.0000    0.0000    0.0677    0.0000    0.9323    6.0000    6.0000
+    0.0000    0.0000    0.0000    0.0677    0.0000    0.9323    6.0000    6.0000
+
+
+T3 =
+
+  28x8 table
+
+                                   s__Eubacterium_A minutum    s__Eubacterium_A nodatum    s__Eubacterium_A sp000688015    s__Eubacterium_A sp001940235    s__Eubacterium_A sp900315125    s__Eubacterium_A sp900321685    prediction    actual
+                                   ________________________    ________________________    ____________________________    ____________________________    ____________________________    ____________________________    __________    ______
+
+    RS_GCF_003433295.1_1.fasta               0.92783                    0.072167                      2.22e-14                       2.22e-14                         2.22e-14                       2.22e-14                  1           1   
+    RS_GCF_003433295.1_13.fasta                    1                           0                             0                              0                                0                              0                  1           1   
+    RS_GCF_003433295.1_16.fasta                    1                           0                             0                              0                                0                              0                  1           1   
+    RS_GCF_000510425.1_10.fasta                    0                           1                             0                              0                                0                              0                  2           2   
+    RS_GCF_000510425.1_14.fasta                    0                           1                             0                              0                                0                              0                  2           2   
+    RS_GCF_000510425.1_4.fasta                     0                           1                             0                              0                                0                              0                  2           2   
+    RS_GCF_000510425.1_9.fasta                     0                           1                             0                              0                                0                              0                  2           2   
+    RS_GCF_000688015.1_1.fasta                     0                           0                             1                              0                                0                              0                  3           3   
+    RS_GCF_000688015.1_2.fasta                     0                           0                             1                              0                                0                              0                  3           3   
+    RS_GCF_001940235.1_12.fasta                    0                           0                             0                              1                                0                              0                  4           4   
+    RS_GCF_001940235.1_16.fasta                    0                           0                             0                              1                                0                              0                  4           4   
+    RS_GCF_001940235.1_3.fasta                     0                           0                             0                              1                                0                              0                  4           4   
+    RS_GCF_001940235.1_4.fasta                     0                           0                             0                              1                                0                              0                  4           4   
+    RS_GCF_001940235.1_9.fasta                     0                           0                             0                              1                                0                              0                  4           4   
+    GB_GCA_900315125.1_1.fasta                     0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_900315125.1_18.fasta                    0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_900315125.1_8.fasta                     0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_902786035.1_1.fasta                     0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_902786035.1_11.fasta                    0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_902786035.1_3.fasta                     0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_902786035.1_4.fasta                     0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_902786035.1_5.fasta                     0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_902786035.1_7.fasta                     0                           0                             0                              0                                1                              0                  5           5   
+    GB_GCA_902781405.1_14.fasta                    0                           0                             0                              0                                0                              1                  6           6   
+    GB_GCA_902781405.1_4.fasta                     0                           0                             0                              0                                0                              1                  6           6   
+    GB_GCA_902786065.1_19.fasta                    0                           0                             0                              0                                0                              1                  6           6   
+    GB_GCA_902786065.1_4.fasta            2.2199e-14                  2.2199e-14                    2.2199e-14                       0.067709                       2.2199e-14                        0.93229                  6           6   
+    GB_GCA_902791555.1_5.fasta            2.2199e-14                  2.2199e-14                    2.2199e-14                       0.067709                       2.2199e-14                        0.93229                  6           6   
+
+confusion matrix for 1 is:
+    20     0     0     0     0     0
+     0    20     0     0     0     0
+     0     0    20     0     0     0
+     0     0     0    20     0     0
+     0     0     0     0    30     0
+     0     0     0     0     0    30
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [100]    [100]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      100   
+    {'AvgAccuracy' }      100   
+
+Process completed 
+[?1l>

@@ -1,0 +1,1719 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/f__Oscillospiraceae"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/f__Oscillospiraceae"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/f__Oscillospiraceae
+numTestSeq is: 36
+24
+24
+3
+29
+35
+3
+35
+35
+3
+2
+35
+29
+8
+9
+3
+35
+2
+2
+9
+9
+35
+35
+35
+35
+35
+35
+35
+35
+35
+35
+35
+29
+35
+30
+35
+5
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 11
+
+    {'1-g__An92'}    {'g__CAG-103'}    {'g__CAG-110'}    {'g__CAG-170'}    {'g__CAG-83'}    {'g__DUOX01'}    {'g__DUPK01'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}    {'g__F23-B02'}
+
+  Columns 12 through 21
+
+    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}    {'g__JAAYXM01'}
+
+  Columns 22 through 30
+
+    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}
+
+  Columns 31 through 41
+
+    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}
+
+  Columns 42 through 52
+
+    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 11
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'g__CAG-110'}    {'g__CAG-170'}    {'g__CAG-83'}    {'g__DUOX01'}    {'g__DUPK01'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}    {'g__F23-B02'}
+
+  Columns 12 through 21
+
+    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}    {'g__JAAYXM01'}
+
+  Columns 22 through 30
+
+    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}
+
+  Columns 31 through 41
+
+    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}
+
+  Columns 42 through 52
+
+    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 11
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'g__CAG-170'}    {'g__CAG-83'}    {'g__DUOX01'}    {'g__DUPK01'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}    {'g__F23-B02'}
+
+  Columns 12 through 21
+
+    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}    {'g__JAAYXM01'}
+
+  Columns 22 through 30
+
+    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}
+
+  Columns 31 through 41
+
+    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}
+
+  Columns 42 through 52
+
+    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 11
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'g__CAG-83'}    {'g__DUOX01'}    {'g__DUPK01'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}    {'g__F23-B02'}
+
+  Columns 12 through 21
+
+    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}    {'g__JAAYXM01'}
+
+  Columns 22 through 30
+
+    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}
+
+  Columns 31 through 41
+
+    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}
+
+  Columns 42 through 52
+
+    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'g__DUOX01'}    {'g__DUPK01'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}
+
+  Columns 11 through 20
+
+    {'g__F23-B02'}    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}
+
+  Columns 21 through 29
+
+    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}
+
+  Columns 30 through 40
+
+    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}
+
+  Columns 41 through 51
+
+    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}
+
+  Column 52
+
+    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'g__DUPK01'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}
+
+  Columns 11 through 20
+
+    {'g__F23-B02'}    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}
+
+  Columns 21 through 29
+
+    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}
+
+  Columns 30 through 40
+
+    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}
+
+  Columns 41 through 51
+
+    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}
+
+  Column 52
+
+    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}
+
+  Columns 11 through 20
+
+    {'g__F23-B02'}    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}
+
+  Columns 21 through 29
+
+    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}
+
+  Columns 30 through 40
+
+    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}
+
+  Columns 41 through 51
+
+    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}
+
+  Column 52
+
+    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'g__ER4'}    {'g__Evtepia'}
+
+  Columns 11 through 20
+
+    {'g__F23-B02'}    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}
+
+  Columns 21 through 29
+
+    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}
+
+  Columns 30 through 40
+
+    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}
+
+  Columns 41 through 51
+
+    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}
+
+  Column 52
+
+    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'g__Evtepia'}
+
+  Columns 11 through 20
+
+    {'g__F23-B02'}    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}
+
+  Columns 21 through 29
+
+    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}
+
+  Columns 30 through 40
+
+    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}
+
+  Columns 41 through 51
+
+    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}
+
+  Column 52
+
+    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 20
+
+    {'g__F23-B02'}    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}    {'g__JAAYOS01'}
+
+  Columns 21 through 29
+
+    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}    {'g__RUG626'}
+
+  Columns 30 through 40
+
+    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}
+
+  Columns 41 through 51
+
+    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}
+
+  Column 52
+
+    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'g__Flavonifractor'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'g__Intestinimonas'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'20-g__JAAYOS01'}    {'g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 28
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}    {'g__Pseudoflavo...'}
+
+  Columns 29 through 39
+
+    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 40 through 50
+
+    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}
+
+  Columns 51 through 52
+
+    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}
+
+  Columns 28 through 37
+
+    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'g__Oscillibacter'}    {'g__Papillibacter'}
+
+  Columns 28 through 37
+
+    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'g__Papillibacter'}
+
+  Columns 28 through 37
+
+    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 37
+
+    {'g__Pseudoflavo...'}    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 37
+
+    {'28-g__Pseudofl...'}    {'g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 37
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 37
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 37
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 37
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}    {'g__UBA2922'}
+
+  Columns 38 through 48
+
+    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}
+
+  Columns 49 through 52
+
+    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}
+
+  Columns 37 through 47
+
+    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}
+
+  Columns 48 through 52
+
+    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'g__UBA1777'}    {'g__UBA2658'}
+
+  Columns 37 through 47
+
+    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}
+
+  Columns 48 through 52
+
+    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'g__UBA2658'}
+
+  Columns 37 through 47
+
+    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}
+
+  Columns 48 through 52
+
+    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 47
+
+    {'g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}
+
+  Columns 48 through 52
+
+    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 47
+
+    {'37-g__UBA2922'}    {'g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}
+
+  Columns 48 through 52
+
+    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 47
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}    {'g__WRAI01'}
+
+  Columns 48 through 52
+
+    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 46
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}
+
+  Columns 47 through 52
+
+    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 46
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}
+
+  Columns 47 through 52
+
+    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 46
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}
+
+  Columns 47 through 52
+
+    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 46
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}
+
+  Columns 47 through 52
+
+    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 46
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}
+
+  Columns 47 through 52
+
+    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 46
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'g__WQUU01'}    {'g__WRAB01'}
+
+  Columns 47 through 52
+
+    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'46-g__WRAB01'}    {'g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'46-g__WRAB01'}    {'47-g__WRAI01'}    {'g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'46-g__WRAB01'}    {'47-g__WRAI01'}    {'48-g__WRCJ01'}    {'g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'46-g__WRAB01'}    {'47-g__WRAI01'}    {'48-g__WRCJ01'}    {'49-g__WRJA01'}    {'g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'46-g__WRAB01'}    {'47-g__WRAI01'}    {'48-g__WRCJ01'}    {'49-g__WRJA01'}    {'50-g__WRLJ01'}    {'g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'46-g__WRAB01'}    {'47-g__WRAI01'}    {'48-g__WRCJ01'}    {'49-g__WRJA01'}    {'50-g__WRLJ01'}    {'51-g__WRMG01'}    {'g__WRMH01'}
+
+
+clusterNames =
+
+  1x52 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 52
+
+    {'46-g__WRAB01'}    {'47-g__WRAI01'}    {'48-g__WRCJ01'}    {'49-g__WRJA01'}    {'50-g__WRLJ01'}    {'51-g__WRMG01'}    {'52-g__WRMH01'}
+
+  Columns 1 through 11
+
+    '1-g__An92'    '2-g__CAG-103'    '3-g__CAG-110'    '4-g__CAG-170'    '5-g__CAG-83'    '6-g__DUOX01'    '7-g__DUPK01'    '8-g__Dysosmobacter'    '9-g__ER4'    '10-g__Evtepia'    '11-g__F23-B02'
+
+  Columns 12 through 20
+
+    '12-g__Flavonifra...'    '13-g__HGM12998'    '14-g__HGM13006'    '15-g__HGM13010'    '16-g__Intestinim...'    '17-g__JAAYAR01'    '18-g__JAAYBW01'    '19-g__JAAYOP01'    '20-g__JAAYOS01'
+
+  Columns 21 through 29
+
+    '21-g__JAAYXM01'    '22-g__Lawsonibacter'    '23-g__Marseille-...'    '24-g__NK3B98'    '25-g__NSJ-62'    '26-g__Oscillibacter'    '27-g__Papillibacter'    '28-g__Pseudoflav...'    '29-g__RUG626'
+
+  Columns 30 through 39
+
+    '30-g__RUG678'    '31-g__Sporobacter'    '32-g__UBA1246'    '33-g__UBA1446'    '34-g__UBA1774'    '35-g__UBA1777'    '36-g__UBA2658'    '37-g__UBA2922'    '38-g__UBA5446'    '39-g__UBA738'
+
+  Columns 40 through 49
+
+    '40-g__UBA929'    '41-g__UBA9475'    '42-g__UMGS1202'    '43-g__UMGS1766'    '44-g__UMGS1872'    '45-g__WQUU01'    '46-g__WRAB01'    '47-g__WRAI01'    '48-g__WRCJ01'    '49-g__WRJA01'
+
+  Columns 50 through 52
+
+    '50-g__WRLJ01'    '51-g__WRMG01'    '52-g__WRMH01'
+
+
+header =
+
+  1x53 cell array
+
+  Columns 1 through 10
+
+    {'1-g__An92'}    {'2-g__CAG-103'}    {'3-g__CAG-110'}    {'4-g__CAG-170'}    {'5-g__CAG-83'}    {'6-g__DUOX01'}    {'7-g__DUPK01'}    {'8-g__Dysosmoba...'}    {'9-g__ER4'}    {'10-g__Evtepia'}
+
+  Columns 11 through 19
+
+    {'11-g__F23-B02'}    {'12-g__Flavonif...'}    {'13-g__HGM12998'}    {'14-g__HGM13006'}    {'15-g__HGM13010'}    {'16-g__Intestin...'}    {'17-g__JAAYAR01'}    {'18-g__JAAYBW01'}    {'19-g__JAAYOP01'}
+
+  Columns 20 through 27
+
+    {'20-g__JAAYOS01'}    {'21-g__JAAYXM01'}    {'22-g__Lawsonib...'}    {'23-g__Marseill...'}    {'24-g__NK3B98'}    {'25-g__NSJ-62'}    {'26-g__Oscillib...'}    {'27-g__Papillib...'}
+
+  Columns 28 through 36
+
+    {'28-g__Pseudofl...'}    {'29-g__RUG626'}    {'30-g__RUG678'}    {'31-g__Sporobacter'}    {'32-g__UBA1246'}    {'33-g__UBA1446'}    {'34-g__UBA1774'}    {'35-g__UBA1777'}    {'36-g__UBA2658'}
+
+  Columns 37 through 45
+
+    {'37-g__UBA2922'}    {'38-g__UBA5446'}    {'39-g__UBA738'}    {'40-g__UBA929'}    {'41-g__UBA9475'}    {'42-g__UMGS1202'}    {'43-g__UMGS1766'}    {'44-g__UMGS1872'}    {'45-g__WQUU01'}
+
+  Columns 46 through 53
+
+    {'46-g__WRAB01'}    {'47-g__WRAI01'}    {'48-g__WRCJ01'}    {'49-g__WRJA01'}    {'50-g__WRLJ01'}    {'51-g__WRMG01'}    {'52-g__WRMH01'}    {'prediction'}
+
+
+T3 =
+
+  36x53 table
+
+                    1-g__An92     2-g__CAG-103    3-g__CAG-110    4-g__CAG-170    5-g__CAG-83    6-g__DUOX01    7-g__DUPK01    8-g__Dysosmobacter     9-g__ER4     10-g__Evtepia    11-g__F23-B02    12-g__Flavonifractor    13-g__HGM12998    14-g__HGM13006    15-g__HGM13010    16-g__Intestinimonas    17-g__JAAYAR01    18-g__JAAYBW01    19-g__JAAYOP01    20-g__JAAYOS01    21-g__JAAYXM01    22-g__Lawsonibacter    23-g__Marseille-P3106    24-g__NK3B98    25-g__NSJ-62    26-g__Oscillibacter    27-g__Papillibacter    28-g__Pseudoflavonifractor    29-g__RUG626    30-g__RUG678    31-g__Sporobacter    32-g__UBA1246    33-g__UBA1446    34-g__UBA1774    35-g__UBA1777    36-g__UBA2658    37-g__UBA2922    38-g__UBA5446    39-g__UBA738    40-g__UBA929    41-g__UBA9475    42-g__UMGS1202    43-g__UMGS1766    44-g__UMGS1872    45-g__WQUU01    46-g__WRAB01    47-g__WRAI01    48-g__WRCJ01    49-g__WRJA01    50-g__WRLJ01    51-g__WRMG01    52-g__WRMH01    prediction
+                    __________    ____________    ____________    ____________    ___________    ___________    ___________    __________________    __________    _____________    _____________    ____________________    ______________    ______________    ______________    ____________________    ______________    ______________    ______________    ______________    ______________    ___________________    _____________________    ____________    ____________    ___________________    ___________________    __________________________    ____________    ____________    _________________    _____________    _____________    _____________    _____________    _____________    _____________    _____________    ____________    ____________    _____________    ______________    ______________    ______________    ____________    ____________    ____________    ____________    ____________    ____________    ____________    ____________    __________
+
+    RUG010.fasta    1.9918e-12     4.8185e-05        0.001117      2.9496e-06          0.004     7.7785e-14     7.7785e-14           0.054228        1.0817e-06     4.2324e-06       2.8849e-05           1.5536e-08           7.7785e-14        7.7785e-14        7.7785e-14            0.0073648           7.7785e-14        1.5439e-10        7.7785e-14        7.7785e-14        7.7785e-14           0.0045301              1.1921e-08              0.91881      7.7785e-14         7.7785e-14             7.7785e-14                 7.7785e-14             7.7785e-14      7.7785e-14        7.7785e-14         7.7785e-14       7.7785e-14       7.7785e-14         0.008815       7.7785e-14       7.7785e-14       7.3765e-11       7.7785e-14      7.7785e-14      2.4255e-06        7.7785e-14        7.7785e-14        7.7785e-14        0.0010454      7.7785e-14      7.7785e-14      7.7785e-14      7.7785e-14      7.7785e-14      7.7785e-14      1.1007e-06         24    
+    RUG027.fasta    5.3861e-10      7.498e-06       0.0014328      8.2306e-06      0.0027707      5.302e-14      5.302e-14           0.056632         2.349e-06     3.1739e-06       2.3628e-05           2.3458e-09            5.302e-14         5.302e-14         5.302e-14            0.0013369            5.302e-14        8.0286e-11         5.302e-14         5.302e-14         5.302e-14            0.010185              2.0856e-07              0.92174       5.302e-14          5.302e-14              5.302e-14                  5.302e-14              5.302e-14       5.302e-14         5.302e-14          5.302e-14        5.302e-14        5.302e-14        0.0051253        5.302e-14        5.302e-14       6.5175e-10        5.302e-14       5.302e-14      1.0493e-05         5.302e-14         5.302e-14         5.302e-14        0.0007138       5.302e-14       5.302e-14       5.302e-14       5.302e-14       5.302e-14       5.302e-14      5.0647e-06         24    
+    RUG104.fasta    1.2577e-13      0.0033976         0.63175        0.092851      0.0004608     1.2577e-13     1.2577e-13         9.1793e-05        2.5044e-05     7.8806e-07       0.00036363           6.8617e-09           1.2577e-13        1.2577e-13        1.2577e-13           4.0325e-09           1.2577e-13        1.1454e-11        1.2577e-13        1.2577e-13        1.2577e-13          7.9198e-08              1.2577e-13           1.0313e-05      1.2577e-13         1.2577e-13             1.2577e-13                 1.2577e-13             1.2577e-13      1.2577e-13        1.2577e-13         1.2577e-13       1.2577e-13       1.2577e-13           0.2611       1.2577e-13       1.2577e-13        0.0016808       1.2577e-13      1.2577e-13      5.4113e-09        1.2577e-13        1.2577e-13        1.2577e-13        0.0082707      1.2577e-13      1.2577e-13      1.2577e-13      1.2577e-13      1.2577e-13      1.2577e-13      2.7567e-07          3    
+    RUG157.fasta    1.6135e-09     2.2203e-14      3.4671e-06       2.133e-10      0.0072046     2.2203e-14     2.2203e-14         2.7257e-11         3.351e-10     0.00014873        0.0001505            0.0019379           2.2203e-14        2.2203e-14        2.2203e-14           2.2203e-14           2.2203e-14        7.4184e-08        2.2203e-14        2.2203e-14        2.2203e-14          7.0167e-11              2.7427e-13            2.736e-09      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14                0.98964      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14       0.00087052       2.2203e-14       2.2203e-14        3.531e-05       2.2203e-14      2.2203e-14      2.7457e-09        2.2203e-14        2.2203e-14        2.2203e-14        5.497e-06      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14       1.517e-06         29    
+    RUG166.fasta    2.2203e-14      0.0025309      0.00059046      9.5663e-08      0.0021333     2.2203e-14     2.2203e-14         0.00052631        2.5386e-07      4.241e-07       1.1162e-05           6.4585e-11           2.2203e-14        2.2203e-14        2.2203e-14           2.6052e-07           2.2203e-14        2.2353e-11        2.2203e-14        2.2203e-14        2.2203e-14          1.3935e-06               7.241e-10            0.0049913      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14             2.2203e-14      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14          0.98903       2.2203e-14       2.2203e-14       2.7848e-11       2.2203e-14      2.2203e-14      3.8664e-08        2.2203e-14        2.2203e-14        2.2203e-14       0.00018222      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      5.3982e-09         35    
+    RUG175.fasta    5.7859e-13       0.079288         0.57642        0.025059        0.13625     5.7859e-13     5.7859e-13          0.0001002         0.0028018     1.1806e-05        0.0019888           5.6253e-08           5.7859e-13        5.7859e-13        5.7859e-13           3.3371e-05           5.7859e-13        4.7265e-10        5.7859e-13        5.7859e-13        5.7859e-13          3.3135e-07              2.0828e-11             0.005819      5.7859e-13         5.7859e-13             5.7859e-13                 5.7859e-13             5.7859e-13      5.7859e-13        5.7859e-13         5.7859e-13       5.7859e-13       5.7859e-13           0.1386       5.7859e-13       5.7859e-13          0.01098       5.7859e-13      5.7859e-13      2.3361e-07        5.7859e-13        5.7859e-13        5.7859e-13         0.022652      5.7859e-13      5.7859e-13      5.7859e-13      5.7859e-13      5.7859e-13      5.7859e-13       1.661e-07          3    
+    RUG180.fasta    2.2203e-14      0.0019334      0.00097916      8.5854e-07      0.0012156     2.2203e-14     2.2203e-14         0.00022935         1.081e-06     2.0243e-07       2.0656e-05              3.8e-10           2.2203e-14        2.2203e-14        2.2203e-14           9.1911e-08           2.2203e-14        2.8424e-12        2.2203e-14        2.2203e-14        2.2203e-14          1.1626e-06              1.5422e-09            0.0020544      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14             2.2203e-14      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14            0.993       2.2203e-14       2.2203e-14       1.5466e-08       2.2203e-14      2.2203e-14      1.3188e-08        2.2203e-14        2.2203e-14        2.2203e-14       0.00056001      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      1.3115e-08         35    
+    RUG215.fasta    2.9991e-14      0.0023945       0.0090845      0.00051629       0.004911     2.9991e-14     2.9991e-14         3.7267e-05        3.2205e-05     2.7842e-06       5.7033e-05           4.7052e-07           2.9991e-14        2.9991e-14        2.9991e-14            1.796e-05           2.9991e-14        2.9991e-14        2.9991e-14        2.9991e-14        2.9991e-14          7.6703e-08              1.4879e-08           0.00057544      2.9991e-14         2.9991e-14             2.9991e-14                 2.9991e-14             2.9991e-14      2.9991e-14        2.9991e-14         2.9991e-14       2.9991e-14       2.9991e-14          0.94334       2.9991e-14       2.9991e-14        0.0033068       2.9991e-14      2.9991e-14      2.0793e-11        2.9991e-14        2.9991e-14        2.9991e-14         0.035725      2.9991e-14      2.9991e-14      2.9991e-14      2.9991e-14      2.9991e-14      2.9991e-14      7.9998e-08         35    
+    RUG220.fasta    1.0058e-13      0.0027827          0.6545         0.19179     0.00025139     1.0058e-13     1.0058e-13         4.1484e-05        5.2744e-06     4.1102e-07       0.00016904           1.6104e-09           1.0058e-13        1.0058e-13        1.0058e-13            5.252e-10           1.0058e-13        3.4105e-11        1.0058e-13        1.0058e-13        1.0058e-13          4.6524e-08              1.0058e-13           8.9259e-07      1.0058e-13         1.0058e-13             1.0058e-13                 1.0058e-13             1.0058e-13      1.0058e-13        1.0058e-13         1.0058e-13       1.0058e-13       1.0058e-13          0.14844       1.0058e-13       1.0058e-13       2.6595e-05       1.0058e-13      1.0058e-13      1.5931e-08        1.0058e-13        1.0058e-13        1.0058e-13        0.0019997      1.0058e-13      1.0058e-13      1.0058e-13      1.0058e-13      1.0058e-13      1.0058e-13      2.9691e-07          3    
+    RUG221.fasta    7.9103e-14        0.97455        0.021639      3.5389e-06     2.5199e-06     7.9103e-14     7.9103e-14         7.9103e-14        0.00075078     0.00049233       2.8131e-10           7.9103e-14           7.9103e-14        7.9103e-14        7.9103e-14           7.9103e-14           7.9103e-14        3.0941e-12        7.9103e-14        7.9103e-14        7.9103e-14          7.9103e-14              7.9103e-14           7.9103e-14      7.9103e-14         7.9103e-14             7.9103e-14                 7.9103e-14             7.9103e-14      7.9103e-14        7.9103e-14         7.9103e-14       7.9103e-14       7.9103e-14        0.0020917       7.9103e-14       7.9103e-14        7.634e-08       7.9103e-14      7.9103e-14      6.8234e-12        7.9103e-14        7.9103e-14        7.9103e-14       4.6882e-07      7.9103e-14      7.9103e-14      7.9103e-14      7.9103e-14      7.9103e-14      7.9103e-14      0.00047099          2    
+    RUG282.fasta    2.2203e-14     1.2275e-06       0.0053604        0.035144     0.00028179     2.2203e-14     2.2203e-14          0.0001722        2.5123e-06     7.7263e-09       5.8521e-06           6.1649e-14           2.2203e-14        2.2203e-14        2.2203e-14           1.5257e-12           2.2203e-14        8.1868e-11        2.2203e-14        2.2203e-14        2.2203e-14          8.3554e-07              4.4256e-12            2.261e-05      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14             2.2203e-14      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14          0.95855       2.2203e-14       2.2203e-14       0.00038847       2.2203e-14      2.2203e-14      6.1199e-07        2.2203e-14        2.2203e-14        2.2203e-14       6.9095e-05      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      3.9034e-07         35    
+    RUG288.fasta    1.4172e-06     2.2203e-14       4.165e-06      1.2501e-10       0.013215     2.2203e-14     2.2203e-14         3.4733e-13        2.6352e-10     0.00037857       1.0398e-05           0.00014348           2.2203e-14        2.2203e-14        2.2203e-14           2.2203e-14           2.2203e-14        1.8247e-09        2.2203e-14        2.2203e-14        2.2203e-14          4.5797e-12              1.6866e-13           3.3386e-10      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14                0.98404      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14        0.0014694       2.2203e-14       2.2203e-14       0.00072668       2.2203e-14      2.2203e-14      1.9682e-09        2.2203e-14        2.2203e-14        2.2203e-14        2.935e-06      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14       3.689e-06         29    
+    RUG294.fasta    2.8568e-13       0.040284       0.0016371       2.785e-06        0.43038     2.8568e-13     2.8568e-13            0.45823        2.7088e-06     3.4459e-05       0.00016511           3.0704e-05           2.8568e-13        2.8568e-13        2.8568e-13            0.0081363           2.8568e-13        2.6704e-08        2.8568e-13        2.8568e-13        2.8568e-13          2.8834e-07              1.0265e-09             0.054087      2.8568e-13         2.8568e-13             2.8568e-13                 2.8568e-13             2.8568e-13      2.8568e-13        2.8568e-13         2.8568e-13       2.8568e-13       2.8568e-13        0.0034071       2.8568e-13       2.8568e-13       2.6619e-10       2.8568e-13      2.8568e-13      4.2065e-06        2.8568e-13        2.8568e-13        2.8568e-13        0.0035984      2.8568e-13      2.8568e-13      2.8568e-13      2.8568e-13      2.8568e-13      2.8568e-13      1.0288e-09          8    
+    RUG303.fasta    5.6175e-14       0.028916       0.0014742      0.00039432     2.5814e-05     5.6175e-14     5.6175e-14         5.6175e-14           0.95313     7.3408e-05       1.1187e-06           5.6175e-14           5.6175e-14        5.6175e-14        5.6175e-14           5.6175e-14           5.6175e-14        2.5066e-11        5.6175e-14        5.6175e-14        5.6175e-14          5.6175e-14              5.6175e-14           5.6175e-14      5.6175e-14         5.6175e-14             5.6175e-14                 5.6175e-14             5.6175e-14      5.6175e-14        5.6175e-14         5.6175e-14       5.6175e-14       5.6175e-14          0.01596       5.6175e-14       5.6175e-14       5.0088e-06       5.6175e-14      5.6175e-14      1.4741e-11        5.6175e-14        5.6175e-14        5.6175e-14       2.8721e-06      5.6175e-14      5.6175e-14      5.6175e-14      5.6175e-14      5.6175e-14      5.6175e-14      1.4885e-05          9    
+    RUG313.fasta     6.212e-14      0.0012392         0.94507       0.0075096     0.00036617      6.212e-14      6.212e-14         1.3328e-05        3.8479e-06     4.2438e-07       9.9095e-05            5.386e-10            6.212e-14         6.212e-14         6.212e-14            2.729e-11            6.212e-14        1.6453e-11         6.212e-14         6.212e-14         6.212e-14          2.0064e-09               6.212e-14           5.3798e-08       6.212e-14          6.212e-14              6.212e-14                  6.212e-14              6.212e-14       6.212e-14         6.212e-14          6.212e-14        6.212e-14        6.212e-14         0.044569        6.212e-14        6.212e-14       0.00030386        6.212e-14       6.212e-14      1.6738e-09         6.212e-14         6.212e-14         6.212e-14       0.00082883       6.212e-14       6.212e-14       6.212e-14       6.212e-14       6.212e-14       6.212e-14      6.8088e-09          3    
+    RUG320.fasta    2.2206e-14     3.2457e-06        0.037856        0.016144     0.00012433     2.2206e-14     2.2206e-14         4.0212e-05        4.8098e-07     6.1546e-09       3.4182e-06           1.3812e-12           2.2206e-14        2.2206e-14        2.2206e-14           5.2063e-14           2.2206e-14        9.5574e-12        2.2206e-14        2.2206e-14        2.2206e-14           4.411e-08              2.2206e-14           2.5132e-07      2.2206e-14         2.2206e-14             2.2206e-14                 2.2206e-14             2.2206e-14      2.2206e-14        2.2206e-14         2.2206e-14       2.2206e-14        0.0065676          0.93922       2.2206e-14       2.2206e-14       1.7759e-06       2.2206e-14      2.2206e-14      3.3331e-08        2.2206e-14        2.2206e-14        2.2206e-14       4.0817e-05      2.2206e-14      2.2206e-14      2.2206e-14      2.2206e-14      2.2206e-14      2.2206e-14      1.4935e-08         35    
+    RUG332.fasta    2.2202e-14         0.9151       0.0010042        0.083836     7.8849e-08     2.2202e-14     2.2202e-14         2.2202e-14        1.2342e-05     2.3415e-06          3.8e-08           2.2202e-14           2.2202e-14        2.2202e-14        2.2202e-14           2.2202e-14           2.2202e-14        2.8512e-12        2.2202e-14        2.2202e-14        2.2202e-14          4.3093e-11              2.2202e-14           2.2202e-14      2.2202e-14         2.2202e-14             2.2202e-14                 2.2202e-14             2.2202e-14      2.2202e-14        2.2202e-14         2.2202e-14       2.2202e-14       2.2202e-14       4.5768e-05       2.2202e-14       2.2202e-14        2.023e-10       2.2202e-14      2.2202e-14       2.292e-12        2.2202e-14        2.2202e-14        2.2202e-14       1.4234e-06      2.2202e-14      2.2202e-14      2.2202e-14      2.2202e-14      2.2202e-14      2.2202e-14      8.9244e-07          2    
+    RUG342.fasta    4.7225e-14          0.971       0.0025403      0.00048964      0.0039493     4.7225e-14     4.7225e-14          0.0065456        2.5918e-05     1.5933e-07        7.669e-05           4.3995e-11           4.7225e-14        4.7225e-14        4.7225e-14           4.2602e-07           4.7225e-14        7.8807e-12        4.7225e-14        4.7225e-14        4.7225e-14          3.0879e-07              8.5855e-11           0.00049911      4.7225e-14         4.7225e-14             4.7225e-14                 4.7225e-14             4.7225e-14      4.7225e-14        4.7225e-14         4.7225e-14       4.7225e-14       4.7225e-14         0.012721       4.7225e-14       4.7225e-14        5.469e-06       4.7225e-14      4.7225e-14      1.5185e-09        4.7225e-14        4.7225e-14        4.7225e-14         0.002141      4.7225e-14      4.7225e-14      4.7225e-14      4.7225e-14      4.7225e-14      4.7225e-14      6.9943e-08          2    
+    RUG439.fasta    6.9851e-14     0.00046744      0.00056577      6.1104e-06      8.635e-08     6.9851e-14     6.9851e-14         6.9851e-14           0.98977      0.0011638       5.3715e-12           6.9851e-14           6.9851e-14        6.9851e-14        6.9851e-14           6.9851e-14           6.9851e-14        8.1876e-12        6.9851e-14        6.9851e-14        6.9851e-14          6.9851e-14              6.9851e-14           6.9851e-14      6.9851e-14         6.9851e-14             6.9851e-14                 6.9851e-14             6.9851e-14      6.9851e-14        6.9851e-14         6.9851e-14       6.9851e-14       6.9851e-14        0.0069224       6.9851e-14       6.9851e-14        0.0011074       6.9851e-14      6.9851e-14      1.1202e-11        6.9851e-14        6.9851e-14        6.9851e-14       2.1574e-07      6.9851e-14      6.9851e-14      6.9851e-14      6.9851e-14      6.9851e-14      6.9851e-14      1.4665e-06          9    
+    RUG453.fasta    1.7495e-13       0.013859       0.0011031      7.6748e-05     9.6583e-07     1.7495e-13     1.7495e-13         1.7495e-13           0.96288      0.0014963       1.5317e-09           1.7495e-13           1.7495e-13        1.7495e-13        1.7495e-13           1.7495e-13           1.7495e-13        2.3448e-11        1.7495e-13        1.7495e-13        1.7495e-13          1.7495e-13              1.7495e-13           1.7495e-13      1.7495e-13         1.7495e-13             1.7495e-13                 1.7495e-13             1.7495e-13      1.7495e-13        1.7495e-13         1.7495e-13       1.7495e-13       1.7495e-13         0.019568       1.7495e-13       1.7495e-13       0.00099364       1.7495e-13      1.7495e-13      1.1206e-11        1.7495e-13        1.7495e-13        1.7495e-13       1.2599e-06      1.7495e-13      1.7495e-13      1.7495e-13      1.7495e-13      1.7495e-13      1.7495e-13      1.7793e-05          9    
+    RUG467.fasta    2.2203e-14     8.3399e-05      0.00073216        0.015513     1.9664e-05     2.2203e-14     2.2203e-14         8.5269e-08         0.0017186     6.9716e-07        0.0004019           2.2203e-14           2.2203e-14        2.2203e-14        2.2203e-14           2.5049e-07           2.2203e-14        5.1144e-11        2.2203e-14        2.2203e-14        2.2203e-14          8.5718e-12              2.2203e-14           4.4756e-07      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14             2.2203e-14      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14          0.98078       2.2203e-14       2.2203e-14       3.1635e-07       2.2203e-14      2.2203e-14      1.9381e-10        2.2203e-14        2.2203e-14        2.2203e-14       9.2648e-05      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      0.00066007         35    
+    RUG498.fasta     2.311e-14     2.0082e-06        0.060233      8.1686e-06     4.7699e-05       0.015283      2.311e-14          2.311e-14        0.00057624     1.2637e-05       1.7962e-09            2.311e-14            2.311e-14         2.311e-14         2.311e-14            2.311e-14            2.311e-14        1.0251e-10         2.311e-14         2.311e-14         2.311e-14           2.311e-14               2.311e-14            2.311e-14       2.311e-14          2.311e-14              2.311e-14                  2.311e-14              2.311e-14       2.311e-14         2.311e-14          2.311e-14        2.311e-14        2.311e-14          0.92384        2.311e-14        2.311e-14       3.6097e-08        2.311e-14       2.311e-14      3.3428e-09         2.311e-14         2.311e-14         2.311e-14        9.239e-07       2.311e-14       2.311e-14       2.311e-14       2.311e-14       2.311e-14       2.311e-14      3.6455e-07         35    
+    RUG502.fasta    2.2202e-14       0.055248      0.00031876      1.1014e-06      0.0019241     2.2202e-14     2.2202e-14         1.5096e-06        3.3101e-06      2.969e-08       8.8944e-06           1.0699e-10           2.2202e-14        2.2202e-14        2.2202e-14           7.4794e-09           2.2202e-14        5.0238e-12        2.2202e-14        2.2202e-14        2.2202e-14          2.7511e-10              2.2202e-14           4.4639e-05      2.2202e-14         2.2202e-14             2.2202e-14                 2.2202e-14             2.2202e-14      2.2202e-14        2.2202e-14         2.2202e-14       2.2202e-14       2.2202e-14          0.94218       2.2202e-14       2.2202e-14       7.0183e-08       2.2202e-14      2.2202e-14      1.6065e-10        2.2202e-14        2.2202e-14        2.2202e-14       0.00027176      2.2202e-14      2.2202e-14      2.2202e-14      2.2202e-14      2.2202e-14      2.2202e-14      8.0105e-11         35    
+    RUG511.fasta    2.2207e-14     1.7483e-06        0.036554        0.020412     4.7701e-05     2.2207e-14     2.2207e-14         7.4762e-06          3.13e-07     8.6436e-09       2.2559e-06           2.3586e-13           2.2207e-14        2.2207e-14        2.2207e-14           2.2207e-14           2.2207e-14        5.8981e-12        2.2207e-14        2.2207e-14        2.2207e-14          4.3182e-09              2.2207e-14           1.7232e-08      2.2207e-14         2.2207e-14             2.2207e-14                 2.2207e-14             2.2207e-14      2.2207e-14        2.2207e-14         2.2207e-14       2.2207e-14        0.0064382          0.93651       2.2207e-14       2.2207e-14       2.0851e-07       2.2207e-14      2.2207e-14      8.8882e-09        2.2207e-14        2.2207e-14        2.2207e-14       2.9501e-05      2.2207e-14      2.2207e-14      2.2207e-14      2.2207e-14      2.2207e-14      2.2207e-14      9.1865e-09         35    
+    RUG518.fasta    2.2203e-14     8.5784e-06        0.020691      0.00063181      0.0002068     2.2203e-14     2.2203e-14         2.4764e-09          0.001854     1.3617e-06        0.0001597           2.1202e-10           2.2203e-14        2.2203e-14        2.2203e-14           1.4137e-08           2.2203e-14        3.3596e-13        2.2203e-14        2.2203e-14        2.2203e-14          2.2203e-14              2.2203e-14           7.1531e-08      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14             2.2203e-14      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14          0.97325       2.2203e-14       2.2203e-14        0.0021098       2.2203e-14      2.2203e-14      1.0937e-12        2.2203e-14        2.2203e-14        2.2203e-14        0.0010861      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14       2.839e-08         35    
+    RUG529.fasta    2.2203e-14     4.2628e-05       0.0021057      2.7096e-05      0.0013653     2.2203e-14     2.2203e-14         1.9913e-06        6.5159e-06     6.8173e-07       1.5178e-05           1.8647e-05           2.2203e-14        2.2203e-14        2.2203e-14           2.4229e-07           2.2203e-14        1.0596e-13        2.2203e-14        2.2203e-14        2.2203e-14          1.3547e-09              4.5458e-12           7.2297e-05      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14             2.2203e-14      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14          0.98358       2.2203e-14       2.2203e-14        0.0004724       2.2203e-14      2.2203e-14      4.1791e-12        2.2203e-14        2.2203e-14        2.2203e-14         0.012287      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      5.8554e-10         35    
+    RUG542.fasta    2.2204e-14     8.8528e-10       0.0078766      1.0436e-06     3.4411e-09     2.2204e-14     2.2204e-14         2.2204e-14        1.0297e-08      0.0035082       2.2204e-14           2.2204e-14           2.2204e-14        2.2204e-14        2.2204e-14           2.2204e-14           2.2204e-14        2.2204e-14        2.2204e-14        2.2204e-14        2.2204e-14          2.2204e-14              3.3634e-09           2.2204e-14      2.2204e-14         2.2204e-14             2.2204e-14                 2.2204e-14             2.2204e-14      2.2204e-14        2.2204e-14         2.2204e-14       2.2204e-14       2.2204e-14          0.95883       2.2204e-14       2.2204e-14       1.0966e-12       2.2204e-14      2.2204e-14      3.4603e-13        2.2204e-14        2.2204e-14        2.2204e-14       3.3923e-08      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14        0.029782         35    
+    RUG580.fasta    2.2207e-14     1.8254e-06        0.024882         0.03693     3.9133e-05     2.2207e-14     2.2207e-14         1.0339e-05         2.816e-07     7.9081e-09        2.706e-06           2.0832e-13           2.2207e-14        2.2207e-14        2.2207e-14           2.2207e-14           2.2207e-14        7.6359e-12        2.2207e-14        2.2207e-14        2.2207e-14          9.7362e-09              2.2207e-14            3.393e-08      2.2207e-14         2.2207e-14             2.2207e-14                 2.2207e-14             2.2207e-14      2.2207e-14        2.2207e-14         2.2207e-14       2.2207e-14        0.0064267          0.93167       2.2207e-14       2.2207e-14        1.255e-06       2.2207e-14      2.2207e-14      2.0915e-08        2.2207e-14        2.2207e-14        2.2207e-14       3.3891e-05      2.2207e-14      2.2207e-14      2.2207e-14      2.2207e-14      2.2207e-14      2.2207e-14      2.5987e-08         35    
+    RUG601.fasta    2.2204e-14       0.010248       0.0058273      0.00041918     0.00096319     2.2204e-14     2.2204e-14         1.1787e-08        0.00074614     6.8114e-07       3.8818e-05           1.4151e-08           2.2204e-14        2.2204e-14        2.2204e-14           1.8058e-08           2.2204e-14        5.7993e-13        2.2204e-14        2.2204e-14        2.2204e-14          1.5255e-13              2.2204e-14           2.1146e-08      2.2204e-14         2.2204e-14             2.2204e-14                 2.2204e-14             2.2204e-14      2.2204e-14        2.2204e-14         2.2204e-14       2.2204e-14       2.2204e-14          0.98127       2.2204e-14       2.2204e-14       2.3171e-05       2.2204e-14      2.2204e-14      5.3654e-13        2.2204e-14        2.2204e-14        2.2204e-14       0.00046346      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      1.3113e-08         35    
+    RUG608.fasta    2.2203e-14     2.3226e-05       0.0026966       1.249e-05     3.2808e-06     2.2203e-14     2.2203e-14          6.111e-13        0.00029567     1.9748e-06       1.0902e-05           1.6979e-12           2.2203e-14        2.2203e-14        2.2203e-14           4.3929e-09           2.2203e-14        2.2373e-11        2.2203e-14        2.2203e-14        2.2203e-14          2.2203e-14              2.2203e-14            1.715e-11      2.2203e-14         2.2203e-14             2.2203e-14                 2.2203e-14             2.2203e-14      2.2203e-14        2.2203e-14         2.2203e-14       2.2203e-14       2.2203e-14          0.98534       2.2203e-14       2.2203e-14       2.2203e-14       2.2203e-14      2.2203e-14      1.3583e-11        2.2203e-14        2.2203e-14        2.2203e-14       3.0189e-06      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14      2.2203e-14        0.011615         35    
+    RUG623.fasta    2.2208e-14      1.326e-06        0.038668        0.030523      5.118e-05     2.2208e-14     2.2208e-14         1.2091e-05        2.0738e-07     6.9013e-09       1.9886e-06            8.261e-14           2.2208e-14        2.2208e-14        2.2208e-14           2.2208e-14           2.2208e-14        1.1114e-11        2.2208e-14        2.2208e-14        2.2208e-14           1.059e-08              2.2208e-14           1.5351e-08      2.2208e-14         2.2208e-14             2.2208e-14                 2.2208e-14             2.2208e-14      2.2208e-14        2.2208e-14         2.2208e-14       2.2208e-14        0.0063655          0.92435       2.2208e-14       2.2208e-14        1.341e-07       2.2208e-14      2.2208e-14      2.8301e-08        2.2208e-14        2.2208e-14        2.2208e-14       2.5452e-05      2.2208e-14      2.2208e-14      2.2208e-14      2.2208e-14      2.2208e-14      2.2208e-14      6.7608e-09         35    
+    RUG626.fasta    0.00095911     2.2204e-14      9.0354e-06      6.9414e-10       0.004729     2.2204e-14     2.2204e-14         2.2204e-14        1.9012e-10      0.0016314       4.6679e-06           3.1754e-07           2.2204e-14        2.2204e-14        2.2204e-14           2.2204e-14           2.2204e-14        1.4395e-09        2.2204e-14        2.2204e-14        2.2204e-14          8.3395e-13              2.2204e-14           7.2419e-11      2.2204e-14         2.2204e-14             2.2204e-14                 2.2204e-14                 0.9855      2.2204e-14        2.2204e-14         2.2204e-14       2.2204e-14       2.2204e-14         0.006416       2.2204e-14       2.2204e-14       0.00074221       2.2204e-14      2.2204e-14       9.555e-09        2.2204e-14        2.2204e-14        2.2204e-14       2.8466e-06      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      4.2407e-06         29    
+    RUG674.fasta    2.2205e-14     2.2299e-05        0.014987        0.014559     8.2935e-05     2.2205e-14     2.2205e-14          1.115e-07        0.00055867     2.2727e-06       0.00018353           4.2232e-07           2.2205e-14        2.2205e-14        2.2205e-14            2.692e-07           2.2205e-14        1.3948e-13        2.2205e-14        2.2205e-14        2.2205e-14          1.5635e-12              2.2205e-14           8.0007e-08      2.2205e-14         2.2205e-14             2.2205e-14                 2.2205e-14             2.2205e-14      2.2205e-14        2.2205e-14         2.2205e-14       2.2205e-14       2.2205e-14          0.96535       2.2205e-14       2.2205e-14       3.2337e-05       2.2205e-14      2.2205e-14      6.4699e-13        2.2205e-14        2.2205e-14        2.2205e-14        0.0042188      2.2205e-14      2.2205e-14      2.2205e-14      2.2205e-14      2.2205e-14      2.2205e-14      2.4237e-06         35    
+    RUG678.fasta    2.2204e-14     0.00050867       0.0059448      1.0056e-06      0.0001717     2.2204e-14     2.2204e-14          0.0049523        1.0646e-06      8.092e-06       1.6715e-05            8.589e-11           2.2204e-14        2.2204e-14        2.2204e-14           8.4618e-06           2.2204e-14        2.4455e-11        2.2204e-14        2.2204e-14        2.2204e-14          2.1441e-09               2.318e-06            0.0040361      2.2204e-14         2.2204e-14             2.2204e-14                 2.2204e-14             2.2204e-14         0.98269        2.2204e-14         2.2204e-14       2.2204e-14       2.2204e-14        0.0012613       2.2204e-14       2.2204e-14        6.204e-09       2.2204e-14      2.2204e-14      1.8426e-06        2.2204e-14        2.2204e-14        2.2204e-14        0.0003924      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14      2.2204e-14       2.852e-10         30    
+    RUG776.fasta    2.2205e-14     1.7961e-06        0.030682        0.019081     5.3002e-05     2.2205e-14     2.2205e-14         1.4588e-05        5.1791e-07      7.586e-09        3.273e-06           5.4174e-13           2.2205e-14        2.2205e-14        2.2205e-14           1.3467e-13           2.2205e-14         5.936e-12        2.2205e-14        2.2205e-14        2.2205e-14          1.4569e-08              2.2205e-14           1.7619e-07      2.2205e-14         2.2205e-14             2.2205e-14                 2.2205e-14             2.2205e-14      2.2205e-14        2.2205e-14         2.2205e-14       2.2205e-14       2.2205e-14          0.95012       2.2205e-14       2.2205e-14       3.0746e-06       2.2205e-14      2.2205e-14       1.605e-08        2.2205e-14        2.2205e-14        2.2205e-14       4.3595e-05      2.2205e-14      2.2205e-14      2.2205e-14      2.2205e-14      2.2205e-14      2.2205e-14      2.3551e-08         35    
+    RUG798.fasta    2.2321e-14     0.00097606        0.000924      1.0045e-06        0.99747     2.2321e-14     2.2321e-14         0.00052636        6.7751e-06     1.7073e-08       8.5875e-06           3.2988e-08           2.2321e-14        2.2321e-14        2.2321e-14           1.5524e-11           2.2321e-14        1.0932e-08        2.2321e-14        2.2321e-14        2.2321e-14          2.6488e-09              2.2321e-14            2.413e-06      2.2321e-14         2.2321e-14             2.2321e-14                 2.2321e-14             2.2321e-14      2.2321e-14        2.2321e-14         2.2321e-14       2.2321e-14       2.2321e-14       1.3198e-09       2.2321e-14       2.2321e-14       7.5192e-10       2.2321e-14      2.2321e-14      1.6379e-06        2.2321e-14        2.2321e-14        2.2321e-14       8.1065e-05      2.2321e-14      2.2321e-14      2.2321e-14      2.2321e-14      2.2321e-14      2.2321e-14      5.6447e-13          5    
+
+Process completed 
+[?1l>

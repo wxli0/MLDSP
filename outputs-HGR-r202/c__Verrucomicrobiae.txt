@@ -1,0 +1,2618 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/c__Verrucomicrobiae_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 965
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x4 cell array
+
+    {'o__Opitutales'}    {'o__Verrucomicrobiales'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x193 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 64
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 65 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 80
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 81 through 88
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 89 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 104
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 105 through 112
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 113 through 120
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 121 through 128
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 129 through 136
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 137 through 144
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 145 through 152
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 153 through 160
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 161 through 168
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 169 through 176
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 177 through 184
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 185 through 192
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 193
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  193x4 table
+
+                                o__Opitutales    o__Verrucomicrobiales    prediction    actual
+                                _____________    _____________________    __________    ______
+
+    label_UMGS1057_18.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_3.fasta            1               2.2204e-14              1           1   
+    label_UMGS1057_31.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_32.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_33.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_37.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_38.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_48.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_49.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_50.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_52.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_53.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_57.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_58.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_62.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_68.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_8.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_16.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_21.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_23.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_27.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_28.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_32.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_4.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_46.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_5.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_50.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_6.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_106.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_109.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_111.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_114.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_119.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_122.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_123.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_127.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_13.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_132.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_15.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_17.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_18.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_24.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_25.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_27.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_33.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_40.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_46.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_54.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_55.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_57.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_58.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_6.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_63.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_65.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_68.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_69.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_71.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_72.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_88.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_9.fasta            1               2.2204e-14              1           1   
+    label_UMGS1490_100.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_115.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_117.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_122.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_125.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_126.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_131.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_132.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_134.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_137.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_16.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_23.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_25.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_26.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_28.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_30.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_4.fasta            1               2.2204e-14              1           1   
+    label_UMGS1490_40.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_44.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_46.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_48.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_52.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_57.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_6.fasta            1               2.2204e-14              1           1   
+    label_UMGS1490_75.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_87.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_9.fasta            1               2.2204e-14              1           1   
+    label_UMGS1490_97.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_13.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_24.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_32.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_34.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_7.fasta            1               2.2204e-14              1           1   
+    label_UMGS2045_8.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_0.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_1.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_101.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_103.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_105.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_112.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_114.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_119.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_122.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_13.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_18.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_26.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_30.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_32.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_42.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_50.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_52.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_54.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_96.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_98.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_12.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_18.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_19.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_2.fasta             1               2.2204e-14              1           1   
+    label_UMGS810_25.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_28.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_31.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_36.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_42.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_44.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_49.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_52.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_56.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_57.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_60.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_65.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_7.fasta             1               2.2204e-14              1           1   
+    label_UMGS810_9.fasta             1               2.2204e-14              1           1   
+    label_UMGS811_17.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_23.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_6.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_2.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_20.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_26.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_33.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_40.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_44.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_49.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_5.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_59.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_6.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_61.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_65.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_7.fasta             1               2.2204e-14              1           1   
+    label_UMGS953_11.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_29.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_34.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_9.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_1.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_16.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_19.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_27.fasta            1               2.2204e-14              1           1   
+    label_UMGS1128_13.fasta           0                        1              2           2   
+    label_UMGS1128_16.fasta           0                        1              2           2   
+    label_UMGS1128_19.fasta           0                        1              2           2   
+    label_UMGS1128_2.fasta            0                        1              2           2   
+    label_UMGS1128_20.fasta           0                        1              2           2   
+    label_UMGS1128_22.fasta           0                        1              2           2   
+    label_UMGS1128_30.fasta           0                        1              2           2   
+    label_UMGS1128_40.fasta           0                        1              2           2   
+    label_UMGS1128_47.fasta           0                        1              2           2   
+    label_UMGS1128_51.fasta           0                        1              2           2   
+    label_UMGS1128_52.fasta           0                        1              2           2   
+    label_UMGS1128_55.fasta           0                        1              2           2   
+    label_UMGS1128_60.fasta           0                        1              2           2   
+    label_UMGS1128_7.fasta            0                        1              2           2   
+    label_UMGS141_0.fasta             0                        1              2           2   
+    label_UMGS141_1.fasta             0                        1              2           2   
+    label_UMGS141_13.fasta            0                        1              2           2   
+    label_UMGS141_15.fasta            0                        1              2           2   
+    label_UMGS141_25.fasta            0                        1              2           2   
+    label_UMGS141_8.fasta             0                        1              2           2   
+    label_UMGS141_9.fasta             0                        1              2           2   
+    label_UMGS181_0.fasta             0                        1              2           2   
+    label_UMGS181_17.fasta            0                        1              2           2   
+    label_UMGS181_2.fasta             0                        1              2           2   
+    label_UMGS181_20.fasta            0                        1              2           2   
+    label_UMGS181_24.fasta            0                        1              2           2   
+    label_UMGS181_25.fasta            0                        1              2           2   
+    label_UMGS181_31.fasta            0                        1              2           2   
+    label_UMGS750_1.fasta             0                        1              2           2   
+    label_UMGS750_23.fasta            0                        1              2           2   
+    label_UMGS750_27.fasta            0                        1              2           2   
+    label_UMGS750_28.fasta            0                        1              2           2   
+    label_UMGS750_36.fasta            0                        1              2           2   
+    label_UMGS750_39.fasta            0                        1              2           2   
+    label_UMGS750_40.fasta            0                        1              2           2   
+    label_UMGS750_42.fasta            0                        1              2           2   
+    label_UMGS750_45.fasta            0                        1              2           2   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x193 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 64
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 65 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 80
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 81 through 88
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 89 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 104
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 105 through 112
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 113 through 120
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 121 through 128
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 129 through 136
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 137 through 144
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 145 through 152
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 153 through 160
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 161 through 168
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 169 through 176
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 177 through 184
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 185 through 192
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 193
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  193x4 table
+
+                                o__Opitutales    o__Verrucomicrobiales    prediction    actual
+                                _____________    _____________________    __________    ______
+
+    label_UMGS1057_15.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_19.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_2.fasta            1               2.2204e-14              1           1   
+    label_UMGS1057_24.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_28.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_34.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_41.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_43.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_51.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_55.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_63.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_64.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_1.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_10.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_18.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_22.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_24.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_26.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_37.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_38.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_39.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_43.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_48.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_49.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_7.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_0.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_1.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_101.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_102.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_108.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_11.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_112.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_115.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_12.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_124.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_131.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_133.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_136.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_139.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_140.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_2.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_21.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_26.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_28.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_29.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_3.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_31.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_35.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_36.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_38.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_50.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_59.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_61.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_62.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_77.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_81.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_85.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_98.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_0.fasta            1               2.2204e-14              1           1   
+    label_UMGS1490_105.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_114.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_119.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_121.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_123.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_130.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_142.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_15.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_17.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_20.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_21.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_36.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_41.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_49.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_50.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_53.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_55.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_58.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_65.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_85.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_88.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_93.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_95.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_98.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_99.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_10.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_14.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_15.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_28.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_30.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_4.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_104.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_108.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_109.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_111.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_116.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_2.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_20.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_24.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_27.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_3.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_35.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_37.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_47.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_49.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_57.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_64.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_66.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_69.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_7.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_72.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_78.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_81.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_84.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_89.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_9.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_93.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_11.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_17.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_29.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_30.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_33.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_39.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_41.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_43.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_5.fasta             1               2.2204e-14              1           1   
+    label_UMGS810_53.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_55.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_59.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_67.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_8.fasta             1               2.2204e-14              1           1   
+    label_UMGS811_0.fasta             1               2.2204e-14              1           1   
+    label_UMGS811_12.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_25.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_3.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_1.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_16.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_19.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_3.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_30.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_36.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_41.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_47.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_51.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_52.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_55.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_1.fasta             1               2.2204e-14              1           1   
+    label_UMGS953_14.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_15.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_18.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_19.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_28.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_32.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_35.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_5.fasta             1               2.2204e-14              1           1   
+    label_UMGS953_8.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_15.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_17.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_2.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_24.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_3.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_4.fasta             1               2.2204e-14              1           1   
+    label_UMGS1128_0.fasta            0                        1              2           2   
+    label_UMGS1128_10.fasta           0                        1              2           2   
+    label_UMGS1128_26.fasta           0                        1              2           2   
+    label_UMGS1128_29.fasta           0                        1              2           2   
+    label_UMGS1128_3.fasta            0                        1              2           2   
+    label_UMGS1128_38.fasta           0                        1              2           2   
+    label_UMGS1128_39.fasta           0                        1              2           2   
+    label_UMGS1128_44.fasta           0                        1              2           2   
+    label_UMGS1128_49.fasta           0                        1              2           2   
+    label_UMGS1128_5.fasta            0                        1              2           2   
+    label_UMGS1128_57.fasta           0                        1              2           2   
+    label_UMGS1128_59.fasta           0                        1              2           2   
+    label_UMGS1128_61.fasta           0                        1              2           2   
+    label_UMGS141_10.fasta            0                        1              2           2   
+    label_UMGS141_29.fasta            0                        1              2           2   
+    label_UMGS141_7.fasta             0                        1              2           2   
+    label_UMGS181_11.fasta            0                        1              2           2   
+    label_UMGS181_13.fasta            0                        1              2           2   
+    label_UMGS181_19.fasta            0                        1              2           2   
+    label_UMGS181_26.fasta            0                        1              2           2   
+    label_UMGS181_6.fasta             0                        1              2           2   
+    label_UMGS750_13.fasta            0                        1              2           2   
+    label_UMGS750_16.fasta            0                        1              2           2   
+    label_UMGS750_19.fasta            0                        1              2           2   
+    label_UMGS750_22.fasta            0                        1              2           2   
+    label_UMGS750_26.fasta            0                        1              2           2   
+    label_UMGS750_29.fasta            0                        1              2           2   
+    label_UMGS750_34.fasta            0                        1              2           2   
+    label_UMGS750_37.fasta            0                        1              2           2   
+    label_UMGS750_41.fasta            0                        1              2           2   
+    label_UMGS750_43.fasta            0                        1              2           2   
+    label_UMGS750_5.fasta             0                        1              2           2   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x193 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 64
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 65 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 80
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 81 through 88
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 89 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 104
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 105 through 112
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 113 through 120
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 121 through 128
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 129 through 136
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 137 through 144
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 145 through 152
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 153 through 160
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 161 through 168
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 169 through 176
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 177 through 184
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 185 through 192
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 193
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  193x4 table
+
+                                o__Opitutales    o__Verrucomicrobiales    prediction    actual
+                                _____________    _____________________    __________    ______
+
+    label_UMGS1057_1.fasta            1               2.2204e-14              1           1   
+    label_UMGS1057_12.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_13.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_20.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_25.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_26.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_30.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_42.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_47.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_56.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_60.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_61.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_69.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_9.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_0.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_13.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_14.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_2.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_20.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_3.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_30.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_40.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_41.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_110.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_120.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_128.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_129.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_22.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_32.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_39.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_44.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_45.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_48.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_52.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_64.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_67.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_7.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_70.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_73.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_74.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_82.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_83.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_86.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_87.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_92.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_99.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_1.fasta            1               2.2204e-14              1           1   
+    label_UMGS1490_107.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_108.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_109.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_120.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_127.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_129.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_135.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_136.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_138.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_140.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_29.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_32.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_34.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_38.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_39.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_42.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_56.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_59.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_61.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_63.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_64.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_68.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_69.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_70.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_72.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_73.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_76.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_77.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_78.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_80.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_81.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_91.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_12.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_17.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_21.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_25.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_26.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_29.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_3.fasta            1               2.2204e-14              1           1   
+    label_UMGS2045_5.fasta            1               2.2204e-14              1           1   
+    label_UMGS2045_6.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_10.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_102.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_113.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_117.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_118.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_21.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_25.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_28.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_31.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_36.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_43.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_5.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_58.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_65.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_67.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_71.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_74.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_75.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_8.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_82.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_83.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_90.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_91.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_92.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_94.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_95.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_97.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_99.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_0.fasta             1               2.2204e-14              1           1   
+    label_UMGS810_16.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_23.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_27.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_3.fasta             1               2.2204e-14              1           1   
+    label_UMGS810_4.fasta             1               2.2204e-14              1           1   
+    label_UMGS810_48.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_50.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_58.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_64.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_11.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_16.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_18.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_20.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_4.fasta             1               2.2204e-14              1           1   
+    label_UMGS811_5.fasta             1               2.2204e-14              1           1   
+    label_UMGS811_7.fasta             1               2.2204e-14              1           1   
+    label_UMGS811_8.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_17.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_21.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_22.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_23.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_27.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_28.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_32.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_37.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_38.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_4.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_48.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_62.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_8.fasta             1               2.2204e-14              1           1   
+    label_UMGS953_0.fasta             1               2.2204e-14              1           1   
+    label_UMGS953_2.fasta             1               2.2204e-14              1           1   
+    label_UMGS953_23.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_25.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_3.fasta             1               2.2204e-14              1           1   
+    label_UMGS953_30.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_4.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_11.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_13.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_14.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_20.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_22.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_7.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_9.fasta             1               2.2204e-14              1           1   
+    label_UMGS1128_12.fasta           0                        1              2           2   
+    label_UMGS1128_25.fasta           0                        1              2           2   
+    label_UMGS1128_34.fasta           0                        1              2           2   
+    label_UMGS1128_45.fasta           0                        1              2           2   
+    label_UMGS1128_50.fasta           0                        1              2           2   
+    label_UMGS1128_6.fasta            0                        1              2           2   
+    label_UMGS1128_9.fasta            0                        1              2           2   
+    label_UMGS141_11.fasta            0                        1              2           2   
+    label_UMGS141_16.fasta            0                        1              2           2   
+    label_UMGS141_17.fasta            0                        1              2           2   
+    label_UMGS141_18.fasta            0                        1              2           2   
+    label_UMGS141_2.fasta             0                        1              2           2   
+    label_UMGS141_20.fasta            0                        1              2           2   
+    label_UMGS141_26.fasta            0                        1              2           2   
+    label_UMGS141_3.fasta             0                        1              2           2   
+    label_UMGS181_10.fasta            0                        1              2           2   
+    label_UMGS181_12.fasta            0                        1              2           2   
+    label_UMGS181_21.fasta            0                        1              2           2   
+    label_UMGS181_22.fasta            0                        1              2           2   
+    label_UMGS181_29.fasta            0                        1              2           2   
+    label_UMGS181_3.fasta             0                        1              2           2   
+    label_UMGS181_5.fasta             0                        1              2           2   
+    label_UMGS181_8.fasta             0                        1              2           2   
+    label_UMGS181_9.fasta             0                        1              2           2   
+    label_UMGS750_10.fasta            0                        1              2           2   
+    label_UMGS750_14.fasta            0                        1              2           2   
+    label_UMGS750_17.fasta            0                        1              2           2   
+    label_UMGS750_24.fasta            0                        1              2           2   
+    label_UMGS750_25.fasta            0                        1              2           2   
+    label_UMGS750_3.fasta             0                        1              2           2   
+    label_UMGS750_33.fasta            0                        1              2           2   
+    label_UMGS750_46.fasta            0                        1              2           2   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x193 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 64
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 65 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 80
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 81 through 88
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 89 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 104
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 105 through 112
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 113 through 120
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 121 through 128
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 129 through 136
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 137 through 144
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 145 through 152
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 153 through 160
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 161 through 168
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 169 through 176
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 177 through 184
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 185 through 192
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 193
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.8264    0.1736    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.8264    0.1736    1.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  193x4 table
+
+                                o__Opitutales    o__Verrucomicrobiales    prediction    actual
+                                _____________    _____________________    __________    ______
+
+    label_UMGS1057_10.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_11.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_17.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_27.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_29.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_35.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_36.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_4.fasta               1            2.2204e-14              1           1   
+    label_UMGS1057_40.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_44.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_45.fasta              1            2.2204e-14              1           1   
+    label_UMGS1057_5.fasta               1            2.2204e-14              1           1   
+    label_UMGS1057_67.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_12.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_15.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_17.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_25.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_34.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_35.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_45.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_47.fasta              1            2.2204e-14              1           1   
+    label_UMGS1069_8.fasta               1            2.2204e-14              1           1   
+    label_UMGS1069_9.fasta               1            2.2204e-14              1           1   
+    label_UMGS1358_100.fasta             1            2.2204e-14              1           1   
+    label_UMGS1358_105.fasta             1            2.2204e-14              1           1   
+    label_UMGS1358_107.fasta             1            2.2204e-14              1           1   
+    label_UMGS1358_118.fasta             1            2.2204e-14              1           1   
+    label_UMGS1358_137.fasta             1            2.2204e-14              1           1   
+    label_UMGS1358_19.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_20.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_23.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_34.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_41.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_42.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_47.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_5.fasta               1            2.2204e-14              1           1   
+    label_UMGS1358_53.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_56.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_60.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_66.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_75.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_79.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_90.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_91.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_95.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_96.fasta              1            2.2204e-14              1           1   
+    label_UMGS1358_97.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_101.fasta             1            2.2204e-14              1           1   
+    label_UMGS1490_12.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_128.fasta             1            2.2204e-14              1           1   
+    label_UMGS1490_13.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_133.fasta       0.82642               0.17358              1           1   
+    label_UMGS1490_139.fasta             1            2.2204e-14              1           1   
+    label_UMGS1490_14.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_18.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_19.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_2.fasta               1            2.2204e-14              1           1   
+    label_UMGS1490_22.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_27.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_3.fasta               1            2.2204e-14              1           1   
+    label_UMGS1490_31.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_33.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_37.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_45.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_47.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_5.fasta               1            2.2204e-14              1           1   
+    label_UMGS1490_54.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_60.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_66.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_8.fasta               1            2.2204e-14              1           1   
+    label_UMGS1490_82.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_83.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_84.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_89.fasta              1            2.2204e-14              1           1   
+    label_UMGS1490_96.fasta              1            2.2204e-14              1           1   
+    label_UMGS2045_0.fasta               1            2.2204e-14              1           1   
+    label_UMGS2045_16.fasta              1            2.2204e-14              1           1   
+    label_UMGS2045_19.fasta              1            2.2204e-14              1           1   
+    label_UMGS2045_27.fasta              1            2.2204e-14              1           1   
+    label_UMGS2045_9.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_106.fasta              1            2.2204e-14              1           1   
+    label_UMGS656_110.fasta              1            2.2204e-14              1           1   
+    label_UMGS656_115.fasta              1            2.2204e-14              1           1   
+    label_UMGS656_12.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_120.fasta              1            2.2204e-14              1           1   
+    label_UMGS656_14.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_19.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_23.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_33.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_34.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_38.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_39.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_41.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_44.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_46.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_51.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_56.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_59.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_6.fasta                1            2.2204e-14              1           1   
+    label_UMGS656_63.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_76.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_77.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_79.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_80.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_87.fasta               1            2.2204e-14              1           1   
+    label_UMGS656_88.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_13.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_14.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_21.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_24.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_26.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_32.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_35.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_47.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_54.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_6.fasta                1            2.2204e-14              1           1   
+    label_UMGS810_62.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_63.fasta               1            2.2204e-14              1           1   
+    label_UMGS810_66.fasta               1            2.2204e-14              1           1   
+    label_UMGS811_1.fasta                1            2.2204e-14              1           1   
+    label_UMGS811_10.fasta               1            2.2204e-14              1           1   
+    label_UMGS811_14.fasta               1            2.2204e-14              1           1   
+    label_UMGS811_19.fasta               1            2.2204e-14              1           1   
+    label_UMGS811_2.fasta                1            2.2204e-14              1           1   
+    label_UMGS811_21.fasta               1            2.2204e-14              1           1   
+    label_UMGS811_9.fasta                1            2.2204e-14              1           1   
+    label_UMGS885_10.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_14.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_15.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_24.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_29.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_42.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_53.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_54.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_58.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_64.fasta               1            2.2204e-14              1           1   
+    label_UMGS885_9.fasta                1            2.2204e-14              1           1   
+    label_UMGS953_10.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_12.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_17.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_20.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_22.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_24.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_26.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_27.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_33.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_36.fasta               1            2.2204e-14              1           1   
+    label_UMGS953_6.fasta                1            2.2204e-14              1           1   
+    label_UMGS982_10.fasta               1            2.2204e-14              1           1   
+    label_UMGS982_12.fasta               1            2.2204e-14              1           1   
+    label_UMGS982_18.fasta               1            2.2204e-14              1           1   
+    label_UMGS982_6.fasta                1            2.2204e-14              1           1   
+    label_UMGS982_8.fasta                1            2.2204e-14              1           1   
+    label_UMGS1128_21.fasta              0                     1              2           2   
+    label_UMGS1128_27.fasta              0                     1              2           2   
+    label_UMGS1128_28.fasta              0                     1              2           2   
+    label_UMGS1128_31.fasta              0                     1              2           2   
+    label_UMGS1128_33.fasta              0                     1              2           2   
+    label_UMGS1128_37.fasta              0                     1              2           2   
+    label_UMGS1128_41.fasta              0                     1              2           2   
+    label_UMGS1128_42.fasta              0                     1              2           2   
+    label_UMGS1128_43.fasta              0                     1              2           2   
+    label_UMGS1128_46.fasta              0                     1              2           2   
+    label_UMGS1128_48.fasta              0                     1              2           2   
+    label_UMGS1128_56.fasta              0                     1              2           2   
+    label_UMGS1128_58.fasta              0                     1              2           2   
+    label_UMGS1128_62.fasta              0                     1              2           2   
+    label_UMGS1128_63.fasta        0.82642               0.17358              1           2   
+    label_UMGS141_12.fasta               0                     1              2           2   
+    label_UMGS141_19.fasta               0                     1              2           2   
+    label_UMGS141_21.fasta               0                     1              2           2   
+    label_UMGS141_22.fasta               0                     1              2           2   
+    label_UMGS141_23.fasta               0                     1              2           2   
+    label_UMGS141_28.fasta               0                     1              2           2   
+    label_UMGS141_4.fasta                0                     1              2           2   
+    label_UMGS141_5.fasta                0                     1              2           2   
+    label_UMGS141_6.fasta                0                     1              2           2   
+    label_UMGS181_1.fasta                0                     1              2           2   
+    label_UMGS181_14.fasta               0                     1              2           2   
+    label_UMGS181_18.fasta               0                     1              2           2   
+    label_UMGS181_23.fasta               0                     1              2           2   
+    label_UMGS181_27.fasta               0                     1              2           2   
+    label_UMGS181_7.fasta                0                     1              2           2   
+    label_UMGS750_0.fasta                0                     1              2           2   
+    label_UMGS750_18.fasta               0                     1              2           2   
+    label_UMGS750_2.fasta                0                     1              2           2   
+    label_UMGS750_31.fasta               0                     1              2           2   
+    label_UMGS750_32.fasta               0                     1              2           2   
+    label_UMGS750_35.fasta               0                     1              2           2   
+    label_UMGS750_38.fasta               0                     1              2           2   
+    label_UMGS750_44.fasta               0                     1              2           2   
+    label_UMGS750_6.fasta                0                     1              2           2   
+    label_UMGS750_7.fasta                0                     1              2           2   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x193 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 64
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 65 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 80
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 81 through 88
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 89 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 104
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 105 through 112
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 113 through 120
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 121 through 128
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 129 through 136
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 137 through 144
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 145 through 152
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 153 through 160
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 161 through 168
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 169 through 176
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 177 through 184
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 185 through 192
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 193
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  193x4 table
+
+                                o__Opitutales    o__Verrucomicrobiales    prediction    actual
+                                _____________    _____________________    __________    ______
+
+    label_UMGS1057_0.fasta            1               2.2204e-14              1           1   
+    label_UMGS1057_14.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_16.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_21.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_22.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_23.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_39.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_46.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_54.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_59.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_6.fasta            1               2.2204e-14              1           1   
+    label_UMGS1057_65.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_66.fasta           1               2.2204e-14              1           1   
+    label_UMGS1057_7.fasta            1               2.2204e-14              1           1   
+    label_UMGS1069_11.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_19.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_29.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_31.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_33.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_36.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_42.fasta           1               2.2204e-14              1           1   
+    label_UMGS1069_44.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_10.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_103.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_104.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_113.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_116.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_117.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_121.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_125.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_126.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_130.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_134.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_135.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_138.fasta          1               2.2204e-14              1           1   
+    label_UMGS1358_14.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_16.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_30.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_37.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_4.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_43.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_49.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_51.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_76.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_78.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_8.fasta            1               2.2204e-14              1           1   
+    label_UMGS1358_80.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_84.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_89.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_93.fasta           1               2.2204e-14              1           1   
+    label_UMGS1358_94.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_10.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_102.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_103.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_104.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_106.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_11.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_110.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_111.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_112.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_113.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_116.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_118.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_124.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_141.fasta          1               2.2204e-14              1           1   
+    label_UMGS1490_24.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_35.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_43.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_51.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_62.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_67.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_7.fasta            1               2.2204e-14              1           1   
+    label_UMGS1490_71.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_74.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_79.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_86.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_90.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_92.fasta           1               2.2204e-14              1           1   
+    label_UMGS1490_94.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_1.fasta            1               2.2204e-14              1           1   
+    label_UMGS2045_11.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_18.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_2.fasta            1               2.2204e-14              1           1   
+    label_UMGS2045_20.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_22.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_23.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_31.fasta           1               2.2204e-14              1           1   
+    label_UMGS2045_33.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_100.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_107.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_11.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_121.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_123.fasta           1               2.2204e-14              1           1   
+    label_UMGS656_15.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_16.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_17.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_22.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_29.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_4.fasta             1               2.2204e-14              1           1   
+    label_UMGS656_40.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_45.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_48.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_53.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_55.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_60.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_61.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_62.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_68.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_70.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_73.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_85.fasta            1               2.2204e-14              1           1   
+    label_UMGS656_86.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_1.fasta             1               2.2204e-14              1           1   
+    label_UMGS810_10.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_15.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_20.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_22.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_34.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_37.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_38.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_40.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_45.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_46.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_51.fasta            1               2.2204e-14              1           1   
+    label_UMGS810_61.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_13.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_15.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_22.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_24.fasta            1               2.2204e-14              1           1   
+    label_UMGS811_26.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_0.fasta             1               2.2204e-14              1           1   
+    label_UMGS885_11.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_12.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_13.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_18.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_25.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_31.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_34.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_35.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_39.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_43.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_45.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_46.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_50.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_56.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_57.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_60.fasta            1               2.2204e-14              1           1   
+    label_UMGS885_63.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_13.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_16.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_21.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_31.fasta            1               2.2204e-14              1           1   
+    label_UMGS953_7.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_0.fasta             1               2.2204e-14              1           1   
+    label_UMGS982_21.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_23.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_25.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_26.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_28.fasta            1               2.2204e-14              1           1   
+    label_UMGS982_5.fasta             1               2.2204e-14              1           1   
+    label_UMGS1128_1.fasta            0                        1              2           2   
+    label_UMGS1128_11.fasta           0                        1              2           2   
+    label_UMGS1128_14.fasta           0                        1              2           2   
+    label_UMGS1128_15.fasta           0                        1              2           2   
+    label_UMGS1128_17.fasta           0                        1              2           2   
+    label_UMGS1128_18.fasta           0                        1              2           2   
+    label_UMGS1128_23.fasta           0                        1              2           2   
+    label_UMGS1128_24.fasta           0                        1              2           2   
+    label_UMGS1128_32.fasta           0                        1              2           2   
+    label_UMGS1128_35.fasta           0                        1              2           2   
+    label_UMGS1128_36.fasta           0                        1              2           2   
+    label_UMGS1128_4.fasta            0                        1              2           2   
+    label_UMGS1128_53.fasta           0                        1              2           2   
+    label_UMGS1128_54.fasta           0                        1              2           2   
+    label_UMGS1128_8.fasta            0                        1              2           2   
+    label_UMGS141_14.fasta            0                        1              2           2   
+    label_UMGS141_24.fasta            0                        1              2           2   
+    label_UMGS141_27.fasta            0                        1              2           2   
+    label_UMGS141_30.fasta            0                        1              2           2   
+    label_UMGS181_15.fasta            0                        1              2           2   
+    label_UMGS181_16.fasta            0                        1              2           2   
+    label_UMGS181_28.fasta            0                        1              2           2   
+    label_UMGS181_30.fasta            0                        1              2           2   
+    label_UMGS181_4.fasta             0                        1              2           2   
+    label_UMGS750_11.fasta            0                        1              2           2   
+    label_UMGS750_12.fasta            0                        1              2           2   
+    label_UMGS750_15.fasta            0                        1              2           2   
+    label_UMGS750_20.fasta            0                        1              2           2   
+    label_UMGS750_21.fasta            0                        1              2           2   
+    label_UMGS750_30.fasta            0                        1              2           2   
+    label_UMGS750_4.fasta             0                        1              2           2   
+    label_UMGS750_8.fasta             0                        1              2           2   
+    label_UMGS750_9.fasta             0                        1              2           2   
+
+
+outputPath = 
+
+    ""
+
+confusion matrix for 1 is:
+   791     0
+     1   173
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [99.9000]    [99.9000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      99.9  
+    {'AvgAccuracy' }      99.9  
+
+Process completed 
+[?1l>

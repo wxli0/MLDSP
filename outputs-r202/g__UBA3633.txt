@@ -1,0 +1,432 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__UBA3633"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 90
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x6 cell array
+
+    {'s__UBA3633 sp002374095'}    {'s__UBA3633 sp002392345'}    {'s__UBA3633 sp900313535'}    {'s__UBA3633 sp902803205'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 18
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+     1     0     0     0     1     1
+     1     0     0     0     1     1
+     1     0     0     0     1     1
+     1     0     0     0     1     1
+     1     0     0     0     1     1
+     1     0     0     0     1     1
+     0     1     0     0     2     2
+     0     1     0     0     2     2
+     0     0     1     0     3     3
+     0     0     1     0     3     3
+     0     0     1     0     3     3
+     0     0     1     0     3     3
+     0     0     1     0     3     3
+     0     0     0     1     4     4
+     0     0     0     1     4     4
+     0     0     0     1     4     4
+     0     0     0     1     4     4
+     0     0     0     1     4     4
+
+
+T3 =
+
+  18x6 table
+
+                                   s__UBA3633 sp002374095    s__UBA3633 sp002392345    s__UBA3633 sp900313535    s__UBA3633 sp902803205    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002374095.1_1.fasta               1                         0                         0                         0                   1           1   
+    GB_GCA_002374095.1_12.fasta              1                         0                         0                         0                   1           1   
+    GB_GCA_002374095.1_14.fasta              1                         0                         0                         0                   1           1   
+    GB_GCA_002374095.1_3.fasta               1                         0                         0                         0                   1           1   
+    GB_GCA_002374095.1_4.fasta               1                         0                         0                         0                   1           1   
+    GB_GCA_002374095.1_6.fasta               1                         0                         0                         0                   1           1   
+    GB_GCA_002392345.1_1.fasta               0                         1                         0                         0                   2           2   
+    GB_GCA_002392345.1_6.fasta               0                         1                         0                         0                   2           2   
+    GB_GCA_900313535.1_16.fasta              0                         0                         1                         0                   3           3   
+    GB_GCA_900313535.1_4.fasta               0                         0                         1                         0                   3           3   
+    GB_GCA_902760275.1_18.fasta              0                         0                         1                         0                   3           3   
+    GB_GCA_902803295.1_12.fasta              0                         0                         1                         0                   3           3   
+    GB_GCA_902803295.1_6.fasta               0                         0                         1                         0                   3           3   
+    GB_GCA_902803205.1_13.fasta              0                         0                         0                         1                   4           4   
+    GB_GCA_902803205.1_17.fasta              0                         0                         0                         1                   4           4   
+    GB_GCA_902803205.1_18.fasta              0                         0                         0                         1                   4           4   
+    GB_GCA_902803205.1_6.fasta               0                         0                         0                         1                   4           4   
+    GB_GCA_902803205.1_8.fasta               0                         0                         0                         1                   4           4   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 18
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    0.9092    0.0908    0.0000    0.0000    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+
+
+T3 =
+
+  18x6 table
+
+                                   s__UBA3633 sp002374095    s__UBA3633 sp002392345    s__UBA3633 sp900313535    s__UBA3633 sp902803205    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002374095.1_13.fasta           0.90919                   0.090809                 2.2199e-14                2.2199e-14              1           1   
+    GB_GCA_002374095.1_17.fasta                 1                          0                          0                         0              1           1   
+    GB_GCA_002374095.1_19.fasta                 1                          0                          0                         0              1           1   
+    GB_GCA_002392345.1_10.fasta                 0                          1                          0                         0              2           2   
+    GB_GCA_002392345.1_13.fasta                 0                          1                          0                         0              2           2   
+    GB_GCA_002392345.1_16.fasta                 0                          1                          0                         0              2           2   
+    GB_GCA_002392345.1_17.fasta                 0                          1                          0                         0              2           2   
+    GB_GCA_002392345.1_4.fasta                  0                          1                          0                         0              2           2   
+    GB_GCA_002392345.1_8.fasta                  0                          1                          0                         0              2           2   
+    GB_GCA_002392345.1_9.fasta                  0                          1                          0                         0              2           2   
+    GB_GCA_902760275.1_12.fasta                 0                          0                          1                         0              3           3   
+    GB_GCA_902760275.1_9.fasta                  0                          0                          1                         0              3           3   
+    GB_GCA_902803295.1_10.fasta                 0                          0                          1                         0              3           3   
+    GB_GCA_902803295.1_16.fasta                 0                          0                          1                         0              3           3   
+    GB_GCA_902803205.1_0.fasta                  0                          0                          0                         1              4           4   
+    GB_GCA_902803205.1_1.fasta                  0                          0                          0                         1              4           4   
+    GB_GCA_902803205.1_11.fasta                 0                          0                          0                         1              4           4   
+    GB_GCA_902803205.1_5.fasta                  0                          0                          0                         1              4           4   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 18
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000         0         0         0    1.0000    1.0000
+    0.3942    0.2019    0.2019    0.2019    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+         0    1.0000         0         0    2.0000    2.0000
+    0.1116    0.8884    0.0000    0.0000    2.0000    2.0000
+    0.1116    0.8884    0.0000    0.0000    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+    0.1116    0.8884    0.0000    0.0000    2.0000    2.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+
+
+T3 =
+
+  18x6 table
+
+                                   s__UBA3633 sp002374095    s__UBA3633 sp002392345    s__UBA3633 sp900313535    s__UBA3633 sp902803205    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002374095.1_0.fasta                  1                         0                          0                         0               1           1   
+    GB_GCA_002374095.1_10.fasta           0.39423                   0.20192                    0.20192                   0.20192               1           1   
+    GB_GCA_002374095.1_5.fasta                  1                         0                          0                         0               1           1   
+    GB_GCA_002374095.1_9.fasta                  1                         0                          0                         0               1           1   
+    GB_GCA_002392345.1_0.fasta                  0                         1                          0                         0               2           2   
+    GB_GCA_002392345.1_12.fasta           0.11158                   0.88842                   2.22e-14                  2.22e-14               2           2   
+    GB_GCA_002392345.1_19.fasta           0.11158                   0.88842                   2.22e-14                  2.22e-14               2           2   
+    GB_GCA_002392345.1_3.fasta                  0                         1                          0                         0               2           2   
+    GB_GCA_002392345.1_5.fasta            0.11158                   0.88842                   2.22e-14                  2.22e-14               2           2   
+    GB_GCA_900313535.1_13.fasta                 0                         0                          1                         0               3           3   
+    GB_GCA_902760275.1_3.fasta                  0                         0                          1                         0               3           3   
+    GB_GCA_902760275.1_4.fasta                  0                         0                          1                         0               3           3   
+    GB_GCA_902803295.1_1.fasta                  0                         0                          1                         0               3           3   
+    GB_GCA_902803295.1_14.fasta                 0                         0                          1                         0               3           3   
+    GB_GCA_902803205.1_10.fasta                 0                         0                          0                         1               4           4   
+    GB_GCA_902803205.1_14.fasta                 0                         0                          0                         1               4           4   
+    GB_GCA_902803205.1_7.fasta                  0                         0                          0                         1               4           4   
+    GB_GCA_902803205.1_9.fasta                  0                         0                          0                         1               4           4   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 18
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000         0         0         0    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+    0.0000    0.0000    0.5351    0.4649    3.0000    3.0000
+    0.1829    0.1829    0.4512    0.1829    3.0000    3.0000
+    0.1988    0.1988    0.1988    0.4036    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+
+
+T3 =
+
+  18x6 table
+
+                                   s__UBA3633 sp002374095    s__UBA3633 sp002392345    s__UBA3633 sp900313535    s__UBA3633 sp902803205    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002374095.1_15.fasta                  1                         0                        0                         0                1           1   
+    GB_GCA_002374095.1_16.fasta                  1                         0                        0                         0                1           1   
+    GB_GCA_002374095.1_8.fasta                   1                         0                        0                         0                1           1   
+    GB_GCA_002392345.1_11.fasta                  0                         1                        0                         0                2           2   
+    GB_GCA_002392345.1_14.fasta                  0                         1                        0                         0                2           2   
+    GB_GCA_002392345.1_15.fasta                  0                         1                        0                         0                2           2   
+    GB_GCA_002392345.1_2.fasta                   0                         1                        0                         0                2           2   
+    GB_GCA_900313535.1_10.fasta                  0                         0                        1                         0                3           3   
+    GB_GCA_900313535.1_11.fasta                  0                         0                        1                         0                3           3   
+    GB_GCA_900313535.1_17.fasta                  0                         0                        1                         0                3           3   
+    GB_GCA_900313535.1_5.fasta                   0                         0                        1                         0                3           3   
+    GB_GCA_900313535.1_9.fasta                   0                         0                        1                         0                3           3   
+    GB_GCA_902803295.1_11.fasta                  0                         0                        1                         0                3           3   
+    GB_GCA_902803295.1_18.fasta          3.983e-13                 3.983e-13                  0.53507                   0.46493                3           3   
+    GB_GCA_902803295.1_9.fasta             0.18293                   0.18293                  0.45122                   0.18293                3           3   
+    GB_GCA_902803205.1_12.fasta             0.1988                    0.1988                   0.1988                   0.40361                4           4   
+    GB_GCA_902803205.1_16.fasta                  0                         0                        0                         1                4           4   
+    GB_GCA_902803205.1_3.fasta                   0                         0                        0                         1                4           4   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x18 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 17 through 18
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000         0         0         0    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+    1.0000         0         0         0    1.0000    1.0000
+         0    1.0000         0         0    2.0000    2.0000
+         0    1.0000         0         0    2.0000    2.0000
+    0.1116    0.0000    0.8884    0.0000    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+    0.1116    0.0000    0.8884    0.0000    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+    0.1116    0.0000    0.8884    0.0000    3.0000    3.0000
+         0         0    1.0000         0    3.0000    3.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+         0         0         0    1.0000    4.0000    4.0000
+
+
+T3 =
+
+  18x6 table
+
+                                   s__UBA3633 sp002374095    s__UBA3633 sp002392345    s__UBA3633 sp900313535    s__UBA3633 sp902803205    prediction    actual
+                                   ______________________    ______________________    ______________________    ______________________    __________    ______
+
+    GB_GCA_002374095.1_11.fasta                 1                          0                        0                          0               1           1   
+    GB_GCA_002374095.1_18.fasta                 1                          0                        0                          0               1           1   
+    GB_GCA_002374095.1_2.fasta                  1                          0                        0                          0               1           1   
+    GB_GCA_002374095.1_7.fasta                  1                          0                        0                          0               1           1   
+    GB_GCA_002392345.1_18.fasta                 0                          1                        0                          0               2           2   
+    GB_GCA_002392345.1_7.fasta                  0                          1                        0                          0               2           2   
+    GB_GCA_900313535.1_15.fasta           0.11158                   2.22e-14                  0.88842                   2.22e-14               3           3   
+    GB_GCA_900313535.1_19.fasta                 0                          0                        1                          0               3           3   
+    GB_GCA_900313535.1_2.fasta                  0                          0                        1                          0               3           3   
+    GB_GCA_902760275.1_0.fasta            0.11158                   2.22e-14                  0.88842                   2.22e-14               3           3   
+    GB_GCA_902760275.1_8.fasta                  0                          0                        1                          0               3           3   
+    GB_GCA_902803295.1_0.fasta                  0                          0                        1                          0               3           3   
+    GB_GCA_902803295.1_3.fasta            0.11158                   2.22e-14                  0.88842                   2.22e-14               3           3   
+    GB_GCA_902803295.1_5.fasta                  0                          0                        1                          0               3           3   
+    GB_GCA_902803205.1_15.fasta                 0                          0                        0                          1               4           4   
+    GB_GCA_902803205.1_19.fasta                 0                          0                        0                          1               4           4   
+    GB_GCA_902803205.1_2.fasta                  0                          0                        0                          1               4           4   
+    GB_GCA_902803205.1_4.fasta                  0                          0                        0                          1               4           4   
+
+
+outputPath = 
+
+    ""
+
+confusion matrix for 1 is:
+    20     0     0     0
+     0    20     0     0
+     0     0    30     0
+     0     0     0    20
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [100]    [100]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      100   
+    {'AvgAccuracy' }      100   
+
+Process completed 
+[?1l>
