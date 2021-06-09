@@ -8,11 +8,18 @@ base_dir2="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
 split_pruned_dir_full="${base_dir2}$1_split_pruned"
 split_pruned_dir="${base_dir}$1_split_pruned"
 
-if [ ! -d ${split_pruned_dir} ]; then
+if [ ! -d ${split_pruned_dir_full} ]; then
     python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1
     echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1"
 else
     echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1"
+fi
+
+if [[ $1 == 'root' ]] or [[ $1 == 'p__Firmicutes_A' ]]; then
+    python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
+    echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
+else
+    echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
 fi
 
 prog_output1="${outdir}/train-${split_pruned_dir}.xlsx"
