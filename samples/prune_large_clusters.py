@@ -32,7 +32,7 @@ if data_type == 'GTDB':
                 os.remove('/mnt/sda/MLDSP-samples-'+ver+'/'+dir+'/'+d+'/'+f)
 elif data_type == 'HGR':
     if dir.startswith('d__Bacteria') or dir.startswith('p__Firmicutes_A') or dir.startswith('p__Bacteroidota') \
-        or dir.startswith('c__Clostridia'):
+        or dir.startswith('c__Clostridia') or dir.startswith('o__Bacteroidales'):
         arc_dirs = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir)
         for d in arc_dirs:
             all_files = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir+'/'+d)

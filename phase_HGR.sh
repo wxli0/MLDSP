@@ -16,7 +16,7 @@ else
 fi
 
 if [[ $1 == 'root' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
-[[ $1 == 'c__Clostridia' ]]; then
+[[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]]; then
     python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
     echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
 else
