@@ -33,7 +33,7 @@ function [] = stackedMain(dataType, dataSet, testSet)
     allCGR = cell(1,totalSeq);
 
     fprintf("totalSeq is: %d\n", totalSeq)
-    for i=1:totalSeq
+    parfor i=1:totalSeq
         ss = Seq{i};
         tCGR=zeros(2^kVal);
         for j=1:length(ss)
@@ -52,7 +52,7 @@ function [] = stackedMain(dataType, dataSet, testSet)
 
     f = cell(1, totalSeq);
     lg = cell(1, totalSeq);
-    for i=1:totalSeq
+    parfor i=1:totalSeq
         f{i} = fft(allCGR{i});
         lg{i} = abs(f{i});
     end
