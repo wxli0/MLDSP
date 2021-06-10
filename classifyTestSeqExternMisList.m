@@ -4,7 +4,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
     fVec = cell(1,numTestSeq);
     lgNew = cell(1,numTestSeq);
     totalSeq = length(disMat);
-    for r=1:numTestSeq
+    parfor r=1:numTestSeq
         Sq = upper(SeqTest{r});
         tCGR=zeros(2^kVal);
         for j=1:length(Sq)
@@ -21,8 +21,8 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
         nSeq{r} = tCGR;
         lgN = abs(fft(nSeq{r}));
         lgNew{r} = reshape(lgN,1,[]); 
-
     end
+
     lgg = [lg lgNew];
     fmm=cell2mat(lgg(:));
     disMatWithTest = f_dis(fmm,'cor',0,1);
@@ -55,7 +55,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
     fprintf("numTestSeq is: %d\n", numTestSeq);
     score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
 
-    for s=1:numTestSeq
+    parfor s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel3, ~, ~, score3] = predict(cModel3,testV);    
         pMat(3,clabel3)= pMat(3,clabel3)+1;

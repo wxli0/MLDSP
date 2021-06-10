@@ -22,7 +22,7 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
         SeqT = cell(1,pts);
         AcNmbT = cell(1,pts);
         FNmT = cell(1,pts);
-        for j=1:pts
+        parfor j=1:pts
             sbName = fileNames{j};
             [Header, Sequence] = fastaread(sbName);    
             if ischar(Sequence)
@@ -53,24 +53,38 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     AcNmb={};
     FNm={};
     id=1;
-    for i=1:length(SeqT)
-        % fprintf("SeqT is:")
-        % disp(SeqT)
-        lnt = length(SeqT{i});
-        if(lnt>=minSeqLen)
-            if(lnt<maxSeqLen || maxSeqLen==0)
-                Seq{id}=SeqT{i};
-                AcNmb{id}=AcNmbT{i};
-                FNm{id} = FNmT{i};
-                id=id+1;
-            else
-                sln = lnt-maxSeqLen+1;
-                sRng = randi([1 sln],1,1);
-                eRng = sRng+maxSeqLen-1;                    
-                Seq{id}=SeqT{i}(sRng:eRng);
-                AcNmb{id}=AcNmbT{i};
-                FNm{id} = FNmT{i};
-                id=id+1;                
+
+    % we only run into this case 
+    if minSeqLen == 0 & maxSeqLen == 0
+        parfor i=1:length(SeqT)
+            id = i
+            sln = lnt-maxSeqLen+1;
+            sRng = randi([1 sln],1,1);
+            eRng = sRng+maxSeqLen-1;                    
+            Seq{id}=SeqT{i}(sRng:eRng);
+            AcNmb{id}=AcNmbT{i};
+            FNm{id} = FNmT{i};
+        end
+    else
+        for i=1:length(SeqT)
+            % fprintf("SeqT is:")
+            % disp(SeqT)
+            lnt = length(SeqT{i});
+            if(lnt>=minSeqLen)
+                if(lnt<maxSeqLen || maxSeqLen==0)
+                    Seq{id}=SeqT{i};
+                    AcNmb{id}=AcNmbT{i};
+                    FNm{id} = FNmT{i};
+                    id=id+1;
+                else
+                    sln = lnt-maxSeqLen+1;
+                    sRng = randi([1 sln],1,1);
+                    eRng = sRng+maxSeqLen-1;                    
+                    Seq{id}=SeqT{i}(sRng:eRng);
+                    AcNmb{id}=AcNmbT{i};
+                    FNm{id} = FNmT{i};
+                    id=id+1;                
+                end
             end
         end
     end   
