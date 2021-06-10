@@ -55,39 +55,39 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     id=1;
 
     % we only run into this case 
-    if minSeqLen == 0 & maxSeqLen == 0
-        parfor i=1:length(SeqT)
-            lnt = length(SeqT{i});
-            sln = lnt-maxSeqLen+1;
-            sRng = randi([1 sln],1,1);
-            eRng = sRng+maxSeqLen-1;                    
-            Seq{i}=SeqT{i}(sRng:eRng);
-            AcNmb{i}=AcNmbT{i};
-            FNm{i} = FNmT{i};
-        end
-    else
-        for i=1:length(SeqT)
-            % fprintf("SeqT is:")
-            % disp(SeqT)
-            lnt = length(SeqT{i});
-            if(lnt>=minSeqLen)
-                if(lnt<maxSeqLen || maxSeqLen==0)
-                    Seq{id}=SeqT{i};
-                    AcNmb{id}=AcNmbT{i};
-                    FNm{id} = FNmT{i};
-                    id=id+1;
-                else
-                    sln = lnt-maxSeqLen+1;
-                    sRng = randi([1 sln],1,1);
-                    eRng = sRng+maxSeqLen-1;                    
-                    Seq{id}=SeqT{i}(sRng:eRng);
-                    AcNmb{id}=AcNmbT{i};
-                    FNm{id} = FNmT{i};
-                    id=id+1;                
-                end
+    % if minSeqLen == 0 & maxSeqLen == 0
+    %     parfor i=1:length(SeqT)
+    %         lnt = length(SeqT{i});
+    %         sln = lnt-maxSeqLen+1;
+    %         sRng = randi([1 sln],1,1);
+    %         eRng = sRng+maxSeqLen-1;                    
+    %         Seq{i}=SeqT{i}(sRng:eRng);
+    %         AcNmb{i}=AcNmbT{i};
+    %         FNm{i} = FNmT{i};
+    %     end
+    % else
+    for i=1:length(SeqT)
+        % fprintf("SeqT is:")
+        % disp(SeqT)
+        lnt = length(SeqT{i});
+        if(lnt>=minSeqLen)
+            if(lnt<maxSeqLen || maxSeqLen==0)
+                Seq{id}=SeqT{i};
+                AcNmb{id}=AcNmbT{i};
+                FNm{id} = FNmT{i};
+                id=id+1;
+            else
+                sln = lnt-maxSeqLen+1;
+                sRng = randi([1 sln],1,1);
+                eRng = sRng+maxSeqLen-1;                    
+                Seq{id}=SeqT{i}(sRng:eRng);
+                AcNmb{id}=AcNmbT{i};
+                FNm{id} = FNmT{i};
+                id=id+1;                
             end
         end
-    end   
+    end
+    % end   
     pnts=length(Seq);
     cd(path);
 end
