@@ -83,7 +83,7 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
                 end
             end
         end
-    % end   
+    end   
     pnts=length(Seq);
     cd(path);
 end
