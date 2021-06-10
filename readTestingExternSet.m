@@ -57,6 +57,7 @@ function [AcNmb, Seq, pnts, FNm] = readTestingExternSet(dataSet,minSeqLen,maxSeq
     % we only run into this case 
     if minSeqLen == 0 & maxSeqLen == 0
         parfor i=1:length(SeqT)
+            lnt = length(SeqT{i});
             sln = lnt-maxSeqLen+1;
             sRng = randi([1 sln],1,1);
             eRng = sRng+maxSeqLen-1;                    
