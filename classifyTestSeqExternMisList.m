@@ -55,7 +55,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
     fprintf("numTestSeq is: %d\n", numTestSeq);
     score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
 
-    parfor s=1:numTestSeq
+    for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         [clabel3, ~, ~, score3] = predict(cModel3,testV);    
         pMat(3,clabel3)= pMat(3,clabel3)+1;
