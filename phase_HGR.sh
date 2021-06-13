@@ -17,7 +17,8 @@ fi
 
 if [[ $1 == 'root' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
 [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
-|| [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]]; then
+|| [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
+|| [[ $1 == 'o__Oscillospirales' ]]; then
     python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
     echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
 else
