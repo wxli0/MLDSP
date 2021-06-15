@@ -1,0 +1,954 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__ML615J-28_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Generating CGRs.... 
+totalSeq is: 304
+Computing disMat .... 
+Performing classification .... 
+
+header =
+
+  1x3 cell array
+
+    {'f__CAG-313'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x60 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  60x3 table
+
+                               f__CAG-313    prediction    actual
+                               __________    __________    ______
+
+    label_UMGS1109_15.fasta        1             1           1   
+    label_UMGS1109_19.fasta        1             1           1   
+    label_UMGS1109_23.fasta        1             1           1   
+    label_UMGS1109_28.fasta        1             1           1   
+    label_UMGS1109_31.fasta        1             1           1   
+    label_UMGS1109_32.fasta        1             1           1   
+    label_UMGS1109_34.fasta        1             1           1   
+    label_UMGS1109_38.fasta        1             1           1   
+    label_UMGS1109_4.fasta         1             1           1   
+    label_UMGS1109_9.fasta         1             1           1   
+    label_UMGS115_0.fasta          1             1           1   
+    label_UMGS115_2.fasta          1             1           1   
+    label_UMGS116_0.fasta          1             1           1   
+    label_UMGS116_12.fasta         1             1           1   
+    label_UMGS116_18.fasta         1             1           1   
+    label_UMGS116_21.fasta         1             1           1   
+    label_UMGS116_23.fasta         1             1           1   
+    label_UMGS116_24.fasta         1             1           1   
+    label_UMGS116_33.fasta         1             1           1   
+    label_UMGS116_39.fasta         1             1           1   
+    label_UMGS1614_18.fasta        1             1           1   
+    label_UMGS1614_21.fasta        1             1           1   
+    label_UMGS1614_34.fasta        1             1           1   
+    label_UMGS1614_36.fasta        1             1           1   
+    label_UMGS1614_41.fasta        1             1           1   
+    label_UMGS1614_45.fasta        1             1           1   
+    label_UMGS1614_47.fasta        1             1           1   
+    label_UMGS1614_49.fasta        1             1           1   
+    label_UMGS1614_5.fasta         1             1           1   
+    label_UMGS1614_52.fasta        1             1           1   
+    label_UMGS1614_53.fasta        1             1           1   
+    label_UMGS1614_58.fasta        1             1           1   
+    label_UMGS1614_60.fasta        1             1           1   
+    label_UMGS1614_61.fasta        1             1           1   
+    label_UMGS1614_67.fasta        1             1           1   
+    label_UMGS1614_9.fasta         1             1           1   
+    label_UMGS30_10.fasta          1             1           1   
+    label_UMGS30_15.fasta          1             1           1   
+    label_UMGS30_25.fasta          1             1           1   
+    label_UMGS30_34.fasta          1             1           1   
+    label_UMGS30_39.fasta          1             1           1   
+    label_UMGS30_6.fasta           1             1           1   
+    label_UMGS30_7.fasta           1             1           1   
+    label_UMGS75_11.fasta          1             1           1   
+    label_UMGS75_14.fasta          1             1           1   
+    label_UMGS75_25.fasta          1             1           1   
+    label_UMGS75_28.fasta          1             1           1   
+    label_UMGS75_29.fasta          1             1           1   
+    label_UMGS75_34.fasta          1             1           1   
+    label_UMGS75_40.fasta          1             1           1   
+    label_UMGS75_49.fasta          1             1           1   
+    label_UMGS75_53.fasta          1             1           1   
+    label_UMGS75_54.fasta          1             1           1   
+    label_UMGS75_60.fasta          1             1           1   
+    label_UMGS75_62.fasta          1             1           1   
+    label_UMGS75_63.fasta          1             1           1   
+    label_UMGS75_66.fasta          1             1           1   
+    label_UMGS75_74.fasta          1             1           1   
+    label_UMGS75_78.fasta          1             1           1   
+    label_UMGS75_81.fasta          1             1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x61 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 61
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  61x3 table
+
+                               f__CAG-313    prediction    actual
+                               __________    __________    ______
+
+    label_UMGS1109_13.fasta        1             1           1   
+    label_UMGS1109_17.fasta        1             1           1   
+    label_UMGS1109_22.fasta        1             1           1   
+    label_UMGS1109_25.fasta        1             1           1   
+    label_UMGS1109_26.fasta        1             1           1   
+    label_UMGS1109_30.fasta        1             1           1   
+    label_UMGS1109_33.fasta        1             1           1   
+    label_UMGS1109_35.fasta        1             1           1   
+    label_UMGS1109_36.fasta        1             1           1   
+    label_UMGS1109_39.fasta        1             1           1   
+    label_UMGS1109_42.fasta        1             1           1   
+    label_UMGS1109_43.fasta        1             1           1   
+    label_UMGS1109_5.fasta         1             1           1   
+    label_UMGS1109_8.fasta         1             1           1   
+    label_UMGS115_3.fasta          1             1           1   
+    label_UMGS115_4.fasta          1             1           1   
+    label_UMGS116_1.fasta          1             1           1   
+    label_UMGS116_10.fasta         1             1           1   
+    label_UMGS116_14.fasta         1             1           1   
+    label_UMGS116_15.fasta         1             1           1   
+    label_UMGS116_2.fasta          1             1           1   
+    label_UMGS116_22.fasta         1             1           1   
+    label_UMGS116_3.fasta          1             1           1   
+    label_UMGS116_41.fasta         1             1           1   
+    label_UMGS116_6.fasta          1             1           1   
+    label_UMGS116_9.fasta          1             1           1   
+    label_UMGS1614_11.fasta        1             1           1   
+    label_UMGS1614_12.fasta        1             1           1   
+    label_UMGS1614_20.fasta        1             1           1   
+    label_UMGS1614_23.fasta        1             1           1   
+    label_UMGS1614_37.fasta        1             1           1   
+    label_UMGS1614_40.fasta        1             1           1   
+    label_UMGS1614_43.fasta        1             1           1   
+    label_UMGS1614_48.fasta        1             1           1   
+    label_UMGS1614_59.fasta        1             1           1   
+    label_UMGS1614_6.fasta         1             1           1   
+    label_UMGS1614_63.fasta        1             1           1   
+    label_UMGS1614_77.fasta        1             1           1   
+    label_UMGS30_16.fasta          1             1           1   
+    label_UMGS30_17.fasta          1             1           1   
+    label_UMGS30_19.fasta          1             1           1   
+    label_UMGS30_23.fasta          1             1           1   
+    label_UMGS30_26.fasta          1             1           1   
+    label_UMGS30_33.fasta          1             1           1   
+    label_UMGS30_43.fasta          1             1           1   
+    label_UMGS30_8.fasta           1             1           1   
+    label_UMGS75_12.fasta          1             1           1   
+    label_UMGS75_16.fasta          1             1           1   
+    label_UMGS75_22.fasta          1             1           1   
+    label_UMGS75_33.fasta          1             1           1   
+    label_UMGS75_37.fasta          1             1           1   
+    label_UMGS75_38.fasta          1             1           1   
+    label_UMGS75_4.fasta           1             1           1   
+    label_UMGS75_42.fasta          1             1           1   
+    label_UMGS75_44.fasta          1             1           1   
+    label_UMGS75_52.fasta          1             1           1   
+    label_UMGS75_64.fasta          1             1           1   
+    label_UMGS75_67.fasta          1             1           1   
+    label_UMGS75_73.fasta          1             1           1   
+    label_UMGS75_77.fasta          1             1           1   
+    label_UMGS75_80.fasta          1             1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x61 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 61
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  61x3 table
+
+                               f__CAG-313    prediction    actual
+                               __________    __________    ______
+
+    label_UMGS1109_14.fasta        1             1           1   
+    label_UMGS1109_16.fasta        1             1           1   
+    label_UMGS1109_20.fasta        1             1           1   
+    label_UMGS1109_21.fasta        1             1           1   
+    label_UMGS1109_29.fasta        1             1           1   
+    label_UMGS1109_3.fasta         1             1           1   
+    label_UMGS116_20.fasta         1             1           1   
+    label_UMGS116_25.fasta         1             1           1   
+    label_UMGS116_31.fasta         1             1           1   
+    label_UMGS116_32.fasta         1             1           1   
+    label_UMGS116_37.fasta         1             1           1   
+    label_UMGS116_38.fasta         1             1           1   
+    label_UMGS116_42.fasta         1             1           1   
+    label_UMGS116_43.fasta         1             1           1   
+    label_UMGS116_44.fasta         1             1           1   
+    label_UMGS116_8.fasta          1             1           1   
+    label_UMGS1614_0.fasta         1             1           1   
+    label_UMGS1614_1.fasta         1             1           1   
+    label_UMGS1614_10.fasta        1             1           1   
+    label_UMGS1614_17.fasta        1             1           1   
+    label_UMGS1614_19.fasta        1             1           1   
+    label_UMGS1614_24.fasta        1             1           1   
+    label_UMGS1614_26.fasta        1             1           1   
+    label_UMGS1614_28.fasta        1             1           1   
+    label_UMGS1614_3.fasta         1             1           1   
+    label_UMGS1614_30.fasta        1             1           1   
+    label_UMGS1614_38.fasta        1             1           1   
+    label_UMGS1614_44.fasta        1             1           1   
+    label_UMGS1614_46.fasta        1             1           1   
+    label_UMGS1614_57.fasta        1             1           1   
+    label_UMGS1614_68.fasta        1             1           1   
+    label_UMGS1614_74.fasta        1             1           1   
+    label_UMGS1614_75.fasta        1             1           1   
+    label_UMGS1614_78.fasta        1             1           1   
+    label_UMGS30_0.fasta           1             1           1   
+    label_UMGS30_20.fasta          1             1           1   
+    label_UMGS30_21.fasta          1             1           1   
+    label_UMGS30_29.fasta          1             1           1   
+    label_UMGS30_3.fasta           1             1           1   
+    label_UMGS30_35.fasta          1             1           1   
+    label_UMGS30_36.fasta          1             1           1   
+    label_UMGS30_38.fasta          1             1           1   
+    label_UMGS30_40.fasta          1             1           1   
+    label_UMGS75_0.fasta           1             1           1   
+    label_UMGS75_1.fasta           1             1           1   
+    label_UMGS75_15.fasta          1             1           1   
+    label_UMGS75_19.fasta          1             1           1   
+    label_UMGS75_24.fasta          1             1           1   
+    label_UMGS75_39.fasta          1             1           1   
+    label_UMGS75_45.fasta          1             1           1   
+    label_UMGS75_46.fasta          1             1           1   
+    label_UMGS75_47.fasta          1             1           1   
+    label_UMGS75_5.fasta           1             1           1   
+    label_UMGS75_55.fasta          1             1           1   
+    label_UMGS75_56.fasta          1             1           1   
+    label_UMGS75_61.fasta          1             1           1   
+    label_UMGS75_68.fasta          1             1           1   
+    label_UMGS75_75.fasta          1             1           1   
+    label_UMGS75_76.fasta          1             1           1   
+    label_UMGS75_79.fasta          1             1           1   
+    label_UMGS75_8.fasta           1             1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x61 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 61
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  61x3 table
+
+                               f__CAG-313    prediction    actual
+                               __________    __________    ______
+
+    label_UMGS1109_0.fasta         1             1           1   
+    label_UMGS1109_18.fasta        1             1           1   
+    label_UMGS1109_37.fasta        1             1           1   
+    label_UMGS1109_40.fasta        1             1           1   
+    label_UMGS1109_41.fasta        1             1           1   
+    label_UMGS1109_7.fasta         1             1           1   
+    label_UMGS116_11.fasta         1             1           1   
+    label_UMGS116_13.fasta         1             1           1   
+    label_UMGS116_27.fasta         1             1           1   
+    label_UMGS116_34.fasta         1             1           1   
+    label_UMGS116_36.fasta         1             1           1   
+    label_UMGS116_7.fasta          1             1           1   
+    label_UMGS1614_13.fasta        1             1           1   
+    label_UMGS1614_14.fasta        1             1           1   
+    label_UMGS1614_15.fasta        1             1           1   
+    label_UMGS1614_16.fasta        1             1           1   
+    label_UMGS1614_2.fasta         1             1           1   
+    label_UMGS1614_22.fasta        1             1           1   
+    label_UMGS1614_31.fasta        1             1           1   
+    label_UMGS1614_32.fasta        1             1           1   
+    label_UMGS1614_33.fasta        1             1           1   
+    label_UMGS1614_4.fasta         1             1           1   
+    label_UMGS1614_50.fasta        1             1           1   
+    label_UMGS1614_51.fasta        1             1           1   
+    label_UMGS1614_56.fasta        1             1           1   
+    label_UMGS1614_62.fasta        1             1           1   
+    label_UMGS1614_64.fasta        1             1           1   
+    label_UMGS1614_66.fasta        1             1           1   
+    label_UMGS1614_69.fasta        1             1           1   
+    label_UMGS1614_70.fasta        1             1           1   
+    label_UMGS1614_72.fasta        1             1           1   
+    label_UMGS1614_76.fasta        1             1           1   
+    label_UMGS1614_80.fasta        1             1           1   
+    label_UMGS30_11.fasta          1             1           1   
+    label_UMGS30_12.fasta          1             1           1   
+    label_UMGS30_13.fasta          1             1           1   
+    label_UMGS30_18.fasta          1             1           1   
+    label_UMGS30_24.fasta          1             1           1   
+    label_UMGS30_27.fasta          1             1           1   
+    label_UMGS30_30.fasta          1             1           1   
+    label_UMGS30_31.fasta          1             1           1   
+    label_UMGS30_37.fasta          1             1           1   
+    label_UMGS30_5.fasta           1             1           1   
+    label_UMGS30_9.fasta           1             1           1   
+    label_UMGS75_10.fasta          1             1           1   
+    label_UMGS75_13.fasta          1             1           1   
+    label_UMGS75_17.fasta          1             1           1   
+    label_UMGS75_3.fasta           1             1           1   
+    label_UMGS75_31.fasta          1             1           1   
+    label_UMGS75_32.fasta          1             1           1   
+    label_UMGS75_36.fasta          1             1           1   
+    label_UMGS75_41.fasta          1             1           1   
+    label_UMGS75_43.fasta          1             1           1   
+    label_UMGS75_48.fasta          1             1           1   
+    label_UMGS75_50.fasta          1             1           1   
+    label_UMGS75_51.fasta          1             1           1   
+    label_UMGS75_57.fasta          1             1           1   
+    label_UMGS75_6.fasta           1             1           1   
+    label_UMGS75_70.fasta          1             1           1   
+    label_UMGS75_71.fasta          1             1           1   
+    label_UMGS75_9.fasta           1             1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x61 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 40
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 41 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 56
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 57 through 61
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  61x3 table
+
+                               f__CAG-313    prediction    actual
+                               __________    __________    ______
+
+    label_UMGS1109_1.fasta         1             1           1   
+    label_UMGS1109_10.fasta        1             1           1   
+    label_UMGS1109_11.fasta        1             1           1   
+    label_UMGS1109_12.fasta        1             1           1   
+    label_UMGS1109_2.fasta         1             1           1   
+    label_UMGS1109_24.fasta        1             1           1   
+    label_UMGS1109_27.fasta        1             1           1   
+    label_UMGS1109_6.fasta         1             1           1   
+    label_UMGS115_1.fasta          1             1           1   
+    label_UMGS115_5.fasta          1             1           1   
+    label_UMGS116_16.fasta         1             1           1   
+    label_UMGS116_17.fasta         1             1           1   
+    label_UMGS116_19.fasta         1             1           1   
+    label_UMGS116_26.fasta         1             1           1   
+    label_UMGS116_28.fasta         1             1           1   
+    label_UMGS116_29.fasta         1             1           1   
+    label_UMGS116_30.fasta         1             1           1   
+    label_UMGS116_35.fasta         1             1           1   
+    label_UMGS116_4.fasta          1             1           1   
+    label_UMGS116_40.fasta         1             1           1   
+    label_UMGS116_5.fasta          1             1           1   
+    label_UMGS1614_25.fasta        1             1           1   
+    label_UMGS1614_27.fasta        1             1           1   
+    label_UMGS1614_29.fasta        1             1           1   
+    label_UMGS1614_35.fasta        1             1           1   
+    label_UMGS1614_39.fasta        1             1           1   
+    label_UMGS1614_42.fasta        1             1           1   
+    label_UMGS1614_54.fasta        1             1           1   
+    label_UMGS1614_55.fasta        1             1           1   
+    label_UMGS1614_65.fasta        1             1           1   
+    label_UMGS1614_7.fasta         1             1           1   
+    label_UMGS1614_71.fasta        1             1           1   
+    label_UMGS1614_73.fasta        1             1           1   
+    label_UMGS1614_79.fasta        1             1           1   
+    label_UMGS1614_8.fasta         1             1           1   
+    label_UMGS30_1.fasta           1             1           1   
+    label_UMGS30_14.fasta          1             1           1   
+    label_UMGS30_2.fasta           1             1           1   
+    label_UMGS30_22.fasta          1             1           1   
+    label_UMGS30_28.fasta          1             1           1   
+    label_UMGS30_32.fasta          1             1           1   
+    label_UMGS30_4.fasta           1             1           1   
+    label_UMGS30_41.fasta          1             1           1   
+    label_UMGS30_42.fasta          1             1           1   
+    label_UMGS30_44.fasta          1             1           1   
+    label_UMGS30_45.fasta          1             1           1   
+    label_UMGS75_18.fasta          1             1           1   
+    label_UMGS75_2.fasta           1             1           1   
+    label_UMGS75_20.fasta          1             1           1   
+    label_UMGS75_21.fasta          1             1           1   
+    label_UMGS75_23.fasta          1             1           1   
+    label_UMGS75_26.fasta          1             1           1   
+    label_UMGS75_27.fasta          1             1           1   
+    label_UMGS75_30.fasta          1             1           1   
+    label_UMGS75_35.fasta          1             1           1   
+    label_UMGS75_58.fasta          1             1           1   
+    label_UMGS75_59.fasta          1             1           1   
+    label_UMGS75_65.fasta          1             1           1   
+    label_UMGS75_69.fasta          1             1           1   
+    label_UMGS75_7.fasta           1             1           1   
+    label_UMGS75_72.fasta          1             1           1   
+
+
+outputPath = 
+
+    ""
+
+confusion matrix for 1 is:
+   304
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [100]    [100]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      100   
+    {'AvgAccuracy' }      100   
+
+Process completed 
+[?1l>

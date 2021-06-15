@@ -1,0 +1,156 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__Oscillospiraceae_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 11216
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x25 cell array
+
+  Columns 1 through 10
+
+    {'g__An92'}    {'g__CAG-103'}    {'g__CAG-110'}    {'g__CAG-170'}    {'g__CAG-83'}    {'g__Dysosmobacter'}    {'g__ER4'}    {'g__Evtepia'}    {'g__F23-B02'}    {'g__Flavonifractor'}
+
+  Columns 11 through 19
+
+    {'g__Intestinimonas'}    {'g__Lawsonibacter'}    {'g__Marseille-P...'}    {'g__NK3B98'}    {'g__Oscillibacter'}    {'g__Pseudoflavo...'}    {'g__UBA1777'}    {'g__UBA5446'}    {'g__UBA738'}
+
+  Columns 20 through 25
+
+    {'g__UBA9475'}    {'g__UMGS1202'}    {'g__UMGS1766'}    {'g__UMGS1872'}    {'prediction'}    {'actual'}
+
+Starting parallel pool (parpool) using the 'local' profile ...
+training QSVM, fold 5
+classifying using QSVM
+training QSVM, fold 4
+classifying using QSVM
+training QSVM, fold 3
+classifying using QSVM
+training QSVM, fold 2
+classifying using QSVM
+training QSVM, fold 1
+classifying using QSVM
+confusion matrix for 1 is:
+  Columns 1 through 16
+
+          46           0           0           0           0           1           0           0           0           1           1           4           0           0           0           0
+           0         286           3           6           0           0           0           0           0           0           0           0           0           0           0           0
+           0           5        1970          28           4          13           3           1           0           0           2           4           0           0           3           0
+           0           1          11         993           6          20           5           0           2           0           0           0           0           0           3           0
+           0           1           7          10        1686          26           2           0           0           3           0           3           0           1           0           0
+           0           0          19          15          31        1239           2           0           0           0           2          18           1           0           2           1
+           0           0           3           9           5           3         548           0           0           0           0           0           0           0           1           0
+           0           0           1           0           0           3           0         190           0           0           2           4           0           0           0           0
+           0           0           1           1           0           0           1           0         419           0           0           0           0           0           0           0
+           3           0           3           0           2           6           0           0           0         132           1           3           0           0           0           0
+           2           0           0           0           2           3           0           0           0           3         247           9           1           0           0           1
+           1           0          12           6           3          26           1           0           0           2           1         703           0           0           2           0
+           1           0           0           0           0           2           0           0           0           1           3           2          54           0           0           0
+           0           0           0           0           0           0           0           0           0           0           0           1           0          43           0           0
+           0           0           5           2           1           1           0           0           0           0           1           0           0           0         174           0
+           0           0           2           1           0           1           0           0           0           0           1          11           0           1           0          21
+           0           0           4           2           5           0           6           0           3           0           0           1           0           0           0           0
+           0           0           0           4           1           0           1           0           0           0           1           0           0           0           0           1
+           0           1           1           1           0           0           0           0           0           0           0           0           0           0           0           0
+           1           0           1           0           0           6           0           0           0           0           0          12           0           0           0           0
+           0           0           1           0           0           0           0           0           0           2           2           0           0           0           0           0
+           0           0           0           1           7           2           0           0           0           0           0           0           0           0           0           0
+           0           0           2           0           1          11           0           0           0           0           1           3           0           0           0           0
+
+  Columns 17 through 23
+
+           0           0           0           0           0           1           0
+           1           0           1           0           0           0           0
+           2           0           0           2           0           0           1
+           1           1           0           0           0           0           0
+           2           2           0           0           0           2           0
+           0           0           0           6           0           3           0
+           2           0           0           0           0           0           0
+           0           0           0           0           0           0           1
+           2           1           0           0           0           0           0
+           0           0           0           0           1           0           0
+           1           0           0           2           0           0           0
+           1           1           0          17           1           2           4
+           0           0           0           1           0           0           0
+           0           0           0           0           0           1           0
+           0           0           0           0           0           1           0
+           0           1           0           3           0           0           0
+         628           0           0           0           0           0           0
+           1         591           0           0           0           0           0
+           0           0          76           0           0           0           0
+           0           0           0         163           0           0           1
+           0           0           0           0         140           0           0
+           0           0           0           0           0         116           0
+           0           0           0           1           0           0         160
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [94.7000]    [94.7000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      94.7  
+    {'AvgAccuracy' }      94.7  
+
+Process completed 
+[?1l>

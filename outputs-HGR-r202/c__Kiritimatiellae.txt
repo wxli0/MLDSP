@@ -1,0 +1,630 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/c__Kiritimatiellae_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 172
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x3 cell array
+
+    {'o__RFP12'}    {'prediction'}    {'actual'}
+
+
+testAcNum =
+
+  1x34 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 34
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  34x3 table
+
+                                o__RFP12    prediction    actual
+                                ________    __________    ______
+
+    label_UMGS1035_100.fasta       1            1           1   
+    label_UMGS1035_105.fasta       1            1           1   
+    label_UMGS1035_110.fasta       1            1           1   
+    label_UMGS1035_111.fasta       1            1           1   
+    label_UMGS1035_114.fasta       1            1           1   
+    label_UMGS1035_115.fasta       1            1           1   
+    label_UMGS1035_122.fasta       1            1           1   
+    label_UMGS1035_123.fasta       1            1           1   
+    label_UMGS1035_125.fasta       1            1           1   
+    label_UMGS1035_129.fasta       1            1           1   
+    label_UMGS1035_13.fasta        1            1           1   
+    label_UMGS1035_132.fasta       1            1           1   
+    label_UMGS1035_134.fasta       1            1           1   
+    label_UMGS1035_138.fasta       1            1           1   
+    label_UMGS1035_143.fasta       1            1           1   
+    label_UMGS1035_152.fasta       1            1           1   
+    label_UMGS1035_164.fasta       1            1           1   
+    label_UMGS1035_17.fasta        1            1           1   
+    label_UMGS1035_19.fasta        1            1           1   
+    label_UMGS1035_22.fasta        1            1           1   
+    label_UMGS1035_32.fasta        1            1           1   
+    label_UMGS1035_40.fasta        1            1           1   
+    label_UMGS1035_46.fasta        1            1           1   
+    label_UMGS1035_53.fasta        1            1           1   
+    label_UMGS1035_56.fasta        1            1           1   
+    label_UMGS1035_65.fasta        1            1           1   
+    label_UMGS1035_66.fasta        1            1           1   
+    label_UMGS1035_69.fasta        1            1           1   
+    label_UMGS1035_77.fasta        1            1           1   
+    label_UMGS1035_84.fasta        1            1           1   
+    label_UMGS1035_85.fasta        1            1           1   
+    label_UMGS1035_87.fasta        1            1           1   
+    label_UMGS1035_94.fasta        1            1           1   
+    label_UMGS1035_97.fasta        1            1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x35 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 35
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  35x3 table
+
+                                o__RFP12    prediction    actual
+                                ________    __________    ______
+
+    label_UMGS1035_106.fasta       1            1           1   
+    label_UMGS1035_107.fasta       1            1           1   
+    label_UMGS1035_112.fasta       1            1           1   
+    label_UMGS1035_113.fasta       1            1           1   
+    label_UMGS1035_118.fasta       1            1           1   
+    label_UMGS1035_119.fasta       1            1           1   
+    label_UMGS1035_12.fasta        1            1           1   
+    label_UMGS1035_121.fasta       1            1           1   
+    label_UMGS1035_126.fasta       1            1           1   
+    label_UMGS1035_127.fasta       1            1           1   
+    label_UMGS1035_136.fasta       1            1           1   
+    label_UMGS1035_147.fasta       1            1           1   
+    label_UMGS1035_15.fasta        1            1           1   
+    label_UMGS1035_155.fasta       1            1           1   
+    label_UMGS1035_157.fasta       1            1           1   
+    label_UMGS1035_166.fasta       1            1           1   
+    label_UMGS1035_168.fasta       1            1           1   
+    label_UMGS1035_169.fasta       1            1           1   
+    label_UMGS1035_171.fasta       1            1           1   
+    label_UMGS1035_20.fasta        1            1           1   
+    label_UMGS1035_21.fasta        1            1           1   
+    label_UMGS1035_23.fasta        1            1           1   
+    label_UMGS1035_38.fasta        1            1           1   
+    label_UMGS1035_45.fasta        1            1           1   
+    label_UMGS1035_50.fasta        1            1           1   
+    label_UMGS1035_54.fasta        1            1           1   
+    label_UMGS1035_58.fasta        1            1           1   
+    label_UMGS1035_61.fasta        1            1           1   
+    label_UMGS1035_68.fasta        1            1           1   
+    label_UMGS1035_7.fasta         1            1           1   
+    label_UMGS1035_70.fasta        1            1           1   
+    label_UMGS1035_72.fasta        1            1           1   
+    label_UMGS1035_74.fasta        1            1           1   
+    label_UMGS1035_75.fasta        1            1           1   
+    label_UMGS1035_93.fasta        1            1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x35 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 35
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  35x3 table
+
+                                o__RFP12    prediction    actual
+                                ________    __________    ______
+
+    label_UMGS1035_10.fasta        1            1           1   
+    label_UMGS1035_101.fasta       1            1           1   
+    label_UMGS1035_103.fasta       1            1           1   
+    label_UMGS1035_104.fasta       1            1           1   
+    label_UMGS1035_109.fasta       1            1           1   
+    label_UMGS1035_11.fasta        1            1           1   
+    label_UMGS1035_133.fasta       1            1           1   
+    label_UMGS1035_137.fasta       1            1           1   
+    label_UMGS1035_141.fasta       1            1           1   
+    label_UMGS1035_142.fasta       1            1           1   
+    label_UMGS1035_145.fasta       1            1           1   
+    label_UMGS1035_149.fasta       1            1           1   
+    label_UMGS1035_153.fasta       1            1           1   
+    label_UMGS1035_158.fasta       1            1           1   
+    label_UMGS1035_160.fasta       1            1           1   
+    label_UMGS1035_161.fasta       1            1           1   
+    label_UMGS1035_167.fasta       1            1           1   
+    label_UMGS1035_170.fasta       1            1           1   
+    label_UMGS1035_28.fasta        1            1           1   
+    label_UMGS1035_3.fasta         1            1           1   
+    label_UMGS1035_33.fasta        1            1           1   
+    label_UMGS1035_4.fasta         1            1           1   
+    label_UMGS1035_47.fasta        1            1           1   
+    label_UMGS1035_49.fasta        1            1           1   
+    label_UMGS1035_52.fasta        1            1           1   
+    label_UMGS1035_57.fasta        1            1           1   
+    label_UMGS1035_63.fasta        1            1           1   
+    label_UMGS1035_71.fasta        1            1           1   
+    label_UMGS1035_76.fasta        1            1           1   
+    label_UMGS1035_8.fasta         1            1           1   
+    label_UMGS1035_80.fasta        1            1           1   
+    label_UMGS1035_88.fasta        1            1           1   
+    label_UMGS1035_95.fasta        1            1           1   
+    label_UMGS1035_96.fasta        1            1           1   
+    label_UMGS1035_98.fasta        1            1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x34 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 34
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  34x3 table
+
+                                o__RFP12    prediction    actual
+                                ________    __________    ______
+
+    label_UMGS1035_0.fasta         1            1           1   
+    label_UMGS1035_116.fasta       1            1           1   
+    label_UMGS1035_117.fasta       1            1           1   
+    label_UMGS1035_120.fasta       1            1           1   
+    label_UMGS1035_130.fasta       1            1           1   
+    label_UMGS1035_135.fasta       1            1           1   
+    label_UMGS1035_139.fasta       1            1           1   
+    label_UMGS1035_140.fasta       1            1           1   
+    label_UMGS1035_148.fasta       1            1           1   
+    label_UMGS1035_150.fasta       1            1           1   
+    label_UMGS1035_151.fasta       1            1           1   
+    label_UMGS1035_154.fasta       1            1           1   
+    label_UMGS1035_156.fasta       1            1           1   
+    label_UMGS1035_162.fasta       1            1           1   
+    label_UMGS1035_163.fasta       1            1           1   
+    label_UMGS1035_18.fasta        1            1           1   
+    label_UMGS1035_24.fasta        1            1           1   
+    label_UMGS1035_27.fasta        1            1           1   
+    label_UMGS1035_29.fasta        1            1           1   
+    label_UMGS1035_35.fasta        1            1           1   
+    label_UMGS1035_36.fasta        1            1           1   
+    label_UMGS1035_41.fasta        1            1           1   
+    label_UMGS1035_42.fasta        1            1           1   
+    label_UMGS1035_43.fasta        1            1           1   
+    label_UMGS1035_55.fasta        1            1           1   
+    label_UMGS1035_59.fasta        1            1           1   
+    label_UMGS1035_67.fasta        1            1           1   
+    label_UMGS1035_73.fasta        1            1           1   
+    label_UMGS1035_78.fasta        1            1           1   
+    label_UMGS1035_79.fasta        1            1           1   
+    label_UMGS1035_83.fasta        1            1           1   
+    label_UMGS1035_90.fasta        1            1           1   
+    label_UMGS1035_91.fasta        1            1           1   
+    label_UMGS1035_99.fasta        1            1           1   
+
+
+outputPath = 
+
+    ""
+
+
+testAcNum =
+
+  1x34 cell array
+
+  Columns 1 through 8
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 9 through 16
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 17 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 32
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 33 through 34
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+T3 =
+
+  34x3 table
+
+                                o__RFP12    prediction    actual
+                                ________    __________    ______
+
+    label_UMGS1035_1.fasta         1            1           1   
+    label_UMGS1035_102.fasta       1            1           1   
+    label_UMGS1035_108.fasta       1            1           1   
+    label_UMGS1035_124.fasta       1            1           1   
+    label_UMGS1035_128.fasta       1            1           1   
+    label_UMGS1035_131.fasta       1            1           1   
+    label_UMGS1035_14.fasta        1            1           1   
+    label_UMGS1035_144.fasta       1            1           1   
+    label_UMGS1035_146.fasta       1            1           1   
+    label_UMGS1035_159.fasta       1            1           1   
+    label_UMGS1035_16.fasta        1            1           1   
+    label_UMGS1035_165.fasta       1            1           1   
+    label_UMGS1035_2.fasta         1            1           1   
+    label_UMGS1035_25.fasta        1            1           1   
+    label_UMGS1035_26.fasta        1            1           1   
+    label_UMGS1035_30.fasta        1            1           1   
+    label_UMGS1035_31.fasta        1            1           1   
+    label_UMGS1035_34.fasta        1            1           1   
+    label_UMGS1035_37.fasta        1            1           1   
+    label_UMGS1035_39.fasta        1            1           1   
+    label_UMGS1035_44.fasta        1            1           1   
+    label_UMGS1035_48.fasta        1            1           1   
+    label_UMGS1035_5.fasta         1            1           1   
+    label_UMGS1035_51.fasta        1            1           1   
+    label_UMGS1035_6.fasta         1            1           1   
+    label_UMGS1035_60.fasta        1            1           1   
+    label_UMGS1035_62.fasta        1            1           1   
+    label_UMGS1035_64.fasta        1            1           1   
+    label_UMGS1035_81.fasta        1            1           1   
+    label_UMGS1035_82.fasta        1            1           1   
+    label_UMGS1035_86.fasta        1            1           1   
+    label_UMGS1035_89.fasta        1            1           1   
+    label_UMGS1035_9.fasta         1            1           1   
+    label_UMGS1035_92.fasta        1            1           1   
+
+
+outputPath = 
+
+    ""
+
+confusion matrix for 1 is:
+   172
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [100]    [100]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      100   
+    {'AvgAccuracy' }      100   
+
+Process completed 
+[?1l>

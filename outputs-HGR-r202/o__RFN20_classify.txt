@@ -1,0 +1,203 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__RFN20_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__RFN20"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Generating CGRs.... 
+totalSeq is: 1107
+Computing disMat .... 
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__RFN20
+numTestSeq is: 50
+1
+1
+4
+4
+3
+3
+3
+1
+1
+1
+4
+4
+4
+1
+1
+1
+1
+1
+1
+1
+4
+4
+1
+1
+1
+3
+3
+3
+1
+1
+4
+4
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-f__CAG-288'}    {'f__CAG-449'}    {'f__CAG-631'}    {'f__CAG-826'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-f__CAG-288'}    {'2-f__CAG-449'}    {'f__CAG-631'}    {'f__CAG-826'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-f__CAG-288'}    {'2-f__CAG-449'}    {'3-f__CAG-631'}    {'f__CAG-826'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+    {'1-f__CAG-288'}    {'2-f__CAG-449'}    {'3-f__CAG-631'}    {'4-f__CAG-826'}
+
+    '1-f__CAG-288'    '2-f__CAG-449'    '3-f__CAG-631'    '4-f__CAG-826'
+
+
+header =
+
+  1x5 cell array
+
+    {'1-f__CAG-288'}    {'2-f__CAG-449'}    {'3-f__CAG-631'}    {'4-f__CAG-826'}    {'prediction'}
+
+
+T3 =
+
+  50x5 table
+
+                              1-f__CAG-288    2-f__CAG-449    3-f__CAG-631    4-f__CAG-826    prediction
+                              ____________    ____________    ____________    ____________    __________
+
+    even_MAG-GUT15546.fa          0.99356      0.00036023      3.9248e-06       0.0060776         1     
+    even_MAG-GUT15546_1.fa        0.99161      0.00022869       3.983e-06         0.00816         1     
+    even_MAG-GUT16567.fa        0.0011932        0.012511      1.2452e-08          0.9863         4     
+    even_MAG-GUT16567_2.fa      0.0038606        0.021949       4.248e-08         0.97419         4     
+    even_MAG-GUT2139.fa         0.0017313       0.0088841         0.98181       0.0075739         3     
+    even_MAG-GUT2139_1.fa      0.00083639       0.0064659         0.98285       0.0098432         3     
+    even_MAG-GUT2139_2.fa       0.0060435        0.016111         0.96631        0.011539         3     
+    even_MAG-GUT2306.fa           0.97108       0.0034505      1.9752e-05        0.025454         1     
+    even_MAG-GUT2306_1.fa         0.97178        0.003929        2.47e-05        0.024269         1     
+    even_MAG-GUT2306_2.fa         0.95482       0.0048146      2.7449e-05        0.040335         1     
+    even_MAG-GUT2366.fa        0.00021351      0.00017089       0.0011111          0.9985         4     
+    even_MAG-GUT2366_1.fa      0.00032857      0.00021582       0.0010181         0.99844         4     
+    even_MAG-GUT2366_2.fa      0.00013378      0.00017872       0.0016256         0.99806         4     
+    even_MAG-GUT40025.fa          0.99413       0.0045312       0.0012976      3.6482e-05         1     
+    even_MAG-GUT40025_2.fa        0.99308       0.0036716       0.0029236      0.00032481         1     
+    even_MAG-GUT42613.fa          0.96591        0.020859        0.013216      1.1373e-05         1     
+    even_MAG-GUT42613_1.fa        0.96161         0.02472        0.013615       5.063e-05         1     
+    even_MAG-GUT42613_2.fa        0.96005        0.024773        0.015164      8.5776e-06         1     
+    even_MAG-GUT43773.fa          0.88075      0.00010459       0.0001033         0.11904         1     
+    even_MAG-GUT43773_1.fa        0.73136      0.00017083      0.00016966          0.2683         1     
+    even_MAG-GUT46037.fa        0.0011557         0.01101      7.2303e-09         0.98783         4     
+    even_MAG-GUT46037_2.fa      0.0016876       0.0085682      1.1767e-08         0.98974         4     
+    even_MAG-GUT48445.fa          0.97801        0.018673       0.0032613      5.8332e-05         1     
+    even_MAG-GUT48445_1.fa        0.95674        0.037167       0.0060339      5.5257e-05         1     
+    even_MAG-GUT48445_2.fa        0.98563        0.011177       0.0029552      0.00023423         1     
+    even_MAG-GUT4942.fa         0.0017688         0.01804         0.96975        0.010439         3     
+    even_MAG-GUT4942_1.fa       0.0039509        0.014596         0.97409       0.0073678         3     
+    even_MAG-GUT4942_2.fa      0.00080586        0.023131         0.95241         0.02365         3     
+    even_MAG-GUT65576.fa          0.99413       0.0045312       0.0012976      3.6482e-05         1     
+    even_MAG-GUT65576_2.fa        0.99308       0.0036716       0.0029236      0.00032481         1     
+    even_MAG-GUT65671.fa       9.8953e-07       0.0029196      1.1086e-06         0.99708         4     
+    even_MAG-GUT65671_1.fa     1.4018e-06       0.0017316      3.0178e-06         0.99826         4     
+    even_MAG-GUT66322.fa          0.99204       0.0039545       0.0039365      6.9934e-05         1     
+    even_MAG-GUT66322_1.fa        0.98517       0.0083111       0.0064628      5.9704e-05         1     
+    even_MAG-GUT66322_2.fa        0.99343        0.002867       0.0034512      0.00024774         1     
+    even_MAG-GUT66330.fa          0.97557       0.0090148        0.015384      3.4412e-05         1     
+    even_MAG-GUT66330_1.fa        0.96898       0.0099028        0.021079      3.2905e-05         1     
+    even_MAG-GUT66330_2.fa        0.97444        0.011449        0.013974      0.00013122         1     
+    even_MAG-GUT66408.fa          0.99928      6.0395e-05      0.00041447      0.00024726         1     
+    even_MAG-GUT66408_1.fa        0.99903      8.4035e-05      0.00059746      0.00028884         1     
+    even_MAG-GUT66408_2.fa        0.99901      8.0502e-05       0.0004407      0.00047155         1     
+    even_MAG-GUT70620.fa          0.98943         0.00767       0.0028148      8.8397e-05         1     
+    even_MAG-GUT70620_1.fa        0.97839         0.01729       0.0042085      0.00011592         1     
+    even_MAG-GUT70620_2.fa         0.9932       0.0037335       0.0028111      0.00025228         1     
+    even_MAG-GUT70664.fa           0.9973      0.00055785      0.00035327       0.0017912         1     
+    even_MAG-GUT70664_1.fa        0.99423      0.00087825      0.00053545       0.0043597         1     
+    even_MAG-GUT70664_2.fa        0.99725      0.00049999      0.00038465       0.0018648         1     
+    even_MAG-GUT71751.fa           0.9185      0.00028327      0.00028373        0.080937         1     
+    even_MAG-GUT71751_1.fa        0.92623      0.00027849      0.00028594        0.073211         1     
+    even_MAG-GUT71751_2.fa        0.81414      0.00044659      0.00043501         0.18497         1     
+
+
+outputPath = 
+
+    ""
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-o__RFN20_split_pruned.xlsx"
+
+Process completed 
+[?1l>
