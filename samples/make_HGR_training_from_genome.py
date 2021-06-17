@@ -20,7 +20,8 @@ next_rank_dict = {
     'Phylum': 'Class',
     'Class': 'Order',
     'Order': 'Family',
-    'Family': 'Genus'
+    'Family': 'Genus',
+    'Genus': 'Species'
 }
 
 next_rank = next_rank_dict[rank]
