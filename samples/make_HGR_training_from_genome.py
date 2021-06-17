@@ -47,8 +47,6 @@ print(next_rank_child_dict)
 parent_prefix = ""
 child_prefix = ""
 for parent, children in parent_child_dict.items():
-    if os.path.exists("/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"+parent_prefix+parent):
-        break
     os.mkdir("/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"+parent_prefix+parent)
     if len(children) == 0:
         continue
