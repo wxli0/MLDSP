@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 
 dir = '/mnt/sda/MLDSP-samples-r202/dm_species/'
-MLDSP_pred_path = '/hone/w328li/BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv'
+MLDSP_pred_path = '/home/w328li/BlindKameris-new/outputs-r202/MLDSP-prediction-full-path.csv'
 
 MLDSP_df =  pd.read_csv(MLDSP_pred_path, index_col=0, header=0, dtype = str)
 MLDSP_species = MLDSP_df['gtdb-tk-species']
