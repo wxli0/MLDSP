@@ -16,7 +16,7 @@ genome_dir = '/mnt/sda/DeepMicrobes-data/labeled_genome'
 sizes = []
 GC_prop = []
 for genome_file in genome_dir:
-    fasta_sequences = SeqIO.parse(open(os.path.join(genome_dir, genome_file),'fasta')) 
+    fasta_sequences = SeqIO.parse(open(os.path.join(genome_dir, genome_file)),'fasta')
     concat_seq = ''
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
