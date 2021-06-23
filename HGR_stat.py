@@ -1,6 +1,8 @@
 import os
 import pandas as pd
 from Bio import SeqIO
+import matplotlib.pyplot as plt
+
 
 
 # compute taxon overview
@@ -30,6 +32,12 @@ for genome_file in os.listdir(genome_dir):
 
 print(sizes)
 print(GC_prop)
+plt.figure(0)
+plt.hist(sizes)
+plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/genome_size.png')
+plt.figure(1)
+plt.hist(GC_prop)
+plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/GC_content.png')
 
     
 
