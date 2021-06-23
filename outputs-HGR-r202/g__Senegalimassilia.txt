@@ -1,0 +1,78 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                             < M A T L A B (R) >
+                                                                   Copyright 1984-2019 The MathWorks, Inc.
+                                                               R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                              February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+testSet =
+
+  0x0 empty char array
+
+
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Senegalimassilia_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 170
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+header =
+
+  1x5 cell array
+
+    {'s__Senegalimassilia anae...'}    {'s__Senegalimassilia faec...'}    {'s__Senegalimassilia sp90...'}    {'prediction'}    {'actual'}
+
+Starting parallel pool (parpool) using the 'local' profile ...
+training QSVM, fold 5
+classifying using QSVM
+training QSVM, fold 4
+classifying using QSVM
+training QSVM, fold 3
+classifying using QSVM
+training QSVM, fold 2
+classifying using QSVM
+training QSVM, fold 1
+classifying using QSVM
+confusion matrix for 1 is:
+     1     2     5
+     0    70    10
+     1    12    69
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [82.4000]    [82.4000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      82.4  
+    {'AvgAccuracy' }      82.4  
+
+Process completed 
+[?1l>
