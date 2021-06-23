@@ -15,7 +15,9 @@ for rank in ranks:
 genome_dir = '/mnt/sda/DeepMicrobes-data/labeled_genome'
 sizes = []
 GC_prop = []
+i = 0
 for genome_file in os.listdir(genome_dir):
+    print(i)
     fasta_sequences = SeqIO.parse(open(os.path.join(genome_dir, genome_file)),'fasta')
     concat_seq = ''
     for fasta in fasta_sequences:
@@ -24,6 +26,7 @@ for genome_file in os.listdir(genome_dir):
     size = len(concat_seq)
     sizes.append(size)
     GC_prop.append((concat_seq.count('G')+concat_seq.count('C'))/size)
+    i += 1
 
 print(sizes)
 print(GC_prop)
