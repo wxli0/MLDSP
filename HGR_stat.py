@@ -19,7 +19,7 @@ sizes = []
 GC_prop = []
 i = 0
 for genome_file in os.listdir(genome_dir):
-    print(i)
+    # print(i)
     fasta_sequences = SeqIO.parse(open(os.path.join(genome_dir, genome_file)),'fasta')
     concat_seq = ''
     for fasta in fasta_sequences:
@@ -33,10 +33,10 @@ for genome_file in os.listdir(genome_dir):
 print(sizes)
 print(GC_prop)
 plt.figure(0)
-plt.hist(sizes)
+plt.hist(sizes, normed=True)
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/genome_size.png')
 plt.figure(1)
-plt.hist(GC_prop)
+plt.hist(GC_prop, normed=True)
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/GC_content.png')
 
     
