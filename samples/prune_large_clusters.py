@@ -36,7 +36,8 @@ elif data_type == 'HGR':
             or dir.startswith('c__Brachyspirae') or dir.startswith('p__Actinobacteriota') \
                 or dir.startswith('c__Synergistia') or dir.startswith('c__Coriobacteriia') \
                     or dir.startswith('o__Oscillospirales') or dir.startswith('o__Coriobacteriales') \
-                        or dir.startswith('f__Bacteroidaceae') or dir.startswith('f__Lachnospiraceae'):
+                        or dir.startswith('f__Bacteroidaceae') or dir.startswith('f__Lachnospiraceae') \
+                            or dir.startswith('o__Actinomycetales'):
         arc_dirs = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir)
         for d in arc_dirs:
             all_files = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir+'/'+d)
