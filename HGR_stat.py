@@ -33,10 +33,10 @@ for genome_file in os.listdir(genome_dir):
 print(sizes)
 print(GC_prop)
 plt.figure(0)
-plt.hist(sizes, normed=True)
+plt.hist(sizes, density=True)
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/genome_size.png')
 plt.figure(1)
-plt.hist(GC_prop, normed=True)
+plt.hist(GC_prop, density=True)
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/GC_content.png')
 
     
