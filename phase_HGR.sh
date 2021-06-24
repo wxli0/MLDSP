@@ -69,12 +69,15 @@ echo "INFO: done cd ${dir}"
 
 src1="/home/w328li/MLDSP/${outdir}/train-${split_pruned_dir}.xlsx"
 dest1="${outdir}/$1_train.xlsx"
-cp ${src1} ${dest1}
-echo "INFO:done cp ${src1} ${dest1}"
-
-
-python3 preprocess_train_to_pr.py ${dest1}
-echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+if [ ! -f ${dest1} ]; then
+    cp ${src1} ${dest1}
+    echo "INFO:done cp ${src1} ${dest1}"
+    python3 preprocess_train_to_pr.py ${dest1}
+    echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+else
+    echo "INFO:skip cp ${src1} ${dest1}"
+    echo "INFO:skip preprocess_train_to_pr.py ${dest1}"
+fi
 
 src2="/home/w328li/MLDSP/${outdir}/test-${split_pruned_dir}.xlsx"
 dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
