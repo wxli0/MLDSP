@@ -68,19 +68,23 @@ echo "INFO: done cd ${dir}"
 
 src1="/home/w328li/MLDSP/outputs-${ver}/train-$1.xlsx"
 dest1="outputs-${ver}/$1_train.xlsx"
-cp ${src1} ${dest1}
-echo "INFO:done cp ${src1} ${dest1}"
-
-
-python3 preprocess_train_to_pr.py ${dest1}
-echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-python3 precision_recall.py ${dest1} "GTDB"
-echo "INFO:done python3 precision_recall.py ${dest1} GTDB"
+if [ ! -f ${dest1} ]; then
+    cp ${src1} ${dest1}
+    echo "INFO:done cp ${src1} ${dest1}"
+    python3 preprocess_train_to_pr.py ${dest1}
+    echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+else
+    echo "INFO:skip cp ${src1} ${dest1}"
+    echo "INFO:skip preprocess_train_to_pr.py ${dest1}"
+fi
 
 src2="/home/w328li/MLDSP/outputs-${ver}/test-$1.xlsx"
 dest2="/home/w328li/BlindKameris-new/outputs-${ver}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
+
+python3 precision_recall.py ${dest1} ${dest2} "GTDB"
+echo "INFO:done python3 precision_recall.py ${dest1} ${dest2} GTDB"
 
 output3="outputs-${ver}/$1.xlsx"
 rej="rejection-threshold-GTDB-${ver}/$1.json"
