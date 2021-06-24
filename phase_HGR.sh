@@ -9,14 +9,20 @@ split_pruned_dir_full="${base_dir2}$1_split_pruned"
 split_pruned_dir="${base_dir}$1_split_pruned"
 
 # remove s__
-if [ ! -d "${base_dir2}$1/s__" ]; then
-    rm "${base_dir2}$1/s__"
-fi
+if [ -d "${base_dir2}$1/s__" ]; then
+    rm -r "${base_dir2}$1/s__"
+    echo "INFO: done rm -r ${base_dir2}$1/s__"
+else
+    echo "skip: done rm -r ${base_dir2}$1/s__"
+done
 
 # remove g__
-if [ ! -d "${base_dir2}$1/g__" ]; then
-    rm "${base_dir2}$1/g__"
-fi
+if [ -d "${base_dir2}$1/g__" ]; then
+    rm -r "${base_dir2}$1/g__"
+    echo "INFO: done rm -r ${base_dir2}$1/g__"
+else
+    echo "skip: done rm -r ${base_dir2}$1/g__"
+done
 
 
 if [ ! -d ${split_pruned_dir_full} ]; then
