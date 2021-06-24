@@ -3,6 +3,7 @@ import pandas as pd
 from Bio import SeqIO
 import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
+import numpy as np
 
 # compute taxon overview
 S1_path = '/home/w328li/MLDSP/samples/Table_S1_new.csv'
