@@ -2,8 +2,7 @@ import os
 import pandas as pd
 from Bio import SeqIO
 import matplotlib.pyplot as plt
-
-
+from matplotlib.ticker import PercentFormatter
 
 # compute taxon overview
 S1_path = '/home/w328li/MLDSP/samples/Table_S1_new.csv'
@@ -33,7 +32,8 @@ for genome_file in os.listdir(genome_dir):
 print(sizes)
 print(GC_prop)
 plt.figure(0)
-plt.hist(sizes, density=True)
+plt.hist(sizes, weights=np.ones(len(sizes)) / len(sizes))
+plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/genome_size.png')
 plt.figure(1)
 plt.hist(GC_prop, density=True)
