@@ -35,10 +35,12 @@ print(GC_prop)
 plt.figure(0)
 plt.hist(sizes, weights=np.ones(len(sizes)) / len(sizes))
 plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
+plt.title("Histogram of genome size")
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/genome_size.png')
 plt.figure(1)
 plt.hist(GC_prop, weights=np.ones(len(sizes)) / len(sizes))
 plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
+plt.title("Histogram of GC content")
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/GC_content.png')
 
     
