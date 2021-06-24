@@ -8,6 +8,17 @@ base_dir2="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
 split_pruned_dir_full="${base_dir2}$1_split_pruned"
 split_pruned_dir="${base_dir}$1_split_pruned"
 
+# remove s__
+if [ ! -d "${base_dir2}$1/s__" ]; then
+    rm "${base_dir2}$1/s__"
+fi
+
+# remove g__
+if [ ! -d "${base_dir2}$1/g__" ]; then
+    rm "${base_dir2}$1/g__"
+fi
+
+
 if [ ! -d ${split_pruned_dir_full} ]; then
     python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1
     echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1"
@@ -58,13 +69,14 @@ echo "INFO:done cp ${src1} ${dest1}"
 
 python3 preprocess_train_to_pr.py ${dest1}
 echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-python3 precision_recall.py ${dest1} "HGR"
-echo "INFO:done precision_recall.py ${dest1} HGR"
 
 src2="/home/w328li/MLDSP/${outdir}/test-${split_pruned_dir}.xlsx"
 dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
+
+python3 precision_recall.py ${dest1} ${dest2} "HGR"
+echo "INFO:done precision_recall.py ${dest1} ${dest2} HGR"
 
 output3="${outdir}/$1.xlsx"
 rej="rejection-threshold-HGR-${ver}/$1.json"
