@@ -14,7 +14,7 @@ if [ -d "${base_dir2}$1/s__" ]; then
     echo "INFO: done rm -r ${base_dir2}$1/s__"
 else
     echo "skip: done rm -r ${base_dir2}$1/s__"
-done
+fi
 
 # remove g__
 if [ -d "${base_dir2}$1/g__" ]; then
@@ -22,7 +22,7 @@ if [ -d "${base_dir2}$1/g__" ]; then
     echo "INFO: done rm -r ${base_dir2}$1/g__"
 else
     echo "skip: done rm -r ${base_dir2}$1/g__"
-done
+fi
 
 
 if [ ! -d ${split_pruned_dir_full} ]; then
