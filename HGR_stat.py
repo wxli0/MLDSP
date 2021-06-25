@@ -17,7 +17,6 @@ for rank in ranks:
 genome_dir = '/mnt/sda/DeepMicrobes-data/labeled_genome'
 sizes = []
 GC_prop = []
-i = 0
 for genome_file in os.listdir(genome_dir):
     # print(i)
     fasta_sequences = SeqIO.parse(open(os.path.join(genome_dir, genome_file)),'fasta')
@@ -26,21 +25,23 @@ for genome_file in os.listdir(genome_dir):
         _, sequence = fasta.id, str(fasta.seq)
         concat_seq += sequence
     size = len(concat_seq)
-    sizes.append(size)
+    sizes.append(size/(10**6))
     GC_prop.append((concat_seq.count('G')+concat_seq.count('C'))/size)
-    i += 1
 
 print(sizes)
 print(GC_prop)
 plt.figure(0)
-plt.hist(sizes, weights=np.ones(len(sizes)) / len(sizes))
+plt.hist(sizes, weights=np.ones(len(sizes)) / len(sizes), color='orange')
 plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
-plt.title("Histogram of genome size")
+plt.xlabel('Genome size (Mb)')
+plt.ylabel('Species (2,299)')
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/genome_size.png')
 plt.figure(1)
-plt.hist(GC_prop, weights=np.ones(len(sizes)) / len(sizes))
+plt.hist(GC_prop, weights=np.ones(len(sizes)) / len(sizes), color='orange')
+plt.gca().xaxis.set_major_formatter(PercentFormatter(1))
 plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
-plt.title("Histogram of GC content")
+plt.xlabel('Genome size (Mb)')
+plt.ylabel('GC content (%)')
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/GC_content.png')
 
     
