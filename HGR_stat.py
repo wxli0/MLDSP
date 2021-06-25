@@ -40,8 +40,8 @@ plt.figure(1)
 plt.hist(GC_prop, weights=np.ones(len(sizes)) / len(sizes), color='orange')
 plt.gca().xaxis.set_major_formatter(PercentFormatter(1))
 plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
-plt.xlabel('Genome size (Mb)')
-plt.ylabel('GC content (%)')
+plt.xlabel('GC content (%)')
+plt.ylabel('Species (2,299)')
 plt.savefig('/home/w328li/MLDSP/outputs-HGR-r202/GC_content.png')
 
     
