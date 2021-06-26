@@ -24,7 +24,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode(dataType, dis
         ord=[ord xx];
     end
 
-    header = [clusterNames, 'prediction', 'actual']
+    header = [clusterNames, 'prediction', 'actual'];
 
     parfor i = 1:folds
         AllTestInd = test(cv,i);

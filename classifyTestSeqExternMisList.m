@@ -67,7 +67,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
         score3 = [score3 clabel3];
         score3Matrix(s,:) = score3;
 
-        fprintf("%d\n",  clabel3)
+        % fprintf("%d\n",  clabel3)
     end   
 
     for i=1:length(clusterNames)
