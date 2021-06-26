@@ -33,7 +33,7 @@ else
     echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1"
 fi
 
-if [[ $1 == 'root' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
+if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
 [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
 || [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
 || [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
