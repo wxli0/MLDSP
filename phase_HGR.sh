@@ -8,6 +8,7 @@ base_dir2="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
 split_pruned_dir_full="${base_dir2}$1_split_pruned"
 split_pruned_dir="${base_dir}$1_split_pruned"
 
+start_time0="$(date -u +%s)"
 # remove s__
 if [ -d "${base_dir2}$1/s__" ]; then
     rm -r "${base_dir2}$1/s__"
@@ -44,6 +45,9 @@ if [[ $1 == 'root' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroid
 else
     echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
 fi
+end_time0="$(date -u +%s)"
+elapsed0="$(($end_time0-$start_time0))"
+echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 start_time1="$(date -u +%s)"
 prog_output1="${outdir}/train-${split_pruned_dir}.xlsx"
