@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ver='r202'
-base_dir="/mnt/sda/MLDSP-samples-GTDB-${ver}/"
+base_dir="/mnt/sda/MLDSP-samples-${ver}/"
 sample_dir="${base_dir}$1"
 dir="data/preprocess"
 json_path="non-clade-exclusion-${ver}/$1.json"
