@@ -88,15 +88,12 @@ echo "INFO: done cd ${dir}"
 start_time3="$(date -u +%s)"
 src1="/home/w328li/MLDSP/outputs-${ver}/train-$1.xlsx"
 dest1="outputs-${ver}/$1_train.xlsx"
-if [ ! -f ${dest1} ]; then
-    cp ${src1} ${dest1}
-    echo "INFO:done cp ${src1} ${dest1}"
-    python3 preprocess_train_to_pr.py ${dest1}
-    echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-else
-    echo "INFO:skip cp ${src1} ${dest1}"
-    echo "INFO:skip preprocess_train_to_pr.py ${dest1}"
-fi
+cp ${src1} ${dest1}
+echo "INFO:done cp ${src1} ${dest1}"
+python3 preprocess_train_to_pr.py ${dest1}
+echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+echo "INFO:skip cp ${src1} ${dest1}"
+echo "INFO:skip preprocess_train_to_pr.py ${dest1}"
 
 src2="/home/w328li/MLDSP/outputs-${ver}/test-$1.xlsx"
 dest2="/home/w328li/BlindKameris-new/outputs-${ver}/$1.xlsx"
