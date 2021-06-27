@@ -1,0 +1,143 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+[Warning: Unable to load Toolbox Path Cache
+/home/w328li/.matlab/R2019b/toolbox_cache-9.7.0-2686960878-glnxa64.xml. The
+cache file is not in the correct format. It will be regenerated upon quitting
+MATLAB.] 
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__Peptoniphilaceae_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 622
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+training QSVM, fold 5
+classifying using QSVM
+training QSVM, fold 4
+classifying using QSVM
+training QSVM, fold 3
+[Warning: Unable to fit posterior probabilities for learner 9 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In parallel_function (line 486)
+  In classificationCode (line 29)
+  In stackedMain (line 97)] 
+classifying using QSVM
+training QSVM, fold 2
+[Warning: Unable to fit posterior probabilities for learner 4 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In parallel_function (line 486)
+  In classificationCode (line 29)
+  In stackedMain (line 97)] 
+classifying using QSVM
+training QSVM, fold 1
+[Warning: Unable to fit posterior probabilities for learner 4 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In parallel_function (line 486)
+  In classificationCode (line 29)
+  In stackedMain (line 97)] 
+[Warning: Unable to fit posterior probabilities for learner 9 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In parallel_function (line 486)
+  In classificationCode (line 29)
+  In stackedMain (line 97)] 
+classifying using QSVM
+confusion matrix for 1 is:
+   298     0     0     3     0     0     0     0     2     0     2     0     0
+     0    20     0     1     0     0     0     0     1     0     0     1     0
+     1     0    67     2     0     0     0     0     0     0     0     0     0
+     2     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     2     0     0     0     0     0     0
+     1     0     0     1     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0    17     1     1     0     0     0     0
+     0     0     0     1     0     0     0     2     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     2     0     0
+     0     0     0     0     0     0     0     0     4     1     1     0     0
+    11     0     0     2     0     0     0     0     3     0   140     0     0
+     2     0     0     0     0     0     0     0     1     0     0    24     0
+     2     0     0     1     0     0     0     0     1     0     0     0     0
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [91.5000]    [91.5000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      91.5  
+    {'AvgAccuracy' }      91.5  
+
+Process completed 
+[?1l>
