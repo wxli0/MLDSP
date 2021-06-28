@@ -116,6 +116,6 @@ echo "INFO:done cp ${src2} ${dest2}"
 
 python3 add_MLDSP_pred.py ${output3}
 echo "INFO: done add_MLDSP_pred.py ${output3}"
-end_time4="$(date -u +%s)"
-elapsed4="$(($end_time4-$start_time4))"
-echo "$1 ${elapsed4}" >> "${outdir}/post_time.txt"
+# end_time4="$(date -u +%s)"
+# elapsed4="$(($end_time4-$start_time4))"
+# echo "$1 ${elapsed4}" >> "${outdir}/post_time.txt"
