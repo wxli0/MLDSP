@@ -47,23 +47,23 @@ fi
 #     python3 samples/prune_large_clusters.py $1 $ver "GTDB"
 #     echo "python3 samples/prune_large_clusters.py $1 $ver GTDB"
 # fi
-end_time0="$(date -u +%s)"
-elapsed0="$(($end_time0-$start_time0))"
-echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
+# end_time0="$(date -u +%s)"
+# elapsed0="$(($end_time0-$start_time0))"
+# echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 
-start_time1="$(date -u +%s)"
-prog_output1="outputs-${ver}/train-$1.xlsx"
-if [ ! -f ${prog_output1} ]; then
-    output1="outputs-${ver}/$1.txt"
-    matlab -r "run addme;stackedMain('GTDB', '$1');exit"|tee ${output1}
-    echo "INFO:done stackedMain('GTDB', '$1')"
-else
-    echo "INFO:skip stackedMain('GTDB', '$1')"
-fi
-end_time1="$(date -u +%s)"
-elapsed1="$(($end_time1-$start_time1))"
-echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
+# start_time1="$(date -u +%s)"
+# prog_output1="outputs-${ver}/train-$1.xlsx"
+# if [ ! -f ${prog_output1} ]; then
+#     output1="outputs-${ver}/$1.txt"
+#     matlab -r "run addme;stackedMain('GTDB', '$1');exit"|tee ${output1}
+#     echo "INFO:done stackedMain('GTDB', '$1')"
+# else
+#     echo "INFO:skip stackedMain('GTDB', '$1')"
+# fi
+# end_time1="$(date -u +%s)"
+# elapsed1="$(($end_time1-$start_time1))"
+# echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
 
 
 start_time2="$(date -u +%s)"

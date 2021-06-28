@@ -33,34 +33,34 @@ else
     echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_dir2}$1"
 fi
 
-if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
-[[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
-|| [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
-|| [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
-|| [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
-|| [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
-|| [[ $1 == 'g__Alistipes' ]]; then
-    python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
-    echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
-else
-    echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
-fi
-end_time0="$(date -u +%s)"
-elapsed0="$(($end_time0-$start_time0))"
-echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
+# if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
+# [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
+# || [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
+# || [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
+# || [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
+# || [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
+# || [[ $1 == 'g__Alistipes' ]]; then
+#     python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
+#     echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
+# else
+#     echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
+# fi
+# end_time0="$(date -u +%s)"
+# elapsed0="$(($end_time0-$start_time0))"
+# echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
-start_time1="$(date -u +%s)"
-prog_output1="${outdir}/train-${split_pruned_dir}.xlsx"
-if [ ! -f ${prog_output1} ]; then
-    output1="${outdir}/$1.txt"
-    matlab -r "run addme;stackedMain('HGR', '${split_pruned_dir}');exit"|tee ${output1}
-    echo "INFO:done stackedMain('HGR', '${split_pruned_dir}')"
-else
-    echo "INFO:skip stackedMain('HGR', '${split_pruned_dir}')"
-fi
-end_time1="$(date -u +%s)"
-elapsed1="$(($end_time1-$start_time1))"
-echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
+# start_time1="$(date -u +%s)"
+# prog_output1="${outdir}/train-${split_pruned_dir}.xlsx"
+# if [ ! -f ${prog_output1} ]; then
+#     output1="${outdir}/$1.txt"
+#     matlab -r "run addme;stackedMain('HGR', '${split_pruned_dir}');exit"|tee ${output1}
+#     echo "INFO:done stackedMain('HGR', '${split_pruned_dir}')"
+# else
+#     echo "INFO:skip stackedMain('HGR', '${split_pruned_dir}')"
+# fi
+# end_time1="$(date -u +%s)"
+# elapsed1="$(($end_time1-$start_time1))"
+# echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
 
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${split_pruned_dir}.xlsx"
