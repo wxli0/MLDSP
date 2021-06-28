@@ -108,7 +108,7 @@ echo "INFO:done cp ${src2} ${dest2}"
 
 
 # start_time4="$(date -u +%s)"
-# output3="outputs-${ver}/$1.xlsx"
+output3="outputs-${ver}/$1.xlsx"
 # rej="rejection-threshold-GTDB-${ver}/$1.json"
 # python3 preprocess_test.py ${output3} ${rej}
 # echo "INFO:done preprocess_test.py ${output3} ${rej}"
