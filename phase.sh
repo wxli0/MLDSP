@@ -112,6 +112,8 @@ output3="outputs-${ver}/$1.xlsx"
 # rej="rejection-threshold-GTDB-${ver}/$1.json"
 # python3 preprocess_test.py ${output3} ${rej}
 # echo "INFO:done preprocess_test.py ${output3} ${rej}"
+python3 preprocess_test.py ${output3} 
+echo "INFO:done preprocess_test.py ${output3} 
 
 
 python3 add_MLDSP_pred.py ${output3}
