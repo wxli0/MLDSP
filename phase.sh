@@ -85,33 +85,33 @@ cd ${dir}
 echo "INFO: done cd ${dir}"
 
 
-start_time3="$(date -u +%s)"
-src1="/home/w328li/MLDSP/outputs-${ver}/train-$1.xlsx"
-dest1="outputs-${ver}/$1_train.xlsx"
-cp ${src1} ${dest1}
-echo "INFO:done cp ${src1} ${dest1}"
-python3 preprocess_train_to_pr.py ${dest1}
-echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-echo "INFO:skip cp ${src1} ${dest1}"
-echo "INFO:skip preprocess_train_to_pr.py ${dest1}"
+# start_time3="$(date -u +%s)"
+# src1="/home/w328li/MLDSP/outputs-${ver}/train-$1.xlsx"
+# dest1="outputs-${ver}/$1_train.xlsx"
+# cp ${src1} ${dest1}
+# echo "INFO:done cp ${src1} ${dest1}"
+# python3 preprocess_train_to_pr.py ${dest1}
+# echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+# echo "INFO:skip cp ${src1} ${dest1}"
+# echo "INFO:skip preprocess_train_to_pr.py ${dest1}"
 
 src2="/home/w328li/MLDSP/outputs-${ver}/test-$1.xlsx"
 dest2="/home/w328li/BlindKameris-new/outputs-${ver}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
-python3 precision_recall.py ${dest1} ${dest2} "GTDB"
-echo "INFO:done python3 precision_recall.py ${dest1} ${dest2} GTDB"
-end_time3="$(date -u +%s)"
-elapsed3="$(($end_time3-$start_time3))"
-echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
+# python3 precision_recall.py ${dest1} ${dest2} "GTDB"
+# echo "INFO:done python3 precision_recall.py ${dest1} ${dest2} GTDB"
+# end_time3="$(date -u +%s)"
+# elapsed3="$(($end_time3-$start_time3))"
+# echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
-start_time4="$(date -u +%s)"
-output3="outputs-${ver}/$1.xlsx"
-rej="rejection-threshold-GTDB-${ver}/$1.json"
-python3 preprocess_test.py ${output3} ${rej}
-echo "INFO:done preprocess_test.py ${output3} ${rej}"
+# start_time4="$(date -u +%s)"
+# output3="outputs-${ver}/$1.xlsx"
+# rej="rejection-threshold-GTDB-${ver}/$1.json"
+# python3 preprocess_test.py ${output3} ${rej}
+# echo "INFO:done preprocess_test.py ${output3} ${rej}"
 
 
 python3 add_MLDSP_pred.py ${output3}
