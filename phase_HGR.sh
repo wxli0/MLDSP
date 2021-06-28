@@ -64,6 +64,9 @@ fi
 
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${split_pruned_dir}.xlsx"
+if [ -f ${prog_output2} ]; then
+    rm ${prog_output2}
+fi
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}/$1_classify.txt"
     matlab -r "run addme;stackedMain('HGR', '${split_pruned_dir}', '${testdir}/$1');exit"|tee ${output2}
