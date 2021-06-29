@@ -17,17 +17,18 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/MLDSP-samples-r202/o__Sphaerochaetales"
+    "/mnt/sda/MLDSP-samples-r202/f__CADAEX01"
 
 
 testSetPath = 
 
-    "/mnt/sda/MLDSP-samples-r202/rumen_mags/o__Sphaerochaetales"
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/f__CADAEX01"
 
 Reading sequences .... 
 Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 880
+totalSeq is: 50
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -43,7 +44,7 @@ maxSeqLen =
 
      0
 
-dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/o__Sphaerochaetales
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/f__CADAEX01
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
@@ -51,30 +52,37 @@ numTestSeq is: 3
 
 clusterNames =
 
-  1x1 cell array
+  1x2 cell array
 
-    {'1-f__Sphaerochaetaceae'}
+    {'1-g__CADAEX01'}    {'g__WQTU01'}
 
-    '1-f__Sphaerochaetaceae'
+
+clusterNames =
+
+  1x2 cell array
+
+    {'1-g__CADAEX01'}    {'2-g__WQTU01'}
+
+    '1-g__CADAEX01'    '2-g__WQTU01'
 
 
 header =
 
-  1x2 cell array
+  1x3 cell array
 
-    {'1-f__Sphaerochaetaceae'}    {'prediction'}
+    {'1-g__CADAEX01'}    {'2-g__WQTU01'}    {'prediction'}
 
 
 T3 =
 
-  3x2 table
+  3x3 table
 
-                    1-f__Sphaerochaetaceae    prediction
-                    ______________________    __________
+                    1-g__CADAEX01    2-g__WQTU01    prediction
+                    _____________    ___________    __________
 
-    RUG127.fasta              1                   1     
-    RUG597.fasta              1                   1     
-    RUG844.fasta              1                   1     
+    RUG578.fasta          1          2.2204e-14         1     
+    RUG617.fasta          1          2.2204e-14         1     
+    RUG819.fasta          1          2.2204e-14         1     
 
 
 outputPath = 
@@ -84,7 +92,7 @@ outputPath =
 
 outputPath = 
 
-    "outputs-r202/test-o__Sphaerochaetales.xlsx"
+    "outputs-r202/test-f__CADAEX01.xlsx"
 
 Process completed 
 [?1l>
