@@ -67,10 +67,10 @@ fi
 
 
 start_time2="$(date -u +%s)"
-prog_output2="outputs-${ver}/test-$1.xlsx"
-if [ -f ${prog_output2} ]; then
-    rm ${prog_output2}
-fi
+# prog_output2="outputs-${ver}/test-$1.xlsx"
+# if [ -f ${prog_output2} ]; then
+#     rm ${prog_output2}
+# fi
 if [ ! -f ${prog_output2} ]; then
     output2="outputs-${ver}/$1_classify.txt"
     matlab -r "run addme;stackedMain('GTDB', '$1', 'rumen_mags/$1');exit"|tee ${output2}
