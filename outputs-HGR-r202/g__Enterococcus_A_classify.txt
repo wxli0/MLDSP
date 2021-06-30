@@ -1,0 +1,145 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                                                                                          < M A T L A B (R) >
+                                                                                Copyright 1984-2019 The MathWorks, Inc.
+                                                                            R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                                                                                           February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[2J
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Enterococcus_A_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Enterococcus_A"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 410
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Enterococcus_A
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 50
+
+clusterNames =
+
+  1x2 cell array
+
+    {'1-s__Enterococcus_A gilvus'}    {'s__Enterococcus_A sp002140655'}
+
+
+clusterNames =
+
+  1x2 cell array
+
+    {'1-s__Enterococcus_A gilvus'}    {'2-s__Enterococcus_A sp002140655'}
+
+    '1-s__Enterococcus_A gilvus'    '2-s__Enterococcus_A sp002140655'
+
+
+header =
+
+  1x3 cell array
+
+    {'1-s__Enterococcus_A gilvus'}    {'2-s__Enterococcus_A sp002140655'}    {'prediction'}
+
+
+T3 =
+
+  50x3 table
+
+                            1-s__Enterococcus_A gilvus    2-s__Enterococcus_A sp002140655    prediction
+                            __________________________    _______________________________    __________
+
+    even_MAG-GUT1036.fa              0.99884                         0.0011575                   1     
+    even_MAG-GUT1242.fa              0.99834                         0.0016574                   1     
+    even_MAG-GUT1319.fa              0.99742                         0.0025813                   1     
+    even_MAG-GUT1875.fa              0.99927                        0.00073111                   1     
+    even_MAG-GUT1876.fa               0.9983                         0.0017004                   1     
+    even_MAG-GUT2025.fa                0.998                         0.0019959                   1     
+    even_MAG-GUT3548.fa              0.99234                         0.0076554                   1     
+    even_MAG-GUT43446.fa             0.99938                         0.0006239                   1     
+    even_MAG-GUT43463.fa             0.99685                          0.003148                   1     
+    even_MAG-GUT43483.fa             0.99894                         0.0010569                   1     
+    even_MAG-GUT46441.fa             0.99844                          0.001562                   1     
+    even_MAG-GUT46962.fa               0.999                        0.00099706                   1     
+    even_MAG-GUT47531.fa             0.99867                         0.0013283                   1     
+    even_MAG-GUT48673.fa             0.99612                          0.003882                   1     
+    even_MAG-GUT48686.fa             0.99716                         0.0028414                   1     
+    even_MAG-GUT48704.fa             0.99673                         0.0032706                   1     
+    even_MAG-GUT48723.fa             0.99909                        0.00091108                   1     
+    even_MAG-GUT48749.fa              0.9987                         0.0013022                   1     
+    even_MAG-GUT48761.fa             0.99929                        0.00070693                   1     
+    even_MAG-GUT48798.fa             0.99838                         0.0016247                   1     
+    even_MAG-GUT48894.fa             0.99757                         0.0024332                   1     
+    even_MAG-GUT49063.fa             0.99945                        0.00055307                   1     
+    even_MAG-GUT49069.fa             0.99905                        0.00094811                   1     
+    even_MAG-GUT49118.fa             0.99925                        0.00074729                   1     
+    even_MAG-GUT49176.fa             0.99869                         0.0013095                   1     
+    even_MAG-GUT49226.fa             0.99829                         0.0017082                   1     
+    even_MAG-GUT49326.fa             0.99634                         0.0036562                   1     
+    even_MAG-GUT49356.fa             0.99821                         0.0017875                   1     
+    even_MAG-GUT49393.fa             0.99792                         0.0020849                   1     
+    even_MAG-GUT49409.fa              0.9995                        0.00049808                   1     
+    even_MAG-GUT49458.fa             0.99809                         0.0019053                   1     
+    even_MAG-GUT49499.fa             0.99223                         0.0077734                   1     
+    even_MAG-GUT49512.fa             0.99913                        0.00086708                   1     
+    even_MAG-GUT49574.fa              0.9989                          0.001098                   1     
+    even_MAG-GUT49593.fa             0.99874                         0.0012564                   1     
+    even_MAG-GUT49599.fa             0.99746                         0.0025396                   1     
+    even_MAG-GUT49616.fa              0.9986                         0.0014001                   1     
+    even_MAG-GUT57264.fa             0.99843                         0.0015703                   1     
+    even_MAG-GUT57442.fa             0.99828                         0.0017223                   1     
+    even_MAG-GUT61880.fa             0.99296                         0.0070424                   1     
+    even_MAG-GUT68043.fa             0.99858                         0.0014245                   1     
+    even_MAG-GUT68629.fa             0.99956                        0.00043961                   1     
+    even_MAG-GUT7121.fa              0.99936                        0.00063711                   1     
+    even_MAG-GUT7125.fa              0.99937                        0.00063434                   1     
+    even_MAG-GUT7214.fa              0.99887                         0.0011283                   1     
+    even_MAG-GUT91303.fa             0.99809                         0.0019121                   1     
+    even_MAG-GUT91470.fa             0.99862                         0.0013791                   1     
+    even_MAG-GUT91943.fa             0.99947                        0.00053033                   1     
+    even_MAG-GUT940.fa               0.99849                         0.0015114                   1     
+    even_MAG-GUT984.fa               0.99744                         0.0025647                   1     
+
+
+outputPath = 
+
+    ""
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Enterococcus_A_split_pruned.xlsx"
+
+Process completed 
+[?1l>
