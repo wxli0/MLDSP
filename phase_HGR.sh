@@ -100,8 +100,8 @@ dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
-# python3 precision_recall.py ${dest1} ${dest2} "HGR"
-# echo "INFO:done precision_recall.py ${dest1} ${dest2} HGR"
+# python3 precision_recall_opt.py ${dest1} ${dest2} "HGR"
+# echo "INFO:done precision_recall_opt.py ${dest1} ${dest2} HGR"
 # end_time3="$(date -u +%s)"
 # elapsed3="$(($end_time3-$start_time3))"
 # echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
