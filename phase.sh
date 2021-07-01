@@ -67,7 +67,7 @@ fi
 
 
 start_time2="$(date -u +%s)"
-# prog_output2="outputs-${ver}/test-$1.xlsx"
+prog_output2="outputs-${ver}/test-$1.xlsx"
 # if [ -f ${prog_output2} ]; then
 #     rm ${prog_output2}
 # fi
