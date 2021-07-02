@@ -22,7 +22,7 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/c__Clostridia_A_split_pruned"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Senegalimassilia_split_pruned"
 
 
 testSetPath = 
@@ -31,8 +31,10 @@ testSetPath =
 
 Reading sequences .... 
 Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 7963
+totalSeq is: 170
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -48,3 +50,22 @@ classifying using QSVM
 training QSVM, fold 2
 classifying using QSVM
 training QSVM, fold 1
+classifying using QSVM
+confusion matrix for 1 is:
+     1     2     5
+     0    70    10
+     1    12    69
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [82.4000]    [82.4000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      82.4  
+    {'AvgAccuracy' }      82.4  
+
+Process completed 
+[?1l>
