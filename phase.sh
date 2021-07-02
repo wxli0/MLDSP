@@ -52,25 +52,22 @@ fi
 # echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 
-# start_time1="$(date -u +%s)"
-# prog_output1="outputs-${ver}/train-$1.xlsx"
-# if [ ! -f ${prog_output1} ]; then
-#     output1="outputs-${ver}/$1.txt"
-#     matlab -r "run addme;stackedMain('GTDB', '$1');exit"|tee ${output1}
-#     echo "INFO:done stackedMain('GTDB', '$1')"
-# else
-#     echo "INFO:skip stackedMain('GTDB', '$1')"
-# fi
-# end_time1="$(date -u +%s)"
-# elapsed1="$(($end_time1-$start_time1))"
-# echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
+start_time1="$(date -u +%s)"
+prog_output1="outputs-${ver}/train-$1.xlsx"
+if [ ! -f ${prog_output1} ]; then
+    output1="outputs-${ver}/$1.txt"
+    matlab -r "run addme;stackedMain('GTDB', '$1');exit"|tee ${output1}
+    echo "INFO:done stackedMain('GTDB', '$1')"
+else
+    echo "INFO:skip stackedMain('GTDB', '$1')"
+fi
+end_time1="$(date -u +%s)"
+elapsed1="$(($end_time1-$start_time1))"
+echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
 
 
 start_time2="$(date -u +%s)"
 prog_output2="outputs-${ver}/test-$1.xlsx"
-# if [ -f ${prog_output2} ]; then
-#     rm ${prog_output2}
-# fi
 if [ ! -f ${prog_output2} ]; then
     output2="outputs-${ver}/$1_classify.txt"
     matlab -r "run addme;stackedMain('GTDB', '$1', 'rumen_mags/$1');exit"|tee ${output2}
@@ -88,39 +85,37 @@ cd ${dir}
 echo "INFO: done cd ${dir}"
 
 
-# start_time3="$(date -u +%s)"
-# src1="/home/w328li/MLDSP/outputs-${ver}/train-$1.xlsx"
-# dest1="outputs-${ver}/$1_train.xlsx"
-# cp ${src1} ${dest1}
-# echo "INFO:done cp ${src1} ${dest1}"
-# python3 preprocess_train_to_pr.py ${dest1}
-# echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-# echo "INFO:skip cp ${src1} ${dest1}"
-# echo "INFO:skip preprocess_train_to_pr.py ${dest1}"
+start_time3="$(date -u +%s)"
+src1="/home/w328li/MLDSP/outputs-${ver}/train-$1.xlsx"
+dest1="outputs-${ver}/$1_train.xlsx"
+cp ${src1} ${dest1}
+echo "INFO:done cp ${src1} ${dest1}"
+python3 preprocess_train_to_pr.py ${dest1}
+echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+
 
 src2="/home/w328li/MLDSP/outputs-${ver}/test-$1.xlsx"
 dest2="/home/w328li/BlindKameris-new/outputs-${ver}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
-# python3 precision_recall_opt.py ${dest1} ${dest2} "GTDB"
-# echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} GTDB"
-# end_time3="$(date -u +%s)"
-# elapsed3="$(($end_time3-$start_time3))"
-# echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
+python3 precision_recall_opt.py ${dest1} ${dest2} "GTDB"
+echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} GTDB"
+end_time3="$(date -u +%s)"
+elapsed3="$(($end_time3-$start_time3))"
+echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
-# start_time4="$(date -u +%s)"
+start_time4="$(date -u +%s)"
 output3="outputs-${ver}/$1.xlsx"
-# rej="rejection-threshold-GTDB-${ver}/$1.json"
-# python3 preprocess_test.py ${output3} ${rej}
-# echo "INFO:done preprocess_test.py ${output3} ${rej}"
-python3 preprocess_test.py ${output3} 
-echo "INFO:done preprocess_test.py ${output3}"
+rej="rejection-threshold-GTDB-${ver}/$1.json"
+python3 preprocess_test.py ${output3} ${rej}
+echo "INFO:done preprocess_test.py ${output3} ${rej}"
+
 
 
 python3 add_MLDSP_pred.py ${output3}
 echo "INFO: done add_MLDSP_pred.py ${output3}"
-# end_time4="$(date -u +%s)"
-# elapsed4="$(($end_time4-$start_time4))"
-# echo "$1 ${elapsed4}" >> "${outdir}/post_time.txt"
+end_time4="$(date -u +%s)"
+elapsed4="$(($end_time4-$start_time4))"
+echo "$1 ${elapsed4}" >> "${outdir}/post_time.txt"
