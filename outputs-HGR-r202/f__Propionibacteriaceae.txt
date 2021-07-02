@@ -22,7 +22,7 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/c__Gammaproteobacteria_split_pruned"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__Propionibacteriaceae_split_pruned"
 
 
 testSetPath = 
@@ -35,7 +35,7 @@ Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 5179
+totalSeq is: 68
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -47,3 +47,39 @@ classifying using QSVM
 training QSVM, fold 4
 classifying using QSVM
 training QSVM, fold 3
+[Warning: Unable to fit posterior probabilities for learner 3 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In parallel_function (line 486)
+  In classificationCode (line 29)
+  In stackedMain (line 97)] 
+classifying using QSVM
+training QSVM, fold 2
+classifying using QSVM
+training QSVM, fold 1
+classifying using QSVM
+confusion matrix for 1 is:
+     8     0     1     2
+     0     7     0     3
+     1     0     2     0
+     0     2     0    42
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [86.8000]    [86.8000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      86.8  
+    {'AvgAccuracy' }      86.8  
+
+Process completed 
+[?1l>
