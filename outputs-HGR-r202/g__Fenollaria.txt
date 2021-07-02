@@ -22,7 +22,7 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__Atopobiaceae_split_pruned"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Fenollaria_split_pruned"
 
 
 testSetPath = 
@@ -33,13 +33,8 @@ Reading sequences ....
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 1335
+totalSeq is: 70
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -49,21 +44,9 @@ Starting parallel pool (parpool) using the 'local' profile ...
 training QSVM, fold 5
 classifying using QSVM
 training QSVM, fold 4
-[Warning: Unable to fit posterior probabilities for learner 2 (SVM) because:
-Some classes have one observation only.] 
-[> In ClassificationECOC>localFitECOC/loopBody (line 672)
-  In internal.stats.parallel.smartForSliceout (line 174)
-  In ClassificationECOC>localFitECOC (line 571)
-  In ClassificationECOC (line 171)
-  In classreg.learning/FitTemplate/fit (line 263)
-  In ClassificationECOC.fit (line 116)
-  In fitcecoc (line 356)
-  In parallel_function (line 486)
-  In classificationCode (line 29)
-  In stackedMain (line 97)] 
 classifying using QSVM
 training QSVM, fold 3
-[Warning: Unable to fit posterior probabilities for learner 2 (SVM) because:
+[Warning: Unable to fit posterior probabilities for learner 3 (SVM) because:
 Some classes have one observation only.] 
 [> In ClassificationECOC>localFitECOC/loopBody (line 672)
   In internal.stats.parallel.smartForSliceout (line 174)
@@ -79,3 +62,34 @@ classifying using QSVM
 training QSVM, fold 2
 classifying using QSVM
 training QSVM, fold 1
+[Warning: Unable to fit posterior probabilities for learner 3 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In parallel_function (line 486)
+  In classificationCode (line 29)
+  In stackedMain (line 97)] 
+classifying using QSVM
+confusion matrix for 1 is:
+     0    24     0
+     0    44     0
+     0     2     0
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [62.9000]    [62.9000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      62.9  
+    {'AvgAccuracy' }      62.9  
+
+Process completed 
+[?1l>
