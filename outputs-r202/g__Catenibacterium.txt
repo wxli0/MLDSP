@@ -22,7 +22,7 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/MLDSP-samples-r202/o__Mycoplasmatales"
+    "/mnt/sda/MLDSP-samples-r202/g__Catenibacterium"
 
 
 testSetPath = 
@@ -36,11 +36,8 @@ Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
-Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 4040
+totalSeq is: 150
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -56,3 +53,25 @@ classifying using QSVM
 training QSVM, fold 2
 classifying using QSVM
 training QSVM, fold 1
+classifying using QSVM
+confusion matrix for 1 is:
+    20     9     0     0     0     1
+    16    14     0     0     0     0
+     0     1    14     0     0     5
+     1     0     0    29     0     0
+     3     0     0     1    10     6
+     8     0     0     0     0    12
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [66]    [66]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}       66   
+    {'AvgAccuracy' }       66   
+
+Process completed 
+[?1l>
