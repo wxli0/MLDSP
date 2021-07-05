@@ -22,7 +22,7 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__Erysipelotrichales_split_pruned"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__CAG-313_split_pruned"
 
 
 testSetPath = 
@@ -32,8 +32,9 @@ testSetPath =
 Reading sequences .... 
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 4370
+totalSeq is: 304
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -47,3 +48,24 @@ classifying using QSVM
 training QSVM, fold 3
 classifying using QSVM
 training QSVM, fold 2
+classifying using QSVM
+training QSVM, fold 1
+classifying using QSVM
+confusion matrix for 1 is:
+   168     1     9
+     9    30     5
+    12     1    69
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [87.8000]    [87.8000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      87.8  
+    {'AvgAccuracy' }      87.8  
+
+Process completed 
+[?1l>
