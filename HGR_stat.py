@@ -36,7 +36,7 @@ S1['gc_percentage'] = GC_prop
 S1['genome_size'] = sizes
 S1['contig_count'] = contig_counts
 
-S1.to_csv('/home/w328li/MLDSP/samples/Table_S1_new.csv', index=True, header=True)
+S1.to_csv('/home/w328li/MLDSP/samples/Table_S1_new.csv', index=False, header=True)
 
     
 
