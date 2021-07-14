@@ -22,12 +22,14 @@ for genome_file in os.listdir(genome_dir):
     # print(i)
     fasta_sequences = SeqIO.parse(open(os.path.join(genome_dir, genome_file)),'fasta')
     concat_seq = ''
+    contig_count = 0
     for fasta in fasta_sequences:
         _, sequence = fasta.id, str(fasta.seq)
         concat_seq += sequence
+        contig_count += 1
     size = len(concat_seq)
     sizes.append(size)
-    contig_counts.append(len(fasta_sequences))
+    contig_counts.append(contig_count)
     GC_prop.append((concat_seq.count('G')+concat_seq.count('C'))/size*100)
 
 S1['gc_percentage'] = GC_prop
