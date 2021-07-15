@@ -76,7 +76,9 @@ python3 precision_recall_opt.py ${dest1} ${dest2} "GTDB"
 echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} GTDB"
 end_time3="$(date -u +%s)"
 elapsed3="$(($end_time3-$start_time3))"
+lockfile -r 0 rej.lock || exit 1
 echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
+rm -f rej.lock
 
 
 start_time4="$(date -u +%s)"
@@ -91,4 +93,6 @@ python3 add_MLDSP_pred.py ${output3}
 echo "INFO: done add_MLDSP_pred.py ${output3}"
 end_time4="$(date -u +%s)"
 elapsed4="$(($end_time4-$start_time4))"
+lockfile -r 0 post.lock || exit 1
 echo "$1 ${elapsed4}" >> "${outdir}/post_time.txt"
+rm -f post.lock
