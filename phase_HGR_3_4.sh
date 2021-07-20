@@ -47,4 +47,6 @@ python3 add_HGR_pred.py ${output3}
 echo "INFO: done add_HGR_pred.py ${output3}"
 end_time4="$(date -u +%s)"
 elapsed4="$(($end_time4-$start_time4))"
+lockfile -r 0 post.lock || exit 1
 echo "$1 ${elapsed4}" >> "${outdir}/post_time.txt"
+rm -f post.lock
