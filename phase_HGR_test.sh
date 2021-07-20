@@ -10,13 +10,9 @@ split_pruned_dir="${base_dir}$1_split_pruned"
 
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${split_pruned_dir}.xlsx"
-if [ ! -f ${prog_output2} ]; then
-    output2="${outdir}/$1_classify.txt"
-    matlab -r "run addme;stackedMain('HGR', '${split_pruned_dir}', '${testdir}/$1');exit"|tee ${output2}
-    echo "INFO:done stackedMain('HGR', '${split_pruned_dir}', '${testdir}/$1')"
-else
-    echo "INFO:skip stackedMain('HGR', '${split_pruned_dir}', '${testdir}/$1')"
-fi
+output2="${outdir}/$1_classify.txt"
+matlab -r "run addme;stackedMain('HGR', '${split_pruned_dir}', '${testdir}/$1');exit"|tee ${output2}
+echo "INFO:done stackedMain('HGR', '${split_pruned_dir}', '${testdir}/$1')"
 end_time2="$(date -u +%s)"
 elapsed2="$(($end_time2-$start_time2))"
 echo "$1 ${elapsed2}" >> "${outdir}/test_time.txt"
