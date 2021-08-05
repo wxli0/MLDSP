@@ -26,10 +26,10 @@ cd ~/MLDSP
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${sample_dir}.xlsx"
 if [ ! -f ${prog_output2} ]; then
-    matlab -r "run addme;stackedMain($1, '${sample_dir}', '${testdir}/$2')"
-    echo "INFO:done stackedMain($1, '${sample_dir}', '${testdir}/$2')"
+    matlab -r "run addme;stackedMain('$1', '${sample_dir}', '${testdir}/$2')"
+    echo "INFO:done stackedMain('$1', '${sample_dir}', '${testdir}/$2')"
 else
-    echo "INFO:skip stackedMain($1, '${sample_dir}', '${testdir}/$2')"
+    echo "INFO:skip stackedMain('$1', '${sample_dir}', '${testdir}/$2')"
 fi
 
 # end_time2="$(date -u +%s)"
