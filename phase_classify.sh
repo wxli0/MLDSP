@@ -45,7 +45,7 @@ dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO: done cp ${src2} ${dest2}"
 
-output3="${outdir}/$1.xlsx"
+output3="${outdir}/$2.xlsx"
 python3 postprocess_test_single_child.py ${output3}
 echo "INFO: done python3 postprocess_test_single_child.py ${output3}"
 
