@@ -36,18 +36,18 @@ end_time2="$(date -u +%s)"
 elapsed2="$(($end_time2-$start_time2))"
 echo "$1 ${elapsed2}" >> "${outdir}/test_time.txt"
 
-# dir="/home/w328li/BlindKameris-new/"
-# cd ${dir}
-# echo "INFO: done cd ${dir}"
+dir="/home/w328li/BlindKameris-new/"
+cd ${dir}
+echo "INFO: done cd ${dir}"
 
-# src2="/home/w328li/MLDSP/${outdir}/test-${split_pruned_dir}.xlsx"
-# dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
-# cp ${src2} ${dest2}
-# echo "INFO: done cp ${src2} ${dest2}"
+src2="/home/w328li/MLDSP/${outdir}/test-${split_pruned_dir}.xlsx"
+dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
+cp ${src2} ${dest2}
+echo "INFO: done cp ${src2} ${dest2}"
 
-# output3="${outdir}/$1.xlsx"
-# python3 postprocess_test_single_child.py ${output3}
-# echo "INFO: done python3 postprocess_test_single_child.py ${output3}"
+output3="${outdir}/$1.xlsx"
+python3 postprocess_test_single_child.py ${output3}
+echo "INFO: done python3 postprocess_test_single_child.py ${output3}"
 
-# python3 add_HGR_pred_single_child.py ${output3}
-# echo "INFO: done python3 add_HGR_pred_single_child.py ${output3}"
+python3 add_HGR_pred_single_child.py ${output3}
+echo "INFO: done python3 add_HGR_pred_single_child.py ${output3}"
