@@ -41,7 +41,7 @@ cd ${dir}
 echo "INFO: done cd ${dir}"
 
 src2="/home/w328li/MLDSP/${outdir}/test-${sample_dir}.xlsx"
-dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
+dest2="/home/w328li/BlindKameris-new/${outdir}/$2.xlsx"
 cp ${src2} ${dest2}
 echo "INFO: done cp ${src2} ${dest2}"
 
