@@ -77,7 +77,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
         if cn_size(2) > 1
             [clabel3, ~, ~, score3] = predict(cModel3,testV);    
         else
-            [clabel3, score3] = predict(cModel3,testV); 
+            [clabel3, score3] = predict(cModel3,testV)
         end
         pMat(3,clabel3)= pMat(3,clabel3)+1;
 
