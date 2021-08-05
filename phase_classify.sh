@@ -11,11 +11,11 @@ base_dir=""
 split_base="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
 split_pruned_dir_full="${split_base}$2_split_pruned"
 split_pruned_dir="${base_dir}$2_split_pruned"
-if [ $1 == 'HGR' ]:
+if [ $1 == 'HGR' ]; then
     outdir="outputs-HGR-${ver}"
     sample_dir=split_pruned_dir
     test_dir="hgr_mags"
-elif [ $1 == 'GTDB' ]:
+elif [ $1 == 'GTDB' ]; then
      outdir="outputs-${ver}"
      sample_dir=$1
      testdir="rumen_mags"
@@ -28,7 +28,7 @@ prog_output2="${outdir}/test-${sample_dir}.xlsx"
 if [ ! -f ${prog_output2} ]; then
     matlab -r "run addme;stackedMain($1, '${sample_dir}', '${testdir}/$2')"
     echo "INFO:done stackedMain($1, '${sample_dir}', '${testdir}/$2')"
-else:
+else
     echo "INFO:skip stackedMain($1, '${sample_dir}', '${testdir}/$2')"
 fi
 
