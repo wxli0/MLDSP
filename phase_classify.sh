@@ -9,8 +9,8 @@ outdir=""
 testdir=""
 base_dir=""
 split_base="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
-split_pruned_dir_full="${split_base}$2_split_pruned"
 split_pruned_dir="${base_dir}$2_split_pruned"
+
 if [ $1 == 'HGR' ]; then
     outdir="outputs-HGR-${ver}"
     sample_dir=${split_pruned_dir}
@@ -40,7 +40,7 @@ dir="/home/w328li/BlindKameris-new/"
 cd ${dir}
 echo "INFO: done cd ${dir}"
 
-src2="/home/w328li/MLDSP/${outdir}/test-${split_pruned_dir}.xlsx"
+src2="/home/w328li/MLDSP/${outdir}/test-${sample_dir}.xlsx"
 dest2="/home/w328li/BlindKameris-new/${outdir}/$1.xlsx"
 cp ${src2} ${dest2}
 echo "INFO: done cp ${src2} ${dest2}"
@@ -49,5 +49,5 @@ output3="${outdir}/$1.xlsx"
 python3 postprocess_test_single_child.py ${output3}
 echo "INFO: done python3 postprocess_test_single_child.py ${output3}"
 
-python3 add_HGR_pred_single_child.py ${output3}
-echo "INFO: done python3 add_HGR_pred_single_child.py ${output3}"
+python3 add_pred_single_child.py $1 ${output3}
+echo "INFO: done python3 add_pred_single_child.py $1 ${output3}"
