@@ -13,8 +13,8 @@ split_pruned_dir_full="${split_base}$2_split_pruned"
 split_pruned_dir="${base_dir}$2_split_pruned"
 if [ $1 == 'HGR' ]; then
     outdir="outputs-HGR-${ver}"
-    sample_dir=split_pruned_dir
-    test_dir="hgr_mags"
+    sample_dir=${split_pruned_dir}
+    testdir="hgr_mags"
 elif [ $1 == 'GTDB' ]; then
      outdir="outputs-${ver}"
      sample_dir=$1
