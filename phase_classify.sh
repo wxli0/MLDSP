@@ -26,15 +26,15 @@ cd ~/MLDSP
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${sample_dir}.xlsx"
 if [ ! -f ${prog_output2} ]; then
-    matlab -r "run addme;stackedMain('$1', '${sample_dir}', '${testdir}/$2')"
-    echo "INFO:done stackedMain('$1', '${sample_dir}', '${testdir}/$2')"
+    matlab -r "run addme;stackedMain('$1', '${sample_dir}', '${testdir}/$2');exit"
+    echo "INFO:done stackedMain('$1', '${sample_dir}', '${testdir}/$2');exit"
 else
-    echo "INFO:skip stackedMain('$1', '${sample_dir}', '${testdir}/$2')"
+    echo "INFO:skip stackedMain('$1', '${sample_dir}', '${testdir}/$2');exit"
 fi
 
-# end_time2="$(date -u +%s)"
-# elapsed2="$(($end_time2-$start_time2))"
-# # echo "$1 ${elapsed2}" >> "${outdir}/test_time.txt"
+end_time2="$(date -u +%s)"
+elapsed2="$(($end_time2-$start_time2))"
+echo "$1 ${elapsed2}" >> "${outdir}/test_time.txt"
 
 # dir="/home/w328li/BlindKameris-new/"
 # cd ${dir}
