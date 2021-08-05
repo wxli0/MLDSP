@@ -17,7 +17,7 @@ if [ $1 == 'HGR' ]; then
     testdir="hgr_mags"
 elif [ $1 == 'GTDB' ]; then
      outdir="outputs-${ver}"
-     sample_dir=$1
+     sample_dir=$2
      testdir="rumen_mags"
 fi
 
