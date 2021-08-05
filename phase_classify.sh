@@ -49,5 +49,5 @@ output3="${outdir}/$2.xlsx"
 python3 postprocess_test_single_child.py ${output3}
 echo "INFO: done python3 postprocess_test_single_child.py ${output3}"
 
-python3 add_pred_single_child.py $1 ${output3}
-echo "INFO: done python3 add_pred_single_child.py $1 ${output3}"
+# python3 add_pred_single_child.py $1 ${output3}
+# echo "INFO: done python3 add_pred_single_child.py $1 ${output3}"
