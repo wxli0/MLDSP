@@ -30,10 +30,10 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
     eId = length(disMatWithTest);
     disMatTrainTest = disMatWithTest(sId:eId,1:totalSeq);
     
-    cn = unique(alabels);
+    cn = unique(alabels)
   
     cModel3 = "";
-    cn_size = size(cn);
+    cn_size = size(cn)
     if cn_size(2) > 1
         %Quadratic svm  
         template = templateSVM(...
