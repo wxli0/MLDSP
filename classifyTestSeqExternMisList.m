@@ -34,7 +34,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
   
     cModel3 = "";
     cn_size = size(cn)
-    if cn_size(2) > 1
+    if cn_size(1) > 1
         %Quadratic svm  
         template = templateSVM(...
                     'KernelFunction', 'polynomial', ...
