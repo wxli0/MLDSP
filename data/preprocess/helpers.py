@@ -1,30 +1,43 @@
-import os
-import csv
-import pandas as pd
-import os
-import random
-import shutil
-import sys
-import gzip
 from Bio import SeqIO
-import math
-import requests
 from bs4 import BeautifulSoup
-import urllib.request
+import gzip
 import json
 import numpy as np
+import os
+import random
+import requests
+import urllib.request
 
 base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
 
 
 def list_fd(url, ext=''):
+    """
+    Lists all files and directorys in url (url) ending with an extension (ext)
+
+    :param url: requested url
+    :type url: str
+    :param ext: required extension, default ''
+    :type ext: str
+    """
+
     page = requests.get(url).text
     print(page)
     soup = BeautifulSoup(page, 'html.parser')
     return [url  + node.get('href') for node in soup.find_all('a') if node.get('href').endswith(ext)]
 
 
-def first_start_point(entire_seq, seq_len):
+def find_start_point(entire_seq, seq_len):
+    """
+    Finds the position range for the start point on a sequence (entire_seq) to \
+        get a fragment of length seq_len
+    
+    :param entire_seq: entire sequence
+    :type entire_seq: str
+    :param seq_len: length the requested fragments
+    :type seq_len: int
+    """
+
     entire_seq_len = len(entire_seq)
     count = 0
     for i in reversed(range(entire_seq_len)):
@@ -36,6 +49,18 @@ def first_start_point(entire_seq, seq_len):
 
 
 def prune_seq(entire_seq, seq_len, start_point):
+    """
+    Prunes sequence entire_seq from start point (start_point) to a fragment of \
+        length seq_len
+    
+    :param entire_seq: sequence to prune
+    :type entire_seq: str
+    :param seq_len: length of the requested fragment
+    :type seq_len: int
+    :param start_point: start point on entire_seq
+    :type start_point: int
+    """
+
     entire_seq_len = len(entire_seq)
     count = 0
     i = 0
@@ -49,6 +74,34 @@ def prune_seq(entire_seq, seq_len, start_point):
 
 def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
     use_const_len, const_len, frags_num, alter, rep_time, full=False):
+    """
+    Downloads genomes in selected_genome_ids into a directory (cluster_dir_full). \
+        The downloaded files are suffixed with alter. 
+        The genomes downloaded conforms to properties: lower length (lower); \
+            upper length (upper); use constant length or not (use_const_len); \
+                if true, constant length (const_len); number of fragments (frags_\
+                    num), number of repetive times (rep_time); full genomes or not \
+                        (full)
+    :param selected_genome_ids: list of genomes to download
+    :type selected_genome_ids: List[str]
+    :param cluster_dir_full: directory to download
+    :type cluster_dir_full: str
+    :param lower: lower bound on the downloaded sequence length
+    :type lower: int
+    :param upper: upper bound on the donwloaded sequence length
+    :type upper: int
+    :param use_const_len: the downloaded fragments are of the same length or not
+    :type use_const_len: Bool
+    :param frags_num: number of fragments per genome
+    :type frags_num: int
+    :param alter: if provided, the downloaded genome files are suffixed with alter
+    :type alter: str
+    :param rep_time: number of repetive times to sample per genome
+    :type rep_time: int
+    :param full: download full genomes or fragments of genomes, default False
+    :type full: Bool
+    """
+
     for id in selected_genome_ids:
             block1 = id[3:6]
             block2= id[7:10]
@@ -126,10 +179,24 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
 
 
 def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num, cluster_dir_full, fna_path):
+    """
+    Downloads genomes of variable length. Helper function for download_genomes. \
+        Uses a subset of parameters from download_genomes
+    
+    :param max_len: length of the valid ('ATCG') sequences 
+    :type max_len: int
+    :param max_seq: sequences in the original genomes file concatenated by 'O'
+    :type max_seq: str
+    :param max_name: genome id
+    :type max_name: str
+    :param fna_path: path for the downloaded full genome file
+    :type fna_path: str
+    """
+
     base = 0
     for i in range(frags_num):
         seq_len = random.randint(lower, min(upper, max_len))
-        tmp = first_start_point(max_seq, seq_len)
+        tmp = find_start_point(max_seq, seq_len)
         random_start = random.randint(0, tmp)
         cur_max_seq = prune_seq(max_seq, seq_len, random_start)                    
         cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
@@ -146,6 +213,20 @@ def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num
 
 
 def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, cluster_dir_full, fna_path, alter, rep_time):
+    """
+    Downloads genomes of constant length. Helper function for download_genomes. \
+        Uses a subset of parameters from download_genomes
+    
+    :param max_len: length of the valid ('ATCG') sequences 
+    :type max_len: int
+    :param max_seq: sequences in the original genomes file concatenated by 'O'
+    :type max_seq: str
+    :param max_name: genome id
+    :type max_name: str
+    :param fna_path: path for the downloaded full genome file
+    :type fna_path: str
+    """
+
     gap_num = frags_num-1
     gap_remaining_len = max_len - frags_num*const_len
     gap_lens = []
@@ -180,6 +261,17 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
 
 # parse json input
 def parse_json_input(input_file_name):
+    """
+    Parses the fields in input file (input_file_name). Potential fields are: \
+        tax_name, use_factor, cluster_names, use_const_len, use_factor, \
+            sample_factor, sample_size, upper, lower, frags_num, const_len, \
+                sample_factor, id, alter, outdir, rep_time. This is used for \
+                    downloading GTDB genomes
+    
+    :param input_file_name: file path of the input json 
+    :type input_file_name: str
+    """
+
     json_input = json.load(open(input_file_name))
     sample_factor = 0
     sample_size = 0
@@ -219,8 +311,22 @@ def parse_json_input(input_file_name):
         outdir = json_input['outdir']
     if 'rep_time' in json_input:
         rep_time = json_input['rep_time']
-    return sample_factor, sample_size, tax_name, use_factor, cluster_num, cluster_names, int(lower), int(upper), use_const_len, const_len, frags_num, alter, id, outdir, rep_time
+    return sample_factor, sample_size, tax_name, use_factor, cluster_num, \
+        cluster_names, int(lower), int(upper), use_const_len, const_len, \
+            frags_num, alter, id, outdir, rep_time
 
 def parse_json_test_input(input_file_name):
+    """
+        Parses the fields in input file (input_file_name). Potential fields are: \
+        tax_name, use_factor, cluster_names, use_const_len, use_factor, \
+            sample_factor, sample_size, upper, lower, frags_num, const_len, \
+                sample_factor, id, alter, outdir, rep_time. This is used for \
+                    downloading selecting and pruning rumen mag genomes)
+    
+    :param input_file_name: file path of the input json 
+    :type input_file_name: str
+    """
+
     json_input = json.load(open(input_file_name))
-    return json_input['taxon_place'], json_input['taxon'], json_input['frag_num'], json_input['const_len'], json_input['outdir']
+    return json_input['taxon_place'], json_input['taxon'], json_input['frag_num'], \
+        json_input['const_len'], json_input['outdir']

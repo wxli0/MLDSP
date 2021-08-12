@@ -1,17 +1,30 @@
-import csv
+"""
+Downloads GTDB genomes belonging to a taxon to a direcotory.\
+    The directory format is 
+    taxon
+        - child taxon 1
+        - child taxon 2
+        - ...
+    This is used for downloading taxons belong to genus level, as we want not \
+        only the representative genomes, but all genomes for child level genomes \
+            (species).
+
+:param sys.argv[1]: path to a json file containing the properties of \
+    the downloaded genomes
+:type sys.argv[1]: str
+:param sys.argv[2]: version, e.g r202, r95
+:type sys.arg[2]: str
+"""
+
+from Bio import SeqIO
+from helpers import download_genomes, parse_json_input
 import pandas as pd
 import os
-import random
-import shutil
-import sys
-import os
-import gzip
-from Bio import SeqIO
-import math
-from helpers import download_genomes, parse_json_input
-import ssl
 import platform
-import json
+import random
+import ssl
+import sys
+
 
 sample_factor, sample_size, tax_name, use_factor, cluster_num, \
     cluster_names, lower, upper, use_const_len, const_len, frags_num, \
