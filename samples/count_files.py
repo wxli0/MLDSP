@@ -1,8 +1,16 @@
-import os
-import sys
-import platform
-from Bio import SeqIO
+"""
+Counts the total number of files and total sequence length in all subdirectories \
+    in a folder
 
+:param sys.argv[1]: folder. The folder to count subdirectory total files and \
+    sequences lengths
+:type sys.argv[1]: str
+"""
+
+from Bio import SeqIO
+import os
+import platform
+import sys
 
 folder = sys.argv[1]
 total = 0
