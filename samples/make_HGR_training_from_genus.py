@@ -1,9 +1,16 @@
+"""
+Makes Task 1 (HGR) training dataset from Genus in \
+    https://github.com/MicrobeLab/DeepMicrobes-data/tree/master/training_genomes
+
+Example: python3 make_HGR_training_set Phylum
+"""
+
 import os 
-import sys 
 import pandas as pd 
 import shutil
+import sys 
 
-# e.g. python3 make_HGR_training_set Phylum
+
 true_path = "Table_S1.csv"
 S1 = pd.read_csv(true_path, skiprows=0, header=1)
 print(S1)

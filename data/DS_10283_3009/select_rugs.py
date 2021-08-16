@@ -1,15 +1,20 @@
-import sys
+"""
+Selects testing dataset for Task 2 (real/dense). 
+Not in use.
+"""
+
+from Bio import SeqIO
+import numpy as np
 import pandas as pd 
 import platform
-from Bio import SeqIO
 import os
+import random
+import sys
 
 # e.g. python3 select_rugs.py mags_g__CAG-791.json
 sys.path.insert(0, '/Users/wanxinli/Desktop/project/MLDSP-desktop/data/preprocess/')
 sys.path.insert(0, '/home/w328li/MLDSP/data/preprocess/')
 from helpers import parse_json_test_input, prune_seq
-import random
-import numpy as np
 
 taxon_place, taxon_name, frags_num, const_len, outdir = parse_json_test_input(sys.argv[1])
     

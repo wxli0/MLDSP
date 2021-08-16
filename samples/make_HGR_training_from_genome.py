@@ -1,9 +1,15 @@
+"""
+Makes Task 1 (HGR) training dataset from Species in \
+    https://github.com/MicrobeLab/DeepMicrobes-data/tree/master/training_genomes
+
+Example: python3 make_HGR_training_set Phylum
+"""
 import os 
-import sys 
 import pandas as pd 
 import shutil
+import sys 
 
-# e.g. python3 make_HGR_training_set Phylum
+
 true_path = "Table_S1_new.csv"
 S1 = pd.read_csv(true_path, skiprows=0, header=0)
 print(S1)
@@ -12,8 +18,6 @@ rank=sys.argv[1]
 pos = list(S1[rank])
 cleaned_pos = list(set([x for x in pos if str(x) != 'nan']))
 cleaned_pos.sort()
-# print(cleaned_pos)
-# print(list(set(cleaned_pos)).sort())
 
 next_rank_dict = {
     'Domain': 'Phylum',

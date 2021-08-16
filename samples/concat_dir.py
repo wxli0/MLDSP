@@ -1,5 +1,11 @@
+"""
+Prepares training dataset for DeepMicrobes by combining files with the same labels \
+    into one file
+
+No command line argments are required.
+"""
+
 import os
-import sys
 
 dir = '/mnt/sda/MLDSP-samples-r202/dm_species/'
 for sub_dir in os.listdir(dir):

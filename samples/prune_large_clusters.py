@@ -39,9 +39,7 @@ elif data_type == 'HGR':
     #                     or dir.startswith('f__Bacteroidaceae') or dir.startswith('f__Lachnospiraceae') \
     #                         or dir.startswith('o__Actinomycetales'):  
     arc_dirs = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir)
-    print("arc_dirs is:", arc_dirs)
     for d in arc_dirs:
-        print("d is:", d)
         all_files = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir+'/'+d)
         if len(all_files) < 100:
             continue
