@@ -37,12 +37,12 @@ elif data_type == 'HGR':
     #             or dir.startswith('c__Synergistia') or dir.startswith('c__Coriobacteriia') \
     #                 or dir.startswith('o__Oscillospirales') or dir.startswith('o__Coriobacteriales') \
     #                     or dir.startswith('f__Bacteroidaceae') or dir.startswith('f__Lachnospiraceae') \
-    #                         or dir.startswith('o__Actinomycetales'):
-        arc_dirs = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir)
-        for d in arc_dirs:
-            all_files = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir+'/'+d)
-            if len(all_files) < 100:
-                continue
-            delete_files = np.random.choice(all_files, int(len(all_files)*0.9), replace=False)
-            for f in delete_files:
-                os.remove('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir+'/'+d+'/'+f)
+    #                         or dir.startswith('o__Actinomycetales'):  
+    arc_dirs = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir)
+    for d in arc_dirs:
+        all_files = os.listdir('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir+'/'+d)
+        if len(all_files) < 100:
+            continue
+        delete_files = np.random.choice(all_files, int(len(all_files)*0.9), replace=False)
+        for f in delete_files:
+            os.remove('/mnt/sda/DeepMicrobes-data/labeled_genome-'+ver+'/'+dir+'/'+d+'/'+f)
