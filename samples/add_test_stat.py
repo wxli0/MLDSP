@@ -12,22 +12,28 @@ from Bio.SeqIO.PdbIO import CifAtomIterator
 import pandas as pd
 import os
 
-test_dir = "/Users/wanxinli/Desktop/project.nosync/MLDSP-desktop/data/DS_10283_3009/genomes/"
-output_file = "rumen_mag_metadata.csv"
+test_dir = "/mnt/sda/DeepMicrobes-data/mag_reads_250bp_1w_200000/"
+output_file = "samples/ERP108418_metadata.csv"
 df = pd.DataFrame(columns=['accession', 'contig_count', 'gc_percentage', 'genome_size'])
+# df = pd.DataFrame()
 for file in os.listdir(test_dir):
-    sequences = SeqIO.parse(open(test_dir+file+".fa"),'fasta') 
-    contig_count = 0
-    genome_size = 0
-    gc_count = 0
-    for fasta in sequences:
-        _, sequence = fasta.id, str(fasta.seq)
-        contig_count += 1
-        genome_size += len(sequence)
-        gc_count += sequence.count('C')+sequence.count('G')
-    df = df.append({'accession': file, 'contig_count': contig_count, 'gc_percentage': \
-        gc_count/genome_size, 'genome_size': genome_size})
+    if file.endswith('.fa') and not file.endswith('_1.fa') \
+        and not file.endswith('_2.fa'):
+        sequences = SeqIO.parse(open(test_dir+file),'fasta') 
+        contig_count = 0
+        genome_size = 0
+        gc_count = 0
+        for fasta in sequences:
+            _, sequence = fasta.id, str(fasta.seq)
+            contig_count += 1
+            genome_size += len(sequence)
+            gc_count += sequence.count('C')+sequence.count('G')
+        # df.loc[-1] = [file, contig_count, gc_count/genome_size, genome_size] 
+        df = df.append({'accession': file, 'contig_count': contig_count, 'gc_percentage': \
+            gc_count/genome_size*100, 'genome_size': genome_size}, ignore_index=True)
 print(df)
+
+df.to_csv(output_file, index=False, header=True)
 
 
 
