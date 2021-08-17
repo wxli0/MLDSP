@@ -1,12 +1,21 @@
-# argv[1]: directory to keep 
-# argv[2]: number of files to keep per dir
+"""
+Deletes subcluster in a directory (sys.argv[1]) with files less than a number \
+    (sys.argv[2])
 
-import numpy as np
-import sys
+Command line arguments:
+:param sys.argv[1]: dir. The directory to check subdirectories.
+:type sys.argv[1]: str
+:param sys.argv[2]: final_num. Fewest number of files in subdirectories. Delete \
+    the subdirectory if it does not have
+
+:Example python3 delete_small_cluster.py samples/g__Prevotella
+"""
+
 import os
 import shutil
+import sys
 
-# e.g.  python3 count_files.py o__Christensenellales 10
+
 dir = sys.argv[1]
 final_num = int(sys.argv[2])
 

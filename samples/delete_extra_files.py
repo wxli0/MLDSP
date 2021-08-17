@@ -1,10 +1,19 @@
-# argv[1]: directory to keep 
-# argv[2]: number of files to keep per dir
+"""
+Deletes extra files in a target directory (sys.argv[1]) with files that \
+    are above a target number (sys.argv[2])
+
+:param sys.argv[1]: dir. Target directory of files.
+:type sys.argv[1]: str
+:param sys.argv[2]:  final_num. Target number to determine extra files.
+:type sys.argv[2]: str
+
+:Example: python3 delete_extra_files.py samples/g__Prevotella
+"""
 
 import numpy as np
-import sys
 import os
-import shutil
+import sys
+
 
 dir = sys.argv[1]
 final_num = int(sys.argv[2])
