@@ -61,10 +61,10 @@ start_time1="$(date -u +%s)"
 prog_output1="${outdir}train-${sample_file}.xlsx"
 if [ ! -f ${prog_output1} ]; then
     output1="${outdir}${sample_file}.txt"
-    matlab -r "run addme;stackedMain(${data_type}, '$1');exit"|tee ${output1}
-    echo "INFO:done stackedMain(${data_type}, '$1')"
+    matlab -r "run addme;stackedMain('${data_type}', '$1');exit"|tee ${output1}
+    echo "INFO:done stackedMain('${data_type}', '$1')"
 else
-    echo "INFO:skip stackedMain(${data_type}, '$1')"
+    echo "INFO:skip stackedMain('${data_type}', '$1')"
 fi
 end_time1="$(date -u +%s)"
 elapsed1="$(($end_time1-$start_time1))"
@@ -75,10 +75,10 @@ start_time2="$(date -u +%s)"
 prog_output2="${outdir}test-${sample_file}.xlsx"
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}${sample_file}_classify.txt"
-    matlab -r "run addme;stackedMain('${datatype}, '${sample_file}', '${test_dir"');exit"|tee ${output2}
-    echo "INFO:done stackedMain('${datatype}, '${sample_file}', '${test_dir"')"
+    matlab -r "run addme;stackedMain('${datatype}', '${sample_file}', '${test_dir}');exit"|tee ${output2}
+    echo "INFO:done stackedMain('${datatype}', '${sample_file}', '${test_dir}')"
 else
-    echo "INFO:skip stackedMain('${datatype}, '${sample_file}', '${test_dir"')"
+    echo "INFO:skip stackedMain('${datatype}', '${sample_file}', '${test_dir}')"
 fi
 end_time2="$(date -u +%s)"
 elapsed2="$(($end_time2-$start_time2))"
