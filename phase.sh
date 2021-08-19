@@ -12,14 +12,14 @@ trunc_sample_file=$1
 test_dir=""
 rej_dir="rejection-threshold-${data_type}-${ver}/"
 
-if [ data_type == 'GTDB' ]; then
+if [ ${data_type} == 'GTDB' ]; then
     base_path="/mnt/sda/MLDSP-samples-${ver}/"
     sample_file="$1"
     json_dir="data/preprocess/"
     json_path="non-clade-exclusion-${ver}/$1.json"
     outdir="outputs-${ver}/"
     test_dir="rumen_mags/${trunc_sample_file}"
-elif [ data_type == 'HGR' ]; then
+elif [ ${data_type} == 'HGR' ]; then
     base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
     sample_file="$1_split_pruned"
     outdir="outputs-HGR-${ver}"
