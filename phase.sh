@@ -1,5 +1,13 @@
 #!/bin/bash
 
+: '
+Script for the entire process of classifying non single-child taxas
+
+parameters:
+$1: data_type. Data type of either HGR or GTDB
+$2: sample_file. Taxon to classify
+'
+
 ver="r202"
 data_type=$2
 base_dir=""

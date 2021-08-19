@@ -1,6 +1,14 @@
+"""
+Downloads original test genome file for Task 1 (simulated/sparse). The downloaded \
+    files are not currently used. However, it might be useful for future tunning \
+        the hyperparameters.
+
+No command line arguments are required.
+"""
+
 import os 
-import sys 
 import pandas as pd 
+
 
 df = pd.read_csv("ERP108418_meta.csv", delimiter='\t')
 print(df)
@@ -9,7 +17,7 @@ true_path = "Table_S2.csv"
 S2 = pd.read_csv(true_path, skiprows=0, header=1)
 print(S2["MAG_ID_ENA"])
 
-# constuct dictionaty
+# constuct dictionary
 dict = {}
 for ftp in df['submitted_ftp']:
     dict[ftp.split('/')[-1][:-6]] = ftp
