@@ -22,7 +22,7 @@ if [ ${data_type} == 'GTDB' ]; then
 elif [ ${data_type} == 'HGR' ]; then
     base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
     sample_file="$1_split_pruned"
-    outdir="outputs-HGR-${ver}"
+    outdir="outputs-HGR-${ver}/"
     test_dir="hgr_mags/${trunc_sample_file}"
 fi
 
@@ -173,7 +173,6 @@ output3="${outdir}${trunc_sample_file}.xlsx"
 rej="${rej_dir}${trunc_sample_file}.json"
 python3 preprocess_test.py ${output3} ${rej}
 echo "INFO:done preprocess_test.py ${output3} ${rej}"
-
 
 
 python3 add_pred.py ${output3} ${data_type}
