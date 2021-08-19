@@ -45,9 +45,9 @@ fi
 # else
 #     echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
 # fi
-# end_time0="$(date -u +%s)"
-# elapsed0="$(($end_time0-$start_time0))"
-# echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
+end_time0="$(date -u +%s)"
+elapsed0="$(($end_time0-$start_time0))"
+echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 start_time1="$(date -u +%s)"
 prog_output1="${outdir}/train-${split_pruned_dir}.xlsx"
