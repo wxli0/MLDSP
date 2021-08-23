@@ -19,12 +19,11 @@ sample_file=$1
 split_base="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
 split_pruned_dir="${base_dir}${sample_file}_split_pruned"
 
+outdir="outputs-"+data_type+"-${ver}"
 if [ ${data_type} == 'HGR' ]; then
-    outdir="outputs-HGR-${ver}"
     sample_dir=${split_pruned_dir}
     testdir="hgr_mags"
 elif [ ${data_type} == 'GTDB' ]; then
-     outdir="outputs-${ver}"
      sample_dir=${sample_file}
      testdir="rumen_mags"
 fi
@@ -44,12 +43,12 @@ end_time2="$(date -u +%s)"
 elapsed2="$(($end_time2-$start_time2))"
 echo "${data_type} ${elapsed2}" >> "${outdir}/test_time.txt"
 
-dir="/home/w328li/BlindKameris-new/"
+dir="/home/w328li/MT-MAG/"
 cd ${dir}
 echo "INFO: done cd ${dir}"
 
 src2="/home/w328li/MLDSP/${outdir}/test-${sample_dir}.xlsx"
-dest2="/home/w328li/BlindKameris-new/${outdir}/${sample_file}.xlsx"
+dest2="/home/w328li/MT-MAG/${outdir}/${sample_file}.xlsx"
 cp ${src2} ${dest2}
 echo "INFO: done cp ${src2} ${dest2}"
 output3="${outdir}/${sample_file}.xlsx"

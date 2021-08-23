@@ -20,17 +20,16 @@ trunc_sample_file=$1
 test_dir=""
 rej_dir="rejection-threshold-${data_type}-${ver}/"
 
+outdir="outputs-"+data_type+"-${ver}"
 if [ ${data_type} == 'GTDB' ]; then
     base_path="/mnt/sda/MLDSP-samples-${ver}/"
     sample_file="$1"
     json_dir="data/preprocess/"
     json_path="non-clade-exclusion-${ver}/$1.json"
-    outdir="outputs-${ver}/"
     test_dir="rumen_mags/${trunc_sample_file}"
 elif [ ${data_type} == 'HGR' ]; then
     base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
     sample_file="$1_split_pruned"
-    outdir="outputs-HGR-${ver}/"
     test_dir="hgr_mags/${trunc_sample_file}"
 fi
 
@@ -150,7 +149,7 @@ elapsed2="$(($end_time2-$start_time2))"
 echo "$1 ${elapsed2}" >> "${outdir}/test_time.txt"
 
 
-BK_dir="/home/w328li/BlindKameris-new/"
+BK_dir="/home/w328li/MT-MAG/"
 cd ${BK_dir}
 echo "INFO: done cd ${BK_dir}"
 
@@ -165,7 +164,7 @@ echo "INFO:done preprocess_train_to_pr.py ${dest1}"
 
 
 src2="/home/w328li/MLDSP/${outdir}test-${sample_file}.xlsx"
-dest2="/home/w328li/BlindKameris-new/${outdir}${trunc_sample_file}.xlsx"
+dest2="/home/w328li/MT-MAG/${outdir}${trunc_sample_file}.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 

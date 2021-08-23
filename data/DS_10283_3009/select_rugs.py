@@ -4,6 +4,7 @@ Not in use.
 """
 
 from Bio import SeqIO
+import config
 import numpy as np
 import pandas as pd 
 import platform
@@ -12,21 +13,18 @@ import random
 import sys
 
 # e.g. python3 select_rugs.py mags_g__CAG-791.json
-sys.path.insert(0, '/Users/wanxinli/Desktop/project/MLDSP-desktop/data/preprocess/')
-sys.path.insert(0, '/home/w328li/MLDSP/data/preprocess/')
+sys.path.insert(0, './data/preprocess/')
 from helpers import parse_json_test_input, prune_seq
 
 taxon_place, taxon_name, frags_num, const_len, outdir = parse_json_test_input(sys.argv[1])
     
-base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
-if platform.platform()[:5] == 'Linux':
-    base_path = "/home/w328li/MLDSP/"
-outdir_full = base_path+"samples/"+outdir
-input_base_path = base_path+"data/DS_10283_3009/genomes/"
+
+outdir_full = os.path.join("./samples/"+outdir)
+input_base_path = "./data/DS_10283_3009/genomes/"
 
 dirs = outdir.split("/")
 for i in range(len(dirs)):
-    cur_folder_path = base_path+"samples/"+'/'.join(dirs[:(i+1)])
+    cur_folder_path = os.path.join("./samples/", '/'.join(dirs[:(i+1)]))
     print(cur_folder_path)
     if not os.path.exists(cur_folder_path):
         os.makedirs(cur_folder_path)

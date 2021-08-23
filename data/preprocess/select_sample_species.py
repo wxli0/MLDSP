@@ -16,7 +16,6 @@ Downloads GTDB genomes belonging to a taxon to a direcotory.\
 :type sys.arg[2]: str
 """
 
-from Bio import SeqIO
 from helpers import download_genomes, parse_json_input
 import pandas as pd
 import os
@@ -47,16 +46,14 @@ if not outdir:
     if id is not None:
         outdir +="_"+id
 
-base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
-if platform.platform()[:5] == 'Linux':
-    base_path = "/home/w328li/MLDSP/"
+
 ver=sys.argv[2]
 download_path = '/mnt/sda/MLDSP-samples-'+ver+'/'
 outdir_full = download_path+outdir
 print("outdir_full is:", outdir_full)
 ssl._create_default_https_context = ssl._create_unverified_context
 
-cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
+cluster_tsv = pd.read_csv("./data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
 cluster_tsv = cluster_tsv[['GTDB_species','Clustered_genomes']].set_index('GTDB_species')
 
 for cluster_name in cluster_names:

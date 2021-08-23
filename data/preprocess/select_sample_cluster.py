@@ -18,7 +18,6 @@ from helpers import download_genomes, parse_json_input
 import math
 import os
 import pandas as pd
-import platform
 import random
 import ssl
 import sys
@@ -45,10 +44,7 @@ if not outdir:
     if id is not None:
         outdir +="_"+id
 
-base_path = "/Users/wanxinli/Desktop/project/MLDSP-desktop/" # run locally
 ver=sys.argv[2]
-if platform.platform()[:5] == 'Linux':
-    base_path = "/home/w328li/MLDSP/"
 download_path = '/mnt/sda/MLDSP-samples-'+ver+'/'
 outdir_full = download_path+outdir
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -60,7 +56,7 @@ index_names = {"domain": 'd__', 'phylum':'p__','class':'c__','order':'o__',"fami
 index = indices[tax_name]
 next_tax_name = next_taxs[tax_name]
 
-cluster_tsv = pd.read_csv(base_path+"data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
+cluster_tsv = pd.read_csv("./data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
 cluster_tsv = cluster_tsv[['Representative_genome', 'GTDB_taxonomy', 'GTDB_species']]
 
 def get_target_col(tax_text):

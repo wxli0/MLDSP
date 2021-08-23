@@ -1,6 +1,6 @@
 # R script for generating training/test dataset GC percentage, genome size, contig count
 
-tab1 = read.table(file = "/Users/wanxinli/Desktop/project.nosync/MLDSP-desktop/samples/ERP108418_metadata.csv", sep = ",", header = TRUE)
+tab1 = read.table(file = "/Users/wanxinli/Desktop/project.nosync/MLDSP/samples/ERP108418_metadata.csv", sep = ",", header = TRUE)
 # tab1 = read.table(file = "samples/rumen_mag_metadata.csv", sep = "\t", header = TRUE)
 
 
