@@ -23,7 +23,7 @@ while getopts ":d:b:s:t" o; do
             base_path=${OPTARG}
             ;;
         s)
-            sample_file=${OPTARG}
+            trunc_sample_file=${OPTARG}
             ;;
         t)
             test_dir=${OPTARG}
@@ -49,7 +49,6 @@ if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
     sample_path=""
     json_dir=""
     json_path=""
-    trunc_sample_file=""
     rej_dir="rejection-threshold-${data_type}-${ver}"
     outdir="outputs-${data_type}-${ver}"
 
@@ -58,6 +57,7 @@ if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
         json_dir="data/preprocess"
         json_path="non-clade-exclusion-${ver}/$1.json"
         test_dir="rumen_mags/${trunc_sample_file}"
+        sample_file=${trunc_sample_file}
     elif [ ${data_type} == 'HGR' ]; then
         base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
         sample_file="${sample_file}_split_pruned"
@@ -169,7 +169,7 @@ fi
 
 
 echo "===== Training models ====="
-if [ single_child == 0 ]; then
+if [ ${single_child} != 1 ]; then
     start_time1="$(date -u +%s)"
     prog_output1="${outdir}/train-${sample_file}.xlsx"
     if [ ! -f ${prog_output1} ]; then
