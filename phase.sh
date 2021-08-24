@@ -126,13 +126,13 @@ echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 # check for single-child taxon
 single_child=0
 child_num=`ls -l ${sample_path}|wc -l`
-if [ child_num == 1]; then
+if [ child_num == 1 ]; then
     single_child=1
 fi
 
 
 # training phase
-if [ single_child == 0]; then
+if [ single_child == 0 ]; then
     start_time1="$(date -u +%s)"
     prog_output1="${outdir}/train-${sample_file}.xlsx"
     if [ ! -f ${prog_output1} ]; then
