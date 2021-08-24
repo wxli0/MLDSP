@@ -8,29 +8,28 @@ $1: data_type. Data type of either HGR or GTDB
 $2: sample_file. Taxon to classify
 '
 
-usage() { echo "Usage: $0 [-data_type <Mandatory. Name of data type>] 
-[-sample_file <Mandatory. File name of the training and testing datasets>]
-[-base_path <Optional for data_type GTDB or HGR. Path to the directory that training datasets are in>]
-[-test_dir <Optional for data_type GTDB or HGR. Directory name of testing datasets>]" 1>&2; exit 1; }
+usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>] 
+[-s <Mandatory. File name of the training and testing datasets>]
+[-b <Optional for data_type GTDB or HGR. Path to the directory that training datasets are in>]
+[-t <Optional for data_type GTDB or HGR. Directory name of testing datasets>]" 1>&2; exit 1; }
 
 
-while getopts ":data_type:base_path:sample_file:test_dir" o; do
+while getopts ":d:b:s:t" o; do
     case "${o}" in
-        data_type)
+        d)
             data_type=${OPTARG}
             ;;
-        base_path)
+        b)
             base_path=${OPTARG}
             ;;
-        sample_file)
+        s)
             sample_file=${OPTARG}
             ;;
-        test_dir)
+        t)
             test_dir=${OPTARG}
             ;;
         *)
             echo "Invalid arguments"
-            echo ${o}
             usage
             ;;
     esac
