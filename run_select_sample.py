@@ -1,12 +1,13 @@
+import sys
+import os
 import pandas as pd 
 import sys
-import platform
 import json 
 
 taxon = sys.argv[1]
 ver = sys.argv[2]
 
-taxon_path = "./data/preprocess/taxon-"+ver+".csv"
+taxon_path = ("./data/preprocess/taxon-"+ver+".csv")
 
 rank_names = ['domain', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 rank = ''
@@ -48,6 +49,6 @@ sample_dict = {
 
 
 
-sample_dict_path = './data/preprocess/non-clade-exclusion-'+ver+'/'+taxon+".json"
+sample_dict_path = os.path.join('./data/preprocess/non-clade-exclusion-'+ver+'/'+taxon+".json")
 with open(sample_dict_path, 'w') as json_file:
     json.dump(sample_dict, json_file)
