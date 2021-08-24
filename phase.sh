@@ -20,7 +20,7 @@ trunc_sample_file=$1
 test_dir=""
 rej_dir="rejection-threshold-${data_type}-${ver}/"
 
-outdir="outputs-"+data_type+"-${ver}"
+outdir="outputs-${data_type}-${ver}"
 if [ ${data_type} == 'GTDB' ]; then
     base_path="/mnt/sda/MLDSP-samples-${ver}/"
     sample_file="$1"
