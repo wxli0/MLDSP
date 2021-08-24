@@ -29,6 +29,7 @@ while getopts ":data_type:base_path:sample_file:test_dir" o; do
             test_dir=${OPTARG}
             ;;
         *)
+            echo "Invalid arguments"
             usage
             ;;
     esac
@@ -36,6 +37,7 @@ done
 shift $((OPTIND-1))
 
 if [ -z "${data_type}" ] || [ -z "${sample_file}"]; then
+    echo "Invalid -data_type or -sample_file"
     usage
 fi
 
