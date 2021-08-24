@@ -66,18 +66,18 @@ if [ ${data_type} == 'GTDB' ]; then
         echo "samples/delete_extra_files.py ${sample_path} $final_num"
     fi
 
-    # if [ $1 == 'root' ] || [[ $1 == d__* ]] || \
-    # [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'p__Bacteroidota' ]] ||\
-    # [[ $1 == 'p__Firmicutes_A' ]] || [ $1 == 'p__Cyanobacteria' ] || 
-    # [[ $1 == 'p__Firmicutes' ]] || \
-    # [[ $1 == 'c__Actinomycetia' ]] || [[ $1 == 'c__Bacteroidia' ]] || \
-    # [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Actinomycetales' ]] || \
-    # [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'o__Lachnospirales' ]] || \
-    # [[ $1 == 'c__Bacilli' ]] || [[ $1 == 'p__Proteobacteria' ]] || \
-    # [[ $1 == 'c__Alphaproteobacteria' ]]; then
-    #     python3 samples/prune_large_clusters.py $1 $ver "GTDB"
-    #     echo "python3 samples/prune_large_clusters.py $1 $ver GTDB"
-    # fi
+    if [ $1 == 'root' ] || [[ $1 == d__* ]] || \
+    [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'p__Bacteroidota' ]] ||\
+    [[ $1 == 'p__Firmicutes_A' ]] || [ $1 == 'p__Cyanobacteria' ] || 
+    [[ $1 == 'p__Firmicutes' ]] || \
+    [[ $1 == 'c__Actinomycetia' ]] || [[ $1 == 'c__Bacteroidia' ]] || \
+    [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Actinomycetales' ]] || \
+    [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'o__Lachnospirales' ]] || \
+    [[ $1 == 'c__Bacilli' ]] || [[ $1 == 'p__Proteobacteria' ]] || \
+    [[ $1 == 'c__Alphaproteobacteria' ]]; then
+        python3 samples/prune_large_clusters.py $1 $ver "GTDB"
+        echo "python3 samples/prune_large_clusters.py $1 $ver GTDB"
+    fi
 
 elif [ ${data_type} == 'HGR' ]; then
 
@@ -104,18 +104,18 @@ elif [ ${data_type} == 'HGR' ]; then
         echo "skip: done rm -r ${sample_path}/g__"
     fi
 
-    # if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
-    # [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
-    # || [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
-    # || [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
-    # || [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
-    # || [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
-    # || [[ $1 == 'g__Alistipes' ]]; then
-    #     python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
-    #     echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
-    # else
-    #     echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
-    # fi
+    if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
+    [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
+    || [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
+    || [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
+    || [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
+    || [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
+    || [[ $1 == 'g__Alistipes' ]]; then
+        python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
+        echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
+    else
+        echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
+    fi
 fi
 
 end_time0="$(date -u +%s)"
