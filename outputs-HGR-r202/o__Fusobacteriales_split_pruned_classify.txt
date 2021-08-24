@@ -17,18 +17,18 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/p__Actinobacteriota_split_pruned"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__Fusobacteriales_split_pruned"
 
 
 testSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/p__Actinobacteriota"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Fusobacteriales"
 
 Reading sequences .... 
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 36585
+totalSeq is: 1378
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -44,7 +44,48 @@ maxSeqLen =
 
      0
 
-dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/p__Actinobacteriota
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Fusobacteriales
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 1
+
+clusterNames =
+
+  1x2 cell array
+
+    {'1-f__Fusobacteriaceae'}    {'f__Leptotrichiaceae'}
+
+
+clusterNames =
+
+  1x2 cell array
+
+    {'1-f__Fusobacteriaceae'}    {'2-f__Leptotrichiaceae'}
+
+    '1-f__Fusobacteriaceae'    '2-f__Leptotrichiaceae'
+
+
+header =
+
+  1x3 cell array
+
+    {'1-f__Fusobacter...'}    {'2-f__Leptotrich...'}    {'prediction'}
+
+
+T3 =
+
+  1x3 table
+
+                            1-f__Fusobacteriaceae    2-f__Leptotrichiaceae    prediction
+                            _____________________    _____________________    __________
+
+    even_MAG-GUT88654.fa              1                   3.8754e-07              1     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-o__Fusobacteriales_split_pruned.xlsx"
+
+Process completed 
+[?1l>
