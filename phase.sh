@@ -170,21 +170,21 @@ if [ child_num == 1 ]; then
 fi
 
 
-echo "===== Training models ====="
-if [ ${single_child} != 1 ]; then
-    start_time1="$(date -u +%s)"
-    prog_output1="${outdir}/train-${sample_file}.xlsx"
-    if [ ! -f ${prog_output1} ]; then
-        output1="${outdir}/${sample_file}.txt"
-        matlab -r "run addme;stackedMain('${data_type}', '${sample_file}');exit"|tee ${output1}
-        echo "INFO:done stackedMain('${data_type}', '${sample_file}')"
-    else
-        echo "INFO:skip stackedMain('${data_type}', '${sample_file}')"
-    fi
-    end_time1="$(date -u +%s)"
-    elapsed1="$(($end_time1-$start_time1))"
-    echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
-fi
+# echo "===== Training models ====="
+# if [ ${single_child} != 1 ]; then
+#     start_time1="$(date -u +%s)"
+#     prog_output1="${outdir}/train-${sample_file}.xlsx"
+#     if [ ! -f ${prog_output1} ]; then
+#         output1="${outdir}/${sample_file}.txt"
+#         matlab -r "run addme;stackedMain('${data_type}', '${sample_file}');exit"|tee ${output1}
+#         echo "INFO:done stackedMain('${data_type}', '${sample_file}')"
+#     else
+#         echo "INFO:skip stackedMain('${data_type}', '${sample_file}')"
+#     fi
+#     end_time1="$(date -u +%s)"
+#     elapsed1="$(($end_time1-$start_time1))"
+#     echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
+# fi
 
 
 echo "===== Classifying test genomes ====="
@@ -207,31 +207,31 @@ cd ${BK_dir}
 echo "INFO: done cd ${BK_dir}"
 
 
-echo "===== Picking rejection thresholds ====="
-start_time3="$(date -u +%s)"
+# echo "===== Picking rejection thresholds ====="
+# start_time3="$(date -u +%s)"
 
-if [ single_child == 0 ]; then
-    src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
-    dest1="${outdir}/${trunc_sample_file}_train.xlsx"
-    cp ${src1} ${dest1}
-    echo "INFO:done cp ${src1} ${dest1}"
-    python3 preprocess_train_to_pr.py ${dest1}
-    echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-fi
+# if [ single_child == 0 ]; then
+#     src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
+#     dest1="${outdir}/${trunc_sample_file}_train.xlsx"
+#     cp ${src1} ${dest1}
+#     echo "INFO:done cp ${src1} ${dest1}"
+#     python3 preprocess_train_to_pr.py ${dest1}
+#     echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+# fi
 
-src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
-dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
-cp ${src2} ${dest2}
-echo "INFO:done cp ${src2} ${dest2}"
+# src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
+# dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
+# cp ${src2} ${dest2}
+# echo "INFO:done cp ${src2} ${dest2}"
 
-if [ single_child == 0 ]; then
-    python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
-    echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
-fi
+# if [ single_child == 0 ]; then
+#     python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
+#     echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
+# fi
 
-end_time3="$(date -u +%s)"
-elapsed3="$(($end_time3-$start_time3))"
-echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
+# end_time3="$(date -u +%s)"
+# elapsed3="$(($end_time3-$start_time3))"
+# echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
 echo "===== Postprocessing test datasets ====="
