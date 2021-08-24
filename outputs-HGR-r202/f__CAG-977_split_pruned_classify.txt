@@ -17,17 +17,18 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__Gastranaerophilales_split_pruned"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__CAG-977_split_pruned"
 
 
 testSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Gastranaerophilales"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/f__CAG-977"
 
 Reading sequences .... 
 Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 2990
+totalSeq is: 197
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -43,7 +44,7 @@ maxSeqLen =
 
      0
 
-dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Gastranaerophilales
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/f__CAG-977
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
@@ -51,33 +52,40 @@ numTestSeq is: 1
 
 clusterNames =
 
-  1x1 cell array
+  1x2 cell array
 
-    {'1-f__Gastranaerophilaceae'}
+    {'1-g__CAG-977'}    {'g__UBA11549'}
 
-    '1-f__Gastranaerophilaceae'
+
+clusterNames =
+
+  1x2 cell array
+
+    {'1-g__CAG-977'}    {'2-g__UBA11549'}
+
+    '1-g__CAG-977'    '2-g__UBA11549'
 
 
 header =
 
-  1x2 cell array
+  1x3 cell array
 
-    {'1-f__Gastranaerophilaceae'}    {'prediction'}
+    {'1-g__CAG-977'}    {'2-g__UBA11549'}    {'prediction'}
 
 
 T3 =
 
-  1x2 table
+  1x3 table
 
-                            1-f__Gastranaerophilaceae    prediction
-                            _________________________    __________
+                            1-g__CAG-977    2-g__UBA11549    prediction
+                            ____________    _____________    __________
 
-    even_MAG-GUT71562.fa              40979                  1     
+    even_MAG-GUT40105.fa      0.48962          0.51038           2     
 
 
 outputPath = 
 
-    "outputs-HGR-r202/test-o__Gastranaerophilales_split_pruned.xlsx"
+    "outputs-HGR-r202/test-f__CAG-977_split_pruned.xlsx"
 
 Process completed 
 [?1l>
