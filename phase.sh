@@ -29,14 +29,14 @@ while getopts ":data_type:base_path:sample_file:test_dir" o; do
             test_dir=${OPTARG}
             ;;
         *)
-            usage()
+            usage
             ;;
     esac
 done
 shift $((OPTIND-1))
 
 if [ -z "${data_type}" ] || [ -z "${sample_file}"]; then
-    usage()
+    usage
 fi
 
 if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
