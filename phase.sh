@@ -8,36 +8,70 @@ $1: data_type. Data type of either HGR or GTDB
 $2: sample_file. Taxon to classify
 '
 
-# prepare variables for different tasks
-ver="r202"
-data_type=$2
-base_dir=""
-outdir=""
-sample_file=""
-sample_path=""
-json_dir=""
-json_path=""
-trunc_sample_file=$1
-test_dir=""
-rej_dir="rejection-threshold-${data_type}-${ver}"
-outdir="outputs-${data_type}-${ver}"
+usage() { echo "Usage: $0 [-data_type <Mandatory. Name of data type>] 
+[-sample_file <Mandatory. File name of the training and testing datasets>]
+[-base_path <Optional for data_type GTDB or HGR. Path to the directory that training datasets are in>]
+[-test_dir <Optional for data_type GTDB or HGR. Directory name of testing datasets>]" 1>&2; exit 1; }
 
-if [ ${data_type} == 'GTDB' ]; then
-    base_path="/mnt/sda/MLDSP-samples-${ver}"
-    sample_file="$1"
-    json_dir="data/preprocess"
-    json_path="non-clade-exclusion-${ver}/$1.json"
-    test_dir="rumen_mags/${trunc_sample_file}"
-elif [ ${data_type} == 'HGR' ]; then
-    base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
-    sample_file="$1_split_pruned"
-    test_dir="hgr_mags/${trunc_sample_file}"
+
+while getopts ":data_type:base_path:sample_file:test_dir" o; do
+    case "${o}" in
+        data_type)
+            data_type=${OPTARG}
+            ;;
+        base_path)
+            base_path=${OPTARG}
+            ;;
+        sample_file)
+            sample_file=${OPTARG}
+            ;;
+        test_dir)
+            test_dir=${OPTARG}
+            ;;
+        *)
+            usage()
+            ;;
+    esac
+done
+shift $((OPTIND-1))
+
+if [ -z "${data_type}" ] || [ -z "${sample_file}"]; then
+    usage()
 fi
 
-sample_path="${base_path}/${sample_file}"
+if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
+    # prepare variables for different tasks
+    ver="r202"
+    base_dir=""
+    outdir=""
+    sample_path=""
+    json_dir=""
+    json_path=""
+    trunc_sample_file=""
+    rej_dir="rejection-threshold-${data_type}-${ver}"
+    outdir="outputs-${data_type}-${ver}"
+
+    if [ ${data_type} == 'GTDB' ]; then
+        base_path="/mnt/sda/MLDSP-samples-${ver}"
+        json_dir="data/preprocess"
+        json_path="non-clade-exclusion-${ver}/$1.json"
+        test_dir="rumen_mags/${trunc_sample_file}"
+    elif [ ${data_type} == 'HGR' ]; then
+        base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
+        sample_file="${sample_file}_split_pruned"
+        test_dir="hgr_mags/${trunc_sample_file}"
+    fi
+    sample_path="${base_path}/${sample_file}"
+fi
+
+echo "===== Printing parameter information ======"
+echo "data_type = ${data_type}"
+echo "base_path = ${base_path}"
+echo "sample_file = ${sample_file}"
+echo "test_dir = ${test_dir}"
 
 
-# prepare training dataset
+echo "===== Preparing training dataset for GTDB or HGR======"
 start_time0="$(date -u +%s)"
 if [ ${data_type} == 'GTDB' ]; then
     if [ ! -d ${sample_path} ]; then
@@ -123,15 +157,16 @@ elapsed0="$(($end_time0-$start_time0))"
 echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 
-# check for single-child taxon
+echo "===== Checking for single-child taxon ====="
 single_child=0
 child_num=`ls -l ${sample_path}|wc -l`
+echo "INFO: child_num is: ${child_num}"
 if [ child_num == 1 ]; then
     single_child=1
 fi
 
 
-# training phase
+echo "===== Training models ====="
 if [ single_child == 0 ]; then
     start_time1="$(date -u +%s)"
     prog_output1="${outdir}/train-${sample_file}.xlsx"
@@ -148,7 +183,7 @@ if [ single_child == 0 ]; then
 fi
 
 
-# classifying phase
+echo "===== Classifying test genomes ====="
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${sample_file}.xlsx"
 if [ ! -f ${prog_output2} ]; then
@@ -168,7 +203,7 @@ cd ${BK_dir}
 echo "INFO: done cd ${BK_dir}"
 
 
-# training phase: picking rejection thresholds
+echo "===== Picking rejection thresholds ====="
 start_time3="$(date -u +%s)"
 
 if [ single_child == 0 ]; then
@@ -195,7 +230,7 @@ elapsed3="$(($end_time3-$start_time3))"
 echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
-# add final predictions to test datasets
+echo "===== Postprocessing test datasets ====="
 start_time4="$(date -u +%s)"
 output3="${outdir}/${trunc_sample_file}.xlsx"
 rej="${rej_dir}/${trunc_sample_file}.json"
@@ -203,6 +238,7 @@ python3 preprocess_test.py ${output3} ${rej}
 echo "INFO:done preprocess_test.py ${output3} ${rej}"
 
 
+echo "===== Adding predictions to the result file ====="
 python3 add_pred.py ${output3} ${data_type}
 echo "INFO: done add_pred.py ${output3} ${data_type}"
 end_time4="$(date -u +%s)"
