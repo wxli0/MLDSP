@@ -18,22 +18,22 @@ json_dir=""
 json_path=""
 trunc_sample_file=$1
 test_dir=""
-rej_dir="rejection-threshold-${data_type}-${ver}/"
+rej_dir="rejection-threshold-${data_type}-${ver}"
 
 outdir="outputs-${data_type}-${ver}"
 if [ ${data_type} == 'GTDB' ]; then
-    base_path="/mnt/sda/MLDSP-samples-${ver}/"
+    base_path="/mnt/sda/MLDSP-samples-${ver}"
     sample_file="$1"
-    json_dir="data/preprocess/"
+    json_dir="data/preprocess"
     json_path="non-clade-exclusion-${ver}/$1.json"
     test_dir="rumen_mags/${trunc_sample_file}"
 elif [ ${data_type} == 'HGR' ]; then
-    base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}/"
+    base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
     sample_file="$1_split_pruned"
     test_dir="hgr_mags/${trunc_sample_file}"
 fi
 
-sample_path="${base_path}${sample_file}"
+sample_path="${base_path}/${sample_file}"
 
 
 start_time0="$(date -u +%s)"
@@ -80,10 +80,10 @@ if [ ${data_type} == 'GTDB' ]; then
 elif [ ${data_type} == 'HGR' ]; then
 
     if [ ! -d ${sample_path} ]; then
-        python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}${trunc_sample_file}
-        echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}${trunc_sample_file}"
+        python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}
+        echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}"
     else
-        echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}${trunc_sample_file}"
+        echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}"
     fi
 
     # remove s__
@@ -122,9 +122,9 @@ echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 
 start_time1="$(date -u +%s)"
-prog_output1="${outdir}train-${sample_file}.xlsx"
+prog_output1="${outdir}/train-${sample_file}.xlsx"
 if [ ! -f ${prog_output1} ]; then
-    output1="${outdir}${sample_file}.txt"
+    output1="${outdir}/${sample_file}.txt"
     matlab -r "run addme;stackedMain('${data_type}', '${sample_file}');exit"|tee ${output1}
     echo "INFO:done stackedMain('${data_type}', '${sample_file}')"
 else
@@ -132,13 +132,13 @@ else
 fi
 end_time1="$(date -u +%s)"
 elapsed1="$(($end_time1-$start_time1))"
-echo "$1 ${elapsed1}" >> "${outdir}train_time.txt"
+echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
 
 
 start_time2="$(date -u +%s)"
-prog_output2="${outdir}test-${sample_file}.xlsx"
+prog_output2="${outdir}/test-${sample_file}.xlsx"
 if [ ! -f ${prog_output2} ]; then
-    output2="${outdir}${sample_file}_classify.txt"
+    output2="${outdir}/${sample_file}_classify.txt"
     matlab -r "run addme;stackedMain('${data_type}', '${sample_file}', '${test_dir}');exit"|tee ${output2}
     echo "INFO:done stackedMain('${data_type}', '${sample_file}', '${test_dir}')"
 else
@@ -155,16 +155,16 @@ echo "INFO: done cd ${BK_dir}"
 
 
 start_time3="$(date -u +%s)"
-src1="/home/w328li/MLDSP/${outdir}train-${sample_file}.xlsx"
-dest1="${outdir}${trunc_sample_file}_train.xlsx"
+src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
+dest1="${outdir}/${trunc_sample_file}_train.xlsx"
 cp ${src1} ${dest1}
 echo "INFO:done cp ${src1} ${dest1}"
 python3 preprocess_train_to_pr.py ${dest1}
 echo "INFO:done preprocess_train_to_pr.py ${dest1}"
 
 
-src2="/home/w328li/MLDSP/${outdir}test-${sample_file}.xlsx"
-dest2="/home/w328li/MT-MAG/${outdir}${trunc_sample_file}.xlsx"
+src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
+dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
@@ -176,8 +176,8 @@ echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
 start_time4="$(date -u +%s)"
-output3="${outdir}${trunc_sample_file}.xlsx"
-rej="${rej_dir}${trunc_sample_file}.json"
+output3="${outdir}/${trunc_sample_file}.xlsx"
+rej="${rej_dir}/${trunc_sample_file}.json"
 python3 preprocess_test.py ${output3} ${rej}
 echo "INFO:done preprocess_test.py ${output3} ${rej}"
 
