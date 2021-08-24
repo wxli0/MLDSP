@@ -36,7 +36,7 @@ while getopts ":d:b:s:t" o; do
 done
 shift $((OPTIND-1))
 
-if [ -z "${data_type}" ] || [ -z "${sample_file}"]; then
+if [ -z "${data_type}" ] || [ -z "${trunc_sample_file}"]; then
     echo "Invalid -data_type or -sample_file"
     usage
 fi
