@@ -87,19 +87,19 @@ elif [ ${data_type} == 'HGR' ]; then
     fi
 
     # remove s__
-    if [ -d "${sample_path}s__" ]; then
-        rm -r "${sample_path}s__"
-        echo "INFO: done rm -r ${sample_path}s__"
+    if [ -d "${sample_path}/s__" ]; then
+        rm -r "${sample_path}/s__"
+        echo "INFO: done rm -r ${sample_path}/s__"
     else
-        echo "skip: done rm -r ${sample_path}s__"
+        echo "skip: done rm -r ${sample_path}/s__"
     fi
 
     # remove g__
-    if [ -d "${sample_path}g__" ]; then
-        rm -r "${sample_path}g__"
-        echo "INFO: done rm -r ${sample_path}g__"
+    if [ -d "${sample_path}/g__" ]; then
+        rm -r "${sample_path}/g__"
+        echo "INFO: done rm -r ${sample_path}/g__"
     else
-        echo "skip: done rm -r ${sample_path}g__"
+        echo "skip: done rm -r ${sample_path}/g__"
     fi
 
     # if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
