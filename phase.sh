@@ -111,10 +111,10 @@ elif [ ${data_type} == 'HGR' ]; then
     || [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
     || [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
     || [[ $1 == 'g__Alistipes' ]]; then
-        python3 samples/prune_large_clusters.py $split_pruned_dir $ver "HGR"
-        echo "INFO: done python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
+        python3 samples/prune_large_clusters.py ${sample_file} $ver "HGR"
+        echo "INFO: done python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
     else
-        echo "INFO: skip python3 samples/prune_large_clusters.py $split_pruned_dir $ver HGR"
+        echo "INFO: skip python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
     fi
 fi
 
