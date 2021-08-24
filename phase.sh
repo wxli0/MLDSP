@@ -122,37 +122,37 @@ elif [ ${data_type} == 'HGR' ]; then
     if [ ! -d ${sample_path} ]; then
         python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}
         echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}"
+
+        if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
+        [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
+        || [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
+        || [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
+        || [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
+        || [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
+        || [[ $1 == 'g__Alistipes' ]]; then
+            python3 samples/prune_large_clusters.py ${sample_file} $ver "HGR"
+            echo "INFO: done python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
+        else
+            echo "INFO: skip python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
+        fi
+        # remove s__
+        if [ -d "${sample_path}/s__" ]; then
+            rm -r "${sample_path}/s__"
+            echo "INFO: done rm -r ${sample_path}/s__"
+        else
+            echo "skip: done rm -r ${sample_path}/s__"
+        fi
+
+        # remove g__
+        if [ -d "${sample_path}/g__" ]; then
+            rm -r "${sample_path}/g__"
+            echo "INFO: done rm -r ${sample_path}/g__"
+        else
+            echo "skip: done rm -r ${sample_path}/g__"
+        fi
+
     else
         echo "INFO: skip python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}"
-    fi
-
-    # remove s__
-    if [ -d "${sample_path}/s__" ]; then
-        rm -r "${sample_path}/s__"
-        echo "INFO: done rm -r ${sample_path}/s__"
-    else
-        echo "skip: done rm -r ${sample_path}/s__"
-    fi
-
-    # remove g__
-    if [ -d "${sample_path}/g__" ]; then
-        rm -r "${sample_path}/g__"
-        echo "INFO: done rm -r ${sample_path}/g__"
-    else
-        echo "skip: done rm -r ${sample_path}/g__"
-    fi
-
-    if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
-    [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
-    || [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
-    || [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
-    || [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
-    || [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
-    || [[ $1 == 'g__Alistipes' ]]; then
-        python3 samples/prune_large_clusters.py ${sample_file} $ver "HGR"
-        echo "INFO: done python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
-    else
-        echo "INFO: skip python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
     fi
 fi
 
