@@ -219,10 +219,10 @@ echo "INFO: done cd ${BK_dir}"
 #     echo "INFO:done preprocess_train_to_pr.py ${dest1}"
 # fi
 
-# src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
-# dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
-# cp ${src2} ${dest2}
-# echo "INFO:done cp ${src2} ${dest2}"
+src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
+dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
+cp ${src2} ${dest2}
+echo "INFO:done cp ${src2} ${dest2}"
 
 # if [ single_child == 0 ]; then
 #     python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
