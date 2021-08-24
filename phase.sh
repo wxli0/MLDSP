@@ -41,6 +41,7 @@ if [ -z "${data_type}" ] || [ -z "${trunc_sample_file}"]; then
     usage
 fi
 
+sample_file=${trunc_sample_file}
 if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
     # prepare variables for different tasks
     ver="r202"
@@ -57,7 +58,6 @@ if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
         json_dir="data/preprocess"
         json_path="non-clade-exclusion-${ver}/$1.json"
         test_dir="rumen_mags/${trunc_sample_file}"
-        sample_file=${trunc_sample_file}
     elif [ ${data_type} == 'HGR' ]; then
         base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
         sample_file="${sample_file}_split_pruned"
@@ -69,8 +69,10 @@ fi
 echo "===== Printing parameter information ======"
 echo "data_type = ${data_type}"
 echo "base_path = ${base_path}"
+echo "trunc_sample_file = ${trunc_sample_file}"
 echo "sample_file = ${sample_file}"
 echo "test_dir = ${test_dir}"
+echo "sample_path = ${sample_path}"
 
 
 echo "===== Preparing training dataset for GTDB or HGR======"
