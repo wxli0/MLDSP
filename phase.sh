@@ -8,6 +8,7 @@ $1: data_type. Data type of either HGR or GTDB
 $2: sample_file. Taxon to classify
 '
 
+# prepare variables for different tasks
 ver="r202"
 data_type=$2
 base_dir=""
@@ -19,8 +20,8 @@ json_path=""
 trunc_sample_file=$1
 test_dir=""
 rej_dir="rejection-threshold-${data_type}-${ver}"
-
 outdir="outputs-${data_type}-${ver}"
+
 if [ ${data_type} == 'GTDB' ]; then
     base_path="/mnt/sda/MLDSP-samples-${ver}"
     sample_file="$1"
@@ -36,6 +37,7 @@ fi
 sample_path="${base_path}/${sample_file}"
 
 
+# prepare training dataset
 start_time0="$(date -u +%s)"
 if [ ${data_type} == 'GTDB' ]; then
     if [ ! -d ${sample_path} ]; then
@@ -121,20 +123,32 @@ elapsed0="$(($end_time0-$start_time0))"
 echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 
-start_time1="$(date -u +%s)"
-prog_output1="${outdir}/train-${sample_file}.xlsx"
-if [ ! -f ${prog_output1} ]; then
-    output1="${outdir}/${sample_file}.txt"
-    matlab -r "run addme;stackedMain('${data_type}', '${sample_file}');exit"|tee ${output1}
-    echo "INFO:done stackedMain('${data_type}', '${sample_file}')"
-else
-    echo "INFO:skip stackedMain('${data_type}', '${sample_file}')"
+# check for single-child taxon
+single_child=0
+child_num=`ls -l ${sample_path}|wc -l`
+if [ child_num == 1]; then
+    single_child=1
 fi
-end_time1="$(date -u +%s)"
-elapsed1="$(($end_time1-$start_time1))"
-echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
 
 
+# training phase
+if [ single_child == 0]; then
+    start_time1="$(date -u +%s)"
+    prog_output1="${outdir}/train-${sample_file}.xlsx"
+    if [ ! -f ${prog_output1} ]; then
+        output1="${outdir}/${sample_file}.txt"
+        matlab -r "run addme;stackedMain('${data_type}', '${sample_file}');exit"|tee ${output1}
+        echo "INFO:done stackedMain('${data_type}', '${sample_file}')"
+    else
+        echo "INFO:skip stackedMain('${data_type}', '${sample_file}')"
+    fi
+    end_time1="$(date -u +%s)"
+    elapsed1="$(($end_time1-$start_time1))"
+    echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
+fi
+
+
+# classifying phase
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${sample_file}.xlsx"
 if [ ! -f ${prog_output2} ]; then
@@ -154,27 +168,30 @@ cd ${BK_dir}
 echo "INFO: done cd ${BK_dir}"
 
 
-start_time3="$(date -u +%s)"
-src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
-dest1="${outdir}/${trunc_sample_file}_train.xlsx"
-cp ${src1} ${dest1}
-echo "INFO:done cp ${src1} ${dest1}"
-python3 preprocess_train_to_pr.py ${dest1}
-echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+# training phase: picking rejection thresholds
+if [ single_child == 0 ]; then
+    start_time3="$(date -u +%s)"
+    src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
+    dest1="${outdir}/${trunc_sample_file}_train.xlsx"
+    cp ${src1} ${dest1}
+    echo "INFO:done cp ${src1} ${dest1}"
+    python3 preprocess_train_to_pr.py ${dest1}
+    echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+
+    src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
+    dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
+    cp ${src2} ${dest2}
+    echo "INFO:done cp ${src2} ${dest2}"
+
+    python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
+    echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
+    end_time3="$(date -u +%s)"
+    elapsed3="$(($end_time3-$start_time3))"
+    echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
+fi
 
 
-src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
-dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
-cp ${src2} ${dest2}
-echo "INFO:done cp ${src2} ${dest2}"
-
-python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
-echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
-end_time3="$(date -u +%s)"
-elapsed3="$(($end_time3-$start_time3))"
-echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
-
-
+# add final predictions to test datasets
 start_time4="$(date -u +%s)"
 output3="${outdir}/${trunc_sample_file}.xlsx"
 rej="${rej_dir}/${trunc_sample_file}.json"
