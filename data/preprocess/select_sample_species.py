@@ -53,7 +53,7 @@ outdir_full = download_path+outdir
 print("outdir_full is:", outdir_full)
 ssl._create_default_https_context = ssl._create_unverified_context
 
-cluster_tsv = pd.read_csv("../data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
+cluster_tsv = pd.read_csv("sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
 cluster_tsv = cluster_tsv[['GTDB_species','Clustered_genomes']].set_index('GTDB_species')
 
 for cluster_name in cluster_names:

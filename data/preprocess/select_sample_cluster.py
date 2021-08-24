@@ -57,7 +57,7 @@ index_names = {"domain": 'd__', 'phylum':'p__','class':'c__','order':'o__',"fami
 index = indices[tax_name]
 next_tax_name = next_taxs[tax_name]
 
-cluster_tsv = pd.read_csv("../data/preprocess/sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
+cluster_tsv = pd.read_csv("sp_clusters_r202.tsv", sep='\t', header = 0, index_col = None)
 cluster_tsv = cluster_tsv[['Representative_genome', 'GTDB_taxonomy', 'GTDB_species']]
 
 def get_target_col(tax_text):
