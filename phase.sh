@@ -169,26 +169,30 @@ echo "INFO: done cd ${BK_dir}"
 
 
 # training phase: picking rejection thresholds
+start_time3="$(date -u +%s)"
+
 if [ single_child == 0 ]; then
-    start_time3="$(date -u +%s)"
     src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
     dest1="${outdir}/${trunc_sample_file}_train.xlsx"
     cp ${src1} ${dest1}
     echo "INFO:done cp ${src1} ${dest1}"
     python3 preprocess_train_to_pr.py ${dest1}
     echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+fi
 
-    src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
-    dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
-    cp ${src2} ${dest2}
-    echo "INFO:done cp ${src2} ${dest2}"
+src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
+dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
+cp ${src2} ${dest2}
+echo "INFO:done cp ${src2} ${dest2}"
 
+if [ single_child == 0 ]; then
     python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
     echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
-    end_time3="$(date -u +%s)"
-    elapsed3="$(($end_time3-$start_time3))"
-    echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
 fi
+
+end_time3="$(date -u +%s)"
+elapsed3="$(($end_time3-$start_time3))"
+echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
 # add final predictions to test datasets
