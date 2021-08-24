@@ -8,6 +8,8 @@ import random
 import requests
 import urllib.request
 
+random.seed(0)
+
 base_url = 'https://ftp.ncbi.nlm.nih.gov/genomes/all/'
 
 

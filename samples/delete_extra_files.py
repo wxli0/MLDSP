@@ -14,7 +14,7 @@ import numpy as np
 import os
 import sys
 
-
+np.random.seed(0)
 dir = sys.argv[1]
 final_num = int(sys.argv[2])
 

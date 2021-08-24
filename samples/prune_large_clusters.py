@@ -2,6 +2,7 @@ import os
 import sys 
 import numpy as np
 
+np.random.seed(0)
 dir = sys.argv[1]
 ver = sys.argv[2]
 data_type = sys.argv[3]
