@@ -30,6 +30,7 @@ while getopts ":data_type:base_path:sample_file:test_dir" o; do
             ;;
         *)
             echo "Invalid arguments"
+            echo ${o}
             usage
             ;;
     esac
