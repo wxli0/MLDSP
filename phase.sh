@@ -103,7 +103,7 @@ if [ ${data_type} == 'GTDB' ]; then
             echo "skip samples/delete_extra_files.py ${sample_path} $final_num"
         fi
 
-        if [ ${trunc_sample_file} == 'root' ] || [[ ${trunc_sample_file} == d__* ]] || \
+        if [[ ${trunc_sample_file} == d__* ]] || \
         [[ ${trunc_sample_file} == 'p__Actinobacteriota' ]] || [[ ${trunc_sample_file} == 'p__Bacteroidota' ]] ||\
         [[ ${trunc_sample_file} == 'p__Firmicutes_A' ]] || [ ${trunc_sample_file} == 'p__Cyanobacteria' ] || 
         [[ ${trunc_sample_file} == 'p__Firmicutes' ]] || \
@@ -167,16 +167,14 @@ echo "${trunc_sample_file} ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 
 echo "===== Checking for single-child taxon ====="
-single_child=0
 child_num=`ls -l ${sample_path}|wc -l`
+child_num=${child_num}-1
 echo "INFO: child_num is: ${child_num}"
-if [ child_num == 1 ]; then
-    single_child=1
-fi
+
 
 
 # echo "===== Training models ====="
-# if [ ${single_child} != 1 ]; then
+# if [ ${child_num} != 1 ]; then
 #     start_time1="$(date -u +%s)"
 #     prog_output1="${outdir}/train-${sample_file}.xlsx"
 #     if [ ! -f ${prog_output1} ]; then
@@ -215,7 +213,7 @@ echo "INFO: done cd ${BK_dir}"
 # echo "===== Picking rejection thresholds ====="
 # start_time3="$(date -u +%s)"
 
-# if [ single_child == 0 ]; then
+# if [ ${child_num} != 1 ]; then
 #     src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
 #     dest1="${outdir}/${trunc_sample_file}_train.xlsx"
 #     cp ${src1} ${dest1}
@@ -229,7 +227,7 @@ dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
-# if [ single_child == 0 ]; then
+# if [ ${child_num} != 1 ]; then
 #     python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
 #     echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
 # fi
