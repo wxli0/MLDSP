@@ -56,7 +56,7 @@ if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
     if [ ${data_type} == 'GTDB' ]; then
         base_path="/mnt/sda/MLDSP-samples-${ver}"
         json_dir="data/preprocess"
-        json_path="non-clade-exclusion-${ver}/$1.json"
+        json_path="non-clade-exclusion-${ver}/${trunc_sample_file}.json"
         test_dir="rumen_mags/${trunc_sample_file}"
     elif [ ${data_type} == 'HGR' ]; then
         base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
@@ -79,10 +79,10 @@ echo "===== Preparing training dataset for GTDB or HGR======"
 start_time0="$(date -u +%s)"
 if [ ${data_type} == 'GTDB' ]; then
     if [ ! -d ${sample_path} ]; then
-        python3 run_select_sample.py $1 $ver
-        echo "INFO:done python3 run_select_sample.py $1 $ver"
+        python3 run_select_sample.py ${trunc_sample_file} $ver
+        echo "INFO:done python3 run_select_sample.py ${trunc_sample_file} $ver"
         cd $json_dir
-        if [[ $1 == g__* ]]; then
+        if [[ ${trunc_sample_file} == g__* ]]; then
             python3 select_sample_species.py $json_path $ver
             echo "INFO:python3 select_sample_species.py $json_path $ver"
         else
@@ -90,31 +90,36 @@ if [ ${data_type} == 'GTDB' ]; then
             echo "INFO:python3 select_sample_cluster.py $json_path $ver"
         fi
         cd ../..
+
+        final_num=10
+        python3 samples/delete_small_cluster.py ${sample_path} $final_num
+        echo "INFO:done python3 samples/delete_small_cluster.py ${sample_path} $final_num"
+
+        final_num=30
+        if [[ ${trunc_sample_file} == g__* ]] || [[ ${trunc_sample_file} == f__* ]]; then 
+            python3 samples/delete_extra_files.py ${sample_path} $final_num
+            echo "samples/delete_extra_files.py ${sample_path} $final_num"
+        else
+            echo "skip samples/delete_extra_files.py ${sample_path} $final_num"
+        fi
+
+        if [ ${trunc_sample_file} == 'root' ] || [[ ${trunc_sample_file} == d__* ]] || \
+        [[ ${trunc_sample_file} == 'p__Actinobacteriota' ]] || [[ ${trunc_sample_file} == 'p__Bacteroidota' ]] ||\
+        [[ ${trunc_sample_file} == 'p__Firmicutes_A' ]] || [ ${trunc_sample_file} == 'p__Cyanobacteria' ] || 
+        [[ ${trunc_sample_file} == 'p__Firmicutes' ]] || \
+        [[ ${trunc_sample_file} == 'c__Actinomycetia' ]] || [[ ${trunc_sample_file} == 'c__Bacteroidia' ]] || \
+        [[ ${trunc_sample_file} == 'c__Clostridia' ]] || [[ ${trunc_sample_file} == 'o__Actinomycetales' ]] || \
+        [[ ${trunc_sample_file} == 'o__Bacteroidales' ]] || [[ ${trunc_sample_file} == 'o__Lachnospirales' ]] || \
+        [[ ${trunc_sample_file} == 'c__Bacilli' ]] || [[ ${trunc_sample_file} == 'p__Proteobacteria' ]] || \
+        [[ ${trunc_sample_file} == 'c__Alphaproteobacteria' ]]; then
+            python3 samples/prune_large_clusters.py ${trunc_sample_file} $ver "GTDB"
+            echo "python3 samples/prune_large_clusters.py ${trunc_sample_file} $ver GTDB"
+        else
+            echo "skip samples/prune_large_clusters.py ${trunc_sample_file} $ver GTDB"
+        fi
+
     else
-        echo "INFO:skip python3 run_select_sample.py $1 $ver"
-    fi
-
-    final_num=10
-    python3 samples/delete_small_cluster.py ${sample_path} $final_num
-    echo "INFO:done python3 samples/delete_small_cluster.py ${sample_path} $final_num"
-
-    final_num=30
-    if [[ $1 == g__* ]] || [[ $1 == f__* ]]; then 
-        python3 samples/delete_extra_files.py ${sample_path} $final_num
-        echo "samples/delete_extra_files.py ${sample_path} $final_num"
-    fi
-
-    if [ $1 == 'root' ] || [[ $1 == d__* ]] || \
-    [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'p__Bacteroidota' ]] ||\
-    [[ $1 == 'p__Firmicutes_A' ]] || [ $1 == 'p__Cyanobacteria' ] || 
-    [[ $1 == 'p__Firmicutes' ]] || \
-    [[ $1 == 'c__Actinomycetia' ]] || [[ $1 == 'c__Bacteroidia' ]] || \
-    [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Actinomycetales' ]] || \
-    [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'o__Lachnospirales' ]] || \
-    [[ $1 == 'c__Bacilli' ]] || [[ $1 == 'p__Proteobacteria' ]] || \
-    [[ $1 == 'c__Alphaproteobacteria' ]]; then
-        python3 samples/prune_large_clusters.py $1 $ver "GTDB"
-        echo "python3 samples/prune_large_clusters.py $1 $ver GTDB"
+        echo "INFO:skip python3 run_select_sample.py $ $ver"
     fi
 
 elif [ ${data_type} == 'HGR' ]; then
@@ -158,7 +163,7 @@ fi
 
 end_time0="$(date -u +%s)"
 elapsed0="$(($end_time0-$start_time0))"
-echo "$1 ${elapsed0}" >> "${outdir}/pre_time.txt"
+echo "${trunc_sample_file} ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 
 echo "===== Checking for single-child taxon ====="
@@ -183,7 +188,7 @@ fi
 #     fi
 #     end_time1="$(date -u +%s)"
 #     elapsed1="$(($end_time1-$start_time1))"
-#     echo "$1 ${elapsed1}" >> "${outdir}/train_time.txt"
+#     echo "${trunc_sample_file} ${elapsed1}" >> "${outdir}/train_time.txt"
 # fi
 
 
@@ -199,7 +204,7 @@ else
 fi
 end_time2="$(date -u +%s)"
 elapsed2="$(($end_time2-$start_time2))"
-echo "$1 ${elapsed2}" >> "${outdir}/test_time.txt"
+echo "${trunc_sample_file} ${elapsed2}" >> "${outdir}/test_time.txt"
 
 
 BK_dir="/home/w328li/MT-MAG/"
@@ -231,7 +236,7 @@ echo "INFO:done cp ${src2} ${dest2}"
 
 # end_time3="$(date -u +%s)"
 # elapsed3="$(($end_time3-$start_time3))"
-# echo "$1 ${elapsed3}" >> "${outdir}/rej_time.txt"
+# echo "${trunc_sample_file} ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
 echo "===== Postprocessing test datasets ====="
@@ -247,4 +252,4 @@ python3 add_pred.py ${output3} ${data_type}
 echo "INFO: done add_pred.py ${output3} ${data_type}"
 end_time4="$(date -u +%s)"
 elapsed4="$(($end_time4-$start_time4))"
-echo "$1 ${elapsed4}" >> "${outdir}/post_time.txt"
+echo "${trunc_sample_file} ${elapsed4}" >> "${outdir}/post_time.txt"
