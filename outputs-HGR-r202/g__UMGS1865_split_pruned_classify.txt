@@ -17,17 +17,18 @@ basePath =
 
 dataSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__UMGS1591_split_pruned"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__UMGS1865_split_pruned"
 
 
 testSetPath = 
 
-    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__UMGS1591"
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__UMGS1865"
 
 Reading sequences .... 
 Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
 Generating CGRs.... 
-totalSeq is: 124
+totalSeq is: 237
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Computing disMat .... 
@@ -43,43 +44,48 @@ maxSeqLen =
 
      0
 
-dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__UMGS1591
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__UMGS1865
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
-numTestSeq is: 3
+numTestSeq is: 1
 
 clusterNames =
 
-  1x1 cell array
+  1x2 cell array
 
-    {'1-s__UMGS1591 sp900553255'}
+    {'1-s__UMGS1865 sp900547725'}    {'s__UMGS1865 sp900555785'}
 
-    '1-s__UMGS1591 sp900553255'
+
+clusterNames =
+
+  1x2 cell array
+
+    {'1-s__UMGS1865 sp900547725'}    {'2-s__UMGS1865 sp900555785'}
+
+    '1-s__UMGS1865 sp900547725'    '2-s__UMGS1865 sp900555785'
 
 
 header =
 
-  1x2 cell array
+  1x3 cell array
 
-    {'1-s__UMGS1591 sp900553255'}    {'prediction'}
+    {'1-s__UMGS1865 s...'}    {'2-s__UMGS1865 s...'}    {'prediction'}
 
 
 T3 =
 
-  3x2 table
+  1x3 table
 
-                            1-s__UMGS1591 sp900553255    prediction
-                            _________________________    __________
+                            1-s__UMGS1865 sp900547725    2-s__UMGS1865 sp900555785    prediction
+                            _________________________    _________________________    __________
 
-    even_MAG-GUT13170.fa             -17.834                 1     
-    even_MAG-GUT17271.fa             -3.6085                 1     
-    even_MAG-GUT19592.fa              -1.897                 1     
+    even_MAG-GUT81432.fa                0                            1                    2     
 
 
 outputPath = 
 
-    "outputs-HGR-r202/test-g__UMGS1591_split_pruned.xlsx"
+    "outputs-HGR-r202/test-g__UMGS1865_split_pruned.xlsx"
 
 Process completed 
 [?1l>
