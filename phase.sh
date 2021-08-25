@@ -123,13 +123,6 @@ elif [ ${data_type} == 'HGR' ]; then
         python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}
         echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}"
 
-        echo "trunc_sample_file is ${trunc_sample_file}"
-        if [ ${trunc_sample_file} == 'p__Firmicutes_A' ]; then
-            echo "enter p__Firmicutes_A 1"
-        fi
-        if [[ ${trunc_sample_file} == 'p__Firmicutes_A' ]]; then
-            echo "enter p__Firmicutes_A 2"
-        fi
         if [[ ${trunc_sample_file} == 'd__Bacteria' ]] || [[ ${trunc_sample_file} == 'p__Firmicutes_A' ]] || [[ ${trunc_sample_file} == 'p__Bacteroidota' ]] || \
         [[ ${trunc_sample_file} == 'c__Clostridia' ]] || [[ ${trunc_sample_file} == 'o__Bacteroidales' ]] || [[ ${trunc_sample_file} == 'c__Brachyspirae' ]] \
         || [[ ${trunc_sample_file} == 'p__Actinobacteriota' ]] || [[ ${trunc_sample_file} == 'c__Synergistia' ]] || [[ ${trunc_sample_file} == 'c__Coriobacteriia' ]] \
