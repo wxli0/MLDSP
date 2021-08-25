@@ -123,13 +123,20 @@ elif [ ${data_type} == 'HGR' ]; then
         python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}
         echo "INFO: done python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}"
 
-        if [[ $1 == 'd__Bacteria' ]] || [[ $1 == 'p__Firmicutes_A' ]] || [[ $1 == 'p__Bacteroidota' ]] || \
-        [[ $1 == 'c__Clostridia' ]] || [[ $1 == 'o__Bacteroidales' ]] || [[ $1 == 'c__Brachyspirae' ]] \
-        || [[ $1 == 'p__Actinobacteriota' ]] || [[ $1 == 'c__Synergistia' ]] || [[ $1 == 'c__Coriobacteriia' ]] \
-        || [[ $1 == 'o__Oscillospirales' ]] || [[ $1 == 'o__Coriobacteriales' ]] || [[ $1 == 'f__Bacteroidaceae' ]] \
-        || [[ $1 == 'f__Lachnospiraceae' ]] || [[ $1 == 'o__Actinomycetales' ]] || [[ $1 == 'f__Acutalibacteraceae' ]] \
-        || [[ $1 == 'g__Ruminococcus_F' ]] || [[ $1 == 'g__F0040' ]] \
-        || [[ $1 == 'g__Alistipes' ]]; then
+        echo "trunc_sample_file is ${trunc_sample_file}"
+        if [ ${trunc_sample_file} == 'p__Firmicutes_A' ]; then
+            echo "enter p__Firmicutes_A 1"
+        fi
+        if [[ ${trunc_sample_file} == 'p__Firmicutes_A' ]]; then
+            echo "enter p__Firmicutes_A 2"
+        fi
+        if [[ ${trunc_sample_file} == 'd__Bacteria' ]] || [[ ${trunc_sample_file} == 'p__Firmicutes_A' ]] || [[ ${trunc_sample_file} == 'p__Bacteroidota' ]] || \
+        [[ ${trunc_sample_file} == 'c__Clostridia' ]] || [[ ${trunc_sample_file} == 'o__Bacteroidales' ]] || [[ ${trunc_sample_file} == 'c__Brachyspirae' ]] \
+        || [[ ${trunc_sample_file} == 'p__Actinobacteriota' ]] || [[ ${trunc_sample_file} == 'c__Synergistia' ]] || [[ ${trunc_sample_file} == 'c__Coriobacteriia' ]] \
+        || [[ ${trunc_sample_file} == 'o__Oscillospirales' ]] || [[ ${trunc_sample_file} == 'o__Coriobacteriales' ]] || [[ ${trunc_sample_file} == 'f__Bacteroidaceae' ]] \
+        || [[ ${trunc_sample_file} == 'f__Lachnospiraceae' ]] || [[ ${trunc_sample_file} == 'o__Actinomycetales' ]] || [[ ${trunc_sample_file} == 'f__Acutalibacteraceae' ]] \
+        || [[ ${trunc_sample_file} == 'g__Ruminococcus_F' ]] || [[ ${trunc_sample_file} == 'g__F0040' ]] \
+        || [[ ${trunc_sample_file} == 'g__Alistipes' ]]; then
             python3 samples/prune_large_clusters.py ${sample_file} $ver "HGR"
             echo "INFO: done python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
         else
