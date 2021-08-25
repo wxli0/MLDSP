@@ -1,0 +1,359 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__Actinomycetales_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Actinomycetales"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 224
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Actinomycetales
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: Unable to fit posterior probabilities for learner 5 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In classifyTestSeqExternMisList (line 45)
+  In testingExternMisList (line 9)
+  In stackedMain (line 110)] 
+numTestSeq is: 127
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'f__Bifidobacte...'}    {'f__Brevibacter...'}
+
+  Columns 4 through 6
+
+    {'f__Cellulomona...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'f__Brevibacter...'}
+
+  Columns 4 through 6
+
+    {'f__Cellulomona...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'f__Cellulomona...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'6-f__Dermatoph...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'6-f__Dermatoph...'}
+
+  Column 7
+
+    {'7-f__Micrococc...'}
+
+  Columns 1 through 3
+
+    '1-f__Actinomycet...'    '2-f__Bifidobacte...'    '3-f__Brevibacter...'
+
+  Columns 4 through 6
+
+    '4-f__Cellulomona...'    '5-f__Dermabacter...'    '6-f__Dermatophil...'
+
+  Column 7
+
+    '7-f__Micrococcaceae'
+
+
+header =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'6-f__Dermatoph...'}
+
+  Columns 7 through 8
+
+    {'7-f__Micrococc...'}    {'prediction'}
+
+
+T3 =
+
+  127x8 table
+
+                            1-f__Actinomycetaceae    2-f__Bifidobacteriaceae    3-f__Brevibacteriaceae    4-f__Cellulomonadaceae    5-f__Dermabacteraceae    6-f__Dermatophilaceae    7-f__Micrococcaceae    prediction
+                            _____________________    _______________________    ______________________    ______________________    _____________________    _____________________    ___________________    __________
+
+    even_MAG-GUT1012.fa          7.7786e-05                   0.97666                  0.0012541                 0.0030589               2.2199e-14               9.3098e-06                0.018937             2     
+    even_MAG-GUT10488.fa         4.5743e-05                   0.99707                  0.0010297                0.00053441               2.2201e-14                1.789e-05               0.0012996             2     
+    even_MAG-GUT11934.fa         1.8998e-05                   0.99762                  0.0012238                0.00064658                 2.22e-14               2.4749e-05              0.00046675             2     
+    even_MAG-GUT12944.fa            0.73005                  0.057132                  0.0044186                  0.004839                  0.15655                 0.003877                0.043127             1     
+    even_MAG-GUT1826.fa           0.0005335                   0.98054                 0.00085074                 0.0021345                 2.22e-14               9.2001e-06                0.015929             2     
+    even_MAG-GUT2058.fa           6.434e-05                   0.99092                  0.0018108                 0.0015149               2.2203e-14                1.177e-05               0.0056804             2     
+    even_MAG-GUT2078.fa          3.4918e-05                   0.93119                  0.0010935                 0.0018363               2.2183e-14               6.7633e-06                0.065841             2     
+    even_MAG-GUT2079.fa          3.1194e-05                   0.98812                  0.0095549                  0.001956                 2.22e-14               8.8304e-05              0.00024619             2     
+    even_MAG-GUT23346.fa         0.00012721                   0.97065                 0.00090757                 0.0014512               2.2194e-14               7.6432e-06                0.026854             2     
+    even_MAG-GUT23723.fa          0.0001034                   0.98067                 0.00079792                 0.0020962               2.2198e-14               6.7641e-06                 0.01633             2     
+    even_MAG-GUT28721.fa         1.4125e-05                   0.99379                 0.00086388                0.00057419               2.2201e-14               1.0304e-05               0.0047505             2     
+    even_MAG-GUT28738.fa         3.8397e-05                   0.99587                  0.0016352                0.00098854               2.2202e-14               1.4809e-05               0.0014518             2     
+    even_MAG-GUT36138.fa         8.3154e-05                   0.98867                  0.0089586                 0.0020093               2.2201e-14               5.2031e-05              0.00022806             2     
+    even_MAG-GUT37090.fa           2.31e-05                   0.99665                   0.001291                0.00038046               2.2201e-14               1.7177e-05               0.0016385             2     
+    even_MAG-GUT408.fa           4.6177e-05                   0.96997                 0.00069565                  0.002688               2.2195e-14               5.8292e-06                0.026591             2     
+    even_MAG-GUT409.fa           3.9375e-05                   0.96934                 0.00071406                  0.001608               2.2192e-14               6.2234e-06                0.028294             2     
+    even_MAG-GUT412.fa           0.00016835                   0.97598                 0.00074778                 0.0034616               2.2201e-14               8.7769e-06                0.019636             2     
+    even_MAG-GUT418.fa           8.2706e-05                   0.96871                  0.0006404                 0.0011932               2.2191e-14               7.7218e-06                 0.02937             2     
+    even_MAG-GUT420.fa            0.0010523                   0.97573                 0.00094867                 0.0028271               2.2201e-14               9.1857e-06                0.019433             2     
+    even_MAG-GUT421.fa           2.5768e-05                   0.97782                  0.0010785                 0.0017777               2.2196e-14               8.1005e-06                0.019294             2     
+    even_MAG-GUT422.fa           0.00011227                   0.97496                   0.001058                 0.0023711               2.2198e-14                1.117e-05                0.021485             2     
+    even_MAG-GUT423.fa           3.4001e-05                   0.95558                 0.00065044                 0.0013968               2.2186e-14               6.0389e-06                0.042337             2     
+    even_MAG-GUT425.fa           0.00010625                    0.9773                 0.00072936                 0.0025308               2.2198e-14               7.5546e-06                0.019325             2     
+    even_MAG-GUT429.fa           0.00023821                   0.96173                 0.00044999                 0.0013669               2.2191e-14               5.2639e-06                0.036206             2     
+    even_MAG-GUT430.fa           0.00010297                   0.95555                  0.0011067                  0.002314               2.2192e-14               8.1671e-06                0.040917             2     
+    even_MAG-GUT431.fa           0.00010062                   0.95847                  0.0011535                 0.0021111               2.2191e-14               6.9923e-06                0.038156             2     
+    even_MAG-GUT432.fa           7.2179e-05                   0.96008                 0.00089001                 0.0022911               2.2191e-14               6.3215e-06                0.036656             2     
+    even_MAG-GUT43254.fa            0.80905                  0.011555                  0.0074187                  0.007021                  0.12334                0.0039225                0.037693             1     
+    even_MAG-GUT433.fa           5.3068e-05                   0.96608                  0.0011309                 0.0023733               2.2194e-14                6.734e-06                0.030358             2     
+    even_MAG-GUT435.fa           0.00018865                   0.96062                  0.0012723                   0.00413               2.2199e-14               1.2382e-05                0.033778             2     
+    even_MAG-GUT43623.fa         0.00037422                   0.98177                 0.00077038                 0.0024743               2.2201e-14               9.9643e-06                0.014604             2     
+    even_MAG-GUT43628.fa          0.0020479                   0.95735                 0.00068609                   0.00243               2.2201e-14               8.5117e-06                0.037473             2     
+    even_MAG-GUT43934.fa         0.00010205                   0.95502                 0.00067829                 0.0023502               2.2192e-14               6.9486e-06                0.041842             2     
+    even_MAG-GUT441.fa           0.00010378                   0.95583                  0.0010214                 0.0031429               2.2194e-14               7.0577e-06                0.039899             2     
+    even_MAG-GUT444.fa           8.0156e-05                   0.96402                  0.0010791                 0.0022928               2.2193e-14               7.2877e-06                 0.03252             2     
+    even_MAG-GUT445.fa           7.8017e-05                   0.96064                  0.0010099                 0.0014815                2.219e-14               6.5516e-06                0.036785             2     
+    even_MAG-GUT446.fa            0.0015456                   0.94269                  0.0010581                 0.0046945               2.2756e-14               1.2536e-05                0.049995             2     
+    even_MAG-GUT44961.fa         0.00052478                    0.9948                  0.0026668                0.00069984               2.2202e-14               2.0255e-05               0.0012853             2     
+    even_MAG-GUT450.fa            0.0001301                   0.96606                  0.0008856                 0.0012855               2.2191e-14               6.3228e-06                0.031635             2     
+    even_MAG-GUT452.fa           0.00016151                   0.98191                  0.0013079                 0.0036023               2.2202e-14               8.4662e-06                0.013006             2     
+    even_MAG-GUT453.fa           0.00020197                   0.97893                  0.0011505                 0.0025656               2.2201e-14               1.2501e-05                0.017142             2     
+    even_MAG-GUT455.fa           3.0305e-05                   0.97215                  0.0012131                 0.0038909               2.2198e-14               7.3815e-06                0.022711             2     
+    even_MAG-GUT456.fa           3.8223e-05                   0.95771                  0.0011056                 0.0030862               2.2191e-14                8.786e-06                0.038053             2     
+    even_MAG-GUT457.fa           6.3229e-05                   0.95294                 0.00080661                 0.0016226               2.2188e-14                7.469e-06                0.044564             2     
+    even_MAG-GUT4577.fa          1.7503e-05                   0.99372                 0.00086915                0.00058636               2.2201e-14               9.2136e-06                  0.0048             2     
+    even_MAG-GUT45829.fa         4.2928e-05                   0.97707                 0.00089887                 0.0011231               2.2195e-14               7.9722e-06                0.020859             2     
+    even_MAG-GUT459.fa           7.1215e-05                   0.97883                  0.0009386                 0.0033988                 2.22e-14               7.5944e-06                0.016753             2     
+    even_MAG-GUT46159.fa         0.00013767                   0.99027                  0.0073108                 0.0020156               2.2201e-14               7.9081e-05              0.00018202             2     
+    even_MAG-GUT462.fa           0.00024274                    0.9748                 0.00077793                 0.0017205               2.2197e-14               8.3584e-06                0.022451             2     
+    even_MAG-GUT463.fa            5.741e-05                    0.9749                  0.0011989                 0.0014939               2.2195e-14                8.287e-06                0.022346             2     
+    even_MAG-GUT464.fa           0.00022163                   0.98383                 0.00067744                 0.0013391               2.2198e-14               7.0009e-06                0.013923             2     
+    even_MAG-GUT46486.fa         0.00060533                    0.9697                  0.0015381                 0.0045093               2.2202e-14               1.1858e-05                0.023638             2     
+    even_MAG-GUT46493.fa         3.5061e-05                   0.96303                 0.00081894                 0.0023196               2.2191e-14               6.3987e-06                0.033791             2     
+    even_MAG-GUT465.fa            7.743e-05                   0.93672                  0.0014361                 0.0034228               2.2193e-14               1.0351e-05                0.058338             2     
+    even_MAG-GUT467.fa           1.5532e-05                    0.9649                  0.0017513                  0.004533               2.2198e-14               1.0495e-05                0.028789             2     
+    even_MAG-GUT46719.fa         7.2411e-05                   0.98848                  0.0086288                 0.0023899               2.2201e-14               6.1946e-05              0.00036914             2     
+    even_MAG-GUT46760.fa         3.3092e-05                   0.98937                  0.0015654                 0.0016905               2.2202e-14               1.1056e-05               0.0073263             2     
+    even_MAG-GUT468.fa           2.3794e-05                   0.97808                  0.0013226                 0.0032249                 2.22e-14               9.0204e-06                0.017339             2     
+    even_MAG-GUT469.fa           8.7668e-05                   0.97726                 0.00075174                 0.0010873               2.2195e-14               6.1943e-06                0.020811             2     
+    even_MAG-GUT470.fa           4.9887e-05                   0.97597                  0.0012659                 0.0027274               2.2198e-14               9.2072e-06                 0.01998             2     
+    even_MAG-GUT471.fa           0.00023345                   0.97238                  0.0010578                 0.0018113               2.2196e-14               6.9275e-06                0.024508             2     
+    even_MAG-GUT47464.fa         0.00015344                    0.9791                 0.00097682                 0.0016065               2.2198e-14                9.872e-06                0.018158             2     
+    even_MAG-GUT47585.fa         1.0635e-05                   0.99535                  0.0011512                0.00079642               2.2202e-14                1.358e-05                0.002679             2     
+    even_MAG-GUT47777.fa          3.344e-05                   0.99383                 0.00092239                0.00037818               2.2201e-14               1.1029e-05               0.0048268             2     
+    even_MAG-GUT48579.fa         0.00022651                   0.94267                  0.0007134                  0.002676               2.2191e-14               8.0735e-06                0.053702             2     
+    even_MAG-GUT49041.fa            0.18493                   0.00449                  0.0087997                  0.040574                  0.64931                0.0039294                 0.10797             5     
+    even_MAG-GUT49243.fa            0.10643                 0.0046256                     0.1273                  0.070676                  0.67137                 0.003838                0.015773             5     
+    even_MAG-GUT55663.fa          5.891e-05                   0.99101                  0.0071313                 0.0012387                 2.22e-14               5.7126e-05              0.00050415             2     
+    even_MAG-GUT55688.fa         0.00010174                   0.99266                  0.0051574                 0.0017431               2.2202e-14               7.6284e-05              0.00026069             2     
+    even_MAG-GUT56059.fa         2.3502e-06                   0.99393                  0.0017727                0.00088538               2.2202e-14               1.4491e-05                0.003398             2     
+    even_MAG-GUT57173.fa            0.65086                  0.014863                   0.009618                 0.0079161                  0.28047                0.0039129                0.032361             1     
+    even_MAG-GUT59472.fa         3.7904e-05                    0.9884                  0.0099042                 0.0012547               2.2199e-14               7.6696e-05              0.00032445             2     
+    even_MAG-GUT61735.fa            0.82859                   0.15281                  0.0022684                0.00024829                2.223e-14               1.5279e-05                0.016072             1     
+    even_MAG-GUT62023.fa         6.0306e-05                   0.98783                   0.010205                 0.0016788               2.2199e-14                6.816e-05                0.000161             2     
+    even_MAG-GUT64457.fa         0.00014926                   0.97568                 0.00088158                 0.0027799               2.2198e-14               8.7265e-06                0.020501             2     
+    even_MAG-GUT66991.fa         0.00016033                   0.99104                  0.0067391                 0.0016398               2.2201e-14               9.5891e-05              0.00032384             2     
+    even_MAG-GUT67012.fa          0.0018683                   0.95975                  0.0011127                 0.0028144               2.2201e-14               1.2971e-05                0.034443             2     
+    even_MAG-GUT67029.fa         0.00020425                   0.96062                 0.00088432                 0.0022753               2.2193e-14                7.008e-06                0.036007             2     
+    even_MAG-GUT67120.fa         0.00010946                   0.99096                  0.0072367                 0.0012159                 2.22e-14               6.1753e-05              0.00041918             2     
+    even_MAG-GUT67723.fa         7.4961e-05                   0.99349                  0.0033994                 0.0020454               2.2203e-14               3.5954e-05               0.0009549             2     
+    even_MAG-GUT67770.fa         7.1445e-05                   0.99097                  0.0069049                 0.0018181               2.2201e-14               9.3192e-05              0.00013753             2     
+    even_MAG-GUT67779.fa         6.0631e-05                   0.99141                  0.0070338                 0.0012663                 2.22e-14               8.9317e-05              0.00013674             2     
+    even_MAG-GUT67830.fa         0.00030887                   0.99244                  0.0048521                 0.0013762               2.2202e-14               4.0175e-05              0.00098593             2     
+    even_MAG-GUT67839.fa         0.00018297                   0.99218                  0.0049314                 0.0020941               2.2202e-14               3.6797e-05              0.00057695             2     
+    even_MAG-GUT67975.fa         0.00012187                   0.98114                  0.0010113                 0.0018293               2.2199e-14               8.8016e-06                0.015891             2     
+    even_MAG-GUT67977.fa         0.00031168                   0.99225                  0.0051743                 0.0018062               2.2202e-14               7.7452e-05              0.00037689             2     
+    even_MAG-GUT68007.fa         1.6245e-05                   0.99123                  0.0069615                 0.0013633               2.2201e-14               5.5416e-05               0.0003756             2     
+    even_MAG-GUT68023.fa         0.00010031                    0.9907                  0.0067344                 0.0021509               2.2202e-14               5.0895e-05               0.0002639             2     
+    even_MAG-GUT68145.fa         5.6363e-05                    0.9905                  0.0081133                0.00089281               2.2199e-14               4.0101e-05              0.00039512             2     
+    even_MAG-GUT68157.fa         7.7482e-05                   0.99405                  0.0040815                  0.001513               2.2202e-14               8.2399e-05              0.00019682             2     
+    even_MAG-GUT68181.fa         0.00018103                   0.98808                   0.009177                 0.0021163               2.2201e-14               5.1078e-05               0.0003943             2     
+    even_MAG-GUT68189.fa          0.0005342                   0.95167                  0.0014292                 0.0064128               2.2201e-14               1.3265e-05                0.039946             2     
+    even_MAG-GUT68190.fa         0.00020459                   0.96924                  0.0010101                 0.0020919               2.2197e-14                8.974e-06                0.027449             2     
+    even_MAG-GUT68197.fa         0.00010374                    0.9904                  0.0071589                 0.0016521               2.2201e-14               5.0629e-05               0.0006331             2     
+    even_MAG-GUT68475.fa         6.0569e-05                   0.98904                  0.0085905                 0.0019189               2.2201e-14               7.8735e-05               0.0003071             2     
+    even_MAG-GUT68642.fa         0.00036214                   0.97931                 0.00090825                 0.0030577               2.2201e-14               8.2691e-06                0.016351             2     
+    even_MAG-GUT68659.fa         5.2317e-05                   0.98917                  0.0081099                 0.0020645               2.2201e-14               5.2897e-05              0.00054916             2     
+    even_MAG-GUT68697.fa         3.3669e-05                   0.98694                   0.002189                 0.0021458               2.2203e-14               9.8793e-06               0.0086833             2     
+    even_MAG-GUT68968.fa         6.7265e-05                   0.99385                  0.0010231                 0.0010669               2.2202e-14               1.0911e-05               0.0039792             2     
+    even_MAG-GUT69048.fa         5.3366e-05                   0.98621                   0.010921                 0.0024942                 2.22e-14               7.0441e-05              0.00024874             2     
+    even_MAG-GUT69064.fa         0.00035381                   0.99049                  0.0021468                 0.0016584               2.2203e-14               1.1235e-05               0.0053384             2     
+    even_MAG-GUT69117.fa         0.00016805                   0.98618                 0.00062557                  0.001768                 2.22e-14               6.0429e-06                0.011254             2     
+    even_MAG-GUT69121.fa         4.2699e-05                   0.98321                 0.00082353                 0.0014327               2.2198e-14               9.6913e-06                0.014483             2     
+    even_MAG-GUT69224.fa         3.8143e-05                   0.96193                  0.0011193                 0.0041679               2.2197e-14               7.0464e-06                0.032738             2     
+    even_MAG-GUT69229.fa         0.00094502                   0.97914                 0.00098085                 0.0015168                 2.22e-14                9.903e-06                0.017412             2     
+    even_MAG-GUT69253.fa         9.5332e-07                   0.98985                  0.0012084                0.00073876                 2.22e-14               1.1923e-05               0.0081895             2     
+    even_MAG-GUT69434.fa         7.6594e-05                   0.97807                 0.00091984                  0.002443               2.2198e-14               6.8898e-06                0.018482             2     
+    even_MAG-GUT69447.fa         0.00031407                   0.97899                 0.00094456                 0.0011475               2.2196e-14               7.2582e-06                0.018601             2     
+    even_MAG-GUT69662.fa            0.51437                 0.0066886                  0.0049485                 0.0084782                    0.394                0.0041093                0.067407             1     
+    even_MAG-GUT74324.fa         4.6457e-05                   0.99106                  0.0074792                 0.0009864                 2.22e-14               4.6942e-05              0.00038487             2     
+    even_MAG-GUT74347.fa         9.3332e-05                     0.989                  0.0092521                 0.0014131                 2.22e-14                0.0001425              9.6546e-05             2     
+    even_MAG-GUT7772.fa          0.00039522                     0.991                  0.0065885                  0.001438               2.2201e-14                5.387e-05              0.00052797             2     
+    even_MAG-GUT80384.fa             0.2881                   0.70987                 0.00035013                6.2015e-05               2.2183e-14               5.2083e-06               0.0016074             2     
+    even_MAG-GUT80568.fa         2.0233e-05                   0.98998                  0.0075813                 0.0021623               2.2201e-14               0.00010168              0.00015637             2     
+    even_MAG-GUT80804.fa            0.43993                  0.091238                  0.0047962                 0.0048197                  0.39458                0.0038908                0.060749             5     
+    even_MAG-GUT81959.fa         0.00020146                   0.98948                  0.0073965                 0.0027085               2.2202e-14               9.6543e-05              0.00012197             2     
+    even_MAG-GUT85070.fa         1.4553e-05                   0.99455                  0.0007924                0.00072726               2.2201e-14               9.0466e-06               0.0039084             2     
+    even_MAG-GUT86606.fa         6.7189e-05                   0.98945                  0.0087876                 0.0014922                 2.22e-14               0.00010985              9.3335e-05             2     
+    even_MAG-GUT88052.fa          4.393e-05                   0.98591                   0.010709                   0.00304               2.2201e-14               8.2541e-05              0.00021741             2     
+    even_MAG-GUT88444.fa         1.1426e-05                   0.99355                  0.0014279                0.00092508               2.2202e-14               1.3848e-05               0.0040726             2     
+    even_MAG-GUT9016.fa          1.4146e-05                   0.99535                 0.00087109                0.00049673               2.2201e-14               1.1187e-05               0.0032533             2     
+    even_MAG-GUT91633.fa         2.6993e-05                   0.99034                  0.0032545                 0.0051947               2.2203e-14                1.392e-05               0.0011722             2     
+    even_MAG-GUT91733.fa          5.367e-05                   0.94638                 0.00062541                 0.0010082               2.2183e-14               5.5698e-06                0.051929             2     
+    even_MAG-GUT91735.fa          5.367e-05                   0.94638                 0.00062541                 0.0010082               2.2183e-14               5.5698e-06                0.051929             2     
+    even_MAG-GUT91947.fa         0.00067762                   0.98364                  0.0012619                 0.0031472               2.2202e-14                2.185e-05                0.011255             2     
+    even_MAG-GUT92065.fa         0.00022983                   0.97156                 0.00052039                 0.0016168               2.2195e-14               5.6638e-06                0.026064             2     
+    even_MAG-GUT9523.fa          2.8853e-05                   0.98891                  0.0081576                 0.0026327               2.2202e-14               0.00010359              0.00016485             2     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-o__Actinomycetales_split_pruned.xlsx"
+
+Process completed 
+[?1l>

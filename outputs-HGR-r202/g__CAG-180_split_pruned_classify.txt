@@ -1,0 +1,162 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+basePath = 
+
+    ""
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__CAG-180_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__CAG-180"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 235
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__CAG-180
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 20
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__CAG-180 s...'}    {'s__CAG-180 sp0...'}    {'s__CAG-180 sp9...'}
+
+  Column 4
+
+    {'s__CAG-180 sp9...'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__CAG-180 s...'}    {'2-s__CAG-180 s...'}    {'s__CAG-180 sp9...'}
+
+  Column 4
+
+    {'s__CAG-180 sp9...'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__CAG-180 s...'}    {'2-s__CAG-180 s...'}    {'3-s__CAG-180 s...'}
+
+  Column 4
+
+    {'s__CAG-180 sp9...'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__CAG-180 s...'}    {'2-s__CAG-180 s...'}    {'3-s__CAG-180 s...'}
+
+  Column 4
+
+    {'4-s__CAG-180 s...'}
+
+  Columns 1 through 3
+
+    '1-s__CAG-180 sp0...'    '2-s__CAG-180 sp0...'    '3-s__CAG-180 sp9...'
+
+  Column 4
+
+    '4-s__CAG-180 sp9...'
+
+
+header =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'1-s__CAG-180 s...'}    {'2-s__CAG-180 s...'}    {'3-s__CAG-180 s...'}
+
+  Columns 4 through 5
+
+    {'4-s__CAG-180 s...'}    {'prediction'}
+
+
+T3 =
+
+  20x5 table
+
+                            1-s__CAG-180 sp000432435    2-s__CAG-180 sp004556705    3-s__CAG-180 sp900540295    4-s__CAG-180 sp900545625    prediction
+                            ________________________    ________________________    ________________________    ________________________    __________
+
+    even_MAG-GUT26501.fa             0.001172                  5.8988e-05                  7.9792e-07                   0.99877                 4     
+    even_MAG-GUT34600.fa            0.0010641                  0.00011717                  5.7986e-07                   0.99882                 4     
+    even_MAG-GUT34724.fa           0.00035404                  0.00024801                  6.3237e-08                    0.9994                 4     
+    even_MAG-GUT3745.fa            0.00097453                  0.00011002                  4.2485e-07                   0.99892                 4     
+    even_MAG-GUT45205.fa            0.0018356                  6.3845e-05                  1.9177e-07                    0.9981                 4     
+    even_MAG-GUT53512.fa           0.00052648                   0.0001577                  9.6053e-08                   0.99932                 4     
+    even_MAG-GUT5358.fa            0.00029411                   0.0002392                  1.6787e-08                   0.99947                 4     
+    even_MAG-GUT5371.fa            0.00027297                  0.00029644                  5.1661e-08                   0.99943                 4     
+    even_MAG-GUT57200.fa           0.00088933                    0.000128                  2.8606e-07                   0.99898                 4     
+    even_MAG-GUT58607.fa            0.0012201                  8.8173e-05                  1.6755e-07                   0.99869                 4     
+    even_MAG-GUT58896.fa            0.0012008                  0.00016375                  1.0146e-06                   0.99863                 4     
+    even_MAG-GUT5899.fa            0.00086169                  0.00010981                  2.5919e-07                   0.99903                 4     
+    even_MAG-GUT60386.fa           0.00052909                  0.00017149                   6.747e-08                    0.9993                 4     
+    even_MAG-GUT80007.fa           0.00016172                  0.00045231                  1.2825e-07                   0.99939                 4     
+    even_MAG-GUT80052.fa           0.00079161                  0.00019262                  2.1013e-07                   0.99902                 4     
+    even_MAG-GUT80383.fa           0.00019555                  0.00043042                  7.5521e-08                   0.99937                 4     
+    even_MAG-GUT81880.fa           0.00051702                  0.00017207                  4.4801e-08                   0.99931                 4     
+    even_MAG-GUT82295.fa           0.00084531                  0.00012213                   2.183e-07                   0.99903                 4     
+    even_MAG-GUT8399.fa            0.00065417                  0.00010339                  3.9081e-08                   0.99924                 4     
+    even_MAG-GUT8790.fa             0.0011215                  0.00013426                  7.3942e-07                   0.99874                 4     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__CAG-180_split_pruned.xlsx"
+
+Process completed 
+[?1l>
