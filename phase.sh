@@ -168,7 +168,7 @@ echo "${trunc_sample_file} ${elapsed0}" >> "${outdir}/pre_time.txt"
 
 echo "===== Checking for single-child taxon ====="
 child_num=`ls -l ${sample_path}|wc -l`
-child_num=${child_num}-1
+child_num=$((child_num-1)) 
 echo "INFO: child_num is: ${child_num}"
 
 
