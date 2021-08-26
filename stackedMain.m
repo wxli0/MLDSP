@@ -1,23 +1,14 @@
-function [] = stackedMain(dataType, dataSet, testSet)
+function [] = stackedMain(dataType, basePath, dataSet, testSet)
     %clear workspace, config
     close all;
     % clear all;
     clc ;
-    if nargin < 3
+    if nargin < 4
         testSet=''
     end
 
-    ver_gtdb = 'r202';
-
-    basePath = ""
-    if strcmp(dataType, 'GTDB')
-        basePath = strcat('/mnt/sda/MLDSP-samples-', ver_gtdb, "/");
-    elseif strcmp(dataType, 'HGR')
-        basePath = strcat("/mnt/sda/DeepMicrobes-data/labeled_genome-", ver_gtdb, "/");
-    end
-
-    dataSetPath = strcat(basePath, dataSet)
-    testSetPath = strcat(basePath, testSet)
+    dataSetPath = strcat(basePath, "/", dataSet)
+    testSetPath = strcat(basePath, "/", testSet)
     kVal = 7; 
     selectedFolder = dataSetPath;
 
@@ -94,7 +85,7 @@ function [] = stackedMain(dataType, dataSet, testSet)
         folds = totalSeq;
     end
     if (strcmp(testSet, ''))
-        [accuracy, avg_accuracy, clNames, cMat] = classificationCode(dataType, disMat, alabels, folds, totalSeq, AcNmb, clusterNames, dataSet, ver_gtdb);
+        [accuracy, avg_accuracy, clNames, cMat] = classificationCode(dataType, disMat, alabels, folds, totalSeq, AcNmb, clusterNames, dataSet);
         acc = [accuracy avg_accuracy];
         s.ClassifierModel=cellstr(clNames.');
         s.Accuracy=cell2mat(acc).';
@@ -107,7 +98,7 @@ function [] = stackedMain(dataType, dataSet, testSet)
     if (~strcmp(testSet,''))
         minSeqLen = 0
         maxSeqLen = 0
-        [mList3]=testingExternMisList(dataType, testSetPath,disMat,alabels,lg,clusterNames,kVal, maxClusSize, clusterStart, dataSet, minSeqLen,maxSeqLen, ver_gtdb);
+        [mList3]=testingExternMisList(dataType, testSetPath,disMat,alabels,lg,clusterNames,kVal, maxClusSize, clusterStart, dataSet, minSeqLen,maxSeqLen);
     end
 
 

@@ -1,4 +1,4 @@
-function [ accuracy, avg_acc, clNames, cMat ] = classificationCode(dataType, disMat,alabels, folds, totalSeq, AcNum, clusterNames, dataSet, ver_gtdb)
+function [ accuracy, avg_acc, clNames, cMat ] = classificationCode(dataType, disMat,alabels, folds, totalSeq, AcNum, clusterNames, dataSet)
     %10-fold cross validation
     %classification accuracy for 4 classifiers
     %linear-discriminant, linear svm, quadratic svm, fine knn,
@@ -62,7 +62,7 @@ function [ accuracy, avg_acc, clNames, cMat ] = classificationCode(dataType, dis
         score3Matrix = [score3, plabel3, alabels(testInd)]    
  
         T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
-        outputPath = strcat("outputs-", dataType, "-", ver_gtdb, "/train-", dataSet, ".xlsx");
+        outputPath = strcat("outputs-", dataType, "-", "/train-", dataSet, ".xlsx");
 
         writetable(T3, outputPath, 'WriteRowNames',true, 'Sheet', strcat('quadratic-svm-score', num2str(i)));  
 

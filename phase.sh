@@ -42,7 +42,9 @@ if [ -z "${data_type}" ] || [ -z "${trunc_sample_file}" ]; then
 fi
 
 sample_file=${trunc_sample_file}
-if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
+rej_dir="rejection-threshold-${data_type}"
+outdir="outputs-${data_type}"
+if [ ${data_type} == 'HGR-r202' ] || [ ${data_type} == 'GTDB-r202' ]; then
     # prepare variables for different tasks
     ver="r202"
     base_dir=""
@@ -50,15 +52,13 @@ if [ ${data_type} == 'HGR' ] || [ ${data_type} == 'GTDB' ]; then
     sample_path=""
     json_dir=""
     json_path=""
-    rej_dir="rejection-threshold-${data_type}-${ver}"
-    outdir="outputs-${data_type}-${ver}"
-
-    if [ ${data_type} == 'GTDB' ]; then
+    
+    if [ ${data_type} == 'GTDB-r202' ]; then
         base_path="/mnt/sda/MLDSP-samples-${ver}"
         json_dir="data/preprocess"
         json_path="non-clade-exclusion-${ver}/${trunc_sample_file}.json"
         test_dir="rumen_mags/${trunc_sample_file}"
-    elif [ ${data_type} == 'HGR' ]; then
+    elif [ ${data_type} == 'HGR-r202' ]; then
         base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
         sample_file="${sample_file}_split_pruned"
         test_dir="hgr_mags/${trunc_sample_file}"
@@ -77,7 +77,7 @@ echo "sample_path = ${sample_path}"
 
 echo "===== Preparing training dataset for GTDB or HGR======"
 start_time0="$(date -u +%s)"
-if [ ${data_type} == 'GTDB' ]; then
+if [ ${data_type} == 'GTDB-r202' ]; then
     if [ ! -d ${sample_path} ]; then
         python3 run_select_sample.py ${trunc_sample_file} $ver
         echo "INFO:done python3 run_select_sample.py ${trunc_sample_file} $ver"
@@ -179,10 +179,10 @@ echo "INFO: child_num is: ${child_num}"
 #     prog_output1="${outdir}/train-${sample_file}.xlsx"
 #     if [ ! -f ${prog_output1} ]; then
 #         output1="${outdir}/${sample_file}.txt"
-#         matlab -r "run addme;stackedMain('${data_type}', '${sample_file}');exit"|tee ${output1}
-#         echo "INFO:done stackedMain('${data_type}', '${sample_file}')"
+#         matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}');exit"|tee ${output1}
+#         echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}')"
 #     else
-#         echo "INFO:skip stackedMain('${data_type}', '${sample_file}')"
+#         echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}')"
 #     fi
 #     end_time1="$(date -u +%s)"
 #     elapsed1="$(($end_time1-$start_time1))"
@@ -195,10 +195,10 @@ start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${sample_file}.xlsx"
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}/${sample_file}_classify.txt"
-    matlab -r "run addme;stackedMain('${data_type}', '${sample_file}', '${test_dir}');exit"|tee ${output2}
-    echo "INFO:done stackedMain('${data_type}', '${sample_file}', '${test_dir}')"
+    matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir}');exit"|tee ${output2}
+    echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir}')"
 else
-    echo "INFO:skip stackedMain('${data_type}', '${sample_file}', '${test_dir}')"
+    echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir}')"
 fi
 end_time2="$(date -u +%s)"
 elapsed2="$(($end_time2-$start_time2))"
