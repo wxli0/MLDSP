@@ -36,42 +36,37 @@ while getopts ":d:b:s:t" o; do
 done
 shift $((OPTIND-1))
 
-if [ -z "${data_type}" ] || [ -z "${trunc_sample_file}" ]; then
-    echo "Invalid -data_type or -sample_file"
+if [ -z "${data_type}" ] || [ -z "${base_path}" ] || [ -z "${trunc_sample_file}" ] || [ -z "${test_dir}" ]; then
+    echo "Missing arguments"
     usage
 fi
 
 sample_file=${trunc_sample_file}
 rej_dir="rejection-threshold-${data_type}"
 outdir="outputs-${data_type}"
+test_dir_sample="${test_dir}/${trunc_sample_file}"
+ver="r202"
 if [ ${data_type} == 'HGR-r202' ] || [ ${data_type} == 'GTDB-r202' ]; then
     # prepare variables for different tasks
-    ver="r202"
-    base_dir=""
-    outdir=""
     sample_path=""
     json_dir=""
     json_path=""
-    
     if [ ${data_type} == 'GTDB-r202' ]; then
-        base_path="/mnt/sda/MLDSP-samples-${ver}"
         json_dir="data/preprocess"
         json_path="non-clade-exclusion-${ver}/${trunc_sample_file}.json"
-        test_dir="rumen_mags/${trunc_sample_file}"
     elif [ ${data_type} == 'HGR-r202' ]; then
-        base_path="/mnt/sda/DeepMicrobes-data/labeled_genome-${ver}"
         sample_file="${sample_file}_split_pruned"
-        test_dir="hgr_mags/${trunc_sample_file}"
     fi
-    sample_path="${base_path}/${sample_file}"
 fi
+sample_path="${base_path}/${sample_file}"
+
 
 echo "===== Printing parameter information ======"
 echo "data_type = ${data_type}"
 echo "base_path = ${base_path}"
 echo "trunc_sample_file = ${trunc_sample_file}"
 echo "sample_file = ${sample_file}"
-echo "test_dir = ${test_dir}"
+echo "test_dir_sample = ${test_dir_sample}"
 echo "sample_path = ${sample_path}"
 
 
@@ -195,10 +190,10 @@ start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${sample_file}.xlsx"
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}/${sample_file}_classify.txt"
-    matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir}');exit"|tee ${output2}
-    echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir}')"
+    matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}');exit"|tee ${output2}
+    echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}')"
 else
-    echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir}')"
+    echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}')"
 fi
 end_time2="$(date -u +%s)"
 elapsed2="$(($end_time2-$start_time2))"
