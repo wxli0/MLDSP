@@ -3,9 +3,6 @@
 : '
 Script for the entire process of classifying non single-child taxas
 
-parameters:
-$1: data_type. Data type of either HGR or GTDB
-$2: sample_file. Taxon to classify
 '
 
 usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>] 
@@ -14,7 +11,7 @@ usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>]
 [-t <Mandatory for data_type GTDB or HGR. Directory name of testing datasets>]" 1>&2; exit 1; }
 
 
-while getopts ":d:b:s:t" o; do
+while getopts ":d:b:s:t:" o; do
     case "${o}" in
         d)
             data_type=${OPTARG}
