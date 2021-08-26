@@ -10,8 +10,8 @@ $2: sample_file. Taxon to classify
 
 usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>] 
 [-s <Mandatory. File name of the training and testing datasets>]
-[-b <Optional for data_type GTDB or HGR. Path to the directory that training datasets are in>]
-[-t <Optional for data_type GTDB or HGR. Directory name of testing datasets>]" 1>&2; exit 1; }
+[-b <Mandatory for data_type GTDB or HGR. Path to the directory that training datasets are in>]
+[-t <Mandatory for data_type GTDB or HGR. Directory name of testing datasets>]" 1>&2; exit 1; }
 
 
 while getopts ":d:b:s:t" o; do
@@ -36,6 +36,11 @@ while getopts ":d:b:s:t" o; do
 done
 shift $((OPTIND-1))
 
+echo "===== Printing argument information ======"
+echo "data_type = ${data_type}"
+echo "base_path = ${base_path}"
+echo "trunc_sample_file = ${trunc_sample_file}"
+echo "test_dir = ${test_dir}"
 if [ -z "${data_type}" ] || [ -z "${base_path}" ] || [ -z "${trunc_sample_file}" ] || [ -z "${test_dir}" ]; then
     echo "Missing arguments"
     usage
