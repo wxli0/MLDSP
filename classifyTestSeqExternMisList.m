@@ -106,7 +106,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
 
     T3 = array2table(score3Matrix,'VariableNames',header, 'RowNames', testFnm)
 
-    outputPath = strcat("outputs-", dataType, "-", "/test-", dataSet, ".xlsx")
+    outputPath = strcat("outputs-", dataType, "/test-", dataSet, ".xlsx")
     writetable(T3, outputPath, 'WriteRowNames',true, 'Sheet', 'quadratic-svm-score');  
 
 end
