@@ -7,10 +7,11 @@ Script for the entire process of classifying non single-child taxas
 
 usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>] 
 [-s <Mandatory. File name of the training and testing datasets>]
-[-b <Mandatory for data_type GTDB or HGR. Path to the directory that training datasets are in>]
-[-t <Mandatory for data_type GTDB or HGR. Directory name of testing datasets>]" 1>&2; exit 1; }
+[-b <Mandatory. Path to the directory that training datasets are in>]
+[-t <Mandatory. Directory name of testing datasets>]
+[-p <Optional. Exists if the partial classifications are enabled>]" 1>&2; exit 1; }
 
-
+partial=0
 while getopts ":d:b:s:t:" o; do
     case "${o}" in
         d)
@@ -25,6 +26,9 @@ while getopts ":d:b:s:t:" o; do
         t)
             test_dir=${OPTARG}
             ;;
+        a)
+            partial=1
+            ;;
         *)
             echo "Invalid arguments"
             usage
@@ -38,6 +42,8 @@ echo "data_type = ${data_type}"
 echo "base_path = ${base_path}"
 echo "trunc_sample_file = ${trunc_sample_file}"
 echo "test_dir = ${test_dir}"
+echo "partial = ${partial}"
+
 if [ -z "${data_type}" ] || [ -z "${base_path}" ] || [ -z "${trunc_sample_file}" ] || [ -z "${test_dir}" ]; then
     echo "Missing arguments"
     usage
@@ -170,21 +176,21 @@ echo "INFO: child_num is: ${child_num}"
 
 
 
-# echo "===== Training models ====="
-# if [ ${child_num} != 1 ]; then
-#     start_time1="$(date -u +%s)"
-#     prog_output1="${outdir}/train-${sample_file}.xlsx"
-#     if [ ! -f ${prog_output1} ]; then
-#         output1="${outdir}/${sample_file}.txt"
-#         matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}');exit"|tee ${output1}
-#         echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}')"
-#     else
-#         echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}')"
-#     fi
-#     end_time1="$(date -u +%s)"
-#     elapsed1="$(($end_time1-$start_time1))"
-#     echo "${trunc_sample_file} ${elapsed1}" >> "${outdir}/train_time.txt"
-# fi
+if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
+    echo "===== Training models ====="
+    start_time1="$(date -u +%s)"
+    prog_output1="${outdir}/train-${sample_file}.xlsx"
+    if [ ! -f ${prog_output1} ]; then
+        output1="${outdir}/${sample_file}.txt"
+        matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}');exit"|tee ${output1}
+        echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}')"
+    else
+        echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}')"
+    fi
+    end_time1="$(date -u +%s)"
+    elapsed1="$(($end_time1-$start_time1))"
+    echo "${trunc_sample_file} ${elapsed1}" >> "${outdir}/train_time.txt"
+fi
 
 
 echo "===== Classifying test genomes ====="
@@ -206,32 +212,30 @@ BK_dir="/home/w328li/MT-MAG/"
 cd ${BK_dir}
 echo "INFO: done cd ${BK_dir}"
 
-
-# echo "===== Picking rejection thresholds ====="
-# start_time3="$(date -u +%s)"
-
-# if [ ${child_num} != 1 ]; then
-#     src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
-#     dest1="${outdir}/${trunc_sample_file}_train.xlsx"
-#     cp ${src1} ${dest1}
-#     echo "INFO:done cp ${src1} ${dest1}"
-#     python3 preprocess_train_to_pr.py ${dest1}
-#     echo "INFO:done preprocess_train_to_pr.py ${dest1}"
-# fi
+start_time3="$(date -u +%s)"
+if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
+    echo "===== Picking rejection thresholds ====="
+    src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
+    dest1="${outdir}/${trunc_sample_file}_train.xlsx"
+    cp ${src1} ${dest1}
+    echo "INFO:done cp ${src1} ${dest1}"
+    python3 preprocess_train_to_pr.py ${dest1}
+    echo "INFO:done preprocess_train_to_pr.py ${dest1}"
+fi
 
 src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
 dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
-# if [ ${child_num} != 1 ]; then
-#     python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
-#     echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
-# fi
+if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
+    python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
+    echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
+fi
 
-# end_time3="$(date -u +%s)"
-# elapsed3="$(($end_time3-$start_time3))"
-# echo "${trunc_sample_file} ${elapsed3}" >> "${outdir}/rej_time.txt"
+end_time3="$(date -u +%s)"
+elapsed3="$(($end_time3-$start_time3))"
+echo "${trunc_sample_file} ${elapsed3}" >> "${outdir}/rej_time.txt"
 
 
 echo "===== Postprocessing test datasets ====="
