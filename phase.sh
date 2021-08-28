@@ -26,7 +26,7 @@ while getopts ":d:b:s:t:p:" o; do
         t)
             test_dir=${OPTARG}
             ;;
-        a)
+        p)
             partial=1
             ;;
         *)
