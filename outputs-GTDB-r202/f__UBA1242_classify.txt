@@ -1,0 +1,971 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/f__UBA1242"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/f__UBA1242"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Generating CGRs.... 
+totalSeq is: 580
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/f__UBA1242
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 2
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 4
+
+    {'1-g__HGM11367'}    {'g__HGM11372'}    {'g__RUG666'}    {'g__UBA11490'}
+
+  Columns 5 through 8
+
+    {'g__UBA11517'}    {'g__UBA4626'}    {'g__UBA4647'}    {'g__UBA5489'}
+
+  Columns 9 through 12
+
+    {'g__UBA5893'}    {'g__UBA6345'}    {'g__UBA7584'}    {'g__UBA7862'}
+
+  Columns 13 through 16
+
+    {'g__UBA7867'}    {'g__UBA7868'}    {'g__UBA9845'}    {'g__UMGS1470'}
+
+  Columns 17 through 20
+
+    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}    {'g__UMGS687'}
+
+  Columns 21 through 24
+
+    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 4
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'g__RUG666'}    {'g__UBA11490'}
+
+  Columns 5 through 8
+
+    {'g__UBA11517'}    {'g__UBA4626'}    {'g__UBA4647'}    {'g__UBA5489'}
+
+  Columns 9 through 12
+
+    {'g__UBA5893'}    {'g__UBA6345'}    {'g__UBA7584'}    {'g__UBA7862'}
+
+  Columns 13 through 16
+
+    {'g__UBA7867'}    {'g__UBA7868'}    {'g__UBA9845'}    {'g__UMGS1470'}
+
+  Columns 17 through 20
+
+    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}    {'g__UMGS687'}
+
+  Columns 21 through 24
+
+    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 7
+
+    {'g__UBA11490'}    {'g__UBA11517'}    {'g__UBA4626'}    {'g__UBA4647'}
+
+  Columns 8 through 11
+
+    {'g__UBA5489'}    {'g__UBA5893'}    {'g__UBA6345'}    {'g__UBA7584'}
+
+  Columns 12 through 15
+
+    {'g__UBA7862'}    {'g__UBA7867'}    {'g__UBA7868'}    {'g__UBA9845'}
+
+  Columns 16 through 19
+
+    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}
+
+  Columns 20 through 23
+
+    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}
+
+  Column 24
+
+    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 7
+
+    {'4-g__UBA11490'}    {'g__UBA11517'}    {'g__UBA4626'}    {'g__UBA4647'}
+
+  Columns 8 through 11
+
+    {'g__UBA5489'}    {'g__UBA5893'}    {'g__UBA6345'}    {'g__UBA7584'}
+
+  Columns 12 through 15
+
+    {'g__UBA7862'}    {'g__UBA7867'}    {'g__UBA7868'}    {'g__UBA9845'}
+
+  Columns 16 through 19
+
+    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}
+
+  Columns 20 through 23
+
+    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}
+
+  Column 24
+
+    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 7
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'g__UBA4626'}    {'g__UBA4647'}
+
+  Columns 8 through 11
+
+    {'g__UBA5489'}    {'g__UBA5893'}    {'g__UBA6345'}    {'g__UBA7584'}
+
+  Columns 12 through 15
+
+    {'g__UBA7862'}    {'g__UBA7867'}    {'g__UBA7868'}    {'g__UBA9845'}
+
+  Columns 16 through 19
+
+    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}
+
+  Columns 20 through 23
+
+    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}
+
+  Column 24
+
+    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 10
+
+    {'g__UBA4647'}    {'g__UBA5489'}    {'g__UBA5893'}    {'g__UBA6345'}
+
+  Columns 11 through 14
+
+    {'g__UBA7584'}    {'g__UBA7862'}    {'g__UBA7867'}    {'g__UBA7868'}
+
+  Columns 15 through 18
+
+    {'g__UBA9845'}    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 10
+
+    {'7-g__UBA4647'}    {'g__UBA5489'}    {'g__UBA5893'}    {'g__UBA6345'}
+
+  Columns 11 through 14
+
+    {'g__UBA7584'}    {'g__UBA7862'}    {'g__UBA7867'}    {'g__UBA7868'}
+
+  Columns 15 through 18
+
+    {'g__UBA9845'}    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 10
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'g__UBA5893'}    {'g__UBA6345'}
+
+  Columns 11 through 14
+
+    {'g__UBA7584'}    {'g__UBA7862'}    {'g__UBA7867'}    {'g__UBA7868'}
+
+  Columns 15 through 18
+
+    {'g__UBA9845'}    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 10
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}    {'g__UBA6345'}
+
+  Columns 11 through 14
+
+    {'g__UBA7584'}    {'g__UBA7862'}    {'g__UBA7867'}    {'g__UBA7868'}
+
+  Columns 15 through 18
+
+    {'g__UBA9845'}    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 13
+
+    {'10-g__UBA6345'}    {'g__UBA7584'}    {'g__UBA7862'}    {'g__UBA7867'}
+
+  Columns 14 through 17
+
+    {'g__UBA7868'}    {'g__UBA9845'}    {'g__UMGS1470'}    {'g__UMGS1908'}
+
+  Columns 18 through 21
+
+    {'g__UMGS2069'}    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}
+
+  Columns 22 through 24
+
+    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 13
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'g__UBA7862'}    {'g__UBA7867'}
+
+  Columns 14 through 17
+
+    {'g__UBA7868'}    {'g__UBA9845'}    {'g__UMGS1470'}    {'g__UMGS1908'}
+
+  Columns 18 through 21
+
+    {'g__UMGS2069'}    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}
+
+  Columns 22 through 24
+
+    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 16
+
+    {'g__UBA7867'}    {'g__UBA7868'}    {'g__UBA9845'}    {'g__UMGS1470'}
+
+  Columns 17 through 20
+
+    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}    {'g__UMGS687'}
+
+  Columns 21 through 24
+
+    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 16
+
+    {'13-g__UBA7867'}    {'g__UBA7868'}    {'g__UBA9845'}    {'g__UMGS1470'}
+
+  Columns 17 through 20
+
+    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}    {'g__UMGS687'}
+
+  Columns 21 through 24
+
+    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 16
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'g__UBA9845'}    {'g__UMGS1470'}
+
+  Columns 17 through 20
+
+    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}    {'g__UMGS687'}
+
+  Columns 21 through 24
+
+    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 19
+
+    {'g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}
+
+  Columns 20 through 23
+
+    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}
+
+  Column 24
+
+    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 19
+
+    {'16-g__UMGS1470'}    {'g__UMGS1908'}    {'g__UMGS2069'}    {'g__UMGS2070'}
+
+  Columns 20 through 23
+
+    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}    {'g__WRAD01'}
+
+  Column 24
+
+    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'19-g__UMGS2070'}    {'g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 22
+
+    {'19-g__UMGS2070'}    {'20-g__UMGS687'}    {'g__WQSK01'}    {'g__WQZR01'}
+
+  Columns 23 through 24
+
+    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 21
+
+    {'19-g__UMGS2070'}    {'20-g__UMGS687'}    {'21-g__WQSK01'}
+
+  Columns 22 through 24
+
+    {'g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 21
+
+    {'19-g__UMGS2070'}    {'20-g__UMGS687'}    {'21-g__WQSK01'}
+
+  Columns 22 through 24
+
+    {'22-g__WQZR01'}    {'g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 21
+
+    {'19-g__UMGS2070'}    {'20-g__UMGS687'}    {'21-g__WQSK01'}
+
+  Columns 22 through 24
+
+    {'22-g__WQZR01'}    {'23-g__WRAD01'}    {'g__WRCD01'}
+
+
+clusterNames =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 21
+
+    {'19-g__UMGS2070'}    {'20-g__UMGS687'}    {'21-g__WQSK01'}
+
+  Columns 22 through 24
+
+    {'22-g__WQZR01'}    {'23-g__WRAD01'}    {'24-g__WRCD01'}
+
+  Columns 1 through 4
+
+    '1-g__HGM11367'    '2-g__HGM11372'    '3-g__RUG666'    '4-g__UBA11490'
+
+  Columns 5 through 8
+
+    '5-g__UBA11517'    '6-g__UBA4626'    '7-g__UBA4647'    '8-g__UBA5489'
+
+  Columns 9 through 12
+
+    '9-g__UBA5893'    '10-g__UBA6345'    '11-g__UBA7584'    '12-g__UBA7862'
+
+  Columns 13 through 16
+
+    '13-g__UBA7867'    '14-g__UBA7868'    '15-g__UBA9845'    '16-g__UMGS1470'
+
+  Columns 17 through 20
+
+    '17-g__UMGS1908'    '18-g__UMGS2069'    '19-g__UMGS2070'    '20-g__UMGS687'
+
+  Columns 21 through 24
+
+    '21-g__WQSK01'    '22-g__WQZR01'    '23-g__WRAD01'    '24-g__WRCD01'
+
+
+header =
+
+  1x25 cell array
+
+  Columns 1 through 3
+
+    {'1-g__HGM11367'}    {'2-g__HGM11372'}    {'3-g__RUG666'}
+
+  Columns 4 through 6
+
+    {'4-g__UBA11490'}    {'5-g__UBA11517'}    {'6-g__UBA4626'}
+
+  Columns 7 through 9
+
+    {'7-g__UBA4647'}    {'8-g__UBA5489'}    {'9-g__UBA5893'}
+
+  Columns 10 through 12
+
+    {'10-g__UBA6345'}    {'11-g__UBA7584'}    {'12-g__UBA7862'}
+
+  Columns 13 through 15
+
+    {'13-g__UBA7867'}    {'14-g__UBA7868'}    {'15-g__UBA9845'}
+
+  Columns 16 through 18
+
+    {'16-g__UMGS1470'}    {'17-g__UMGS1908'}    {'18-g__UMGS2069'}
+
+  Columns 19 through 21
+
+    {'19-g__UMGS2070'}    {'20-g__UMGS687'}    {'21-g__WQSK01'}
+
+  Columns 22 through 25
+
+    {'22-g__WQZR01'}    {'23-g__WRAD01'}    {'24-g__WRCD01'}    {'prediction'}
+
+
+T3 =
+
+  2x25 table
+
+                    1-g__HGM11367    2-g__HGM11372    3-g__RUG666    4-g__UBA11490    5-g__UBA11517    6-g__UBA4626    7-g__UBA4647    8-g__UBA5489    9-g__UBA5893    10-g__UBA6345    11-g__UBA7584    12-g__UBA7862    13-g__UBA7867    14-g__UBA7868    15-g__UBA9845    16-g__UMGS1470    17-g__UMGS1908    18-g__UMGS2069    19-g__UMGS2070    20-g__UMGS687    21-g__WQSK01    22-g__WQZR01    23-g__WRAD01    24-g__WRCD01    prediction
+                    _____________    _____________    ___________    _____________    _____________    ____________    ____________    ____________    ____________    _____________    _____________    _____________    _____________    _____________    _____________    ______________    ______________    ______________    ______________    _____________    ____________    ____________    ____________    ____________    __________
+
+    RUG501.fasta     1.1839e-12       1.1839e-12      1.1839e-12        0.32304        1.1839e-12       1.1839e-12      1.1839e-12      1.1839e-12      1.1839e-12      1.1839e-12       1.1839e-12       1.1839e-12         0.32304        1.1839e-12       1.1839e-12        1.1839e-12        1.1839e-12        1.1839e-12        1.1839e-12       1.1839e-12       1.1839e-12      1.1839e-12       0.35392        1.1839e-12         23    
+    RUG666.fasta              0                0               1              0                 0                0               0               0               0               0                0                0               0                 0                0                 0                 0                 0                 0                0                0               0             0                 0          3    
+
+
+outputPath = 
+
+    "outputs-GTDB-r202/test-f__UBA1242.xlsx"
+
+Process completed 
+[?1l>
