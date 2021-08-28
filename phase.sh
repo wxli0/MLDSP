@@ -125,7 +125,7 @@ if [ ${data_type} == 'GTDB-r202' ]; then
         echo "INFO:skip python3 run_select_sample.py $ $ver"
     fi
 
-elif [ ${data_type} == 'HGR' ]; then
+elif [ ${data_type} == 'HGR-r202' ]; then
 
     if [ ! -d ${sample_path} ]; then
         python3 ~/DeepMicrobes/scripts/split_fasta_5000.py ${base_path}/${trunc_sample_file}
