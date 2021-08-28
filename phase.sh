@@ -12,7 +12,7 @@ usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>]
 [-p <Optional. Exists if the partial classifications are enabled>]" 1>&2; exit 1; }
 
 partial=0
-while getopts ":d:b:s:t:p:" o; do
+while getopts ":d:b:s:t:p" o; do
     case "${o}" in
         d)
             data_type=${OPTARG}
