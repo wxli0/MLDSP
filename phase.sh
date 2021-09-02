@@ -114,7 +114,9 @@ if [ ${data_type} == 'GTDB-r202' ]; then
         [[ ${trunc_sample_file} == 'c__Clostridia' ]] || [[ ${trunc_sample_file} == 'o__Actinomycetales' ]] || \
         [[ ${trunc_sample_file} == 'o__Bacteroidales' ]] || [[ ${trunc_sample_file} == 'o__Lachnospirales' ]] || \
         [[ ${trunc_sample_file} == 'c__Bacilli' ]] || [[ ${trunc_sample_file} == 'p__Proteobacteria' ]] || \
-        [[ ${trunc_sample_file} == 'c__Alphaproteobacteria' ]]; then
+        [[ ${trunc_sample_file} == 'c__Alphaproteobacteria' ]] || [ ${trunc_sample_file} == 'c__Gammaproteobacteria' ] || \
+        [[ ${trunc_sample_file} == 'o__Oscillospirales' ]] || [[ ${trunc_sample_file} == 'o__Rhizobiales' ]] \
+        [[ ${trunc_sample_file} == 'o__Enterobacterales' ]] || [[ ${trunc_sample_file} == 'o__Burkholderiales' ]]; then
             python3 samples/prune_large_clusters.py ${trunc_sample_file} $ver "GTDB"
             echo "python3 samples/prune_large_clusters.py ${trunc_sample_file} $ver GTDB"
         else
