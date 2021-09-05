@@ -182,7 +182,7 @@ if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
     echo "===== Training models ====="
     start_time1="$(date -u +%s)"
     prog_output1="${outdir}/train-${sample_file}.xlsx"
-    echo "prog_outputs1 is: ${prog_outputs1}" 
+    echo "prog_output1 is: ${prog_output1}" 
     if [ ! -f ${prog_output1} ]; then
         output1="${outdir}/${sample_file}.txt"
         matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}');exit"|tee ${output1}
@@ -199,6 +199,7 @@ fi
 echo "===== Classifying test genomes ====="
 start_time2="$(date -u +%s)"
 prog_output2="${outdir}/test-${sample_file}.xlsx"
+echo "prog_output2 is: ${prog_output2}" 
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}/${sample_file}_classify.txt"
     matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}');exit"|tee ${output2}
