@@ -182,6 +182,7 @@ if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
     echo "===== Training models ====="
     start_time1="$(date -u +%s)"
     prog_output1="${outdir}/train-${sample_file}.xlsx"
+    echo "prog_outputs1 is: ${prog_outputs1}" 
     if [ ! -f ${prog_output1} ]; then
         output1="${outdir}/${sample_file}.txt"
         matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}');exit"|tee ${output1}
