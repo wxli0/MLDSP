@@ -10,11 +10,6 @@ To get started, type doc.
 For product information, visit www.mathworks.com.
  
 [H[J
-basePath = 
-
-    ""
-
-
 dataSetPath = 
 
     "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/p__Firmicutes_C_split_pruned"
@@ -47,7 +42,7 @@ dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/p__Firmicutes
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
 Starting parallel pool (parpool) using the 'local' profile ...
-numTestSeq is: 302
+numTestSeq is: 451
 
 clusterNames =
 
@@ -67,23 +62,31 @@ header =
 
 T3 =
 
-  302x2 table
+  451x2 table
 
                             1-c__Negativicutes    prediction
                             __________________    __________
 
     even_MAG-GUT1018.fa              76758            1     
+    even_MAG-GUT10270.fa             67583            1     
     even_MAG-GUT10346.fa             43549            1     
+    even_MAG-GUT10398.fa             76992            1     
     even_MAG-GUT1049.fa              87289            1     
     even_MAG-GUT1050.fa              80575            1     
+    even_MAG-GUT10593.fa             92806            1     
+    even_MAG-GUT10625.fa             45444            1     
     even_MAG-GUT11020.fa             81429            1     
     even_MAG-GUT11036.fa             19879            1     
+    even_MAG-GUT11210.fa             93087            1     
+    even_MAG-GUT11332.fa             74962            1     
+    even_MAG-GUT11435.fa             44149            1     
     even_MAG-GUT1198.fa              84102            1     
     even_MAG-GUT1206.fa              75108            1     
     even_MAG-GUT1212.fa              75108            1     
     even_MAG-GUT1217.fa              48047            1     
     even_MAG-GUT1227.fa              75108            1     
     even_MAG-GUT1232.fa              79776            1     
+    even_MAG-GUT13045.fa             62838            1     
     even_MAG-GUT13227.fa             41607            1     
     even_MAG-GUT13322.fa             86962            1     
     even_MAG-GUT13342.fa             49328            1     
@@ -95,20 +98,25 @@ T3 =
     even_MAG-GUT14159.fa             85712            1     
     even_MAG-GUT14532.fa             31020            1     
     even_MAG-GUT1470.fa              92087            1     
+    even_MAG-GUT14741.fa             62838            1     
     even_MAG-GUT15061.fa             42638            1     
     even_MAG-GUT15089.fa             41462            1     
     even_MAG-GUT15427.fa             41780            1     
     even_MAG-GUT1556.fa              80363            1     
     even_MAG-GUT1559.fa              82047            1     
     even_MAG-GUT15625.fa             11328            1     
+    even_MAG-GUT15742.fa             50512            1     
     even_MAG-GUT15797.fa             80918            1     
     even_MAG-GUT1584.fa              56671            1     
     even_MAG-GUT16129.fa             36225            1     
     even_MAG-GUT16712.fa             62285            1     
+    even_MAG-GUT1677.fa              62327            1     
     even_MAG-GUT17170.fa             87849            1     
     even_MAG-GUT17254.fa             44975            1     
+    even_MAG-GUT17255.fa             83801            1     
     even_MAG-GUT17401.fa             39012            1     
     even_MAG-GUT17473.fa             76339            1     
+    even_MAG-GUT17515.fa             73052            1     
     even_MAG-GUT17664.fa             74924            1     
     even_MAG-GUT17671.fa             98832            1     
     even_MAG-GUT18195.fa             18413            1     
@@ -124,25 +132,36 @@ T3 =
     even_MAG-GUT19429.fa             43736            1     
     even_MAG-GUT1954.fa              73753            1     
     even_MAG-GUT19990.fa             48864            1     
+    even_MAG-GUT20287.fa             76536            1     
     even_MAG-GUT20294.fa             41815            1     
     even_MAG-GUT2031.fa              84700            1     
     even_MAG-GUT20416.fa             40920            1     
     even_MAG-GUT2053.fa              67905            1     
+    even_MAG-GUT20540.fa             61640            1     
+    even_MAG-GUT20603.fa             67212            1     
     even_MAG-GUT2061.fa              63203            1     
     even_MAG-GUT20639.fa             27747            1     
     even_MAG-GUT2081.fa              74444            1     
     even_MAG-GUT2086.fa              80531            1     
     even_MAG-GUT21102.fa             51364            1     
     even_MAG-GUT21682.fa             71608            1     
+    even_MAG-GUT2203.fa              74611            1     
     even_MAG-GUT23387.fa             29166            1     
     even_MAG-GUT23746.fa             88367            1     
     even_MAG-GUT23754.fa             49152            1     
+    even_MAG-GUT24052.fa             70218            1     
     even_MAG-GUT24126.fa             46582            1     
+    even_MAG-GUT25048.fa             61207            1     
     even_MAG-GUT25075.fa             16625            1     
     even_MAG-GUT25223.fa             29658            1     
+    even_MAG-GUT25340.fa             65674            1     
     even_MAG-GUT25590.fa             59157            1     
     even_MAG-GUT25650.fa             29046            1     
     even_MAG-GUT2865.fa              22403            1     
+    even_MAG-GUT29189.fa             57640            1     
+    even_MAG-GUT29214.fa             60233            1     
+    even_MAG-GUT29221.fa             57474            1     
+    even_MAG-GUT29476.fa             79737            1     
     even_MAG-GUT29587.fa             35826            1     
     even_MAG-GUT29781.fa             61433            1     
     even_MAG-GUT29856.fa             50173            1     
@@ -155,9 +174,11 @@ T3 =
     even_MAG-GUT31302.fa             36090            1     
     even_MAG-GUT31785.fa             43350            1     
     even_MAG-GUT32106.fa             61091            1     
+    even_MAG-GUT32691.fa             54967            1     
     even_MAG-GUT33511.fa             42059            1     
     even_MAG-GUT33530.fa             38220            1     
     even_MAG-GUT33604.fa             47378            1     
+    even_MAG-GUT33657.fa             47497            1     
     even_MAG-GUT3377.fa              66779            1     
     even_MAG-GUT34206.fa             37672            1     
     even_MAG-GUT34421.fa             37624            1     
@@ -175,16 +196,21 @@ T3 =
     even_MAG-GUT37376.fa             45904            1     
     even_MAG-GUT37445.fa             84227            1     
     even_MAG-GUT37689.fa             61708            1     
+    even_MAG-GUT37976.fa             77848            1     
     even_MAG-GUT38016.fa             14703            1     
     even_MAG-GUT38551.fa             35872            1     
     even_MAG-GUT38702.fa             49851            1     
     even_MAG-GUT3880.fa              46231            1     
     even_MAG-GUT42358.fa             44624            1     
+    even_MAG-GUT43152.fa             80936            1     
     even_MAG-GUT43155.fa             74364            1     
     even_MAG-GUT43216.fa             90662            1     
+    even_MAG-GUT43233.fa             61061            1     
     even_MAG-GUT43248.fa             91371            1     
+    even_MAG-GUT43329.fa             85782            1     
     even_MAG-GUT43570.fa             60747            1     
     even_MAG-GUT43698.fa             74973            1     
+    even_MAG-GUT43835.fa             78323            1     
     even_MAG-GUT44000.fa        1.0045e+05            1     
     even_MAG-GUT44111.fa             78926            1     
     even_MAG-GUT44662.fa             73143            1     
@@ -195,6 +221,7 @@ T3 =
     even_MAG-GUT45684.fa             98854            1     
     even_MAG-GUT45719.fa             76019            1     
     even_MAG-GUT45776.fa             97756            1     
+    even_MAG-GUT45903.fa             85853            1     
     even_MAG-GUT46165.fa             67304            1     
     even_MAG-GUT46247.fa             56244            1     
     even_MAG-GUT46435.fa             82595            1     
@@ -207,6 +234,7 @@ T3 =
     even_MAG-GUT47622.fa             93660            1     
     even_MAG-GUT47676.fa             96150            1     
     even_MAG-GUT47840.fa             51940            1     
+    even_MAG-GUT47875.fa             78471            1     
     even_MAG-GUT47922.fa             96355            1     
     even_MAG-GUT48190.fa             80573            1     
     even_MAG-GUT48247.fa             97503            1     
@@ -225,6 +253,7 @@ T3 =
     even_MAG-GUT48902.fa             50715            1     
     even_MAG-GUT48923.fa             86753            1     
     even_MAG-GUT48943.fa             84015            1     
+    even_MAG-GUT48949.fa             84707            1     
     even_MAG-GUT48957.fa             92686            1     
     even_MAG-GUT48959.fa             67566            1     
     even_MAG-GUT48964.fa             80900            1     
@@ -260,23 +289,65 @@ T3 =
     even_MAG-GUT51748.fa             31361            1     
     even_MAG-GUT51766.fa             32778            1     
     even_MAG-GUT51926.fa             98044            1     
+    even_MAG-GUT51928.fa             83135            1     
     even_MAG-GUT5199.fa              83523            1     
+    even_MAG-GUT5341.fa              55340            1     
+    even_MAG-GUT54583.fa             82042            1     
     even_MAG-GUT55383.fa             30558            1     
+    even_MAG-GUT56559.fa             69778            1     
     even_MAG-GUT56570.fa             61380            1     
+    even_MAG-GUT56604.fa             56548            1     
     even_MAG-GUT5676.fa              57456            1     
     even_MAG-GUT5687.fa              85445            1     
+    even_MAG-GUT57066.fa             67495            1     
     even_MAG-GUT57069.fa             74491            1     
+    even_MAG-GUT57190.fa             53299            1     
+    even_MAG-GUT57346.fa             56548            1     
+    even_MAG-GUT57398.fa             60646            1     
+    even_MAG-GUT57498.fa             64681            1     
+    even_MAG-GUT57542.fa             73647            1     
+    even_MAG-GUT57592.fa             62811            1     
     even_MAG-GUT57726.fa             17912            1     
     even_MAG-GUT57765.fa             37767            1     
+    even_MAG-GUT57771.fa             59250            1     
+    even_MAG-GUT57988.fa             68585            1     
+    even_MAG-GUT58133.fa             78567            1     
+    even_MAG-GUT58310.fa             69735            1     
+    even_MAG-GUT58672.fa             87316            1     
+    even_MAG-GUT59502.fa             62937            1     
+    even_MAG-GUT59576.fa             64523            1     
+    even_MAG-GUT5959.fa              87455            1     
     even_MAG-GUT59593.fa             48205            1     
+    even_MAG-GUT59626.fa             69778            1     
+    even_MAG-GUT60077.fa             55914            1     
+    even_MAG-GUT60123.fa             73426            1     
+    even_MAG-GUT60157.fa             57505            1     
+    even_MAG-GUT60320.fa             84562            1     
+    even_MAG-GUT60370.fa             71079            1     
+    even_MAG-GUT60466.fa             93566            1     
+    even_MAG-GUT60605.fa             78557            1     
     even_MAG-GUT60756.fa             55443            1     
+    even_MAG-GUT60882.fa             83985            1     
+    even_MAG-GUT60999.fa             73395            1     
+    even_MAG-GUT61376.fa             79851            1     
+    even_MAG-GUT61623.fa             55415            1     
     even_MAG-GUT61634.fa             83279            1     
+    even_MAG-GUT61658.fa             52786            1     
     even_MAG-GUT61708.fa             36092            1     
     even_MAG-GUT61749.fa             37247            1     
+    even_MAG-GUT61937.fa             75161            1     
+    even_MAG-GUT62054.fa             77562            1     
+    even_MAG-GUT62117.fa             66483            1     
     even_MAG-GUT62119.fa             49820            1     
     even_MAG-GUT62393.fa             37283            1     
+    even_MAG-GUT62444.fa             56706            1     
+    even_MAG-GUT62509.fa             74488            1     
+    even_MAG-GUT62666.fa             80957            1     
     even_MAG-GUT64345.fa             76808            1     
     even_MAG-GUT64513.fa             76808            1     
+    even_MAG-GUT66378.fa             37154            1     
+    even_MAG-GUT66382.fa             47927            1     
+    even_MAG-GUT6679.fa              58020            1     
     even_MAG-GUT66953.fa             64537            1     
     even_MAG-GUT67253.fa             73039            1     
     even_MAG-GUT67256.fa             92828            1     
@@ -298,6 +369,9 @@ T3 =
     even_MAG-GUT69417.fa             70308            1     
     even_MAG-GUT69483.fa             78392            1     
     even_MAG-GUT69551.fa             91158            1     
+    even_MAG-GUT69771.fa             39419            1     
+    even_MAG-GUT7031.fa              42763            1     
+    even_MAG-GUT7040.fa              38391            1     
     even_MAG-GUT7088.fa         1.0197e+05            1     
     even_MAG-GUT7095.fa              89891            1     
     even_MAG-GUT7099.fa              81811            1     
@@ -310,51 +384,116 @@ T3 =
     even_MAG-GUT7166.fa              77796            1     
     even_MAG-GUT7197.fa              93061            1     
     even_MAG-GUT7210.fa              76281            1     
+    even_MAG-GUT72119.fa             57915            1     
+    even_MAG-GUT72127.fa             70584            1     
     even_MAG-GUT7229.fa              91198            1     
     even_MAG-GUT7247.fa              73739            1     
+    even_MAG-GUT73491.fa             49770            1     
+    even_MAG-GUT74329.fa             83312            1     
+    even_MAG-GUT74380.fa             70577            1     
+    even_MAG-GUT75402.fa             77450            1     
+    even_MAG-GUT75430.fa             64867            1     
+    even_MAG-GUT7546.fa              81447            1     
+    even_MAG-GUT75522.fa             79053            1     
+    even_MAG-GUT79350.fa             62871            1     
     even_MAG-GUT80385.fa             39058            1     
     even_MAG-GUT80453.fa             84274            1     
+    even_MAG-GUT80718.fa             41581            1     
     even_MAG-GUT80771.fa             77624            1     
+    even_MAG-GUT80816.fa             70658            1     
     even_MAG-GUT81523.fa             15191            1     
+    even_MAG-GUT81679.fa             84935            1     
+    even_MAG-GUT81926.fa             77387            1     
     even_MAG-GUT81946.fa             80882            1     
+    even_MAG-GUT81987.fa             84935            1     
+    even_MAG-GUT82039.fa             42961            1     
+    even_MAG-GUT82105.fa             61929            1     
+    even_MAG-GUT82160.fa             76291            1     
+    even_MAG-GUT82436.fa             88468            1     
+    even_MAG-GUT82468.fa             71738            1     
+    even_MAG-GUT82509.fa             66923            1     
+    even_MAG-GUT82562.fa             66923            1     
+    even_MAG-GUT82635.fa             68306            1     
+    even_MAG-GUT82654.fa             69767            1     
+    even_MAG-GUT82703.fa             63883            1     
+    even_MAG-GUT82738.fa             48671            1     
+    even_MAG-GUT82744.fa             76126            1     
+    even_MAG-GUT84598.fa             87196            1     
+    even_MAG-GUT84613.fa             58771            1     
+    even_MAG-GUT85104.fa             61051            1     
     even_MAG-GUT85904.fa             26775            1     
     even_MAG-GUT85919.fa             26787            1     
     even_MAG-GUT86853.fa             54773            1     
+    even_MAG-GUT86870.fa             69697            1     
     even_MAG-GUT86935.fa             44682            1     
     even_MAG-GUT87208.fa             59527            1     
     even_MAG-GUT87297.fa             45373            1     
     even_MAG-GUT87358.fa             52197            1     
+    even_MAG-GUT87479.fa             49314            1     
+    even_MAG-GUT87575.fa             50808            1     
     even_MAG-GUT87793.fa             39532            1     
     even_MAG-GUT87821.fa             78283            1     
+    even_MAG-GUT87833.fa             50314            1     
     even_MAG-GUT87873.fa             83243            1     
+    even_MAG-GUT88081.fa             57432            1     
     even_MAG-GUT88255.fa             52351            1     
     even_MAG-GUT88263.fa             50225            1     
     even_MAG-GUT88291.fa             58957            1     
     even_MAG-GUT88563.fa             53470            1     
     even_MAG-GUT88626.fa             39965            1     
+    even_MAG-GUT88680.fa             56636            1     
     even_MAG-GUT88854.fa             42445            1     
     even_MAG-GUT88891.fa             40433            1     
+    even_MAG-GUT88995.fa             57432            1     
     even_MAG-GUT89009.fa             47042            1     
+    even_MAG-GUT89180.fa             61346            1     
     even_MAG-GUT89205.fa             82793            1     
+    even_MAG-GUT89206.fa             61346            1     
+    even_MAG-GUT89239.fa             36794            1     
+    even_MAG-GUT89279.fa             60933            1     
+    even_MAG-GUT89290.fa             61346            1     
     even_MAG-GUT89291.fa             92884            1     
+    even_MAG-GUT89315.fa             64139            1     
     even_MAG-GUT89318.fa             85825            1     
     even_MAG-GUT89323.fa             35620            1     
+    even_MAG-GUT89344.fa             51708            1     
+    even_MAG-GUT89353.fa             61346            1     
     even_MAG-GUT89356.fa             85825            1     
     even_MAG-GUT89364.fa             79897            1     
+    even_MAG-GUT89416.fa             58542            1     
+    even_MAG-GUT89571.fa             48148            1     
     even_MAG-GUT89717.fa             78338            1     
+    even_MAG-GUT89719.fa             61346            1     
+    even_MAG-GUT89868.fa             60185            1     
+    even_MAG-GUT89896.fa             61264            1     
     even_MAG-GUT90076.fa             91497            1     
+    even_MAG-GUT90087.fa             60185            1     
     even_MAG-GUT90108.fa             82285            1     
+    even_MAG-GUT90109.fa             61346            1     
+    even_MAG-GUT90165.fa             61346            1     
     even_MAG-GUT90168.fa             83943            1     
     even_MAG-GUT90190.fa             82793            1     
+    even_MAG-GUT90191.fa             64139            1     
+    even_MAG-GUT90290.fa             54722            1     
     even_MAG-GUT90292.fa             96363            1     
+    even_MAG-GUT90323.fa             60185            1     
     even_MAG-GUT90367.fa             83992            1     
+    even_MAG-GUT90479.fa             55366            1     
+    even_MAG-GUT90502.fa             48148            1     
+    even_MAG-GUT90506.fa             61346            1     
     even_MAG-GUT90600.fa             60757            1     
     even_MAG-GUT90634.fa             76491            1     
+    even_MAG-GUT90686.fa             53278            1     
+    even_MAG-GUT90699.fa             60185            1     
     even_MAG-GUT90947.fa             85825            1     
+    even_MAG-GUT90976.fa             61346            1     
     even_MAG-GUT90977.fa             85825            1     
     even_MAG-GUT91033.fa             90699            1     
+    even_MAG-GUT91042.fa             60185            1     
     even_MAG-GUT91117.fa             85825            1     
+    even_MAG-GUT91118.fa             61346            1     
     even_MAG-GUT91136.fa             85985            1     
+    even_MAG-GUT91137.fa             61346            1     
     even_MAG-GUT91276.fa             67560            1     
     even_MAG-GUT91278.fa             72744            1     
     even_MAG-GUT91345.fa             83672            1     
@@ -373,7 +512,12 @@ T3 =
     even_MAG-GUT91993.fa             94290            1     
     even_MAG-GUT92001.fa             83783            1     
     even_MAG-GUT92091.fa             97537            1     
+    even_MAG-GUT9303.fa              92459            1     
+    even_MAG-GUT9316.fa              99421            1     
+    even_MAG-GUT9364.fa              92177            1     
+    even_MAG-GUT9376.fa              96778            1     
     even_MAG-GUT956.fa               82479            1     
+    even_MAG-GUT9659.fa              55993            1     
 
 
 outputPath = 
