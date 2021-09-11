@@ -185,7 +185,7 @@ if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
     echo "prog_output1 is: ${prog_output1}" 
     if [ ! -f ${prog_output1} ]; then
         output1="${outdir}/${sample_file}.txt"
-        matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}');exit"|tee ${output1}
+        matlab -nodisplay -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}');exit"|tee ${output1}
         echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}')"
     else
         echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}')"
@@ -202,7 +202,7 @@ prog_output2="${outdir}/test-${sample_file}.xlsx"
 echo "prog_output2 is: ${prog_output2}" 
 if [ ! -f ${prog_output2} ]; then
     output2="${outdir}/${sample_file}_classify.txt"
-    matlab -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}');exit"|tee ${output2}
+    matlab -nodisplay -r "run addme;stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}');exit"|tee ${output2}
     echo "INFO:done stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}')"
 else
     echo "INFO:skip stackedMain('${data_type}', '${base_path}', '${sample_file}', '${test_dir_sample}')"
