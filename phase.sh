@@ -80,7 +80,7 @@ echo "sample_path = ${sample_path}"
 
 echo "===== Preparing training dataset for GTDB or HGR======"
 start_time0="$(date -u +%s)"
-if [ ${data_type} == 'GTDB-r202' ]; then
+if [ ${data_type} == 'GTDB-r202' or ${data_type} == 'd__Archaea']; then
     if [ ! -d ${sample_path} ]; then
         python3 run_select_sample.py ${trunc_sample_file} $ver
         echo "INFO:done python3 run_select_sample.py ${trunc_sample_file} $ver"
