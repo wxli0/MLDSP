@@ -26,7 +26,9 @@ def list_fd(url, ext=''):
     page = requests.get(url).text
     print(page)
     soup = BeautifulSoup(page, 'html.parser')
-    return [url  + node.get('href') for node in soup.find_all('a') if node.get('href').endswith(ext)]
+    ret = []
+    
+    return [os.path.join(url, node.get('href')) for node in soup.find_all('a') if node.get('href').endswith(ext)]
 
 
 def find_start_point(entire_seq, seq_len):
@@ -109,8 +111,10 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
             block2= id[7:10]
             block3 = id[10:13]
             block4 = id[13:16]
-            # print(block1, block2,block3, block4)
+            print("base_url is:", base_url)
+            print("blocks are:", block1, block2,block3, block4)
             partial_url = os.path.join(base_url,block1,block2,block3,block4)
+            print("partial_url is:", partial_url)
             try:
                 partial_url_dirs =  list_fd(partial_url)
                 block5 = partial_url_dirs[1]

@@ -86,11 +86,11 @@ if [ ${data_type} == 'GTDB-r202' ] || [ ${data_type} == 'Archaea' ]; then
         echo "INFO:done python3 run_select_sample.py ${trunc_sample_file} $ver"
         cd $json_dir
         if [[ ${trunc_sample_file} == g__* ]]; then
-            python3 select_sample_species.py $json_path $base_path
-            echo "INFO:python3 select_sample_species.py $json_path $base_path"
+            python3 select_sample_species.py $json_path $sample_path
+            echo "INFO:python3 select_sample_species.py $json_path $sample_path"
         else
-            python3 select_sample_cluster.py $json_path $base_path
-            echo "INFO:python3 select_sample_cluster.py $json_path $base_path"
+            python3 select_sample_cluster.py $json_path $sample_path
+            echo "INFO:python3 select_sample_cluster.py $json_path $sample_path"
         fi
         cd ../..
 
@@ -118,9 +118,9 @@ if [ ${data_type} == 'GTDB-r202' ] || [ ${data_type} == 'Archaea' ]; then
         [[ ${trunc_sample_file} == 'o__Oscillospirales' ]] || [[ ${trunc_sample_file} == 'o__Rhizobiales' ]] || \
         [[ ${trunc_sample_file} == 'o__Enterobacterales' ]] || [[ ${trunc_sample_file} == 'o__Burkholderiales' ]]; then
             python3 samples/prune_large_clusters.py ${trunc_sample_file} $ver "GTDB"
-            echo "python3 samples/prune_large_clusters.py ${trunc_sample_file} $ver GTDB"
+            echo "python3 samples/prune_large_clusters.py ${trunc_sample_file} $sample_path GTDB"
         else
-            echo "skip samples/prune_large_clusters.py ${trunc_sample_file} $ver GTDB"
+            echo "skip samples/prune_large_clusters.py ${trunc_sample_file} $sample_path GTDB"
         fi
 
     else
@@ -141,9 +141,9 @@ elif [ ${data_type} == 'HGR-r202' ]; then
         || [[ ${trunc_sample_file} == 'g__Ruminococcus_F' ]] || [[ ${trunc_sample_file} == 'g__F0040' ]] \
         || [[ ${trunc_sample_file} == 'g__Alistipes' ]]; then
             python3 samples/prune_large_clusters.py ${sample_file} $ver "HGR"
-            echo "INFO: done python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
+            echo "INFO: done python3 samples/prune_large_clusters.py ${sample_file} $sample_path HGR"
         else
-            echo "INFO: skip python3 samples/prune_large_clusters.py ${sample_file} $ver HGR"
+            echo "INFO: skip python3 samples/prune_large_clusters.py ${sample_file} $sample_path HGR"
         fi
         # remove s__
         if [ -d "${sample_path}/s__" ]; then
