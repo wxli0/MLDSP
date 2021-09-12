@@ -110,7 +110,7 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
             block3 = id[10:13]
             block4 = id[13:16]
             # print(block1, block2,block3, block4)
-            partial_url = base_url+block1+'/'+block2+'/'+block3+'/'+block4 +'/'
+            partial_url = os.path.join(base_url,block1,block2,block3,block4)
             try:
                 partial_url_dirs =  list_fd(partial_url)
                 block5 = partial_url_dirs[1]
@@ -119,14 +119,14 @@ def download_genomes(selected_genome_ids, cluster_dir_full, lower, upper, \
                 last_index = block5.split("/", 9)[-1][:-1]
                 download_url = block5+last_index+'_genomic.fna.gz'
                 print("download_url is:", download_url)
-                dest = cluster_dir_full+'/'+last_index+'_genomic.fna.gz'
+                dest = os.path.join(cluster_dir_full, last_index+'_genomic.fna.gz')
                 urllib.request.urlretrieve(download_url, dest)
                 f = gzip.open(dest, 'r')
                 file_content = f.read()
                 file_content = file_content.decode('utf-8')
-                fna_path = cluster_dir_full+'/'+last_index+"_genomic.fna"
+                fna_path = os.path.join(cluster_dir_full, last_index+"_genomic.fna")
                 # print("fna_path is:", fna_path)
-                f_out = open(cluster_dir_full+'/'+last_index+"_genomic.fna", 'w+')
+                f_out = open(os.path.join(cluster_dir_full, last_index+"_genomic.fna"), 'w+')
                 f_out.write(file_content)
                 f.close()
                 f_out.close()
@@ -201,11 +201,11 @@ def download_variable_genome(max_len, max_seq, max_name, lower, upper, frags_num
         tmp = find_start_point(max_seq, seq_len)
         random_start = random.randint(0, tmp)
         cur_max_seq = prune_seq(max_seq, seq_len, random_start)                    
-        cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
+        cur_fna_path = os.path.join(cluster_dir_full, max_name+str(base+i)+".fasta")
         if i == 0:
             while os.path.exists(cur_fna_path):
                 base += 1
-                cur_fna_path = cluster_dir_full+"/"+max_name+str(base+i)+".fasta"
+                cur_fna_path = os.path.join(cluster_dir_full, max_name+str(base+i)+".fasta")
         out_file= open(cur_fna_path,"a+")
         out_file.seek(0)
         out_file.truncate()
@@ -242,9 +242,9 @@ def download_const_genome(max_len, max_seq, max_name, frags_num, const_len, clus
     print("max_name is:", max_name)
 
     for cur_rep in range(rep_time):
-        cur_fna_path = cluster_dir_full+"/"+max_name+"_"+str(cur_rep)+".fasta"
+        cur_fna_path = os.path.join(cluster_dir_full, max_name+"_"+str(cur_rep)+".fasta")
         if alter is not None:
-            cur_fna_path = cluster_dir_full+"/"+max_name+"_"+str(cur_rep)+"_"+alter+".fasta"
+            cur_fna_path = os.path.join(cluster_dir_full, max_name+"_"+str(cur_rep)+"_"+alter+".fasta")
 
         i = 0
         for i in range(frags_num):

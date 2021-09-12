@@ -47,9 +47,7 @@ if not outdir:
         outdir +="_"+id
 
 
-ver=sys.argv[2]
-download_path = '/mnt/sda/MLDSP-samples-'+ver+'/'
-outdir_full = download_path+outdir
+outdir_full = sys.argv[2]
 print("outdir_full is:", outdir_full)
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -67,7 +65,7 @@ for cluster_name in cluster_names:
 
     selected_genomes = random.sample(all_genome_ids, real_sample_size)
 
-    cluster_dir_full = outdir_full+'/'+cluster_name
+    cluster_dir_full = os.path.join(outdir_full, cluster_name)
     print("cluster_dir_full is:", cluster_dir_full)
     if not os.path.exists(cluster_dir_full):
         print("enter here")

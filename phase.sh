@@ -54,12 +54,12 @@ rej_dir="rejection-threshold-${data_type}"
 outdir="outputs-${data_type}"
 test_dir_sample="${test_dir}/${trunc_sample_file}"
 ver="r202"
-if [ ${data_type} == 'HGR-r202' ] || [ ${data_type} == 'GTDB-r202' ]; then
+if [ ${data_type} == 'HGR-r202' ] || [ ${data_type} == 'GTDB-r202' ] || [ ${data_type} == 'Archaea' ]; then
     # prepare variables for different tasks
     sample_path=""
     json_dir=""
     json_path=""
-    if [ ${data_type} == 'GTDB-r202' ]; then
+    if [ ${data_type} == 'GTDB-r202' ] || [ ${data_type} == 'Archaea' ]; then
         json_dir="data/preprocess"
         json_path="non-clade-exclusion-${ver}/${trunc_sample_file}.json"
     elif [ ${data_type} == 'HGR-r202' ]; then
@@ -80,17 +80,17 @@ echo "sample_path = ${sample_path}"
 
 echo "===== Preparing training dataset for GTDB or HGR======"
 start_time0="$(date -u +%s)"
-if [ ${data_type} == 'GTDB-r202' or ${data_type} == 'd__Archaea']; then
+if [ ${data_type} == 'GTDB-r202' ] || [ ${data_type} == 'Archaea' ]; then
     if [ ! -d ${sample_path} ]; then
         python3 run_select_sample.py ${trunc_sample_file} $ver
         echo "INFO:done python3 run_select_sample.py ${trunc_sample_file} $ver"
         cd $json_dir
         if [[ ${trunc_sample_file} == g__* ]]; then
-            python3 select_sample_species.py $json_path $ver
-            echo "INFO:python3 select_sample_species.py $json_path $ver"
+            python3 select_sample_species.py $json_path $base_path
+            echo "INFO:python3 select_sample_species.py $json_path $base_path"
         else
-            python3 select_sample_cluster.py $json_path $ver
-            echo "INFO:python3 select_sample_cluster.py $json_path $ver"
+            python3 select_sample_cluster.py $json_path $base_path
+            echo "INFO:python3 select_sample_cluster.py $json_path $base_path"
         fi
         cd ../..
 
@@ -212,14 +212,14 @@ elapsed2="$(($end_time2-$start_time2))"
 echo "${trunc_sample_file} ${elapsed2}" >> "${outdir}/test_time.txt"
 
 
-BK_dir="/home/w328li/MT-MAG/"
+BK_dir="../MT-MAG/"
 cd ${BK_dir}
 echo "INFO: done cd ${BK_dir}"
 
 start_time3="$(date -u +%s)"
 if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
     echo "===== Picking rejection thresholds ====="
-    src1="/home/w328li/MLDSP/${outdir}/train-${sample_file}.xlsx"
+    src1="../MLDSP/${outdir}/train-${sample_file}.xlsx"
     dest1="${outdir}/${trunc_sample_file}_train.xlsx"
     cp ${src1} ${dest1}
     echo "INFO:done cp ${src1} ${dest1}"
@@ -227,8 +227,8 @@ if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
     echo "INFO:done preprocess_train_to_pr.py ${dest1}"
 fi
 
-src2="/home/w328li/MLDSP/${outdir}/test-${sample_file}.xlsx"
-dest2="/home/w328li/MT-MAG/${outdir}/${trunc_sample_file}.xlsx"
+src2="../MLDSP/${outdir}/test-${sample_file}.xlsx"
+dest2="${outdir}/${trunc_sample_file}.xlsx"
 cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 

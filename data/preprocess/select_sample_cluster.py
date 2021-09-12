@@ -45,9 +45,7 @@ if not outdir:
     if id is not None:
         outdir +="_"+id
 
-ver=sys.argv[2]
-download_path = '/mnt/sda/MLDSP-samples-'+ver+'/'
-outdir_full = download_path+outdir
+outdir_full = sys.argv[2]
 ssl._create_default_https_context = ssl._create_unverified_context
 
 indices = {"domain":0, "phylum":1, "class":2, "order":3, "family":4, "genus":5}
@@ -96,7 +94,7 @@ for cluster_name in cluster_names:
         if len(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr']) < next_tax_sample_size:
             next_tax_sample_size = len(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr'])
         selected_genomes.extend(random.sample(cluster_tsv_cur.loc[next_tax,:]['Representative_genome_arr'], next_tax_sample_size))
-    cluster_dir_full = outdir_full+'/'+cluster_name
+    cluster_dir_full = os.path.join(outdir_full, cluster_name)
     if not os.path.exists(cluster_dir_full):
         os.makedirs(cluster_dir_full)
     print(selected_genomes)
