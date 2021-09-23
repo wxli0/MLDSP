@@ -45,6 +45,7 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
             fnTemp = cell(1,pts{i});
             parfor j=1:pts{i}
                 sbName = fileNames{j};
+                disp(sbName)
                 [Header, Sequence] = fastaread(sbName);
                 if ischar(Sequence)
                     Sequence = {Sequence};
