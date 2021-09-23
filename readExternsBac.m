@@ -64,6 +64,7 @@ function [AcNmb, Seq, numberOfClusters, clusterNames, pointsPerCluster,FNm] = re
             p = randperm(pts{i},szLimit);
             parfor j=1:szLimit
                 sbName = fileNames{p(j)};
+                disp(sbName)
                 [Header, Sequence] = fastaread(sbName);    
                 if ischar(Sequence)
                     Sequence = {Sequence};
