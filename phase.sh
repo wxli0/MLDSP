@@ -117,14 +117,14 @@ if [ ${data_type} == 'GTDB-r202' ] || [ ${data_type} == 'Archaea' ]; then
         [[ ${trunc_sample_file} == 'c__Alphaproteobacteria' ]] || [ ${trunc_sample_file} == 'c__Gammaproteobacteria' ] || \
         [[ ${trunc_sample_file} == 'o__Oscillospirales' ]] || [[ ${trunc_sample_file} == 'o__Rhizobiales' ]] || \
         [[ ${trunc_sample_file} == 'o__Enterobacterales' ]] || [[ ${trunc_sample_file} == 'o__Burkholderiales' ]]; then
-            python3 samples/prune_large_clusters.py ${trunc_sample_file} $ver "GTDB"
+            python3 samples/prune_large_clusters.py ${trunc_sample_file} $sample_path "GTDB"
             echo "python3 samples/prune_large_clusters.py ${trunc_sample_file} $sample_path GTDB"
         else
             echo "skip samples/prune_large_clusters.py ${trunc_sample_file} $sample_path GTDB"
         fi
 
     else
-        echo "INFO:skip python3 run_select_sample.py $ $ver"
+        echo "INFO:skip python3 run_select_sample.py ${trunc_sample_file} $ver"
     fi
 
 elif [ ${data_type} == 'HGR-r202' ]; then
