@@ -12,7 +12,7 @@ from Bio.SeqIO.PdbIO import CifAtomIterator
 import pandas as pd
 import os
 
-test_dir = "/mnt/sda/DeepMicrobes-data/mag_reads_250bp_1w_200000/"
+test_dir = "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/d__Bacteria/"
 output_file = "samples/ERP108418_metadata.csv"
 df = pd.DataFrame(columns=['accession', 'contig_count', 'gc_percentage', 'genome_size'])
 # df = pd.DataFrame()
