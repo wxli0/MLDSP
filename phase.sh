@@ -10,11 +10,11 @@ usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>]
 [-b <Mandatory. Path to the directory that training datasets are in>]
 [-t <Mandatory. Directory name of testing datasets>]
 [-a <Mandatory. Accepted constrained accuracy>]
-[-a <Mandatory. Variability bewteen the training and test sets>]
+[-v <Mandatory. Variability bewteen the training and test sets>]
 [-p <Optional. Exists if the partial classifications are enabled>]" 1>&2; exit 1; }
 
 partial=0
-while getopts ":d:b:s:t:p" o; do
+while getopts ":d:b:s:t:a:v:p" o; do
     case "${o}" in
         d)
             data_type=${OPTARG}
