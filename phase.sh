@@ -9,6 +9,8 @@ usage() { echo "Usage: $0 [-d <Mandatory. Name of data type>]
 [-s <Mandatory. File name of the training and testing datasets>]
 [-b <Mandatory. Path to the directory that training datasets are in>]
 [-t <Mandatory. Directory name of testing datasets>]
+[-a <Mandatory. Accepted constrained accuracy>]
+[-a <Mandatory. Variability bewteen the training and test sets>]
 [-p <Optional. Exists if the partial classifications are enabled>]" 1>&2; exit 1; }
 
 partial=0
@@ -26,6 +28,12 @@ while getopts ":d:b:s:t:p" o; do
         t)
             test_dir=${OPTARG}
             ;;
+        a)
+            accepted_CA=${OPTARG}
+            ;;
+        v)
+            variability=${OPTARG}
+            ;;
         p)
             partial=1
             ;;
@@ -42,9 +50,11 @@ echo "data_type = ${data_type}"
 echo "base_path = ${base_path}"
 echo "trunc_sample_file = ${trunc_sample_file}"
 echo "test_dir = ${test_dir}"
+echo "accepted_CA = ${accepted_CA}"
+echo "variability = ${variability}"
 echo "partial = ${partial}"
 
-if [ -z "${data_type}" ] || [ -z "${base_path}" ] || [ -z "${trunc_sample_file}" ] || [ -z "${test_dir}" ]; then
+if [ -z "${data_type}" ] || [ -z "${base_path}" ] || [ -z "${trunc_sample_file}" ] || [ -z "${test_dir}" ] || [ -z "${accepted_CA}" ] || [ -z "${variability}" ]; then
     echo "Missing arguments"
     usage
 fi
@@ -235,8 +245,8 @@ cp ${src2} ${dest2}
 echo "INFO:done cp ${src2} ${dest2}"
 
 if [ ${partial} == 1 ] && [ ${child_num} != 1 ]; then
-    python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}
-    echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type}"
+    python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type} ${accepted_CA} ${variability}
+    echo "INFO:done python3 precision_recall_opt.py ${dest1} ${dest2} ${data_type} ${accepted_CA} ${variability}"
 fi
 
 end_time3="$(date -u +%s)"
