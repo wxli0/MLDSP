@@ -29,9 +29,11 @@ while getopts ":d:b:s:t:a:v:p" o; do
             test_dir=${OPTARG}
             ;;
         a)
+            accepted_CA=0.9
             accepted_CA=${OPTARG}
             ;;
         v)
+            variability=0.2
             variability=${OPTARG}
             ;;
         p)
