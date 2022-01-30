@@ -1,0 +1,382 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__RUG343"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_902787765.1_9.fasta
+GB_GCA_902787765.1_7.fasta
+GB_GCA_902787765.1_4.fasta
+GB_GCA_902787765.1_2.fasta
+GB_GCA_902787765.1_19.fasta
+GB_GCA_902787765.1_18.fasta
+GB_GCA_902787765.1_16.fasta
+GB_GCA_902787765.1_14.fasta
+GB_GCA_902787765.1_12.fasta
+GB_GCA_902787765.1_11.fasta
+GB_GCA_902787765.1_10.fasta
+GB_GCA_902755695.1_8.fasta
+GB_GCA_902755695.1_7.fasta
+GB_GCA_902755695.1_3.fasta
+GB_GCA_902755695.1_18.fasta
+GB_GCA_902755695.1_17.fasta
+GB_GCA_902755695.1_15.fasta
+GB_GCA_902755695.1_14.fasta
+GB_GCA_902755695.1_0.fasta
+GB_GCA_900317975.1_9.fasta
+GB_GCA_900317975.1_7.fasta
+GB_GCA_900317975.1_6.fasta
+GB_GCA_900317975.1_4.fasta
+GB_GCA_900317975.1_2.fasta
+GB_GCA_900317975.1_18.fasta
+GB_GCA_900317975.1_17.fasta
+GB_GCA_900317975.1_16.fasta
+GB_GCA_900317975.1_12.fasta
+GB_GCA_900317975.1_1.fasta
+GB_GCA_900317975.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_902789225.1_9.fasta
+GB_GCA_902789225.1_8.fasta
+GB_GCA_902789225.1_7.fasta
+GB_GCA_902789225.1_6.fasta
+GB_GCA_902789225.1_5.fasta
+GB_GCA_902789225.1_4.fasta
+GB_GCA_902789225.1_3.fasta
+GB_GCA_902789225.1_2.fasta
+GB_GCA_902789225.1_19.fasta
+GB_GCA_902789225.1_18.fasta
+GB_GCA_902789225.1_17.fasta
+GB_GCA_902789225.1_16.fasta
+GB_GCA_902789225.1_15.fasta
+GB_GCA_902789225.1_14.fasta
+GB_GCA_902789225.1_13.fasta
+GB_GCA_902789225.1_12.fasta
+GB_GCA_902789225.1_11.fasta
+GB_GCA_902789225.1_10.fasta
+GB_GCA_902789225.1_1.fasta
+GB_GCA_902789225.1_0.fasta
+Generating CGRs.... 
+totalSeq is: 50
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    0.9054    0.0946    1.0000    1.0000
+    0.9539    0.0461    1.0000    1.0000
+    0.9584    0.0416    1.0000    1.0000
+    0.1180    0.8820    2.0000    1.0000
+    0.9045    0.0955    1.0000    1.0000
+    0.9046    0.0954    1.0000    1.0000
+    0.1067    0.8933    2.0000    2.0000
+    0.1639    0.8361    2.0000    2.0000
+    0.0408    0.9592    2.0000    2.0000
+    0.1022    0.8978    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__RUG343 sp900317975    s__RUG343 sp902789225    prediction    actual
+                                   _____________________    _____________________    __________    ______
+
+    GB_GCA_900317975.1_1.fasta            0.90545                 0.094554               1           1   
+    GB_GCA_900317975.1_17.fasta           0.95387                 0.046125               1           1   
+    GB_GCA_900317975.1_7.fasta            0.95835                 0.041649               1           1   
+    GB_GCA_900317975.1_9.fasta            0.11796                  0.88204               2           1   
+    GB_GCA_902787765.1_14.fasta           0.90451                 0.095489               1           1   
+    GB_GCA_902787765.1_2.fasta            0.90461                 0.095386               1           1   
+    GB_GCA_902789225.1_1.fasta            0.10672                  0.89328               2           2   
+    GB_GCA_902789225.1_14.fasta           0.16392                  0.83608               2           2   
+    GB_GCA_902789225.1_7.fasta           0.040802                   0.9592               2           2   
+    GB_GCA_902789225.1_8.fasta            0.10221                  0.89779               2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    0.8108    0.1892    1.0000    1.0000
+    0.5059    0.4941    1.0000    1.0000
+    0.7796    0.2204    1.0000    1.0000
+    0.9165    0.0835    1.0000    1.0000
+    0.7978    0.2022    1.0000    1.0000
+    0.7972    0.2028    1.0000    1.0000
+    0.7972    0.2028    1.0000    1.0000
+    0.2408    0.7592    2.0000    2.0000
+    0.2084    0.7916    2.0000    2.0000
+    0.1911    0.8089    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__RUG343 sp900317975    s__RUG343 sp902789225    prediction    actual
+                                   _____________________    _____________________    __________    ______
+
+    GB_GCA_900317975.1_18.fasta           0.81079                  0.18921               1           1   
+    GB_GCA_900317975.1_4.fasta            0.50586                  0.49414               1           1   
+    GB_GCA_900317975.1_6.fasta            0.77956                  0.22044               1           1   
+    GB_GCA_902755695.1_7.fasta            0.91649                 0.083514               1           1   
+    GB_GCA_902787765.1_11.fasta           0.79784                  0.20216               1           1   
+    GB_GCA_902787765.1_19.fasta           0.79722                  0.20278               1           1   
+    GB_GCA_902787765.1_7.fasta            0.79722                  0.20278               1           1   
+    GB_GCA_902789225.1_10.fasta           0.24083                  0.75917               2           2   
+    GB_GCA_902789225.1_15.fasta           0.20838                  0.79162               2           2   
+    GB_GCA_902789225.1_16.fasta           0.19109                  0.80891               2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    0.8936    0.1064    1.0000    1.0000
+    0.8371    0.1629    1.0000    1.0000
+    0.8989    0.1011    1.0000    1.0000
+    0.6387    0.3613    1.0000    1.0000
+    0.8853    0.1147    1.0000    1.0000
+    0.8202    0.1798    1.0000    1.0000
+    0.7907    0.2093    1.0000    1.0000
+    0.3975    0.6025    2.0000    2.0000
+    0.4118    0.5882    2.0000    2.0000
+    0.3809    0.6191    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__RUG343 sp900317975    s__RUG343 sp902789225    prediction    actual
+                                   _____________________    _____________________    __________    ______
+
+    GB_GCA_900317975.1_0.fasta            0.89357                  0.10643               1           1   
+    GB_GCA_900317975.1_12.fasta            0.8371                   0.1629               1           1   
+    GB_GCA_902755695.1_14.fasta           0.89889                  0.10111               1           1   
+    GB_GCA_902755695.1_17.fasta           0.63875                  0.36125               1           1   
+    GB_GCA_902755695.1_3.fasta            0.88535                  0.11465               1           1   
+    GB_GCA_902755695.1_8.fasta            0.82017                  0.17983               1           1   
+    GB_GCA_902787765.1_4.fasta            0.79073                  0.20927               1           1   
+    GB_GCA_902789225.1_0.fasta            0.39755                  0.60245               2           2   
+    GB_GCA_902789225.1_18.fasta           0.41177                  0.58823               2           2   
+    GB_GCA_902789225.1_9.fasta            0.38093                  0.61907               2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    0.6158    0.3842    1.0000    1.0000
+    0.9945    0.0055    1.0000    1.0000
+    0.6228    0.3772    1.0000    1.0000
+    0.6172    0.3828    1.0000    1.0000
+    0.6282    0.3718    1.0000    1.0000
+    0.6282    0.3718    1.0000    1.0000
+    0.5768    0.4232    1.0000    2.0000
+    0.5903    0.4097    1.0000    2.0000
+    0.5793    0.4207    1.0000    2.0000
+    0.5883    0.4117    1.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__RUG343 sp900317975    s__RUG343 sp902789225    prediction    actual
+                                   _____________________    _____________________    __________    ______
+
+    GB_GCA_900317975.1_2.fasta            0.61585                   0.38415              1           1   
+    GB_GCA_902755695.1_0.fasta            0.99448                 0.0055201              1           1   
+    GB_GCA_902755695.1_15.fasta           0.62281                   0.37719              1           1   
+    GB_GCA_902755695.1_18.fasta           0.61721                   0.38279              1           1   
+    GB_GCA_902787765.1_12.fasta           0.62823                   0.37177              1           1   
+    GB_GCA_902787765.1_16.fasta           0.62822                   0.37178              1           1   
+    GB_GCA_902789225.1_11.fasta           0.57677                   0.42323              1           2   
+    GB_GCA_902789225.1_17.fasta           0.59031                   0.40969              1           2   
+    GB_GCA_902789225.1_2.fasta            0.57931                   0.42069              1           2   
+    GB_GCA_902789225.1_5.fasta            0.58832                   0.41168              1           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    0.8678    0.1322    1.0000    1.0000
+    0.8908    0.1092    1.0000    1.0000
+    0.8908    0.1092    1.0000    1.0000
+    0.8908    0.1092    1.0000    1.0000
+    0.2863    0.7137    2.0000    2.0000
+    0.2851    0.7149    2.0000    2.0000
+    0.2054    0.7946    2.0000    2.0000
+    0.9996    0.0004    1.0000    2.0000
+    0.0738    0.9262    2.0000    2.0000
+    0.1582    0.8418    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__RUG343 sp900317975    s__RUG343 sp902789225    prediction    actual
+                                   _____________________    _____________________    __________    ______
+
+    GB_GCA_900317975.1_16.fasta           0.86775                   0.13225              1           1   
+    GB_GCA_902787765.1_10.fasta           0.89078                   0.10922              1           1   
+    GB_GCA_902787765.1_18.fasta           0.89079                   0.10921              1           1   
+    GB_GCA_902787765.1_9.fasta            0.89079                   0.10921              1           1   
+    GB_GCA_902789225.1_12.fasta            0.2863                    0.7137              2           2   
+    GB_GCA_902789225.1_13.fasta           0.28508                   0.71492              2           2   
+    GB_GCA_902789225.1_19.fasta           0.20537                   0.79463              2           2   
+    GB_GCA_902789225.1_3.fasta            0.99959                0.00040769              1           2   
+    GB_GCA_902789225.1_4.fasta           0.073843                   0.92616              2           2   
+    GB_GCA_902789225.1_6.fasta            0.15817                   0.84183              2           2   
+
+confusion matrix for 1 is:
+    29     1
+     5    15
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [88]    [88]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}       88   
+    {'AvgAccuracy' }       88   
+
+Process completed 
+[?1l>

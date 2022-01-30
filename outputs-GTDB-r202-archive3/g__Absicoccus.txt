@@ -1,0 +1,412 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__Absicoccus"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902781835.1_8.fasta
+RS_GCF_902781835.1_6.fasta
+RS_GCF_902781835.1_19.fasta
+RS_GCF_003725415.1_8.fasta
+RS_GCF_003725415.1_0.fasta
+GB_GCA_900548945.1_9.fasta
+GB_GCA_900548945.1_8.fasta
+GB_GCA_900548945.1_12.fasta
+GB_GCA_900548945.1_10.fasta
+GB_GCA_900318225.1_9.fasta
+GB_GCA_900318225.1_7.fasta
+GB_GCA_900318225.1_12.fasta
+GB_GCA_900314505.1_17.fasta
+GB_GCA_002396425.1_16.fasta
+GB_GCA_002395495.1_6.fasta
+GB_GCA_002393795.1_8.fasta
+GB_GCA_002393795.1_11.fasta
+GB_GCA_002373115.1_5.fasta
+GB_GCA_002373115.1_3.fasta
+GB_GCA_002373115.1_14.fasta
+GB_GCA_002373115.1_11.fasta
+GB_GCA_002373115.1_1.fasta
+GB_GCA_002372625.1_19.fasta
+GB_GCA_002372625.1_18.fasta
+GB_GCA_002372625.1_13.fasta
+GB_GCA_002372625.1_0.fasta
+GB_GCA_002371415.1_7.fasta
+GB_GCA_002371415.1_2.fasta
+GB_GCA_002371415.1_1.fasta
+GB_GCA_002349025.1_2.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902364925.1_7.fasta
+RS_GCF_902364925.1_5.fasta
+RS_GCF_902364925.1_4.fasta
+RS_GCF_902364925.1_3.fasta
+RS_GCF_902364925.1_18.fasta
+RS_GCF_902364925.1_16.fasta
+RS_GCF_902364925.1_13.fasta
+RS_GCF_902364925.1_10.fasta
+RS_GCF_003480165.1_3.fasta
+RS_GCF_003480165.1_2.fasta
+RS_GCF_003480165.1_18.fasta
+RS_GCF_003480165.1_17.fasta
+RS_GCF_003480165.1_14.fasta
+RS_GCF_003480165.1_10.fasta
+RS_GCF_003480165.1_1.fasta
+GB_GCA_900547865.1_5.fasta
+GB_GCA_900547865.1_2.fasta
+GB_GCA_900547865.1_19.fasta
+GB_GCA_900547865.1_18.fasta
+GB_GCA_900547865.1_16.fasta
+GB_GCA_900547865.1_15.fasta
+GB_GCA_900547865.1_14.fasta
+GB_GCA_900547865.1_13.fasta
+GB_GCA_900547865.1_11.fasta
+GB_GCA_900547865.1_1.fasta
+GB_GCA_000434355.1_8.fasta
+GB_GCA_000434355.1_7.fasta
+GB_GCA_000434355.1_4.fasta
+GB_GCA_000434355.1_18.fasta
+GB_GCA_000434355.1_0.fasta
+Generating CGRs.... 
+totalSeq is: 60
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  12x4 table
+
+                                   s__Absicoccus porci    s__Absicoccus sp000434355    prediction    actual
+                                   ___________________    _________________________    __________    ______
+
+    GB_GCA_002371415.1_1.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_002372625.1_0.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_002372625.1_18.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_002373115.1_3.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_002373115.1_5.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_002393795.1_11.fasta             1                    2.2204e-14                1           1   
+    RS_GCF_902781835.1_8.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_000434355.1_8.fasta              0                             1                2           2   
+    GB_GCA_900547865.1_16.fasta             0                             1                2           2   
+    RS_GCF_003480165.1_1.fasta              0                             1                2           2   
+    RS_GCF_902364925.1_3.fasta              0                             1                2           2   
+    RS_GCF_902364925.1_5.fasta              0                             1                2           2   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.4792    0.5208    2.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  12x4 table
+
+                                   s__Absicoccus porci    s__Absicoccus sp000434355    prediction    actual
+                                   ___________________    _________________________    __________    ______
+
+    GB_GCA_002372625.1_13.fasta                1                 2.2204e-14                1           1   
+    GB_GCA_002373115.1_1.fasta                 1                 2.2204e-14                1           1   
+    GB_GCA_002373115.1_11.fasta                1                 2.2204e-14                1           1   
+    GB_GCA_002393795.1_8.fasta                 1                 2.2204e-14                1           1   
+    GB_GCA_900548945.1_12.fasta                1                 2.2204e-14                1           1   
+    RS_GCF_003725415.1_0.fasta                 1                 2.2204e-14                1           1   
+    RS_GCF_003725415.1_8.fasta           0.47917                    0.52083                2           1   
+    GB_GCA_000434355.1_7.fasta                 0                          1                2           2   
+    GB_GCA_900547865.1_13.fasta                0                          1                2           2   
+    GB_GCA_900547865.1_18.fasta                0                          1                2           2   
+    RS_GCF_003480165.1_10.fasta                0                          1                2           2   
+    RS_GCF_003480165.1_14.fasta                0                          1                2           2   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  12x4 table
+
+                                   s__Absicoccus porci    s__Absicoccus sp000434355    prediction    actual
+                                   ___________________    _________________________    __________    ______
+
+    GB_GCA_002349025.1_2.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_002371415.1_2.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_002396425.1_16.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_900318225.1_7.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_900548945.1_10.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_900548945.1_8.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_900547865.1_1.fasta              0                             1                2           2   
+    GB_GCA_900547865.1_11.fasta             0                             1                2           2   
+    GB_GCA_900547865.1_15.fasta             0                             1                2           2   
+    RS_GCF_003480165.1_18.fasta             0                             1                2           2   
+    RS_GCF_902364925.1_4.fasta              0                             1                2           2   
+    RS_GCF_902364925.1_7.fasta              0                             1                2           2   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  12x4 table
+
+                                   s__Absicoccus porci    s__Absicoccus sp000434355    prediction    actual
+                                   ___________________    _________________________    __________    ______
+
+    GB_GCA_002372625.1_19.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_002395495.1_6.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_900314505.1_17.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_900318225.1_12.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_900318225.1_9.fasta              1                    2.2204e-14                1           1   
+    RS_GCF_902781835.1_19.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_000434355.1_0.fasta              0                             1                2           2   
+    GB_GCA_000434355.1_18.fasta             0                             1                2           2   
+    GB_GCA_900547865.1_19.fasta             0                             1                2           2   
+    RS_GCF_003480165.1_17.fasta             0                             1                2           2   
+    RS_GCF_003480165.1_3.fasta              0                             1                2           2   
+    RS_GCF_902364925.1_16.fasta             0                             1                2           2   
+
+
+testAcNum =
+
+  1x12 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  12x4 table
+
+                                   s__Absicoccus porci    s__Absicoccus sp000434355    prediction    actual
+                                   ___________________    _________________________    __________    ______
+
+    GB_GCA_002371415.1_7.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_002373115.1_14.fasta             1                    2.2204e-14                1           1   
+    GB_GCA_900548945.1_9.fasta              1                    2.2204e-14                1           1   
+    RS_GCF_902781835.1_6.fasta              1                    2.2204e-14                1           1   
+    GB_GCA_000434355.1_4.fasta              0                             1                2           2   
+    GB_GCA_900547865.1_14.fasta             0                             1                2           2   
+    GB_GCA_900547865.1_2.fasta              0                             1                2           2   
+    GB_GCA_900547865.1_5.fasta              0                             1                2           2   
+    RS_GCF_003480165.1_2.fasta              0                             1                2           2   
+    RS_GCF_902364925.1_10.fasta             0                             1                2           2   
+    RS_GCF_902364925.1_13.fasta             0                             1                2           2   
+    RS_GCF_902364925.1_18.fasta             0                             1                2           2   
+
+confusion matrix for 1 is:
+    29     1
+     0    30
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [98.3000]    [98.3000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      98.3  
+    {'AvgAccuracy' }      98.3  
+
+Process completed 
+[?1l>

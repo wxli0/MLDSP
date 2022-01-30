@@ -1,0 +1,406 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Caecibacter_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Caecibacter"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS69_9.fasta
+label_UMGS69_85.fasta
+label_UMGS69_84.fasta
+label_UMGS69_83.fasta
+label_UMGS69_82.fasta
+label_UMGS69_81.fasta
+label_UMGS69_80.fasta
+label_UMGS69_8.fasta
+label_UMGS69_79.fasta
+label_UMGS69_78.fasta
+label_UMGS69_77.fasta
+label_UMGS69_76.fasta
+label_UMGS69_75.fasta
+label_UMGS69_74.fasta
+label_UMGS69_73.fasta
+label_UMGS69_72.fasta
+label_UMGS69_71.fasta
+label_UMGS69_70.fasta
+label_UMGS69_7.fasta
+label_UMGS69_69.fasta
+label_UMGS69_68.fasta
+label_UMGS69_67.fasta
+label_UMGS69_66.fasta
+label_UMGS69_65.fasta
+label_UMGS69_64.fasta
+label_UMGS69_63.fasta
+label_UMGS69_62.fasta
+label_UMGS69_61.fasta
+label_UMGS69_60.fasta
+label_UMGS69_6.fasta
+label_UMGS69_59.fasta
+label_UMGS69_58.fasta
+label_UMGS69_57.fasta
+label_UMGS69_56.fasta
+label_UMGS69_55.fasta
+label_UMGS69_54.fasta
+label_UMGS69_53.fasta
+label_UMGS69_52.fasta
+label_UMGS69_51.fasta
+label_UMGS69_50.fasta
+label_UMGS69_5.fasta
+label_UMGS69_49.fasta
+label_UMGS69_48.fasta
+label_UMGS69_47.fasta
+label_UMGS69_46.fasta
+label_UMGS69_45.fasta
+label_UMGS69_44.fasta
+label_UMGS69_43.fasta
+label_UMGS69_42.fasta
+label_UMGS69_41.fasta
+label_UMGS69_40.fasta
+label_UMGS69_4.fasta
+label_UMGS69_39.fasta
+label_UMGS69_38.fasta
+label_UMGS69_37.fasta
+label_UMGS69_36.fasta
+label_UMGS69_35.fasta
+label_UMGS69_34.fasta
+label_UMGS69_33.fasta
+label_UMGS69_32.fasta
+label_UMGS69_31.fasta
+label_UMGS69_30.fasta
+label_UMGS69_3.fasta
+label_UMGS69_29.fasta
+label_UMGS69_28.fasta
+label_UMGS69_27.fasta
+label_UMGS69_26.fasta
+label_UMGS69_25.fasta
+label_UMGS69_24.fasta
+label_UMGS69_23.fasta
+label_UMGS69_22.fasta
+label_UMGS69_21.fasta
+label_UMGS69_20.fasta
+label_UMGS69_2.fasta
+label_UMGS69_19.fasta
+label_UMGS69_18.fasta
+label_UMGS69_17.fasta
+label_UMGS69_16.fasta
+label_UMGS69_15.fasta
+label_UMGS69_14.fasta
+label_UMGS69_13.fasta
+label_UMGS69_12.fasta
+label_UMGS69_11.fasta
+label_UMGS69_10.fasta
+label_UMGS69_1.fasta
+label_UMGS69_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_900095875_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS20_9.fasta
+label_UMGS20_8.fasta
+label_UMGS20_7.fasta
+label_UMGS20_6.fasta
+label_UMGS20_5.fasta
+label_UMGS20_47.fasta
+label_UMGS20_46.fasta
+label_UMGS20_45.fasta
+label_UMGS20_44.fasta
+label_UMGS20_43.fasta
+label_UMGS20_42.fasta
+label_UMGS20_41.fasta
+label_UMGS20_40.fasta
+label_UMGS20_4.fasta
+label_UMGS20_39.fasta
+label_UMGS20_38.fasta
+label_UMGS20_37.fasta
+label_UMGS20_36.fasta
+label_UMGS20_35.fasta
+label_UMGS20_34.fasta
+label_UMGS20_33.fasta
+label_UMGS20_32.fasta
+label_UMGS20_31.fasta
+label_UMGS20_30.fasta
+label_UMGS20_3.fasta
+label_UMGS20_29.fasta
+label_UMGS20_28.fasta
+label_UMGS20_27.fasta
+label_UMGS20_26.fasta
+label_UMGS20_25.fasta
+label_UMGS20_24.fasta
+label_UMGS20_23.fasta
+label_UMGS20_22.fasta
+label_UMGS20_21.fasta
+label_UMGS20_20.fasta
+label_UMGS20_2.fasta
+label_UMGS20_19.fasta
+label_UMGS20_18.fasta
+label_UMGS20_17.fasta
+label_UMGS20_16.fasta
+label_UMGS20_15.fasta
+label_UMGS20_14.fasta
+label_UMGS20_13.fasta
+label_UMGS20_12.fasta
+label_UMGS20_11.fasta
+label_UMGS20_10.fasta
+label_UMGS20_1.fasta
+label_UMGS20_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1181_99.fasta
+label_UMGS1181_98.fasta
+label_UMGS1181_97.fasta
+label_UMGS1181_96.fasta
+label_UMGS1181_95.fasta
+label_UMGS1181_94.fasta
+label_UMGS1181_93.fasta
+label_UMGS1181_92.fasta
+label_UMGS1181_91.fasta
+label_UMGS1181_90.fasta
+label_UMGS1181_9.fasta
+label_UMGS1181_89.fasta
+label_UMGS1181_88.fasta
+label_UMGS1181_87.fasta
+label_UMGS1181_86.fasta
+label_UMGS1181_85.fasta
+label_UMGS1181_84.fasta
+label_UMGS1181_83.fasta
+label_UMGS1181_82.fasta
+label_UMGS1181_81.fasta
+label_UMGS1181_80.fasta
+label_UMGS1181_8.fasta
+label_UMGS1181_79.fasta
+label_UMGS1181_78.fasta
+label_UMGS1181_77.fasta
+label_UMGS1181_76.fasta
+label_UMGS1181_75.fasta
+label_UMGS1181_74.fasta
+label_UMGS1181_73.fasta
+label_UMGS1181_72.fasta
+label_UMGS1181_71.fasta
+label_UMGS1181_70.fasta
+label_UMGS1181_7.fasta
+label_UMGS1181_69.fasta
+label_UMGS1181_68.fasta
+label_UMGS1181_67.fasta
+label_UMGS1181_66.fasta
+label_UMGS1181_65.fasta
+label_UMGS1181_64.fasta
+label_UMGS1181_63.fasta
+label_UMGS1181_62.fasta
+label_UMGS1181_61.fasta
+label_UMGS1181_60.fasta
+label_UMGS1181_6.fasta
+label_UMGS1181_59.fasta
+label_UMGS1181_58.fasta
+label_UMGS1181_57.fasta
+label_UMGS1181_56.fasta
+label_UMGS1181_55.fasta
+label_UMGS1181_54.fasta
+label_UMGS1181_53.fasta
+label_UMGS1181_52.fasta
+label_UMGS1181_51.fasta
+label_UMGS1181_50.fasta
+label_UMGS1181_5.fasta
+label_UMGS1181_49.fasta
+label_UMGS1181_48.fasta
+label_UMGS1181_47.fasta
+label_UMGS1181_46.fasta
+label_UMGS1181_45.fasta
+label_UMGS1181_44.fasta
+label_UMGS1181_43.fasta
+label_UMGS1181_42.fasta
+label_UMGS1181_41.fasta
+label_UMGS1181_40.fasta
+label_UMGS1181_4.fasta
+label_UMGS1181_39.fasta
+label_UMGS1181_38.fasta
+label_UMGS1181_37.fasta
+label_UMGS1181_36.fasta
+label_UMGS1181_35.fasta
+label_UMGS1181_34.fasta
+label_UMGS1181_33.fasta
+label_UMGS1181_32.fasta
+label_UMGS1181_31.fasta
+label_UMGS1181_30.fasta
+label_UMGS1181_3.fasta
+label_UMGS1181_29.fasta
+label_UMGS1181_28.fasta
+label_UMGS1181_27.fasta
+label_UMGS1181_26.fasta
+label_UMGS1181_25.fasta
+label_UMGS1181_24.fasta
+label_UMGS1181_23.fasta
+label_UMGS1181_22.fasta
+label_UMGS1181_21.fasta
+label_UMGS1181_20.fasta
+label_UMGS1181_2.fasta
+label_UMGS1181_19.fasta
+label_UMGS1181_18.fasta
+label_UMGS1181_17.fasta
+label_UMGS1181_16.fasta
+label_UMGS1181_15.fasta
+label_UMGS1181_14.fasta
+label_UMGS1181_13.fasta
+label_UMGS1181_12.fasta
+label_UMGS1181_117.fasta
+label_UMGS1181_116.fasta
+label_UMGS1181_115.fasta
+label_UMGS1181_114.fasta
+label_UMGS1181_113.fasta
+label_UMGS1181_112.fasta
+label_UMGS1181_111.fasta
+label_UMGS1181_110.fasta
+label_UMGS1181_11.fasta
+label_UMGS1181_109.fasta
+label_UMGS1181_108.fasta
+label_UMGS1181_107.fasta
+label_UMGS1181_106.fasta
+label_UMGS1181_105.fasta
+label_UMGS1181_104.fasta
+label_UMGS1181_103.fasta
+label_UMGS1181_102.fasta
+label_UMGS1181_101.fasta
+label_UMGS1181_100.fasta
+label_UMGS1181_10.fasta
+label_UMGS1181_1.fasta
+label_UMGS1181_0.fasta
+Generating CGRs.... 
+totalSeq is: 253
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Caecibacter
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: Unable to fit posterior probabilities for learner 2 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In classifyTestSeqExternMisList (line 45)
+  In testingExternMisList (line 9)
+  In stackedMain (line 101)] 
+numTestSeq is: 5
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Caecibact...'}    {'s__Caecibacter...'}    {'s__Caecibacter...'}
+
+  Column 4
+
+    {'s__Caecibacter...'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Caecibact...'}    {'2-s__Caecibact...'}    {'s__Caecibacter...'}
+
+  Column 4
+
+    {'s__Caecibacter...'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Caecibact...'}    {'2-s__Caecibact...'}    {'3-s__Caecibact...'}
+
+  Column 4
+
+    {'s__Caecibacter...'}
+
+
+clusterNames =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Caecibact...'}    {'2-s__Caecibact...'}    {'3-s__Caecibact...'}
+
+  Column 4
+
+    {'4-s__Caecibact...'}
+
+  Columns 1 through 3
+
+    '1-s__Caecibacter...'    '2-s__Caecibacter...'    '3-s__Caecibacter...'
+
+  Column 4
+
+    '4-s__Caecibacter...'
+
+
+header =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Caecibact...'}    {'2-s__Caecibact...'}    {'3-s__Caecibact...'}
+
+  Columns 4 through 5
+
+    {'4-s__Caecibact...'}    {'prediction'}
+
+
+T3 =
+
+  5x5 table
+
+                       1-s__Caecibacter hominis    2-s__Caecibacter massiliensis    3-s__Caecibacter sp003467125    4-s__Caecibacter sp900549385    prediction
+                       ________________________    _____________________________    ____________________________    ____________________________    __________
+
+    MAG-GUT13322.fa              0.99929                    2.2199e-14                       0.00070838                      1.1547e-10                 1     
+    MAG-GUT14159.fa              0.99933                      2.22e-14                       0.00066875                      1.2163e-10                 1     
+    MAG-GUT23746.fa           0.00096813                        0.1315                          0.86657                       0.0009586                 3     
+    MAG-GUT30091.fa           0.00097095                       0.13411                          0.86395                      0.00096156                 3     
+    MAG-GUT54583.fa           0.00094214                       0.11177                          0.88635                      0.00093467                 3     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Caecibacter_split_pruned.xlsx"
+
+Process completed 
+[?1l>

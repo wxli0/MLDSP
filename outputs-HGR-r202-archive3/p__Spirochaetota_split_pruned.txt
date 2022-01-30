@@ -1,0 +1,2390 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/p__Spirochaetota_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS776_99.fasta
+label_UMGS776_98.fasta
+label_UMGS776_97.fasta
+label_UMGS776_96.fasta
+label_UMGS776_95.fasta
+label_UMGS776_94.fasta
+label_UMGS776_93.fasta
+label_UMGS776_92.fasta
+label_UMGS776_91.fasta
+label_UMGS776_90.fasta
+label_UMGS776_9.fasta
+label_UMGS776_89.fasta
+label_UMGS776_88.fasta
+label_UMGS776_87.fasta
+label_UMGS776_86.fasta
+label_UMGS776_85.fasta
+label_UMGS776_84.fasta
+label_UMGS776_83.fasta
+label_UMGS776_82.fasta
+label_UMGS776_81.fasta
+label_UMGS776_80.fasta
+label_UMGS776_8.fasta
+label_UMGS776_79.fasta
+label_UMGS776_78.fasta
+label_UMGS776_77.fasta
+label_UMGS776_76.fasta
+label_UMGS776_75.fasta
+label_UMGS776_74.fasta
+label_UMGS776_73.fasta
+label_UMGS776_72.fasta
+label_UMGS776_71.fasta
+label_UMGS776_70.fasta
+label_UMGS776_7.fasta
+label_UMGS776_69.fasta
+label_UMGS776_68.fasta
+label_UMGS776_67.fasta
+label_UMGS776_66.fasta
+label_UMGS776_65.fasta
+label_UMGS776_64.fasta
+label_UMGS776_63.fasta
+label_UMGS776_62.fasta
+label_UMGS776_61.fasta
+label_UMGS776_60.fasta
+label_UMGS776_6.fasta
+label_UMGS776_59.fasta
+label_UMGS776_58.fasta
+label_UMGS776_57.fasta
+label_UMGS776_56.fasta
+label_UMGS776_55.fasta
+label_UMGS776_54.fasta
+label_UMGS776_53.fasta
+label_UMGS776_52.fasta
+label_UMGS776_51.fasta
+label_UMGS776_50.fasta
+label_UMGS776_5.fasta
+label_UMGS776_49.fasta
+label_UMGS776_48.fasta
+label_UMGS776_47.fasta
+label_UMGS776_46.fasta
+label_UMGS776_45.fasta
+label_UMGS776_44.fasta
+label_UMGS776_43.fasta
+label_UMGS776_42.fasta
+label_UMGS776_41.fasta
+label_UMGS776_40.fasta
+label_UMGS776_4.fasta
+label_UMGS776_39.fasta
+label_UMGS776_38.fasta
+label_UMGS776_37.fasta
+label_UMGS776_36.fasta
+label_UMGS776_35.fasta
+label_UMGS776_34.fasta
+label_UMGS776_33.fasta
+label_UMGS776_32.fasta
+label_UMGS776_31.fasta
+label_UMGS776_30.fasta
+label_UMGS776_3.fasta
+label_UMGS776_29.fasta
+label_UMGS776_28.fasta
+label_UMGS776_27.fasta
+label_UMGS776_26.fasta
+label_UMGS776_25.fasta
+label_UMGS776_24.fasta
+label_UMGS776_23.fasta
+label_UMGS776_22.fasta
+label_UMGS776_21.fasta
+label_UMGS776_20.fasta
+label_UMGS776_2.fasta
+label_UMGS776_19.fasta
+label_UMGS776_18.fasta
+label_UMGS776_17.fasta
+label_UMGS776_16.fasta
+label_UMGS776_15.fasta
+label_UMGS776_14.fasta
+label_UMGS776_13.fasta
+label_UMGS776_124.fasta
+label_UMGS776_123.fasta
+label_UMGS776_122.fasta
+label_UMGS776_121.fasta
+label_UMGS776_120.fasta
+label_UMGS776_12.fasta
+label_UMGS776_119.fasta
+label_UMGS776_118.fasta
+label_UMGS776_117.fasta
+label_UMGS776_116.fasta
+label_UMGS776_115.fasta
+label_UMGS776_114.fasta
+label_UMGS776_113.fasta
+label_UMGS776_112.fasta
+label_UMGS776_111.fasta
+label_UMGS776_110.fasta
+label_UMGS776_11.fasta
+label_UMGS776_109.fasta
+label_UMGS776_108.fasta
+label_UMGS776_107.fasta
+label_UMGS776_106.fasta
+label_UMGS776_105.fasta
+label_UMGS776_104.fasta
+label_UMGS776_103.fasta
+label_UMGS776_102.fasta
+label_UMGS776_101.fasta
+label_UMGS776_100.fasta
+label_UMGS776_10.fasta
+label_UMGS776_1.fasta
+label_UMGS776_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS895_99.fasta
+label_UMGS895_98.fasta
+label_UMGS895_97.fasta
+label_UMGS895_96.fasta
+label_UMGS895_95.fasta
+label_UMGS895_94.fasta
+label_UMGS895_93.fasta
+label_UMGS895_92.fasta
+label_UMGS895_91.fasta
+label_UMGS895_90.fasta
+label_UMGS895_9.fasta
+label_UMGS895_89.fasta
+label_UMGS895_88.fasta
+label_UMGS895_87.fasta
+label_UMGS895_86.fasta
+label_UMGS895_85.fasta
+label_UMGS895_84.fasta
+label_UMGS895_83.fasta
+label_UMGS895_82.fasta
+label_UMGS895_81.fasta
+label_UMGS895_80.fasta
+label_UMGS895_8.fasta
+label_UMGS895_79.fasta
+label_UMGS895_78.fasta
+label_UMGS895_77.fasta
+label_UMGS895_76.fasta
+label_UMGS895_75.fasta
+label_UMGS895_74.fasta
+label_UMGS895_73.fasta
+label_UMGS895_72.fasta
+label_UMGS895_71.fasta
+label_UMGS895_70.fasta
+label_UMGS895_7.fasta
+label_UMGS895_69.fasta
+label_UMGS895_68.fasta
+label_UMGS895_67.fasta
+label_UMGS895_66.fasta
+label_UMGS895_65.fasta
+label_UMGS895_64.fasta
+label_UMGS895_63.fasta
+label_UMGS895_62.fasta
+label_UMGS895_61.fasta
+label_UMGS895_60.fasta
+label_UMGS895_6.fasta
+label_UMGS895_59.fasta
+label_UMGS895_58.fasta
+label_UMGS895_57.fasta
+label_UMGS895_56.fasta
+label_UMGS895_55.fasta
+label_UMGS895_54.fasta
+label_UMGS895_53.fasta
+label_UMGS895_52.fasta
+label_UMGS895_51.fasta
+label_UMGS895_50.fasta
+label_UMGS895_5.fasta
+label_UMGS895_49.fasta
+label_UMGS895_48.fasta
+label_UMGS895_47.fasta
+label_UMGS895_46.fasta
+label_UMGS895_45.fasta
+label_UMGS895_44.fasta
+label_UMGS895_43.fasta
+label_UMGS895_42.fasta
+label_UMGS895_41.fasta
+label_UMGS895_40.fasta
+label_UMGS895_4.fasta
+label_UMGS895_39.fasta
+label_UMGS895_38.fasta
+label_UMGS895_37.fasta
+label_UMGS895_36.fasta
+label_UMGS895_35.fasta
+label_UMGS895_34.fasta
+label_UMGS895_33.fasta
+label_UMGS895_32.fasta
+label_UMGS895_31.fasta
+label_UMGS895_30.fasta
+label_UMGS895_3.fasta
+label_UMGS895_29.fasta
+label_UMGS895_28.fasta
+label_UMGS895_27.fasta
+label_UMGS895_26.fasta
+label_UMGS895_25.fasta
+label_UMGS895_24.fasta
+label_UMGS895_23.fasta
+label_UMGS895_22.fasta
+label_UMGS895_21.fasta
+label_UMGS895_20.fasta
+label_UMGS895_2.fasta
+label_UMGS895_19.fasta
+label_UMGS895_18.fasta
+label_UMGS895_17.fasta
+label_UMGS895_16.fasta
+label_UMGS895_15.fasta
+label_UMGS895_140.fasta
+label_UMGS895_14.fasta
+label_UMGS895_139.fasta
+label_UMGS895_138.fasta
+label_UMGS895_137.fasta
+label_UMGS895_136.fasta
+label_UMGS895_135.fasta
+label_UMGS895_134.fasta
+label_UMGS895_133.fasta
+label_UMGS895_132.fasta
+label_UMGS895_131.fasta
+label_UMGS895_130.fasta
+label_UMGS895_13.fasta
+label_UMGS895_129.fasta
+label_UMGS895_128.fasta
+label_UMGS895_127.fasta
+label_UMGS895_126.fasta
+label_UMGS895_125.fasta
+label_UMGS895_124.fasta
+label_UMGS895_123.fasta
+label_UMGS895_122.fasta
+label_UMGS895_121.fasta
+label_UMGS895_120.fasta
+label_UMGS895_12.fasta
+label_UMGS895_119.fasta
+label_UMGS895_118.fasta
+label_UMGS895_117.fasta
+label_UMGS895_116.fasta
+label_UMGS895_115.fasta
+label_UMGS895_114.fasta
+label_UMGS895_113.fasta
+label_UMGS895_112.fasta
+label_UMGS895_111.fasta
+label_UMGS895_110.fasta
+label_UMGS895_11.fasta
+label_UMGS895_109.fasta
+label_UMGS895_108.fasta
+label_UMGS895_107.fasta
+label_UMGS895_106.fasta
+label_UMGS895_105.fasta
+label_UMGS895_104.fasta
+label_UMGS895_103.fasta
+label_UMGS895_102.fasta
+label_UMGS895_101.fasta
+label_UMGS895_100.fasta
+label_UMGS895_10.fasta
+label_UMGS895_1.fasta
+label_UMGS895_0.fasta
+label_UMGS805_99.fasta
+label_UMGS805_98.fasta
+label_UMGS805_97.fasta
+label_UMGS805_96.fasta
+label_UMGS805_95.fasta
+label_UMGS805_94.fasta
+label_UMGS805_93.fasta
+label_UMGS805_92.fasta
+label_UMGS805_91.fasta
+label_UMGS805_90.fasta
+label_UMGS805_9.fasta
+label_UMGS805_89.fasta
+label_UMGS805_88.fasta
+label_UMGS805_87.fasta
+label_UMGS805_86.fasta
+label_UMGS805_85.fasta
+label_UMGS805_84.fasta
+label_UMGS805_83.fasta
+label_UMGS805_82.fasta
+label_UMGS805_81.fasta
+label_UMGS805_80.fasta
+label_UMGS805_8.fasta
+label_UMGS805_79.fasta
+label_UMGS805_78.fasta
+label_UMGS805_77.fasta
+label_UMGS805_76.fasta
+label_UMGS805_75.fasta
+label_UMGS805_74.fasta
+label_UMGS805_73.fasta
+label_UMGS805_72.fasta
+label_UMGS805_71.fasta
+label_UMGS805_70.fasta
+label_UMGS805_7.fasta
+label_UMGS805_69.fasta
+label_UMGS805_68.fasta
+label_UMGS805_67.fasta
+label_UMGS805_66.fasta
+label_UMGS805_65.fasta
+label_UMGS805_64.fasta
+label_UMGS805_63.fasta
+label_UMGS805_62.fasta
+label_UMGS805_61.fasta
+label_UMGS805_60.fasta
+label_UMGS805_6.fasta
+label_UMGS805_59.fasta
+label_UMGS805_58.fasta
+label_UMGS805_57.fasta
+label_UMGS805_56.fasta
+label_UMGS805_55.fasta
+label_UMGS805_54.fasta
+label_UMGS805_53.fasta
+label_UMGS805_52.fasta
+label_UMGS805_51.fasta
+label_UMGS805_50.fasta
+label_UMGS805_5.fasta
+label_UMGS805_49.fasta
+label_UMGS805_48.fasta
+label_UMGS805_47.fasta
+label_UMGS805_46.fasta
+label_UMGS805_45.fasta
+label_UMGS805_44.fasta
+label_UMGS805_43.fasta
+label_UMGS805_42.fasta
+label_UMGS805_41.fasta
+label_UMGS805_40.fasta
+label_UMGS805_4.fasta
+label_UMGS805_39.fasta
+label_UMGS805_38.fasta
+label_UMGS805_37.fasta
+label_UMGS805_36.fasta
+label_UMGS805_35.fasta
+label_UMGS805_34.fasta
+label_UMGS805_33.fasta
+label_UMGS805_32.fasta
+label_UMGS805_31.fasta
+label_UMGS805_30.fasta
+label_UMGS805_3.fasta
+label_UMGS805_29.fasta
+label_UMGS805_28.fasta
+label_UMGS805_27.fasta
+label_UMGS805_26.fasta
+label_UMGS805_25.fasta
+label_UMGS805_24.fasta
+label_UMGS805_23.fasta
+label_UMGS805_22.fasta
+label_UMGS805_21.fasta
+label_UMGS805_20.fasta
+label_UMGS805_2.fasta
+label_UMGS805_19.fasta
+label_UMGS805_18.fasta
+label_UMGS805_17.fasta
+label_UMGS805_16.fasta
+label_UMGS805_15.fasta
+label_UMGS805_14.fasta
+label_UMGS805_13.fasta
+label_UMGS805_120.fasta
+label_UMGS805_12.fasta
+label_UMGS805_119.fasta
+label_UMGS805_118.fasta
+label_UMGS805_117.fasta
+label_UMGS805_116.fasta
+label_UMGS805_115.fasta
+label_UMGS805_114.fasta
+label_UMGS805_113.fasta
+label_UMGS805_112.fasta
+label_UMGS805_111.fasta
+label_UMGS805_110.fasta
+label_UMGS805_11.fasta
+label_UMGS805_109.fasta
+label_UMGS805_108.fasta
+label_UMGS805_107.fasta
+label_UMGS805_106.fasta
+label_UMGS805_105.fasta
+label_UMGS805_104.fasta
+label_UMGS805_103.fasta
+label_UMGS805_102.fasta
+label_UMGS805_101.fasta
+label_UMGS805_100.fasta
+label_UMGS805_10.fasta
+label_UMGS805_1.fasta
+label_UMGS805_0.fasta
+label_UMGS419_9.fasta
+label_UMGS419_8.fasta
+label_UMGS419_7.fasta
+label_UMGS419_6.fasta
+label_UMGS419_5.fasta
+label_UMGS419_4.fasta
+label_UMGS419_32.fasta
+label_UMGS419_31.fasta
+label_UMGS419_30.fasta
+label_UMGS419_3.fasta
+label_UMGS419_29.fasta
+label_UMGS419_28.fasta
+label_UMGS419_27.fasta
+label_UMGS419_26.fasta
+label_UMGS419_25.fasta
+label_UMGS419_24.fasta
+label_UMGS419_23.fasta
+label_UMGS419_22.fasta
+label_UMGS419_21.fasta
+label_UMGS419_20.fasta
+label_UMGS419_2.fasta
+label_UMGS419_19.fasta
+label_UMGS419_18.fasta
+label_UMGS419_17.fasta
+label_UMGS419_16.fasta
+label_UMGS419_15.fasta
+label_UMGS419_14.fasta
+label_UMGS419_13.fasta
+label_UMGS419_12.fasta
+label_UMGS419_11.fasta
+label_UMGS419_10.fasta
+label_UMGS419_1.fasta
+label_UMGS419_0.fasta
+label_UMGS408_9.fasta
+label_UMGS408_8.fasta
+label_UMGS408_7.fasta
+label_UMGS408_6.fasta
+label_UMGS408_5.fasta
+label_UMGS408_44.fasta
+label_UMGS408_43.fasta
+label_UMGS408_42.fasta
+label_UMGS408_41.fasta
+label_UMGS408_40.fasta
+label_UMGS408_4.fasta
+label_UMGS408_39.fasta
+label_UMGS408_38.fasta
+label_UMGS408_37.fasta
+label_UMGS408_36.fasta
+label_UMGS408_35.fasta
+label_UMGS408_34.fasta
+label_UMGS408_33.fasta
+label_UMGS408_32.fasta
+label_UMGS408_31.fasta
+label_UMGS408_30.fasta
+label_UMGS408_3.fasta
+label_UMGS408_29.fasta
+label_UMGS408_28.fasta
+label_UMGS408_27.fasta
+label_UMGS408_26.fasta
+label_UMGS408_25.fasta
+label_UMGS408_24.fasta
+label_UMGS408_23.fasta
+label_UMGS408_22.fasta
+label_UMGS408_21.fasta
+label_UMGS408_20.fasta
+label_UMGS408_2.fasta
+label_UMGS408_19.fasta
+label_UMGS408_18.fasta
+label_UMGS408_17.fasta
+label_UMGS408_16.fasta
+label_UMGS408_15.fasta
+label_UMGS408_14.fasta
+label_UMGS408_13.fasta
+label_UMGS408_12.fasta
+label_UMGS408_11.fasta
+label_UMGS408_10.fasta
+label_UMGS408_1.fasta
+label_UMGS408_0.fasta
+label_UMGS1301_9.fasta
+label_UMGS1301_8.fasta
+label_UMGS1301_7.fasta
+label_UMGS1301_6.fasta
+label_UMGS1301_5.fasta
+label_UMGS1301_48.fasta
+label_UMGS1301_47.fasta
+label_UMGS1301_46.fasta
+label_UMGS1301_45.fasta
+label_UMGS1301_44.fasta
+label_UMGS1301_43.fasta
+label_UMGS1301_42.fasta
+label_UMGS1301_41.fasta
+label_UMGS1301_40.fasta
+label_UMGS1301_4.fasta
+label_UMGS1301_39.fasta
+label_UMGS1301_38.fasta
+label_UMGS1301_37.fasta
+label_UMGS1301_36.fasta
+label_UMGS1301_35.fasta
+label_UMGS1301_34.fasta
+label_UMGS1301_33.fasta
+label_UMGS1301_32.fasta
+label_UMGS1301_31.fasta
+label_UMGS1301_30.fasta
+label_UMGS1301_3.fasta
+label_UMGS1301_29.fasta
+label_UMGS1301_28.fasta
+label_UMGS1301_27.fasta
+label_UMGS1301_26.fasta
+label_UMGS1301_25.fasta
+label_UMGS1301_24.fasta
+label_UMGS1301_23.fasta
+label_UMGS1301_22.fasta
+label_UMGS1301_21.fasta
+label_UMGS1301_20.fasta
+label_UMGS1301_2.fasta
+label_UMGS1301_19.fasta
+label_UMGS1301_18.fasta
+label_UMGS1301_17.fasta
+label_UMGS1301_16.fasta
+label_UMGS1301_15.fasta
+label_UMGS1301_14.fasta
+label_UMGS1301_13.fasta
+label_UMGS1301_12.fasta
+label_UMGS1301_11.fasta
+label_UMGS1301_10.fasta
+label_UMGS1301_1.fasta
+label_UMGS1301_0.fasta
+Generating CGRs.... 
+totalSeq is: 514
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x102 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  102x4 table
+
+                               c__Brachyspirae    c__Spirochaetia    prediction    actual
+                               _______________    _______________    __________    ______
+
+    label_UMGS776_11.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_111.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_114.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_12.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_120.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_121.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_15.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_20.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_22.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_24.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_26.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_30.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_32.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_34.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_42.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_47.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_48.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_5.fasta             1             2.2204e-14           1           1   
+    label_UMGS776_50.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_52.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_58.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_59.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_62.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_63.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_67.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_72.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_75.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_8.fasta             1             2.2204e-14           1           1   
+    label_UMGS776_82.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_83.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_84.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_96.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_97.fasta            1             2.2204e-14           1           1   
+    label_UMGS1301_15.fasta           0                      1           2           2   
+    label_UMGS1301_27.fasta           0                      1           2           2   
+    label_UMGS1301_44.fasta           0                      1           2           2   
+    label_UMGS1301_46.fasta           0                      1           2           2   
+    label_UMGS1301_7.fasta            0                      1           2           2   
+    label_UMGS1301_9.fasta            0                      1           2           2   
+    label_UMGS408_1.fasta             0                      1           2           2   
+    label_UMGS408_11.fasta            0                      1           2           2   
+    label_UMGS408_14.fasta            0                      1           2           2   
+    label_UMGS408_27.fasta            0                      1           2           2   
+    label_UMGS408_33.fasta            0                      1           2           2   
+    label_UMGS408_36.fasta            0                      1           2           2   
+    label_UMGS419_11.fasta            0                      1           2           2   
+    label_UMGS419_16.fasta            0                      1           2           2   
+    label_UMGS419_18.fasta            0                      1           2           2   
+    label_UMGS419_19.fasta            0                      1           2           2   
+    label_UMGS419_20.fasta            0                      1           2           2   
+    label_UMGS419_24.fasta            0                      1           2           2   
+    label_UMGS419_26.fasta            0                      1           2           2   
+    label_UMGS419_30.fasta            0                      1           2           2   
+    label_UMGS419_32.fasta            0                      1           2           2   
+    label_UMGS419_7.fasta             0                      1           2           2   
+    label_UMGS805_1.fasta             0                      1           2           2   
+    label_UMGS805_102.fasta           0                      1           2           2   
+    label_UMGS805_103.fasta           0                      1           2           2   
+    label_UMGS805_109.fasta           0                      1           2           2   
+    label_UMGS805_115.fasta           0                      1           2           2   
+    label_UMGS805_28.fasta            0                      1           2           2   
+    label_UMGS805_31.fasta            0                      1           2           2   
+    label_UMGS805_35.fasta            0                      1           2           2   
+    label_UMGS805_39.fasta            0                      1           2           2   
+    label_UMGS805_40.fasta            0                      1           2           2   
+    label_UMGS805_49.fasta            0                      1           2           2   
+    label_UMGS805_5.fasta             0                      1           2           2   
+    label_UMGS805_57.fasta            0                      1           2           2   
+    label_UMGS805_58.fasta            0                      1           2           2   
+    label_UMGS805_61.fasta            0                      1           2           2   
+    label_UMGS805_63.fasta            0                      1           2           2   
+    label_UMGS805_8.fasta             0                      1           2           2   
+    label_UMGS805_87.fasta            0                      1           2           2   
+    label_UMGS805_93.fasta            0                      1           2           2   
+    label_UMGS805_97.fasta            0                      1           2           2   
+    label_UMGS805_98.fasta            0                      1           2           2   
+    label_UMGS895_105.fasta           0                      1           2           2   
+    label_UMGS895_106.fasta           0                      1           2           2   
+    label_UMGS895_108.fasta           0                      1           2           2   
+    label_UMGS895_118.fasta           0                      1           2           2   
+    label_UMGS895_120.fasta           0                      1           2           2   
+    label_UMGS895_137.fasta           0                      1           2           2   
+    label_UMGS895_14.fasta            0                      1           2           2   
+    label_UMGS895_140.fasta           0                      1           2           2   
+    label_UMGS895_15.fasta            0                      1           2           2   
+    label_UMGS895_21.fasta            0                      1           2           2   
+    label_UMGS895_29.fasta            0                      1           2           2   
+    label_UMGS895_36.fasta            0                      1           2           2   
+    label_UMGS895_4.fasta             0                      1           2           2   
+    label_UMGS895_44.fasta            0                      1           2           2   
+    label_UMGS895_5.fasta             0                      1           2           2   
+    label_UMGS895_54.fasta            0                      1           2           2   
+    label_UMGS895_55.fasta            0                      1           2           2   
+    label_UMGS895_63.fasta            0                      1           2           2   
+    label_UMGS895_64.fasta            0                      1           2           2   
+    label_UMGS895_67.fasta            0                      1           2           2   
+    label_UMGS895_68.fasta            0                      1           2           2   
+    label_UMGS895_70.fasta            0                      1           2           2   
+    label_UMGS895_84.fasta            0                      1           2           2   
+    label_UMGS895_88.fasta            0                      1           2           2   
+    label_UMGS895_95.fasta            0                      1           2           2   
+    label_UMGS895_97.fasta            0                      1           2           2   
+
+
+testAcNum =
+
+  1x103 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 103
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.2287    0.7713    2.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  103x4 table
+
+                               c__Brachyspirae    c__Spirochaetia    prediction    actual
+                               _______________    _______________    __________    ______
+
+    label_UMGS776_103.fasta              1          2.2204e-14           1           1   
+    label_UMGS776_106.fasta              1          2.2204e-14           1           1   
+    label_UMGS776_108.fasta              1          2.2204e-14           1           1   
+    label_UMGS776_112.fasta        0.22871             0.77129           2           1   
+    label_UMGS776_119.fasta              1          2.2204e-14           1           1   
+    label_UMGS776_124.fasta              1          2.2204e-14           1           1   
+    label_UMGS776_13.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_19.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_23.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_25.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_28.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_29.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_3.fasta                1          2.2204e-14           1           1   
+    label_UMGS776_33.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_35.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_37.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_40.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_41.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_43.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_46.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_54.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_56.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_6.fasta                1          2.2204e-14           1           1   
+    label_UMGS776_60.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_64.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_65.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_69.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_7.fasta                1          2.2204e-14           1           1   
+    label_UMGS776_78.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_81.fasta               1          2.2204e-14           1           1   
+    label_UMGS776_91.fasta               1          2.2204e-14           1           1   
+    label_UMGS1301_10.fasta              0                   1           2           2   
+    label_UMGS1301_12.fasta              0                   1           2           2   
+    label_UMGS1301_19.fasta              0                   1           2           2   
+    label_UMGS1301_26.fasta              0                   1           2           2   
+    label_UMGS1301_28.fasta              0                   1           2           2   
+    label_UMGS1301_30.fasta              0                   1           2           2   
+    label_UMGS1301_31.fasta              0                   1           2           2   
+    label_UMGS1301_35.fasta              0                   1           2           2   
+    label_UMGS1301_39.fasta              0                   1           2           2   
+    label_UMGS1301_4.fasta               0                   1           2           2   
+    label_UMGS1301_40.fasta              0                   1           2           2   
+    label_UMGS408_12.fasta               0                   1           2           2   
+    label_UMGS408_16.fasta               0                   1           2           2   
+    label_UMGS408_2.fasta                0                   1           2           2   
+    label_UMGS408_31.fasta               0                   1           2           2   
+    label_UMGS408_37.fasta               0                   1           2           2   
+    label_UMGS408_39.fasta               0                   1           2           2   
+    label_UMGS408_41.fasta               0                   1           2           2   
+    label_UMGS408_42.fasta               0                   1           2           2   
+    label_UMGS419_0.fasta                0                   1           2           2   
+    label_UMGS419_13.fasta               0                   1           2           2   
+    label_UMGS419_2.fasta                0                   1           2           2   
+    label_UMGS419_21.fasta               0                   1           2           2   
+    label_UMGS419_23.fasta               0                   1           2           2   
+    label_UMGS805_10.fasta               0                   1           2           2   
+    label_UMGS805_101.fasta              0                   1           2           2   
+    label_UMGS805_105.fasta              0                   1           2           2   
+    label_UMGS805_112.fasta              0                   1           2           2   
+    label_UMGS805_12.fasta               0                   1           2           2   
+    label_UMGS805_18.fasta               0                   1           2           2   
+    label_UMGS805_21.fasta               0                   1           2           2   
+    label_UMGS805_30.fasta               0                   1           2           2   
+    label_UMGS805_34.fasta               0                   1           2           2   
+    label_UMGS805_41.fasta               0                   1           2           2   
+    label_UMGS805_43.fasta               0                   1           2           2   
+    label_UMGS805_47.fasta               0                   1           2           2   
+    label_UMGS805_48.fasta               0                   1           2           2   
+    label_UMGS805_55.fasta               0                   1           2           2   
+    label_UMGS805_62.fasta               0                   1           2           2   
+    label_UMGS805_64.fasta               0                   1           2           2   
+    label_UMGS805_68.fasta               0                   1           2           2   
+    label_UMGS805_76.fasta               0                   1           2           2   
+    label_UMGS805_78.fasta               0                   1           2           2   
+    label_UMGS805_81.fasta               0                   1           2           2   
+    label_UMGS805_86.fasta               0                   1           2           2   
+    label_UMGS895_1.fasta                0                   1           2           2   
+    label_UMGS895_100.fasta              0                   1           2           2   
+    label_UMGS895_101.fasta              0                   1           2           2   
+    label_UMGS895_111.fasta              0                   1           2           2   
+    label_UMGS895_119.fasta              0                   1           2           2   
+    label_UMGS895_122.fasta              0                   1           2           2   
+    label_UMGS895_125.fasta              0                   1           2           2   
+    label_UMGS895_129.fasta              0                   1           2           2   
+    label_UMGS895_132.fasta              0                   1           2           2   
+    label_UMGS895_133.fasta              0                   1           2           2   
+    label_UMGS895_20.fasta               0                   1           2           2   
+    label_UMGS895_28.fasta               0                   1           2           2   
+    label_UMGS895_30.fasta               0                   1           2           2   
+    label_UMGS895_34.fasta               0                   1           2           2   
+    label_UMGS895_39.fasta               0                   1           2           2   
+    label_UMGS895_41.fasta               0                   1           2           2   
+    label_UMGS895_53.fasta               0                   1           2           2   
+    label_UMGS895_57.fasta               0                   1           2           2   
+    label_UMGS895_62.fasta               0                   1           2           2   
+    label_UMGS895_69.fasta               0                   1           2           2   
+    label_UMGS895_71.fasta               0                   1           2           2   
+    label_UMGS895_79.fasta               0                   1           2           2   
+    label_UMGS895_83.fasta               0                   1           2           2   
+    label_UMGS895_87.fasta               0                   1           2           2   
+    label_UMGS895_89.fasta               0                   1           2           2   
+    label_UMGS895_92.fasta               0                   1           2           2   
+    label_UMGS895_94.fasta               0                   1           2           2   
+
+
+testAcNum =
+
+  1x103 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 103
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  103x4 table
+
+                               c__Brachyspirae    c__Spirochaetia    prediction    actual
+                               _______________    _______________    __________    ______
+
+    label_UMGS776_0.fasta             1             2.2204e-14           1           1   
+    label_UMGS776_107.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_110.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_116.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_118.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_17.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_18.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_21.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_66.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_77.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_79.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_85.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_86.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_92.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_94.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_95.fasta            1             2.2204e-14           1           1   
+    label_UMGS1301_11.fasta           0                      1           2           2   
+    label_UMGS1301_13.fasta           0                      1           2           2   
+    label_UMGS1301_2.fasta            0                      1           2           2   
+    label_UMGS1301_20.fasta           0                      1           2           2   
+    label_UMGS1301_21.fasta           0                      1           2           2   
+    label_UMGS1301_3.fasta            0                      1           2           2   
+    label_UMGS1301_33.fasta           0                      1           2           2   
+    label_UMGS1301_34.fasta           0                      1           2           2   
+    label_UMGS1301_36.fasta           0                      1           2           2   
+    label_UMGS1301_37.fasta           0                      1           2           2   
+    label_UMGS1301_38.fasta           0                      1           2           2   
+    label_UMGS1301_47.fasta           0                      1           2           2   
+    label_UMGS1301_6.fasta            0                      1           2           2   
+    label_UMGS1301_8.fasta            0                      1           2           2   
+    label_UMGS408_17.fasta            0                      1           2           2   
+    label_UMGS408_19.fasta            0                      1           2           2   
+    label_UMGS408_21.fasta            0                      1           2           2   
+    label_UMGS408_22.fasta            0                      1           2           2   
+    label_UMGS408_23.fasta            0                      1           2           2   
+    label_UMGS408_25.fasta            0                      1           2           2   
+    label_UMGS408_28.fasta            0                      1           2           2   
+    label_UMGS408_29.fasta            0                      1           2           2   
+    label_UMGS408_40.fasta            0                      1           2           2   
+    label_UMGS408_43.fasta            0                      1           2           2   
+    label_UMGS408_6.fasta             0                      1           2           2   
+    label_UMGS419_1.fasta             0                      1           2           2   
+    label_UMGS419_10.fasta            0                      1           2           2   
+    label_UMGS419_14.fasta            0                      1           2           2   
+    label_UMGS419_15.fasta            0                      1           2           2   
+    label_UMGS419_17.fasta            0                      1           2           2   
+    label_UMGS419_25.fasta            0                      1           2           2   
+    label_UMGS805_0.fasta             0                      1           2           2   
+    label_UMGS805_11.fasta            0                      1           2           2   
+    label_UMGS805_113.fasta           0                      1           2           2   
+    label_UMGS805_116.fasta           0                      1           2           2   
+    label_UMGS805_120.fasta           0                      1           2           2   
+    label_UMGS805_14.fasta            0                      1           2           2   
+    label_UMGS805_16.fasta            0                      1           2           2   
+    label_UMGS805_2.fasta             0                      1           2           2   
+    label_UMGS805_22.fasta            0                      1           2           2   
+    label_UMGS805_23.fasta            0                      1           2           2   
+    label_UMGS805_27.fasta            0                      1           2           2   
+    label_UMGS805_29.fasta            0                      1           2           2   
+    label_UMGS805_4.fasta             0                      1           2           2   
+    label_UMGS805_52.fasta            0                      1           2           2   
+    label_UMGS805_53.fasta            0                      1           2           2   
+    label_UMGS805_60.fasta            0                      1           2           2   
+    label_UMGS805_67.fasta            0                      1           2           2   
+    label_UMGS805_70.fasta            0                      1           2           2   
+    label_UMGS805_71.fasta            0                      1           2           2   
+    label_UMGS805_73.fasta            0                      1           2           2   
+    label_UMGS805_79.fasta            0                      1           2           2   
+    label_UMGS805_85.fasta            0                      1           2           2   
+    label_UMGS805_88.fasta            0                      1           2           2   
+    label_UMGS805_89.fasta            0                      1           2           2   
+    label_UMGS805_9.fasta             0                      1           2           2   
+    label_UMGS805_91.fasta            0                      1           2           2   
+    label_UMGS805_92.fasta            0                      1           2           2   
+    label_UMGS805_95.fasta            0                      1           2           2   
+    label_UMGS895_10.fasta            0                      1           2           2   
+    label_UMGS895_109.fasta           0                      1           2           2   
+    label_UMGS895_110.fasta           0                      1           2           2   
+    label_UMGS895_115.fasta           0                      1           2           2   
+    label_UMGS895_116.fasta           0                      1           2           2   
+    label_UMGS895_121.fasta           0                      1           2           2   
+    label_UMGS895_123.fasta           0                      1           2           2   
+    label_UMGS895_128.fasta           0                      1           2           2   
+    label_UMGS895_136.fasta           0                      1           2           2   
+    label_UMGS895_25.fasta            0                      1           2           2   
+    label_UMGS895_31.fasta            0                      1           2           2   
+    label_UMGS895_35.fasta            0                      1           2           2   
+    label_UMGS895_42.fasta            0                      1           2           2   
+    label_UMGS895_45.fasta            0                      1           2           2   
+    label_UMGS895_46.fasta            0                      1           2           2   
+    label_UMGS895_48.fasta            0                      1           2           2   
+    label_UMGS895_50.fasta            0                      1           2           2   
+    label_UMGS895_56.fasta            0                      1           2           2   
+    label_UMGS895_58.fasta            0                      1           2           2   
+    label_UMGS895_65.fasta            0                      1           2           2   
+    label_UMGS895_66.fasta            0                      1           2           2   
+    label_UMGS895_72.fasta            0                      1           2           2   
+    label_UMGS895_73.fasta            0                      1           2           2   
+    label_UMGS895_75.fasta            0                      1           2           2   
+    label_UMGS895_85.fasta            0                      1           2           2   
+    label_UMGS895_86.fasta            0                      1           2           2   
+    label_UMGS895_9.fasta             0                      1           2           2   
+    label_UMGS895_91.fasta            0                      1           2           2   
+
+
+testAcNum =
+
+  1x103 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 103
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  103x4 table
+
+                               c__Brachyspirae    c__Spirochaetia    prediction    actual
+                               _______________    _______________    __________    ______
+
+    label_UMGS776_1.fasta             1             2.2204e-14           1           1   
+    label_UMGS776_10.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_102.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_109.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_113.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_117.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_2.fasta             1             2.2204e-14           1           1   
+    label_UMGS776_31.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_36.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_38.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_39.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_4.fasta             1             2.2204e-14           1           1   
+    label_UMGS776_45.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_61.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_68.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_73.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_76.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_80.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_87.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_89.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_98.fasta            1             2.2204e-14           1           1   
+    label_UMGS1301_1.fasta            0                      1           2           2   
+    label_UMGS1301_29.fasta           0                      1           2           2   
+    label_UMGS1301_41.fasta           0                      1           2           2   
+    label_UMGS1301_42.fasta           0                      1           2           2   
+    label_UMGS1301_43.fasta           0                      1           2           2   
+    label_UMGS1301_45.fasta           0                      1           2           2   
+    label_UMGS1301_48.fasta           0                      1           2           2   
+    label_UMGS1301_5.fasta            0                      1           2           2   
+    label_UMGS408_0.fasta             0                      1           2           2   
+    label_UMGS408_10.fasta            0                      1           2           2   
+    label_UMGS408_15.fasta            0                      1           2           2   
+    label_UMGS408_3.fasta             0                      1           2           2   
+    label_UMGS408_30.fasta            0                      1           2           2   
+    label_UMGS408_32.fasta            0                      1           2           2   
+    label_UMGS408_35.fasta            0                      1           2           2   
+    label_UMGS408_38.fasta            0                      1           2           2   
+    label_UMGS408_9.fasta             0                      1           2           2   
+    label_UMGS419_27.fasta            0                      1           2           2   
+    label_UMGS419_28.fasta            0                      1           2           2   
+    label_UMGS419_29.fasta            0                      1           2           2   
+    label_UMGS419_4.fasta             0                      1           2           2   
+    label_UMGS419_9.fasta             0                      1           2           2   
+    label_UMGS805_104.fasta           0                      1           2           2   
+    label_UMGS805_106.fasta           0                      1           2           2   
+    label_UMGS805_108.fasta           0                      1           2           2   
+    label_UMGS805_110.fasta           0                      1           2           2   
+    label_UMGS805_114.fasta           0                      1           2           2   
+    label_UMGS805_117.fasta           0                      1           2           2   
+    label_UMGS805_119.fasta           0                      1           2           2   
+    label_UMGS805_17.fasta            0                      1           2           2   
+    label_UMGS805_19.fasta            0                      1           2           2   
+    label_UMGS805_20.fasta            0                      1           2           2   
+    label_UMGS805_26.fasta            0                      1           2           2   
+    label_UMGS805_32.fasta            0                      1           2           2   
+    label_UMGS805_33.fasta            0                      1           2           2   
+    label_UMGS805_37.fasta            0                      1           2           2   
+    label_UMGS805_42.fasta            0                      1           2           2   
+    label_UMGS805_45.fasta            0                      1           2           2   
+    label_UMGS805_51.fasta            0                      1           2           2   
+    label_UMGS805_56.fasta            0                      1           2           2   
+    label_UMGS805_59.fasta            0                      1           2           2   
+    label_UMGS805_6.fasta             0                      1           2           2   
+    label_UMGS805_65.fasta            0                      1           2           2   
+    label_UMGS805_66.fasta            0                      1           2           2   
+    label_UMGS805_72.fasta            0                      1           2           2   
+    label_UMGS805_74.fasta            0                      1           2           2   
+    label_UMGS805_80.fasta            0                      1           2           2   
+    label_UMGS805_82.fasta            0                      1           2           2   
+    label_UMGS805_84.fasta            0                      1           2           2   
+    label_UMGS805_90.fasta            0                      1           2           2   
+    label_UMGS895_104.fasta           0                      1           2           2   
+    label_UMGS895_112.fasta           0                      1           2           2   
+    label_UMGS895_114.fasta           0                      1           2           2   
+    label_UMGS895_117.fasta           0                      1           2           2   
+    label_UMGS895_12.fasta            0                      1           2           2   
+    label_UMGS895_124.fasta           0                      1           2           2   
+    label_UMGS895_126.fasta           0                      1           2           2   
+    label_UMGS895_134.fasta           0                      1           2           2   
+    label_UMGS895_16.fasta            0                      1           2           2   
+    label_UMGS895_19.fasta            0                      1           2           2   
+    label_UMGS895_2.fasta             0                      1           2           2   
+    label_UMGS895_22.fasta            0                      1           2           2   
+    label_UMGS895_24.fasta            0                      1           2           2   
+    label_UMGS895_27.fasta            0                      1           2           2   
+    label_UMGS895_3.fasta             0                      1           2           2   
+    label_UMGS895_32.fasta            0                      1           2           2   
+    label_UMGS895_33.fasta            0                      1           2           2   
+    label_UMGS895_38.fasta            0                      1           2           2   
+    label_UMGS895_40.fasta            0                      1           2           2   
+    label_UMGS895_43.fasta            0                      1           2           2   
+    label_UMGS895_47.fasta            0                      1           2           2   
+    label_UMGS895_49.fasta            0                      1           2           2   
+    label_UMGS895_51.fasta            0                      1           2           2   
+    label_UMGS895_52.fasta            0                      1           2           2   
+    label_UMGS895_59.fasta            0                      1           2           2   
+    label_UMGS895_61.fasta            0                      1           2           2   
+    label_UMGS895_74.fasta            0                      1           2           2   
+    label_UMGS895_8.fasta             0                      1           2           2   
+    label_UMGS895_80.fasta            0                      1           2           2   
+    label_UMGS895_90.fasta            0                      1           2           2   
+    label_UMGS895_93.fasta            0                      1           2           2   
+    label_UMGS895_98.fasta            0                      1           2           2   
+
+
+testAcNum =
+
+  1x103 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 103
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  103x4 table
+
+                               c__Brachyspirae    c__Spirochaetia    prediction    actual
+                               _______________    _______________    __________    ______
+
+    label_UMGS776_100.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_101.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_104.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_105.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_115.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_122.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_123.fasta           1             2.2204e-14           1           1   
+    label_UMGS776_14.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_16.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_27.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_44.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_49.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_51.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_53.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_55.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_57.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_70.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_71.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_74.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_88.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_9.fasta             1             2.2204e-14           1           1   
+    label_UMGS776_90.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_93.fasta            1             2.2204e-14           1           1   
+    label_UMGS776_99.fasta            1             2.2204e-14           1           1   
+    label_UMGS1301_0.fasta            0                      1           2           2   
+    label_UMGS1301_14.fasta           0                      1           2           2   
+    label_UMGS1301_16.fasta           0                      1           2           2   
+    label_UMGS1301_17.fasta           0                      1           2           2   
+    label_UMGS1301_18.fasta           0                      1           2           2   
+    label_UMGS1301_22.fasta           0                      1           2           2   
+    label_UMGS1301_23.fasta           0                      1           2           2   
+    label_UMGS1301_24.fasta           0                      1           2           2   
+    label_UMGS1301_25.fasta           0                      1           2           2   
+    label_UMGS1301_32.fasta           0                      1           2           2   
+    label_UMGS408_13.fasta            0                      1           2           2   
+    label_UMGS408_18.fasta            0                      1           2           2   
+    label_UMGS408_20.fasta            0                      1           2           2   
+    label_UMGS408_24.fasta            0                      1           2           2   
+    label_UMGS408_26.fasta            0                      1           2           2   
+    label_UMGS408_34.fasta            0                      1           2           2   
+    label_UMGS408_4.fasta             0                      1           2           2   
+    label_UMGS408_44.fasta            0                      1           2           2   
+    label_UMGS408_5.fasta             0                      1           2           2   
+    label_UMGS408_7.fasta             0                      1           2           2   
+    label_UMGS408_8.fasta             0                      1           2           2   
+    label_UMGS419_12.fasta            0                      1           2           2   
+    label_UMGS419_22.fasta            0                      1           2           2   
+    label_UMGS419_3.fasta             0                      1           2           2   
+    label_UMGS419_31.fasta            0                      1           2           2   
+    label_UMGS419_5.fasta             0                      1           2           2   
+    label_UMGS419_6.fasta             0                      1           2           2   
+    label_UMGS419_8.fasta             0                      1           2           2   
+    label_UMGS805_100.fasta           0                      1           2           2   
+    label_UMGS805_107.fasta           0                      1           2           2   
+    label_UMGS805_111.fasta           0                      1           2           2   
+    label_UMGS805_118.fasta           0                      1           2           2   
+    label_UMGS805_13.fasta            0                      1           2           2   
+    label_UMGS805_15.fasta            0                      1           2           2   
+    label_UMGS805_24.fasta            0                      1           2           2   
+    label_UMGS805_25.fasta            0                      1           2           2   
+    label_UMGS805_3.fasta             0                      1           2           2   
+    label_UMGS805_36.fasta            0                      1           2           2   
+    label_UMGS805_38.fasta            0                      1           2           2   
+    label_UMGS805_44.fasta            0                      1           2           2   
+    label_UMGS805_46.fasta            0                      1           2           2   
+    label_UMGS805_50.fasta            0                      1           2           2   
+    label_UMGS805_54.fasta            0                      1           2           2   
+    label_UMGS805_69.fasta            0                      1           2           2   
+    label_UMGS805_7.fasta             0                      1           2           2   
+    label_UMGS805_75.fasta            0                      1           2           2   
+    label_UMGS805_77.fasta            0                      1           2           2   
+    label_UMGS805_83.fasta            0                      1           2           2   
+    label_UMGS805_94.fasta            0                      1           2           2   
+    label_UMGS805_96.fasta            0                      1           2           2   
+    label_UMGS805_99.fasta            0                      1           2           2   
+    label_UMGS895_0.fasta             0                      1           2           2   
+    label_UMGS895_102.fasta           0                      1           2           2   
+    label_UMGS895_103.fasta           0                      1           2           2   
+    label_UMGS895_107.fasta           0                      1           2           2   
+    label_UMGS895_11.fasta            0                      1           2           2   
+    label_UMGS895_113.fasta           0                      1           2           2   
+    label_UMGS895_127.fasta           0                      1           2           2   
+    label_UMGS895_13.fasta            0                      1           2           2   
+    label_UMGS895_130.fasta           0                      1           2           2   
+    label_UMGS895_131.fasta           0                      1           2           2   
+    label_UMGS895_135.fasta           0                      1           2           2   
+    label_UMGS895_138.fasta           0                      1           2           2   
+    label_UMGS895_139.fasta           0                      1           2           2   
+    label_UMGS895_17.fasta            0                      1           2           2   
+    label_UMGS895_18.fasta            0                      1           2           2   
+    label_UMGS895_23.fasta            0                      1           2           2   
+    label_UMGS895_26.fasta            0                      1           2           2   
+    label_UMGS895_37.fasta            0                      1           2           2   
+    label_UMGS895_6.fasta             0                      1           2           2   
+    label_UMGS895_60.fasta            0                      1           2           2   
+    label_UMGS895_7.fasta             0                      1           2           2   
+    label_UMGS895_76.fasta            0                      1           2           2   
+    label_UMGS895_77.fasta            0                      1           2           2   
+    label_UMGS895_78.fasta            0                      1           2           2   
+    label_UMGS895_81.fasta            0                      1           2           2   
+    label_UMGS895_82.fasta            0                      1           2           2   
+    label_UMGS895_96.fasta            0                      1           2           2   
+    label_UMGS895_99.fasta            0                      1           2           2   
+
+confusion matrix for 1 is:
+   124     1
+     0   389
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [99.8000]    [99.8000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      99.8  
+    {'AvgAccuracy' }      99.8  
+
+Process completed 
+[?1l>

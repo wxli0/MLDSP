@@ -1,0 +1,462 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Anaerotignum_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS137_9.fasta
+label_UMGS137_8.fasta
+label_UMGS137_7.fasta
+label_UMGS137_6.fasta
+label_UMGS137_5.fasta
+label_UMGS137_4.fasta
+label_UMGS137_31.fasta
+label_UMGS137_30.fasta
+label_UMGS137_3.fasta
+label_UMGS137_29.fasta
+label_UMGS137_28.fasta
+label_UMGS137_27.fasta
+label_UMGS137_26.fasta
+label_UMGS137_25.fasta
+label_UMGS137_24.fasta
+label_UMGS137_23.fasta
+label_UMGS137_22.fasta
+label_UMGS137_21.fasta
+label_UMGS137_20.fasta
+label_UMGS137_2.fasta
+label_UMGS137_19.fasta
+label_UMGS137_18.fasta
+label_UMGS137_17.fasta
+label_UMGS137_16.fasta
+label_UMGS137_15.fasta
+label_UMGS137_14.fasta
+label_UMGS137_13.fasta
+label_UMGS137_12.fasta
+label_UMGS137_11.fasta
+label_UMGS137_10.fasta
+label_UMGS137_1.fasta
+label_UMGS137_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_12718_7_41_9.fasta
+label_12718_7_41_8.fasta
+label_12718_7_41_7.fasta
+label_12718_7_41_6.fasta
+label_12718_7_41_5.fasta
+label_12718_7_41_4.fasta
+label_12718_7_41_37.fasta
+label_12718_7_41_36.fasta
+label_12718_7_41_35.fasta
+label_12718_7_41_34.fasta
+label_12718_7_41_33.fasta
+label_12718_7_41_32.fasta
+label_12718_7_41_31.fasta
+label_12718_7_41_30.fasta
+label_12718_7_41_3.fasta
+label_12718_7_41_29.fasta
+label_12718_7_41_28.fasta
+label_12718_7_41_27.fasta
+label_12718_7_41_26.fasta
+label_12718_7_41_25.fasta
+label_12718_7_41_24.fasta
+label_12718_7_41_23.fasta
+label_12718_7_41_22.fasta
+label_12718_7_41_21.fasta
+label_12718_7_41_20.fasta
+label_12718_7_41_2.fasta
+label_12718_7_41_19.fasta
+label_12718_7_41_18.fasta
+label_12718_7_41_17.fasta
+label_12718_7_41_16.fasta
+label_12718_7_41_15.fasta
+label_12718_7_41_14.fasta
+label_12718_7_41_13.fasta
+label_12718_7_41_12.fasta
+label_12718_7_41_11.fasta
+label_12718_7_41_10.fasta
+label_12718_7_41_1.fasta
+label_12718_7_41_0.fasta
+Generating CGRs.... 
+totalSeq is: 70
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 14
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  14x4 table
+
+                                 s__Anaerotignum faecicola    s__Anaerotignum sp001304995    prediction    actual
+                                 _________________________    ___________________________    __________    ______
+
+    label_UMGS137_1.fasta                    1                        2.2204e-14                 1           1   
+    label_UMGS137_12.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_14.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_20.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_21.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_22.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_24.fasta                   1                        2.2204e-14                 1           1   
+    label_12718_7_41_11.fasta                0                                 1                 2           2   
+    label_12718_7_41_16.fasta                0                                 1                 2           2   
+    label_12718_7_41_23.fasta                0                                 1                 2           2   
+    label_12718_7_41_28.fasta                0                                 1                 2           2   
+    label_12718_7_41_31.fasta                0                                 1                 2           2   
+    label_12718_7_41_6.fasta                 0                                 1                 2           2   
+    label_12718_7_41_8.fasta                 0                                 1                 2           2   
+
+
+testAcNum =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 14
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  14x4 table
+
+                                 s__Anaerotignum faecicola    s__Anaerotignum sp001304995    prediction    actual
+                                 _________________________    ___________________________    __________    ______
+
+    label_UMGS137_13.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_17.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_19.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_25.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_4.fasta                    1                        2.2204e-14                 1           1   
+    label_UMGS137_7.fasta                    1                        2.2204e-14                 1           1   
+    label_UMGS137_8.fasta                    1                        2.2204e-14                 1           1   
+    label_12718_7_41_15.fasta                0                                 1                 2           2   
+    label_12718_7_41_2.fasta                 0                                 1                 2           2   
+    label_12718_7_41_22.fasta                0                                 1                 2           2   
+    label_12718_7_41_24.fasta                0                                 1                 2           2   
+    label_12718_7_41_29.fasta                0                                 1                 2           2   
+    label_12718_7_41_3.fasta                 0                                 1                 2           2   
+    label_12718_7_41_5.fasta                 0                                 1                 2           2   
+
+
+testAcNum =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 14
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.4464    0.5536    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  14x4 table
+
+                                 s__Anaerotignum faecicola    s__Anaerotignum sp001304995    prediction    actual
+                                 _________________________    ___________________________    __________    ______
+
+    label_UMGS137_0.fasta                       1                     2.2204e-14                 1           1   
+    label_UMGS137_10.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_23.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_27.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_3.fasta                       1                     2.2204e-14                 1           1   
+    label_UMGS137_31.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_5.fasta                       1                     2.2204e-14                 1           1   
+    label_12718_7_41_1.fasta                    0                              1                 2           2   
+    label_12718_7_41_17.fasta                   0                              1                 2           2   
+    label_12718_7_41_18.fasta                   0                              1                 2           2   
+    label_12718_7_41_21.fasta                   0                              1                 2           2   
+    label_12718_7_41_32.fasta             0.44643                        0.55357                 2           2   
+    label_12718_7_41_7.fasta                    0                              1                 2           2   
+    label_12718_7_41_9.fasta                    0                              1                 2           2   
+
+
+testAcNum =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 14
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.4464    0.5536    2.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  14x4 table
+
+                                 s__Anaerotignum faecicola    s__Anaerotignum sp001304995    prediction    actual
+                                 _________________________    ___________________________    __________    ______
+
+    label_UMGS137_15.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_16.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_26.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_28.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_29.fasta                      1                     2.2204e-14                 1           1   
+    label_UMGS137_30.fasta                0.44643                        0.55357                 2           1   
+    label_UMGS137_9.fasta                       1                     2.2204e-14                 1           1   
+    label_12718_7_41_0.fasta                    0                              1                 2           2   
+    label_12718_7_41_12.fasta                   0                              1                 2           2   
+    label_12718_7_41_13.fasta                   0                              1                 2           2   
+    label_12718_7_41_25.fasta                   0                              1                 2           2   
+    label_12718_7_41_30.fasta                   0                              1                 2           2   
+    label_12718_7_41_34.fasta                   0                              1                 2           2   
+    label_12718_7_41_37.fasta                   0                              1                 2           2   
+
+
+testAcNum =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 14
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  14x4 table
+
+                                 s__Anaerotignum faecicola    s__Anaerotignum sp001304995    prediction    actual
+                                 _________________________    ___________________________    __________    ______
+
+    label_UMGS137_11.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_18.fasta                   1                        2.2204e-14                 1           1   
+    label_UMGS137_2.fasta                    1                        2.2204e-14                 1           1   
+    label_UMGS137_6.fasta                    1                        2.2204e-14                 1           1   
+    label_12718_7_41_10.fasta                0                                 1                 2           2   
+    label_12718_7_41_14.fasta                0                                 1                 2           2   
+    label_12718_7_41_19.fasta                0                                 1                 2           2   
+    label_12718_7_41_20.fasta                0                                 1                 2           2   
+    label_12718_7_41_26.fasta                0                                 1                 2           2   
+    label_12718_7_41_27.fasta                0                                 1                 2           2   
+    label_12718_7_41_33.fasta                0                                 1                 2           2   
+    label_12718_7_41_35.fasta                0                                 1                 2           2   
+    label_12718_7_41_36.fasta                0                                 1                 2           2   
+    label_12718_7_41_4.fasta                 0                                 1                 2           2   
+
+confusion matrix for 1 is:
+    31     1
+     0    38
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [98.6000]    [98.6000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      98.6  
+    {'AvgAccuracy' }      98.6  
+
+Process completed 
+[?1l>

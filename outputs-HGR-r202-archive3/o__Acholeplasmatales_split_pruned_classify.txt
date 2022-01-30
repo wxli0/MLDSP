@@ -1,0 +1,330 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__Acholeplasmatales_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Acholeplasmatales"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS940_99.fasta
+label_UMGS940_98.fasta
+label_UMGS940_97.fasta
+label_UMGS940_96.fasta
+label_UMGS940_95.fasta
+label_UMGS940_94.fasta
+label_UMGS940_93.fasta
+label_UMGS940_92.fasta
+label_UMGS940_91.fasta
+label_UMGS940_90.fasta
+label_UMGS940_9.fasta
+label_UMGS940_89.fasta
+label_UMGS940_88.fasta
+label_UMGS940_87.fasta
+label_UMGS940_86.fasta
+label_UMGS940_85.fasta
+label_UMGS940_84.fasta
+label_UMGS940_83.fasta
+label_UMGS940_82.fasta
+label_UMGS940_81.fasta
+label_UMGS940_80.fasta
+label_UMGS940_8.fasta
+label_UMGS940_79.fasta
+label_UMGS940_78.fasta
+label_UMGS940_77.fasta
+label_UMGS940_76.fasta
+label_UMGS940_75.fasta
+label_UMGS940_74.fasta
+label_UMGS940_73.fasta
+label_UMGS940_72.fasta
+label_UMGS940_71.fasta
+label_UMGS940_70.fasta
+label_UMGS940_7.fasta
+label_UMGS940_69.fasta
+label_UMGS940_68.fasta
+label_UMGS940_67.fasta
+label_UMGS940_66.fasta
+label_UMGS940_65.fasta
+label_UMGS940_64.fasta
+label_UMGS940_63.fasta
+label_UMGS940_62.fasta
+label_UMGS940_61.fasta
+label_UMGS940_60.fasta
+label_UMGS940_6.fasta
+label_UMGS940_59.fasta
+label_UMGS940_58.fasta
+label_UMGS940_57.fasta
+label_UMGS940_56.fasta
+label_UMGS940_55.fasta
+label_UMGS940_54.fasta
+label_UMGS940_53.fasta
+label_UMGS940_52.fasta
+label_UMGS940_51.fasta
+label_UMGS940_50.fasta
+label_UMGS940_5.fasta
+label_UMGS940_49.fasta
+label_UMGS940_48.fasta
+label_UMGS940_47.fasta
+label_UMGS940_46.fasta
+label_UMGS940_45.fasta
+label_UMGS940_44.fasta
+label_UMGS940_43.fasta
+label_UMGS940_42.fasta
+label_UMGS940_41.fasta
+label_UMGS940_40.fasta
+label_UMGS940_4.fasta
+label_UMGS940_39.fasta
+label_UMGS940_38.fasta
+label_UMGS940_37.fasta
+label_UMGS940_36.fasta
+label_UMGS940_35.fasta
+label_UMGS940_34.fasta
+label_UMGS940_33.fasta
+label_UMGS940_32.fasta
+label_UMGS940_31.fasta
+label_UMGS940_30.fasta
+label_UMGS940_3.fasta
+label_UMGS940_29.fasta
+label_UMGS940_28.fasta
+label_UMGS940_27.fasta
+label_UMGS940_26.fasta
+label_UMGS940_25.fasta
+label_UMGS940_24.fasta
+label_UMGS940_23.fasta
+label_UMGS940_22.fasta
+label_UMGS940_21.fasta
+label_UMGS940_20.fasta
+label_UMGS940_2.fasta
+label_UMGS940_19.fasta
+label_UMGS940_18.fasta
+label_UMGS940_17.fasta
+label_UMGS940_16.fasta
+label_UMGS940_15.fasta
+label_UMGS940_14.fasta
+label_UMGS940_13.fasta
+label_UMGS940_12.fasta
+label_UMGS940_11.fasta
+label_UMGS940_101.fasta
+label_UMGS940_100.fasta
+label_UMGS940_10.fasta
+label_UMGS940_1.fasta
+label_UMGS940_0.fasta
+label_UMGS77_9.fasta
+label_UMGS77_8.fasta
+label_UMGS77_7.fasta
+label_UMGS77_60.fasta
+label_UMGS77_6.fasta
+label_UMGS77_59.fasta
+label_UMGS77_58.fasta
+label_UMGS77_57.fasta
+label_UMGS77_56.fasta
+label_UMGS77_55.fasta
+label_UMGS77_54.fasta
+label_UMGS77_53.fasta
+label_UMGS77_52.fasta
+label_UMGS77_51.fasta
+label_UMGS77_50.fasta
+label_UMGS77_5.fasta
+label_UMGS77_49.fasta
+label_UMGS77_48.fasta
+label_UMGS77_47.fasta
+label_UMGS77_46.fasta
+label_UMGS77_45.fasta
+label_UMGS77_44.fasta
+label_UMGS77_43.fasta
+label_UMGS77_42.fasta
+label_UMGS77_41.fasta
+label_UMGS77_40.fasta
+label_UMGS77_4.fasta
+label_UMGS77_39.fasta
+label_UMGS77_38.fasta
+label_UMGS77_37.fasta
+label_UMGS77_36.fasta
+label_UMGS77_35.fasta
+label_UMGS77_34.fasta
+label_UMGS77_33.fasta
+label_UMGS77_32.fasta
+label_UMGS77_31.fasta
+label_UMGS77_30.fasta
+label_UMGS77_3.fasta
+label_UMGS77_29.fasta
+label_UMGS77_28.fasta
+label_UMGS77_27.fasta
+label_UMGS77_26.fasta
+label_UMGS77_25.fasta
+label_UMGS77_24.fasta
+label_UMGS77_23.fasta
+label_UMGS77_22.fasta
+label_UMGS77_21.fasta
+label_UMGS77_20.fasta
+label_UMGS77_2.fasta
+label_UMGS77_19.fasta
+label_UMGS77_18.fasta
+label_UMGS77_17.fasta
+label_UMGS77_16.fasta
+label_UMGS77_15.fasta
+label_UMGS77_14.fasta
+label_UMGS77_13.fasta
+label_UMGS77_12.fasta
+label_UMGS77_11.fasta
+label_UMGS77_10.fasta
+label_UMGS77_1.fasta
+label_UMGS77_0.fasta
+label_UMGS268_9.fasta
+label_UMGS268_8.fasta
+label_UMGS268_7.fasta
+label_UMGS268_6.fasta
+label_UMGS268_55.fasta
+label_UMGS268_54.fasta
+label_UMGS268_53.fasta
+label_UMGS268_52.fasta
+label_UMGS268_51.fasta
+label_UMGS268_50.fasta
+label_UMGS268_5.fasta
+label_UMGS268_49.fasta
+label_UMGS268_48.fasta
+label_UMGS268_47.fasta
+label_UMGS268_46.fasta
+label_UMGS268_45.fasta
+label_UMGS268_44.fasta
+label_UMGS268_43.fasta
+label_UMGS268_42.fasta
+label_UMGS268_41.fasta
+label_UMGS268_40.fasta
+label_UMGS268_4.fasta
+label_UMGS268_39.fasta
+label_UMGS268_38.fasta
+label_UMGS268_37.fasta
+label_UMGS268_36.fasta
+label_UMGS268_35.fasta
+label_UMGS268_34.fasta
+label_UMGS268_33.fasta
+label_UMGS268_32.fasta
+label_UMGS268_31.fasta
+label_UMGS268_30.fasta
+label_UMGS268_3.fasta
+label_UMGS268_29.fasta
+label_UMGS268_28.fasta
+label_UMGS268_27.fasta
+label_UMGS268_26.fasta
+label_UMGS268_25.fasta
+label_UMGS268_24.fasta
+label_UMGS268_23.fasta
+label_UMGS268_22.fasta
+label_UMGS268_21.fasta
+label_UMGS268_20.fasta
+label_UMGS268_2.fasta
+label_UMGS268_19.fasta
+label_UMGS268_18.fasta
+label_UMGS268_17.fasta
+label_UMGS268_16.fasta
+label_UMGS268_15.fasta
+label_UMGS268_14.fasta
+label_UMGS268_13.fasta
+label_UMGS268_12.fasta
+label_UMGS268_11.fasta
+label_UMGS268_10.fasta
+label_UMGS268_1.fasta
+label_UMGS268_0.fasta
+label_UMGS221_9.fasta
+label_UMGS221_8.fasta
+label_UMGS221_7.fasta
+label_UMGS221_6.fasta
+label_UMGS221_5.fasta
+label_UMGS221_4.fasta
+label_UMGS221_3.fasta
+label_UMGS221_27.fasta
+label_UMGS221_26.fasta
+label_UMGS221_25.fasta
+label_UMGS221_24.fasta
+label_UMGS221_23.fasta
+label_UMGS221_22.fasta
+label_UMGS221_21.fasta
+label_UMGS221_20.fasta
+label_UMGS221_2.fasta
+label_UMGS221_19.fasta
+label_UMGS221_18.fasta
+label_UMGS221_17.fasta
+label_UMGS221_16.fasta
+label_UMGS221_15.fasta
+label_UMGS221_14.fasta
+label_UMGS221_13.fasta
+label_UMGS221_12.fasta
+label_UMGS221_11.fasta
+label_UMGS221_10.fasta
+label_UMGS221_1.fasta
+label_UMGS221_0.fasta
+Generating CGRs.... 
+totalSeq is: 247
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Acholeplasmatales
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 7
+
+clusterNames =
+
+  1x1 cell array
+
+    {'1-f__Anaeroplasmataceae'}
+
+    '1-f__Anaeroplasmataceae'
+
+
+header =
+
+  1x2 cell array
+
+    {'1-f__Anaeroplasmataceae'}    {'prediction'}
+
+
+T3 =
+
+  7x2 table
+
+                       1-f__Anaeroplasmataceae    prediction
+                       _______________________    __________
+
+    MAG-GUT2201.fa               2522                 1     
+    MAG-GUT2250.fa             2532.3                 1     
+    MAG-GUT36756.fa            2501.5                 1     
+    MAG-GUT41852.fa            2503.2                 1     
+    MAG-GUT6.fa                2557.1                 1     
+    MAG-GUT70165.fa            2522.8                 1     
+    MAG-GUT71347.fa            2528.4                 1     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-o__Acholeplasmatales_split_pruned.xlsx"
+
+Process completed 
+[?1l>

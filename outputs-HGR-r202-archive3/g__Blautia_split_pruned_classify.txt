@@ -1,0 +1,1799 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Blautia_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Blautia"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_8080_1_72_9.fasta
+label_8080_1_72_8.fasta
+label_8080_1_72_7.fasta
+label_8080_1_72_60.fasta
+label_8080_1_72_6.fasta
+label_8080_1_72_59.fasta
+label_8080_1_72_58.fasta
+label_8080_1_72_57.fasta
+label_8080_1_72_56.fasta
+label_8080_1_72_55.fasta
+label_8080_1_72_54.fasta
+label_8080_1_72_53.fasta
+label_8080_1_72_52.fasta
+label_8080_1_72_51.fasta
+label_8080_1_72_50.fasta
+label_8080_1_72_5.fasta
+label_8080_1_72_49.fasta
+label_8080_1_72_48.fasta
+label_8080_1_72_47.fasta
+label_8080_1_72_46.fasta
+label_8080_1_72_45.fasta
+label_8080_1_72_44.fasta
+label_8080_1_72_43.fasta
+label_8080_1_72_42.fasta
+label_8080_1_72_41.fasta
+label_8080_1_72_40.fasta
+label_8080_1_72_4.fasta
+label_8080_1_72_39.fasta
+label_8080_1_72_38.fasta
+label_8080_1_72_37.fasta
+label_8080_1_72_36.fasta
+label_8080_1_72_35.fasta
+label_8080_1_72_34.fasta
+label_8080_1_72_33.fasta
+label_8080_1_72_32.fasta
+label_8080_1_72_31.fasta
+label_8080_1_72_30.fasta
+label_8080_1_72_3.fasta
+label_8080_1_72_29.fasta
+label_8080_1_72_28.fasta
+label_8080_1_72_27.fasta
+label_8080_1_72_26.fasta
+label_8080_1_72_25.fasta
+label_8080_1_72_24.fasta
+label_8080_1_72_23.fasta
+label_8080_1_72_22.fasta
+label_8080_1_72_21.fasta
+label_8080_1_72_20.fasta
+label_8080_1_72_2.fasta
+label_8080_1_72_19.fasta
+label_8080_1_72_18.fasta
+label_8080_1_72_17.fasta
+label_8080_1_72_16.fasta
+label_8080_1_72_15.fasta
+label_8080_1_72_14.fasta
+label_8080_1_72_13.fasta
+label_8080_1_72_12.fasta
+label_8080_1_72_11.fasta
+label_8080_1_72_10.fasta
+label_8080_1_72_1.fasta
+label_8080_1_72_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000209425_9.fasta
+label_GCF_000209425_8.fasta
+label_GCF_000209425_7.fasta
+label_GCF_000209425_6.fasta
+label_GCF_000209425_5.fasta
+label_GCF_000209425_4.fasta
+label_GCF_000209425_3.fasta
+label_GCF_000209425_2.fasta
+label_GCF_000209425_15.fasta
+label_GCF_000209425_14.fasta
+label_GCF_000209425_13.fasta
+label_GCF_000209425_12.fasta
+label_GCF_000209425_11.fasta
+label_GCF_000209425_10.fasta
+label_GCF_000209425_1.fasta
+label_GCF_000209425_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS967_99.fasta
+label_UMGS967_98.fasta
+label_UMGS967_97.fasta
+label_UMGS967_96.fasta
+label_UMGS967_95.fasta
+label_UMGS967_94.fasta
+label_UMGS967_93.fasta
+label_UMGS967_92.fasta
+label_UMGS967_91.fasta
+label_UMGS967_90.fasta
+label_UMGS967_9.fasta
+label_UMGS967_89.fasta
+label_UMGS967_88.fasta
+label_UMGS967_87.fasta
+label_UMGS967_86.fasta
+label_UMGS967_85.fasta
+label_UMGS967_84.fasta
+label_UMGS967_83.fasta
+label_UMGS967_82.fasta
+label_UMGS967_81.fasta
+label_UMGS967_80.fasta
+label_UMGS967_8.fasta
+label_UMGS967_79.fasta
+label_UMGS967_78.fasta
+label_UMGS967_77.fasta
+label_UMGS967_76.fasta
+label_UMGS967_75.fasta
+label_UMGS967_74.fasta
+label_UMGS967_73.fasta
+label_UMGS967_72.fasta
+label_UMGS967_71.fasta
+label_UMGS967_70.fasta
+label_UMGS967_7.fasta
+label_UMGS967_69.fasta
+label_UMGS967_68.fasta
+label_UMGS967_67.fasta
+label_UMGS967_66.fasta
+label_UMGS967_65.fasta
+label_UMGS967_64.fasta
+label_UMGS967_63.fasta
+label_UMGS967_62.fasta
+label_UMGS967_61.fasta
+label_UMGS967_60.fasta
+label_UMGS967_6.fasta
+label_UMGS967_59.fasta
+label_UMGS967_58.fasta
+label_UMGS967_57.fasta
+label_UMGS967_56.fasta
+label_UMGS967_55.fasta
+label_UMGS967_54.fasta
+label_UMGS967_53.fasta
+label_UMGS967_52.fasta
+label_UMGS967_51.fasta
+label_UMGS967_50.fasta
+label_UMGS967_5.fasta
+label_UMGS967_49.fasta
+label_UMGS967_48.fasta
+label_UMGS967_47.fasta
+label_UMGS967_46.fasta
+label_UMGS967_45.fasta
+label_UMGS967_44.fasta
+label_UMGS967_43.fasta
+label_UMGS967_42.fasta
+label_UMGS967_41.fasta
+label_UMGS967_406.fasta
+label_UMGS967_405.fasta
+label_UMGS967_404.fasta
+label_UMGS967_403.fasta
+label_UMGS967_402.fasta
+label_UMGS967_401.fasta
+label_UMGS967_400.fasta
+label_UMGS967_40.fasta
+label_UMGS967_4.fasta
+label_UMGS967_399.fasta
+label_UMGS967_398.fasta
+label_UMGS967_397.fasta
+label_UMGS967_396.fasta
+label_UMGS967_395.fasta
+label_UMGS967_394.fasta
+label_UMGS967_393.fasta
+label_UMGS967_392.fasta
+label_UMGS967_391.fasta
+label_UMGS967_390.fasta
+label_UMGS967_39.fasta
+label_UMGS967_389.fasta
+label_UMGS967_388.fasta
+label_UMGS967_387.fasta
+label_UMGS967_386.fasta
+label_UMGS967_385.fasta
+label_UMGS967_384.fasta
+label_UMGS967_383.fasta
+label_UMGS967_382.fasta
+label_UMGS967_381.fasta
+label_UMGS967_380.fasta
+label_UMGS967_38.fasta
+label_UMGS967_379.fasta
+label_UMGS967_378.fasta
+label_UMGS967_377.fasta
+label_UMGS967_376.fasta
+label_UMGS967_375.fasta
+label_UMGS967_374.fasta
+label_UMGS967_373.fasta
+label_UMGS967_372.fasta
+label_UMGS967_371.fasta
+label_UMGS967_370.fasta
+label_UMGS967_37.fasta
+label_UMGS967_369.fasta
+label_UMGS967_368.fasta
+label_UMGS967_367.fasta
+label_UMGS967_366.fasta
+label_UMGS967_365.fasta
+label_UMGS967_364.fasta
+label_UMGS967_363.fasta
+label_UMGS967_362.fasta
+label_UMGS967_361.fasta
+label_UMGS967_360.fasta
+label_UMGS967_36.fasta
+label_UMGS967_359.fasta
+label_UMGS967_358.fasta
+label_UMGS967_357.fasta
+label_UMGS967_356.fasta
+label_UMGS967_355.fasta
+label_UMGS967_354.fasta
+label_UMGS967_353.fasta
+label_UMGS967_352.fasta
+label_UMGS967_351.fasta
+label_UMGS967_350.fasta
+label_UMGS967_35.fasta
+label_UMGS967_349.fasta
+label_UMGS967_348.fasta
+label_UMGS967_347.fasta
+label_UMGS967_346.fasta
+label_UMGS967_345.fasta
+label_UMGS967_344.fasta
+label_UMGS967_343.fasta
+label_UMGS967_342.fasta
+label_UMGS967_341.fasta
+label_UMGS967_340.fasta
+label_UMGS967_34.fasta
+label_UMGS967_339.fasta
+label_UMGS967_338.fasta
+label_UMGS967_337.fasta
+label_UMGS967_336.fasta
+label_UMGS967_335.fasta
+label_UMGS967_334.fasta
+label_UMGS967_333.fasta
+label_UMGS967_332.fasta
+label_UMGS967_331.fasta
+label_UMGS967_330.fasta
+label_UMGS967_33.fasta
+label_UMGS967_329.fasta
+label_UMGS967_328.fasta
+label_UMGS967_327.fasta
+label_UMGS967_326.fasta
+label_UMGS967_325.fasta
+label_UMGS967_324.fasta
+label_UMGS967_323.fasta
+label_UMGS967_322.fasta
+label_UMGS967_321.fasta
+label_UMGS967_320.fasta
+label_UMGS967_32.fasta
+label_UMGS967_319.fasta
+label_UMGS967_318.fasta
+label_UMGS967_317.fasta
+label_UMGS967_316.fasta
+label_UMGS967_315.fasta
+label_UMGS967_314.fasta
+label_UMGS967_313.fasta
+label_UMGS967_312.fasta
+label_UMGS967_311.fasta
+label_UMGS967_310.fasta
+label_UMGS967_31.fasta
+label_UMGS967_309.fasta
+label_UMGS967_308.fasta
+label_UMGS967_307.fasta
+label_UMGS967_306.fasta
+label_UMGS967_305.fasta
+label_UMGS967_304.fasta
+label_UMGS967_303.fasta
+label_UMGS967_302.fasta
+label_UMGS967_301.fasta
+label_UMGS967_300.fasta
+label_UMGS967_30.fasta
+label_UMGS967_3.fasta
+label_UMGS967_299.fasta
+label_UMGS967_298.fasta
+label_UMGS967_297.fasta
+label_UMGS967_296.fasta
+label_UMGS967_295.fasta
+label_UMGS967_294.fasta
+label_UMGS967_293.fasta
+label_UMGS967_292.fasta
+label_UMGS967_291.fasta
+label_UMGS967_290.fasta
+label_UMGS967_29.fasta
+label_UMGS967_289.fasta
+label_UMGS967_288.fasta
+label_UMGS967_287.fasta
+label_UMGS967_286.fasta
+label_UMGS967_285.fasta
+label_UMGS967_284.fasta
+label_UMGS967_283.fasta
+label_UMGS967_282.fasta
+label_UMGS967_281.fasta
+label_UMGS967_280.fasta
+label_UMGS967_28.fasta
+label_UMGS967_279.fasta
+label_UMGS967_278.fasta
+label_UMGS967_277.fasta
+label_UMGS967_276.fasta
+label_UMGS967_275.fasta
+label_UMGS967_274.fasta
+label_UMGS967_273.fasta
+label_UMGS967_272.fasta
+label_UMGS967_271.fasta
+label_UMGS967_270.fasta
+label_UMGS967_27.fasta
+label_UMGS967_269.fasta
+label_UMGS967_268.fasta
+label_UMGS967_267.fasta
+label_UMGS967_266.fasta
+label_UMGS967_265.fasta
+label_UMGS967_264.fasta
+label_UMGS967_263.fasta
+label_UMGS967_262.fasta
+label_UMGS967_261.fasta
+label_UMGS967_260.fasta
+label_UMGS967_26.fasta
+label_UMGS967_259.fasta
+label_UMGS967_258.fasta
+label_UMGS967_257.fasta
+label_UMGS967_256.fasta
+label_UMGS967_255.fasta
+label_UMGS967_254.fasta
+label_UMGS967_253.fasta
+label_UMGS967_252.fasta
+label_UMGS967_251.fasta
+label_UMGS967_250.fasta
+label_UMGS967_25.fasta
+label_UMGS967_249.fasta
+label_UMGS967_248.fasta
+label_UMGS967_247.fasta
+label_UMGS967_246.fasta
+label_UMGS967_245.fasta
+label_UMGS967_244.fasta
+label_UMGS967_243.fasta
+label_UMGS967_242.fasta
+label_UMGS967_241.fasta
+label_UMGS967_240.fasta
+label_UMGS967_24.fasta
+label_UMGS967_239.fasta
+label_UMGS967_238.fasta
+label_UMGS967_237.fasta
+label_UMGS967_236.fasta
+label_UMGS967_235.fasta
+label_UMGS967_234.fasta
+label_UMGS967_233.fasta
+label_UMGS967_232.fasta
+label_UMGS967_231.fasta
+label_UMGS967_230.fasta
+label_UMGS967_23.fasta
+label_UMGS967_229.fasta
+label_UMGS967_228.fasta
+label_UMGS967_227.fasta
+label_UMGS967_226.fasta
+label_UMGS967_225.fasta
+label_UMGS967_224.fasta
+label_UMGS967_223.fasta
+label_UMGS967_222.fasta
+label_UMGS967_221.fasta
+label_UMGS967_220.fasta
+label_UMGS967_22.fasta
+label_UMGS967_219.fasta
+label_UMGS967_218.fasta
+label_UMGS967_217.fasta
+label_UMGS967_216.fasta
+label_UMGS967_215.fasta
+label_UMGS967_214.fasta
+label_UMGS967_213.fasta
+label_UMGS967_212.fasta
+label_UMGS967_211.fasta
+label_UMGS967_210.fasta
+label_UMGS967_21.fasta
+label_UMGS967_209.fasta
+label_UMGS967_208.fasta
+label_UMGS967_207.fasta
+label_UMGS967_206.fasta
+label_UMGS967_205.fasta
+label_UMGS967_204.fasta
+label_UMGS967_203.fasta
+label_UMGS967_202.fasta
+label_UMGS967_201.fasta
+label_UMGS967_200.fasta
+label_UMGS967_20.fasta
+label_UMGS967_2.fasta
+label_UMGS967_199.fasta
+label_UMGS967_198.fasta
+label_UMGS967_197.fasta
+label_UMGS967_196.fasta
+label_UMGS967_195.fasta
+label_UMGS967_194.fasta
+label_UMGS967_193.fasta
+label_UMGS967_192.fasta
+label_UMGS967_191.fasta
+label_UMGS967_190.fasta
+label_UMGS967_19.fasta
+label_UMGS967_189.fasta
+label_UMGS967_188.fasta
+label_UMGS967_187.fasta
+label_UMGS967_186.fasta
+label_UMGS967_185.fasta
+label_UMGS967_184.fasta
+label_UMGS967_183.fasta
+label_UMGS967_182.fasta
+label_UMGS967_181.fasta
+label_UMGS967_180.fasta
+label_UMGS967_18.fasta
+label_UMGS967_179.fasta
+label_UMGS967_178.fasta
+label_UMGS967_177.fasta
+label_UMGS967_176.fasta
+label_UMGS967_175.fasta
+label_UMGS967_174.fasta
+label_UMGS967_173.fasta
+label_UMGS967_172.fasta
+label_UMGS967_171.fasta
+label_UMGS967_170.fasta
+label_UMGS967_17.fasta
+label_UMGS967_169.fasta
+label_UMGS967_168.fasta
+label_UMGS967_167.fasta
+label_UMGS967_166.fasta
+label_UMGS967_165.fasta
+label_UMGS967_164.fasta
+label_UMGS967_163.fasta
+label_UMGS967_162.fasta
+label_UMGS967_161.fasta
+label_UMGS967_160.fasta
+label_UMGS967_16.fasta
+label_UMGS967_159.fasta
+label_UMGS967_158.fasta
+label_UMGS967_157.fasta
+label_UMGS967_156.fasta
+label_UMGS967_155.fasta
+label_UMGS967_154.fasta
+label_UMGS967_153.fasta
+label_UMGS967_152.fasta
+label_UMGS967_151.fasta
+label_UMGS967_150.fasta
+label_UMGS967_15.fasta
+label_UMGS967_149.fasta
+label_UMGS967_148.fasta
+label_UMGS967_147.fasta
+label_UMGS967_146.fasta
+label_UMGS967_145.fasta
+label_UMGS967_144.fasta
+label_UMGS967_143.fasta
+label_UMGS967_142.fasta
+label_UMGS967_141.fasta
+label_UMGS967_140.fasta
+label_UMGS967_14.fasta
+label_UMGS967_139.fasta
+label_UMGS967_138.fasta
+label_UMGS967_137.fasta
+label_UMGS967_136.fasta
+label_UMGS967_135.fasta
+label_UMGS967_134.fasta
+label_UMGS967_133.fasta
+label_UMGS967_132.fasta
+label_UMGS967_131.fasta
+label_UMGS967_130.fasta
+label_UMGS967_13.fasta
+label_UMGS967_129.fasta
+label_UMGS967_128.fasta
+label_UMGS967_127.fasta
+label_UMGS967_126.fasta
+label_UMGS967_125.fasta
+label_UMGS967_124.fasta
+label_UMGS967_123.fasta
+label_UMGS967_122.fasta
+label_UMGS967_121.fasta
+label_UMGS967_120.fasta
+label_UMGS967_12.fasta
+label_UMGS967_119.fasta
+label_UMGS967_118.fasta
+label_UMGS967_117.fasta
+label_UMGS967_116.fasta
+label_UMGS967_115.fasta
+label_UMGS967_114.fasta
+label_UMGS967_113.fasta
+label_UMGS967_112.fasta
+label_UMGS967_111.fasta
+label_UMGS967_110.fasta
+label_UMGS967_11.fasta
+label_UMGS967_109.fasta
+label_UMGS967_108.fasta
+label_UMGS967_107.fasta
+label_UMGS967_106.fasta
+label_UMGS967_105.fasta
+label_UMGS967_104.fasta
+label_UMGS967_103.fasta
+label_UMGS967_102.fasta
+label_UMGS967_101.fasta
+label_UMGS967_100.fasta
+label_UMGS967_10.fasta
+label_UMGS967_1.fasta
+label_UMGS967_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20298_3_35_9.fasta
+label_20298_3_35_8.fasta
+label_20298_3_35_7.fasta
+label_20298_3_35_6.fasta
+label_20298_3_35_5.fasta
+label_20298_3_35_4.fasta
+label_20298_3_35_36.fasta
+label_20298_3_35_35.fasta
+label_20298_3_35_34.fasta
+label_20298_3_35_33.fasta
+label_20298_3_35_32.fasta
+label_20298_3_35_31.fasta
+label_20298_3_35_30.fasta
+label_20298_3_35_3.fasta
+label_20298_3_35_29.fasta
+label_20298_3_35_28.fasta
+label_20298_3_35_27.fasta
+label_20298_3_35_26.fasta
+label_20298_3_35_25.fasta
+label_20298_3_35_24.fasta
+label_20298_3_35_23.fasta
+label_20298_3_35_22.fasta
+label_20298_3_35_21.fasta
+label_20298_3_35_20.fasta
+label_20298_3_35_2.fasta
+label_20298_3_35_19.fasta
+label_20298_3_35_18.fasta
+label_20298_3_35_17.fasta
+label_20298_3_35_16.fasta
+label_20298_3_35_15.fasta
+label_20298_3_35_14.fasta
+label_20298_3_35_13.fasta
+label_20298_3_35_12.fasta
+label_20298_3_35_11.fasta
+label_20298_3_35_10.fasta
+label_20298_3_35_1.fasta
+label_20298_3_35_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20298_3_48_9.fasta
+label_20298_3_48_8.fasta
+label_20298_3_48_7.fasta
+label_20298_3_48_6.fasta
+label_20298_3_48_5.fasta
+label_20298_3_48_41.fasta
+label_20298_3_48_40.fasta
+label_20298_3_48_4.fasta
+label_20298_3_48_39.fasta
+label_20298_3_48_38.fasta
+label_20298_3_48_37.fasta
+label_20298_3_48_36.fasta
+label_20298_3_48_35.fasta
+label_20298_3_48_34.fasta
+label_20298_3_48_33.fasta
+label_20298_3_48_32.fasta
+label_20298_3_48_31.fasta
+label_20298_3_48_30.fasta
+label_20298_3_48_3.fasta
+label_20298_3_48_29.fasta
+label_20298_3_48_28.fasta
+label_20298_3_48_27.fasta
+label_20298_3_48_26.fasta
+label_20298_3_48_25.fasta
+label_20298_3_48_24.fasta
+label_20298_3_48_23.fasta
+label_20298_3_48_22.fasta
+label_20298_3_48_21.fasta
+label_20298_3_48_20.fasta
+label_20298_3_48_2.fasta
+label_20298_3_48_19.fasta
+label_20298_3_48_18.fasta
+label_20298_3_48_17.fasta
+label_20298_3_48_16.fasta
+label_20298_3_48_15.fasta
+label_20298_3_48_14.fasta
+label_20298_3_48_13.fasta
+label_20298_3_48_12.fasta
+label_20298_3_48_11.fasta
+label_20298_3_48_10.fasta
+label_20298_3_48_1.fasta
+label_20298_3_48_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1357_99.fasta
+label_UMGS1357_98.fasta
+label_UMGS1357_97.fasta
+label_UMGS1357_96.fasta
+label_UMGS1357_95.fasta
+label_UMGS1357_94.fasta
+label_UMGS1357_93.fasta
+label_UMGS1357_92.fasta
+label_UMGS1357_91.fasta
+label_UMGS1357_90.fasta
+label_UMGS1357_9.fasta
+label_UMGS1357_89.fasta
+label_UMGS1357_88.fasta
+label_UMGS1357_87.fasta
+label_UMGS1357_86.fasta
+label_UMGS1357_85.fasta
+label_UMGS1357_84.fasta
+label_UMGS1357_83.fasta
+label_UMGS1357_82.fasta
+label_UMGS1357_81.fasta
+label_UMGS1357_80.fasta
+label_UMGS1357_8.fasta
+label_UMGS1357_79.fasta
+label_UMGS1357_78.fasta
+label_UMGS1357_77.fasta
+label_UMGS1357_76.fasta
+label_UMGS1357_75.fasta
+label_UMGS1357_74.fasta
+label_UMGS1357_73.fasta
+label_UMGS1357_72.fasta
+label_UMGS1357_71.fasta
+label_UMGS1357_70.fasta
+label_UMGS1357_7.fasta
+label_UMGS1357_69.fasta
+label_UMGS1357_68.fasta
+label_UMGS1357_67.fasta
+label_UMGS1357_66.fasta
+label_UMGS1357_65.fasta
+label_UMGS1357_64.fasta
+label_UMGS1357_63.fasta
+label_UMGS1357_62.fasta
+label_UMGS1357_61.fasta
+label_UMGS1357_60.fasta
+label_UMGS1357_6.fasta
+label_UMGS1357_59.fasta
+label_UMGS1357_58.fasta
+label_UMGS1357_57.fasta
+label_UMGS1357_56.fasta
+label_UMGS1357_55.fasta
+label_UMGS1357_54.fasta
+label_UMGS1357_53.fasta
+label_UMGS1357_52.fasta
+label_UMGS1357_51.fasta
+label_UMGS1357_50.fasta
+label_UMGS1357_5.fasta
+label_UMGS1357_49.fasta
+label_UMGS1357_48.fasta
+label_UMGS1357_47.fasta
+label_UMGS1357_46.fasta
+label_UMGS1357_45.fasta
+label_UMGS1357_44.fasta
+label_UMGS1357_43.fasta
+label_UMGS1357_42.fasta
+label_UMGS1357_41.fasta
+label_UMGS1357_40.fasta
+label_UMGS1357_4.fasta
+label_UMGS1357_39.fasta
+label_UMGS1357_38.fasta
+label_UMGS1357_37.fasta
+label_UMGS1357_36.fasta
+label_UMGS1357_35.fasta
+label_UMGS1357_34.fasta
+label_UMGS1357_33.fasta
+label_UMGS1357_32.fasta
+label_UMGS1357_31.fasta
+label_UMGS1357_30.fasta
+label_UMGS1357_3.fasta
+label_UMGS1357_29.fasta
+label_UMGS1357_28.fasta
+label_UMGS1357_27.fasta
+label_UMGS1357_26.fasta
+label_UMGS1357_25.fasta
+label_UMGS1357_24.fasta
+label_UMGS1357_23.fasta
+label_UMGS1357_22.fasta
+label_UMGS1357_21.fasta
+label_UMGS1357_20.fasta
+label_UMGS1357_2.fasta
+label_UMGS1357_19.fasta
+label_UMGS1357_18.fasta
+label_UMGS1357_17.fasta
+label_UMGS1357_160.fasta
+label_UMGS1357_16.fasta
+label_UMGS1357_159.fasta
+label_UMGS1357_158.fasta
+label_UMGS1357_157.fasta
+label_UMGS1357_156.fasta
+label_UMGS1357_155.fasta
+label_UMGS1357_154.fasta
+label_UMGS1357_153.fasta
+label_UMGS1357_152.fasta
+label_UMGS1357_151.fasta
+label_UMGS1357_150.fasta
+label_UMGS1357_15.fasta
+label_UMGS1357_149.fasta
+label_UMGS1357_148.fasta
+label_UMGS1357_147.fasta
+label_UMGS1357_146.fasta
+label_UMGS1357_145.fasta
+label_UMGS1357_144.fasta
+label_UMGS1357_143.fasta
+label_UMGS1357_142.fasta
+label_UMGS1357_141.fasta
+label_UMGS1357_140.fasta
+label_UMGS1357_14.fasta
+label_UMGS1357_139.fasta
+label_UMGS1357_138.fasta
+label_UMGS1357_137.fasta
+label_UMGS1357_136.fasta
+label_UMGS1357_135.fasta
+label_UMGS1357_134.fasta
+label_UMGS1357_133.fasta
+label_UMGS1357_132.fasta
+label_UMGS1357_131.fasta
+label_UMGS1357_130.fasta
+label_UMGS1357_13.fasta
+label_UMGS1357_129.fasta
+label_UMGS1357_128.fasta
+label_UMGS1357_127.fasta
+label_UMGS1357_126.fasta
+label_UMGS1357_125.fasta
+label_UMGS1357_124.fasta
+label_UMGS1357_123.fasta
+label_UMGS1357_122.fasta
+label_UMGS1357_121.fasta
+label_UMGS1357_120.fasta
+label_UMGS1357_12.fasta
+label_UMGS1357_119.fasta
+label_UMGS1357_118.fasta
+label_UMGS1357_117.fasta
+label_UMGS1357_116.fasta
+label_UMGS1357_115.fasta
+label_UMGS1357_114.fasta
+label_UMGS1357_113.fasta
+label_UMGS1357_112.fasta
+label_UMGS1357_111.fasta
+label_UMGS1357_110.fasta
+label_UMGS1357_11.fasta
+label_UMGS1357_109.fasta
+label_UMGS1357_108.fasta
+label_UMGS1357_107.fasta
+label_UMGS1357_106.fasta
+label_UMGS1357_105.fasta
+label_UMGS1357_104.fasta
+label_UMGS1357_103.fasta
+label_UMGS1357_102.fasta
+label_UMGS1357_101.fasta
+label_UMGS1357_100.fasta
+label_UMGS1357_10.fasta
+label_UMGS1357_1.fasta
+label_UMGS1357_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS97_9.fasta
+label_UMGS97_8.fasta
+label_UMGS97_73.fasta
+label_UMGS97_72.fasta
+label_UMGS97_71.fasta
+label_UMGS97_70.fasta
+label_UMGS97_7.fasta
+label_UMGS97_69.fasta
+label_UMGS97_68.fasta
+label_UMGS97_67.fasta
+label_UMGS97_66.fasta
+label_UMGS97_65.fasta
+label_UMGS97_64.fasta
+label_UMGS97_63.fasta
+label_UMGS97_62.fasta
+label_UMGS97_61.fasta
+label_UMGS97_60.fasta
+label_UMGS97_6.fasta
+label_UMGS97_59.fasta
+label_UMGS97_58.fasta
+label_UMGS97_57.fasta
+label_UMGS97_56.fasta
+label_UMGS97_55.fasta
+label_UMGS97_54.fasta
+label_UMGS97_53.fasta
+label_UMGS97_52.fasta
+label_UMGS97_51.fasta
+label_UMGS97_50.fasta
+label_UMGS97_5.fasta
+label_UMGS97_49.fasta
+label_UMGS97_48.fasta
+label_UMGS97_47.fasta
+label_UMGS97_46.fasta
+label_UMGS97_45.fasta
+label_UMGS97_44.fasta
+label_UMGS97_43.fasta
+label_UMGS97_42.fasta
+label_UMGS97_41.fasta
+label_UMGS97_40.fasta
+label_UMGS97_4.fasta
+label_UMGS97_39.fasta
+label_UMGS97_38.fasta
+label_UMGS97_37.fasta
+label_UMGS97_36.fasta
+label_UMGS97_35.fasta
+label_UMGS97_34.fasta
+label_UMGS97_33.fasta
+label_UMGS97_32.fasta
+label_UMGS97_31.fasta
+label_UMGS97_30.fasta
+label_UMGS97_3.fasta
+label_UMGS97_29.fasta
+label_UMGS97_28.fasta
+label_UMGS97_27.fasta
+label_UMGS97_26.fasta
+label_UMGS97_25.fasta
+label_UMGS97_24.fasta
+label_UMGS97_23.fasta
+label_UMGS97_22.fasta
+label_UMGS97_21.fasta
+label_UMGS97_20.fasta
+label_UMGS97_2.fasta
+label_UMGS97_19.fasta
+label_UMGS97_18.fasta
+label_UMGS97_17.fasta
+label_UMGS97_16.fasta
+label_UMGS97_15.fasta
+label_UMGS97_14.fasta
+label_UMGS97_13.fasta
+label_UMGS97_12.fasta
+label_UMGS97_11.fasta
+label_UMGS97_10.fasta
+label_UMGS97_1.fasta
+label_UMGS97_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS406_9.fasta
+label_UMGS406_8.fasta
+label_UMGS406_7.fasta
+label_UMGS406_62.fasta
+label_UMGS406_61.fasta
+label_UMGS406_60.fasta
+label_UMGS406_6.fasta
+label_UMGS406_59.fasta
+label_UMGS406_58.fasta
+label_UMGS406_57.fasta
+label_UMGS406_56.fasta
+label_UMGS406_55.fasta
+label_UMGS406_54.fasta
+label_UMGS406_53.fasta
+label_UMGS406_52.fasta
+label_UMGS406_51.fasta
+label_UMGS406_50.fasta
+label_UMGS406_5.fasta
+label_UMGS406_49.fasta
+label_UMGS406_48.fasta
+label_UMGS406_47.fasta
+label_UMGS406_46.fasta
+label_UMGS406_45.fasta
+label_UMGS406_44.fasta
+label_UMGS406_43.fasta
+label_UMGS406_42.fasta
+label_UMGS406_41.fasta
+label_UMGS406_40.fasta
+label_UMGS406_4.fasta
+label_UMGS406_39.fasta
+label_UMGS406_38.fasta
+label_UMGS406_37.fasta
+label_UMGS406_36.fasta
+label_UMGS406_35.fasta
+label_UMGS406_34.fasta
+label_UMGS406_33.fasta
+label_UMGS406_32.fasta
+label_UMGS406_31.fasta
+label_UMGS406_30.fasta
+label_UMGS406_3.fasta
+label_UMGS406_29.fasta
+label_UMGS406_28.fasta
+label_UMGS406_27.fasta
+label_UMGS406_26.fasta
+label_UMGS406_25.fasta
+label_UMGS406_24.fasta
+label_UMGS406_23.fasta
+label_UMGS406_22.fasta
+label_UMGS406_21.fasta
+label_UMGS406_20.fasta
+label_UMGS406_2.fasta
+label_UMGS406_19.fasta
+label_UMGS406_18.fasta
+label_UMGS406_17.fasta
+label_UMGS406_16.fasta
+label_UMGS406_15.fasta
+label_UMGS406_14.fasta
+label_UMGS406_13.fasta
+label_UMGS406_12.fasta
+label_UMGS406_11.fasta
+label_UMGS406_10.fasta
+label_UMGS406_1.fasta
+label_UMGS406_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS604_99.fasta
+label_UMGS604_98.fasta
+label_UMGS604_97.fasta
+label_UMGS604_96.fasta
+label_UMGS604_95.fasta
+label_UMGS604_94.fasta
+label_UMGS604_93.fasta
+label_UMGS604_92.fasta
+label_UMGS604_91.fasta
+label_UMGS604_90.fasta
+label_UMGS604_9.fasta
+label_UMGS604_89.fasta
+label_UMGS604_88.fasta
+label_UMGS604_87.fasta
+label_UMGS604_86.fasta
+label_UMGS604_85.fasta
+label_UMGS604_84.fasta
+label_UMGS604_83.fasta
+label_UMGS604_82.fasta
+label_UMGS604_81.fasta
+label_UMGS604_80.fasta
+label_UMGS604_8.fasta
+label_UMGS604_79.fasta
+label_UMGS604_78.fasta
+label_UMGS604_77.fasta
+label_UMGS604_76.fasta
+label_UMGS604_75.fasta
+label_UMGS604_74.fasta
+label_UMGS604_73.fasta
+label_UMGS604_72.fasta
+label_UMGS604_71.fasta
+label_UMGS604_70.fasta
+label_UMGS604_7.fasta
+label_UMGS604_69.fasta
+label_UMGS604_68.fasta
+label_UMGS604_67.fasta
+label_UMGS604_66.fasta
+label_UMGS604_65.fasta
+label_UMGS604_64.fasta
+label_UMGS604_63.fasta
+label_UMGS604_62.fasta
+label_UMGS604_61.fasta
+label_UMGS604_60.fasta
+label_UMGS604_6.fasta
+label_UMGS604_59.fasta
+label_UMGS604_58.fasta
+label_UMGS604_57.fasta
+label_UMGS604_56.fasta
+label_UMGS604_55.fasta
+label_UMGS604_54.fasta
+label_UMGS604_53.fasta
+label_UMGS604_52.fasta
+label_UMGS604_51.fasta
+label_UMGS604_50.fasta
+label_UMGS604_5.fasta
+label_UMGS604_49.fasta
+label_UMGS604_48.fasta
+label_UMGS604_47.fasta
+label_UMGS604_46.fasta
+label_UMGS604_45.fasta
+label_UMGS604_44.fasta
+label_UMGS604_43.fasta
+label_UMGS604_42.fasta
+label_UMGS604_41.fasta
+label_UMGS604_40.fasta
+label_UMGS604_4.fasta
+label_UMGS604_39.fasta
+label_UMGS604_38.fasta
+label_UMGS604_37.fasta
+label_UMGS604_36.fasta
+label_UMGS604_35.fasta
+label_UMGS604_34.fasta
+label_UMGS604_33.fasta
+label_UMGS604_32.fasta
+label_UMGS604_31.fasta
+label_UMGS604_30.fasta
+label_UMGS604_3.fasta
+label_UMGS604_29.fasta
+label_UMGS604_28.fasta
+label_UMGS604_27.fasta
+label_UMGS604_26.fasta
+label_UMGS604_25.fasta
+label_UMGS604_24.fasta
+label_UMGS604_23.fasta
+label_UMGS604_22.fasta
+label_UMGS604_21.fasta
+label_UMGS604_20.fasta
+label_UMGS604_2.fasta
+label_UMGS604_19.fasta
+label_UMGS604_18.fasta
+label_UMGS604_17.fasta
+label_UMGS604_16.fasta
+label_UMGS604_15.fasta
+label_UMGS604_142.fasta
+label_UMGS604_141.fasta
+label_UMGS604_140.fasta
+label_UMGS604_14.fasta
+label_UMGS604_139.fasta
+label_UMGS604_138.fasta
+label_UMGS604_137.fasta
+label_UMGS604_136.fasta
+label_UMGS604_135.fasta
+label_UMGS604_134.fasta
+label_UMGS604_133.fasta
+label_UMGS604_132.fasta
+label_UMGS604_131.fasta
+label_UMGS604_130.fasta
+label_UMGS604_13.fasta
+label_UMGS604_129.fasta
+label_UMGS604_128.fasta
+label_UMGS604_127.fasta
+label_UMGS604_126.fasta
+label_UMGS604_125.fasta
+label_UMGS604_124.fasta
+label_UMGS604_123.fasta
+label_UMGS604_122.fasta
+label_UMGS604_121.fasta
+label_UMGS604_120.fasta
+label_UMGS604_12.fasta
+label_UMGS604_119.fasta
+label_UMGS604_118.fasta
+label_UMGS604_117.fasta
+label_UMGS604_116.fasta
+label_UMGS604_115.fasta
+label_UMGS604_114.fasta
+label_UMGS604_113.fasta
+label_UMGS604_112.fasta
+label_UMGS604_111.fasta
+label_UMGS604_110.fasta
+label_UMGS604_11.fasta
+label_UMGS604_109.fasta
+label_UMGS604_108.fasta
+label_UMGS604_107.fasta
+label_UMGS604_106.fasta
+label_UMGS604_105.fasta
+label_UMGS604_104.fasta
+label_UMGS604_103.fasta
+label_UMGS604_102.fasta
+label_UMGS604_101.fasta
+label_UMGS604_100.fasta
+label_UMGS604_10.fasta
+label_UMGS604_1.fasta
+label_UMGS604_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1010_9.fasta
+label_UMGS1010_80.fasta
+label_UMGS1010_8.fasta
+label_UMGS1010_79.fasta
+label_UMGS1010_78.fasta
+label_UMGS1010_77.fasta
+label_UMGS1010_76.fasta
+label_UMGS1010_75.fasta
+label_UMGS1010_74.fasta
+label_UMGS1010_73.fasta
+label_UMGS1010_72.fasta
+label_UMGS1010_71.fasta
+label_UMGS1010_70.fasta
+label_UMGS1010_7.fasta
+label_UMGS1010_69.fasta
+label_UMGS1010_68.fasta
+label_UMGS1010_67.fasta
+label_UMGS1010_66.fasta
+label_UMGS1010_65.fasta
+label_UMGS1010_64.fasta
+label_UMGS1010_63.fasta
+label_UMGS1010_62.fasta
+label_UMGS1010_61.fasta
+label_UMGS1010_60.fasta
+label_UMGS1010_6.fasta
+label_UMGS1010_59.fasta
+label_UMGS1010_58.fasta
+label_UMGS1010_57.fasta
+label_UMGS1010_56.fasta
+label_UMGS1010_55.fasta
+label_UMGS1010_54.fasta
+label_UMGS1010_53.fasta
+label_UMGS1010_52.fasta
+label_UMGS1010_51.fasta
+label_UMGS1010_50.fasta
+label_UMGS1010_5.fasta
+label_UMGS1010_49.fasta
+label_UMGS1010_48.fasta
+label_UMGS1010_47.fasta
+label_UMGS1010_46.fasta
+label_UMGS1010_45.fasta
+label_UMGS1010_44.fasta
+label_UMGS1010_43.fasta
+label_UMGS1010_42.fasta
+label_UMGS1010_41.fasta
+label_UMGS1010_40.fasta
+label_UMGS1010_4.fasta
+label_UMGS1010_39.fasta
+label_UMGS1010_38.fasta
+label_UMGS1010_37.fasta
+label_UMGS1010_36.fasta
+label_UMGS1010_35.fasta
+label_UMGS1010_34.fasta
+label_UMGS1010_33.fasta
+label_UMGS1010_32.fasta
+label_UMGS1010_31.fasta
+label_UMGS1010_30.fasta
+label_UMGS1010_3.fasta
+label_UMGS1010_29.fasta
+label_UMGS1010_28.fasta
+label_UMGS1010_27.fasta
+label_UMGS1010_26.fasta
+label_UMGS1010_25.fasta
+label_UMGS1010_24.fasta
+label_UMGS1010_23.fasta
+label_UMGS1010_22.fasta
+label_UMGS1010_21.fasta
+label_UMGS1010_20.fasta
+label_UMGS1010_2.fasta
+label_UMGS1010_19.fasta
+label_UMGS1010_18.fasta
+label_UMGS1010_17.fasta
+label_UMGS1010_16.fasta
+label_UMGS1010_15.fasta
+label_UMGS1010_14.fasta
+label_UMGS1010_13.fasta
+label_UMGS1010_12.fasta
+label_UMGS1010_11.fasta
+label_UMGS1010_10.fasta
+label_UMGS1010_1.fasta
+label_UMGS1010_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1786_99.fasta
+label_UMGS1786_98.fasta
+label_UMGS1786_97.fasta
+label_UMGS1786_96.fasta
+label_UMGS1786_95.fasta
+label_UMGS1786_94.fasta
+label_UMGS1786_93.fasta
+label_UMGS1786_92.fasta
+label_UMGS1786_91.fasta
+label_UMGS1786_90.fasta
+label_UMGS1786_9.fasta
+label_UMGS1786_89.fasta
+label_UMGS1786_88.fasta
+label_UMGS1786_87.fasta
+label_UMGS1786_86.fasta
+label_UMGS1786_85.fasta
+label_UMGS1786_84.fasta
+label_UMGS1786_83.fasta
+label_UMGS1786_82.fasta
+label_UMGS1786_81.fasta
+label_UMGS1786_80.fasta
+label_UMGS1786_8.fasta
+label_UMGS1786_79.fasta
+label_UMGS1786_78.fasta
+label_UMGS1786_77.fasta
+label_UMGS1786_76.fasta
+label_UMGS1786_75.fasta
+label_UMGS1786_74.fasta
+label_UMGS1786_73.fasta
+label_UMGS1786_72.fasta
+label_UMGS1786_71.fasta
+label_UMGS1786_70.fasta
+label_UMGS1786_7.fasta
+label_UMGS1786_69.fasta
+label_UMGS1786_68.fasta
+label_UMGS1786_67.fasta
+label_UMGS1786_66.fasta
+label_UMGS1786_65.fasta
+label_UMGS1786_64.fasta
+label_UMGS1786_63.fasta
+label_UMGS1786_62.fasta
+label_UMGS1786_61.fasta
+label_UMGS1786_60.fasta
+label_UMGS1786_6.fasta
+label_UMGS1786_59.fasta
+label_UMGS1786_58.fasta
+label_UMGS1786_57.fasta
+label_UMGS1786_56.fasta
+label_UMGS1786_55.fasta
+label_UMGS1786_54.fasta
+label_UMGS1786_53.fasta
+label_UMGS1786_52.fasta
+label_UMGS1786_51.fasta
+label_UMGS1786_50.fasta
+label_UMGS1786_5.fasta
+label_UMGS1786_49.fasta
+label_UMGS1786_48.fasta
+label_UMGS1786_47.fasta
+label_UMGS1786_46.fasta
+label_UMGS1786_45.fasta
+label_UMGS1786_44.fasta
+label_UMGS1786_43.fasta
+label_UMGS1786_42.fasta
+label_UMGS1786_41.fasta
+label_UMGS1786_40.fasta
+label_UMGS1786_4.fasta
+label_UMGS1786_39.fasta
+label_UMGS1786_38.fasta
+label_UMGS1786_37.fasta
+label_UMGS1786_36.fasta
+label_UMGS1786_35.fasta
+label_UMGS1786_34.fasta
+label_UMGS1786_33.fasta
+label_UMGS1786_32.fasta
+label_UMGS1786_31.fasta
+label_UMGS1786_30.fasta
+label_UMGS1786_3.fasta
+label_UMGS1786_29.fasta
+label_UMGS1786_28.fasta
+label_UMGS1786_27.fasta
+label_UMGS1786_26.fasta
+label_UMGS1786_25.fasta
+label_UMGS1786_24.fasta
+label_UMGS1786_23.fasta
+label_UMGS1786_22.fasta
+label_UMGS1786_21.fasta
+label_UMGS1786_20.fasta
+label_UMGS1786_2.fasta
+label_UMGS1786_19.fasta
+label_UMGS1786_18.fasta
+label_UMGS1786_17.fasta
+label_UMGS1786_16.fasta
+label_UMGS1786_15.fasta
+label_UMGS1786_14.fasta
+label_UMGS1786_13.fasta
+label_UMGS1786_126.fasta
+label_UMGS1786_125.fasta
+label_UMGS1786_124.fasta
+label_UMGS1786_123.fasta
+label_UMGS1786_122.fasta
+label_UMGS1786_121.fasta
+label_UMGS1786_120.fasta
+label_UMGS1786_12.fasta
+label_UMGS1786_119.fasta
+label_UMGS1786_118.fasta
+label_UMGS1786_117.fasta
+label_UMGS1786_116.fasta
+label_UMGS1786_115.fasta
+label_UMGS1786_114.fasta
+label_UMGS1786_113.fasta
+label_UMGS1786_112.fasta
+label_UMGS1786_111.fasta
+label_UMGS1786_110.fasta
+label_UMGS1786_11.fasta
+label_UMGS1786_109.fasta
+label_UMGS1786_108.fasta
+label_UMGS1786_107.fasta
+label_UMGS1786_106.fasta
+label_UMGS1786_105.fasta
+label_UMGS1786_104.fasta
+label_UMGS1786_103.fasta
+label_UMGS1786_102.fasta
+label_UMGS1786_101.fasta
+label_UMGS1786_100.fasta
+label_UMGS1786_10.fasta
+label_UMGS1786_1.fasta
+label_UMGS1786_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1944_90.fasta
+label_UMGS1944_9.fasta
+label_UMGS1944_89.fasta
+label_UMGS1944_88.fasta
+label_UMGS1944_87.fasta
+label_UMGS1944_86.fasta
+label_UMGS1944_85.fasta
+label_UMGS1944_84.fasta
+label_UMGS1944_83.fasta
+label_UMGS1944_82.fasta
+label_UMGS1944_81.fasta
+label_UMGS1944_80.fasta
+label_UMGS1944_8.fasta
+label_UMGS1944_79.fasta
+label_UMGS1944_78.fasta
+label_UMGS1944_77.fasta
+label_UMGS1944_76.fasta
+label_UMGS1944_75.fasta
+label_UMGS1944_74.fasta
+label_UMGS1944_73.fasta
+label_UMGS1944_72.fasta
+label_UMGS1944_71.fasta
+label_UMGS1944_70.fasta
+label_UMGS1944_7.fasta
+label_UMGS1944_69.fasta
+label_UMGS1944_68.fasta
+label_UMGS1944_67.fasta
+label_UMGS1944_66.fasta
+label_UMGS1944_65.fasta
+label_UMGS1944_64.fasta
+label_UMGS1944_63.fasta
+label_UMGS1944_62.fasta
+label_UMGS1944_61.fasta
+label_UMGS1944_60.fasta
+label_UMGS1944_6.fasta
+label_UMGS1944_59.fasta
+label_UMGS1944_58.fasta
+label_UMGS1944_57.fasta
+label_UMGS1944_56.fasta
+label_UMGS1944_55.fasta
+label_UMGS1944_54.fasta
+label_UMGS1944_53.fasta
+label_UMGS1944_52.fasta
+label_UMGS1944_51.fasta
+label_UMGS1944_50.fasta
+label_UMGS1944_5.fasta
+label_UMGS1944_49.fasta
+label_UMGS1944_48.fasta
+label_UMGS1944_47.fasta
+label_UMGS1944_46.fasta
+label_UMGS1944_45.fasta
+label_UMGS1944_44.fasta
+label_UMGS1944_43.fasta
+label_UMGS1944_42.fasta
+label_UMGS1944_41.fasta
+label_UMGS1944_40.fasta
+label_UMGS1944_4.fasta
+label_UMGS1944_39.fasta
+label_UMGS1944_38.fasta
+label_UMGS1944_37.fasta
+label_UMGS1944_36.fasta
+label_UMGS1944_35.fasta
+label_UMGS1944_34.fasta
+label_UMGS1944_33.fasta
+label_UMGS1944_32.fasta
+label_UMGS1944_31.fasta
+label_UMGS1944_30.fasta
+label_UMGS1944_3.fasta
+label_UMGS1944_29.fasta
+label_UMGS1944_28.fasta
+label_UMGS1944_27.fasta
+label_UMGS1944_26.fasta
+label_UMGS1944_25.fasta
+label_UMGS1944_24.fasta
+label_UMGS1944_23.fasta
+label_UMGS1944_22.fasta
+label_UMGS1944_21.fasta
+label_UMGS1944_20.fasta
+label_UMGS1944_2.fasta
+label_UMGS1944_19.fasta
+label_UMGS1944_18.fasta
+label_UMGS1944_17.fasta
+label_UMGS1944_16.fasta
+label_UMGS1944_15.fasta
+label_UMGS1944_14.fasta
+label_UMGS1944_13.fasta
+label_UMGS1944_12.fasta
+label_UMGS1944_11.fasta
+label_UMGS1944_10.fasta
+label_UMGS1944_1.fasta
+label_UMGS1944_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS36_9.fasta
+label_UMGS36_8.fasta
+label_UMGS36_7.fasta
+label_UMGS36_6.fasta
+label_UMGS36_5.fasta
+label_UMGS36_49.fasta
+label_UMGS36_48.fasta
+label_UMGS36_47.fasta
+label_UMGS36_46.fasta
+label_UMGS36_45.fasta
+label_UMGS36_44.fasta
+label_UMGS36_43.fasta
+label_UMGS36_42.fasta
+label_UMGS36_41.fasta
+label_UMGS36_40.fasta
+label_UMGS36_4.fasta
+label_UMGS36_39.fasta
+label_UMGS36_38.fasta
+label_UMGS36_37.fasta
+label_UMGS36_36.fasta
+label_UMGS36_35.fasta
+label_UMGS36_34.fasta
+label_UMGS36_33.fasta
+label_UMGS36_32.fasta
+label_UMGS36_31.fasta
+label_UMGS36_30.fasta
+label_UMGS36_3.fasta
+label_UMGS36_29.fasta
+label_UMGS36_28.fasta
+label_UMGS36_27.fasta
+label_UMGS36_26.fasta
+label_UMGS36_25.fasta
+label_UMGS36_24.fasta
+label_UMGS36_23.fasta
+label_UMGS36_22.fasta
+label_UMGS36_21.fasta
+label_UMGS36_20.fasta
+label_UMGS36_2.fasta
+label_UMGS36_19.fasta
+label_UMGS36_18.fasta
+label_UMGS36_17.fasta
+label_UMGS36_16.fasta
+label_UMGS36_15.fasta
+label_UMGS36_14.fasta
+label_UMGS36_13.fasta
+label_UMGS36_12.fasta
+label_UMGS36_11.fasta
+label_UMGS36_10.fasta
+label_UMGS36_1.fasta
+label_UMGS36_0.fasta
+Generating CGRs.... 
+totalSeq is: 1353
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Blautia
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 4
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'s__Blautia han...'}    {'s__Blautia hom...'}
+
+  Columns 4 through 6
+
+    {'s__Blautia sp0...'}    {'s__Blautia sp0...'}    {'s__Blautia sp0...'}
+
+  Columns 7 through 9
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'s__Blautia hom...'}
+
+  Columns 4 through 6
+
+    {'s__Blautia sp0...'}    {'s__Blautia sp0...'}    {'s__Blautia sp0...'}
+
+  Columns 7 through 9
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'s__Blautia sp0...'}    {'s__Blautia sp0...'}    {'s__Blautia sp0...'}
+
+  Columns 7 through 9
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'s__Blautia sp0...'}    {'s__Blautia sp0...'}
+
+  Columns 7 through 9
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'s__Blautia sp0...'}
+
+  Columns 7 through 9
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'8-s__Blautia s...'}    {'s__Blautia sp9...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'8-s__Blautia s...'}    {'9-s__Blautia s...'}
+
+  Columns 10 through 12
+
+    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'8-s__Blautia s...'}    {'9-s__Blautia s...'}
+
+  Columns 10 through 12
+
+    {'10-s__Blautia ...'}    {'s__Blautia sp9...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'8-s__Blautia s...'}    {'9-s__Blautia s...'}
+
+  Columns 10 through 12
+
+    {'10-s__Blautia ...'}    {'11-s__Blautia ...'}    {'s__Blautia sp9...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'8-s__Blautia s...'}    {'9-s__Blautia s...'}
+
+  Columns 10 through 12
+
+    {'10-s__Blautia ...'}    {'11-s__Blautia ...'}    {'12-s__Blautia ...'}
+
+  Column 13
+
+    {'s__Blautia ste...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'8-s__Blautia s...'}    {'9-s__Blautia s...'}
+
+  Columns 10 through 12
+
+    {'10-s__Blautia ...'}    {'11-s__Blautia ...'}    {'12-s__Blautia ...'}
+
+  Column 13
+
+    {'13-s__Blautia ...'}
+
+  Columns 1 through 3
+
+    '1-s__Blautia coc...'    '2-s__Blautia han...'    '3-s__Blautia hom...'
+
+  Columns 4 through 6
+
+    '4-s__Blautia sp0...'    '5-s__Blautia sp0...'    '6-s__Blautia sp0...'
+
+  Columns 7 through 9
+
+    '7-s__Blautia sp9...'    '8-s__Blautia sp9...'    '9-s__Blautia sp9...'
+
+  Columns 10 through 12
+
+    '10-s__Blautia sp...'    '11-s__Blautia sp...'    '12-s__Blautia sp...'
+
+  Column 13
+
+    '13-s__Blautia st...'
+
+
+header =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Blautia c...'}    {'2-s__Blautia h...'}    {'3-s__Blautia h...'}
+
+  Columns 4 through 6
+
+    {'4-s__Blautia s...'}    {'5-s__Blautia s...'}    {'6-s__Blautia s...'}
+
+  Columns 7 through 9
+
+    {'7-s__Blautia s...'}    {'8-s__Blautia s...'}    {'9-s__Blautia s...'}
+
+  Columns 10 through 12
+
+    {'10-s__Blautia ...'}    {'11-s__Blautia ...'}    {'12-s__Blautia ...'}
+
+  Columns 13 through 14
+
+    {'13-s__Blautia ...'}    {'prediction'}
+
+
+T3 =
+
+  4x14 table
+
+                       1-s__Blautia coccoides    2-s__Blautia hansenii    3-s__Blautia hominis    4-s__Blautia sp000432195    5-s__Blautia sp001304935    6-s__Blautia sp003287895    7-s__Blautia sp900539145    8-s__Blautia sp900541955    9-s__Blautia sp900543715    10-s__Blautia sp900547685    11-s__Blautia sp900555025    12-s__Blautia sp900556555    13-s__Blautia stercoris    prediction
+                       ______________________    _____________________    ____________________    ________________________    ________________________    ________________________    ________________________    ________________________    ________________________    _________________________    _________________________    _________________________    _______________________    __________
+
+    MAG-GUT12458.fa          0.00027459                0.038995                0.00037746                0.0013119                    0.005137                   3.0485e-07                   0.001989                   0.00033318                  7.8472e-07                   0.0075243                   0.00029564                    0.0033213                    0.94044                13    
+    MAG-GUT20500.fa           0.0002599                 0.04164                0.00033541                0.0015001                   0.0055853                   3.5681e-07                  0.0017668                   0.00040365                  8.7159e-07                   0.0063757                   0.00032638                    0.0039708                    0.93783                13    
+    MAG-GUT26365.fa          0.00022875                0.031418                0.00032299                0.0013657                   0.0050722                   2.8683e-07                  0.0017351                   0.00040252                  6.2815e-07                   0.0076839                   0.00029787                    0.0034113                    0.94806                13    
+    MAG-GUT57924.fa          0.00023012                 0.03382                0.00034401                0.0013646                   0.0054157                    3.118e-07                  0.0017795                   0.00044865                   6.651e-07                   0.0067332                   0.00030587                    0.0035826                    0.94597                13    
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Blautia_split_pruned.xlsx"
+
+Process completed 
+[?1l>

@@ -1,0 +1,451 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__Actinomycetales_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Actinomycetales"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS956_84.fasta
+label_UMGS956_83.fasta
+label_UMGS956_80.fasta
+label_UMGS956_75.fasta
+label_UMGS956_61.fasta
+label_UMGS956_39.fasta
+label_UMGS956_32.fasta
+label_UMGS956_20.fasta
+label_UMGS956_15.fasta
+label_UMGS956_12.fasta
+label_UMGS822_8.fasta
+label_UMGS822_1.fasta
+label_UMGS520_9.fasta
+label_UMGS520_89.fasta
+label_UMGS520_87.fasta
+label_UMGS520_83.fasta
+label_UMGS520_76.fasta
+label_UMGS520_67.fasta
+label_UMGS520_33.fasta
+label_UMGS520_31.fasta
+label_UMGS520_14.fasta
+label_UMGS520_0.fasta
+label_UMGS492_98.fasta
+label_UMGS492_89.fasta
+label_UMGS492_80.fasta
+label_UMGS492_78.fasta
+label_UMGS492_6.fasta
+label_UMGS492_59.fasta
+label_UMGS492_54.fasta
+label_UMGS492_50.fasta
+label_UMGS492_49.fasta
+label_UMGS492_48.fasta
+label_UMGS492_41.fasta
+label_UMGS492_29.fasta
+label_UMGS492_11.fasta
+label_UMGS492_10.fasta
+label_UMGS492_0.fasta
+label_UMGS402_42.fasta
+label_UMGS402_40.fasta
+label_UMGS402_32.fasta
+label_UMGS402_30.fasta
+label_UMGS402_16.fasta
+label_UMGS402_12.fasta
+label_UMGS252_20.fasta
+label_UMGS242_6.fasta
+label_UMGS242_37.fasta
+label_UMGS242_32.fasta
+label_UMGS242_14.fasta
+label_UMGS2071_7.fasta
+label_UMGS2071_54.fasta
+label_UMGS2071_5.fasta
+label_UMGS2071_47.fasta
+label_UMGS2071_41.fasta
+label_UMGS2071_39.fasta
+label_UMGS2071_22.fasta
+label_UMGS2071_18.fasta
+label_UMGS2009_65.fasta
+label_UMGS2009_50.fasta
+label_UMGS2009_44.fasta
+label_UMGS2009_24.fasta
+label_UMGS2009_21.fasta
+label_UMGS2009_20.fasta
+label_UMGS1934_86.fasta
+label_UMGS1934_8.fasta
+label_UMGS1934_55.fasta
+label_UMGS1934_48.fasta
+label_UMGS1934_2.fasta
+label_UMGS1934_17.fasta
+label_UMGS1934_148.fasta
+label_UMGS1934_145.fasta
+label_UMGS1934_143.fasta
+label_UMGS1934_14.fasta
+label_UMGS1934_133.fasta
+label_UMGS1934_128.fasta
+label_UMGS1934_121.fasta
+label_UMGS1934_120.fasta
+label_UMGS1934_117.fasta
+label_UMGS1934_113.fasta
+label_UMGS1934_102.fasta
+label_UMGS1934_1.fasta
+label_UMGS1731_79.fasta
+label_UMGS1731_70.fasta
+label_UMGS1731_67.fasta
+label_UMGS1731_66.fasta
+label_UMGS1731_42.fasta
+label_UMGS1731_33.fasta
+label_UMGS1731_32.fasta
+label_UMGS1731_1.fasta
+label_UMGS1719_93.fasta
+label_UMGS1719_87.fasta
+label_UMGS1719_60.fasta
+label_UMGS1719_5.fasta
+label_UMGS1719_47.fasta
+label_UMGS1719_44.fasta
+label_UMGS1719_35.fasta
+label_UMGS1719_20.fasta
+label_UMGS1719_12.fasta
+label_UMGS1719_101.fasta
+label_UMGS1719_1.fasta
+label_UMGS1548_93.fasta
+label_UMGS1548_83.fasta
+label_UMGS1548_63.fasta
+label_UMGS1548_55.fasta
+label_UMGS1548_51.fasta
+label_UMGS1548_48.fasta
+label_UMGS1548_41.fasta
+label_UMGS1548_27.fasta
+label_UMGS1548_21.fasta
+label_UMGS1548_2.fasta
+label_UMGS1548_18.fasta
+label_UMGS1548_131.fasta
+label_UMGS1548_120.fasta
+label_UMGS1548_112.fasta
+label_UMGS1548_107.fasta
+label_GCF_000820725_97.fasta
+label_GCF_000820725_94.fasta
+label_GCF_000820725_60.fasta
+label_GCF_000820725_51.fasta
+label_GCF_000820725_30.fasta
+label_GCF_000820725_29.fasta
+label_GCF_000820725_24.fasta
+label_GCF_000820725_183.fasta
+label_GCF_000820725_175.fasta
+label_GCF_000820725_160.fasta
+label_GCF_000820725_155.fasta
+label_GCF_000820725_128.fasta
+label_GCF_000820725_122.fasta
+label_GCF_000820725_114.fasta
+label_GCF_000820725_10.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS74_7.fasta
+label_UMGS74_20.fasta
+label_UMGS74_1.fasta
+label_UMGS603_2.fasta
+label_UMGS603_13.fasta
+label_UMGS603_11.fasta
+label_UMGS1527_76.fasta
+label_UMGS1527_66.fasta
+label_UMGS1527_56.fasta
+label_UMGS1527_55.fasta
+label_UMGS1527_49.fasta
+label_UMGS1527_48.fasta
+label_UMGS1527_45.fasta
+label_UMGS1527_32.fasta
+label_UMGS1527_18.fasta
+label_UMGS1527_102.fasta
+label_UMGS1405_84.fasta
+label_UMGS1405_76.fasta
+label_UMGS1405_74.fasta
+label_UMGS1405_55.fasta
+label_UMGS1405_50.fasta
+label_UMGS1405_23.fasta
+label_UMGS1405_22.fasta
+label_UMGS1405_10.fasta
+label_GCF_000741205_9.fasta
+label_GCF_000741205_8.fasta
+label_GCF_000741205_4.fasta
+label_20298_3_2_1.fasta
+label_18391_1_7_8.fasta
+label_18391_1_7_0.fasta
+label_18048_1_93_4.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000285835_9.fasta
+label_GCF_000285835_8.fasta
+label_GCF_000285835_7.fasta
+label_GCF_000285835_6.fasta
+label_GCF_000285835_5.fasta
+label_GCF_000285835_4.fasta
+label_GCF_000285835_3.fasta
+label_GCF_000285835_2.fasta
+label_GCF_000285835_14.fasta
+label_GCF_000285835_13.fasta
+label_GCF_000285835_12.fasta
+label_GCF_000285835_11.fasta
+label_GCF_000285835_10.fasta
+label_GCF_000285835_1.fasta
+label_GCF_000285835_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_900046455_7.fasta
+label_GCF_900046455_6.fasta
+label_GCF_900046455_5.fasta
+label_GCF_900046455_4.fasta
+label_GCF_900046455_3.fasta
+label_GCF_900046455_2.fasta
+label_GCF_900046455_1.fasta
+label_GCF_900046455_0.fasta
+label_GCF_000312125_5.fasta
+label_GCF_000312125_4.fasta
+label_GCF_000312125_3.fasta
+label_GCF_000312125_2.fasta
+label_GCF_000312125_1.fasta
+label_GCF_000312125_0.fasta
+label_GCF_000312005_1.fasta
+label_GCF_000312005_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000413375_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000826525_9.fasta
+label_GCF_000826525_8.fasta
+label_GCF_000826525_7.fasta
+label_GCF_000826525_6.fasta
+label_GCF_000826525_5.fasta
+label_GCF_000826525_4.fasta
+label_GCF_000826525_3.fasta
+label_GCF_000826525_2.fasta
+label_GCF_000826525_12.fasta
+label_GCF_000826525_11.fasta
+label_GCF_000826525_10.fasta
+label_GCF_000826525_1.fasta
+label_GCF_000826525_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS928_98.fasta
+label_UMGS928_91.fasta
+label_UMGS928_90.fasta
+label_UMGS928_9.fasta
+label_UMGS928_86.fasta
+label_UMGS928_79.fasta
+label_UMGS928_69.fasta
+label_UMGS928_6.fasta
+label_UMGS928_49.fasta
+label_UMGS928_26.fasta
+label_UMGS928_16.fasta
+label_UMGS928_141.fasta
+label_UMGS928_138.fasta
+label_UMGS928_135.fasta
+label_UMGS928_111.fasta
+label_UMGS928_0.fasta
+label_GCF_000455245_10.fasta
+label_20298_2_3_17.fasta
+label_20298_2_3_16.fasta
+Generating CGRs.... 
+totalSeq is: 224
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Actinomycetales
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: Unable to fit posterior probabilities for learner 5 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In classifyTestSeqExternMisList (line 45)
+  In testingExternMisList (line 9)
+  In stackedMain (line 101)] 
+numTestSeq is: 1
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'f__Bifidobacte...'}    {'f__Brevibacter...'}
+
+  Columns 4 through 6
+
+    {'f__Cellulomona...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'f__Brevibacter...'}
+
+  Columns 4 through 6
+
+    {'f__Cellulomona...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'f__Cellulomona...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'f__Dermabacter...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'f__Dermatophil...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'6-f__Dermatoph...'}
+
+  Column 7
+
+    {'f__Micrococcaceae'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'6-f__Dermatoph...'}
+
+  Column 7
+
+    {'7-f__Micrococc...'}
+
+  Columns 1 through 3
+
+    '1-f__Actinomycet...'    '2-f__Bifidobacte...'    '3-f__Brevibacter...'
+
+  Columns 4 through 6
+
+    '4-f__Cellulomona...'    '5-f__Dermabacter...'    '6-f__Dermatophil...'
+
+  Column 7
+
+    '7-f__Micrococcaceae'
+
+
+header =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-f__Actinomyc...'}    {'2-f__Bifidobac...'}    {'3-f__Brevibact...'}
+
+  Columns 4 through 6
+
+    {'4-f__Cellulomo...'}    {'5-f__Dermabact...'}    {'6-f__Dermatoph...'}
+
+  Columns 7 through 8
+
+    {'7-f__Micrococc...'}    {'prediction'}
+
+
+T3 =
+
+  1x8 table
+
+                       1-f__Actinomycetaceae    2-f__Bifidobacteriaceae    3-f__Brevibacteriaceae    4-f__Cellulomonadaceae    5-f__Dermabacteraceae    6-f__Dermatophilaceae    7-f__Micrococcaceae    prediction
+                       _____________________    _______________________    ______________________    ______________________    _____________________    _____________________    ___________________    __________
+
+    MAG-GUT91633.fa         6.9642e-07                  0.99081                  0.0018293                 0.0065363                2.2202e-14               2.6243e-05              0.00079945             2     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-o__Actinomycetales_split_pruned.xlsx"
+
+Process completed 
+[?1l>

@@ -1,0 +1,491 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Schaedlerella_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000218385_9.fasta
+label_GCF_000218385_8.fasta
+label_GCF_000218385_7.fasta
+label_GCF_000218385_6.fasta
+label_GCF_000218385_5.fasta
+label_GCF_000218385_4.fasta
+label_GCF_000218385_3.fasta
+label_GCF_000218385_2.fasta
+label_GCF_000218385_16.fasta
+label_GCF_000218385_15.fasta
+label_GCF_000218385_14.fasta
+label_GCF_000218385_13.fasta
+label_GCF_000218385_12.fasta
+label_GCF_000218385_11.fasta
+label_GCF_000218385_10.fasta
+label_GCF_000218385_1.fasta
+label_GCF_000218385_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20287_6_33_9.fasta
+label_20287_6_33_8.fasta
+label_20287_6_33_7.fasta
+label_20287_6_33_6.fasta
+label_20287_6_33_59.fasta
+label_20287_6_33_58.fasta
+label_20287_6_33_57.fasta
+label_20287_6_33_56.fasta
+label_20287_6_33_55.fasta
+label_20287_6_33_54.fasta
+label_20287_6_33_53.fasta
+label_20287_6_33_52.fasta
+label_20287_6_33_51.fasta
+label_20287_6_33_50.fasta
+label_20287_6_33_5.fasta
+label_20287_6_33_49.fasta
+label_20287_6_33_48.fasta
+label_20287_6_33_47.fasta
+label_20287_6_33_46.fasta
+label_20287_6_33_45.fasta
+label_20287_6_33_44.fasta
+label_20287_6_33_43.fasta
+label_20287_6_33_42.fasta
+label_20287_6_33_41.fasta
+label_20287_6_33_40.fasta
+label_20287_6_33_4.fasta
+label_20287_6_33_39.fasta
+label_20287_6_33_38.fasta
+label_20287_6_33_37.fasta
+label_20287_6_33_36.fasta
+label_20287_6_33_35.fasta
+label_20287_6_33_34.fasta
+label_20287_6_33_33.fasta
+label_20287_6_33_32.fasta
+label_20287_6_33_31.fasta
+label_20287_6_33_30.fasta
+label_20287_6_33_3.fasta
+label_20287_6_33_29.fasta
+label_20287_6_33_28.fasta
+label_20287_6_33_27.fasta
+label_20287_6_33_26.fasta
+label_20287_6_33_25.fasta
+label_20287_6_33_24.fasta
+label_20287_6_33_23.fasta
+label_20287_6_33_22.fasta
+label_20287_6_33_21.fasta
+label_20287_6_33_20.fasta
+label_20287_6_33_2.fasta
+label_20287_6_33_19.fasta
+label_20287_6_33_18.fasta
+label_20287_6_33_17.fasta
+label_20287_6_33_16.fasta
+label_20287_6_33_15.fasta
+label_20287_6_33_14.fasta
+label_20287_6_33_13.fasta
+label_20287_6_33_12.fasta
+label_20287_6_33_11.fasta
+label_20287_6_33_10.fasta
+label_20287_6_33_1.fasta
+label_20287_6_33_0.fasta
+Generating CGRs.... 
+totalSeq is: 77
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    0.9256    0.0744    1.0000    1.0000
+    0.2025    0.7975    2.0000    1.0000
+    0.0470    0.9530    2.0000    1.0000
+    0.9168    0.0832    1.0000    1.0000
+    0.7752    0.2248    1.0000    1.0000
+    0.2368    0.7632    2.0000    1.0000
+    0.0087    0.9913    2.0000    2.0000
+    0.0137    0.9863    2.0000    2.0000
+    0.0140    0.9860    2.0000    2.0000
+    0.0072    0.9928    2.0000    2.0000
+    0.0092    0.9908    2.0000    2.0000
+    0.4226    0.5774    2.0000    2.0000
+    0.0124    0.9876    2.0000    2.0000
+    0.0127    0.9873    2.0000    2.0000
+    0.0181    0.9819    2.0000    2.0000
+
+
+T3 =
+
+  15x4 table
+
+                                    s__Schaedlerella glycyrrhizinilytica    s__Schaedlerella sp900066545    prediction    actual
+                                    ____________________________________    ____________________________    __________    ______
+
+    label_GCF_000218385_1.fasta                    0.92565                            0.074354                  1           1   
+    label_GCF_000218385_12.fasta                   0.20251                             0.79749                  2           1   
+    label_GCF_000218385_14.fasta                  0.046957                             0.95304                  2           1   
+    label_GCF_000218385_6.fasta                    0.91678                             0.08322                  1           1   
+    label_GCF_000218385_7.fasta                    0.77519                             0.22481                  1           1   
+    label_GCF_000218385_9.fasta                    0.23675                             0.76325                  2           1   
+    label_20287_6_33_11.fasta                     0.008662                             0.99134                  2           2   
+    label_20287_6_33_29.fasta                     0.013727                             0.98627                  2           2   
+    label_20287_6_33_33.fasta                      0.01398                             0.98602                  2           2   
+    label_20287_6_33_40.fasta                    0.0072389                             0.99276                  2           2   
+    label_20287_6_33_45.fasta                    0.0092475                             0.99075                  2           2   
+    label_20287_6_33_50.fasta                      0.42259                             0.57741                  2           2   
+    label_20287_6_33_54.fasta                     0.012379                             0.98762                  2           2   
+    label_20287_6_33_6.fasta                      0.012698                              0.9873                  2           2   
+    label_20287_6_33_8.fasta                      0.018099                              0.9819                  2           2   
+
+
+testAcNum =
+
+  1x16 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 16
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    0.0034    0.9966    2.0000    1.0000
+    0.9835    0.0165    1.0000    1.0000
+    0.6193    0.3807    1.0000    1.0000
+    0.0087    0.9913    2.0000    2.0000
+    0.0891    0.9109    2.0000    2.0000
+    0.0052    0.9948    2.0000    2.0000
+    0.1483    0.8517    2.0000    2.0000
+    0.0117    0.9883    2.0000    2.0000
+    0.0044    0.9956    2.0000    2.0000
+    0.0210    0.9790    2.0000    2.0000
+    0.0017    0.9983    2.0000    2.0000
+    0.0369    0.9631    2.0000    2.0000
+    0.0439    0.9561    2.0000    2.0000
+    0.0307    0.9693    2.0000    2.0000
+    0.0450    0.9550    2.0000    2.0000
+    0.2614    0.7386    2.0000    2.0000
+
+
+T3 =
+
+  16x4 table
+
+                                    s__Schaedlerella glycyrrhizinilytica    s__Schaedlerella sp900066545    prediction    actual
+                                    ____________________________________    ____________________________    __________    ______
+
+    label_GCF_000218385_13.fasta                 0.0033797                             0.99662                  2           1   
+    label_GCF_000218385_2.fasta                     0.9835                            0.016504                  1           1   
+    label_GCF_000218385_4.fasta                    0.61934                             0.38066                  1           1   
+    label_20287_6_33_12.fasta                    0.0086981                              0.9913                  2           2   
+    label_20287_6_33_17.fasta                     0.089061                             0.91094                  2           2   
+    label_20287_6_33_20.fasta                    0.0052348                             0.99477                  2           2   
+    label_20287_6_33_23.fasta                      0.14829                             0.85171                  2           2   
+    label_20287_6_33_24.fasta                     0.011722                             0.98828                  2           2   
+    label_20287_6_33_32.fasta                    0.0043578                             0.99564                  2           2   
+    label_20287_6_33_37.fasta                     0.020972                             0.97903                  2           2   
+    label_20287_6_33_4.fasta                     0.0016855                             0.99831                  2           2   
+    label_20287_6_33_41.fasta                     0.036939                             0.96306                  2           2   
+    label_20287_6_33_47.fasta                     0.043936                             0.95606                  2           2   
+    label_20287_6_33_48.fasta                     0.030702                              0.9693                  2           2   
+    label_20287_6_33_49.fasta                     0.044955                             0.95504                  2           2   
+    label_20287_6_33_59.fasta                      0.26138                             0.73862                  2           2   
+
+
+testAcNum =
+
+  1x16 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Column 16
+
+    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    0.9725    0.0275    1.0000    1.0000
+    0.7493    0.2507    1.0000    1.0000
+    0.9444    0.0556    1.0000    1.0000
+    0.0107    0.9893    2.0000    2.0000
+    0.0133    0.9867    2.0000    2.0000
+    0.0088    0.9912    2.0000    2.0000
+    0.0063    0.9937    2.0000    2.0000
+    0.0125    0.9875    2.0000    2.0000
+    0.0358    0.9642    2.0000    2.0000
+    0.0144    0.9856    2.0000    2.0000
+    0.0141    0.9859    2.0000    2.0000
+    0.0128    0.9872    2.0000    2.0000
+    0.0278    0.9722    2.0000    2.0000
+    0.0351    0.9649    2.0000    2.0000
+    0.0138    0.9862    2.0000    2.0000
+    0.0182    0.9818    2.0000    2.0000
+
+
+T3 =
+
+  16x4 table
+
+                                    s__Schaedlerella glycyrrhizinilytica    s__Schaedlerella sp900066545    prediction    actual
+                                    ____________________________________    ____________________________    __________    ______
+
+    label_GCF_000218385_0.fasta                    0.97251                            0.027489                  1           1   
+    label_GCF_000218385_10.fasta                   0.74925                             0.25075                  1           1   
+    label_GCF_000218385_8.fasta                    0.94438                             0.05562                  1           1   
+    label_20287_6_33_1.fasta                       0.01075                             0.98925                  2           2   
+    label_20287_6_33_10.fasta                     0.013299                              0.9867                  2           2   
+    label_20287_6_33_14.fasta                    0.0087933                             0.99121                  2           2   
+    label_20287_6_33_18.fasta                    0.0063308                             0.99367                  2           2   
+    label_20287_6_33_2.fasta                      0.012484                             0.98752                  2           2   
+    label_20287_6_33_21.fasta                       0.0358                              0.9642                  2           2   
+    label_20287_6_33_27.fasta                      0.01443                             0.98557                  2           2   
+    label_20287_6_33_34.fasta                     0.014133                             0.98587                  2           2   
+    label_20287_6_33_35.fasta                     0.012845                             0.98716                  2           2   
+    label_20287_6_33_39.fasta                     0.027777                             0.97222                  2           2   
+    label_20287_6_33_51.fasta                      0.03513                             0.96487                  2           2   
+    label_20287_6_33_7.fasta                      0.013797                              0.9862                  2           2   
+    label_20287_6_33_9.fasta                      0.018224                             0.98178                  2           2   
+
+
+testAcNum =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    0.0500    0.9500    2.0000    1.0000
+    0.1151    0.8849    2.0000    1.0000
+    0.0194    0.9806    2.0000    2.0000
+    0.0414    0.9586    2.0000    2.0000
+    0.0183    0.9817    2.0000    2.0000
+    0.0210    0.9790    2.0000    2.0000
+    0.0151    0.9849    2.0000    2.0000
+    0.0248    0.9752    2.0000    2.0000
+    0.0304    0.9696    2.0000    2.0000
+    0.0363    0.9637    2.0000    2.0000
+    0.0515    0.9485    2.0000    2.0000
+    0.0543    0.9457    2.0000    2.0000
+    0.0168    0.9832    2.0000    2.0000
+    0.0856    0.9144    2.0000    2.0000
+    0.1186    0.8814    2.0000    2.0000
+
+
+T3 =
+
+  15x4 table
+
+                                    s__Schaedlerella glycyrrhizinilytica    s__Schaedlerella sp900066545    prediction    actual
+                                    ____________________________________    ____________________________    __________    ______
+
+    label_GCF_000218385_15.fasta                  0.049969                            0.95003                   2           1   
+    label_GCF_000218385_16.fasta                   0.11507                            0.88493                   2           1   
+    label_20287_6_33_13.fasta                     0.019372                            0.98063                   2           2   
+    label_20287_6_33_15.fasta                      0.04141                            0.95859                   2           2   
+    label_20287_6_33_16.fasta                     0.018348                            0.98165                   2           2   
+    label_20287_6_33_19.fasta                     0.020977                            0.97902                   2           2   
+    label_20287_6_33_25.fasta                     0.015128                            0.98487                   2           2   
+    label_20287_6_33_26.fasta                     0.024799                             0.9752                   2           2   
+    label_20287_6_33_3.fasta                      0.030394                            0.96961                   2           2   
+    label_20287_6_33_30.fasta                     0.036325                            0.96368                   2           2   
+    label_20287_6_33_42.fasta                      0.05153                            0.94847                   2           2   
+    label_20287_6_33_46.fasta                      0.05431                            0.94569                   2           2   
+    label_20287_6_33_5.fasta                      0.016839                            0.98316                   2           2   
+    label_20287_6_33_53.fasta                     0.085561                            0.91444                   2           2   
+    label_20287_6_33_57.fasta                      0.11857                            0.88143                   2           2   
+
+
+testAcNum =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    0.7474    0.2526    1.0000    1.0000
+    0.9950    0.0050    1.0000    1.0000
+    0.9945    0.0055    1.0000    1.0000
+    0.0032    0.9968    2.0000    2.0000
+    0.0208    0.9792    2.0000    2.0000
+    0.0111    0.9889    2.0000    2.0000
+    0.9541    0.0459    1.0000    2.0000
+    0.0757    0.9243    2.0000    2.0000
+    0.0589    0.9411    2.0000    2.0000
+    0.0315    0.9685    2.0000    2.0000
+    0.7435    0.2565    1.0000    2.0000
+    0.0906    0.9094    2.0000    2.0000
+    0.0547    0.9453    2.0000    2.0000
+    0.1714    0.8286    2.0000    2.0000
+    0.0499    0.9501    2.0000    2.0000
+
+
+T3 =
+
+  15x4 table
+
+                                    s__Schaedlerella glycyrrhizinilytica    s__Schaedlerella sp900066545    prediction    actual
+                                    ____________________________________    ____________________________    __________    ______
+
+    label_GCF_000218385_11.fasta                   0.74736                             0.25264                  1           1   
+    label_GCF_000218385_3.fasta                    0.99497                           0.0050274                  1           1   
+    label_GCF_000218385_5.fasta                    0.99449                            0.005512                  1           1   
+    label_20287_6_33_0.fasta                     0.0031629                             0.99684                  2           2   
+    label_20287_6_33_22.fasta                     0.020844                             0.97916                  2           2   
+    label_20287_6_33_28.fasta                     0.011079                             0.98892                  2           2   
+    label_20287_6_33_31.fasta                      0.95413                            0.045875                  1           2   
+    label_20287_6_33_36.fasta                     0.075732                             0.92427                  2           2   
+    label_20287_6_33_38.fasta                      0.05893                             0.94107                  2           2   
+    label_20287_6_33_43.fasta                     0.031534                             0.96847                  2           2   
+    label_20287_6_33_44.fasta                      0.74349                             0.25651                  1           2   
+    label_20287_6_33_52.fasta                     0.090554                             0.90945                  2           2   
+    label_20287_6_33_55.fasta                     0.054701                              0.9453                  2           2   
+    label_20287_6_33_56.fasta                      0.17139                             0.82861                  2           2   
+    label_20287_6_33_58.fasta                     0.049879                             0.95012                  2           2   
+
+confusion matrix for 1 is:
+    11     6
+     2    58
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [89.6000]    [89.6000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      89.6  
+    {'AvgAccuracy' }      89.6  
+
+Process completed 
+[?1l>

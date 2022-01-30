@@ -1,0 +1,669 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__UBA7642_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS171_8.fasta
+label_UMGS171_7.fasta
+label_UMGS171_6.fasta
+label_UMGS171_5.fasta
+label_UMGS171_4.fasta
+label_UMGS171_3.fasta
+label_UMGS171_2.fasta
+label_UMGS171_1.fasta
+label_UMGS171_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1247_99.fasta
+label_UMGS1247_98.fasta
+label_UMGS1247_97.fasta
+label_UMGS1247_96.fasta
+label_UMGS1247_95.fasta
+label_UMGS1247_94.fasta
+label_UMGS1247_93.fasta
+label_UMGS1247_92.fasta
+label_UMGS1247_91.fasta
+label_UMGS1247_90.fasta
+label_UMGS1247_9.fasta
+label_UMGS1247_89.fasta
+label_UMGS1247_88.fasta
+label_UMGS1247_87.fasta
+label_UMGS1247_86.fasta
+label_UMGS1247_85.fasta
+label_UMGS1247_84.fasta
+label_UMGS1247_83.fasta
+label_UMGS1247_82.fasta
+label_UMGS1247_81.fasta
+label_UMGS1247_80.fasta
+label_UMGS1247_8.fasta
+label_UMGS1247_79.fasta
+label_UMGS1247_78.fasta
+label_UMGS1247_77.fasta
+label_UMGS1247_76.fasta
+label_UMGS1247_75.fasta
+label_UMGS1247_74.fasta
+label_UMGS1247_73.fasta
+label_UMGS1247_72.fasta
+label_UMGS1247_71.fasta
+label_UMGS1247_70.fasta
+label_UMGS1247_7.fasta
+label_UMGS1247_69.fasta
+label_UMGS1247_68.fasta
+label_UMGS1247_67.fasta
+label_UMGS1247_66.fasta
+label_UMGS1247_65.fasta
+label_UMGS1247_64.fasta
+label_UMGS1247_63.fasta
+label_UMGS1247_62.fasta
+label_UMGS1247_61.fasta
+label_UMGS1247_60.fasta
+label_UMGS1247_6.fasta
+label_UMGS1247_59.fasta
+label_UMGS1247_58.fasta
+label_UMGS1247_57.fasta
+label_UMGS1247_56.fasta
+label_UMGS1247_55.fasta
+label_UMGS1247_54.fasta
+label_UMGS1247_53.fasta
+label_UMGS1247_52.fasta
+label_UMGS1247_51.fasta
+label_UMGS1247_50.fasta
+label_UMGS1247_5.fasta
+label_UMGS1247_49.fasta
+label_UMGS1247_48.fasta
+label_UMGS1247_47.fasta
+label_UMGS1247_46.fasta
+label_UMGS1247_45.fasta
+label_UMGS1247_44.fasta
+label_UMGS1247_43.fasta
+label_UMGS1247_42.fasta
+label_UMGS1247_41.fasta
+label_UMGS1247_40.fasta
+label_UMGS1247_4.fasta
+label_UMGS1247_39.fasta
+label_UMGS1247_38.fasta
+label_UMGS1247_37.fasta
+label_UMGS1247_36.fasta
+label_UMGS1247_35.fasta
+label_UMGS1247_34.fasta
+label_UMGS1247_33.fasta
+label_UMGS1247_32.fasta
+label_UMGS1247_31.fasta
+label_UMGS1247_30.fasta
+label_UMGS1247_3.fasta
+label_UMGS1247_29.fasta
+label_UMGS1247_28.fasta
+label_UMGS1247_27.fasta
+label_UMGS1247_26.fasta
+label_UMGS1247_25.fasta
+label_UMGS1247_24.fasta
+label_UMGS1247_23.fasta
+label_UMGS1247_22.fasta
+label_UMGS1247_21.fasta
+label_UMGS1247_20.fasta
+label_UMGS1247_2.fasta
+label_UMGS1247_19.fasta
+label_UMGS1247_18.fasta
+label_UMGS1247_17.fasta
+label_UMGS1247_16.fasta
+label_UMGS1247_15.fasta
+label_UMGS1247_14.fasta
+label_UMGS1247_13.fasta
+label_UMGS1247_12.fasta
+label_UMGS1247_11.fasta
+label_UMGS1247_109.fasta
+label_UMGS1247_108.fasta
+label_UMGS1247_107.fasta
+label_UMGS1247_106.fasta
+label_UMGS1247_105.fasta
+label_UMGS1247_104.fasta
+label_UMGS1247_103.fasta
+label_UMGS1247_102.fasta
+label_UMGS1247_101.fasta
+label_UMGS1247_100.fasta
+label_UMGS1247_10.fasta
+label_UMGS1247_1.fasta
+label_UMGS1247_0.fasta
+Generating CGRs.... 
+totalSeq is: 119
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 23
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  23x4 table
+
+                                s__UBA7642 sp900539865    s__UBA7642 sp900549915    prediction    actual
+                                ______________________    ______________________    __________    ______
+
+    label_UMGS171_2.fasta                 1                     2.2204e-14              1           1   
+    label_UMGS1247_0.fasta                0                              1              2           2   
+    label_UMGS1247_10.fasta               0                              1              2           2   
+    label_UMGS1247_105.fasta              0                              1              2           2   
+    label_UMGS1247_109.fasta              0                              1              2           2   
+    label_UMGS1247_11.fasta               0                              1              2           2   
+    label_UMGS1247_12.fasta               0                              1              2           2   
+    label_UMGS1247_14.fasta               0                              1              2           2   
+    label_UMGS1247_2.fasta                0                              1              2           2   
+    label_UMGS1247_27.fasta               0                              1              2           2   
+    label_UMGS1247_38.fasta               0                              1              2           2   
+    label_UMGS1247_48.fasta               0                              1              2           2   
+    label_UMGS1247_53.fasta               0                              1              2           2   
+    label_UMGS1247_59.fasta               0                              1              2           2   
+    label_UMGS1247_66.fasta               0                              1              2           2   
+    label_UMGS1247_69.fasta               0                              1              2           2   
+    label_UMGS1247_76.fasta               0                              1              2           2   
+    label_UMGS1247_83.fasta               0                              1              2           2   
+    label_UMGS1247_88.fasta               0                              1              2           2   
+    label_UMGS1247_89.fasta               0                              1              2           2   
+    label_UMGS1247_90.fasta               0                              1              2           2   
+    label_UMGS1247_95.fasta               0                              1              2           2   
+    label_UMGS1247_97.fasta               0                              1              2           2   
+
+
+testAcNum =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  24x4 table
+
+                                s__UBA7642 sp900539865    s__UBA7642 sp900549915    prediction    actual
+                                ______________________    ______________________    __________    ______
+
+    label_UMGS171_6.fasta                 1                     2.2204e-14              1           1   
+    label_UMGS1247_1.fasta                0                              1              2           2   
+    label_UMGS1247_101.fasta              0                              1              2           2   
+    label_UMGS1247_103.fasta              0                              1              2           2   
+    label_UMGS1247_106.fasta              0                              1              2           2   
+    label_UMGS1247_107.fasta              0                              1              2           2   
+    label_UMGS1247_21.fasta               0                              1              2           2   
+    label_UMGS1247_24.fasta               0                              1              2           2   
+    label_UMGS1247_29.fasta               0                              1              2           2   
+    label_UMGS1247_3.fasta                0                              1              2           2   
+    label_UMGS1247_34.fasta               0                              1              2           2   
+    label_UMGS1247_36.fasta               0                              1              2           2   
+    label_UMGS1247_4.fasta                0                              1              2           2   
+    label_UMGS1247_40.fasta               0                              1              2           2   
+    label_UMGS1247_51.fasta               0                              1              2           2   
+    label_UMGS1247_58.fasta               0                              1              2           2   
+    label_UMGS1247_63.fasta               0                              1              2           2   
+    label_UMGS1247_67.fasta               0                              1              2           2   
+    label_UMGS1247_70.fasta               0                              1              2           2   
+    label_UMGS1247_78.fasta               0                              1              2           2   
+    label_UMGS1247_79.fasta               0                              1              2           2   
+    label_UMGS1247_8.fasta                0                              1              2           2   
+    label_UMGS1247_81.fasta               0                              1              2           2   
+    label_UMGS1247_94.fasta               0                              1              2           2   
+
+
+testAcNum =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.0526    0.9474    2.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.0526    0.9474    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  24x4 table
+
+                               s__UBA7642 sp900539865    s__UBA7642 sp900549915    prediction    actual
+                               ______________________    ______________________    __________    ______
+
+    label_UMGS171_1.fasta                    1                 2.2204e-14              1           1   
+    label_UMGS171_3.fasta                    1                 2.2204e-14              1           1   
+    label_UMGS171_5.fasta                    1                 2.2204e-14              1           1   
+    label_UMGS171_8.fasta             0.052632                    0.94737              2           1   
+    label_UMGS1247_13.fasta                  0                          1              2           2   
+    label_UMGS1247_18.fasta                  0                          1              2           2   
+    label_UMGS1247_19.fasta                  0                          1              2           2   
+    label_UMGS1247_20.fasta                  0                          1              2           2   
+    label_UMGS1247_23.fasta                  0                          1              2           2   
+    label_UMGS1247_31.fasta                  0                          1              2           2   
+    label_UMGS1247_33.fasta                  0                          1              2           2   
+    label_UMGS1247_35.fasta                  0                          1              2           2   
+    label_UMGS1247_44.fasta                  0                          1              2           2   
+    label_UMGS1247_46.fasta                  0                          1              2           2   
+    label_UMGS1247_49.fasta                  0                          1              2           2   
+    label_UMGS1247_6.fasta            0.052632                    0.94737              2           2   
+    label_UMGS1247_61.fasta                  0                          1              2           2   
+    label_UMGS1247_65.fasta                  0                          1              2           2   
+    label_UMGS1247_7.fasta                   0                          1              2           2   
+    label_UMGS1247_74.fasta                  0                          1              2           2   
+    label_UMGS1247_80.fasta                  0                          1              2           2   
+    label_UMGS1247_84.fasta                  0                          1              2           2   
+    label_UMGS1247_96.fasta                  0                          1              2           2   
+    label_UMGS1247_98.fasta                  0                          1              2           2   
+
+
+testAcNum =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+     0     1     2     2
+
+
+T3 =
+
+  24x4 table
+
+                                s__UBA7642 sp900539865    s__UBA7642 sp900549915    prediction    actual
+                                ______________________    ______________________    __________    ______
+
+    label_UMGS1247_100.fasta              0                         1                   2           2   
+    label_UMGS1247_102.fasta              0                         1                   2           2   
+    label_UMGS1247_15.fasta               0                         1                   2           2   
+    label_UMGS1247_17.fasta               0                         1                   2           2   
+    label_UMGS1247_22.fasta               0                         1                   2           2   
+    label_UMGS1247_25.fasta               0                         1                   2           2   
+    label_UMGS1247_26.fasta               0                         1                   2           2   
+    label_UMGS1247_28.fasta               0                         1                   2           2   
+    label_UMGS1247_32.fasta               0                         1                   2           2   
+    label_UMGS1247_37.fasta               0                         1                   2           2   
+    label_UMGS1247_41.fasta               0                         1                   2           2   
+    label_UMGS1247_43.fasta               0                         1                   2           2   
+    label_UMGS1247_45.fasta               0                         1                   2           2   
+    label_UMGS1247_5.fasta                0                         1                   2           2   
+    label_UMGS1247_54.fasta               0                         1                   2           2   
+    label_UMGS1247_55.fasta               0                         1                   2           2   
+    label_UMGS1247_56.fasta               0                         1                   2           2   
+    label_UMGS1247_68.fasta               0                         1                   2           2   
+    label_UMGS1247_71.fasta               0                         1                   2           2   
+    label_UMGS1247_77.fasta               0                         1                   2           2   
+    label_UMGS1247_82.fasta               0                         1                   2           2   
+    label_UMGS1247_87.fasta               0                         1                   2           2   
+    label_UMGS1247_92.fasta               0                         1                   2           2   
+    label_UMGS1247_99.fasta               0                         1                   2           2   
+
+
+testAcNum =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.0632    0.9368    2.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  24x4 table
+
+                                s__UBA7642 sp900539865    s__UBA7642 sp900549915    prediction    actual
+                                ______________________    ______________________    __________    ______
+
+    label_UMGS171_0.fasta                     1                 2.2204e-14              1           1   
+    label_UMGS171_4.fasta                     1                 2.2204e-14              1           1   
+    label_UMGS171_7.fasta              0.063158                    0.93684              2           1   
+    label_UMGS1247_104.fasta                  0                          1              2           2   
+    label_UMGS1247_108.fasta                  0                          1              2           2   
+    label_UMGS1247_16.fasta                   0                          1              2           2   
+    label_UMGS1247_30.fasta                   0                          1              2           2   
+    label_UMGS1247_39.fasta                   0                          1              2           2   
+    label_UMGS1247_42.fasta                   0                          1              2           2   
+    label_UMGS1247_47.fasta                   0                          1              2           2   
+    label_UMGS1247_50.fasta                   0                          1              2           2   
+    label_UMGS1247_52.fasta                   0                          1              2           2   
+    label_UMGS1247_57.fasta                   0                          1              2           2   
+    label_UMGS1247_60.fasta                   0                          1              2           2   
+    label_UMGS1247_62.fasta                   0                          1              2           2   
+    label_UMGS1247_64.fasta                   0                          1              2           2   
+    label_UMGS1247_72.fasta                   0                          1              2           2   
+    label_UMGS1247_73.fasta                   0                          1              2           2   
+    label_UMGS1247_75.fasta                   0                          1              2           2   
+    label_UMGS1247_85.fasta                   0                          1              2           2   
+    label_UMGS1247_86.fasta                   0                          1              2           2   
+    label_UMGS1247_9.fasta                    0                          1              2           2   
+    label_UMGS1247_91.fasta                   0                          1              2           2   
+    label_UMGS1247_93.fasta                   0                          1              2           2   
+
+confusion matrix for 1 is:
+     7     2
+     0   110
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [98.3000]    [98.3000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      98.3  
+    {'AvgAccuracy' }      98.3  
+
+Process completed 
+[?1l>

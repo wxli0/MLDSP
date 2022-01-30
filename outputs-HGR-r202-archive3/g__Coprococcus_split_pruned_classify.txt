@@ -1,0 +1,784 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Coprococcus_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Coprococcus"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_12718_7_47_9.fasta
+label_12718_7_47_8.fasta
+label_12718_7_47_7.fasta
+label_12718_7_47_6.fasta
+label_12718_7_47_5.fasta
+label_12718_7_47_4.fasta
+label_12718_7_47_3.fasta
+label_12718_7_47_2.fasta
+label_12718_7_47_11.fasta
+label_12718_7_47_10.fasta
+label_12718_7_47_1.fasta
+label_12718_7_47_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_14207_7_86_9.fasta
+label_14207_7_86_8.fasta
+label_14207_7_86_7.fasta
+label_14207_7_86_6.fasta
+label_14207_7_86_5.fasta
+label_14207_7_86_4.fasta
+label_14207_7_86_3.fasta
+label_14207_7_86_2.fasta
+label_14207_7_86_12.fasta
+label_14207_7_86_11.fasta
+label_14207_7_86_10.fasta
+label_14207_7_86_1.fasta
+label_14207_7_86_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS43_9.fasta
+label_UMGS43_8.fasta
+label_UMGS43_7.fasta
+label_UMGS43_6.fasta
+label_UMGS43_5.fasta
+label_UMGS43_4.fasta
+label_UMGS43_3.fasta
+label_UMGS43_25.fasta
+label_UMGS43_24.fasta
+label_UMGS43_23.fasta
+label_UMGS43_22.fasta
+label_UMGS43_21.fasta
+label_UMGS43_20.fasta
+label_UMGS43_2.fasta
+label_UMGS43_19.fasta
+label_UMGS43_18.fasta
+label_UMGS43_17.fasta
+label_UMGS43_16.fasta
+label_UMGS43_15.fasta
+label_UMGS43_14.fasta
+label_UMGS43_13.fasta
+label_UMGS43_12.fasta
+label_UMGS43_11.fasta
+label_UMGS43_10.fasta
+label_UMGS43_1.fasta
+label_UMGS43_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_13414_6_3_7.fasta
+label_13414_6_3_6.fasta
+label_13414_6_3_5.fasta
+label_13414_6_3_4.fasta
+label_13414_6_3_3.fasta
+label_13414_6_3_2.fasta
+label_13414_6_3_1.fasta
+label_13414_6_3_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1059_99.fasta
+label_UMGS1059_98.fasta
+label_UMGS1059_97.fasta
+label_UMGS1059_96.fasta
+label_UMGS1059_95.fasta
+label_UMGS1059_94.fasta
+label_UMGS1059_93.fasta
+label_UMGS1059_92.fasta
+label_UMGS1059_91.fasta
+label_UMGS1059_90.fasta
+label_UMGS1059_9.fasta
+label_UMGS1059_89.fasta
+label_UMGS1059_88.fasta
+label_UMGS1059_87.fasta
+label_UMGS1059_86.fasta
+label_UMGS1059_85.fasta
+label_UMGS1059_84.fasta
+label_UMGS1059_83.fasta
+label_UMGS1059_82.fasta
+label_UMGS1059_81.fasta
+label_UMGS1059_80.fasta
+label_UMGS1059_8.fasta
+label_UMGS1059_79.fasta
+label_UMGS1059_78.fasta
+label_UMGS1059_77.fasta
+label_UMGS1059_76.fasta
+label_UMGS1059_75.fasta
+label_UMGS1059_74.fasta
+label_UMGS1059_73.fasta
+label_UMGS1059_72.fasta
+label_UMGS1059_71.fasta
+label_UMGS1059_70.fasta
+label_UMGS1059_7.fasta
+label_UMGS1059_69.fasta
+label_UMGS1059_68.fasta
+label_UMGS1059_67.fasta
+label_UMGS1059_66.fasta
+label_UMGS1059_65.fasta
+label_UMGS1059_64.fasta
+label_UMGS1059_63.fasta
+label_UMGS1059_62.fasta
+label_UMGS1059_61.fasta
+label_UMGS1059_60.fasta
+label_UMGS1059_6.fasta
+label_UMGS1059_59.fasta
+label_UMGS1059_58.fasta
+label_UMGS1059_57.fasta
+label_UMGS1059_56.fasta
+label_UMGS1059_55.fasta
+label_UMGS1059_54.fasta
+label_UMGS1059_53.fasta
+label_UMGS1059_52.fasta
+label_UMGS1059_51.fasta
+label_UMGS1059_50.fasta
+label_UMGS1059_5.fasta
+label_UMGS1059_49.fasta
+label_UMGS1059_48.fasta
+label_UMGS1059_47.fasta
+label_UMGS1059_46.fasta
+label_UMGS1059_45.fasta
+label_UMGS1059_44.fasta
+label_UMGS1059_43.fasta
+label_UMGS1059_42.fasta
+label_UMGS1059_41.fasta
+label_UMGS1059_40.fasta
+label_UMGS1059_4.fasta
+label_UMGS1059_39.fasta
+label_UMGS1059_38.fasta
+label_UMGS1059_37.fasta
+label_UMGS1059_36.fasta
+label_UMGS1059_35.fasta
+label_UMGS1059_34.fasta
+label_UMGS1059_33.fasta
+label_UMGS1059_32.fasta
+label_UMGS1059_31.fasta
+label_UMGS1059_30.fasta
+label_UMGS1059_3.fasta
+label_UMGS1059_29.fasta
+label_UMGS1059_28.fasta
+label_UMGS1059_27.fasta
+label_UMGS1059_26.fasta
+label_UMGS1059_25.fasta
+label_UMGS1059_24.fasta
+label_UMGS1059_23.fasta
+label_UMGS1059_22.fasta
+label_UMGS1059_21.fasta
+label_UMGS1059_20.fasta
+label_UMGS1059_2.fasta
+label_UMGS1059_19.fasta
+label_UMGS1059_18.fasta
+label_UMGS1059_17.fasta
+label_UMGS1059_16.fasta
+label_UMGS1059_15.fasta
+label_UMGS1059_14.fasta
+label_UMGS1059_13.fasta
+label_UMGS1059_128.fasta
+label_UMGS1059_127.fasta
+label_UMGS1059_126.fasta
+label_UMGS1059_125.fasta
+label_UMGS1059_124.fasta
+label_UMGS1059_123.fasta
+label_UMGS1059_122.fasta
+label_UMGS1059_121.fasta
+label_UMGS1059_120.fasta
+label_UMGS1059_12.fasta
+label_UMGS1059_119.fasta
+label_UMGS1059_118.fasta
+label_UMGS1059_117.fasta
+label_UMGS1059_116.fasta
+label_UMGS1059_115.fasta
+label_UMGS1059_114.fasta
+label_UMGS1059_113.fasta
+label_UMGS1059_112.fasta
+label_UMGS1059_111.fasta
+label_UMGS1059_110.fasta
+label_UMGS1059_11.fasta
+label_UMGS1059_109.fasta
+label_UMGS1059_108.fasta
+label_UMGS1059_107.fasta
+label_UMGS1059_106.fasta
+label_UMGS1059_105.fasta
+label_UMGS1059_104.fasta
+label_UMGS1059_103.fasta
+label_UMGS1059_102.fasta
+label_UMGS1059_101.fasta
+label_UMGS1059_100.fasta
+label_UMGS1059_10.fasta
+label_UMGS1059_1.fasta
+label_UMGS1059_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1067_99.fasta
+label_UMGS1067_98.fasta
+label_UMGS1067_97.fasta
+label_UMGS1067_96.fasta
+label_UMGS1067_95.fasta
+label_UMGS1067_94.fasta
+label_UMGS1067_93.fasta
+label_UMGS1067_92.fasta
+label_UMGS1067_91.fasta
+label_UMGS1067_90.fasta
+label_UMGS1067_9.fasta
+label_UMGS1067_89.fasta
+label_UMGS1067_88.fasta
+label_UMGS1067_87.fasta
+label_UMGS1067_86.fasta
+label_UMGS1067_85.fasta
+label_UMGS1067_84.fasta
+label_UMGS1067_83.fasta
+label_UMGS1067_82.fasta
+label_UMGS1067_81.fasta
+label_UMGS1067_80.fasta
+label_UMGS1067_8.fasta
+label_UMGS1067_79.fasta
+label_UMGS1067_78.fasta
+label_UMGS1067_77.fasta
+label_UMGS1067_76.fasta
+label_UMGS1067_75.fasta
+label_UMGS1067_74.fasta
+label_UMGS1067_73.fasta
+label_UMGS1067_72.fasta
+label_UMGS1067_71.fasta
+label_UMGS1067_70.fasta
+label_UMGS1067_7.fasta
+label_UMGS1067_69.fasta
+label_UMGS1067_68.fasta
+label_UMGS1067_67.fasta
+label_UMGS1067_66.fasta
+label_UMGS1067_65.fasta
+label_UMGS1067_64.fasta
+label_UMGS1067_63.fasta
+label_UMGS1067_62.fasta
+label_UMGS1067_61.fasta
+label_UMGS1067_60.fasta
+label_UMGS1067_6.fasta
+label_UMGS1067_59.fasta
+label_UMGS1067_58.fasta
+label_UMGS1067_57.fasta
+label_UMGS1067_56.fasta
+label_UMGS1067_55.fasta
+label_UMGS1067_54.fasta
+label_UMGS1067_53.fasta
+label_UMGS1067_52.fasta
+label_UMGS1067_51.fasta
+label_UMGS1067_50.fasta
+label_UMGS1067_5.fasta
+label_UMGS1067_49.fasta
+label_UMGS1067_48.fasta
+label_UMGS1067_47.fasta
+label_UMGS1067_46.fasta
+label_UMGS1067_45.fasta
+label_UMGS1067_44.fasta
+label_UMGS1067_43.fasta
+label_UMGS1067_42.fasta
+label_UMGS1067_41.fasta
+label_UMGS1067_40.fasta
+label_UMGS1067_4.fasta
+label_UMGS1067_39.fasta
+label_UMGS1067_38.fasta
+label_UMGS1067_37.fasta
+label_UMGS1067_36.fasta
+label_UMGS1067_35.fasta
+label_UMGS1067_34.fasta
+label_UMGS1067_33.fasta
+label_UMGS1067_32.fasta
+label_UMGS1067_31.fasta
+label_UMGS1067_30.fasta
+label_UMGS1067_3.fasta
+label_UMGS1067_29.fasta
+label_UMGS1067_28.fasta
+label_UMGS1067_27.fasta
+label_UMGS1067_26.fasta
+label_UMGS1067_25.fasta
+label_UMGS1067_24.fasta
+label_UMGS1067_23.fasta
+label_UMGS1067_22.fasta
+label_UMGS1067_21.fasta
+label_UMGS1067_20.fasta
+label_UMGS1067_2.fasta
+label_UMGS1067_19.fasta
+label_UMGS1067_18.fasta
+label_UMGS1067_17.fasta
+label_UMGS1067_16.fasta
+label_UMGS1067_154.fasta
+label_UMGS1067_153.fasta
+label_UMGS1067_152.fasta
+label_UMGS1067_151.fasta
+label_UMGS1067_150.fasta
+label_UMGS1067_15.fasta
+label_UMGS1067_149.fasta
+label_UMGS1067_148.fasta
+label_UMGS1067_147.fasta
+label_UMGS1067_146.fasta
+label_UMGS1067_145.fasta
+label_UMGS1067_144.fasta
+label_UMGS1067_143.fasta
+label_UMGS1067_142.fasta
+label_UMGS1067_141.fasta
+label_UMGS1067_140.fasta
+label_UMGS1067_14.fasta
+label_UMGS1067_139.fasta
+label_UMGS1067_138.fasta
+label_UMGS1067_137.fasta
+label_UMGS1067_136.fasta
+label_UMGS1067_135.fasta
+label_UMGS1067_134.fasta
+label_UMGS1067_133.fasta
+label_UMGS1067_132.fasta
+label_UMGS1067_131.fasta
+label_UMGS1067_130.fasta
+label_UMGS1067_13.fasta
+label_UMGS1067_129.fasta
+label_UMGS1067_128.fasta
+label_UMGS1067_127.fasta
+label_UMGS1067_126.fasta
+label_UMGS1067_125.fasta
+label_UMGS1067_124.fasta
+label_UMGS1067_123.fasta
+label_UMGS1067_122.fasta
+label_UMGS1067_121.fasta
+label_UMGS1067_120.fasta
+label_UMGS1067_12.fasta
+label_UMGS1067_119.fasta
+label_UMGS1067_118.fasta
+label_UMGS1067_117.fasta
+label_UMGS1067_116.fasta
+label_UMGS1067_115.fasta
+label_UMGS1067_114.fasta
+label_UMGS1067_113.fasta
+label_UMGS1067_112.fasta
+label_UMGS1067_111.fasta
+label_UMGS1067_110.fasta
+label_UMGS1067_11.fasta
+label_UMGS1067_109.fasta
+label_UMGS1067_108.fasta
+label_UMGS1067_107.fasta
+label_UMGS1067_106.fasta
+label_UMGS1067_105.fasta
+label_UMGS1067_104.fasta
+label_UMGS1067_103.fasta
+label_UMGS1067_102.fasta
+label_UMGS1067_101.fasta
+label_UMGS1067_100.fasta
+label_UMGS1067_10.fasta
+label_UMGS1067_1.fasta
+label_UMGS1067_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS2033_99.fasta
+label_UMGS2033_98.fasta
+label_UMGS2033_97.fasta
+label_UMGS2033_96.fasta
+label_UMGS2033_95.fasta
+label_UMGS2033_94.fasta
+label_UMGS2033_93.fasta
+label_UMGS2033_92.fasta
+label_UMGS2033_91.fasta
+label_UMGS2033_90.fasta
+label_UMGS2033_9.fasta
+label_UMGS2033_89.fasta
+label_UMGS2033_88.fasta
+label_UMGS2033_87.fasta
+label_UMGS2033_86.fasta
+label_UMGS2033_85.fasta
+label_UMGS2033_84.fasta
+label_UMGS2033_83.fasta
+label_UMGS2033_82.fasta
+label_UMGS2033_81.fasta
+label_UMGS2033_80.fasta
+label_UMGS2033_8.fasta
+label_UMGS2033_79.fasta
+label_UMGS2033_78.fasta
+label_UMGS2033_77.fasta
+label_UMGS2033_76.fasta
+label_UMGS2033_75.fasta
+label_UMGS2033_74.fasta
+label_UMGS2033_73.fasta
+label_UMGS2033_72.fasta
+label_UMGS2033_71.fasta
+label_UMGS2033_70.fasta
+label_UMGS2033_7.fasta
+label_UMGS2033_69.fasta
+label_UMGS2033_68.fasta
+label_UMGS2033_67.fasta
+label_UMGS2033_66.fasta
+label_UMGS2033_65.fasta
+label_UMGS2033_64.fasta
+label_UMGS2033_63.fasta
+label_UMGS2033_62.fasta
+label_UMGS2033_61.fasta
+label_UMGS2033_60.fasta
+label_UMGS2033_6.fasta
+label_UMGS2033_59.fasta
+label_UMGS2033_58.fasta
+label_UMGS2033_57.fasta
+label_UMGS2033_56.fasta
+label_UMGS2033_55.fasta
+label_UMGS2033_54.fasta
+label_UMGS2033_53.fasta
+label_UMGS2033_52.fasta
+label_UMGS2033_51.fasta
+label_UMGS2033_50.fasta
+label_UMGS2033_5.fasta
+label_UMGS2033_49.fasta
+label_UMGS2033_48.fasta
+label_UMGS2033_47.fasta
+label_UMGS2033_46.fasta
+label_UMGS2033_45.fasta
+label_UMGS2033_44.fasta
+label_UMGS2033_43.fasta
+label_UMGS2033_42.fasta
+label_UMGS2033_41.fasta
+label_UMGS2033_40.fasta
+label_UMGS2033_4.fasta
+label_UMGS2033_39.fasta
+label_UMGS2033_38.fasta
+label_UMGS2033_37.fasta
+label_UMGS2033_36.fasta
+label_UMGS2033_35.fasta
+label_UMGS2033_34.fasta
+label_UMGS2033_33.fasta
+label_UMGS2033_32.fasta
+label_UMGS2033_31.fasta
+label_UMGS2033_30.fasta
+label_UMGS2033_3.fasta
+label_UMGS2033_29.fasta
+label_UMGS2033_28.fasta
+label_UMGS2033_27.fasta
+label_UMGS2033_26.fasta
+label_UMGS2033_25.fasta
+label_UMGS2033_24.fasta
+label_UMGS2033_23.fasta
+label_UMGS2033_22.fasta
+label_UMGS2033_21.fasta
+label_UMGS2033_203.fasta
+label_UMGS2033_202.fasta
+label_UMGS2033_201.fasta
+label_UMGS2033_200.fasta
+label_UMGS2033_20.fasta
+label_UMGS2033_2.fasta
+label_UMGS2033_199.fasta
+label_UMGS2033_198.fasta
+label_UMGS2033_197.fasta
+label_UMGS2033_196.fasta
+label_UMGS2033_195.fasta
+label_UMGS2033_194.fasta
+label_UMGS2033_193.fasta
+label_UMGS2033_192.fasta
+label_UMGS2033_191.fasta
+label_UMGS2033_190.fasta
+label_UMGS2033_19.fasta
+label_UMGS2033_189.fasta
+label_UMGS2033_188.fasta
+label_UMGS2033_187.fasta
+label_UMGS2033_186.fasta
+label_UMGS2033_185.fasta
+label_UMGS2033_184.fasta
+label_UMGS2033_183.fasta
+label_UMGS2033_182.fasta
+label_UMGS2033_181.fasta
+label_UMGS2033_180.fasta
+label_UMGS2033_18.fasta
+label_UMGS2033_179.fasta
+label_UMGS2033_178.fasta
+label_UMGS2033_177.fasta
+label_UMGS2033_176.fasta
+label_UMGS2033_175.fasta
+label_UMGS2033_174.fasta
+label_UMGS2033_173.fasta
+label_UMGS2033_172.fasta
+label_UMGS2033_171.fasta
+label_UMGS2033_170.fasta
+label_UMGS2033_17.fasta
+label_UMGS2033_169.fasta
+label_UMGS2033_168.fasta
+label_UMGS2033_167.fasta
+label_UMGS2033_166.fasta
+label_UMGS2033_165.fasta
+label_UMGS2033_164.fasta
+label_UMGS2033_163.fasta
+label_UMGS2033_162.fasta
+label_UMGS2033_161.fasta
+label_UMGS2033_160.fasta
+label_UMGS2033_16.fasta
+label_UMGS2033_159.fasta
+label_UMGS2033_158.fasta
+label_UMGS2033_157.fasta
+label_UMGS2033_156.fasta
+label_UMGS2033_155.fasta
+label_UMGS2033_154.fasta
+label_UMGS2033_153.fasta
+label_UMGS2033_152.fasta
+label_UMGS2033_151.fasta
+label_UMGS2033_150.fasta
+label_UMGS2033_15.fasta
+label_UMGS2033_149.fasta
+label_UMGS2033_148.fasta
+label_UMGS2033_147.fasta
+label_UMGS2033_146.fasta
+label_UMGS2033_145.fasta
+label_UMGS2033_144.fasta
+label_UMGS2033_143.fasta
+label_UMGS2033_142.fasta
+label_UMGS2033_141.fasta
+label_UMGS2033_140.fasta
+label_UMGS2033_14.fasta
+label_UMGS2033_139.fasta
+label_UMGS2033_138.fasta
+label_UMGS2033_137.fasta
+label_UMGS2033_136.fasta
+label_UMGS2033_135.fasta
+label_UMGS2033_134.fasta
+label_UMGS2033_133.fasta
+label_UMGS2033_132.fasta
+label_UMGS2033_131.fasta
+label_UMGS2033_130.fasta
+label_UMGS2033_13.fasta
+label_UMGS2033_129.fasta
+label_UMGS2033_128.fasta
+label_UMGS2033_127.fasta
+label_UMGS2033_126.fasta
+label_UMGS2033_125.fasta
+label_UMGS2033_124.fasta
+label_UMGS2033_123.fasta
+label_UMGS2033_122.fasta
+label_UMGS2033_121.fasta
+label_UMGS2033_120.fasta
+label_UMGS2033_12.fasta
+label_UMGS2033_119.fasta
+label_UMGS2033_118.fasta
+label_UMGS2033_117.fasta
+label_UMGS2033_116.fasta
+label_UMGS2033_115.fasta
+label_UMGS2033_114.fasta
+label_UMGS2033_113.fasta
+label_UMGS2033_112.fasta
+label_UMGS2033_111.fasta
+label_UMGS2033_110.fasta
+label_UMGS2033_11.fasta
+label_UMGS2033_109.fasta
+label_UMGS2033_108.fasta
+label_UMGS2033_107.fasta
+label_UMGS2033_106.fasta
+label_UMGS2033_105.fasta
+label_UMGS2033_104.fasta
+label_UMGS2033_103.fasta
+label_UMGS2033_102.fasta
+label_UMGS2033_101.fasta
+label_UMGS2033_100.fasta
+label_UMGS2033_10.fasta
+label_UMGS2033_1.fasta
+label_UMGS2033_0.fasta
+Generating CGRs.... 
+totalSeq is: 547
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Coprococcus
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 23
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'s__Coprococcus...'}    {'s__Coprococcus...'}
+
+  Columns 4 through 6
+
+    {'s__Coprococcus...'}    {'s__Coprococcus...'}    {'s__Coprococcus...'}
+
+  Column 7
+
+    {'s__Coprococcus...'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'2-s__Coprococc...'}    {'s__Coprococcus...'}
+
+  Columns 4 through 6
+
+    {'s__Coprococcus...'}    {'s__Coprococcus...'}    {'s__Coprococcus...'}
+
+  Column 7
+
+    {'s__Coprococcus...'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'2-s__Coprococc...'}    {'3-s__Coprococc...'}
+
+  Columns 4 through 6
+
+    {'s__Coprococcus...'}    {'s__Coprococcus...'}    {'s__Coprococcus...'}
+
+  Column 7
+
+    {'s__Coprococcus...'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'2-s__Coprococc...'}    {'3-s__Coprococc...'}
+
+  Columns 4 through 6
+
+    {'4-s__Coprococc...'}    {'s__Coprococcus...'}    {'s__Coprococcus...'}
+
+  Column 7
+
+    {'s__Coprococcus...'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'2-s__Coprococc...'}    {'3-s__Coprococc...'}
+
+  Columns 4 through 6
+
+    {'4-s__Coprococc...'}    {'5-s__Coprococc...'}    {'s__Coprococcus...'}
+
+  Column 7
+
+    {'s__Coprococcus...'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'2-s__Coprococc...'}    {'3-s__Coprococc...'}
+
+  Columns 4 through 6
+
+    {'4-s__Coprococc...'}    {'5-s__Coprococc...'}    {'6-s__Coprococc...'}
+
+  Column 7
+
+    {'s__Coprococcus...'}
+
+
+clusterNames =
+
+  1x7 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'2-s__Coprococc...'}    {'3-s__Coprococc...'}
+
+  Columns 4 through 6
+
+    {'4-s__Coprococc...'}    {'5-s__Coprococc...'}    {'6-s__Coprococc...'}
+
+  Column 7
+
+    {'7-s__Coprococc...'}
+
+  Columns 1 through 3
+
+    '1-s__Coprococcus...'    '2-s__Coprococcus...'    '3-s__Coprococcus...'
+
+  Columns 4 through 6
+
+    '4-s__Coprococcus...'    '5-s__Coprococcus...'    '6-s__Coprococcus...'
+
+  Column 7
+
+    '7-s__Coprococcus...'
+
+
+header =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Coprococc...'}    {'2-s__Coprococc...'}    {'3-s__Coprococc...'}
+
+  Columns 4 through 6
+
+    {'4-s__Coprococc...'}    {'5-s__Coprococc...'}    {'6-s__Coprococc...'}
+
+  Columns 7 through 8
+
+    {'7-s__Coprococc...'}    {'prediction'}
+
+
+T3 =
+
+  23x8 table
+
+                       1-s__Coprococcus eutactus    2-s__Coprococcus eutactus_A    3-s__Coprococcus sp000433075    4-s__Coprococcus sp900066115    5-s__Coprococcus sp900548215    6-s__Coprococcus sp900548315    7-s__Coprococcus sp900557435    prediction
+                       _________________________    ___________________________    ____________________________    ____________________________    ____________________________    ____________________________    ____________________________    __________
+
+    MAG-GUT10109.fa            0.0013895                     0.018292                       0.0025609                        0.75841                         0.095802                        0.010089                        0.11346                   4     
+    MAG-GUT15223.fa            0.0010961                     0.018245                       0.0026327                        0.75781                         0.098825                        0.010125                        0.11127                   4     
+    MAG-GUT21377.fa            0.0010433                      0.01834                       0.0025456                        0.75963                         0.096908                       0.0099416                        0.11159                   4     
+    MAG-GUT23645.fa            0.0011845                     0.018488                        0.003055                        0.76037                          0.09374                       0.0099149                        0.11324                   4     
+    MAG-GUT25847.fa            0.0011559                     0.018081                       0.0024164                        0.75953                         0.097156                        0.010458                         0.1112                   4     
+    MAG-GUT26496.fa            0.0011579                     0.018202                       0.0024287                        0.76027                         0.095909                        0.010325                        0.11171                   4     
+    MAG-GUT32882.fa            0.0012588                     0.018336                       0.0026857                        0.75858                          0.09649                        0.010174                        0.11248                   4     
+    MAG-GUT36916.fa            0.0010918                     0.018307                        0.002459                        0.76051                         0.097989                        0.010433                        0.10921                   4     
+    MAG-GUT41020.fa            0.0010651                     0.018416                       0.0028318                        0.75853                          0.10216                       0.0099618                        0.10704                   4     
+    MAG-GUT41911.fa            0.0010527                     0.018096                       0.0023781                        0.76162                         0.096056                        0.010187                        0.11061                   4     
+    MAG-GUT44474.fa            0.0010851                     0.017781                       0.0023582                        0.75876                         0.097893                        0.010254                        0.11187                   4     
+    MAG-GUT61128.fa            0.0010594                     0.018437                       0.0029028                        0.75967                         0.094549                        0.010133                        0.11325                   4     
+    MAG-GUT61164.fa            0.0011284                     0.017696                       0.0023721                        0.75976                         0.098389                        0.010121                        0.11053                   4     
+    MAG-GUT71686.fa            0.0013471                     0.018647                        0.002597                        0.76386                         0.091399                        0.010254                         0.1119                   4     
+    MAG-GUT72020.fa            0.0010904                     0.018267                       0.0026662                        0.75902                         0.098289                        0.010097                        0.11058                   4     
+    MAG-GUT73407.fa            0.0011944                     0.017832                       0.0021505                        0.76232                         0.094762                        0.010581                        0.11117                   4     
+    MAG-GUT74962.fa            0.0011531                     0.017839                       0.0020735                        0.76146                         0.095617                        0.010439                        0.11142                   4     
+    MAG-GUT76584.fa            0.0012102                     0.018482                       0.0024369                        0.75994                         0.096905                       0.0099674                        0.11106                   4     
+    MAG-GUT82836.fa             0.001072                      0.01804                       0.0025905                        0.76129                         0.094088                        0.010015                         0.1129                   4     
+    MAG-GUT83203.fa            0.0011329                     0.018116                       0.0023736                        0.76189                         0.092431                        0.010578                        0.11348                   4     
+    MAG-GUT83214.fa            0.0011314                     0.017155                       0.0018605                        0.75986                         0.092757                        0.010961                        0.11627                   4     
+    MAG-GUT83835.fa             0.001222                     0.017006                       0.0020703                        0.76105                         0.092363                        0.011272                        0.11502                   4     
+    MAG-GUT84184.fa            0.0011772                      0.01738                       0.0021038                        0.76054                         0.095917                        0.010637                        0.11224                   4     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Coprococcus_split_pruned.xlsx"
+
+Process completed 
+[?1l>

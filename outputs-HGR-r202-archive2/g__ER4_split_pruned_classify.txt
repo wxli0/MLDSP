@@ -1,0 +1,855 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__ER4_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__ER4"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS84_9.fasta
+label_UMGS84_85.fasta
+label_UMGS84_84.fasta
+label_UMGS84_83.fasta
+label_UMGS84_82.fasta
+label_UMGS84_81.fasta
+label_UMGS84_80.fasta
+label_UMGS84_8.fasta
+label_UMGS84_79.fasta
+label_UMGS84_78.fasta
+label_UMGS84_77.fasta
+label_UMGS84_76.fasta
+label_UMGS84_75.fasta
+label_UMGS84_74.fasta
+label_UMGS84_73.fasta
+label_UMGS84_72.fasta
+label_UMGS84_71.fasta
+label_UMGS84_70.fasta
+label_UMGS84_7.fasta
+label_UMGS84_69.fasta
+label_UMGS84_68.fasta
+label_UMGS84_67.fasta
+label_UMGS84_66.fasta
+label_UMGS84_65.fasta
+label_UMGS84_64.fasta
+label_UMGS84_63.fasta
+label_UMGS84_62.fasta
+label_UMGS84_61.fasta
+label_UMGS84_60.fasta
+label_UMGS84_6.fasta
+label_UMGS84_59.fasta
+label_UMGS84_58.fasta
+label_UMGS84_57.fasta
+label_UMGS84_56.fasta
+label_UMGS84_55.fasta
+label_UMGS84_54.fasta
+label_UMGS84_53.fasta
+label_UMGS84_52.fasta
+label_UMGS84_51.fasta
+label_UMGS84_50.fasta
+label_UMGS84_5.fasta
+label_UMGS84_49.fasta
+label_UMGS84_48.fasta
+label_UMGS84_47.fasta
+label_UMGS84_46.fasta
+label_UMGS84_45.fasta
+label_UMGS84_44.fasta
+label_UMGS84_43.fasta
+label_UMGS84_42.fasta
+label_UMGS84_41.fasta
+label_UMGS84_40.fasta
+label_UMGS84_4.fasta
+label_UMGS84_39.fasta
+label_UMGS84_38.fasta
+label_UMGS84_37.fasta
+label_UMGS84_36.fasta
+label_UMGS84_35.fasta
+label_UMGS84_34.fasta
+label_UMGS84_33.fasta
+label_UMGS84_32.fasta
+label_UMGS84_31.fasta
+label_UMGS84_30.fasta
+label_UMGS84_3.fasta
+label_UMGS84_29.fasta
+label_UMGS84_28.fasta
+label_UMGS84_27.fasta
+label_UMGS84_26.fasta
+label_UMGS84_25.fasta
+label_UMGS84_24.fasta
+label_UMGS84_23.fasta
+label_UMGS84_22.fasta
+label_UMGS84_21.fasta
+label_UMGS84_20.fasta
+label_UMGS84_2.fasta
+label_UMGS84_19.fasta
+label_UMGS84_18.fasta
+label_UMGS84_17.fasta
+label_UMGS84_16.fasta
+label_UMGS84_15.fasta
+label_UMGS84_14.fasta
+label_UMGS84_13.fasta
+label_UMGS84_12.fasta
+label_UMGS84_11.fasta
+label_UMGS84_10.fasta
+label_UMGS84_1.fasta
+label_UMGS84_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS245_9.fasta
+label_UMGS245_8.fasta
+label_UMGS245_7.fasta
+label_UMGS245_6.fasta
+label_UMGS245_51.fasta
+label_UMGS245_50.fasta
+label_UMGS245_5.fasta
+label_UMGS245_49.fasta
+label_UMGS245_48.fasta
+label_UMGS245_47.fasta
+label_UMGS245_46.fasta
+label_UMGS245_45.fasta
+label_UMGS245_44.fasta
+label_UMGS245_43.fasta
+label_UMGS245_42.fasta
+label_UMGS245_41.fasta
+label_UMGS245_40.fasta
+label_UMGS245_4.fasta
+label_UMGS245_39.fasta
+label_UMGS245_38.fasta
+label_UMGS245_37.fasta
+label_UMGS245_36.fasta
+label_UMGS245_35.fasta
+label_UMGS245_34.fasta
+label_UMGS245_33.fasta
+label_UMGS245_32.fasta
+label_UMGS245_31.fasta
+label_UMGS245_30.fasta
+label_UMGS245_3.fasta
+label_UMGS245_29.fasta
+label_UMGS245_28.fasta
+label_UMGS245_27.fasta
+label_UMGS245_26.fasta
+label_UMGS245_25.fasta
+label_UMGS245_24.fasta
+label_UMGS245_23.fasta
+label_UMGS245_22.fasta
+label_UMGS245_21.fasta
+label_UMGS245_20.fasta
+label_UMGS245_2.fasta
+label_UMGS245_19.fasta
+label_UMGS245_18.fasta
+label_UMGS245_17.fasta
+label_UMGS245_16.fasta
+label_UMGS245_15.fasta
+label_UMGS245_14.fasta
+label_UMGS245_13.fasta
+label_UMGS245_12.fasta
+label_UMGS245_11.fasta
+label_UMGS245_10.fasta
+label_UMGS245_1.fasta
+label_UMGS245_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS365_9.fasta
+label_UMGS365_8.fasta
+label_UMGS365_7.fasta
+label_UMGS365_6.fasta
+label_UMGS365_5.fasta
+label_UMGS365_4.fasta
+label_UMGS365_31.fasta
+label_UMGS365_30.fasta
+label_UMGS365_3.fasta
+label_UMGS365_29.fasta
+label_UMGS365_28.fasta
+label_UMGS365_27.fasta
+label_UMGS365_26.fasta
+label_UMGS365_25.fasta
+label_UMGS365_24.fasta
+label_UMGS365_23.fasta
+label_UMGS365_22.fasta
+label_UMGS365_21.fasta
+label_UMGS365_20.fasta
+label_UMGS365_2.fasta
+label_UMGS365_19.fasta
+label_UMGS365_18.fasta
+label_UMGS365_17.fasta
+label_UMGS365_16.fasta
+label_UMGS365_15.fasta
+label_UMGS365_14.fasta
+label_UMGS365_13.fasta
+label_UMGS365_12.fasta
+label_UMGS365_11.fasta
+label_UMGS365_10.fasta
+label_UMGS365_1.fasta
+label_UMGS365_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS870_9.fasta
+label_UMGS870_84.fasta
+label_UMGS870_83.fasta
+label_UMGS870_82.fasta
+label_UMGS870_81.fasta
+label_UMGS870_80.fasta
+label_UMGS870_8.fasta
+label_UMGS870_79.fasta
+label_UMGS870_78.fasta
+label_UMGS870_77.fasta
+label_UMGS870_76.fasta
+label_UMGS870_75.fasta
+label_UMGS870_74.fasta
+label_UMGS870_73.fasta
+label_UMGS870_72.fasta
+label_UMGS870_71.fasta
+label_UMGS870_70.fasta
+label_UMGS870_7.fasta
+label_UMGS870_69.fasta
+label_UMGS870_68.fasta
+label_UMGS870_67.fasta
+label_UMGS870_66.fasta
+label_UMGS870_65.fasta
+label_UMGS870_64.fasta
+label_UMGS870_63.fasta
+label_UMGS870_62.fasta
+label_UMGS870_61.fasta
+label_UMGS870_60.fasta
+label_UMGS870_6.fasta
+label_UMGS870_59.fasta
+label_UMGS870_58.fasta
+label_UMGS870_57.fasta
+label_UMGS870_56.fasta
+label_UMGS870_55.fasta
+label_UMGS870_54.fasta
+label_UMGS870_53.fasta
+label_UMGS870_52.fasta
+label_UMGS870_51.fasta
+label_UMGS870_50.fasta
+label_UMGS870_5.fasta
+label_UMGS870_49.fasta
+label_UMGS870_48.fasta
+label_UMGS870_47.fasta
+label_UMGS870_46.fasta
+label_UMGS870_45.fasta
+label_UMGS870_44.fasta
+label_UMGS870_43.fasta
+label_UMGS870_42.fasta
+label_UMGS870_41.fasta
+label_UMGS870_40.fasta
+label_UMGS870_4.fasta
+label_UMGS870_39.fasta
+label_UMGS870_38.fasta
+label_UMGS870_37.fasta
+label_UMGS870_36.fasta
+label_UMGS870_35.fasta
+label_UMGS870_34.fasta
+label_UMGS870_33.fasta
+label_UMGS870_32.fasta
+label_UMGS870_31.fasta
+label_UMGS870_30.fasta
+label_UMGS870_3.fasta
+label_UMGS870_29.fasta
+label_UMGS870_28.fasta
+label_UMGS870_27.fasta
+label_UMGS870_26.fasta
+label_UMGS870_25.fasta
+label_UMGS870_24.fasta
+label_UMGS870_23.fasta
+label_UMGS870_22.fasta
+label_UMGS870_21.fasta
+label_UMGS870_20.fasta
+label_UMGS870_2.fasta
+label_UMGS870_19.fasta
+label_UMGS870_18.fasta
+label_UMGS870_17.fasta
+label_UMGS870_16.fasta
+label_UMGS870_15.fasta
+label_UMGS870_14.fasta
+label_UMGS870_13.fasta
+label_UMGS870_12.fasta
+label_UMGS870_11.fasta
+label_UMGS870_10.fasta
+label_UMGS870_1.fasta
+label_UMGS870_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1263_9.fasta
+label_UMGS1263_8.fasta
+label_UMGS1263_7.fasta
+label_UMGS1263_60.fasta
+label_UMGS1263_6.fasta
+label_UMGS1263_59.fasta
+label_UMGS1263_58.fasta
+label_UMGS1263_57.fasta
+label_UMGS1263_56.fasta
+label_UMGS1263_55.fasta
+label_UMGS1263_54.fasta
+label_UMGS1263_53.fasta
+label_UMGS1263_52.fasta
+label_UMGS1263_51.fasta
+label_UMGS1263_50.fasta
+label_UMGS1263_5.fasta
+label_UMGS1263_49.fasta
+label_UMGS1263_48.fasta
+label_UMGS1263_47.fasta
+label_UMGS1263_46.fasta
+label_UMGS1263_45.fasta
+label_UMGS1263_44.fasta
+label_UMGS1263_43.fasta
+label_UMGS1263_42.fasta
+label_UMGS1263_41.fasta
+label_UMGS1263_40.fasta
+label_UMGS1263_4.fasta
+label_UMGS1263_39.fasta
+label_UMGS1263_38.fasta
+label_UMGS1263_37.fasta
+label_UMGS1263_36.fasta
+label_UMGS1263_35.fasta
+label_UMGS1263_34.fasta
+label_UMGS1263_33.fasta
+label_UMGS1263_32.fasta
+label_UMGS1263_31.fasta
+label_UMGS1263_30.fasta
+label_UMGS1263_3.fasta
+label_UMGS1263_29.fasta
+label_UMGS1263_28.fasta
+label_UMGS1263_27.fasta
+label_UMGS1263_26.fasta
+label_UMGS1263_25.fasta
+label_UMGS1263_24.fasta
+label_UMGS1263_23.fasta
+label_UMGS1263_22.fasta
+label_UMGS1263_21.fasta
+label_UMGS1263_20.fasta
+label_UMGS1263_2.fasta
+label_UMGS1263_19.fasta
+label_UMGS1263_18.fasta
+label_UMGS1263_17.fasta
+label_UMGS1263_16.fasta
+label_UMGS1263_15.fasta
+label_UMGS1263_14.fasta
+label_UMGS1263_13.fasta
+label_UMGS1263_12.fasta
+label_UMGS1263_11.fasta
+label_UMGS1263_10.fasta
+label_UMGS1263_1.fasta
+label_UMGS1263_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1455_9.fasta
+label_UMGS1455_8.fasta
+label_UMGS1455_79.fasta
+label_UMGS1455_78.fasta
+label_UMGS1455_77.fasta
+label_UMGS1455_76.fasta
+label_UMGS1455_75.fasta
+label_UMGS1455_74.fasta
+label_UMGS1455_73.fasta
+label_UMGS1455_72.fasta
+label_UMGS1455_71.fasta
+label_UMGS1455_70.fasta
+label_UMGS1455_7.fasta
+label_UMGS1455_69.fasta
+label_UMGS1455_68.fasta
+label_UMGS1455_67.fasta
+label_UMGS1455_66.fasta
+label_UMGS1455_65.fasta
+label_UMGS1455_64.fasta
+label_UMGS1455_63.fasta
+label_UMGS1455_62.fasta
+label_UMGS1455_61.fasta
+label_UMGS1455_60.fasta
+label_UMGS1455_6.fasta
+label_UMGS1455_59.fasta
+label_UMGS1455_58.fasta
+label_UMGS1455_57.fasta
+label_UMGS1455_56.fasta
+label_UMGS1455_55.fasta
+label_UMGS1455_54.fasta
+label_UMGS1455_53.fasta
+label_UMGS1455_52.fasta
+label_UMGS1455_51.fasta
+label_UMGS1455_50.fasta
+label_UMGS1455_5.fasta
+label_UMGS1455_49.fasta
+label_UMGS1455_48.fasta
+label_UMGS1455_47.fasta
+label_UMGS1455_46.fasta
+label_UMGS1455_45.fasta
+label_UMGS1455_44.fasta
+label_UMGS1455_43.fasta
+label_UMGS1455_42.fasta
+label_UMGS1455_41.fasta
+label_UMGS1455_40.fasta
+label_UMGS1455_4.fasta
+label_UMGS1455_39.fasta
+label_UMGS1455_38.fasta
+label_UMGS1455_37.fasta
+label_UMGS1455_36.fasta
+label_UMGS1455_35.fasta
+label_UMGS1455_34.fasta
+label_UMGS1455_33.fasta
+label_UMGS1455_32.fasta
+label_UMGS1455_31.fasta
+label_UMGS1455_30.fasta
+label_UMGS1455_3.fasta
+label_UMGS1455_29.fasta
+label_UMGS1455_28.fasta
+label_UMGS1455_27.fasta
+label_UMGS1455_26.fasta
+label_UMGS1455_25.fasta
+label_UMGS1455_24.fasta
+label_UMGS1455_23.fasta
+label_UMGS1455_22.fasta
+label_UMGS1455_21.fasta
+label_UMGS1455_20.fasta
+label_UMGS1455_2.fasta
+label_UMGS1455_19.fasta
+label_UMGS1455_18.fasta
+label_UMGS1455_17.fasta
+label_UMGS1455_16.fasta
+label_UMGS1455_15.fasta
+label_UMGS1455_14.fasta
+label_UMGS1455_13.fasta
+label_UMGS1455_12.fasta
+label_UMGS1455_11.fasta
+label_UMGS1455_10.fasta
+label_UMGS1455_1.fasta
+label_UMGS1455_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1495_9.fasta
+label_UMGS1495_8.fasta
+label_UMGS1495_7.fasta
+label_UMGS1495_6.fasta
+label_UMGS1495_55.fasta
+label_UMGS1495_54.fasta
+label_UMGS1495_53.fasta
+label_UMGS1495_52.fasta
+label_UMGS1495_51.fasta
+label_UMGS1495_50.fasta
+label_UMGS1495_5.fasta
+label_UMGS1495_49.fasta
+label_UMGS1495_48.fasta
+label_UMGS1495_47.fasta
+label_UMGS1495_46.fasta
+label_UMGS1495_45.fasta
+label_UMGS1495_44.fasta
+label_UMGS1495_43.fasta
+label_UMGS1495_42.fasta
+label_UMGS1495_41.fasta
+label_UMGS1495_40.fasta
+label_UMGS1495_4.fasta
+label_UMGS1495_39.fasta
+label_UMGS1495_38.fasta
+label_UMGS1495_37.fasta
+label_UMGS1495_36.fasta
+label_UMGS1495_35.fasta
+label_UMGS1495_34.fasta
+label_UMGS1495_33.fasta
+label_UMGS1495_32.fasta
+label_UMGS1495_31.fasta
+label_UMGS1495_30.fasta
+label_UMGS1495_3.fasta
+label_UMGS1495_29.fasta
+label_UMGS1495_28.fasta
+label_UMGS1495_27.fasta
+label_UMGS1495_26.fasta
+label_UMGS1495_25.fasta
+label_UMGS1495_24.fasta
+label_UMGS1495_23.fasta
+label_UMGS1495_22.fasta
+label_UMGS1495_21.fasta
+label_UMGS1495_20.fasta
+label_UMGS1495_2.fasta
+label_UMGS1495_19.fasta
+label_UMGS1495_18.fasta
+label_UMGS1495_17.fasta
+label_UMGS1495_16.fasta
+label_UMGS1495_15.fasta
+label_UMGS1495_14.fasta
+label_UMGS1495_13.fasta
+label_UMGS1495_12.fasta
+label_UMGS1495_11.fasta
+label_UMGS1495_10.fasta
+label_UMGS1495_1.fasta
+label_UMGS1495_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1904_99.fasta
+label_UMGS1904_98.fasta
+label_UMGS1904_97.fasta
+label_UMGS1904_96.fasta
+label_UMGS1904_95.fasta
+label_UMGS1904_94.fasta
+label_UMGS1904_93.fasta
+label_UMGS1904_92.fasta
+label_UMGS1904_91.fasta
+label_UMGS1904_90.fasta
+label_UMGS1904_9.fasta
+label_UMGS1904_89.fasta
+label_UMGS1904_88.fasta
+label_UMGS1904_87.fasta
+label_UMGS1904_86.fasta
+label_UMGS1904_85.fasta
+label_UMGS1904_84.fasta
+label_UMGS1904_83.fasta
+label_UMGS1904_82.fasta
+label_UMGS1904_81.fasta
+label_UMGS1904_80.fasta
+label_UMGS1904_8.fasta
+label_UMGS1904_79.fasta
+label_UMGS1904_78.fasta
+label_UMGS1904_77.fasta
+label_UMGS1904_76.fasta
+label_UMGS1904_75.fasta
+label_UMGS1904_74.fasta
+label_UMGS1904_73.fasta
+label_UMGS1904_72.fasta
+label_UMGS1904_71.fasta
+label_UMGS1904_70.fasta
+label_UMGS1904_7.fasta
+label_UMGS1904_69.fasta
+label_UMGS1904_68.fasta
+label_UMGS1904_67.fasta
+label_UMGS1904_66.fasta
+label_UMGS1904_65.fasta
+label_UMGS1904_64.fasta
+label_UMGS1904_63.fasta
+label_UMGS1904_62.fasta
+label_UMGS1904_61.fasta
+label_UMGS1904_60.fasta
+label_UMGS1904_6.fasta
+label_UMGS1904_59.fasta
+label_UMGS1904_58.fasta
+label_UMGS1904_57.fasta
+label_UMGS1904_56.fasta
+label_UMGS1904_55.fasta
+label_UMGS1904_54.fasta
+label_UMGS1904_53.fasta
+label_UMGS1904_52.fasta
+label_UMGS1904_51.fasta
+label_UMGS1904_50.fasta
+label_UMGS1904_5.fasta
+label_UMGS1904_49.fasta
+label_UMGS1904_48.fasta
+label_UMGS1904_47.fasta
+label_UMGS1904_46.fasta
+label_UMGS1904_45.fasta
+label_UMGS1904_44.fasta
+label_UMGS1904_43.fasta
+label_UMGS1904_42.fasta
+label_UMGS1904_41.fasta
+label_UMGS1904_40.fasta
+label_UMGS1904_4.fasta
+label_UMGS1904_39.fasta
+label_UMGS1904_38.fasta
+label_UMGS1904_37.fasta
+label_UMGS1904_36.fasta
+label_UMGS1904_35.fasta
+label_UMGS1904_34.fasta
+label_UMGS1904_33.fasta
+label_UMGS1904_32.fasta
+label_UMGS1904_31.fasta
+label_UMGS1904_30.fasta
+label_UMGS1904_3.fasta
+label_UMGS1904_29.fasta
+label_UMGS1904_28.fasta
+label_UMGS1904_27.fasta
+label_UMGS1904_26.fasta
+label_UMGS1904_25.fasta
+label_UMGS1904_24.fasta
+label_UMGS1904_23.fasta
+label_UMGS1904_22.fasta
+label_UMGS1904_21.fasta
+label_UMGS1904_20.fasta
+label_UMGS1904_2.fasta
+label_UMGS1904_19.fasta
+label_UMGS1904_18.fasta
+label_UMGS1904_17.fasta
+label_UMGS1904_16.fasta
+label_UMGS1904_15.fasta
+label_UMGS1904_14.fasta
+label_UMGS1904_13.fasta
+label_UMGS1904_12.fasta
+label_UMGS1904_118.fasta
+label_UMGS1904_117.fasta
+label_UMGS1904_116.fasta
+label_UMGS1904_115.fasta
+label_UMGS1904_114.fasta
+label_UMGS1904_113.fasta
+label_UMGS1904_112.fasta
+label_UMGS1904_111.fasta
+label_UMGS1904_110.fasta
+label_UMGS1904_11.fasta
+label_UMGS1904_109.fasta
+label_UMGS1904_108.fasta
+label_UMGS1904_107.fasta
+label_UMGS1904_106.fasta
+label_UMGS1904_105.fasta
+label_UMGS1904_104.fasta
+label_UMGS1904_103.fasta
+label_UMGS1904_102.fasta
+label_UMGS1904_101.fasta
+label_UMGS1904_100.fasta
+label_UMGS1904_10.fasta
+label_UMGS1904_1.fasta
+label_UMGS1904_0.fasta
+Generating CGRs.... 
+totalSeq is: 571
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__ER4
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 52
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'s__ER4 sp00352...'}    {'s__ER4 sp90031...'}
+
+  Columns 4 through 6
+
+    {'s__ER4 sp90054...'}    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+  Columns 7 through 8
+
+    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'s__ER4 sp90031...'}
+
+  Columns 4 through 6
+
+    {'s__ER4 sp90054...'}    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+  Columns 7 through 8
+
+    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'3-s__ER4 sp900...'}
+
+  Columns 4 through 6
+
+    {'s__ER4 sp90054...'}    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+  Columns 7 through 8
+
+    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'3-s__ER4 sp900...'}
+
+  Columns 4 through 6
+
+    {'4-s__ER4 sp900...'}    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+  Columns 7 through 8
+
+    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'3-s__ER4 sp900...'}
+
+  Columns 4 through 6
+
+    {'4-s__ER4 sp900...'}    {'5-s__ER4 sp900...'}    {'s__ER4 sp90055...'}
+
+  Columns 7 through 8
+
+    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'3-s__ER4 sp900...'}
+
+  Columns 4 through 6
+
+    {'4-s__ER4 sp900...'}    {'5-s__ER4 sp900...'}    {'6-s__ER4 sp900...'}
+
+  Columns 7 through 8
+
+    {'s__ER4 sp90055...'}    {'s__ER4 sp90055...'}
+
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'3-s__ER4 sp900...'}
+
+  Columns 4 through 6
+
+    {'4-s__ER4 sp900...'}    {'5-s__ER4 sp900...'}    {'6-s__ER4 sp900...'}
+
+  Columns 7 through 8
+
+    {'7-s__ER4 sp900...'}    {'s__ER4 sp90055...'}
+
+
+clusterNames =
+
+  1x8 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'3-s__ER4 sp900...'}
+
+  Columns 4 through 6
+
+    {'4-s__ER4 sp900...'}    {'5-s__ER4 sp900...'}    {'6-s__ER4 sp900...'}
+
+  Columns 7 through 8
+
+    {'7-s__ER4 sp900...'}    {'8-s__ER4 sp900...'}
+
+  Columns 1 through 3
+
+    '1-s__ER4 sp00076...'    '2-s__ER4 sp00352...'    '3-s__ER4 sp90031...'
+
+  Columns 4 through 6
+
+    '4-s__ER4 sp90054...'    '5-s__ER4 sp90055...'    '6-s__ER4 sp90055...'
+
+  Columns 7 through 8
+
+    '7-s__ER4 sp90055...'    '8-s__ER4 sp90055...'
+
+
+header =
+
+  1x9 cell array
+
+  Columns 1 through 3
+
+    {'1-s__ER4 sp000...'}    {'2-s__ER4 sp003...'}    {'3-s__ER4 sp900...'}
+
+  Columns 4 through 6
+
+    {'4-s__ER4 sp900...'}    {'5-s__ER4 sp900...'}    {'6-s__ER4 sp900...'}
+
+  Columns 7 through 9
+
+    {'7-s__ER4 sp900...'}    {'8-s__ER4 sp900...'}    {'prediction'}
+
+
+T3 =
+
+  52x9 table
+
+                       1-s__ER4 sp000765235    2-s__ER4 sp003522105    3-s__ER4 sp900317525    4-s__ER4 sp900546295    5-s__ER4 sp900550165    6-s__ER4 sp900552015    7-s__ER4 sp900552375    8-s__ER4 sp900556145    prediction
+                       ____________________    ____________________    ____________________    ____________________    ____________________    ____________________    ____________________    ____________________    __________
+
+    MAG-GUT11526.fa           0.68184                0.030627                0.0040356               0.020527                 0.13148                 0.12775               0.0024405                0.0013026             1     
+    MAG-GUT11741.fa           0.67409                0.029882                0.0043814               0.025325                 0.12985                 0.13182               0.0031007                0.0015532             1     
+    MAG-GUT12393.fa           0.71948                0.033055                0.0032609                0.01949                 0.11303                 0.10849               0.0021059                0.0010891             1     
+    MAG-GUT12533.fa           0.65693                 0.03258                0.0045487               0.028928                 0.12629                 0.14614               0.0030532                0.0015214             1     
+    MAG-GUT12691.fa           0.68037                0.032068                0.0039867                0.02375                 0.12426                 0.13193               0.0023677                 0.001267             1     
+    MAG-GUT13333.fa           0.69028                0.029333                0.0043437               0.026521                 0.11493                 0.13041               0.0027541                0.0014246             1     
+    MAG-GUT13646.fa           0.65563                0.034524                0.0049251               0.030402                  0.1253                 0.14441               0.0031825                0.0016312             1     
+    MAG-GUT14116.fa           0.68011                0.033009                0.0041514               0.025881                 0.11789                  0.1351               0.0024945                0.0013601             1     
+    MAG-GUT151.fa               0.656                0.031038                0.0052214               0.027416                 0.12875                 0.14686               0.0031422                0.0015683             1     
+    MAG-GUT16851.fa           0.67325                0.032157                0.0039987               0.023887                 0.12899                 0.13348               0.0028237                0.0014132             1     
+    MAG-GUT17705.fa           0.68057                0.032996                0.0033555               0.023841                 0.12434                 0.13113               0.0025587                0.0012075             1     
+    MAG-GUT22751.fa           0.66744                0.033506                0.0039158                0.02805                 0.12192                 0.14042               0.0032935                0.0014519             1     
+    MAG-GUT23967.fa           0.63895                0.035735                 0.005315               0.033178                 0.13184                 0.14958               0.0036014                0.0018064             1     
+    MAG-GUT2660.fa            0.65537                0.033659                0.0044087               0.032259                 0.12431                 0.14475               0.0036147                0.0016228             1     
+    MAG-GUT26803.fa           0.66364                0.036275                0.0042111               0.027454                 0.12924                 0.13495               0.0028089                0.0014193             1     
+    MAG-GUT2783.fa            0.67426                0.032739                0.0036326               0.023538                 0.12673                 0.13532               0.0025127                  0.00127             1     
+    MAG-GUT30102.fa           0.68599                0.031936                 0.004059                0.02305                  0.1239                 0.12784               0.0021261                0.0010985             1     
+    MAG-GUT32404.fa           0.67077                0.033684                0.0038358                 0.0268                 0.12553                 0.13537               0.0027488                0.0012597             1     
+    MAG-GUT32509.fa            0.6857                0.034262                0.0036408               0.023533                 0.11967                 0.12984               0.0021461                0.0012016             1     
+    MAG-GUT32879.fa           0.70822                0.031435                0.0035464               0.018742                 0.11437                 0.12058               0.0020044                0.0011035             1     
+    MAG-GUT33324.fa            0.6779                0.033573                0.0034791               0.022622                 0.12654                 0.13208               0.0025406                0.0012703             1     
+    MAG-GUT35087.fa           0.65329                0.029996                0.0055355               0.027656                 0.14232                 0.13681               0.0029394                0.0014457             1     
+    MAG-GUT35206.fa           0.63023                0.032089                0.0053006                0.03044                 0.14765                 0.14891                0.003807                0.0015735             1     
+    MAG-GUT35597.fa           0.62561                0.037579                0.0050444               0.032107                 0.14665                 0.14718               0.0039155                0.0019151             1     
+    MAG-GUT36441.fa           0.62279                0.039453                0.0057646               0.038589                  0.1413                 0.14578               0.0041903                0.0021279             1     
+    MAG-GUT3651.fa            0.70208                0.030311                0.0032528               0.022028                 0.11542                 0.12376               0.0020328                0.0011113             1     
+    MAG-GUT36692.fa           0.69421                0.027799                0.0038205               0.020309                 0.11952                 0.13109               0.0021382                0.0011148             1     
+    MAG-GUT3702.fa            0.69025                0.029665                0.0036905               0.023692                 0.12171                  0.1275               0.0023135                0.0011728             1     
+    MAG-GUT37154.fa           0.65247                0.041237                0.0043996                0.02782                 0.13618                 0.13284               0.0034907                0.0015602             1     
+    MAG-GUT37934.fa           0.67654                0.033747                0.0042951               0.026535                 0.12978                 0.12521               0.0026724                0.0012215             1     
+    MAG-GUT38584.fa           0.66191                0.030942                0.0036651               0.027559                  0.1307                 0.14075               0.0031106                0.0013609             1     
+    MAG-GUT39152.fa           0.66884                0.034711                0.0042076               0.029078                  0.1273                 0.13148                0.003019                0.0013582             1     
+    MAG-GUT4044.fa            0.68277                0.031349                0.0040683               0.025695                  0.1224                  0.1301               0.0024221                 0.001198             1     
+    MAG-GUT4062.fa            0.67283                0.032169                0.0045213                0.02654                 0.13105                 0.12859                0.002904                0.0013889             1     
+    MAG-GUT4125.fa             0.6833                0.028544                0.0054292               0.021756                 0.13144                 0.12617               0.0021688                0.0012022             1     
+    MAG-GUT4207.fa            0.69108                 0.03096                0.0036447                0.02073                 0.11356                  0.1363               0.0025082                0.0012161             1     
+    MAG-GUT4832.fa            0.70511                0.035087                0.0033732               0.020552                 0.11203                 0.12064               0.0021429                0.0010674             1     
+    MAG-GUT50219.fa          0.040347                 0.81327               0.00010271                0.05867                 0.05351                  0.0174                0.015442                0.0012619             2     
+    MAG-GUT54544.fa           0.71391                0.027777                0.0035435               0.019909                 0.11258                 0.11889               0.0022333                0.0011545             1     
+    MAG-GUT56361.fa          0.030946                 0.86107               2.4416e-05               0.038452                0.050921               0.0087433               0.0089346               0.00090697             2     
+    MAG-GUT56948.fa           0.67216                0.036349                 0.003654                0.02674                 0.11947                 0.13749               0.0028226                0.0013166             1     
+    MAG-GUT57094.fa           0.66972                0.034726                0.0035794                0.02871                  0.1166                 0.14237               0.0029471                0.0013519             1     
+    MAG-GUT57682.fa          0.014067               0.0031809                  0.86301              0.0075293                0.052948                 0.03879                0.018028                0.0024502             3     
+    MAG-GUT57904.fa           0.67711                0.032056                0.0039846               0.024311                 0.11995                 0.13878                0.002544                0.0012677             1     
+    MAG-GUT58156.fa           0.67723                0.032424                0.0039539               0.023643                 0.12355                 0.13556               0.0023664                0.0012646             1     
+    MAG-GUT58768.fa           0.68463                0.035628                0.0033882               0.023859                 0.11394                 0.13472               0.0026203                0.0012113             1     
+    MAG-GUT59114.fa           0.67046                0.031505                0.0038754               0.025207                 0.12566                 0.13915               0.0027708                0.0013678             1     
+    MAG-GUT59205.fa           0.68664                0.032778                0.0032462               0.024853                 0.11386                 0.13495               0.0024772                 0.001192             1     
+    MAG-GUT6856.fa             0.6273                0.038854                0.0048119               0.032395                  0.1414                 0.14929               0.0041045                0.0018486             1     
+    MAG-GUT79219.fa           0.65409                0.028178                0.0041938               0.023639                 0.15137                 0.13412               0.0029415                0.0014705             1     
+    MAG-GUT8640.fa            0.66767                0.032657                0.0041243               0.025951                 0.12838                 0.13635               0.0034454                0.0014273             1     
+    MAG-GUT8940.fa            0.64895                0.033749                0.0043056               0.030112                 0.13575                 0.14111               0.0043301                 0.001698             1     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__ER4_split_pruned.xlsx"
+
+Process completed 
+[?1l>

@@ -1,0 +1,336 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Amedibacterium_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Amedibacterium"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1_9.fasta
+label_UMGS1_8.fasta
+label_UMGS1_74.fasta
+label_UMGS1_73.fasta
+label_UMGS1_72.fasta
+label_UMGS1_71.fasta
+label_UMGS1_70.fasta
+label_UMGS1_7.fasta
+label_UMGS1_69.fasta
+label_UMGS1_68.fasta
+label_UMGS1_67.fasta
+label_UMGS1_66.fasta
+label_UMGS1_65.fasta
+label_UMGS1_64.fasta
+label_UMGS1_63.fasta
+label_UMGS1_62.fasta
+label_UMGS1_61.fasta
+label_UMGS1_60.fasta
+label_UMGS1_6.fasta
+label_UMGS1_59.fasta
+label_UMGS1_58.fasta
+label_UMGS1_57.fasta
+label_UMGS1_56.fasta
+label_UMGS1_55.fasta
+label_UMGS1_54.fasta
+label_UMGS1_53.fasta
+label_UMGS1_52.fasta
+label_UMGS1_51.fasta
+label_UMGS1_50.fasta
+label_UMGS1_5.fasta
+label_UMGS1_49.fasta
+label_UMGS1_48.fasta
+label_UMGS1_47.fasta
+label_UMGS1_46.fasta
+label_UMGS1_45.fasta
+label_UMGS1_44.fasta
+label_UMGS1_43.fasta
+label_UMGS1_42.fasta
+label_UMGS1_41.fasta
+label_UMGS1_40.fasta
+label_UMGS1_4.fasta
+label_UMGS1_39.fasta
+label_UMGS1_38.fasta
+label_UMGS1_37.fasta
+label_UMGS1_36.fasta
+label_UMGS1_35.fasta
+label_UMGS1_34.fasta
+label_UMGS1_33.fasta
+label_UMGS1_32.fasta
+label_UMGS1_31.fasta
+label_UMGS1_30.fasta
+label_UMGS1_3.fasta
+label_UMGS1_29.fasta
+label_UMGS1_28.fasta
+label_UMGS1_27.fasta
+label_UMGS1_26.fasta
+label_UMGS1_25.fasta
+label_UMGS1_24.fasta
+label_UMGS1_23.fasta
+label_UMGS1_22.fasta
+label_UMGS1_21.fasta
+label_UMGS1_20.fasta
+label_UMGS1_2.fasta
+label_UMGS1_19.fasta
+label_UMGS1_18.fasta
+label_UMGS1_17.fasta
+label_UMGS1_16.fasta
+label_UMGS1_15.fasta
+label_UMGS1_14.fasta
+label_UMGS1_13.fasta
+label_UMGS1_12.fasta
+label_UMGS1_11.fasta
+label_UMGS1_10.fasta
+label_UMGS1_1.fasta
+label_UMGS1_0.fasta
+label_UMGS1844_99.fasta
+label_UMGS1844_98.fasta
+label_UMGS1844_97.fasta
+label_UMGS1844_96.fasta
+label_UMGS1844_95.fasta
+label_UMGS1844_94.fasta
+label_UMGS1844_93.fasta
+label_UMGS1844_92.fasta
+label_UMGS1844_91.fasta
+label_UMGS1844_90.fasta
+label_UMGS1844_9.fasta
+label_UMGS1844_89.fasta
+label_UMGS1844_88.fasta
+label_UMGS1844_87.fasta
+label_UMGS1844_86.fasta
+label_UMGS1844_85.fasta
+label_UMGS1844_84.fasta
+label_UMGS1844_83.fasta
+label_UMGS1844_82.fasta
+label_UMGS1844_81.fasta
+label_UMGS1844_80.fasta
+label_UMGS1844_8.fasta
+label_UMGS1844_79.fasta
+label_UMGS1844_78.fasta
+label_UMGS1844_77.fasta
+label_UMGS1844_76.fasta
+label_UMGS1844_75.fasta
+label_UMGS1844_74.fasta
+label_UMGS1844_73.fasta
+label_UMGS1844_72.fasta
+label_UMGS1844_71.fasta
+label_UMGS1844_70.fasta
+label_UMGS1844_7.fasta
+label_UMGS1844_69.fasta
+label_UMGS1844_68.fasta
+label_UMGS1844_67.fasta
+label_UMGS1844_66.fasta
+label_UMGS1844_65.fasta
+label_UMGS1844_64.fasta
+label_UMGS1844_63.fasta
+label_UMGS1844_62.fasta
+label_UMGS1844_61.fasta
+label_UMGS1844_60.fasta
+label_UMGS1844_6.fasta
+label_UMGS1844_59.fasta
+label_UMGS1844_58.fasta
+label_UMGS1844_57.fasta
+label_UMGS1844_56.fasta
+label_UMGS1844_55.fasta
+label_UMGS1844_54.fasta
+label_UMGS1844_53.fasta
+label_UMGS1844_52.fasta
+label_UMGS1844_51.fasta
+label_UMGS1844_50.fasta
+label_UMGS1844_5.fasta
+label_UMGS1844_49.fasta
+label_UMGS1844_48.fasta
+label_UMGS1844_47.fasta
+label_UMGS1844_46.fasta
+label_UMGS1844_45.fasta
+label_UMGS1844_44.fasta
+label_UMGS1844_43.fasta
+label_UMGS1844_42.fasta
+label_UMGS1844_41.fasta
+label_UMGS1844_40.fasta
+label_UMGS1844_4.fasta
+label_UMGS1844_39.fasta
+label_UMGS1844_38.fasta
+label_UMGS1844_37.fasta
+label_UMGS1844_36.fasta
+label_UMGS1844_35.fasta
+label_UMGS1844_34.fasta
+label_UMGS1844_33.fasta
+label_UMGS1844_32.fasta
+label_UMGS1844_31.fasta
+label_UMGS1844_30.fasta
+label_UMGS1844_3.fasta
+label_UMGS1844_29.fasta
+label_UMGS1844_28.fasta
+label_UMGS1844_27.fasta
+label_UMGS1844_26.fasta
+label_UMGS1844_25.fasta
+label_UMGS1844_24.fasta
+label_UMGS1844_23.fasta
+label_UMGS1844_22.fasta
+label_UMGS1844_21.fasta
+label_UMGS1844_20.fasta
+label_UMGS1844_2.fasta
+label_UMGS1844_19.fasta
+label_UMGS1844_18.fasta
+label_UMGS1844_179.fasta
+label_UMGS1844_178.fasta
+label_UMGS1844_177.fasta
+label_UMGS1844_176.fasta
+label_UMGS1844_175.fasta
+label_UMGS1844_174.fasta
+label_UMGS1844_173.fasta
+label_UMGS1844_172.fasta
+label_UMGS1844_171.fasta
+label_UMGS1844_170.fasta
+label_UMGS1844_17.fasta
+label_UMGS1844_169.fasta
+label_UMGS1844_168.fasta
+label_UMGS1844_167.fasta
+label_UMGS1844_166.fasta
+label_UMGS1844_165.fasta
+label_UMGS1844_164.fasta
+label_UMGS1844_163.fasta
+label_UMGS1844_162.fasta
+label_UMGS1844_161.fasta
+label_UMGS1844_160.fasta
+label_UMGS1844_16.fasta
+label_UMGS1844_159.fasta
+label_UMGS1844_158.fasta
+label_UMGS1844_157.fasta
+label_UMGS1844_156.fasta
+label_UMGS1844_155.fasta
+label_UMGS1844_154.fasta
+label_UMGS1844_153.fasta
+label_UMGS1844_152.fasta
+label_UMGS1844_151.fasta
+label_UMGS1844_150.fasta
+label_UMGS1844_15.fasta
+label_UMGS1844_149.fasta
+label_UMGS1844_148.fasta
+label_UMGS1844_147.fasta
+label_UMGS1844_146.fasta
+label_UMGS1844_145.fasta
+label_UMGS1844_144.fasta
+label_UMGS1844_143.fasta
+label_UMGS1844_142.fasta
+label_UMGS1844_141.fasta
+label_UMGS1844_140.fasta
+label_UMGS1844_14.fasta
+label_UMGS1844_139.fasta
+label_UMGS1844_138.fasta
+label_UMGS1844_137.fasta
+label_UMGS1844_136.fasta
+label_UMGS1844_135.fasta
+label_UMGS1844_134.fasta
+label_UMGS1844_133.fasta
+label_UMGS1844_132.fasta
+label_UMGS1844_131.fasta
+label_UMGS1844_130.fasta
+label_UMGS1844_13.fasta
+label_UMGS1844_129.fasta
+label_UMGS1844_128.fasta
+label_UMGS1844_127.fasta
+label_UMGS1844_126.fasta
+label_UMGS1844_125.fasta
+label_UMGS1844_124.fasta
+label_UMGS1844_123.fasta
+label_UMGS1844_122.fasta
+label_UMGS1844_121.fasta
+label_UMGS1844_120.fasta
+label_UMGS1844_12.fasta
+label_UMGS1844_119.fasta
+label_UMGS1844_118.fasta
+label_UMGS1844_117.fasta
+label_UMGS1844_116.fasta
+label_UMGS1844_115.fasta
+label_UMGS1844_114.fasta
+label_UMGS1844_113.fasta
+label_UMGS1844_112.fasta
+label_UMGS1844_111.fasta
+label_UMGS1844_110.fasta
+label_UMGS1844_11.fasta
+label_UMGS1844_109.fasta
+label_UMGS1844_108.fasta
+label_UMGS1844_107.fasta
+label_UMGS1844_106.fasta
+label_UMGS1844_105.fasta
+label_UMGS1844_104.fasta
+label_UMGS1844_103.fasta
+label_UMGS1844_102.fasta
+label_UMGS1844_101.fasta
+label_UMGS1844_100.fasta
+label_UMGS1844_10.fasta
+label_UMGS1844_1.fasta
+label_UMGS1844_0.fasta
+Generating CGRs.... 
+totalSeq is: 255
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Amedibacterium
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 5
+
+clusterNames =
+
+  1x1 cell array
+
+    {'1-s__Amedibacterium intestinale'}
+
+    '1-s__Amedibacterium intestinale'
+
+
+header =
+
+  1x2 cell array
+
+    {'1-s__Amedibacterium intestinale'}    {'prediction'}
+
+
+T3 =
+
+  5x2 table
+
+                       1-s__Amedibacterium intestinale    prediction
+                       _______________________________    __________
+
+    MAG-GUT18819.fa                  2186                     1     
+    MAG-GUT19428.fa                2228.7                     1     
+    MAG-GUT36103.fa                2281.8                     1     
+    MAG-GUT43258.fa                2213.1                     1     
+    MAG-GUT9766.fa                 2203.7                     1     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Amedibacterium_split_pruned.xlsx"
+
+Process completed 
+[?1l>

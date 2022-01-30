@@ -1,0 +1,847 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/f__Erysipelatoclostridiaceae"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/f__Erysipelatoclostridiaceae"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902363625.1_7.fasta
+RS_GCF_902363625.1_6.fasta
+RS_GCF_902363625.1_4.fasta
+RS_GCF_902363625.1_3.fasta
+RS_GCF_902363625.1_19.fasta
+RS_GCF_902363625.1_17.fasta
+RS_GCF_902363625.1_14.fasta
+RS_GCF_902363625.1_12.fasta
+RS_GCF_902363625.1_1.fasta
+RS_GCF_902363625.1_0.fasta
+RS_GCF_000829905.1_9.fasta
+RS_GCF_000829905.1_6.fasta
+RS_GCF_000829905.1_4.fasta
+RS_GCF_000829905.1_19.fasta
+RS_GCF_000829905.1_18.fasta
+RS_GCF_000829905.1_16.fasta
+RS_GCF_000829905.1_14.fasta
+RS_GCF_000829905.1_12.fasta
+RS_GCF_000829905.1_11.fasta
+RS_GCF_000829905.1_0.fasta
+GB_GCA_900550005.1_8.fasta
+GB_GCA_900550005.1_5.fasta
+GB_GCA_900550005.1_3.fasta
+GB_GCA_900550005.1_2.fasta
+GB_GCA_900550005.1_17.fasta
+GB_GCA_900550005.1_16.fasta
+GB_GCA_900550005.1_14.fasta
+GB_GCA_900550005.1_13.fasta
+GB_GCA_900550005.1_10.fasta
+GB_GCA_900550005.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900018345.1_9.fasta
+RS_GCF_900018345.1_8.fasta
+RS_GCF_900018345.1_7.fasta
+RS_GCF_900018345.1_6.fasta
+RS_GCF_900018345.1_5.fasta
+RS_GCF_900018345.1_4.fasta
+RS_GCF_900018345.1_3.fasta
+RS_GCF_900018345.1_2.fasta
+RS_GCF_900018345.1_19.fasta
+RS_GCF_900018345.1_18.fasta
+RS_GCF_900018345.1_17.fasta
+RS_GCF_900018345.1_16.fasta
+RS_GCF_900018345.1_15.fasta
+RS_GCF_900018345.1_14.fasta
+RS_GCF_900018345.1_13.fasta
+RS_GCF_900018345.1_12.fasta
+RS_GCF_900018345.1_11.fasta
+RS_GCF_900018345.1_10.fasta
+RS_GCF_900018345.1_1.fasta
+RS_GCF_900018345.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_004168205.1_8.fasta
+RS_GCF_004168205.1_6.fasta
+RS_GCF_004168205.1_3.fasta
+RS_GCF_004168205.1_2.fasta
+RS_GCF_004168205.1_16.fasta
+RS_GCF_004168205.1_1.fasta
+RS_GCF_000173795.1_9.fasta
+RS_GCF_000173795.1_5.fasta
+RS_GCF_000173795.1_19.fasta
+RS_GCF_000173795.1_10.fasta
+GB_GCA_900764725.1_8.fasta
+GB_GCA_900764725.1_7.fasta
+GB_GCA_900764725.1_6.fasta
+GB_GCA_900764725.1_4.fasta
+GB_GCA_900764725.1_14.fasta
+GB_GCA_900764565.1_11.fasta
+GB_GCA_900764565.1_10.fasta
+GB_GCA_900764565.1_1.fasta
+GB_GCA_900540685.1_8.fasta
+GB_GCA_900540685.1_7.fasta
+GB_GCA_900540685.1_13.fasta
+GB_GCA_900540685.1_11.fasta
+GB_GCA_900540685.1_0.fasta
+GB_GCA_900540665.1_6.fasta
+GB_GCA_900540665.1_3.fasta
+GB_GCA_900540665.1_2.fasta
+GB_GCA_900540665.1_17.fasta
+GB_GCA_900540665.1_14.fasta
+GB_GCA_900540665.1_13.fasta
+GB_GCA_900540665.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_001312445.1_9.fasta
+GB_GCA_001312445.1_8.fasta
+GB_GCA_001312445.1_7.fasta
+GB_GCA_001312445.1_6.fasta
+GB_GCA_001312445.1_5.fasta
+GB_GCA_001312445.1_4.fasta
+GB_GCA_001312445.1_3.fasta
+GB_GCA_001312445.1_2.fasta
+GB_GCA_001312445.1_19.fasta
+GB_GCA_001312445.1_18.fasta
+GB_GCA_001312445.1_17.fasta
+GB_GCA_001312445.1_16.fasta
+GB_GCA_001312445.1_15.fasta
+GB_GCA_001312445.1_14.fasta
+GB_GCA_001312445.1_13.fasta
+GB_GCA_001312445.1_12.fasta
+GB_GCA_001312445.1_11.fasta
+GB_GCA_001312445.1_10.fasta
+GB_GCA_001312445.1_1.fasta
+GB_GCA_001312445.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_000340375.1_9.fasta
+RS_GCF_000340375.1_8.fasta
+RS_GCF_000340375.1_7.fasta
+RS_GCF_000340375.1_6.fasta
+RS_GCF_000340375.1_5.fasta
+RS_GCF_000340375.1_4.fasta
+RS_GCF_000340375.1_3.fasta
+RS_GCF_000340375.1_2.fasta
+RS_GCF_000340375.1_19.fasta
+RS_GCF_000340375.1_18.fasta
+RS_GCF_000340375.1_17.fasta
+RS_GCF_000340375.1_16.fasta
+RS_GCF_000340375.1_15.fasta
+RS_GCF_000340375.1_14.fasta
+RS_GCF_000340375.1_13.fasta
+RS_GCF_000340375.1_12.fasta
+RS_GCF_000340375.1_11.fasta
+RS_GCF_000340375.1_10.fasta
+RS_GCF_000340375.1_1.fasta
+RS_GCF_000340375.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900102365.1_7.fasta
+RS_GCF_014131695.1_9.fasta
+RS_GCF_014131695.1_19.fasta
+RS_GCF_014131695.1_17.fasta
+RS_GCF_014131695.1_11.fasta
+RS_GCF_014131695.1_0.fasta
+RS_GCF_002160495.1_8.fasta
+RS_GCF_002160495.1_19.fasta
+RS_GCF_002160495.1_18.fasta
+RS_GCF_002160495.1_17.fasta
+RS_GCF_002160495.1_13.fasta
+RS_GCF_002160495.1_1.fasta
+RS_GCF_002160495.1_0.fasta
+RS_GCF_000686665.1_7.fasta
+RS_GCF_000686665.1_3.fasta
+RS_GCF_000686665.1_17.fasta
+RS_GCF_000686665.1_16.fasta
+RS_GCF_000686665.1_15.fasta
+RS_GCF_000686665.1_13.fasta
+RS_GCF_000686665.1_12.fasta
+RS_GCF_000686665.1_1.fasta
+RS_GCF_000686665.1_0.fasta
+RS_GCF_000508865.1_7.fasta
+RS_GCF_000508865.1_5.fasta
+RS_GCF_000508865.1_4.fasta
+RS_GCF_000508865.1_16.fasta
+RS_GCF_000508865.1_12.fasta
+RS_GCF_000508865.1_11.fasta
+RS_GCF_000154805.1_12.fasta
+RS_GCF_000154805.1_11.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_003480255.1_9.fasta
+RS_GCF_003480255.1_4.fasta
+RS_GCF_003480255.1_3.fasta
+RS_GCF_003480255.1_16.fasta
+RS_GCF_003480255.1_15.fasta
+RS_GCF_003480255.1_13.fasta
+RS_GCF_003480255.1_12.fasta
+RS_GCF_003024685.1_8.fasta
+RS_GCF_003024685.1_7.fasta
+RS_GCF_003024685.1_5.fasta
+RS_GCF_003024685.1_4.fasta
+RS_GCF_003024685.1_3.fasta
+RS_GCF_003024685.1_19.fasta
+RS_GCF_003024685.1_17.fasta
+RS_GCF_003024685.1_16.fasta
+RS_GCF_003024685.1_11.fasta
+RS_GCF_003024685.1_0.fasta
+RS_GCF_003024675.1_7.fasta
+RS_GCF_003024675.1_6.fasta
+RS_GCF_003024675.1_3.fasta
+RS_GCF_003024675.1_2.fasta
+RS_GCF_003024675.1_19.fasta
+RS_GCF_003024675.1_17.fasta
+RS_GCF_003024675.1_13.fasta
+RS_GCF_003024675.1_11.fasta
+GB_GCA_900544435.1_8.fasta
+GB_GCA_900544435.1_6.fasta
+GB_GCA_900544435.1_2.fasta
+GB_GCA_900544435.1_14.fasta
+GB_GCA_900544435.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_003925875.1_9.fasta
+RS_GCF_003925875.1_8.fasta
+RS_GCF_003925875.1_7.fasta
+RS_GCF_003925875.1_6.fasta
+RS_GCF_003925875.1_5.fasta
+RS_GCF_003925875.1_4.fasta
+RS_GCF_003925875.1_3.fasta
+RS_GCF_003925875.1_2.fasta
+RS_GCF_003925875.1_19.fasta
+RS_GCF_003925875.1_18.fasta
+RS_GCF_003925875.1_16.fasta
+RS_GCF_003925875.1_15.fasta
+RS_GCF_003925875.1_14.fasta
+RS_GCF_003925875.1_13.fasta
+RS_GCF_003925875.1_12.fasta
+RS_GCF_003925875.1_1.fasta
+RS_GCF_003925875.1_0.fasta
+GB_GCA_900317015.1_9.fasta
+GB_GCA_900317015.1_8.fasta
+GB_GCA_900317015.1_5.fasta
+GB_GCA_900317015.1_4.fasta
+GB_GCA_900317015.1_2.fasta
+GB_GCA_900317015.1_19.fasta
+GB_GCA_900317015.1_18.fasta
+GB_GCA_900317015.1_17.fasta
+GB_GCA_900317015.1_15.fasta
+GB_GCA_900317015.1_12.fasta
+GB_GCA_900317015.1_10.fasta
+GB_GCA_900317015.1_1.fasta
+GB_GCA_900317015.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_000702065.1_9.fasta
+RS_GCF_000702065.1_8.fasta
+RS_GCF_000702065.1_7.fasta
+RS_GCF_000702065.1_6.fasta
+RS_GCF_000702065.1_5.fasta
+RS_GCF_000702065.1_4.fasta
+RS_GCF_000702065.1_3.fasta
+RS_GCF_000702065.1_2.fasta
+RS_GCF_000702065.1_19.fasta
+RS_GCF_000702065.1_18.fasta
+RS_GCF_000702065.1_17.fasta
+RS_GCF_000702065.1_16.fasta
+RS_GCF_000702065.1_15.fasta
+RS_GCF_000702065.1_14.fasta
+RS_GCF_000702065.1_13.fasta
+RS_GCF_000702065.1_12.fasta
+RS_GCF_000702065.1_11.fasta
+RS_GCF_000702065.1_10.fasta
+RS_GCF_000702065.1_1.fasta
+RS_GCF_000702065.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_004343035.1_8.fasta
+RS_GCF_004343035.1_7.fasta
+RS_GCF_004343035.1_6.fasta
+RS_GCF_004343035.1_5.fasta
+RS_GCF_004343035.1_4.fasta
+RS_GCF_004343035.1_3.fasta
+RS_GCF_004343035.1_19.fasta
+RS_GCF_004343035.1_18.fasta
+RS_GCF_004343035.1_17.fasta
+RS_GCF_004343035.1_16.fasta
+RS_GCF_004343035.1_15.fasta
+RS_GCF_004343035.1_14.fasta
+RS_GCF_004343035.1_13.fasta
+RS_GCF_004343035.1_12.fasta
+RS_GCF_004343035.1_10.fasta
+RS_GCF_004343035.1_1.fasta
+RS_GCF_004343035.1_0.fasta
+GB_GCA_900538465.1_9.fasta
+GB_GCA_900538465.1_8.fasta
+GB_GCA_900538465.1_7.fasta
+GB_GCA_900538465.1_6.fasta
+GB_GCA_900538465.1_4.fasta
+GB_GCA_900538465.1_3.fasta
+GB_GCA_900538465.1_2.fasta
+GB_GCA_900538465.1_19.fasta
+GB_GCA_900538465.1_18.fasta
+GB_GCA_900538465.1_15.fasta
+GB_GCA_900538465.1_11.fasta
+GB_GCA_900538465.1_10.fasta
+GB_GCA_900538465.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_002160865.1_8.fasta
+RS_GCF_002160865.1_6.fasta
+RS_GCF_002160865.1_5.fasta
+RS_GCF_002160865.1_4.fasta
+RS_GCF_002160865.1_2.fasta
+RS_GCF_002160865.1_19.fasta
+RS_GCF_002160865.1_17.fasta
+RS_GCF_002160865.1_16.fasta
+RS_GCF_002160865.1_15.fasta
+RS_GCF_002160865.1_14.fasta
+RS_GCF_002160865.1_13.fasta
+RS_GCF_002160865.1_12.fasta
+RS_GCF_002160865.1_11.fasta
+RS_GCF_002160865.1_10.fasta
+RS_GCF_002160865.1_1.fasta
+RS_GCF_002160865.1_0.fasta
+RS_GCF_002160815.1_8.fasta
+RS_GCF_002160815.1_7.fasta
+RS_GCF_002160815.1_6.fasta
+RS_GCF_002160815.1_4.fasta
+RS_GCF_002160815.1_2.fasta
+RS_GCF_002160815.1_19.fasta
+RS_GCF_002160815.1_18.fasta
+RS_GCF_002160815.1_17.fasta
+RS_GCF_002160815.1_15.fasta
+RS_GCF_002160815.1_13.fasta
+RS_GCF_002160815.1_12.fasta
+RS_GCF_002160815.1_10.fasta
+RS_GCF_002160815.1_1.fasta
+RS_GCF_002160815.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_009695655.1_9.fasta
+RS_GCF_009695655.1_8.fasta
+RS_GCF_009695655.1_7.fasta
+RS_GCF_009695655.1_6.fasta
+RS_GCF_009695655.1_5.fasta
+RS_GCF_009695655.1_3.fasta
+RS_GCF_009695655.1_2.fasta
+RS_GCF_009695655.1_18.fasta
+RS_GCF_009695655.1_16.fasta
+RS_GCF_009695655.1_14.fasta
+RS_GCF_009695655.1_12.fasta
+RS_GCF_009695655.1_11.fasta
+RS_GCF_009695655.1_10.fasta
+RS_GCF_009695655.1_0.fasta
+RS_GCF_000702165.1_9.fasta
+RS_GCF_000702165.1_8.fasta
+RS_GCF_000702165.1_6.fasta
+RS_GCF_000702165.1_5.fasta
+RS_GCF_000702165.1_4.fasta
+RS_GCF_000702165.1_3.fasta
+RS_GCF_000702165.1_2.fasta
+RS_GCF_000702165.1_18.fasta
+RS_GCF_000702165.1_17.fasta
+RS_GCF_000702165.1_16.fasta
+RS_GCF_000702165.1_14.fasta
+RS_GCF_000702165.1_13.fasta
+RS_GCF_000702165.1_12.fasta
+RS_GCF_000702165.1_11.fasta
+RS_GCF_000702165.1_1.fasta
+RS_GCF_000702165.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_001244545.1_7.fasta
+RS_GCF_001244545.1_6.fasta
+RS_GCF_001244545.1_5.fasta
+RS_GCF_001244545.1_3.fasta
+RS_GCF_001244545.1_2.fasta
+RS_GCF_001244545.1_19.fasta
+RS_GCF_001244545.1_17.fasta
+RS_GCF_001244545.1_16.fasta
+RS_GCF_001244545.1_15.fasta
+RS_GCF_001244545.1_14.fasta
+RS_GCF_001244545.1_13.fasta
+RS_GCF_001244545.1_12.fasta
+RS_GCF_001244545.1_1.fasta
+RS_GCF_000455285.1_9.fasta
+RS_GCF_000455285.1_8.fasta
+RS_GCF_000455285.1_7.fasta
+RS_GCF_000455285.1_6.fasta
+RS_GCF_000455285.1_4.fasta
+RS_GCF_000455285.1_3.fasta
+RS_GCF_000455285.1_19.fasta
+RS_GCF_000455285.1_18.fasta
+RS_GCF_000455285.1_17.fasta
+RS_GCF_000455285.1_16.fasta
+RS_GCF_000455285.1_15.fasta
+RS_GCF_000455285.1_14.fasta
+RS_GCF_000455285.1_13.fasta
+RS_GCF_000455285.1_12.fasta
+RS_GCF_000455285.1_11.fasta
+RS_GCF_000455285.1_10.fasta
+RS_GCF_000455285.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002359025.1_9.fasta
+GB_GCA_002359025.1_8.fasta
+GB_GCA_002359025.1_7.fasta
+GB_GCA_002359025.1_6.fasta
+GB_GCA_002359025.1_5.fasta
+GB_GCA_002359025.1_4.fasta
+GB_GCA_002359025.1_3.fasta
+GB_GCA_002359025.1_2.fasta
+GB_GCA_002359025.1_19.fasta
+GB_GCA_002359025.1_18.fasta
+GB_GCA_002359025.1_17.fasta
+GB_GCA_002359025.1_16.fasta
+GB_GCA_002359025.1_15.fasta
+GB_GCA_002359025.1_14.fasta
+GB_GCA_002359025.1_13.fasta
+GB_GCA_002359025.1_12.fasta
+GB_GCA_002359025.1_11.fasta
+GB_GCA_002359025.1_10.fasta
+GB_GCA_002359025.1_1.fasta
+GB_GCA_002359025.1_0.fasta
+Generating CGRs.... 
+totalSeq is: 370
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/f__Erysipelatoclostridiaceae
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 9
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'g__CHKCI006'}    {'g__Catenibacte...'}
+
+  Columns 4 through 6
+
+    {'g__Coprobacillus'}    {'g__Eggerthia'}    {'g__Erysipelato...'}
+
+  Columns 7 through 9
+
+    {'g__Faecalibaci...'}    {'g__Intestiniba...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'g__Catenibacte...'}
+
+  Columns 4 through 6
+
+    {'g__Coprobacillus'}    {'g__Eggerthia'}    {'g__Erysipelato...'}
+
+  Columns 7 through 9
+
+    {'g__Faecalibaci...'}    {'g__Intestiniba...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'g__Coprobacillus'}    {'g__Eggerthia'}    {'g__Erysipelato...'}
+
+  Columns 7 through 9
+
+    {'g__Faecalibaci...'}    {'g__Intestiniba...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'g__Eggerthia'}    {'g__Erysipelato...'}
+
+  Columns 7 through 9
+
+    {'g__Faecalibaci...'}    {'g__Intestiniba...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'g__Erysipelato...'}
+
+  Columns 7 through 9
+
+    {'g__Faecalibaci...'}    {'g__Intestiniba...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'g__Faecalibaci...'}    {'g__Intestiniba...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'g__Intestiniba...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'9-g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'g__Longibaculum'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'9-g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'10-g__Longibac...'}    {'g__Massiliomic...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'9-g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'10-g__Longibac...'}    {'11-g__Massilio...'}    {'g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'9-g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'10-g__Longibac...'}    {'11-g__Massilio...'}    {'12-g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'g__Stoquefichus'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'9-g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'10-g__Longibac...'}    {'11-g__Massilio...'}    {'12-g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'13-g__Stoquefi...'}    {'g__UBA3379'}
+
+
+clusterNames =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'9-g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'10-g__Longibac...'}    {'11-g__Massilio...'}    {'12-g__Sharpea'}
+
+  Columns 13 through 14
+
+    {'13-g__Stoquefi...'}    {'14-g__UBA3379'}
+
+  Columns 1 through 3
+
+    '1-g__Beduini'    '2-g__CHKCI006'    '3-g__Catenibacte...'
+
+  Columns 4 through 6
+
+    '4-g__Coprobacillus'    '5-g__Eggerthia'    '6-g__Erysipelato...'
+
+  Columns 7 through 9
+
+    '7-g__Faecalibaci...'    '8-g__Intestiniba...'    '9-g__Kandleria'
+
+  Columns 10 through 12
+
+    '10-g__Longibaculum'    '11-g__Massiliomi...'    '12-g__Sharpea'
+
+  Columns 13 through 14
+
+    '13-g__Stoquefichus'    '14-g__UBA3379'
+
+
+header =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Beduini'}    {'2-g__CHKCI006'}    {'3-g__Catenibac...'}
+
+  Columns 4 through 6
+
+    {'4-g__Coprobaci...'}    {'5-g__Eggerthia'}    {'6-g__Erysipela...'}
+
+  Columns 7 through 9
+
+    {'7-g__Faecaliba...'}    {'8-g__Intestini...'}    {'9-g__Kandleria'}
+
+  Columns 10 through 12
+
+    {'10-g__Longibac...'}    {'11-g__Massilio...'}    {'12-g__Sharpea'}
+
+  Columns 13 through 15
+
+    {'13-g__Stoquefi...'}    {'14-g__UBA3379'}    {'prediction'}
+
+
+T3 =
+
+  9x15 table
+
+                    1-g__Beduini    2-g__CHKCI006    3-g__Catenibacterium    4-g__Coprobacillus    5-g__Eggerthia    6-g__Erysipelatoclostridium    7-g__Faecalibacillus    8-g__Intestinibaculum    9-g__Kandleria    10-g__Longibaculum    11-g__Massiliomicrobiota    12-g__Sharpea    13-g__Stoquefichus    14-g__UBA3379    prediction
+                    ____________    _____________    ____________________    __________________    ______________    ___________________________    ____________________    _____________________    ______________    __________________    ________________________    _____________    __________________    _____________    __________
+
+    RUG016.fasta      0.0019877       0.0008536           0.0093661              2.2208e-14          2.2208e-14              2.2208e-14                  2.2208e-14              2.2208e-14             0.0060636           0.038484                2.2208e-14               0.94325          2.2208e-14         2.2208e-14          12    
+    RUG017.fasta      0.0054708      0.00079605           0.0089792              2.2216e-14          2.2216e-14              2.2216e-14                  2.2216e-14              2.2216e-14              0.013582           0.038695                2.2216e-14               0.93248          2.2216e-14         2.2216e-14          12    
+    RUG123.fasta       0.001579      0.00080394           0.0094106              2.2207e-14          2.2207e-14              2.2207e-14                  2.2207e-14              2.2207e-14             0.0049023           0.037903                2.2207e-14                0.9454          2.2207e-14         2.2207e-14          12    
+    RUG246.fasta     1.6372e-06      0.00061393            0.011858              2.2204e-14          2.2204e-14              2.2204e-14                  2.2204e-14                  0.9436             0.0002957           0.043631                2.2204e-14            2.2204e-14          2.2204e-14         2.2204e-14           8    
+    RUG261.fasta     0.00080477      0.00084569           0.0088429              2.2204e-14          2.2204e-14              2.2204e-14                  2.2204e-14              2.2204e-14             0.0027351           0.037328                2.2204e-14               0.94944          2.2204e-14         2.2204e-14          12    
+    RUG262.fasta      0.0013503      0.00080141           0.0095522              2.2206e-14          2.2206e-14              2.2206e-14                  2.2206e-14              2.2206e-14             0.0047654           0.038007                2.2206e-14               0.94552          2.2206e-14         2.2206e-14          12    
+    RUG286.fasta      0.0033822      0.00080888           0.0093335              2.2211e-14          2.2211e-14              2.2211e-14                  2.2211e-14              2.2211e-14             0.0082993           0.038413                2.2211e-14               0.93976          2.2211e-14         2.2211e-14          12    
+    RUG287.fasta     0.00070866      0.00032161             0.03768              2.2202e-14          2.2202e-14              2.2202e-14                  2.2202e-14              2.2202e-14               0.88175           0.079541                2.2202e-14            2.2202e-14          2.2202e-14         2.2202e-14           9    
+    RUG319.fasta      3.262e-05       0.0004138           0.0038312              2.2198e-14          2.2198e-14              2.2198e-14                  2.2198e-14                 0.95124            0.00057399           0.043908                2.2198e-14            2.2198e-14          2.2198e-14         2.2198e-14           8    
+
+
+outputPath = 
+
+    "outputs-GTDB-r202/test-f__Erysipelatoclostridiaceae.xlsx"
+
+Process completed 
+[?1l>

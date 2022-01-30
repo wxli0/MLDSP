@@ -1,0 +1,813 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__Campylobacter"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Campylobacter"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_013406955.1_3.fasta
+RS_GCF_013406955.1_19.fasta
+RS_GCF_011600995.2_4.fasta
+RS_GCF_010120585.1_18.fasta
+RS_GCF_010120585.1_12.fasta
+RS_GCF_008693125.1_0.fasta
+RS_GCF_008526355.1_19.fasta
+RS_GCF_008271385.1_15.fasta
+RS_GCF_003994885.1_0.fasta
+RS_GCF_003426005.1_7.fasta
+RS_GCF_002592365.1_7.fasta
+RS_GCF_001699745.1_6.fasta
+RS_GCF_001699735.1_12.fasta
+RS_GCF_001699645.1_9.fasta
+RS_GCF_001699565.1_8.fasta
+RS_GCF_001686885.1_7.fasta
+RS_GCF_001399955.1_14.fasta
+RS_GCF_000967135.1_10.fasta
+RS_GCF_000759515.1_9.fasta
+RS_GCF_000759515.1_19.fasta
+RS_GCF_000414135.1_2.fasta
+RS_GCF_000015085.1_18.fasta
+GB_GCA_007723545.1_14.fasta
+GB_GCA_001816265.1_3.fasta
+GB_GCA_001699655.1_4.fasta
+GB_GCA_001698965.1_8.fasta
+GB_GCA_001698965.1_3.fasta
+GB_GCA_001698935.1_1.fasta
+GB_GCA_000773615.1_11.fasta
+GB_GCA_000222425.1_19.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900460765.1_9.fasta
+RS_GCF_900460765.1_6.fasta
+RS_GCF_900460765.1_15.fasta
+RS_GCF_900116585.1_18.fasta
+RS_GCF_008017725.1_14.fasta
+RS_GCF_002927605.1_14.fasta
+RS_GCF_002927605.1_12.fasta
+RS_GCF_002927595.1_19.fasta
+RS_GCF_002927575.1_7.fasta
+RS_GCF_002927575.1_4.fasta
+RS_GCF_002927575.1_1.fasta
+RS_GCF_002927555.1_19.fasta
+RS_GCF_002927525.1_9.fasta
+RS_GCF_002927505.1_15.fasta
+RS_GCF_002927495.1_4.fasta
+RS_GCF_002927475.1_11.fasta
+RS_GCF_002927455.1_18.fasta
+RS_GCF_002927375.1_4.fasta
+RS_GCF_002927335.1_8.fasta
+RS_GCF_002927335.1_1.fasta
+RS_GCF_002927305.1_3.fasta
+RS_GCF_001486965.1_17.fasta
+GB_GCA_001487005.1_0.fasta
+GB_GCA_001486985.1_18.fasta
+GB_GCA_001486985.1_15.fasta
+GB_GCA_001486925.1_19.fasta
+GB_GCA_001486905.1_19.fasta
+GB_GCA_001486905.1_15.fasta
+GB_GCA_001486845.1_16.fasta
+GB_GCA_001486825.1_2.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_001643995.1_9.fasta
+RS_GCF_001643995.1_7.fasta
+RS_GCF_001643995.1_6.fasta
+RS_GCF_001643995.1_3.fasta
+RS_GCF_001643995.1_19.fasta
+RS_GCF_001643995.1_17.fasta
+RS_GCF_001643995.1_15.fasta
+RS_GCF_001643995.1_13.fasta
+RS_GCF_001483985.1_9.fasta
+RS_GCF_001483985.1_3.fasta
+RS_GCF_001483985.1_18.fasta
+RS_GCF_001483985.1_16.fasta
+RS_GCF_001483985.1_14.fasta
+RS_GCF_001483985.1_11.fasta
+RS_GCF_001483985.1_10.fasta
+RS_GCF_001483985.1_1.fasta
+RS_GCF_000736415.1_9.fasta
+RS_GCF_000736415.1_5.fasta
+RS_GCF_000736415.1_4.fasta
+RS_GCF_000736415.1_3.fasta
+RS_GCF_000736415.1_2.fasta
+RS_GCF_000736415.1_19.fasta
+RS_GCF_000736415.1_18.fasta
+RS_GCF_000736415.1_17.fasta
+RS_GCF_000736415.1_14.fasta
+RS_GCF_000736415.1_12.fasta
+RS_GCF_000736415.1_11.fasta
+RS_GCF_000736415.1_10.fasta
+RS_GCF_000736415.1_1.fasta
+RS_GCF_000736415.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902385725.1_7.fasta
+RS_GCF_008000595.1_6.fasta
+RS_GCF_008000595.1_18.fasta
+RS_GCF_002139935.1_10.fasta
+RS_GCF_002139425.1_11.fasta
+RS_GCF_002139375.1_4.fasta
+RS_GCF_002139375.1_2.fasta
+RS_GCF_002139335.1_10.fasta
+RS_GCF_002139315.1_14.fasta
+RS_GCF_002139265.1_4.fasta
+RS_GCF_002139265.1_17.fasta
+RS_GCF_002139265.1_15.fasta
+RS_GCF_002139255.1_14.fasta
+RS_GCF_002139255.1_1.fasta
+RS_GCF_002139235.1_10.fasta
+RS_GCF_002139215.1_8.fasta
+RS_GCF_002139215.1_18.fasta
+RS_GCF_002138675.1_4.fasta
+RS_GCF_002138675.1_18.fasta
+RS_GCF_002138635.1_3.fasta
+RS_GCF_002138615.1_12.fasta
+RS_GCF_002138605.1_3.fasta
+RS_GCF_002138605.1_11.fasta
+RS_GCF_002138595.1_1.fasta
+RS_GCF_002138565.1_5.fasta
+RS_GCF_002138535.1_2.fasta
+RS_GCF_002138485.1_0.fasta
+RS_GCF_002138455.1_0.fasta
+RS_GCF_002138445.1_7.fasta
+RS_GCF_002138435.1_19.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_013372165.1_2.fasta
+RS_GCF_013372165.1_19.fasta
+RS_GCF_013372165.1_13.fasta
+RS_GCF_008000555.1_19.fasta
+RS_GCF_008000555.1_14.fasta
+RS_GCF_008000555.1_10.fasta
+RS_GCF_003289885.1_4.fasta
+RS_GCF_003289885.1_2.fasta
+RS_GCF_003289885.1_18.fasta
+RS_GCF_003289875.1_9.fasta
+RS_GCF_003289875.1_16.fasta
+RS_GCF_003289875.1_13.fasta
+RS_GCF_003289875.1_12.fasta
+RS_GCF_003289865.1_4.fasta
+RS_GCF_003289845.1_19.fasta
+RS_GCF_003289845.1_17.fasta
+RS_GCF_003289845.1_12.fasta
+RS_GCF_003289845.1_0.fasta
+RS_GCF_003289585.1_6.fasta
+RS_GCF_003289565.1_5.fasta
+RS_GCF_003289565.1_3.fasta
+RS_GCF_003289565.1_2.fasta
+RS_GCF_003289565.1_13.fasta
+RS_GCF_003289555.1_17.fasta
+RS_GCF_003289555.1_10.fasta
+RS_GCF_003289525.1_7.fasta
+RS_GCF_003289475.1_19.fasta
+RS_GCF_003289475.1_1.fasta
+RS_GCF_001643975.1_13.fasta
+RS_GCF_001643975.1_10.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_002139855.1_9.fasta
+RS_GCF_002139855.1_5.fasta
+RS_GCF_002139855.1_2.fasta
+RS_GCF_002139855.1_18.fasta
+RS_GCF_002139855.1_16.fasta
+RS_GCF_002139855.1_13.fasta
+RS_GCF_002139855.1_11.fasta
+RS_GCF_002139855.1_10.fasta
+RS_GCF_002139775.1_7.fasta
+RS_GCF_002139775.1_6.fasta
+RS_GCF_002139775.1_5.fasta
+RS_GCF_002139775.1_17.fasta
+RS_GCF_002139775.1_15.fasta
+RS_GCF_002139775.1_14.fasta
+RS_GCF_002139775.1_11.fasta
+RS_GCF_002139105.1_9.fasta
+RS_GCF_002139105.1_7.fasta
+RS_GCF_002139105.1_19.fasta
+RS_GCF_002139105.1_16.fasta
+RS_GCF_002139105.1_14.fasta
+RS_GCF_002139105.1_12.fasta
+RS_GCF_002139105.1_11.fasta
+RS_GCF_002139105.1_10.fasta
+RS_GCF_002139105.1_1.fasta
+RS_GCF_002139075.1_9.fasta
+RS_GCF_002139075.1_7.fasta
+RS_GCF_002139075.1_5.fasta
+RS_GCF_002139075.1_4.fasta
+RS_GCF_002139075.1_3.fasta
+RS_GCF_002139075.1_18.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_002139895.1_2.fasta
+RS_GCF_002139895.1_18.fasta
+RS_GCF_002139895.1_14.fasta
+RS_GCF_002139895.1_12.fasta
+RS_GCF_002139895.1_11.fasta
+RS_GCF_002139895.1_1.fasta
+RS_GCF_002139895.1_0.fasta
+RS_GCF_002139875.1_13.fasta
+RS_GCF_002139875.1_11.fasta
+RS_GCF_002139825.1_16.fasta
+RS_GCF_002139825.1_11.fasta
+RS_GCF_002139815.1_14.fasta
+RS_GCF_002139815.1_0.fasta
+RS_GCF_002139795.1_9.fasta
+RS_GCF_002139185.1_13.fasta
+RS_GCF_002139185.1_12.fasta
+RS_GCF_002139185.1_1.fasta
+RS_GCF_002139175.1_9.fasta
+RS_GCF_002139175.1_4.fasta
+RS_GCF_002139175.1_2.fasta
+RS_GCF_002139175.1_15.fasta
+RS_GCF_002139175.1_0.fasta
+RS_GCF_002139155.1_3.fasta
+RS_GCF_002139155.1_10.fasta
+RS_GCF_002139135.1_4.fasta
+RS_GCF_002139135.1_17.fasta
+RS_GCF_002139135.1_16.fasta
+RS_GCF_002139135.1_0.fasta
+RS_GCF_002139095.1_11.fasta
+RS_GCF_002139095.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_002139915.1_2.fasta
+RS_GCF_002139735.1_12.fasta
+RS_GCF_002139705.1_1.fasta
+RS_GCF_002139695.1_18.fasta
+RS_GCF_002139665.1_8.fasta
+RS_GCF_002139655.1_9.fasta
+RS_GCF_002139655.1_4.fasta
+RS_GCF_002139625.1_16.fasta
+RS_GCF_002139615.1_6.fasta
+RS_GCF_002139615.1_4.fasta
+RS_GCF_002139615.1_18.fasta
+RS_GCF_002139575.1_7.fasta
+RS_GCF_002139575.1_6.fasta
+RS_GCF_002139575.1_10.fasta
+RS_GCF_002139545.1_3.fasta
+RS_GCF_002139505.1_12.fasta
+RS_GCF_002139465.1_12.fasta
+RS_GCF_002139055.1_4.fasta
+RS_GCF_002138995.1_4.fasta
+RS_GCF_002138975.1_10.fasta
+RS_GCF_002138945.1_5.fasta
+RS_GCF_002138915.1_8.fasta
+RS_GCF_002138895.1_5.fasta
+RS_GCF_002138865.1_7.fasta
+RS_GCF_002138865.1_2.fasta
+RS_GCF_002138785.1_15.fasta
+RS_GCF_002138755.1_7.fasta
+RS_GCF_002138755.1_15.fasta
+RS_GCF_002138755.1_11.fasta
+RS_GCF_002138705.1_3.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002317305.1_9.fasta
+GB_GCA_002317305.1_8.fasta
+GB_GCA_002317305.1_7.fasta
+GB_GCA_002317305.1_6.fasta
+GB_GCA_002317305.1_5.fasta
+GB_GCA_002317305.1_4.fasta
+GB_GCA_002317305.1_3.fasta
+GB_GCA_002317305.1_2.fasta
+GB_GCA_002317305.1_19.fasta
+GB_GCA_002317305.1_18.fasta
+GB_GCA_002317305.1_17.fasta
+GB_GCA_002317305.1_16.fasta
+GB_GCA_002317305.1_15.fasta
+GB_GCA_002317305.1_14.fasta
+GB_GCA_002317305.1_13.fasta
+GB_GCA_002317305.1_12.fasta
+GB_GCA_002317305.1_11.fasta
+GB_GCA_002317305.1_10.fasta
+GB_GCA_002317305.1_1.fasta
+GB_GCA_002317305.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900766765.1_9.fasta
+RS_GCF_900766765.1_8.fasta
+RS_GCF_900766765.1_6.fasta
+RS_GCF_900766765.1_3.fasta
+RS_GCF_900766765.1_16.fasta
+RS_GCF_900766765.1_14.fasta
+RS_GCF_900766765.1_13.fasta
+RS_GCF_900766765.1_10.fasta
+RS_GCF_900766765.1_0.fasta
+RS_GCF_013416015.1_8.fasta
+RS_GCF_013416015.1_6.fasta
+RS_GCF_013416015.1_5.fasta
+RS_GCF_013416015.1_4.fasta
+RS_GCF_013416015.1_3.fasta
+RS_GCF_013416015.1_2.fasta
+RS_GCF_013416015.1_19.fasta
+RS_GCF_013416015.1_18.fasta
+RS_GCF_013416015.1_17.fasta
+RS_GCF_013416015.1_15.fasta
+RS_GCF_013416015.1_14.fasta
+RS_GCF_013416015.1_12.fasta
+RS_GCF_013416015.1_11.fasta
+RS_GCF_013416015.1_1.fasta
+GB_GCA_009827235.1_9.fasta
+GB_GCA_009827235.1_7.fasta
+GB_GCA_009827235.1_5.fasta
+GB_GCA_009827235.1_16.fasta
+GB_GCA_009827235.1_13.fasta
+GB_GCA_009827235.1_10.fasta
+GB_GCA_009827235.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902795495.1_9.fasta
+RS_GCF_902795495.1_8.fasta
+RS_GCF_902795495.1_7.fasta
+RS_GCF_902795495.1_6.fasta
+RS_GCF_902795495.1_5.fasta
+RS_GCF_902795495.1_4.fasta
+RS_GCF_902795495.1_3.fasta
+RS_GCF_902795495.1_19.fasta
+RS_GCF_902795495.1_18.fasta
+RS_GCF_902795495.1_17.fasta
+RS_GCF_902795495.1_16.fasta
+RS_GCF_902795495.1_15.fasta
+RS_GCF_902795495.1_14.fasta
+RS_GCF_902795495.1_12.fasta
+RS_GCF_902795495.1_1.fasta
+RS_GCF_902795495.1_0.fasta
+GB_GCA_900319915.1_9.fasta
+GB_GCA_900319915.1_8.fasta
+GB_GCA_900319915.1_6.fasta
+GB_GCA_900319915.1_4.fasta
+GB_GCA_900319915.1_3.fasta
+GB_GCA_900319915.1_2.fasta
+GB_GCA_900319915.1_18.fasta
+GB_GCA_900319915.1_16.fasta
+GB_GCA_900319915.1_15.fasta
+GB_GCA_900319915.1_14.fasta
+GB_GCA_900319915.1_13.fasta
+GB_GCA_900319915.1_12.fasta
+GB_GCA_900319915.1_11.fasta
+GB_GCA_900319915.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900753405.1_9.fasta
+RS_GCF_900753405.1_8.fasta
+RS_GCF_900753405.1_7.fasta
+RS_GCF_900753405.1_6.fasta
+RS_GCF_900753405.1_5.fasta
+RS_GCF_900753405.1_4.fasta
+RS_GCF_900753405.1_3.fasta
+RS_GCF_900753405.1_2.fasta
+RS_GCF_900753405.1_19.fasta
+RS_GCF_900753405.1_18.fasta
+RS_GCF_900753405.1_17.fasta
+RS_GCF_900753405.1_16.fasta
+RS_GCF_900753405.1_15.fasta
+RS_GCF_900753405.1_14.fasta
+RS_GCF_900753405.1_13.fasta
+RS_GCF_900753405.1_12.fasta
+RS_GCF_900753405.1_11.fasta
+RS_GCF_900753405.1_10.fasta
+RS_GCF_900753405.1_1.fasta
+RS_GCF_900753405.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902386455.1_10.fasta
+RS_GCF_013184585.1_0.fasta
+RS_GCF_013184565.1_6.fasta
+RS_GCF_010883215.1_13.fasta
+RS_GCF_010883155.1_19.fasta
+RS_GCF_010883155.1_10.fasta
+RS_GCF_010883135.1_10.fasta
+RS_GCF_010120605.1_15.fasta
+RS_GCF_010120605.1_12.fasta
+RS_GCF_005255865.1_3.fasta
+RS_GCF_005255865.1_2.fasta
+RS_GCF_005014935.1_9.fasta
+RS_GCF_005014935.1_3.fasta
+RS_GCF_005014935.1_1.fasta
+RS_GCF_002973655.1_13.fasta
+RS_GCF_001699485.1_17.fasta
+RS_GCF_001699485.1_0.fasta
+RS_GCF_001699425.1_13.fasta
+RS_GCF_001699415.1_6.fasta
+RS_GCF_001699385.1_17.fasta
+RS_GCF_001699365.1_8.fasta
+RS_GCF_001699365.1_13.fasta
+RS_GCF_001699335.1_14.fasta
+RS_GCF_001699295.1_12.fasta
+RS_GCF_001699265.1_19.fasta
+RS_GCF_001699255.1_4.fasta
+RS_GCF_001699205.1_8.fasta
+RS_GCF_001699135.1_19.fasta
+RS_GCF_001699135.1_18.fasta
+GB_GCA_010883085.1_11.fasta
+Generating CGRs.... 
+totalSeq is: 370
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Campylobacter
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 1
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 4 through 6
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 7 through 9
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'s__Campylobact...'}
+
+  Columns 4 through 6
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 7 through 9
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 7 through 9
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 7 through 9
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'s__Campylobact...'}
+
+  Columns 7 through 9
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'8-s__Campyloba...'}    {'s__Campylobact...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'8-s__Campyloba...'}    {'9-s__Campyloba...'}
+
+  Columns 10 through 12
+
+    {'s__Campylobact...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'8-s__Campyloba...'}    {'9-s__Campyloba...'}
+
+  Columns 10 through 12
+
+    {'10-s__Campylob...'}    {'s__Campylobact...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'8-s__Campyloba...'}    {'9-s__Campyloba...'}
+
+  Columns 10 through 12
+
+    {'10-s__Campylob...'}    {'11-s__Campylob...'}    {'s__Campylobact...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'8-s__Campyloba...'}    {'9-s__Campyloba...'}
+
+  Columns 10 through 12
+
+    {'10-s__Campylob...'}    {'11-s__Campylob...'}    {'12-s__Campylob...'}
+
+  Column 13
+
+    {'s__Campylobact...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'8-s__Campyloba...'}    {'9-s__Campyloba...'}
+
+  Columns 10 through 12
+
+    {'10-s__Campylob...'}    {'11-s__Campylob...'}    {'12-s__Campylob...'}
+
+  Column 13
+
+    {'13-s__Campylob...'}
+
+  Columns 1 through 3
+
+    '1-s__Campylobact...'    '2-s__Campylobact...'    '3-s__Campylobact...'
+
+  Columns 4 through 6
+
+    '4-s__Campylobact...'    '5-s__Campylobact...'    '6-s__Campylobact...'
+
+  Columns 7 through 9
+
+    '7-s__Campylobact...'    '8-s__Campylobact...'    '9-s__Campylobact...'
+
+  Columns 10 through 12
+
+    '10-s__Campylobac...'    '11-s__Campylobac...'    '12-s__Campylobac...'
+
+  Column 13
+
+    '13-s__Campylobac...'
+
+
+header =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Campyloba...'}    {'2-s__Campyloba...'}    {'3-s__Campyloba...'}
+
+  Columns 4 through 6
+
+    {'4-s__Campyloba...'}    {'5-s__Campyloba...'}    {'6-s__Campyloba...'}
+
+  Columns 7 through 9
+
+    {'7-s__Campyloba...'}    {'8-s__Campyloba...'}    {'9-s__Campyloba...'}
+
+  Columns 10 through 12
+
+    {'10-s__Campylob...'}    {'11-s__Campylob...'}    {'12-s__Campylob...'}
+
+  Columns 13 through 14
+
+    {'13-s__Campylob...'}    {'prediction'}
+
+
+T3 =
+
+  1x14 table
+
+                    1-s__Campylobacter fetus    2-s__Campylobacter hyointestinalis    3-s__Campylobacter iguaniorum    4-s__Campylobacter lanienae    5-s__Campylobacter lawsonii    6-s__Campylobacter sp002139855    7-s__Campylobacter sp002139875    8-s__Campylobacter sp002139915    9-s__Campylobacter sp002317305    10-s__Campylobacter sp013416015    11-s__Campylobacter sp900319915    12-s__Campylobacter sp900753405    13-s__Campylobacter testudinum    prediction
+                    ________________________    __________________________________    _____________________________    ___________________________    ___________________________    ______________________________    ______________________________    ______________________________    ______________________________    _______________________________    _______________________________    _______________________________    ______________________________    __________
+
+    RUG537.fasta               0                                0                                   0                               0                              0                               0                                 0                                 0                                 0                                  0                                  1                                  0                                 0                       11    
+
+
+outputPath = 
+
+    "outputs-GTDB-r202/test-g__Campylobacter.xlsx"
+
+Process completed 
+[?1l>
