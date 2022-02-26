@@ -25,7 +25,7 @@ import sys
 random.seed(0)
 sample_factor, sample_size, tax_name, use_factor, cluster_num, \
     cluster_names, lower, upper, use_const_len, const_len, frags_num, \
-        alter, id, outdir, rep_time = parse_json_input(sys.argv[1])
+        alter, id, outdir, rep_time, full = parse_json_input(sys.argv[1])
 
 print(parse_json_input(sys.argv[1]))
 if not outdir:

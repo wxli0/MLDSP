@@ -27,7 +27,7 @@ import sys
 random.seed(0)
 sample_factor, sample_size, tax_name, use_factor, cluster_num, \
     cluster_names, lower, upper, use_const_len, const_len, frags_num, \
-        alter, id, outdir, rep_time = parse_json_input(sys.argv[1])
+        alter, id, outdir, rep_time, full = parse_json_input(sys.argv[1])
 
 if not outdir:
     outdir = tax_name
@@ -71,5 +71,5 @@ for cluster_name in cluster_names:
         print("enter here")
         os.makedirs(cluster_dir_full)
     download_genomes(selected_genomes, cluster_dir_full, lower, \
-        upper, use_const_len, const_len, frags_num, alter, rep_time=rep_time)
+        upper, use_const_len, const_len, frags_num, alter, rep_time=rep_time, full=full)
 

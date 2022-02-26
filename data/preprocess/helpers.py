@@ -291,6 +291,7 @@ def parse_json_input(input_file_name):
     alter = None
     outdir = None
     rep_time = 1
+    full = False
 
     if json_input['use_factor']:
         sample_factor = json_input['sample_factor']
@@ -317,9 +318,11 @@ def parse_json_input(input_file_name):
         outdir = json_input['outdir']
     if 'rep_time' in json_input:
         rep_time = json_input['rep_time']
+    if 'full' in json_input:
+        full=  json_input['full']
     return sample_factor, sample_size, tax_name, use_factor, cluster_num, \
         cluster_names, int(lower), int(upper), use_const_len, const_len, \
-            frags_num, alter, id, outdir, rep_time
+            frags_num, alter, id, outdir, rep_time, full
 
 def parse_json_test_input(input_file_name):
     """

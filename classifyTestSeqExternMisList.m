@@ -70,6 +70,7 @@ function [pMat,mList3] = classifyTestSeqExternMisList(dataType, AcNmbTest,Fnm, d
     fprintf("numTestSeq is: %d\n", numTestSeq);
     score3Matrix = zeros(numTestSeq, length(clusterNames)+1);
 
+    % for example-wise confidence, add to here the anomaly score of dismat (training set)
     for s=1:numTestSeq
         testV = disMatTrainTest(s,1:totalSeq);
         clabel3 = "";
