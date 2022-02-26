@@ -285,7 +285,7 @@ def parse_json_input(input_file_name):
     use_factor = json_input['use_factor']
     cluster_names = json_input['cluster_names']
     frags_num = 1
-    use_const_len = json_input['use_const_len']
+    use_const_len = None
     const_len = None
     id = None
     alter = None
@@ -300,6 +300,8 @@ def parse_json_input(input_file_name):
     cluster_num = len(cluster_names)
     lower = 1e5
     upper = 2e5
+    if 'use_const_len' in json_input:
+        use_const_len = json_input['use_const_len']
     if 'lower' in json_input:
         lower = json_input['lower']
     if 'upper' in json_input:
