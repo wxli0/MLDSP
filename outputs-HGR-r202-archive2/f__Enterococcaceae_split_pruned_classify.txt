@@ -1,0 +1,1029 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__Enterococcaceae_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/f__Enterococcaceae"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20298_3_11_4.fasta
+label_20298_3_11_3.fasta
+label_20298_3_11_2.fasta
+label_20298_3_11_1.fasta
+label_20298_3_11_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1952_99.fasta
+label_UMGS1952_98.fasta
+label_UMGS1952_97.fasta
+label_UMGS1952_96.fasta
+label_UMGS1952_95.fasta
+label_UMGS1952_94.fasta
+label_UMGS1952_93.fasta
+label_UMGS1952_92.fasta
+label_UMGS1952_91.fasta
+label_UMGS1952_90.fasta
+label_UMGS1952_9.fasta
+label_UMGS1952_89.fasta
+label_UMGS1952_88.fasta
+label_UMGS1952_87.fasta
+label_UMGS1952_86.fasta
+label_UMGS1952_85.fasta
+label_UMGS1952_84.fasta
+label_UMGS1952_83.fasta
+label_UMGS1952_82.fasta
+label_UMGS1952_81.fasta
+label_UMGS1952_80.fasta
+label_UMGS1952_8.fasta
+label_UMGS1952_79.fasta
+label_UMGS1952_78.fasta
+label_UMGS1952_77.fasta
+label_UMGS1952_76.fasta
+label_UMGS1952_75.fasta
+label_UMGS1952_74.fasta
+label_UMGS1952_73.fasta
+label_UMGS1952_72.fasta
+label_UMGS1952_71.fasta
+label_UMGS1952_70.fasta
+label_UMGS1952_7.fasta
+label_UMGS1952_69.fasta
+label_UMGS1952_68.fasta
+label_UMGS1952_67.fasta
+label_UMGS1952_66.fasta
+label_UMGS1952_65.fasta
+label_UMGS1952_64.fasta
+label_UMGS1952_63.fasta
+label_UMGS1952_62.fasta
+label_UMGS1952_61.fasta
+label_UMGS1952_60.fasta
+label_UMGS1952_6.fasta
+label_UMGS1952_59.fasta
+label_UMGS1952_58.fasta
+label_UMGS1952_57.fasta
+label_UMGS1952_56.fasta
+label_UMGS1952_55.fasta
+label_UMGS1952_54.fasta
+label_UMGS1952_53.fasta
+label_UMGS1952_52.fasta
+label_UMGS1952_51.fasta
+label_UMGS1952_50.fasta
+label_UMGS1952_5.fasta
+label_UMGS1952_49.fasta
+label_UMGS1952_48.fasta
+label_UMGS1952_47.fasta
+label_UMGS1952_46.fasta
+label_UMGS1952_45.fasta
+label_UMGS1952_44.fasta
+label_UMGS1952_43.fasta
+label_UMGS1952_42.fasta
+label_UMGS1952_41.fasta
+label_UMGS1952_40.fasta
+label_UMGS1952_4.fasta
+label_UMGS1952_39.fasta
+label_UMGS1952_38.fasta
+label_UMGS1952_37.fasta
+label_UMGS1952_36.fasta
+label_UMGS1952_35.fasta
+label_UMGS1952_34.fasta
+label_UMGS1952_33.fasta
+label_UMGS1952_32.fasta
+label_UMGS1952_31.fasta
+label_UMGS1952_30.fasta
+label_UMGS1952_3.fasta
+label_UMGS1952_29.fasta
+label_UMGS1952_28.fasta
+label_UMGS1952_27.fasta
+label_UMGS1952_26.fasta
+label_UMGS1952_25.fasta
+label_UMGS1952_24.fasta
+label_UMGS1952_23.fasta
+label_UMGS1952_22.fasta
+label_UMGS1952_21.fasta
+label_UMGS1952_20.fasta
+label_UMGS1952_2.fasta
+label_UMGS1952_19.fasta
+label_UMGS1952_18.fasta
+label_UMGS1952_170.fasta
+label_UMGS1952_17.fasta
+label_UMGS1952_169.fasta
+label_UMGS1952_168.fasta
+label_UMGS1952_167.fasta
+label_UMGS1952_166.fasta
+label_UMGS1952_165.fasta
+label_UMGS1952_164.fasta
+label_UMGS1952_163.fasta
+label_UMGS1952_162.fasta
+label_UMGS1952_161.fasta
+label_UMGS1952_160.fasta
+label_UMGS1952_16.fasta
+label_UMGS1952_159.fasta
+label_UMGS1952_158.fasta
+label_UMGS1952_157.fasta
+label_UMGS1952_156.fasta
+label_UMGS1952_155.fasta
+label_UMGS1952_154.fasta
+label_UMGS1952_153.fasta
+label_UMGS1952_152.fasta
+label_UMGS1952_151.fasta
+label_UMGS1952_150.fasta
+label_UMGS1952_15.fasta
+label_UMGS1952_149.fasta
+label_UMGS1952_148.fasta
+label_UMGS1952_147.fasta
+label_UMGS1952_146.fasta
+label_UMGS1952_145.fasta
+label_UMGS1952_144.fasta
+label_UMGS1952_143.fasta
+label_UMGS1952_142.fasta
+label_UMGS1952_141.fasta
+label_UMGS1952_140.fasta
+label_UMGS1952_14.fasta
+label_UMGS1952_139.fasta
+label_UMGS1952_138.fasta
+label_UMGS1952_137.fasta
+label_UMGS1952_136.fasta
+label_UMGS1952_135.fasta
+label_UMGS1952_134.fasta
+label_UMGS1952_133.fasta
+label_UMGS1952_132.fasta
+label_UMGS1952_131.fasta
+label_UMGS1952_130.fasta
+label_UMGS1952_13.fasta
+label_UMGS1952_129.fasta
+label_UMGS1952_128.fasta
+label_UMGS1952_127.fasta
+label_UMGS1952_126.fasta
+label_UMGS1952_125.fasta
+label_UMGS1952_124.fasta
+label_UMGS1952_123.fasta
+label_UMGS1952_122.fasta
+label_UMGS1952_121.fasta
+label_UMGS1952_120.fasta
+label_UMGS1952_12.fasta
+label_UMGS1952_119.fasta
+label_UMGS1952_118.fasta
+label_UMGS1952_117.fasta
+label_UMGS1952_116.fasta
+label_UMGS1952_115.fasta
+label_UMGS1952_114.fasta
+label_UMGS1952_113.fasta
+label_UMGS1952_112.fasta
+label_UMGS1952_111.fasta
+label_UMGS1952_110.fasta
+label_UMGS1952_11.fasta
+label_UMGS1952_109.fasta
+label_UMGS1952_108.fasta
+label_UMGS1952_107.fasta
+label_UMGS1952_106.fasta
+label_UMGS1952_105.fasta
+label_UMGS1952_104.fasta
+label_UMGS1952_103.fasta
+label_UMGS1952_102.fasta
+label_UMGS1952_101.fasta
+label_UMGS1952_100.fasta
+label_UMGS1952_10.fasta
+label_UMGS1952_1.fasta
+label_UMGS1952_0.fasta
+label_UMGS1367_99.fasta
+label_UMGS1367_98.fasta
+label_UMGS1367_97.fasta
+label_UMGS1367_96.fasta
+label_UMGS1367_95.fasta
+label_UMGS1367_94.fasta
+label_UMGS1367_93.fasta
+label_UMGS1367_92.fasta
+label_UMGS1367_91.fasta
+label_UMGS1367_90.fasta
+label_UMGS1367_9.fasta
+label_UMGS1367_89.fasta
+label_UMGS1367_88.fasta
+label_UMGS1367_87.fasta
+label_UMGS1367_86.fasta
+label_UMGS1367_85.fasta
+label_UMGS1367_84.fasta
+label_UMGS1367_83.fasta
+label_UMGS1367_82.fasta
+label_UMGS1367_81.fasta
+label_UMGS1367_80.fasta
+label_UMGS1367_8.fasta
+label_UMGS1367_79.fasta
+label_UMGS1367_78.fasta
+label_UMGS1367_77.fasta
+label_UMGS1367_76.fasta
+label_UMGS1367_75.fasta
+label_UMGS1367_74.fasta
+label_UMGS1367_73.fasta
+label_UMGS1367_72.fasta
+label_UMGS1367_71.fasta
+label_UMGS1367_70.fasta
+label_UMGS1367_7.fasta
+label_UMGS1367_69.fasta
+label_UMGS1367_68.fasta
+label_UMGS1367_67.fasta
+label_UMGS1367_66.fasta
+label_UMGS1367_65.fasta
+label_UMGS1367_64.fasta
+label_UMGS1367_63.fasta
+label_UMGS1367_62.fasta
+label_UMGS1367_61.fasta
+label_UMGS1367_60.fasta
+label_UMGS1367_6.fasta
+label_UMGS1367_59.fasta
+label_UMGS1367_58.fasta
+label_UMGS1367_57.fasta
+label_UMGS1367_56.fasta
+label_UMGS1367_55.fasta
+label_UMGS1367_54.fasta
+label_UMGS1367_53.fasta
+label_UMGS1367_52.fasta
+label_UMGS1367_51.fasta
+label_UMGS1367_50.fasta
+label_UMGS1367_5.fasta
+label_UMGS1367_49.fasta
+label_UMGS1367_48.fasta
+label_UMGS1367_47.fasta
+label_UMGS1367_46.fasta
+label_UMGS1367_45.fasta
+label_UMGS1367_44.fasta
+label_UMGS1367_43.fasta
+label_UMGS1367_42.fasta
+label_UMGS1367_41.fasta
+label_UMGS1367_40.fasta
+label_UMGS1367_4.fasta
+label_UMGS1367_39.fasta
+label_UMGS1367_38.fasta
+label_UMGS1367_37.fasta
+label_UMGS1367_36.fasta
+label_UMGS1367_35.fasta
+label_UMGS1367_34.fasta
+label_UMGS1367_33.fasta
+label_UMGS1367_32.fasta
+label_UMGS1367_31.fasta
+label_UMGS1367_30.fasta
+label_UMGS1367_3.fasta
+label_UMGS1367_29.fasta
+label_UMGS1367_28.fasta
+label_UMGS1367_27.fasta
+label_UMGS1367_26.fasta
+label_UMGS1367_25.fasta
+label_UMGS1367_24.fasta
+label_UMGS1367_238.fasta
+label_UMGS1367_237.fasta
+label_UMGS1367_236.fasta
+label_UMGS1367_235.fasta
+label_UMGS1367_234.fasta
+label_UMGS1367_233.fasta
+label_UMGS1367_232.fasta
+label_UMGS1367_231.fasta
+label_UMGS1367_230.fasta
+label_UMGS1367_23.fasta
+label_UMGS1367_229.fasta
+label_UMGS1367_228.fasta
+label_UMGS1367_227.fasta
+label_UMGS1367_226.fasta
+label_UMGS1367_225.fasta
+label_UMGS1367_224.fasta
+label_UMGS1367_223.fasta
+label_UMGS1367_222.fasta
+label_UMGS1367_221.fasta
+label_UMGS1367_220.fasta
+label_UMGS1367_22.fasta
+label_UMGS1367_219.fasta
+label_UMGS1367_218.fasta
+label_UMGS1367_217.fasta
+label_UMGS1367_216.fasta
+label_UMGS1367_215.fasta
+label_UMGS1367_214.fasta
+label_UMGS1367_213.fasta
+label_UMGS1367_212.fasta
+label_UMGS1367_211.fasta
+label_UMGS1367_210.fasta
+label_UMGS1367_21.fasta
+label_UMGS1367_209.fasta
+label_UMGS1367_208.fasta
+label_UMGS1367_207.fasta
+label_UMGS1367_206.fasta
+label_UMGS1367_205.fasta
+label_UMGS1367_204.fasta
+label_UMGS1367_203.fasta
+label_UMGS1367_202.fasta
+label_UMGS1367_201.fasta
+label_UMGS1367_200.fasta
+label_UMGS1367_20.fasta
+label_UMGS1367_2.fasta
+label_UMGS1367_199.fasta
+label_UMGS1367_198.fasta
+label_UMGS1367_197.fasta
+label_UMGS1367_196.fasta
+label_UMGS1367_195.fasta
+label_UMGS1367_194.fasta
+label_UMGS1367_193.fasta
+label_UMGS1367_192.fasta
+label_UMGS1367_191.fasta
+label_UMGS1367_190.fasta
+label_UMGS1367_19.fasta
+label_UMGS1367_189.fasta
+label_UMGS1367_188.fasta
+label_UMGS1367_187.fasta
+label_UMGS1367_186.fasta
+label_UMGS1367_185.fasta
+label_UMGS1367_184.fasta
+label_UMGS1367_183.fasta
+label_UMGS1367_182.fasta
+label_UMGS1367_181.fasta
+label_UMGS1367_180.fasta
+label_UMGS1367_18.fasta
+label_UMGS1367_179.fasta
+label_UMGS1367_178.fasta
+label_UMGS1367_177.fasta
+label_UMGS1367_176.fasta
+label_UMGS1367_175.fasta
+label_UMGS1367_174.fasta
+label_UMGS1367_173.fasta
+label_UMGS1367_172.fasta
+label_UMGS1367_171.fasta
+label_UMGS1367_170.fasta
+label_UMGS1367_17.fasta
+label_UMGS1367_169.fasta
+label_UMGS1367_168.fasta
+label_UMGS1367_167.fasta
+label_UMGS1367_166.fasta
+label_UMGS1367_165.fasta
+label_UMGS1367_164.fasta
+label_UMGS1367_163.fasta
+label_UMGS1367_162.fasta
+label_UMGS1367_161.fasta
+label_UMGS1367_160.fasta
+label_UMGS1367_16.fasta
+label_UMGS1367_159.fasta
+label_UMGS1367_158.fasta
+label_UMGS1367_157.fasta
+label_UMGS1367_156.fasta
+label_UMGS1367_155.fasta
+label_UMGS1367_154.fasta
+label_UMGS1367_153.fasta
+label_UMGS1367_152.fasta
+label_UMGS1367_151.fasta
+label_UMGS1367_150.fasta
+label_UMGS1367_15.fasta
+label_UMGS1367_149.fasta
+label_UMGS1367_148.fasta
+label_UMGS1367_147.fasta
+label_UMGS1367_146.fasta
+label_UMGS1367_145.fasta
+label_UMGS1367_144.fasta
+label_UMGS1367_143.fasta
+label_UMGS1367_142.fasta
+label_UMGS1367_141.fasta
+label_UMGS1367_140.fasta
+label_UMGS1367_14.fasta
+label_UMGS1367_139.fasta
+label_UMGS1367_138.fasta
+label_UMGS1367_137.fasta
+label_UMGS1367_136.fasta
+label_UMGS1367_135.fasta
+label_UMGS1367_134.fasta
+label_UMGS1367_133.fasta
+label_UMGS1367_132.fasta
+label_UMGS1367_131.fasta
+label_UMGS1367_130.fasta
+label_UMGS1367_13.fasta
+label_UMGS1367_129.fasta
+label_UMGS1367_128.fasta
+label_UMGS1367_127.fasta
+label_UMGS1367_126.fasta
+label_UMGS1367_125.fasta
+label_UMGS1367_124.fasta
+label_UMGS1367_123.fasta
+label_UMGS1367_122.fasta
+label_UMGS1367_121.fasta
+label_UMGS1367_120.fasta
+label_UMGS1367_12.fasta
+label_UMGS1367_119.fasta
+label_UMGS1367_118.fasta
+label_UMGS1367_117.fasta
+label_UMGS1367_116.fasta
+label_UMGS1367_115.fasta
+label_UMGS1367_114.fasta
+label_UMGS1367_113.fasta
+label_UMGS1367_112.fasta
+label_UMGS1367_111.fasta
+label_UMGS1367_110.fasta
+label_UMGS1367_11.fasta
+label_UMGS1367_109.fasta
+label_UMGS1367_108.fasta
+label_UMGS1367_107.fasta
+label_UMGS1367_106.fasta
+label_UMGS1367_105.fasta
+label_UMGS1367_104.fasta
+label_UMGS1367_103.fasta
+label_UMGS1367_102.fasta
+label_UMGS1367_101.fasta
+label_UMGS1367_100.fasta
+label_UMGS1367_10.fasta
+label_UMGS1367_1.fasta
+label_UMGS1367_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000159675_7.fasta
+label_GCF_000159675_6.fasta
+label_GCF_000159675_5.fasta
+label_GCF_000159675_4.fasta
+label_GCF_000159675_3.fasta
+label_GCF_000159675_2.fasta
+label_GCF_000159675_1.fasta
+label_GCF_000159675_0.fasta
+label_21673_4_43_9.fasta
+label_21673_4_43_8.fasta
+label_21673_4_43_7.fasta
+label_21673_4_43_6.fasta
+label_21673_4_43_5.fasta
+label_21673_4_43_4.fasta
+label_21673_4_43_3.fasta
+label_21673_4_43_23.fasta
+label_21673_4_43_22.fasta
+label_21673_4_43_21.fasta
+label_21673_4_43_20.fasta
+label_21673_4_43_2.fasta
+label_21673_4_43_19.fasta
+label_21673_4_43_18.fasta
+label_21673_4_43_17.fasta
+label_21673_4_43_16.fasta
+label_21673_4_43_15.fasta
+label_21673_4_43_14.fasta
+label_21673_4_43_13.fasta
+label_21673_4_43_12.fasta
+label_21673_4_43_11.fasta
+label_21673_4_43_10.fasta
+label_21673_4_43_1.fasta
+label_21673_4_43_0.fasta
+label_20298_2_33_9.fasta
+label_20298_2_33_89.fasta
+label_20298_2_33_88.fasta
+label_20298_2_33_87.fasta
+label_20298_2_33_86.fasta
+label_20298_2_33_85.fasta
+label_20298_2_33_84.fasta
+label_20298_2_33_83.fasta
+label_20298_2_33_82.fasta
+label_20298_2_33_81.fasta
+label_20298_2_33_80.fasta
+label_20298_2_33_8.fasta
+label_20298_2_33_79.fasta
+label_20298_2_33_78.fasta
+label_20298_2_33_77.fasta
+label_20298_2_33_76.fasta
+label_20298_2_33_75.fasta
+label_20298_2_33_74.fasta
+label_20298_2_33_73.fasta
+label_20298_2_33_72.fasta
+label_20298_2_33_71.fasta
+label_20298_2_33_70.fasta
+label_20298_2_33_7.fasta
+label_20298_2_33_69.fasta
+label_20298_2_33_68.fasta
+label_20298_2_33_67.fasta
+label_20298_2_33_66.fasta
+label_20298_2_33_65.fasta
+label_20298_2_33_64.fasta
+label_20298_2_33_63.fasta
+label_20298_2_33_62.fasta
+label_20298_2_33_61.fasta
+label_20298_2_33_60.fasta
+label_20298_2_33_6.fasta
+label_20298_2_33_59.fasta
+label_20298_2_33_58.fasta
+label_20298_2_33_57.fasta
+label_20298_2_33_56.fasta
+label_20298_2_33_55.fasta
+label_20298_2_33_54.fasta
+label_20298_2_33_53.fasta
+label_20298_2_33_52.fasta
+label_20298_2_33_51.fasta
+label_20298_2_33_50.fasta
+label_20298_2_33_5.fasta
+label_20298_2_33_49.fasta
+label_20298_2_33_48.fasta
+label_20298_2_33_47.fasta
+label_20298_2_33_46.fasta
+label_20298_2_33_45.fasta
+label_20298_2_33_44.fasta
+label_20298_2_33_43.fasta
+label_20298_2_33_42.fasta
+label_20298_2_33_41.fasta
+label_20298_2_33_40.fasta
+label_20298_2_33_4.fasta
+label_20298_2_33_39.fasta
+label_20298_2_33_38.fasta
+label_20298_2_33_37.fasta
+label_20298_2_33_36.fasta
+label_20298_2_33_35.fasta
+label_20298_2_33_34.fasta
+label_20298_2_33_33.fasta
+label_20298_2_33_32.fasta
+label_20298_2_33_31.fasta
+label_20298_2_33_30.fasta
+label_20298_2_33_3.fasta
+label_20298_2_33_29.fasta
+label_20298_2_33_28.fasta
+label_20298_2_33_27.fasta
+label_20298_2_33_26.fasta
+label_20298_2_33_25.fasta
+label_20298_2_33_24.fasta
+label_20298_2_33_23.fasta
+label_20298_2_33_22.fasta
+label_20298_2_33_21.fasta
+label_20298_2_33_20.fasta
+label_20298_2_33_2.fasta
+label_20298_2_33_19.fasta
+label_20298_2_33_18.fasta
+label_20298_2_33_17.fasta
+label_20298_2_33_16.fasta
+label_20298_2_33_15.fasta
+label_20298_2_33_14.fasta
+label_20298_2_33_13.fasta
+label_20298_2_33_12.fasta
+label_20298_2_33_11.fasta
+label_20298_2_33_10.fasta
+label_20298_2_33_1.fasta
+label_20298_2_33_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_001050095_5.fasta
+label_GCF_001050095_4.fasta
+label_GCF_001050095_3.fasta
+label_GCF_001050095_2.fasta
+label_GCF_001050095_1.fasta
+label_GCF_001050095_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20298_3_12_9.fasta
+label_20298_3_12_8.fasta
+label_20298_3_12_7.fasta
+label_20298_3_12_6.fasta
+label_20298_3_12_5.fasta
+label_20298_3_12_4.fasta
+label_20298_3_12_3.fasta
+label_20298_3_12_2.fasta
+label_20298_3_12_11.fasta
+label_20298_3_12_10.fasta
+label_20298_3_12_1.fasta
+label_20298_3_12_0.fasta
+label_14670_1_61_9.fasta
+label_14670_1_61_8.fasta
+label_14670_1_61_7.fasta
+label_14670_1_61_6.fasta
+label_14670_1_61_5.fasta
+label_14670_1_61_4.fasta
+label_14670_1_61_3.fasta
+label_14670_1_61_25.fasta
+label_14670_1_61_24.fasta
+label_14670_1_61_23.fasta
+label_14670_1_61_22.fasta
+label_14670_1_61_21.fasta
+label_14670_1_61_20.fasta
+label_14670_1_61_2.fasta
+label_14670_1_61_19.fasta
+label_14670_1_61_18.fasta
+label_14670_1_61_17.fasta
+label_14670_1_61_16.fasta
+label_14670_1_61_15.fasta
+label_14670_1_61_14.fasta
+label_14670_1_61_13.fasta
+label_14670_1_61_12.fasta
+label_14670_1_61_11.fasta
+label_14670_1_61_10.fasta
+label_14670_1_61_1.fasta
+label_14670_1_61_0.fasta
+Generating CGRs.... 
+totalSeq is: 581
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/f__Enterococcaceae
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 298
+
+clusterNames =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Enterococcus'}    {'g__Enterococcus_A'}    {'g__Enterococcus_B'}
+
+  Columns 4 through 5
+
+    {'g__Enterococcus_C'}    {'g__Enterococcus_D'}
+
+
+clusterNames =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Enterococcus'}    {'2-g__Enterococ...'}    {'g__Enterococcus_B'}
+
+  Columns 4 through 5
+
+    {'g__Enterococcus_C'}    {'g__Enterococcus_D'}
+
+
+clusterNames =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Enterococcus'}    {'2-g__Enterococ...'}    {'3-g__Enterococ...'}
+
+  Columns 4 through 5
+
+    {'g__Enterococcus_C'}    {'g__Enterococcus_D'}
+
+
+clusterNames =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Enterococcus'}    {'2-g__Enterococ...'}    {'3-g__Enterococ...'}
+
+  Columns 4 through 5
+
+    {'4-g__Enterococ...'}    {'g__Enterococcus_D'}
+
+
+clusterNames =
+
+  1x5 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Enterococcus'}    {'2-g__Enterococ...'}    {'3-g__Enterococ...'}
+
+  Columns 4 through 5
+
+    {'4-g__Enterococ...'}    {'5-g__Enterococ...'}
+
+  Columns 1 through 3
+
+    '1-g__Enterococcus'    '2-g__Enterococcus_A'    '3-g__Enterococcus_B'
+
+  Columns 4 through 5
+
+    '4-g__Enterococcus_C'    '5-g__Enterococcus_D'
+
+
+header =
+
+  1x6 cell array
+
+  Columns 1 through 3
+
+    {'1-g__Enterococcus'}    {'2-g__Enterococ...'}    {'3-g__Enterococ...'}
+
+  Columns 4 through 6
+
+    {'4-g__Enterococ...'}    {'5-g__Enterococ...'}    {'prediction'}
+
+
+T3 =
+
+  298x6 table
+
+                       1-g__Enterococcus    2-g__Enterococcus_A    3-g__Enterococcus_B    4-g__Enterococcus_C    5-g__Enterococcus_D    prediction
+                       _________________    ___________________    ___________________    ___________________    ___________________    __________
+
+    MAG-GUT1029.fa             0.461              0.037914               0.17127                 0.14451                0.18532             1     
+    MAG-GUT1036.fa           0.46503              0.039833               0.16798                 0.14109                0.18607             1     
+    MAG-GUT1037.fa           0.46816              0.040869               0.16375                 0.13978                0.18743             1     
+    MAG-GUT1047.fa           0.45631              0.034488               0.17812                 0.14621                0.18487             1     
+    MAG-GUT1052.fa           0.46678              0.040345               0.16644                 0.13906                0.18737             1     
+    MAG-GUT1055.fa           0.45781              0.035587               0.18237                 0.14196                0.18227             1     
+    MAG-GUT1062.fa           0.45715              0.035569                0.1806                 0.14504                0.18164             1     
+    MAG-GUT1077.fa           0.45741              0.035008               0.18353                 0.14305                  0.181             1     
+    MAG-GUT1088.fa           0.45724              0.034977               0.18354                 0.14283                0.18141             1     
+    MAG-GUT1103.fa           0.45827              0.037839                0.1768                  0.1454                 0.1817             1     
+    MAG-GUT1160.fa           0.45619               0.03135               0.19063                 0.14765                0.17418             1     
+    MAG-GUT1169.fa           0.45157              0.032393               0.19203                 0.15543                0.16858             1     
+    MAG-GUT1171.fa            0.4581               0.03528               0.18311                   0.151                0.17251             1     
+    MAG-GUT1173.fa           0.45167              0.033129               0.19099                 0.15516                0.16905             1     
+    MAG-GUT1177.fa           0.45786              0.035857               0.18178                 0.15177                0.17273             1     
+    MAG-GUT1196.fa           0.45346              0.034073               0.18005                 0.14969                0.18273             1     
+    MAG-GUT1197.fa           0.45269              0.034376               0.18041                 0.15032                 0.1822             1     
+    MAG-GUT1228.fa           0.45488              0.032286               0.18896                 0.14895                0.17492             1     
+    MAG-GUT1236.fa           0.45393              0.033385               0.18449                  0.1482                   0.18             1     
+    MAG-GUT1242.fa           0.45102              0.032724               0.18756                  0.1502                 0.1785             1     
+    MAG-GUT1244.fa           0.45847              0.035858               0.17877                 0.14422                0.18268             1     
+    MAG-GUT1255.fa           0.45859              0.035837               0.18034                 0.14301                0.18222             1     
+    MAG-GUT1266.fa            0.4572              0.035171               0.18289                 0.14299                0.18174             1     
+    MAG-GUT1270.fa          0.017927             0.0054787               0.18289                0.041457                0.75225             5     
+    MAG-GUT1276.fa          0.017737             0.0053935               0.18287                0.040919                0.75308             5     
+    MAG-GUT1288.fa          0.018048              0.005515               0.18376                0.041676                  0.751             5     
+    MAG-GUT1297.fa          0.018352             0.0057816               0.18547                0.042314                0.74808             5     
+    MAG-GUT1315.fa         0.0015276            2.2213e-06               0.98619               0.0040383              0.0082461             3     
+    MAG-GUT1318.fa            0.4578              0.035886               0.18215                 0.15134                0.17282             1     
+    MAG-GUT1319.fa           0.45842              0.036102               0.18155                 0.15086                0.17307             1     
+    MAG-GUT1328.fa             0.458              0.035369               0.18235                 0.15107                0.17321             1     
+    MAG-GUT1336.fa         0.0014565            2.0689e-06               0.98737               0.0042687              0.0069067             3     
+    MAG-GUT1362.fa           0.45846              0.035118               0.17628                 0.14346                0.18668             1     
+    MAG-GUT1368.fa           0.45852              0.036233               0.17673                 0.14243                0.18609             1     
+    MAG-GUT1370.fa         0.0021702            3.3043e-06               0.98294               0.0060497              0.0088414             3     
+    MAG-GUT1391.fa         0.0021821            3.0833e-06               0.98301                0.006356              0.0084514             3     
+    MAG-GUT1393.fa          0.002088            2.8508e-06               0.98405               0.0055727              0.0082859             3     
+    MAG-GUT1396.fa           0.45296              0.032302               0.17956                 0.14641                0.18876             1     
+    MAG-GUT1457.fa         0.0017477            2.2789e-06               0.98556               0.0048219              0.0078691             3     
+    MAG-GUT1477.fa           0.45721              0.033352               0.18672                 0.14243                0.18029             1     
+    MAG-GUT1479.fa         0.0013957            2.1713e-06                0.9874               0.0034335              0.0077706             3     
+    MAG-GUT1498.fa           0.45832              0.031433               0.19374                 0.13789                0.17862             1     
+    MAG-GUT1511.fa           0.45619              0.029165               0.19903                 0.13997                0.17565             1     
+    MAG-GUT1522.fa           0.46728              0.036445               0.17897                 0.14099                0.17632             1     
+    MAG-GUT1541.fa         0.0016413            2.3908e-06               0.98584               0.0042232              0.0082941             3     
+    MAG-GUT1565.fa           0.44952              0.025825               0.20344                 0.14455                0.17667             1     
+    MAG-GUT17288.fa        0.0015195            2.3956e-06                0.9865               0.0037428              0.0082338             3     
+    MAG-GUT17314.fa          0.47178              0.043056               0.16243                 0.13929                0.18344             1     
+    MAG-GUT17776.fa          0.47502              0.050722               0.15604                 0.13296                0.18525             1     
+    MAG-GUT17782.fa        0.0019184            2.7063e-06               0.98403               0.0044156              0.0096313             3     
+    MAG-GUT1871.fa           0.46183              0.039749               0.16748                 0.14387                0.18707             1     
+    MAG-GUT1875.fa           0.44201              0.030044               0.19118                 0.15846                0.17832             1     
+    MAG-GUT1876.fa           0.44976              0.034085               0.18135                 0.15263                0.18217             1     
+    MAG-GUT1880.fa           0.44071              0.029706               0.19384                 0.15884                 0.1769             1     
+    MAG-GUT1885.fa           0.44076              0.029122               0.19405                 0.15925                0.17682             1     
+    MAG-GUT1887.fa           0.44169              0.029643               0.19207                 0.15846                0.17814             1     
+    MAG-GUT1888.fa           0.44152              0.029402               0.19215                 0.15881                0.17812             1     
+    MAG-GUT1892.fa           0.44079              0.029271               0.19326                 0.15906                0.17763             1     
+    MAG-GUT1895.fa           0.44109              0.029557               0.19263                 0.15827                0.17846             1     
+    MAG-GUT1898.fa           0.44177              0.029353               0.19247                 0.15852                0.17788             1     
+    MAG-GUT1900.fa           0.45511              0.034545               0.17709                 0.14989                0.18337             1     
+    MAG-GUT1904.fa           0.44354              0.030398               0.19073                 0.15703                 0.1783             1     
+    MAG-GUT1906.fa            0.4416              0.030092               0.19201                 0.15844                0.17787             1     
+    MAG-GUT1908.fa           0.44118               0.02966               0.19205                 0.15852                0.17859             1     
+    MAG-GUT1911.fa            0.4408              0.029217               0.19321                 0.15913                0.17764             1     
+    MAG-GUT1914.fa           0.44105              0.029303               0.19242                 0.15932                0.17791             1     
+    MAG-GUT1946.fa           0.47116              0.043312               0.16219                 0.13574                 0.1876             1     
+    MAG-GUT1959.fa           0.46672              0.042382               0.15797                  0.1424                0.19052             1     
+    MAG-GUT2025.fa           0.49249              0.058832               0.13206                 0.11945                0.19716             1     
+    MAG-GUT26238.fa        0.0012827            1.8118e-06                 0.988               0.0036837              0.0070352             3     
+    MAG-GUT26973.fa        0.0015867            2.5306e-06               0.98611               0.0043197              0.0079835             3     
+    MAG-GUT3231.fa           0.45546              0.033365               0.18439                 0.14174                0.18505             1     
+    MAG-GUT3233.fa           0.45533              0.033414               0.18488                 0.14196                0.18441             1     
+    MAG-GUT3477.fa           0.47083              0.045179               0.16252                  0.1445                0.17697             1     
+    MAG-GUT3479.fa           0.47191              0.046725               0.16085                 0.14346                0.17705             1     
+    MAG-GUT3484.fa          0.017097             0.0078548               0.15866                 0.03875                0.77764             5     
+    MAG-GUT3493.fa          0.017295             0.0074728               0.15945                 0.03424                0.78154             5     
+    MAG-GUT3499.fa          0.019057             0.0044794               0.21361                0.038143                0.72471             5     
+    MAG-GUT3508.fa          0.016793              0.006254               0.16577                0.035065                0.77612             5     
+    MAG-GUT3548.fa           0.49249              0.068169               0.12123                 0.10844                0.20967             1     
+    MAG-GUT3553.fa          0.017555              0.010711               0.14787                0.034391                0.78947             5     
+    MAG-GUT3561.fa           0.47147              0.045638               0.15675                 0.14254                 0.1836             1     
+    MAG-GUT41.fa              0.4532              0.032046               0.19922                 0.14593                0.16961             1     
+    MAG-GUT43425.fa          0.45933              0.037823               0.17317                 0.14621                0.18347             1     
+    MAG-GUT43446.fa          0.48095              0.050212               0.14739                 0.12518                0.19627             1     
+    MAG-GUT43457.fa          0.46362              0.041133               0.16855                 0.14748                0.17921             1     
+    MAG-GUT43462.fa          0.46879               0.04529               0.15749                 0.13779                0.19063             1     
+    MAG-GUT43463.fa          0.45798              0.037149               0.17562                 0.14567                0.18358             1     
+    MAG-GUT43483.fa          0.44987              0.032659               0.19171                  0.1463                0.17946             1     
+    MAG-GUT43573.fa          0.45516              0.033728               0.18775                 0.14526                 0.1781             1     
+    MAG-GUT43577.fa          0.46026              0.034814                0.1817                 0.14313                0.18009             1     
+    MAG-GUT43620.fa          0.46696              0.040053               0.17189                 0.14152                0.17959             1     
+    MAG-GUT43751.fa          0.46981              0.040831               0.17065                 0.13571                0.18301             1     
+    MAG-GUT43943.fa           0.4572               0.03441               0.17428                 0.14352                0.19058             1     
+    MAG-GUT44002.fa        0.0020079            2.8051e-06                0.9843               0.0058081              0.0078827             3     
+    MAG-GUT44177.fa          0.45073              0.026062               0.20052                 0.14067                0.18202             1     
+    MAG-GUT44539.fa          0.46083              0.036628               0.17609                 0.14454                0.18191             1     
+    MAG-GUT44544.fa          0.45851              0.035488               0.17765                  0.1455                0.18285             1     
+    MAG-GUT44617.fa          0.44581              0.028386               0.20202                 0.15225                0.17153             1     
+    MAG-GUT44666.fa        0.0019869             2.861e-06               0.98402               0.0058399              0.0081475             3     
+    MAG-GUT45882.fa          0.45742              0.035914               0.17594                 0.14706                0.18367             1     
+    MAG-GUT46437.fa          0.45047              0.030041               0.18714                 0.15035                0.18201             1     
+    MAG-GUT46441.fa          0.45556              0.033948               0.17625                 0.14735                 0.1869             1     
+    MAG-GUT46868.fa          0.45464              0.032151                0.1891                 0.13948                0.18463             1     
+    MAG-GUT46962.fa          0.46102               0.03742               0.17394                 0.14333                0.18429             1     
+    MAG-GUT47531.fa           0.4584              0.029377               0.18762                 0.13976                0.18484             1     
+    MAG-GUT48488.fa          0.45612              0.032854               0.18499                 0.14949                0.17655             1     
+    MAG-GUT48498.fa          0.45585              0.034761               0.17711                 0.14833                0.18394             1     
+    MAG-GUT48566.fa          0.46052              0.039735                0.1651                 0.14388                0.19076             1     
+    MAG-GUT48585.fa          0.47459              0.047355                0.1596                 0.13179                0.18667             1     
+    MAG-GUT48612.fa          0.46258              0.038139               0.16992                 0.14411                0.18525             1     
+    MAG-GUT48629.fa        0.0014745            2.1398e-06               0.98671               0.0041014              0.0077162             3     
+    MAG-GUT48673.fa           0.4547              0.030838               0.19314                 0.14432                0.17699             1     
+    MAG-GUT48682.fa         0.001385            2.1445e-06               0.98764               0.0036468              0.0073232             3     
+    MAG-GUT48686.fa          0.46594              0.038262               0.17367                 0.13997                0.18216             1     
+    MAG-GUT48704.fa           0.4631              0.041418               0.17414                 0.14079                0.18055             1     
+    MAG-GUT48723.fa          0.46422              0.038536               0.17361                 0.13329                0.19034             1     
+    MAG-GUT48749.fa          0.46611              0.039871               0.17857                 0.13843                0.17701             1     
+    MAG-GUT48754.fa          0.46402              0.037258               0.18039                 0.13975                0.17859             1     
+    MAG-GUT48761.fa          0.48078              0.054034               0.13647                 0.12834                0.20038             1     
+    MAG-GUT48798.fa          0.45931              0.036611               0.17612                 0.14352                0.18444             1     
+    MAG-GUT48804.fa            0.468              0.040852               0.17389                 0.13703                0.18023             1     
+    MAG-GUT48829.fa          0.45886              0.035585               0.17714                 0.14483                0.18359             1     
+    MAG-GUT48834.fa          0.46937              0.045464               0.15284                 0.13748                0.19484             1     
+    MAG-GUT48887.fa         0.001353            1.7058e-06               0.98663               0.0041118              0.0079047             3     
+    MAG-GUT48894.fa          0.48742              0.054231               0.15063                 0.11895                0.18877             1     
+    MAG-GUT48968.fa          0.46591              0.041089               0.16602                 0.14179                0.18519             1     
+    MAG-GUT48971.fa          0.47305              0.046529               0.15896                 0.13571                0.18575             1     
+    MAG-GUT48976.fa          0.46356              0.038779               0.17152                 0.14178                0.18437             1     
+    MAG-GUT49002.fa        0.0015711             2.332e-06               0.98642               0.0042372              0.0077715             3     
+    MAG-GUT49004.fa          0.45227               0.03087               0.19073                 0.14924                 0.1769             1     
+    MAG-GUT49010.fa          0.49441              0.072327                0.1116                 0.11179                0.20987             1     
+    MAG-GUT49015.fa          0.46242              0.039458               0.16688                 0.14609                0.18515             1     
+    MAG-GUT49023.fa          0.46663               0.03882               0.16983                 0.13938                0.18535             1     
+    MAG-GUT49063.fa          0.46451              0.041071               0.16546                 0.14288                0.18608             1     
+    MAG-GUT49069.fa          0.46264              0.035318                0.1735                 0.14522                0.18332             1     
+    MAG-GUT49070.fa          0.45782               0.03604               0.17874                 0.14499                0.18242             1     
+    MAG-GUT49075.fa          0.45945              0.034415               0.18644                 0.14296                0.17672             1     
+    MAG-GUT49083.fa          0.46215               0.03463               0.18417                 0.13872                0.18033             1     
+    MAG-GUT49101.fa          0.45943               0.03556               0.17932                  0.1452                0.18049             1     
+    MAG-GUT49118.fa          0.47969              0.070707               0.13221                 0.10833                0.20907             1     
+    MAG-GUT49170.fa          0.47746              0.048104               0.14897                 0.13282                0.19265             1     
+    MAG-GUT49176.fa          0.48789              0.056023               0.14219                 0.11628                0.19762             1     
+    MAG-GUT49226.fa          0.46417              0.037993               0.17433                 0.14435                0.17915             1     
+    MAG-GUT49236.fa          0.45727              0.037428               0.17511                 0.14628                0.18392             1     
+    MAG-GUT49289.fa          0.47396              0.046608               0.15861                  0.1362                0.18463             1     
+    MAG-GUT49297.fa          0.45765              0.030573               0.19731                 0.14057                0.17391             1     
+    MAG-GUT49302.fa          0.46246              0.041266                0.1608                 0.14293                0.19254             1     
+    MAG-GUT49315.fa          0.46784              0.042279               0.17559                 0.13673                0.17757             1     
+    MAG-GUT49326.fa          0.44513              0.028496               0.20399                 0.15087                0.17151             1     
+    MAG-GUT49329.fa          0.45893              0.035305               0.18725                  0.1437                0.17482             1     
+    MAG-GUT49356.fa          0.47837              0.047127               0.15767                 0.12477                0.19206             1     
+    MAG-GUT49359.fa           0.4725               0.04447               0.16041                 0.13526                0.18736             1     
+    MAG-GUT49379.fa        0.0011327            2.1692e-06               0.98775               0.0025311              0.0085856             3     
+    MAG-GUT49393.fa           0.4732              0.043244               0.15728                 0.13298                0.19329             1     
+    MAG-GUT49403.fa          0.46079              0.038054               0.17205                 0.14429                0.18482             1     
+    MAG-GUT49409.fa          0.47533              0.045107               0.15858                 0.13328                 0.1877             1     
+    MAG-GUT49456.fa          0.45543              0.032901                0.1917                 0.14914                0.17083             1     
+    MAG-GUT49458.fa          0.46373               0.03721               0.17443                 0.14095                0.18369             1     
+    MAG-GUT49469.fa           0.4569              0.036752               0.17279                 0.14653                0.18702             1     
+    MAG-GUT49499.fa          0.49791              0.078253               0.11053                0.097888                0.21542             1     
+    MAG-GUT49512.fa          0.47674              0.049632               0.15299                 0.12755                0.19309             1     
+    MAG-GUT49529.fa          0.45839              0.037901               0.17057                  0.1459                0.18724             1     
+    MAG-GUT49535.fa          0.46913              0.043716                0.1576                 0.13728                0.19228             1     
+    MAG-GUT49539.fa          0.45827              0.036003               0.18407                 0.14464                0.17701             1     
+    MAG-GUT49541.fa          0.46875              0.041022               0.16795                 0.13839                0.18389             1     
+    MAG-GUT49567.fa        0.0014582              1.95e-06               0.98657               0.0042257              0.0077423             3     
+    MAG-GUT49574.fa          0.48421               0.04957               0.15783                 0.12666                0.18173             1     
+    MAG-GUT49593.fa          0.47452              0.045863               0.15762                 0.13536                0.18663             1     
+    MAG-GUT49599.fa          0.48641              0.054923               0.13674                 0.12031                0.20163             1     
+    MAG-GUT49609.fa          0.47186              0.041229                0.1659                 0.13625                0.18477             1     
+    MAG-GUT49616.fa          0.46152              0.037727               0.17825                 0.13574                0.18676             1     
+    MAG-GUT51.fa           0.0016344            2.1537e-06               0.98572               0.0044519              0.0081889             3     
+    MAG-GUT57264.fa          0.46486              0.041349               0.16666                  0.1442                0.18293             1     
+    MAG-GUT57442.fa          0.46445              0.041221               0.16693                 0.14372                0.18367             1     
+    MAG-GUT61880.fa            0.483              0.051552               0.15026                 0.12949                 0.1857             1     
+    MAG-GUT6222.fa           0.44655              0.027335               0.19542                 0.15255                0.17815             1     
+    MAG-GUT6229.fa            0.4494              0.027769               0.19426                 0.14918                0.17939             1     
+    MAG-GUT6233.fa           0.44925              0.027665               0.19398                 0.14997                0.17913             1     
+    MAG-GUT6238.fa           0.44626              0.026878               0.19741                 0.15167                0.17778             1     
+    MAG-GUT6241.fa           0.44958              0.027793               0.19355                 0.14959                0.17948             1     
+    MAG-GUT6274.fa           0.45346              0.029464               0.19341                 0.14772                0.17594             1     
+    MAG-GUT6291.fa           0.45541              0.031342               0.18811                 0.14686                0.17828             1     
+    MAG-GUT67625.fa         0.016401             0.0049577               0.17215                0.031815                0.77467             5     
+    MAG-GUT67985.fa        0.0016123             2.311e-06               0.98507                0.004562              0.0087524             3     
+    MAG-GUT68043.fa          0.45957              0.036941               0.17796                 0.13508                0.19045             1     
+    MAG-GUT68111.fa        0.0015358             2.569e-06               0.98548               0.0041283               0.008856             3     
+    MAG-GUT68629.fa          0.46518              0.047564                0.1613                 0.13104                0.19491             1     
+    MAG-GUT68640.fa        0.0015897            2.2961e-06               0.98621               0.0042221              0.0079769             3     
+    MAG-GUT69501.fa          0.46082              0.036757               0.16688                 0.13482                0.20072             1     
+    MAG-GUT7062.fa           0.46595              0.038387               0.17531                 0.14108                0.17928             1     
+    MAG-GUT7086.fa         0.0017628            2.3854e-06               0.98537                0.004856              0.0080129             3     
+    MAG-GUT7090.fa           0.46051              0.038722               0.17018                 0.14408                 0.1865             1     
+    MAG-GUT7102.fa           0.45643              0.036877               0.17462                 0.14833                0.18374             1     
+    MAG-GUT7118.fa           0.46063              0.038675               0.16958                 0.14478                0.18632             1     
+    MAG-GUT7121.fa           0.46014              0.038522               0.17086                 0.14496                0.18552             1     
+    MAG-GUT7125.fa            0.4561              0.032085               0.18817                 0.14822                0.17543             1     
+    MAG-GUT7175.fa           0.44285              0.027225                0.2011                 0.15466                0.17416             1     
+    MAG-GUT7213.fa           0.47163              0.046919               0.16232                 0.13732                0.18181             1     
+    MAG-GUT7214.fa           0.47255              0.047356               0.16089                 0.13661                0.18259             1     
+    MAG-GUT7216.fa           0.47248              0.047051               0.16185                 0.13657                0.18205             1     
+    MAG-GUT7222.fa           0.47284              0.047364               0.16163                 0.13614                0.18202             1     
+    MAG-GUT7253.fa           0.44666              0.027353               0.18961                 0.15568                 0.1807             1     
+    MAG-GUT7278.fa           0.46385              0.038231               0.17429                 0.14372                0.17991             1     
+    MAG-GUT87407.fa        0.0017354            2.4711e-06               0.98455                0.004845              0.0088661             3     
+    MAG-GUT87621.fa        0.0017256            2.5462e-06               0.98465               0.0049784              0.0086411             3     
+    MAG-GUT87674.fa        0.0017437            2.5476e-06               0.98445                0.005062              0.0087441             3     
+    MAG-GUT87941.fa        0.0016344            2.6215e-06                0.9854               0.0047988               0.008168             3     
+    MAG-GUT88714.fa         0.001845            2.6983e-06               0.98397                0.005171              0.0090092             3     
+    MAG-GUT88733.fa        0.0016424             2.681e-06               0.98554               0.0041106              0.0087085             3     
+    MAG-GUT88737.fa        0.0017583            2.4748e-06               0.98447               0.0049769              0.0087952             3     
+    MAG-GUT88876.fa        0.0019019             2.874e-06               0.98323               0.0053136               0.009552             3     
+    MAG-GUT89068.fa        0.0021325             3.213e-06               0.98339               0.0061668              0.0083051             3     
+    MAG-GUT89179.fa        0.0019003            2.7103e-06               0.98347               0.0055217              0.0091029             3     
+    MAG-GUT89204.fa        0.0020546            2.8455e-06               0.98282               0.0058308              0.0092877             3     
+    MAG-GUT89292.fa        0.0019272            2.6154e-06                0.9835               0.0053921              0.0091798             3     
+    MAG-GUT89317.fa        0.0019529            2.7553e-06               0.98292               0.0056204              0.0095021             3     
+    MAG-GUT89355.fa        0.0019777            2.7582e-06               0.98275               0.0057382              0.0095272             3     
+    MAG-GUT89363.fa        0.0021577            3.3214e-06               0.98205               0.0060269              0.0097573             3     
+    MAG-GUT89413.fa        0.0024538            4.2619e-06               0.98127               0.0069465              0.0093261             3     
+    MAG-GUT89720.fa        0.0019163            2.6816e-06               0.98302               0.0056233               0.009442             3     
+    MAG-GUT89992.fa        0.0022463            4.1278e-06               0.98273               0.0064191              0.0085976             3     
+    MAG-GUT90064.fa        0.0018832            2.6857e-06               0.98336               0.0054131              0.0093391             3     
+    MAG-GUT90077.fa        0.0019053            2.7272e-06               0.98379               0.0053701              0.0089273             3     
+    MAG-GUT90107.fa        0.0019647            2.7321e-06               0.98291                0.005652              0.0094711             3     
+    MAG-GUT90127.fa        0.0018793            2.7162e-06                0.9837               0.0051917              0.0092309             3     
+    MAG-GUT90167.fa        0.0019716            2.7505e-06               0.98297               0.0056365              0.0094178             3     
+    MAG-GUT90189.fa        0.0019266            2.7197e-06               0.98304               0.0056285              0.0094017             3     
+    MAG-GUT90251.fa        0.0018553            2.7085e-06               0.98388               0.0051482              0.0091118             3     
+    MAG-GUT90266.fa        0.0019474            2.8414e-06               0.98327               0.0053374              0.0094403             3     
+    MAG-GUT90291.fa        0.0019851            2.7936e-06               0.98295               0.0056461              0.0094138             3     
+    MAG-GUT90368.fa        0.0018695            2.8102e-06                0.9836               0.0053727              0.0091599             3     
+    MAG-GUT90390.fa        0.0019466            3.1069e-06               0.98419               0.0057574              0.0081066             3     
+    MAG-GUT90429.fa        0.0019374            2.7692e-06               0.98319               0.0054416              0.0094307             3     
+    MAG-GUT90505.fa        0.0019168            2.7019e-06                0.9832               0.0055174              0.0093632             3     
+    MAG-GUT90598.fa        0.0018989            2.9195e-06               0.98331               0.0053129              0.0094704             3     
+    MAG-GUT90630.fa        0.0019433            2.8054e-06               0.98292               0.0055169              0.0096194             3     
+    MAG-GUT90636.fa        0.0019666            2.8828e-06               0.98289               0.0055066              0.0096302             3     
+    MAG-GUT90777.fa        0.0019044            2.7973e-06               0.98335                0.005347              0.0093945             3     
+    MAG-GUT90901.fa        0.0019249            2.7734e-06               0.98334               0.0052377               0.009493             3     
+    MAG-GUT90946.fa        0.0019593             2.769e-06                 0.983               0.0056242              0.0094167             3     
+    MAG-GUT90975.fa        0.0019167            2.7091e-06               0.98316               0.0056423              0.0092781             3     
+    MAG-GUT91032.fa         0.001986            2.9905e-06               0.98293               0.0054874              0.0095907             3     
+    MAG-GUT91072.fa        0.0021096             3.286e-06               0.98327               0.0058792              0.0087331             3     
+    MAG-GUT91119.fa        0.0018759            2.6758e-06                0.9834                0.005508              0.0092177             3     
+    MAG-GUT91131.fa        0.0018384            2.7577e-06               0.98469               0.0056279              0.0078406             3     
+    MAG-GUT91135.fa        0.0019597            2.7472e-06               0.98296               0.0056127              0.0094624             3     
+    MAG-GUT91192.fa           0.4584              0.032655               0.18581                 0.14789                0.17524             1     
+    MAG-GUT91196.fa          0.46115              0.039042               0.16513                 0.14396                0.19073             1     
+    MAG-GUT91251.fa          0.44983              0.032031               0.19541                 0.15205                0.17068             1     
+    MAG-GUT91262.fa          0.46536                0.0408               0.16422                 0.14239                0.18724             1     
+    MAG-GUT91264.fa          0.46416              0.039106               0.16736                 0.14364                0.18574             1     
+    MAG-GUT91267.fa          0.46434              0.040245               0.16458                 0.14347                0.18737             1     
+    MAG-GUT91272.fa          0.46418              0.040138               0.16651                 0.14374                0.18544             1     
+    MAG-GUT91297.fa          0.45087                0.0317               0.18533                 0.15336                0.17873             1     
+    MAG-GUT91303.fa          0.46272              0.038059               0.17021                 0.14693                0.18208             1     
+    MAG-GUT91320.fa          0.44973              0.027189                0.2045                 0.15208                 0.1665             1     
+    MAG-GUT91330.fa          0.44563              0.023777               0.21419                 0.15505                0.16136             1     
+    MAG-GUT91385.fa          0.45938              0.035616               0.17472                 0.14341                0.18687             1     
+    MAG-GUT91468.fa          0.47145              0.044849               0.16042                 0.13729                  0.186             1     
+    MAG-GUT91470.fa          0.47022              0.044565               0.16042                 0.13985                0.18495             1     
+    MAG-GUT91486.fa          0.47153              0.044874               0.16051                 0.13717                0.18591             1     
+    MAG-GUT91490.fa          0.45889                0.0395               0.17609                  0.1468                0.17873             1     
+    MAG-GUT91491.fa          0.45668              0.036502               0.18482                 0.14711                 0.1749             1     
+    MAG-GUT91492.fa          0.46596              0.040987               0.16952                  0.1429                0.18063             1     
+    MAG-GUT91496.fa           0.4712              0.044601               0.16135                 0.13736                 0.1855             1     
+    MAG-GUT91520.fa          0.46307              0.037821               0.17491                 0.14285                0.18135             1     
+    MAG-GUT91536.fa          0.46717               0.04045               0.16541                 0.14188                0.18509             1     
+    MAG-GUT91546.fa          0.46627              0.039864               0.16745                 0.14236                0.18406             1     
+    MAG-GUT91568.fa          0.45732              0.032992               0.19021                 0.14201                0.17746             1     
+    MAG-GUT91712.fa          0.45618              0.033828               0.17894                 0.14676                0.18429             1     
+    MAG-GUT91717.fa          0.45428              0.033509               0.17892                 0.14745                0.18583             1     
+    MAG-GUT91736.fa          0.45545              0.030649               0.19719                 0.14541                 0.1713             1     
+    MAG-GUT91762.fa          0.45475               0.03094                0.1976                 0.14527                0.17143             1     
+    MAG-GUT91779.fa          0.46021              0.037476               0.17171                 0.14453                0.18607             1     
+    MAG-GUT91815.fa          0.46765              0.040247               0.16791                 0.13827                0.18592             1     
+    MAG-GUT91818.fa          0.46805              0.042073               0.16388                 0.13913                0.18687             1     
+    MAG-GUT91821.fa          0.47099              0.044558               0.16259                 0.13674                0.18513             1     
+    MAG-GUT91823.fa          0.46716              0.040458               0.16718                 0.13833                0.18687             1     
+    MAG-GUT91833.fa          0.45337              0.030765               0.19346                 0.14598                0.17642             1     
+    MAG-GUT91860.fa          0.47093              0.041831               0.16805                 0.13573                0.18347             1     
+    MAG-GUT91882.fa          0.45317              0.030494               0.19698                 0.14723                0.17213             1     
+    MAG-GUT91886.fa          0.45847              0.033114               0.18935                 0.14352                0.17555             1     
+    MAG-GUT91911.fa          0.45741              0.032768               0.18454                 0.14447                0.18082             1     
+    MAG-GUT91912.fa          0.45454              0.030317               0.19435                 0.14473                0.17606             1     
+    MAG-GUT91923.fa          0.46292              0.037533               0.17566                 0.14353                0.18036             1     
+    MAG-GUT91926.fa          0.44569              0.027451               0.20368                 0.15599                0.16719             1     
+    MAG-GUT91932.fa          0.46034              0.038705               0.17064                 0.14541                 0.1849             1     
+    MAG-GUT91941.fa          0.45503              0.031398               0.18988                 0.14887                0.17482             1     
+    MAG-GUT91943.fa          0.46041              0.035998                0.1797                 0.14636                0.17753             1     
+    MAG-GUT91954.fa          0.45031              0.029181               0.19353                 0.14899                0.17798             1     
+    MAG-GUT91960.fa          0.47201              0.042474               0.16395                 0.13495                0.18662             1     
+    MAG-GUT92006.fa          0.44535              0.028965               0.19944                 0.15286                0.17338             1     
+    MAG-GUT92066.fa          0.45381              0.032945               0.18059                 0.14786                0.18479             1     
+    MAG-GUT92111.fa          0.46199              0.036116               0.17648                 0.14578                0.17963             1     
+    MAG-GUT940.fa            0.46616              0.040141               0.17015                 0.13877                0.18478             1     
+    MAG-GUT945.fa            0.46752               0.03487                 0.182                 0.13669                0.17892             1     
+    MAG-GUT984.fa            0.47981              0.043852               0.16376                 0.13443                0.17815             1     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-f__Enterococcaceae_split_pruned.xlsx"
+
+Process completed 
+[?1l>

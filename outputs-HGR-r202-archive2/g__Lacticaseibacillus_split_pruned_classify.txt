@@ -1,0 +1,153 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Lacticaseibacillus_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Lacticaseibacillus"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000155515_2.fasta
+label_GCF_000155515_1.fasta
+label_GCF_000155515_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000026505_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS258_9.fasta
+label_UMGS258_8.fasta
+label_UMGS258_7.fasta
+label_UMGS258_6.fasta
+label_UMGS258_5.fasta
+label_UMGS258_4.fasta
+label_UMGS258_34.fasta
+label_UMGS258_33.fasta
+label_UMGS258_32.fasta
+label_UMGS258_31.fasta
+label_UMGS258_30.fasta
+label_UMGS258_3.fasta
+label_UMGS258_29.fasta
+label_UMGS258_28.fasta
+label_UMGS258_27.fasta
+label_UMGS258_26.fasta
+label_UMGS258_25.fasta
+label_UMGS258_24.fasta
+label_UMGS258_23.fasta
+label_UMGS258_22.fasta
+label_UMGS258_21.fasta
+label_UMGS258_20.fasta
+label_UMGS258_2.fasta
+label_UMGS258_19.fasta
+label_UMGS258_18.fasta
+label_UMGS258_17.fasta
+label_UMGS258_16.fasta
+label_UMGS258_15.fasta
+label_UMGS258_14.fasta
+label_UMGS258_13.fasta
+label_UMGS258_12.fasta
+label_UMGS258_11.fasta
+label_UMGS258_10.fasta
+label_UMGS258_1.fasta
+label_UMGS258_0.fasta
+Generating CGRs.... 
+totalSeq is: 39
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Lacticaseibacillus
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: Unable to fit posterior probabilities for learner 2 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In classifyTestSeqExternMisList (line 45)
+  In testingExternMisList (line 9)
+  In stackedMain (line 101)] 
+numTestSeq is: 4
+
+clusterNames =
+
+  1x3 cell array
+
+    {'1-s__Lacticasei...'}    {'s__Lacticaseiba...'}    {'s__Lacticaseiba...'}
+
+
+clusterNames =
+
+  1x3 cell array
+
+    {'1-s__Lacticasei...'}    {'2-s__Lacticasei...'}    {'s__Lacticaseiba...'}
+
+
+clusterNames =
+
+  1x3 cell array
+
+    {'1-s__Lacticasei...'}    {'2-s__Lacticasei...'}    {'3-s__Lacticasei...'}
+
+    '1-s__Lacticaseiba...'    '2-s__Lacticaseiba...'    '3-s__Lacticaseiba...'
+
+
+header =
+
+  1x4 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lacticase...'}    {'2-s__Lacticase...'}    {'3-s__Lacticase...'}
+
+  Column 4
+
+    {'prediction'}
+
+
+T3 =
+
+  4x4 table
+
+                       1-s__Lacticaseibacillus paracasei    2-s__Lacticaseibacillus rhamnosus    3-s__Lacticaseibacillus sp900540605    prediction
+                       _________________________________    _________________________________    ___________________________________    __________
+
+    MAG-GUT36009.fa                 0.17202                               0.8272                             0.00078778                     2     
+    MAG-GUT44112.fa                 0.17246                              0.82675                             0.00078734                     2     
+    MAG-GUT46265.fa                 0.16914                              0.83007                             0.00078859                     2     
+    MAG-GUT49542.fa                 0.18369                              0.81553                             0.00078138                     2     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Lacticaseibacillus_split_pruned.xlsx"
+
+Process completed 
+[?1l>

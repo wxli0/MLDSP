@@ -1,0 +1,3849 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__Fibrobacter"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Fibrobacter"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900217845.1_8.fasta
+RS_GCF_900217845.1_6.fasta
+RS_GCF_900217845.1_19.fasta
+RS_GCF_900217845.1_18.fasta
+RS_GCF_900217845.1_17.fasta
+RS_GCF_900217845.1_16.fasta
+RS_GCF_900217845.1_13.fasta
+RS_GCF_900217845.1_12.fasta
+RS_GCF_900217845.1_1.fasta
+RS_GCF_003149165.1_8.fasta
+RS_GCF_003149165.1_6.fasta
+RS_GCF_003149165.1_5.fasta
+RS_GCF_003149165.1_4.fasta
+RS_GCF_003149165.1_3.fasta
+RS_GCF_003149165.1_19.fasta
+RS_GCF_003149165.1_18.fasta
+RS_GCF_003149165.1_16.fasta
+RS_GCF_003149165.1_14.fasta
+RS_GCF_003149165.1_13.fasta
+RS_GCF_002210425.1_7.fasta
+RS_GCF_002210425.1_6.fasta
+RS_GCF_002210425.1_5.fasta
+RS_GCF_002210425.1_3.fasta
+RS_GCF_002210425.1_16.fasta
+RS_GCF_002210425.1_15.fasta
+RS_GCF_002210425.1_12.fasta
+RS_GCF_002210425.1_11.fasta
+RS_GCF_002210425.1_10.fasta
+RS_GCF_002210425.1_1.fasta
+RS_GCF_002210425.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_001603905.1_9.fasta
+GB_GCA_001603905.1_6.fasta
+GB_GCA_001603905.1_5.fasta
+GB_GCA_001603905.1_4.fasta
+GB_GCA_001603905.1_3.fasta
+GB_GCA_001603905.1_2.fasta
+GB_GCA_001603905.1_19.fasta
+GB_GCA_001603905.1_18.fasta
+GB_GCA_001603905.1_17.fasta
+GB_GCA_001603905.1_16.fasta
+GB_GCA_001603905.1_15.fasta
+GB_GCA_001603905.1_14.fasta
+GB_GCA_001603905.1_10.fasta
+GB_GCA_001603905.1_1.fasta
+GB_GCA_001462305.1_9.fasta
+GB_GCA_001462305.1_8.fasta
+GB_GCA_001462305.1_6.fasta
+GB_GCA_001462305.1_3.fasta
+GB_GCA_001462305.1_2.fasta
+GB_GCA_001462305.1_19.fasta
+GB_GCA_001462305.1_18.fasta
+GB_GCA_001462305.1_17.fasta
+GB_GCA_001462305.1_16.fasta
+GB_GCA_001462305.1_15.fasta
+GB_GCA_001462305.1_13.fasta
+GB_GCA_001462305.1_12.fasta
+GB_GCA_001462305.1_11.fasta
+GB_GCA_001462305.1_10.fasta
+GB_GCA_001462305.1_1.fasta
+GB_GCA_001462305.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902801875.1_9.fasta
+RS_GCF_902801875.1_7.fasta
+RS_GCF_902801875.1_3.fasta
+RS_GCF_902801875.1_17.fasta
+RS_GCF_902801875.1_15.fasta
+RS_GCF_902801875.1_14.fasta
+RS_GCF_902801875.1_10.fasta
+RS_GCF_902801875.1_1.fasta
+RS_GCF_902800095.1_8.fasta
+RS_GCF_902800095.1_7.fasta
+RS_GCF_902800095.1_4.fasta
+RS_GCF_902800095.1_3.fasta
+RS_GCF_902800095.1_2.fasta
+RS_GCF_902800095.1_19.fasta
+RS_GCF_902800095.1_18.fasta
+RS_GCF_902800095.1_17.fasta
+RS_GCF_902800095.1_16.fasta
+RS_GCF_902800095.1_13.fasta
+RS_GCF_902800095.1_10.fasta
+RS_GCF_002210285.1_6.fasta
+RS_GCF_002210285.1_5.fasta
+RS_GCF_002210285.1_4.fasta
+RS_GCF_002210285.1_3.fasta
+RS_GCF_002210285.1_19.fasta
+RS_GCF_002210285.1_17.fasta
+RS_GCF_002210285.1_13.fasta
+RS_GCF_002210285.1_12.fasta
+RS_GCF_002210285.1_11.fasta
+RS_GCF_002210285.1_10.fasta
+RS_GCF_002210285.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_002210295.1_9.fasta
+RS_GCF_002210295.1_8.fasta
+RS_GCF_002210295.1_7.fasta
+RS_GCF_002210295.1_6.fasta
+RS_GCF_002210295.1_5.fasta
+RS_GCF_002210295.1_4.fasta
+RS_GCF_002210295.1_3.fasta
+RS_GCF_002210295.1_2.fasta
+RS_GCF_002210295.1_19.fasta
+RS_GCF_002210295.1_18.fasta
+RS_GCF_002210295.1_17.fasta
+RS_GCF_002210295.1_16.fasta
+RS_GCF_002210295.1_15.fasta
+RS_GCF_002210295.1_14.fasta
+RS_GCF_002210295.1_13.fasta
+RS_GCF_002210295.1_12.fasta
+RS_GCF_002210295.1_11.fasta
+RS_GCF_002210295.1_10.fasta
+RS_GCF_002210295.1_1.fasta
+RS_GCF_002210295.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902798165.1_9.fasta
+RS_GCF_902798165.1_5.fasta
+RS_GCF_902798165.1_4.fasta
+RS_GCF_902798165.1_3.fasta
+RS_GCF_902798165.1_2.fasta
+RS_GCF_902798165.1_14.fasta
+RS_GCF_902798165.1_10.fasta
+RS_GCF_902786695.1_6.fasta
+RS_GCF_902786695.1_3.fasta
+RS_GCF_902786695.1_16.fasta
+RS_GCF_902786695.1_11.fasta
+RS_GCF_902786695.1_1.fasta
+RS_GCF_902780945.1_7.fasta
+RS_GCF_902780945.1_6.fasta
+RS_GCF_902780945.1_5.fasta
+RS_GCF_902780945.1_3.fasta
+RS_GCF_902780945.1_19.fasta
+RS_GCF_902780945.1_1.fasta
+RS_GCF_902770285.1_6.fasta
+RS_GCF_902770285.1_18.fasta
+RS_GCF_902770285.1_15.fasta
+RS_GCF_902770285.1_14.fasta
+RS_GCF_902770285.1_11.fasta
+RS_GCF_002210345.1_6.fasta
+RS_GCF_002210345.1_3.fasta
+RS_GCF_002210345.1_19.fasta
+RS_GCF_002210345.1_18.fasta
+RS_GCF_002210345.1_11.fasta
+RS_GCF_002210345.1_10.fasta
+RS_GCF_002210345.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002382975.1_9.fasta
+GB_GCA_002382975.1_8.fasta
+GB_GCA_002382975.1_7.fasta
+GB_GCA_002382975.1_6.fasta
+GB_GCA_002382975.1_5.fasta
+GB_GCA_002382975.1_4.fasta
+GB_GCA_002382975.1_3.fasta
+GB_GCA_002382975.1_2.fasta
+GB_GCA_002382975.1_19.fasta
+GB_GCA_002382975.1_18.fasta
+GB_GCA_002382975.1_17.fasta
+GB_GCA_002382975.1_16.fasta
+GB_GCA_002382975.1_15.fasta
+GB_GCA_002382975.1_14.fasta
+GB_GCA_002382975.1_13.fasta
+GB_GCA_002382975.1_12.fasta
+GB_GCA_002382975.1_11.fasta
+GB_GCA_002382975.1_10.fasta
+GB_GCA_002382975.1_1.fasta
+GB_GCA_002382975.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002391195.1_9.fasta
+GB_GCA_002391195.1_8.fasta
+GB_GCA_002391195.1_7.fasta
+GB_GCA_002391195.1_6.fasta
+GB_GCA_002391195.1_5.fasta
+GB_GCA_002391195.1_4.fasta
+GB_GCA_002391195.1_3.fasta
+GB_GCA_002391195.1_2.fasta
+GB_GCA_002391195.1_19.fasta
+GB_GCA_002391195.1_18.fasta
+GB_GCA_002391195.1_17.fasta
+GB_GCA_002391195.1_16.fasta
+GB_GCA_002391195.1_15.fasta
+GB_GCA_002391195.1_14.fasta
+GB_GCA_002391195.1_13.fasta
+GB_GCA_002391195.1_12.fasta
+GB_GCA_002391195.1_11.fasta
+GB_GCA_002391195.1_10.fasta
+GB_GCA_002391195.1_1.fasta
+GB_GCA_002391195.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002394865.1_8.fasta
+GB_GCA_002394865.1_7.fasta
+GB_GCA_002394865.1_6.fasta
+GB_GCA_002394865.1_5.fasta
+GB_GCA_002394865.1_4.fasta
+GB_GCA_002394865.1_3.fasta
+GB_GCA_002394865.1_2.fasta
+GB_GCA_002394865.1_19.fasta
+GB_GCA_002394865.1_18.fasta
+GB_GCA_002394865.1_17.fasta
+GB_GCA_002394865.1_16.fasta
+GB_GCA_002394865.1_15.fasta
+GB_GCA_002394865.1_13.fasta
+GB_GCA_002394865.1_12.fasta
+GB_GCA_002394865.1_11.fasta
+GB_GCA_002394865.1_1.fasta
+GB_GCA_002372655.1_7.fasta
+GB_GCA_002372655.1_6.fasta
+GB_GCA_002372655.1_5.fasta
+GB_GCA_002372655.1_4.fasta
+GB_GCA_002372655.1_2.fasta
+GB_GCA_002372655.1_18.fasta
+GB_GCA_002372655.1_17.fasta
+GB_GCA_002372655.1_16.fasta
+GB_GCA_002372655.1_15.fasta
+GB_GCA_002372655.1_14.fasta
+GB_GCA_002372655.1_13.fasta
+GB_GCA_002372655.1_11.fasta
+GB_GCA_002372655.1_10.fasta
+GB_GCA_002372655.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002395745.1_9.fasta
+GB_GCA_002395745.1_8.fasta
+GB_GCA_002395745.1_7.fasta
+GB_GCA_002395745.1_6.fasta
+GB_GCA_002395745.1_5.fasta
+GB_GCA_002395745.1_4.fasta
+GB_GCA_002395745.1_3.fasta
+GB_GCA_002395745.1_2.fasta
+GB_GCA_002395745.1_19.fasta
+GB_GCA_002395745.1_18.fasta
+GB_GCA_002395745.1_17.fasta
+GB_GCA_002395745.1_16.fasta
+GB_GCA_002395745.1_15.fasta
+GB_GCA_002395745.1_14.fasta
+GB_GCA_002395745.1_13.fasta
+GB_GCA_002395745.1_12.fasta
+GB_GCA_002395745.1_11.fasta
+GB_GCA_002395745.1_10.fasta
+GB_GCA_002395745.1_1.fasta
+GB_GCA_002395745.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902771215.1_9.fasta
+RS_GCF_902771215.1_8.fasta
+RS_GCF_902771215.1_2.fasta
+RS_GCF_902771215.1_15.fasta
+RS_GCF_902771215.1_14.fasta
+RS_GCF_902771215.1_13.fasta
+RS_GCF_902770885.1_8.fasta
+RS_GCF_902770885.1_10.fasta
+GB_GCA_002494225.1_17.fasta
+GB_GCA_002494225.1_10.fasta
+GB_GCA_002449765.1_9.fasta
+GB_GCA_002449765.1_16.fasta
+GB_GCA_002449765.1_15.fasta
+GB_GCA_002449765.1_14.fasta
+GB_GCA_002449765.1_13.fasta
+GB_GCA_002449765.1_1.fasta
+GB_GCA_002374005.1_6.fasta
+GB_GCA_002374005.1_5.fasta
+GB_GCA_002374005.1_18.fasta
+GB_GCA_002374005.1_0.fasta
+GB_GCA_002371935.1_8.fasta
+GB_GCA_002371935.1_4.fasta
+GB_GCA_002371935.1_3.fasta
+GB_GCA_002371935.1_11.fasta
+GB_GCA_002369375.1_8.fasta
+GB_GCA_002369375.1_6.fasta
+GB_GCA_002369375.1_2.fasta
+GB_GCA_002369375.1_16.fasta
+GB_GCA_002369375.1_13.fasta
+GB_GCA_002342555.1_10.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_003253655.1_9.fasta
+RS_GCF_003253655.1_8.fasta
+RS_GCF_003253655.1_7.fasta
+RS_GCF_003253655.1_6.fasta
+RS_GCF_003253655.1_4.fasta
+RS_GCF_003253655.1_3.fasta
+RS_GCF_003253655.1_19.fasta
+RS_GCF_003253655.1_18.fasta
+RS_GCF_003253655.1_16.fasta
+RS_GCF_003253655.1_15.fasta
+RS_GCF_003253655.1_12.fasta
+RS_GCF_003253655.1_11.fasta
+RS_GCF_003253655.1_10.fasta
+RS_GCF_003253655.1_1.fasta
+RS_GCF_003253655.1_0.fasta
+RS_GCF_003149045.1_8.fasta
+RS_GCF_003149045.1_7.fasta
+RS_GCF_003149045.1_5.fasta
+RS_GCF_003149045.1_4.fasta
+RS_GCF_003149045.1_3.fasta
+RS_GCF_003149045.1_2.fasta
+RS_GCF_003149045.1_19.fasta
+RS_GCF_003149045.1_18.fasta
+RS_GCF_003149045.1_16.fasta
+RS_GCF_003149045.1_15.fasta
+RS_GCF_003149045.1_14.fasta
+RS_GCF_003149045.1_11.fasta
+RS_GCF_003149045.1_10.fasta
+RS_GCF_003149045.1_1.fasta
+RS_GCF_003149045.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900141705.1_9.fasta
+RS_GCF_900141705.1_8.fasta
+RS_GCF_900141705.1_7.fasta
+RS_GCF_900141705.1_6.fasta
+RS_GCF_900141705.1_5.fasta
+RS_GCF_900141705.1_4.fasta
+RS_GCF_900141705.1_3.fasta
+RS_GCF_900141705.1_2.fasta
+RS_GCF_900141705.1_19.fasta
+RS_GCF_900141705.1_18.fasta
+RS_GCF_900141705.1_17.fasta
+RS_GCF_900141705.1_16.fasta
+RS_GCF_900141705.1_15.fasta
+RS_GCF_900141705.1_14.fasta
+RS_GCF_900141705.1_13.fasta
+RS_GCF_900141705.1_12.fasta
+RS_GCF_900141705.1_11.fasta
+RS_GCF_900141705.1_10.fasta
+RS_GCF_900141705.1_1.fasta
+RS_GCF_900141705.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900142505.1_2.fasta
+RS_GCF_900142505.1_19.fasta
+RS_GCF_900142505.1_16.fasta
+RS_GCF_900142505.1_13.fasta
+RS_GCF_900142505.1_12.fasta
+RS_GCF_900142505.1_10.fasta
+RS_GCF_900142465.1_6.fasta
+RS_GCF_900142465.1_4.fasta
+RS_GCF_900142465.1_19.fasta
+RS_GCF_900142465.1_0.fasta
+RS_GCF_900129715.1_8.fasta
+RS_GCF_900129715.1_6.fasta
+RS_GCF_900129715.1_19.fasta
+RS_GCF_900129715.1_14.fasta
+RS_GCF_900129715.1_12.fasta
+RS_GCF_900129715.1_11.fasta
+RS_GCF_900129715.1_1.fasta
+RS_GCF_003268805.1_13.fasta
+RS_GCF_002846255.1_7.fasta
+RS_GCF_002846255.1_3.fasta
+RS_GCF_002846255.1_2.fasta
+RS_GCF_002846255.1_15.fasta
+RS_GCF_002846255.1_13.fasta
+RS_GCF_002846255.1_12.fasta
+RS_GCF_002210365.1_9.fasta
+RS_GCF_002210365.1_3.fasta
+RS_GCF_002210365.1_16.fasta
+RS_GCF_002210355.1_7.fasta
+RS_GCF_002210355.1_4.fasta
+RS_GCF_002210355.1_19.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900142475.1_9.fasta
+RS_GCF_900142475.1_8.fasta
+RS_GCF_900142475.1_7.fasta
+RS_GCF_900142475.1_6.fasta
+RS_GCF_900142475.1_5.fasta
+RS_GCF_900142475.1_4.fasta
+RS_GCF_900142475.1_3.fasta
+RS_GCF_900142475.1_19.fasta
+RS_GCF_900142475.1_18.fasta
+RS_GCF_900142475.1_17.fasta
+RS_GCF_900142475.1_16.fasta
+RS_GCF_900142475.1_14.fasta
+RS_GCF_900142475.1_13.fasta
+RS_GCF_900142475.1_10.fasta
+RS_GCF_900142475.1_1.fasta
+RS_GCF_900142475.1_0.fasta
+GB_GCA_004560505.1_7.fasta
+GB_GCA_004560505.1_6.fasta
+GB_GCA_004560505.1_5.fasta
+GB_GCA_004560505.1_4.fasta
+GB_GCA_004560505.1_3.fasta
+GB_GCA_004560505.1_2.fasta
+GB_GCA_004560505.1_19.fasta
+GB_GCA_004560505.1_18.fasta
+GB_GCA_004560505.1_16.fasta
+GB_GCA_004560505.1_15.fasta
+GB_GCA_004560505.1_14.fasta
+GB_GCA_004560505.1_13.fasta
+GB_GCA_004560505.1_12.fasta
+GB_GCA_004560505.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902756345.1_14.fasta
+RS_GCF_902756345.1_11.fasta
+RS_GCF_902756345.1_0.fasta
+RS_GCF_902755435.1_3.fasta
+RS_GCF_902755435.1_14.fasta
+RS_GCF_902755435.1_12.fasta
+RS_GCF_900142495.1_9.fasta
+RS_GCF_900142495.1_6.fasta
+RS_GCF_900142495.1_4.fasta
+RS_GCF_900142495.1_15.fasta
+RS_GCF_900142495.1_0.fasta
+RS_GCF_002210325.1_9.fasta
+RS_GCF_002210325.1_2.fasta
+RS_GCF_002210325.1_14.fasta
+RS_GCF_002210325.1_13.fasta
+RS_GCF_002210325.1_11.fasta
+GB_GCA_900321385.1_19.fasta
+GB_GCA_900321385.1_13.fasta
+GB_GCA_900316825.1_9.fasta
+GB_GCA_900316825.1_6.fasta
+GB_GCA_900316825.1_18.fasta
+GB_GCA_900316825.1_1.fasta
+GB_GCA_001603925.1_18.fasta
+GB_GCA_001603925.1_10.fasta
+GB_GCA_001462315.1_4.fasta
+GB_GCA_001462315.1_2.fasta
+GB_GCA_001462315.1_19.fasta
+GB_GCA_001462315.1_15.fasta
+GB_GCA_001462315.1_13.fasta
+GB_GCA_001462315.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900142535.1_8.fasta
+RS_GCF_900142535.1_7.fasta
+RS_GCF_900142535.1_5.fasta
+RS_GCF_900142535.1_4.fasta
+RS_GCF_900142535.1_2.fasta
+RS_GCF_900142535.1_19.fasta
+RS_GCF_900142535.1_18.fasta
+RS_GCF_900142535.1_17.fasta
+RS_GCF_900142535.1_16.fasta
+RS_GCF_900142535.1_15.fasta
+RS_GCF_900142535.1_14.fasta
+RS_GCF_900142535.1_13.fasta
+RS_GCF_900142535.1_12.fasta
+RS_GCF_900142535.1_11.fasta
+RS_GCF_900142535.1_10.fasta
+RS_GCF_900142535.1_1.fasta
+RS_GCF_900142535.1_0.fasta
+GB_GCA_002317455.1_9.fasta
+GB_GCA_002317455.1_8.fasta
+GB_GCA_002317455.1_7.fasta
+GB_GCA_002317455.1_6.fasta
+GB_GCA_002317455.1_4.fasta
+GB_GCA_002317455.1_3.fasta
+GB_GCA_002317455.1_2.fasta
+GB_GCA_002317455.1_17.fasta
+GB_GCA_002317455.1_16.fasta
+GB_GCA_002317455.1_14.fasta
+GB_GCA_002317455.1_13.fasta
+GB_GCA_002317455.1_11.fasta
+GB_GCA_002317455.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900142545.1_9.fasta
+RS_GCF_900142545.1_8.fasta
+RS_GCF_900142545.1_7.fasta
+RS_GCF_900142545.1_6.fasta
+RS_GCF_900142545.1_5.fasta
+RS_GCF_900142545.1_4.fasta
+RS_GCF_900142545.1_3.fasta
+RS_GCF_900142545.1_2.fasta
+RS_GCF_900142545.1_19.fasta
+RS_GCF_900142545.1_18.fasta
+RS_GCF_900142545.1_17.fasta
+RS_GCF_900142545.1_16.fasta
+RS_GCF_900142545.1_15.fasta
+RS_GCF_900142545.1_14.fasta
+RS_GCF_900142545.1_13.fasta
+RS_GCF_900142545.1_12.fasta
+RS_GCF_900142545.1_11.fasta
+RS_GCF_900142545.1_10.fasta
+RS_GCF_900142545.1_1.fasta
+RS_GCF_900142545.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900143015.1_8.fasta
+RS_GCF_900143015.1_7.fasta
+RS_GCF_900143015.1_6.fasta
+RS_GCF_900143015.1_5.fasta
+RS_GCF_900143015.1_4.fasta
+RS_GCF_900143015.1_3.fasta
+RS_GCF_900143015.1_19.fasta
+RS_GCF_900143015.1_17.fasta
+RS_GCF_900143015.1_16.fasta
+RS_GCF_900143015.1_15.fasta
+RS_GCF_900143015.1_13.fasta
+RS_GCF_900143015.1_11.fasta
+RS_GCF_900143015.1_1.fasta
+RS_GCF_900143015.1_0.fasta
+RS_GCF_900142485.1_9.fasta
+RS_GCF_900142485.1_6.fasta
+RS_GCF_900142485.1_5.fasta
+RS_GCF_900142485.1_4.fasta
+RS_GCF_900142485.1_3.fasta
+RS_GCF_900142485.1_2.fasta
+RS_GCF_900142485.1_19.fasta
+RS_GCF_900142485.1_18.fasta
+RS_GCF_900142485.1_17.fasta
+RS_GCF_900142485.1_16.fasta
+RS_GCF_900142485.1_14.fasta
+RS_GCF_900142485.1_13.fasta
+RS_GCF_900142485.1_11.fasta
+RS_GCF_900142485.1_10.fasta
+RS_GCF_900142485.1_1.fasta
+RS_GCF_900142485.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900230125.1_9.fasta
+RS_GCF_900230125.1_8.fasta
+RS_GCF_900230125.1_4.fasta
+RS_GCF_900230125.1_19.fasta
+RS_GCF_900230125.1_16.fasta
+RS_GCF_900230125.1_14.fasta
+RS_GCF_900230125.1_13.fasta
+RS_GCF_900230125.1_12.fasta
+RS_GCF_900230125.1_11.fasta
+RS_GCF_900230125.1_10.fasta
+RS_GCF_900230125.1_1.fasta
+RS_GCF_900230125.1_0.fasta
+RS_GCF_900143055.1_9.fasta
+RS_GCF_900143055.1_8.fasta
+RS_GCF_900143055.1_2.fasta
+RS_GCF_900143055.1_19.fasta
+RS_GCF_900143055.1_16.fasta
+RS_GCF_900143055.1_15.fasta
+RS_GCF_900129735.1_8.fasta
+RS_GCF_900129735.1_7.fasta
+RS_GCF_900129735.1_4.fasta
+RS_GCF_900129735.1_3.fasta
+RS_GCF_900129735.1_2.fasta
+RS_GCF_900129735.1_17.fasta
+RS_GCF_900129735.1_16.fasta
+RS_GCF_900129735.1_15.fasta
+RS_GCF_900129735.1_13.fasta
+RS_GCF_900129735.1_11.fasta
+RS_GCF_900129735.1_10.fasta
+RS_GCF_900129735.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900177705.1_9.fasta
+RS_GCF_900177705.1_8.fasta
+RS_GCF_900177705.1_7.fasta
+RS_GCF_900177705.1_3.fasta
+RS_GCF_900177705.1_19.fasta
+RS_GCF_900177705.1_18.fasta
+RS_GCF_900177705.1_17.fasta
+RS_GCF_900177705.1_16.fasta
+RS_GCF_900177705.1_14.fasta
+RS_GCF_900177705.1_13.fasta
+RS_GCF_900177705.1_11.fasta
+RS_GCF_900129525.1_8.fasta
+RS_GCF_900129525.1_3.fasta
+RS_GCF_900129525.1_17.fasta
+RS_GCF_900129525.1_16.fasta
+RS_GCF_900129525.1_15.fasta
+RS_GCF_900129525.1_13.fasta
+RS_GCF_900129525.1_12.fasta
+RS_GCF_900129525.1_11.fasta
+RS_GCF_900129525.1_10.fasta
+RS_GCF_003148985.1_8.fasta
+RS_GCF_003148985.1_7.fasta
+RS_GCF_003148985.1_3.fasta
+RS_GCF_003148985.1_2.fasta
+RS_GCF_003148985.1_17.fasta
+RS_GCF_003148985.1_16.fasta
+RS_GCF_003148985.1_15.fasta
+RS_GCF_003148985.1_12.fasta
+RS_GCF_003148985.1_11.fasta
+RS_GCF_003148985.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900177805.1_6.fasta
+RS_GCF_900177805.1_5.fasta
+RS_GCF_900177805.1_3.fasta
+RS_GCF_900177805.1_2.fasta
+RS_GCF_900177805.1_19.fasta
+RS_GCF_900177805.1_17.fasta
+RS_GCF_900177805.1_16.fasta
+RS_GCF_900177805.1_14.fasta
+RS_GCF_900177805.1_12.fasta
+RS_GCF_900177805.1_11.fasta
+RS_GCF_900177805.1_10.fasta
+RS_GCF_900177805.1_1.fasta
+RS_GCF_900177805.1_0.fasta
+RS_GCF_900142945.1_8.fasta
+RS_GCF_900142945.1_7.fasta
+RS_GCF_900142945.1_6.fasta
+RS_GCF_900142945.1_5.fasta
+RS_GCF_900142945.1_4.fasta
+RS_GCF_900142945.1_19.fasta
+RS_GCF_900142945.1_18.fasta
+RS_GCF_900142945.1_17.fasta
+RS_GCF_900142945.1_16.fasta
+RS_GCF_900142945.1_15.fasta
+RS_GCF_900142945.1_14.fasta
+RS_GCF_900142945.1_13.fasta
+RS_GCF_900142945.1_12.fasta
+RS_GCF_900142945.1_11.fasta
+RS_GCF_900142945.1_10.fasta
+RS_GCF_900142945.1_1.fasta
+RS_GCF_900142945.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902801555.1_19.fasta
+RS_GCF_902801555.1_18.fasta
+RS_GCF_902801555.1_17.fasta
+RS_GCF_902801555.1_15.fasta
+RS_GCF_902801555.1_11.fasta
+RS_GCF_902801555.1_1.fasta
+RS_GCF_902785875.1_8.fasta
+RS_GCF_902785875.1_7.fasta
+RS_GCF_902785875.1_5.fasta
+RS_GCF_902785875.1_18.fasta
+RS_GCF_902785875.1_17.fasta
+RS_GCF_902785875.1_16.fasta
+RS_GCF_902785875.1_12.fasta
+RS_GCF_902785875.1_0.fasta
+RS_GCF_902758405.1_2.fasta
+RS_GCF_902758405.1_18.fasta
+RS_GCF_902758405.1_17.fasta
+RS_GCF_902758405.1_15.fasta
+RS_GCF_902758405.1_10.fasta
+RS_GCF_900215325.1_15.fasta
+RS_GCF_900215325.1_13.fasta
+RS_GCF_900215325.1_12.fasta
+RS_GCF_900215325.1_1.fasta
+RS_GCF_900215325.1_0.fasta
+RS_GCF_002210405.1_3.fasta
+RS_GCF_002210405.1_2.fasta
+RS_GCF_002210405.1_19.fasta
+RS_GCF_002210405.1_15.fasta
+GB_GCA_900318925.1_19.fasta
+GB_GCA_900318925.1_16.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902775295.1_9.fasta
+RS_GCF_902775295.1_7.fasta
+RS_GCF_902775295.1_6.fasta
+RS_GCF_902775295.1_19.fasta
+RS_GCF_902775295.1_13.fasta
+RS_GCF_902775295.1_11.fasta
+RS_GCF_902769685.1_9.fasta
+RS_GCF_902769685.1_7.fasta
+RS_GCF_902769685.1_19.fasta
+RS_GCF_902769685.1_18.fasta
+RS_GCF_902769685.1_14.fasta
+RS_GCF_902769685.1_11.fasta
+RS_GCF_902757465.1_9.fasta
+RS_GCF_902757465.1_8.fasta
+RS_GCF_902757465.1_6.fasta
+RS_GCF_902757465.1_4.fasta
+RS_GCF_902757465.1_3.fasta
+RS_GCF_902757465.1_2.fasta
+RS_GCF_902757465.1_15.fasta
+RS_GCF_902757465.1_13.fasta
+GB_GCA_900313675.1_9.fasta
+GB_GCA_900313675.1_5.fasta
+GB_GCA_900313675.1_2.fasta
+GB_GCA_900313675.1_19.fasta
+GB_GCA_900313675.1_18.fasta
+GB_GCA_900313675.1_15.fasta
+GB_GCA_900313675.1_14.fasta
+GB_GCA_900313675.1_13.fasta
+GB_GCA_900313675.1_12.fasta
+GB_GCA_900313675.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902755055.1_9.fasta
+RS_GCF_902755055.1_8.fasta
+RS_GCF_902755055.1_6.fasta
+RS_GCF_902755055.1_5.fasta
+RS_GCF_902755055.1_4.fasta
+RS_GCF_902755055.1_2.fasta
+RS_GCF_902755055.1_18.fasta
+RS_GCF_902755055.1_17.fasta
+RS_GCF_902755055.1_16.fasta
+RS_GCF_902755055.1_14.fasta
+RS_GCF_902755055.1_13.fasta
+RS_GCF_902755055.1_11.fasta
+RS_GCF_902755055.1_0.fasta
+GB_GCA_900316465.1_9.fasta
+GB_GCA_900316465.1_8.fasta
+GB_GCA_900316465.1_7.fasta
+GB_GCA_900316465.1_6.fasta
+GB_GCA_900316465.1_5.fasta
+GB_GCA_900316465.1_4.fasta
+GB_GCA_900316465.1_3.fasta
+GB_GCA_900316465.1_2.fasta
+GB_GCA_900316465.1_19.fasta
+GB_GCA_900316465.1_18.fasta
+GB_GCA_900316465.1_17.fasta
+GB_GCA_900316465.1_16.fasta
+GB_GCA_900316465.1_15.fasta
+GB_GCA_900316465.1_12.fasta
+GB_GCA_900316465.1_10.fasta
+GB_GCA_900316465.1_1.fasta
+GB_GCA_900316465.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_000146505.1_7.fasta
+RS_GCF_000146505.1_6.fasta
+RS_GCF_000146505.1_5.fasta
+RS_GCF_000146505.1_4.fasta
+RS_GCF_000146505.1_3.fasta
+RS_GCF_000146505.1_2.fasta
+RS_GCF_000146505.1_18.fasta
+RS_GCF_000146505.1_16.fasta
+RS_GCF_000146505.1_15.fasta
+RS_GCF_000146505.1_14.fasta
+RS_GCF_000146505.1_13.fasta
+RS_GCF_000146505.1_12.fasta
+RS_GCF_000146505.1_11.fasta
+RS_GCF_000146505.1_10.fasta
+RS_GCF_000146505.1_1.fasta
+RS_GCF_000146505.1_0.fasta
+RS_GCF_000024665.1_9.fasta
+RS_GCF_000024665.1_8.fasta
+RS_GCF_000024665.1_7.fasta
+RS_GCF_000024665.1_6.fasta
+RS_GCF_000024665.1_18.fasta
+RS_GCF_000024665.1_17.fasta
+RS_GCF_000024665.1_15.fasta
+RS_GCF_000024665.1_14.fasta
+RS_GCF_000024665.1_13.fasta
+RS_GCF_000024665.1_12.fasta
+RS_GCF_000024665.1_11.fasta
+RS_GCF_000024665.1_10.fasta
+RS_GCF_000024665.1_1.fasta
+RS_GCF_000024665.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902789155.1_9.fasta
+RS_GCF_902789155.1_8.fasta
+RS_GCF_902789155.1_7.fasta
+RS_GCF_902789155.1_6.fasta
+RS_GCF_902789155.1_5.fasta
+RS_GCF_902789155.1_4.fasta
+RS_GCF_902789155.1_3.fasta
+RS_GCF_902789155.1_2.fasta
+RS_GCF_902789155.1_19.fasta
+RS_GCF_902789155.1_18.fasta
+RS_GCF_902789155.1_16.fasta
+RS_GCF_902789155.1_15.fasta
+RS_GCF_902789155.1_13.fasta
+RS_GCF_902789155.1_12.fasta
+RS_GCF_902789155.1_11.fasta
+RS_GCF_902789155.1_10.fasta
+RS_GCF_902789155.1_1.fasta
+RS_GCF_902789155.1_0.fasta
+RS_GCF_902768325.1_8.fasta
+RS_GCF_902768325.1_7.fasta
+RS_GCF_902768325.1_5.fasta
+RS_GCF_902768325.1_4.fasta
+RS_GCF_902768325.1_3.fasta
+RS_GCF_902768325.1_2.fasta
+RS_GCF_902768325.1_16.fasta
+RS_GCF_902768325.1_13.fasta
+RS_GCF_902768325.1_11.fasta
+RS_GCF_902768325.1_10.fasta
+RS_GCF_902768325.1_1.fasta
+RS_GCF_902768325.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902800815.1_8.fasta
+RS_GCF_902800815.1_5.fasta
+RS_GCF_902800815.1_4.fasta
+RS_GCF_902800815.1_2.fasta
+RS_GCF_902800815.1_19.fasta
+RS_GCF_902800815.1_17.fasta
+RS_GCF_902800815.1_16.fasta
+RS_GCF_902800815.1_15.fasta
+RS_GCF_902800815.1_13.fasta
+RS_GCF_902800815.1_12.fasta
+RS_GCF_902800815.1_11.fasta
+RS_GCF_902800815.1_1.fasta
+RS_GCF_902761195.1_9.fasta
+RS_GCF_902761195.1_8.fasta
+RS_GCF_902761195.1_7.fasta
+RS_GCF_902761195.1_6.fasta
+RS_GCF_902761195.1_5.fasta
+RS_GCF_902761195.1_4.fasta
+RS_GCF_902761195.1_3.fasta
+RS_GCF_902761195.1_2.fasta
+RS_GCF_902761195.1_19.fasta
+RS_GCF_902761195.1_18.fasta
+RS_GCF_902761195.1_17.fasta
+RS_GCF_902761195.1_16.fasta
+RS_GCF_902761195.1_15.fasta
+RS_GCF_902761195.1_14.fasta
+RS_GCF_902761195.1_13.fasta
+RS_GCF_902761195.1_12.fasta
+RS_GCF_902761195.1_10.fasta
+RS_GCF_902761195.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902771595.1_9.fasta
+RS_GCF_902771595.1_8.fasta
+RS_GCF_902771595.1_6.fasta
+RS_GCF_902771595.1_5.fasta
+RS_GCF_902771595.1_4.fasta
+RS_GCF_902771595.1_2.fasta
+RS_GCF_902771595.1_19.fasta
+RS_GCF_902771595.1_17.fasta
+RS_GCF_902771595.1_15.fasta
+RS_GCF_902771595.1_14.fasta
+RS_GCF_902771595.1_13.fasta
+RS_GCF_902771595.1_12.fasta
+RS_GCF_902771595.1_11.fasta
+RS_GCF_902771595.1_1.fasta
+RS_GCF_902771455.1_9.fasta
+RS_GCF_902771455.1_8.fasta
+RS_GCF_902771455.1_6.fasta
+RS_GCF_902771455.1_5.fasta
+RS_GCF_902771455.1_4.fasta
+RS_GCF_902771455.1_3.fasta
+RS_GCF_902771455.1_2.fasta
+RS_GCF_902771455.1_18.fasta
+RS_GCF_902771455.1_17.fasta
+RS_GCF_902771455.1_14.fasta
+RS_GCF_902771455.1_13.fasta
+RS_GCF_902771455.1_12.fasta
+RS_GCF_902771455.1_11.fasta
+RS_GCF_902771455.1_10.fasta
+RS_GCF_902771455.1_1.fasta
+RS_GCF_902771455.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902767785.1_9.fasta
+RS_GCF_902767785.1_8.fasta
+RS_GCF_902767785.1_7.fasta
+RS_GCF_902767785.1_6.fasta
+RS_GCF_902767785.1_5.fasta
+RS_GCF_902767785.1_4.fasta
+RS_GCF_902767785.1_3.fasta
+RS_GCF_902767785.1_2.fasta
+RS_GCF_902767785.1_19.fasta
+RS_GCF_902767785.1_18.fasta
+RS_GCF_902767785.1_17.fasta
+RS_GCF_902767785.1_16.fasta
+RS_GCF_902767785.1_15.fasta
+RS_GCF_902767785.1_14.fasta
+RS_GCF_902767785.1_13.fasta
+RS_GCF_902767785.1_12.fasta
+RS_GCF_902767785.1_11.fasta
+RS_GCF_902767785.1_10.fasta
+RS_GCF_902767785.1_1.fasta
+RS_GCF_902767785.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902762795.1_9.fasta
+RS_GCF_902762795.1_8.fasta
+RS_GCF_902762795.1_7.fasta
+RS_GCF_902762795.1_6.fasta
+RS_GCF_902762795.1_5.fasta
+RS_GCF_902762795.1_4.fasta
+RS_GCF_902762795.1_3.fasta
+RS_GCF_902762795.1_2.fasta
+RS_GCF_902762795.1_19.fasta
+RS_GCF_902762795.1_18.fasta
+RS_GCF_902762795.1_17.fasta
+RS_GCF_902762795.1_16.fasta
+RS_GCF_902762795.1_15.fasta
+RS_GCF_902762795.1_14.fasta
+RS_GCF_902762795.1_13.fasta
+RS_GCF_902762795.1_12.fasta
+RS_GCF_902762795.1_11.fasta
+RS_GCF_902762795.1_10.fasta
+RS_GCF_902762795.1_1.fasta
+RS_GCF_902762795.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902779965.1_9.fasta
+RS_GCF_902779965.1_8.fasta
+RS_GCF_902779965.1_7.fasta
+RS_GCF_902779965.1_6.fasta
+RS_GCF_902779965.1_5.fasta
+RS_GCF_902779965.1_4.fasta
+RS_GCF_902779965.1_3.fasta
+RS_GCF_902779965.1_2.fasta
+RS_GCF_902779965.1_19.fasta
+RS_GCF_902779965.1_18.fasta
+RS_GCF_902779965.1_17.fasta
+RS_GCF_902779965.1_16.fasta
+RS_GCF_902779965.1_15.fasta
+RS_GCF_902779965.1_14.fasta
+RS_GCF_902779965.1_13.fasta
+RS_GCF_902779965.1_12.fasta
+RS_GCF_902779965.1_11.fasta
+RS_GCF_902779965.1_10.fasta
+RS_GCF_902779965.1_1.fasta
+RS_GCF_902779965.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902781185.1_9.fasta
+RS_GCF_902781185.1_8.fasta
+RS_GCF_902781185.1_7.fasta
+RS_GCF_902781185.1_6.fasta
+RS_GCF_902781185.1_5.fasta
+RS_GCF_902781185.1_4.fasta
+RS_GCF_902781185.1_3.fasta
+RS_GCF_902781185.1_2.fasta
+RS_GCF_902781185.1_19.fasta
+RS_GCF_902781185.1_18.fasta
+RS_GCF_902781185.1_17.fasta
+RS_GCF_902781185.1_16.fasta
+RS_GCF_902781185.1_15.fasta
+RS_GCF_902781185.1_14.fasta
+RS_GCF_902781185.1_13.fasta
+RS_GCF_902781185.1_12.fasta
+RS_GCF_902781185.1_11.fasta
+RS_GCF_902781185.1_10.fasta
+RS_GCF_902781185.1_1.fasta
+RS_GCF_902781185.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902800345.1_9.fasta
+RS_GCF_902800345.1_8.fasta
+RS_GCF_902800345.1_7.fasta
+RS_GCF_902800345.1_6.fasta
+RS_GCF_902800345.1_5.fasta
+RS_GCF_902800345.1_4.fasta
+RS_GCF_902800345.1_3.fasta
+RS_GCF_902800345.1_2.fasta
+RS_GCF_902800345.1_19.fasta
+RS_GCF_902800345.1_18.fasta
+RS_GCF_902800345.1_17.fasta
+RS_GCF_902800345.1_16.fasta
+RS_GCF_902800345.1_15.fasta
+RS_GCF_902800345.1_14.fasta
+RS_GCF_902800345.1_13.fasta
+RS_GCF_902800345.1_12.fasta
+RS_GCF_902800345.1_11.fasta
+RS_GCF_902800345.1_10.fasta
+RS_GCF_902800345.1_1.fasta
+RS_GCF_902800345.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902762305.1_9.fasta
+RS_GCF_902762305.1_8.fasta
+RS_GCF_902762305.1_7.fasta
+RS_GCF_902762305.1_6.fasta
+RS_GCF_902762305.1_5.fasta
+RS_GCF_902762305.1_4.fasta
+RS_GCF_902762305.1_3.fasta
+RS_GCF_902762305.1_2.fasta
+RS_GCF_902762305.1_19.fasta
+RS_GCF_902762305.1_18.fasta
+RS_GCF_902762305.1_17.fasta
+RS_GCF_902762305.1_16.fasta
+RS_GCF_902762305.1_15.fasta
+RS_GCF_902762305.1_14.fasta
+RS_GCF_902762305.1_13.fasta
+RS_GCF_902762305.1_12.fasta
+RS_GCF_902762305.1_11.fasta
+RS_GCF_902762305.1_10.fasta
+RS_GCF_902762305.1_1.fasta
+RS_GCF_902762305.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902791475.1_9.fasta
+RS_GCF_902791475.1_8.fasta
+RS_GCF_902791475.1_7.fasta
+RS_GCF_902791475.1_6.fasta
+RS_GCF_902791475.1_5.fasta
+RS_GCF_902791475.1_4.fasta
+RS_GCF_902791475.1_3.fasta
+RS_GCF_902791475.1_2.fasta
+RS_GCF_902791475.1_19.fasta
+RS_GCF_902791475.1_18.fasta
+RS_GCF_902791475.1_17.fasta
+RS_GCF_902791475.1_16.fasta
+RS_GCF_902791475.1_15.fasta
+RS_GCF_902791475.1_14.fasta
+RS_GCF_902791475.1_13.fasta
+RS_GCF_902791475.1_12.fasta
+RS_GCF_902791475.1_11.fasta
+RS_GCF_902791475.1_10.fasta
+RS_GCF_902791475.1_1.fasta
+RS_GCF_902791475.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902779055.1_9.fasta
+RS_GCF_902779055.1_8.fasta
+RS_GCF_902779055.1_7.fasta
+RS_GCF_902779055.1_6.fasta
+RS_GCF_902779055.1_5.fasta
+RS_GCF_902779055.1_4.fasta
+RS_GCF_902779055.1_3.fasta
+RS_GCF_902779055.1_2.fasta
+RS_GCF_902779055.1_19.fasta
+RS_GCF_902779055.1_18.fasta
+RS_GCF_902779055.1_17.fasta
+RS_GCF_902779055.1_16.fasta
+RS_GCF_902779055.1_15.fasta
+RS_GCF_902779055.1_14.fasta
+RS_GCF_902779055.1_13.fasta
+RS_GCF_902779055.1_12.fasta
+RS_GCF_902779055.1_11.fasta
+RS_GCF_902779055.1_10.fasta
+RS_GCF_902779055.1_1.fasta
+RS_GCF_902779055.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902768715.1_9.fasta
+RS_GCF_902768715.1_8.fasta
+RS_GCF_902768715.1_7.fasta
+RS_GCF_902768715.1_6.fasta
+RS_GCF_902768715.1_5.fasta
+RS_GCF_902768715.1_4.fasta
+RS_GCF_902768715.1_3.fasta
+RS_GCF_902768715.1_2.fasta
+RS_GCF_902768715.1_19.fasta
+RS_GCF_902768715.1_18.fasta
+RS_GCF_902768715.1_17.fasta
+RS_GCF_902768715.1_16.fasta
+RS_GCF_902768715.1_15.fasta
+RS_GCF_902768715.1_14.fasta
+RS_GCF_902768715.1_13.fasta
+RS_GCF_902768715.1_12.fasta
+RS_GCF_902768715.1_11.fasta
+RS_GCF_902768715.1_10.fasta
+RS_GCF_902768715.1_1.fasta
+RS_GCF_902768715.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902761355.1_9.fasta
+RS_GCF_902761355.1_8.fasta
+RS_GCF_902761355.1_7.fasta
+RS_GCF_902761355.1_6.fasta
+RS_GCF_902761355.1_5.fasta
+RS_GCF_902761355.1_4.fasta
+RS_GCF_902761355.1_3.fasta
+RS_GCF_902761355.1_2.fasta
+RS_GCF_902761355.1_19.fasta
+RS_GCF_902761355.1_18.fasta
+RS_GCF_902761355.1_17.fasta
+RS_GCF_902761355.1_16.fasta
+RS_GCF_902761355.1_15.fasta
+RS_GCF_902761355.1_14.fasta
+RS_GCF_902761355.1_13.fasta
+RS_GCF_902761355.1_12.fasta
+RS_GCF_902761355.1_11.fasta
+RS_GCF_902761355.1_10.fasta
+RS_GCF_902761355.1_1.fasta
+RS_GCF_902761355.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902776765.1_9.fasta
+RS_GCF_902776765.1_8.fasta
+RS_GCF_902776765.1_7.fasta
+RS_GCF_902776765.1_6.fasta
+RS_GCF_902776765.1_5.fasta
+RS_GCF_902776765.1_4.fasta
+RS_GCF_902776765.1_3.fasta
+RS_GCF_902776765.1_2.fasta
+RS_GCF_902776765.1_19.fasta
+RS_GCF_902776765.1_18.fasta
+RS_GCF_902776765.1_17.fasta
+RS_GCF_902776765.1_16.fasta
+RS_GCF_902776765.1_15.fasta
+RS_GCF_902776765.1_14.fasta
+RS_GCF_902776765.1_13.fasta
+RS_GCF_902776765.1_12.fasta
+RS_GCF_902776765.1_11.fasta
+RS_GCF_902776765.1_10.fasta
+RS_GCF_902776765.1_1.fasta
+RS_GCF_902776765.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902794535.1_9.fasta
+RS_GCF_902794535.1_8.fasta
+RS_GCF_902794535.1_7.fasta
+RS_GCF_902794535.1_6.fasta
+RS_GCF_902794535.1_5.fasta
+RS_GCF_902794535.1_4.fasta
+RS_GCF_902794535.1_3.fasta
+RS_GCF_902794535.1_2.fasta
+RS_GCF_902794535.1_19.fasta
+RS_GCF_902794535.1_18.fasta
+RS_GCF_902794535.1_17.fasta
+RS_GCF_902794535.1_16.fasta
+RS_GCF_902794535.1_15.fasta
+RS_GCF_902794535.1_14.fasta
+RS_GCF_902794535.1_13.fasta
+RS_GCF_902794535.1_12.fasta
+RS_GCF_902794535.1_11.fasta
+RS_GCF_902794535.1_10.fasta
+RS_GCF_902794535.1_1.fasta
+RS_GCF_902794535.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902795385.1_9.fasta
+RS_GCF_902795385.1_8.fasta
+RS_GCF_902795385.1_7.fasta
+RS_GCF_902795385.1_6.fasta
+RS_GCF_902795385.1_5.fasta
+RS_GCF_902795385.1_4.fasta
+RS_GCF_902795385.1_3.fasta
+RS_GCF_902795385.1_2.fasta
+RS_GCF_902795385.1_19.fasta
+RS_GCF_902795385.1_18.fasta
+RS_GCF_902795385.1_17.fasta
+RS_GCF_902795385.1_16.fasta
+RS_GCF_902795385.1_15.fasta
+RS_GCF_902795385.1_14.fasta
+RS_GCF_902795385.1_13.fasta
+RS_GCF_902795385.1_12.fasta
+RS_GCF_902795385.1_11.fasta
+RS_GCF_902795385.1_10.fasta
+RS_GCF_902795385.1_1.fasta
+RS_GCF_902795385.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902799745.1_9.fasta
+RS_GCF_902799745.1_8.fasta
+RS_GCF_902799745.1_7.fasta
+RS_GCF_902799745.1_6.fasta
+RS_GCF_902799745.1_5.fasta
+RS_GCF_902799745.1_4.fasta
+RS_GCF_902799745.1_3.fasta
+RS_GCF_902799745.1_2.fasta
+RS_GCF_902799745.1_19.fasta
+RS_GCF_902799745.1_18.fasta
+RS_GCF_902799745.1_17.fasta
+RS_GCF_902799745.1_16.fasta
+RS_GCF_902799745.1_15.fasta
+RS_GCF_902799745.1_14.fasta
+RS_GCF_902799745.1_13.fasta
+RS_GCF_902799745.1_12.fasta
+RS_GCF_902799745.1_11.fasta
+RS_GCF_902799745.1_10.fasta
+RS_GCF_902799745.1_1.fasta
+RS_GCF_902799745.1_0.fasta
+Generating CGRs.... 
+totalSeq is: 1060
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Fibrobacter
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 5
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 4 through 6
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 7 through 9
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'s__Fibrobacter...'}
+
+  Columns 4 through 6
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 7 through 9
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 7 through 9
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 7 through 9
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'s__Fibrobacter...'}
+
+  Columns 7 through 9
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'s__Fibrobacter...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'37-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'37-s__Fibrobac...'}    {'38-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'37-s__Fibrobac...'}    {'38-s__Fibrobac...'}    {'39-s__Fibrobac...'}
+
+  Columns 40 through 42
+
+    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'37-s__Fibrobac...'}    {'38-s__Fibrobac...'}    {'39-s__Fibrobac...'}
+
+  Columns 40 through 42
+
+    {'40-s__Fibrobac...'}    {'s__Fibrobacter...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'37-s__Fibrobac...'}    {'38-s__Fibrobac...'}    {'39-s__Fibrobac...'}
+
+  Columns 40 through 42
+
+    {'40-s__Fibrobac...'}    {'41-s__Fibrobac...'}    {'s__Fibrobacter...'}
+
+
+clusterNames =
+
+  1x42 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'37-s__Fibrobac...'}    {'38-s__Fibrobac...'}    {'39-s__Fibrobac...'}
+
+  Columns 40 through 42
+
+    {'40-s__Fibrobac...'}    {'41-s__Fibrobac...'}    {'42-s__Fibrobac...'}
+
+  Columns 1 through 3
+
+    '1-s__Fibrobacter...'    '2-s__Fibrobacter...'    '3-s__Fibrobacter...'
+
+  Columns 4 through 6
+
+    '4-s__Fibrobacter...'    '5-s__Fibrobacter...'    '6-s__Fibrobacter...'
+
+  Columns 7 through 9
+
+    '7-s__Fibrobacter...'    '8-s__Fibrobacter...'    '9-s__Fibrobacter...'
+
+  Columns 10 through 12
+
+    '10-s__Fibrobacte...'    '11-s__Fibrobacte...'    '12-s__Fibrobacte...'
+
+  Columns 13 through 15
+
+    '13-s__Fibrobacte...'    '14-s__Fibrobacte...'    '15-s__Fibrobacte...'
+
+  Columns 16 through 18
+
+    '16-s__Fibrobacte...'    '17-s__Fibrobacte...'    '18-s__Fibrobacte...'
+
+  Columns 19 through 21
+
+    '19-s__Fibrobacte...'    '20-s__Fibrobacte...'    '21-s__Fibrobacte...'
+
+  Columns 22 through 24
+
+    '22-s__Fibrobacte...'    '23-s__Fibrobacte...'    '24-s__Fibrobacte...'
+
+  Columns 25 through 27
+
+    '25-s__Fibrobacte...'    '26-s__Fibrobacte...'    '27-s__Fibrobacte...'
+
+  Columns 28 through 30
+
+    '28-s__Fibrobacte...'    '29-s__Fibrobacte...'    '30-s__Fibrobacte...'
+
+  Columns 31 through 33
+
+    '31-s__Fibrobacte...'    '32-s__Fibrobacte...'    '33-s__Fibrobacte...'
+
+  Columns 34 through 36
+
+    '34-s__Fibrobacte...'    '35-s__Fibrobacte...'    '36-s__Fibrobacte...'
+
+  Columns 37 through 39
+
+    '37-s__Fibrobacte...'    '38-s__Fibrobacte...'    '39-s__Fibrobacte...'
+
+  Columns 40 through 42
+
+    '40-s__Fibrobacte...'    '41-s__Fibrobacte...'    '42-s__Fibrobacte...'
+
+
+header =
+
+  1x43 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Fibrobact...'}    {'2-s__Fibrobact...'}    {'3-s__Fibrobact...'}
+
+  Columns 4 through 6
+
+    {'4-s__Fibrobact...'}    {'5-s__Fibrobact...'}    {'6-s__Fibrobact...'}
+
+  Columns 7 through 9
+
+    {'7-s__Fibrobact...'}    {'8-s__Fibrobact...'}    {'9-s__Fibrobact...'}
+
+  Columns 10 through 12
+
+    {'10-s__Fibrobac...'}    {'11-s__Fibrobac...'}    {'12-s__Fibrobac...'}
+
+  Columns 13 through 15
+
+    {'13-s__Fibrobac...'}    {'14-s__Fibrobac...'}    {'15-s__Fibrobac...'}
+
+  Columns 16 through 18
+
+    {'16-s__Fibrobac...'}    {'17-s__Fibrobac...'}    {'18-s__Fibrobac...'}
+
+  Columns 19 through 21
+
+    {'19-s__Fibrobac...'}    {'20-s__Fibrobac...'}    {'21-s__Fibrobac...'}
+
+  Columns 22 through 24
+
+    {'22-s__Fibrobac...'}    {'23-s__Fibrobac...'}    {'24-s__Fibrobac...'}
+
+  Columns 25 through 27
+
+    {'25-s__Fibrobac...'}    {'26-s__Fibrobac...'}    {'27-s__Fibrobac...'}
+
+  Columns 28 through 30
+
+    {'28-s__Fibrobac...'}    {'29-s__Fibrobac...'}    {'30-s__Fibrobac...'}
+
+  Columns 31 through 33
+
+    {'31-s__Fibrobac...'}    {'32-s__Fibrobac...'}    {'33-s__Fibrobac...'}
+
+  Columns 34 through 36
+
+    {'34-s__Fibrobac...'}    {'35-s__Fibrobac...'}    {'36-s__Fibrobac...'}
+
+  Columns 37 through 39
+
+    {'37-s__Fibrobac...'}    {'38-s__Fibrobac...'}    {'39-s__Fibrobac...'}
+
+  Columns 40 through 42
+
+    {'40-s__Fibrobac...'}    {'41-s__Fibrobac...'}    {'42-s__Fibrobac...'}
+
+  Column 43
+
+    {'prediction'}
+
+
+T3 =
+
+  5x43 table
+
+                    1-s__Fibrobacter elongatus    2-s__Fibrobacter sp001603905    3-s__Fibrobacter sp002210285    4-s__Fibrobacter sp002210295    5-s__Fibrobacter sp002210345    6-s__Fibrobacter sp002382975    7-s__Fibrobacter sp002391195    8-s__Fibrobacter sp002394865    9-s__Fibrobacter sp002395745    10-s__Fibrobacter sp002449765    11-s__Fibrobacter sp003149045    12-s__Fibrobacter sp900141705    13-s__Fibrobacter sp900142465    14-s__Fibrobacter sp900142475    15-s__Fibrobacter sp900142495    16-s__Fibrobacter sp900142535    17-s__Fibrobacter sp900142545    18-s__Fibrobacter sp900143015    19-s__Fibrobacter sp900143055    20-s__Fibrobacter sp900177705    21-s__Fibrobacter sp900177805    22-s__Fibrobacter sp900215325    23-s__Fibrobacter sp900313675    24-s__Fibrobacter sp900316465    25-s__Fibrobacter succinogenes    26-s__Fibrobacter succinogenes_A    27-s__Fibrobacter succinogenes_B    28-s__Fibrobacter succinogenes_C    29-s__Fibrobacter succinogenes_D    30-s__Fibrobacter succinogenes_E    31-s__Fibrobacter succinogenes_F    32-s__Fibrobacter succinogenes_G    33-s__Fibrobacter succinogenes_H    34-s__Fibrobacter succinogenes_I    35-s__Fibrobacter succinogenes_J    36-s__Fibrobacter succinogenes_K    37-s__Fibrobacter succinogenes_L    38-s__Fibrobacter succinogenes_M    39-s__Fibrobacter succinogenes_N    40-s__Fibrobacter succinogenes_O    41-s__Fibrobacter succinogenes_P    42-s__Fibrobacter succinogenes_Q    prediction
+                    __________________________    ____________________________    ____________________________    ____________________________    ____________________________    ____________________________    ____________________________    ____________________________    ____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    _____________________________    ______________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    ________________________________    __________
+
+    RUG181.fasta            2.2201e-14                     2.2201e-14                      9.6567e-07                       0.0014257                      2.2201e-14                      3.0651e-13                      6.4858e-11                      2.0703e-05                      2.2201e-14                      2.2201e-14                       2.2201e-14                       2.2201e-14                        1.704e-13                       2.2201e-14                         0.049833                       2.2201e-14                       2.2201e-14                       2.2201e-14                       2.2201e-14                       1.1734e-07                       2.2201e-14                       1.2036e-10                       1.0621e-11                          0.94872                        9.0149e-08                         2.2201e-14                          2.2201e-14                          5.2668e-09                          2.2201e-14                          2.2201e-14                          2.2201e-14                          2.2201e-14                          1.6042e-10                          2.2201e-14                          2.2201e-14                          2.2201e-14                          2.2201e-14                          2.2201e-14                          2.1854e-10                          2.2201e-14                          2.2201e-14                          2.2201e-14                   24    
+    RUG229.fasta            2.2202e-14                     2.2202e-14                      6.2888e-05                       0.0003722                      2.2202e-14                      2.3119e-12                       7.652e-09                       0.0010224                      2.2202e-14                      2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                          0.99328                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                        0.0051683                       2.2202e-14                       2.2202e-14                       2.1957e-13                       9.6249e-05                        6.6619e-08                         2.2202e-14                          2.2202e-14                          2.2282e-06                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          1.0698e-10                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          3.9577e-08                          2.2202e-14                          2.2202e-14                          2.2202e-14                   15    
+    RUG438.fasta            2.2575e-14                     2.2575e-14                      5.1043e-08                      2.2863e-11                       0.0073972                      2.3569e-13                      5.3472e-06                       0.0066385                      2.2575e-14                      2.2575e-14                       2.2575e-14                       2.2575e-14                       4.5139e-09                       2.2575e-14                          0.02403                       2.2575e-14                       2.2575e-14                       7.2408e-12                       2.2575e-14                       2.2575e-14                       2.2575e-14                          0.38157                       2.5637e-05                       2.2575e-14                        3.1002e-06                         2.2575e-14                          2.2575e-14                          1.2065e-11                          2.2575e-14                          2.2575e-14                          2.5283e-14                          2.2575e-14                          1.0304e-05                          2.2575e-14                             0.34959                          2.2575e-14                          2.2575e-14                          2.2575e-14                             0.23072                          2.2575e-14                          2.9939e-11                          2.2575e-14                   22    
+    RUG690.fasta            2.2202e-14                     2.2202e-14                       1.949e-05                        0.015388                      2.2202e-14                      2.2202e-14                      2.7214e-08                      0.00023227                      2.2202e-14                      2.2202e-14                       2.2202e-14                       2.2202e-14                       1.9705e-13                       2.2202e-14                          0.98434                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.3659e-05                       2.2202e-14                       2.2202e-14                       2.2202e-14                       7.7824e-08                        6.8021e-07                         2.2202e-14                          2.2202e-14                           1.138e-07                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          1.5122e-10                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          8.1911e-12                          2.2202e-14                          2.2202e-14                          2.2202e-14                   15    
+    RUG831.fasta            2.2202e-14                     2.2202e-14                      2.2202e-14                      3.0949e-08                      2.2202e-14                      5.9982e-05                         0.06195                      2.2202e-14                      2.2202e-14                      2.2202e-14                       2.2202e-14                       2.2202e-14                       6.8419e-07                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                       2.2202e-14                       1.4252e-12                          0.93799                       2.2202e-14                        2.2202e-14                         2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                           3.554e-09                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.2202e-14                          2.4423e-12                          2.2202e-14                   23    
+
+
+outputPath = 
+
+    "outputs-GTDB-r202/test-g__Fibrobacter.xlsx"
+
+Process completed 
+[?1l>

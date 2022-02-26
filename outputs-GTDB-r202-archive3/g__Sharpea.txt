@@ -1,0 +1,382 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__Sharpea"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902801545.1_1.fasta
+RS_GCF_902790585.1_11.fasta
+RS_GCF_902788005.1_9.fasta
+RS_GCF_902785405.1_3.fasta
+RS_GCF_902769505.1_14.fasta
+RS_GCF_902769505.1_1.fasta
+RS_GCF_902760635.1_15.fasta
+RS_GCF_902757065.1_14.fasta
+RS_GCF_902756895.1_13.fasta
+RS_GCF_902756075.1_16.fasta
+RS_GCF_902756075.1_1.fasta
+RS_GCF_900108995.1_16.fasta
+RS_GCF_000702165.1_12.fasta
+GB_GCA_900317255.1_7.fasta
+GB_GCA_900317255.1_14.fasta
+GB_GCA_900317255.1_10.fasta
+GB_GCA_900317185.1_2.fasta
+GB_GCA_900317185.1_10.fasta
+GB_GCA_003527105.1_18.fasta
+GB_GCA_003527105.1_12.fasta
+GB_GCA_003520115.1_16.fasta
+GB_GCA_003500565.1_16.fasta
+GB_GCA_003451295.1_16.fasta
+GB_GCA_002450195.1_0.fasta
+GB_GCA_002380215.1_4.fasta
+GB_GCA_002380215.1_19.fasta
+GB_GCA_002374035.1_2.fasta
+GB_GCA_002372955.1_15.fasta
+GB_GCA_002362095.1_4.fasta
+GB_GCA_002351115.1_15.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_009695655.1_9.fasta
+RS_GCF_009695655.1_8.fasta
+RS_GCF_009695655.1_7.fasta
+RS_GCF_009695655.1_6.fasta
+RS_GCF_009695655.1_5.fasta
+RS_GCF_009695655.1_4.fasta
+RS_GCF_009695655.1_3.fasta
+RS_GCF_009695655.1_2.fasta
+RS_GCF_009695655.1_19.fasta
+RS_GCF_009695655.1_18.fasta
+RS_GCF_009695655.1_17.fasta
+RS_GCF_009695655.1_16.fasta
+RS_GCF_009695655.1_15.fasta
+RS_GCF_009695655.1_14.fasta
+RS_GCF_009695655.1_13.fasta
+RS_GCF_009695655.1_12.fasta
+RS_GCF_009695655.1_11.fasta
+RS_GCF_009695655.1_10.fasta
+RS_GCF_009695655.1_1.fasta
+RS_GCF_009695655.1_0.fasta
+Generating CGRs.... 
+totalSeq is: 50
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    2.0000
+    1.0000    0.0000    1.0000    2.0000
+    1.0000    0.0000    1.0000    2.0000
+    1.0000    0.0000    1.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__Sharpea azabuensis    s__Sharpea azabuensis_A    prediction    actual
+                                   _____________________    _______________________    __________    ______
+
+    GB_GCA_002362095.1_4.fasta               1                    2.2204e-14               1           1   
+    GB_GCA_002380215.1_19.fasta              1                    2.2204e-14               1           1   
+    GB_GCA_003520115.1_16.fasta              1                    2.2204e-14               1           1   
+    GB_GCA_003527105.1_12.fasta              1                    2.2204e-14               1           1   
+    RS_GCF_902757065.1_14.fasta              1                    2.2204e-14               1           1   
+    RS_GCF_902785405.1_3.fasta               1                    2.2204e-14               1           1   
+    RS_GCF_009695655.1_1.fasta               1                    2.2204e-14               1           2   
+    RS_GCF_009695655.1_14.fasta              1                    2.2204e-14               1           2   
+    RS_GCF_009695655.1_7.fasta               1                    2.2204e-14               1           2   
+    RS_GCF_009695655.1_8.fasta               1                    2.2204e-14               1           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    0.5750    0.4250    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.5750    0.4250    1.0000    1.0000
+    0.5750    0.4250    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__Sharpea azabuensis    s__Sharpea azabuensis_A    prediction    actual
+                                   _____________________    _______________________    __________    ______
+
+    GB_GCA_002380215.1_4.fasta             0.575                       0.425               1           1   
+    GB_GCA_003451295.1_16.fasta                1                  2.2204e-14               1           1   
+    GB_GCA_003500565.1_16.fasta                1                  2.2204e-14               1           1   
+    RS_GCF_000702165.1_12.fasta            0.575                       0.425               1           1   
+    RS_GCF_902756075.1_16.fasta            0.575                       0.425               1           1   
+    RS_GCF_902769505.1_14.fasta                1                  2.2204e-14               1           1   
+    RS_GCF_902790585.1_11.fasta                1                  2.2204e-14               1           1   
+    RS_GCF_009695655.1_10.fasta                0                           1               2           2   
+    RS_GCF_009695655.1_15.fasta                0                           1               2           2   
+    RS_GCF_009695655.1_16.fasta                0                           1               2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__Sharpea azabuensis    s__Sharpea azabuensis_A    prediction    actual
+                                   _____________________    _______________________    __________    ______
+
+    GB_GCA_002351115.1_15.fasta              1                    2.2204e-14               1           1   
+    GB_GCA_002372955.1_15.fasta              1                    2.2204e-14               1           1   
+    GB_GCA_900317185.1_10.fasta              1                    2.2204e-14               1           1   
+    GB_GCA_900317255.1_10.fasta              1                    2.2204e-14               1           1   
+    GB_GCA_900317255.1_7.fasta               1                    2.2204e-14               1           1   
+    RS_GCF_900108995.1_16.fasta              1                    2.2204e-14               1           1   
+    RS_GCF_902788005.1_9.fasta               1                    2.2204e-14               1           1   
+    RS_GCF_009695655.1_0.fasta               0                             1               2           2   
+    RS_GCF_009695655.1_18.fasta              0                             1               2           2   
+    RS_GCF_009695655.1_9.fasta               0                             1               2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__Sharpea azabuensis    s__Sharpea azabuensis_A    prediction    actual
+                                   _____________________    _______________________    __________    ______
+
+    GB_GCA_002450195.1_0.fasta               1                    2.2204e-14               1           1   
+    GB_GCA_003527105.1_18.fasta              1                    2.2204e-14               1           1   
+    GB_GCA_900317185.1_2.fasta               1                    2.2204e-14               1           1   
+    GB_GCA_900317255.1_14.fasta              1                    2.2204e-14               1           1   
+    RS_GCF_902756895.1_13.fasta              1                    2.2204e-14               1           1   
+    RS_GCF_902760635.1_15.fasta              1                    2.2204e-14               1           1   
+    RS_GCF_009695655.1_11.fasta              0                             1               2           2   
+    RS_GCF_009695655.1_17.fasta              0                             1               2           2   
+    RS_GCF_009695655.1_2.fasta               0                             1               2           2   
+    RS_GCF_009695655.1_5.fasta               0                             1               2           2   
+
+
+testAcNum =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}    {["/mnt/sda/MLD..."]}
+
+  Column 10
+
+    {["/mnt/sda/MLD..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    1.0000    0.0000    1.0000    1.0000
+    0.6500    0.3500    1.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.6500    0.3500    1.0000    2.0000
+         0    1.0000    2.0000    2.0000
+         0    1.0000    2.0000    2.0000
+    0.6500    0.3500    1.0000    2.0000
+
+
+T3 =
+
+  10x4 table
+
+                                   s__Sharpea azabuensis    s__Sharpea azabuensis_A    prediction    actual
+                                   _____________________    _______________________    __________    ______
+
+    GB_GCA_002374035.1_2.fasta                1                   2.2204e-14               1           1   
+    RS_GCF_902756075.1_1.fasta                1                   2.2204e-14               1           1   
+    RS_GCF_902769505.1_1.fasta                1                   2.2204e-14               1           1   
+    RS_GCF_902801545.1_1.fasta                1                   2.2204e-14               1           1   
+    RS_GCF_009695655.1_12.fasta            0.65                         0.35               1           2   
+    RS_GCF_009695655.1_13.fasta               0                            1               2           2   
+    RS_GCF_009695655.1_19.fasta            0.65                         0.35               1           2   
+    RS_GCF_009695655.1_3.fasta                0                            1               2           2   
+    RS_GCF_009695655.1_4.fasta                0                            1               2           2   
+    RS_GCF_009695655.1_6.fasta             0.65                         0.35               1           2   
+
+confusion matrix for 1 is:
+    30     0
+     7    13
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [86]    [86]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}       86   
+    {'AvgAccuracy' }       86   
+
+Process completed 
+[?1l>

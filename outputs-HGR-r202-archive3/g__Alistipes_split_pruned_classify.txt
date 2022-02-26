@@ -1,0 +1,1706 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Alistipes_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Alistipes"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000311925_1.fasta
+label_GCF_000311925_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS50_9.fasta
+label_UMGS50_8.fasta
+label_UMGS50_7.fasta
+label_UMGS50_6.fasta
+label_UMGS50_5.fasta
+label_UMGS50_4.fasta
+label_UMGS50_3.fasta
+label_UMGS50_20.fasta
+label_UMGS50_2.fasta
+label_UMGS50_19.fasta
+label_UMGS50_18.fasta
+label_UMGS50_17.fasta
+label_UMGS50_16.fasta
+label_UMGS50_15.fasta
+label_UMGS50_14.fasta
+label_UMGS50_13.fasta
+label_UMGS50_12.fasta
+label_UMGS50_11.fasta
+label_UMGS50_10.fasta
+label_UMGS50_1.fasta
+label_UMGS50_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_14207_7_70_6.fasta
+label_14207_7_70_5.fasta
+label_14207_7_70_4.fasta
+label_14207_7_70_3.fasta
+label_14207_7_70_2.fasta
+label_14207_7_70_1.fasta
+label_14207_7_70_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_900083545_2.fasta
+label_GCF_900083545_1.fasta
+label_GCF_900083545_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000154465_3.fasta
+label_GCF_000154465_2.fasta
+label_GCF_000154465_1.fasta
+label_GCF_000154465_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000312145_2.fasta
+label_GCF_000312145_1.fasta
+label_GCF_000312145_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_11861_6_63_9.fasta
+label_11861_6_63_8.fasta
+label_11861_6_63_7.fasta
+label_11861_6_63_6.fasta
+label_11861_6_63_5.fasta
+label_11861_6_63_4.fasta
+label_11861_6_63_3.fasta
+label_11861_6_63_2.fasta
+label_11861_6_63_14.fasta
+label_11861_6_63_13.fasta
+label_11861_6_63_12.fasta
+label_11861_6_63_11.fasta
+label_11861_6_63_10.fasta
+label_11861_6_63_1.fasta
+label_11861_6_63_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS372_9.fasta
+label_UMGS372_8.fasta
+label_UMGS372_7.fasta
+label_UMGS372_6.fasta
+label_UMGS372_5.fasta
+label_UMGS372_4.fasta
+label_UMGS372_33.fasta
+label_UMGS372_32.fasta
+label_UMGS372_31.fasta
+label_UMGS372_30.fasta
+label_UMGS372_3.fasta
+label_UMGS372_29.fasta
+label_UMGS372_28.fasta
+label_UMGS372_27.fasta
+label_UMGS372_26.fasta
+label_UMGS372_25.fasta
+label_UMGS372_24.fasta
+label_UMGS372_23.fasta
+label_UMGS372_22.fasta
+label_UMGS372_21.fasta
+label_UMGS372_20.fasta
+label_UMGS372_2.fasta
+label_UMGS372_19.fasta
+label_UMGS372_18.fasta
+label_UMGS372_17.fasta
+label_UMGS372_16.fasta
+label_UMGS372_15.fasta
+label_UMGS372_14.fasta
+label_UMGS372_13.fasta
+label_UMGS372_12.fasta
+label_UMGS372_11.fasta
+label_UMGS372_10.fasta
+label_UMGS372_1.fasta
+label_UMGS372_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_14207_6_12_9.fasta
+label_14207_6_12_8.fasta
+label_14207_6_12_7.fasta
+label_14207_6_12_6.fasta
+label_14207_6_12_5.fasta
+label_14207_6_12_4.fasta
+label_14207_6_12_3.fasta
+label_14207_6_12_2.fasta
+label_14207_6_12_17.fasta
+label_14207_6_12_16.fasta
+label_14207_6_12_15.fasta
+label_14207_6_12_14.fasta
+label_14207_6_12_13.fasta
+label_14207_6_12_12.fasta
+label_14207_6_12_11.fasta
+label_14207_6_12_10.fasta
+label_14207_6_12_1.fasta
+label_14207_6_12_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS559_9.fasta
+label_UMGS559_8.fasta
+label_UMGS559_7.fasta
+label_UMGS559_6.fasta
+label_UMGS559_5.fasta
+label_UMGS559_4.fasta
+label_UMGS559_35.fasta
+label_UMGS559_34.fasta
+label_UMGS559_33.fasta
+label_UMGS559_32.fasta
+label_UMGS559_31.fasta
+label_UMGS559_30.fasta
+label_UMGS559_3.fasta
+label_UMGS559_29.fasta
+label_UMGS559_28.fasta
+label_UMGS559_27.fasta
+label_UMGS559_26.fasta
+label_UMGS559_25.fasta
+label_UMGS559_24.fasta
+label_UMGS559_23.fasta
+label_UMGS559_22.fasta
+label_UMGS559_21.fasta
+label_UMGS559_20.fasta
+label_UMGS559_2.fasta
+label_UMGS559_19.fasta
+label_UMGS559_18.fasta
+label_UMGS559_17.fasta
+label_UMGS559_16.fasta
+label_UMGS559_15.fasta
+label_UMGS559_14.fasta
+label_UMGS559_13.fasta
+label_UMGS559_12.fasta
+label_UMGS559_11.fasta
+label_UMGS559_10.fasta
+label_UMGS559_1.fasta
+label_UMGS559_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS206_92.fasta
+label_UMGS206_91.fasta
+label_UMGS206_90.fasta
+label_UMGS206_9.fasta
+label_UMGS206_89.fasta
+label_UMGS206_88.fasta
+label_UMGS206_87.fasta
+label_UMGS206_86.fasta
+label_UMGS206_85.fasta
+label_UMGS206_84.fasta
+label_UMGS206_83.fasta
+label_UMGS206_82.fasta
+label_UMGS206_81.fasta
+label_UMGS206_80.fasta
+label_UMGS206_8.fasta
+label_UMGS206_79.fasta
+label_UMGS206_78.fasta
+label_UMGS206_77.fasta
+label_UMGS206_76.fasta
+label_UMGS206_75.fasta
+label_UMGS206_74.fasta
+label_UMGS206_73.fasta
+label_UMGS206_72.fasta
+label_UMGS206_71.fasta
+label_UMGS206_70.fasta
+label_UMGS206_7.fasta
+label_UMGS206_69.fasta
+label_UMGS206_68.fasta
+label_UMGS206_67.fasta
+label_UMGS206_66.fasta
+label_UMGS206_65.fasta
+label_UMGS206_64.fasta
+label_UMGS206_63.fasta
+label_UMGS206_62.fasta
+label_UMGS206_61.fasta
+label_UMGS206_60.fasta
+label_UMGS206_6.fasta
+label_UMGS206_59.fasta
+label_UMGS206_58.fasta
+label_UMGS206_57.fasta
+label_UMGS206_56.fasta
+label_UMGS206_55.fasta
+label_UMGS206_54.fasta
+label_UMGS206_53.fasta
+label_UMGS206_52.fasta
+label_UMGS206_51.fasta
+label_UMGS206_50.fasta
+label_UMGS206_5.fasta
+label_UMGS206_49.fasta
+label_UMGS206_48.fasta
+label_UMGS206_47.fasta
+label_UMGS206_46.fasta
+label_UMGS206_45.fasta
+label_UMGS206_44.fasta
+label_UMGS206_43.fasta
+label_UMGS206_42.fasta
+label_UMGS206_41.fasta
+label_UMGS206_40.fasta
+label_UMGS206_4.fasta
+label_UMGS206_39.fasta
+label_UMGS206_38.fasta
+label_UMGS206_37.fasta
+label_UMGS206_36.fasta
+label_UMGS206_35.fasta
+label_UMGS206_34.fasta
+label_UMGS206_33.fasta
+label_UMGS206_32.fasta
+label_UMGS206_31.fasta
+label_UMGS206_30.fasta
+label_UMGS206_3.fasta
+label_UMGS206_29.fasta
+label_UMGS206_28.fasta
+label_UMGS206_27.fasta
+label_UMGS206_26.fasta
+label_UMGS206_25.fasta
+label_UMGS206_24.fasta
+label_UMGS206_23.fasta
+label_UMGS206_22.fasta
+label_UMGS206_21.fasta
+label_UMGS206_20.fasta
+label_UMGS206_2.fasta
+label_UMGS206_19.fasta
+label_UMGS206_18.fasta
+label_UMGS206_17.fasta
+label_UMGS206_16.fasta
+label_UMGS206_15.fasta
+label_UMGS206_14.fasta
+label_UMGS206_13.fasta
+label_UMGS206_12.fasta
+label_UMGS206_11.fasta
+label_UMGS206_10.fasta
+label_UMGS206_1.fasta
+label_UMGS206_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS368_9.fasta
+label_UMGS368_8.fasta
+label_UMGS368_7.fasta
+label_UMGS368_6.fasta
+label_UMGS368_5.fasta
+label_UMGS368_42.fasta
+label_UMGS368_41.fasta
+label_UMGS368_40.fasta
+label_UMGS368_4.fasta
+label_UMGS368_39.fasta
+label_UMGS368_38.fasta
+label_UMGS368_37.fasta
+label_UMGS368_36.fasta
+label_UMGS368_35.fasta
+label_UMGS368_34.fasta
+label_UMGS368_33.fasta
+label_UMGS368_32.fasta
+label_UMGS368_31.fasta
+label_UMGS368_30.fasta
+label_UMGS368_3.fasta
+label_UMGS368_29.fasta
+label_UMGS368_28.fasta
+label_UMGS368_27.fasta
+label_UMGS368_26.fasta
+label_UMGS368_25.fasta
+label_UMGS368_24.fasta
+label_UMGS368_23.fasta
+label_UMGS368_22.fasta
+label_UMGS368_21.fasta
+label_UMGS368_20.fasta
+label_UMGS368_2.fasta
+label_UMGS368_19.fasta
+label_UMGS368_18.fasta
+label_UMGS368_17.fasta
+label_UMGS368_16.fasta
+label_UMGS368_15.fasta
+label_UMGS368_14.fasta
+label_UMGS368_13.fasta
+label_UMGS368_12.fasta
+label_UMGS368_11.fasta
+label_UMGS368_10.fasta
+label_UMGS368_1.fasta
+label_UMGS368_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS465_9.fasta
+label_UMGS465_8.fasta
+label_UMGS465_7.fasta
+label_UMGS465_65.fasta
+label_UMGS465_64.fasta
+label_UMGS465_63.fasta
+label_UMGS465_62.fasta
+label_UMGS465_61.fasta
+label_UMGS465_60.fasta
+label_UMGS465_6.fasta
+label_UMGS465_59.fasta
+label_UMGS465_58.fasta
+label_UMGS465_57.fasta
+label_UMGS465_56.fasta
+label_UMGS465_55.fasta
+label_UMGS465_54.fasta
+label_UMGS465_53.fasta
+label_UMGS465_52.fasta
+label_UMGS465_51.fasta
+label_UMGS465_50.fasta
+label_UMGS465_5.fasta
+label_UMGS465_49.fasta
+label_UMGS465_48.fasta
+label_UMGS465_47.fasta
+label_UMGS465_46.fasta
+label_UMGS465_45.fasta
+label_UMGS465_44.fasta
+label_UMGS465_43.fasta
+label_UMGS465_42.fasta
+label_UMGS465_41.fasta
+label_UMGS465_40.fasta
+label_UMGS465_4.fasta
+label_UMGS465_39.fasta
+label_UMGS465_38.fasta
+label_UMGS465_37.fasta
+label_UMGS465_36.fasta
+label_UMGS465_35.fasta
+label_UMGS465_34.fasta
+label_UMGS465_33.fasta
+label_UMGS465_32.fasta
+label_UMGS465_31.fasta
+label_UMGS465_30.fasta
+label_UMGS465_3.fasta
+label_UMGS465_29.fasta
+label_UMGS465_28.fasta
+label_UMGS465_27.fasta
+label_UMGS465_26.fasta
+label_UMGS465_25.fasta
+label_UMGS465_24.fasta
+label_UMGS465_23.fasta
+label_UMGS465_22.fasta
+label_UMGS465_21.fasta
+label_UMGS465_20.fasta
+label_UMGS465_2.fasta
+label_UMGS465_19.fasta
+label_UMGS465_18.fasta
+label_UMGS465_17.fasta
+label_UMGS465_16.fasta
+label_UMGS465_15.fasta
+label_UMGS465_14.fasta
+label_UMGS465_13.fasta
+label_UMGS465_12.fasta
+label_UMGS465_11.fasta
+label_UMGS465_10.fasta
+label_UMGS465_1.fasta
+label_UMGS465_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS657_9.fasta
+label_UMGS657_8.fasta
+label_UMGS657_7.fasta
+label_UMGS657_6.fasta
+label_UMGS657_5.fasta
+label_UMGS657_48.fasta
+label_UMGS657_47.fasta
+label_UMGS657_46.fasta
+label_UMGS657_45.fasta
+label_UMGS657_44.fasta
+label_UMGS657_43.fasta
+label_UMGS657_42.fasta
+label_UMGS657_41.fasta
+label_UMGS657_40.fasta
+label_UMGS657_4.fasta
+label_UMGS657_39.fasta
+label_UMGS657_38.fasta
+label_UMGS657_37.fasta
+label_UMGS657_36.fasta
+label_UMGS657_35.fasta
+label_UMGS657_34.fasta
+label_UMGS657_33.fasta
+label_UMGS657_32.fasta
+label_UMGS657_31.fasta
+label_UMGS657_30.fasta
+label_UMGS657_3.fasta
+label_UMGS657_29.fasta
+label_UMGS657_28.fasta
+label_UMGS657_27.fasta
+label_UMGS657_26.fasta
+label_UMGS657_25.fasta
+label_UMGS657_24.fasta
+label_UMGS657_23.fasta
+label_UMGS657_22.fasta
+label_UMGS657_21.fasta
+label_UMGS657_20.fasta
+label_UMGS657_2.fasta
+label_UMGS657_19.fasta
+label_UMGS657_18.fasta
+label_UMGS657_17.fasta
+label_UMGS657_16.fasta
+label_UMGS657_15.fasta
+label_UMGS657_14.fasta
+label_UMGS657_13.fasta
+label_UMGS657_12.fasta
+label_UMGS657_11.fasta
+label_UMGS657_10.fasta
+label_UMGS657_1.fasta
+label_UMGS657_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS840_9.fasta
+label_UMGS840_8.fasta
+label_UMGS840_7.fasta
+label_UMGS840_6.fasta
+label_UMGS840_5.fasta
+label_UMGS840_4.fasta
+label_UMGS840_38.fasta
+label_UMGS840_37.fasta
+label_UMGS840_36.fasta
+label_UMGS840_35.fasta
+label_UMGS840_34.fasta
+label_UMGS840_33.fasta
+label_UMGS840_32.fasta
+label_UMGS840_31.fasta
+label_UMGS840_30.fasta
+label_UMGS840_3.fasta
+label_UMGS840_29.fasta
+label_UMGS840_28.fasta
+label_UMGS840_27.fasta
+label_UMGS840_26.fasta
+label_UMGS840_25.fasta
+label_UMGS840_24.fasta
+label_UMGS840_23.fasta
+label_UMGS840_22.fasta
+label_UMGS840_21.fasta
+label_UMGS840_20.fasta
+label_UMGS840_2.fasta
+label_UMGS840_19.fasta
+label_UMGS840_18.fasta
+label_UMGS840_17.fasta
+label_UMGS840_16.fasta
+label_UMGS840_15.fasta
+label_UMGS840_14.fasta
+label_UMGS840_13.fasta
+label_UMGS840_12.fasta
+label_UMGS840_11.fasta
+label_UMGS840_10.fasta
+label_UMGS840_1.fasta
+label_UMGS840_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1065_92.fasta
+label_UMGS1065_91.fasta
+label_UMGS1065_90.fasta
+label_UMGS1065_9.fasta
+label_UMGS1065_89.fasta
+label_UMGS1065_88.fasta
+label_UMGS1065_87.fasta
+label_UMGS1065_86.fasta
+label_UMGS1065_85.fasta
+label_UMGS1065_84.fasta
+label_UMGS1065_83.fasta
+label_UMGS1065_82.fasta
+label_UMGS1065_81.fasta
+label_UMGS1065_80.fasta
+label_UMGS1065_8.fasta
+label_UMGS1065_79.fasta
+label_UMGS1065_78.fasta
+label_UMGS1065_77.fasta
+label_UMGS1065_76.fasta
+label_UMGS1065_75.fasta
+label_UMGS1065_74.fasta
+label_UMGS1065_73.fasta
+label_UMGS1065_72.fasta
+label_UMGS1065_71.fasta
+label_UMGS1065_70.fasta
+label_UMGS1065_7.fasta
+label_UMGS1065_69.fasta
+label_UMGS1065_68.fasta
+label_UMGS1065_67.fasta
+label_UMGS1065_66.fasta
+label_UMGS1065_65.fasta
+label_UMGS1065_64.fasta
+label_UMGS1065_63.fasta
+label_UMGS1065_62.fasta
+label_UMGS1065_61.fasta
+label_UMGS1065_60.fasta
+label_UMGS1065_6.fasta
+label_UMGS1065_59.fasta
+label_UMGS1065_58.fasta
+label_UMGS1065_57.fasta
+label_UMGS1065_56.fasta
+label_UMGS1065_55.fasta
+label_UMGS1065_54.fasta
+label_UMGS1065_53.fasta
+label_UMGS1065_52.fasta
+label_UMGS1065_51.fasta
+label_UMGS1065_50.fasta
+label_UMGS1065_5.fasta
+label_UMGS1065_49.fasta
+label_UMGS1065_48.fasta
+label_UMGS1065_47.fasta
+label_UMGS1065_46.fasta
+label_UMGS1065_45.fasta
+label_UMGS1065_44.fasta
+label_UMGS1065_43.fasta
+label_UMGS1065_42.fasta
+label_UMGS1065_41.fasta
+label_UMGS1065_40.fasta
+label_UMGS1065_4.fasta
+label_UMGS1065_39.fasta
+label_UMGS1065_38.fasta
+label_UMGS1065_37.fasta
+label_UMGS1065_36.fasta
+label_UMGS1065_35.fasta
+label_UMGS1065_34.fasta
+label_UMGS1065_33.fasta
+label_UMGS1065_32.fasta
+label_UMGS1065_31.fasta
+label_UMGS1065_30.fasta
+label_UMGS1065_3.fasta
+label_UMGS1065_29.fasta
+label_UMGS1065_28.fasta
+label_UMGS1065_27.fasta
+label_UMGS1065_26.fasta
+label_UMGS1065_25.fasta
+label_UMGS1065_24.fasta
+label_UMGS1065_23.fasta
+label_UMGS1065_22.fasta
+label_UMGS1065_21.fasta
+label_UMGS1065_20.fasta
+label_UMGS1065_2.fasta
+label_UMGS1065_19.fasta
+label_UMGS1065_18.fasta
+label_UMGS1065_17.fasta
+label_UMGS1065_16.fasta
+label_UMGS1065_15.fasta
+label_UMGS1065_14.fasta
+label_UMGS1065_13.fasta
+label_UMGS1065_12.fasta
+label_UMGS1065_11.fasta
+label_UMGS1065_10.fasta
+label_UMGS1065_1.fasta
+label_UMGS1065_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1168_9.fasta
+label_UMGS1168_89.fasta
+label_UMGS1168_75.fasta
+label_UMGS1168_71.fasta
+label_UMGS1168_65.fasta
+label_UMGS1168_53.fasta
+label_UMGS1168_42.fasta
+label_UMGS1168_38.fasta
+label_UMGS1168_26.fasta
+label_UMGS1168_186.fasta
+label_UMGS1168_182.fasta
+label_UMGS1168_18.fasta
+label_UMGS1168_145.fasta
+label_UMGS1168_140.fasta
+label_UMGS1168_134.fasta
+label_UMGS1168_132.fasta
+label_UMGS1168_130.fasta
+label_UMGS1168_127.fasta
+label_UMGS1168_116.fasta
+label_UMGS1168_109.fasta
+label_UMGS1168_106.fasta
+label_UMGS1168_103.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1280_9.fasta
+label_UMGS1280_8.fasta
+label_UMGS1280_7.fasta
+label_UMGS1280_6.fasta
+label_UMGS1280_55.fasta
+label_UMGS1280_54.fasta
+label_UMGS1280_53.fasta
+label_UMGS1280_52.fasta
+label_UMGS1280_51.fasta
+label_UMGS1280_50.fasta
+label_UMGS1280_5.fasta
+label_UMGS1280_49.fasta
+label_UMGS1280_48.fasta
+label_UMGS1280_47.fasta
+label_UMGS1280_46.fasta
+label_UMGS1280_45.fasta
+label_UMGS1280_44.fasta
+label_UMGS1280_43.fasta
+label_UMGS1280_42.fasta
+label_UMGS1280_41.fasta
+label_UMGS1280_40.fasta
+label_UMGS1280_4.fasta
+label_UMGS1280_39.fasta
+label_UMGS1280_38.fasta
+label_UMGS1280_37.fasta
+label_UMGS1280_36.fasta
+label_UMGS1280_35.fasta
+label_UMGS1280_34.fasta
+label_UMGS1280_33.fasta
+label_UMGS1280_32.fasta
+label_UMGS1280_31.fasta
+label_UMGS1280_30.fasta
+label_UMGS1280_3.fasta
+label_UMGS1280_29.fasta
+label_UMGS1280_28.fasta
+label_UMGS1280_27.fasta
+label_UMGS1280_26.fasta
+label_UMGS1280_25.fasta
+label_UMGS1280_24.fasta
+label_UMGS1280_23.fasta
+label_UMGS1280_22.fasta
+label_UMGS1280_21.fasta
+label_UMGS1280_20.fasta
+label_UMGS1280_2.fasta
+label_UMGS1280_19.fasta
+label_UMGS1280_18.fasta
+label_UMGS1280_17.fasta
+label_UMGS1280_16.fasta
+label_UMGS1280_15.fasta
+label_UMGS1280_14.fasta
+label_UMGS1280_13.fasta
+label_UMGS1280_12.fasta
+label_UMGS1280_11.fasta
+label_UMGS1280_10.fasta
+label_UMGS1280_1.fasta
+label_UMGS1280_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1342_81.fasta
+label_UMGS1342_76.fasta
+label_UMGS1342_63.fasta
+label_UMGS1342_61.fasta
+label_UMGS1342_28.fasta
+label_UMGS1342_25.fasta
+label_UMGS1342_21.fasta
+label_UMGS1342_20.fasta
+label_UMGS1342_18.fasta
+label_UMGS1342_12.fasta
+label_UMGS1342_100.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1559_88.fasta
+label_UMGS1559_72.fasta
+label_UMGS1559_64.fasta
+label_UMGS1559_56.fasta
+label_UMGS1559_51.fasta
+label_UMGS1559_50.fasta
+label_UMGS1559_49.fasta
+label_UMGS1559_42.fasta
+label_UMGS1559_40.fasta
+label_UMGS1559_15.fasta
+label_UMGS1559_125.fasta
+label_UMGS1559_119.fasta
+label_UMGS1559_110.fasta
+label_UMGS1559_11.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1587_9.fasta
+label_UMGS1587_8.fasta
+label_UMGS1587_7.fasta
+label_UMGS1587_6.fasta
+label_UMGS1587_5.fasta
+label_UMGS1587_44.fasta
+label_UMGS1587_43.fasta
+label_UMGS1587_42.fasta
+label_UMGS1587_41.fasta
+label_UMGS1587_40.fasta
+label_UMGS1587_4.fasta
+label_UMGS1587_39.fasta
+label_UMGS1587_38.fasta
+label_UMGS1587_37.fasta
+label_UMGS1587_36.fasta
+label_UMGS1587_35.fasta
+label_UMGS1587_34.fasta
+label_UMGS1587_33.fasta
+label_UMGS1587_32.fasta
+label_UMGS1587_31.fasta
+label_UMGS1587_30.fasta
+label_UMGS1587_3.fasta
+label_UMGS1587_29.fasta
+label_UMGS1587_28.fasta
+label_UMGS1587_27.fasta
+label_UMGS1587_26.fasta
+label_UMGS1587_25.fasta
+label_UMGS1587_24.fasta
+label_UMGS1587_23.fasta
+label_UMGS1587_22.fasta
+label_UMGS1587_21.fasta
+label_UMGS1587_20.fasta
+label_UMGS1587_2.fasta
+label_UMGS1587_19.fasta
+label_UMGS1587_18.fasta
+label_UMGS1587_17.fasta
+label_UMGS1587_16.fasta
+label_UMGS1587_15.fasta
+label_UMGS1587_14.fasta
+label_UMGS1587_13.fasta
+label_UMGS1587_12.fasta
+label_UMGS1587_11.fasta
+label_UMGS1587_10.fasta
+label_UMGS1587_1.fasta
+label_UMGS1587_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20298_3_63_9.fasta
+label_20298_3_63_8.fasta
+label_20298_3_63_7.fasta
+label_20298_3_63_6.fasta
+label_20298_3_63_5.fasta
+label_20298_3_63_4.fasta
+label_20298_3_63_3.fasta
+label_20298_3_63_2.fasta
+label_20298_3_63_1.fasta
+label_20298_3_63_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_900107675_9.fasta
+label_GCF_900107675_8.fasta
+label_GCF_900107675_7.fasta
+label_GCF_900107675_6.fasta
+label_GCF_900107675_5.fasta
+label_GCF_900107675_4.fasta
+label_GCF_900107675_3.fasta
+label_GCF_900107675_2.fasta
+label_GCF_900107675_14.fasta
+label_GCF_900107675_13.fasta
+label_GCF_900107675_12.fasta
+label_GCF_900107675_11.fasta
+label_GCF_900107675_10.fasta
+label_GCF_900107675_1.fasta
+label_GCF_900107675_0.fasta
+Generating CGRs.... 
+totalSeq is: 699
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Alistipes
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 5
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'s__Alistipes d...'}    {'s__Alistipes o...'}
+
+  Columns 4 through 6
+
+    {'s__Alistipes p...'}    {'s__Alistipes p...'}    {'s__Alistipes s...'}
+
+  Columns 7 through 9
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'s__Alistipes o...'}
+
+  Columns 4 through 6
+
+    {'s__Alistipes p...'}    {'s__Alistipes p...'}    {'s__Alistipes s...'}
+
+  Columns 7 through 9
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'s__Alistipes p...'}    {'s__Alistipes p...'}    {'s__Alistipes s...'}
+
+  Columns 7 through 9
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'s__Alistipes p...'}    {'s__Alistipes s...'}
+
+  Columns 7 through 9
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'s__Alistipes s...'}
+
+  Columns 7 through 9
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'s__Alistipes s...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'s__Alistipes s...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'s__Alistipes s...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'s__Alistipes s...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'18-s__Alistipe...'}
+
+  Columns 19 through 21
+
+    {'s__Alistipes s...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'18-s__Alistipe...'}
+
+  Columns 19 through 21
+
+    {'19-s__Alistipe...'}    {'s__Alistipes s...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'18-s__Alistipe...'}
+
+  Columns 19 through 21
+
+    {'19-s__Alistipe...'}    {'20-s__Alistipe...'}    {'s__Alistipes s...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'18-s__Alistipe...'}
+
+  Columns 19 through 21
+
+    {'19-s__Alistipe...'}    {'20-s__Alistipe...'}    {'21-s__Alistipe...'}
+
+  Columns 22 through 23
+
+    {'s__Alistipes s...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'18-s__Alistipe...'}
+
+  Columns 19 through 21
+
+    {'19-s__Alistipe...'}    {'20-s__Alistipe...'}    {'21-s__Alistipe...'}
+
+  Columns 22 through 23
+
+    {'22-s__Alistipe...'}    {'s__Alistipes t...'}
+
+
+clusterNames =
+
+  1x23 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'18-s__Alistipe...'}
+
+  Columns 19 through 21
+
+    {'19-s__Alistipe...'}    {'20-s__Alistipe...'}    {'21-s__Alistipe...'}
+
+  Columns 22 through 23
+
+    {'22-s__Alistipe...'}    {'23-s__Alistipe...'}
+
+  Columns 1 through 3
+
+    '1-s__Alistipes c...'    '2-s__Alistipes d...'    '3-s__Alistipes o...'
+
+  Columns 4 through 6
+
+    '4-s__Alistipes p...'    '5-s__Alistipes p...'    '6-s__Alistipes s...'
+
+  Columns 7 through 9
+
+    '7-s__Alistipes s...'    '8-s__Alistipes s...'    '9-s__Alistipes s...'
+
+  Columns 10 through 12
+
+    '10-s__Alistipes ...'    '11-s__Alistipes ...'    '12-s__Alistipes ...'
+
+  Columns 13 through 15
+
+    '13-s__Alistipes ...'    '14-s__Alistipes ...'    '15-s__Alistipes ...'
+
+  Columns 16 through 18
+
+    '16-s__Alistipes ...'    '17-s__Alistipes ...'    '18-s__Alistipes ...'
+
+  Columns 19 through 21
+
+    '19-s__Alistipes ...'    '20-s__Alistipes ...'    '21-s__Alistipes ...'
+
+  Columns 22 through 23
+
+    '22-s__Alistipes ...'    '23-s__Alistipes ...'
+
+
+header =
+
+  1x24 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Alistipes...'}    {'2-s__Alistipes...'}    {'3-s__Alistipes...'}
+
+  Columns 4 through 6
+
+    {'4-s__Alistipes...'}    {'5-s__Alistipes...'}    {'6-s__Alistipes...'}
+
+  Columns 7 through 9
+
+    {'7-s__Alistipes...'}    {'8-s__Alistipes...'}    {'9-s__Alistipes...'}
+
+  Columns 10 through 12
+
+    {'10-s__Alistipe...'}    {'11-s__Alistipe...'}    {'12-s__Alistipe...'}
+
+  Columns 13 through 15
+
+    {'13-s__Alistipe...'}    {'14-s__Alistipe...'}    {'15-s__Alistipe...'}
+
+  Columns 16 through 18
+
+    {'16-s__Alistipe...'}    {'17-s__Alistipe...'}    {'18-s__Alistipe...'}
+
+  Columns 19 through 21
+
+    {'19-s__Alistipe...'}    {'20-s__Alistipe...'}    {'21-s__Alistipe...'}
+
+  Columns 22 through 24
+
+    {'22-s__Alistipe...'}    {'23-s__Alistipe...'}    {'prediction'}
+
+
+T3 =
+
+  5x24 table
+
+                       1-s__Alistipes communis    2-s__Alistipes dispar    3-s__Alistipes onderdonkii    4-s__Alistipes provencensis    5-s__Alistipes putredinis    6-s__Alistipes senegalensis    7-s__Alistipes shahii    8-s__Alistipes sp000434235    9-s__Alistipes sp002358415    10-s__Alistipes sp900021155    11-s__Alistipes sp900290115    12-s__Alistipes sp900541585    13-s__Alistipes sp900542505    14-s__Alistipes sp900544265    15-s__Alistipes sp900546065    16-s__Alistipes sp900548155    17-s__Alistipes sp900549305    18-s__Alistipes sp900550375    19-s__Alistipes sp900550925    20-s__Alistipes sp900552955    21-s__Alistipes sp900553175    22-s__Alistipes sp902363575    23-s__Alistipes timonensis    prediction
+                       _______________________    _____________________    __________________________    ___________________________    _________________________    ___________________________    _____________________    __________________________    __________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    ___________________________    __________________________    __________
+
+    MAG-GUT32170.fa          1.0556e-06                   0.94776                  2.3781e-06                    0.00027921                     1.317e-06                     0.0028054                    0.006373                  0.0069016                     0.0011027                      0.0001758                      3.542e-05                      0.0095692                      0.0040258                     0.00089062                     6.0813e-10                     0.00014492                     2.1754e-08                      3.768e-05                      0.0067489                     5.7688e-05                      0.0041838                      0.0081596                     0.00074211                2     
+    MAG-GUT33270.fa             0.73111                1.3208e-06                  5.2078e-05                    0.00027165                    2.3586e-05                      0.002755                   0.0074263                  0.0057958                      0.001905                      0.0058728                     4.5701e-05                      0.0076034                      0.0039502                     0.00027863                     1.3031e-08                     0.00048976                     8.0504e-07                        0.21088                       0.001104                     3.5908e-05                      0.0011705                      0.0087594                       0.010473                1     
+    MAG-GUT35747.fa             0.68624                9.4846e-07                  5.8686e-05                    0.00027921                    2.0381e-05                     0.0026065                   0.0084041                  0.0048937                     0.0021259                      0.0061328                     4.1734e-05                      0.0080166                       0.004301                      0.0003841                     1.8064e-08                     0.00049599                     8.4593e-07                        0.25524                      0.0011327                     4.0043e-05                      0.0013966                      0.0088338                      0.0093527                1     
+    MAG-GUT4979.fa              0.66784                1.0896e-06                  5.4232e-05                     0.0002958                    2.0089e-05                     0.0026828                   0.0080456                  0.0060997                     0.0022701                      0.0061725                     4.0141e-05                      0.0093184                      0.0050372                     0.00033815                     1.9504e-08                     0.00051192                     8.5275e-07                        0.26847                      0.0012908                     4.5836e-05                      0.0016032                      0.0092986                       0.010558                1     
+    MAG-GUT83643.fa          4.1966e-05                2.0422e-06                     0.86759                     0.0002789                    0.00031292                     0.0047313                   0.0087785                   0.016391                     0.0013873                     0.00020025                       0.001083                       0.031884                      0.0070146                     0.00024222                     1.2561e-08                     0.00016368                     2.6665e-06                      1.322e-05                      0.0011973                     0.00024594                      0.0019726                       0.013566                       0.042905                3     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Alistipes_split_pruned.xlsx"
+
+Process completed 
+[?1l>

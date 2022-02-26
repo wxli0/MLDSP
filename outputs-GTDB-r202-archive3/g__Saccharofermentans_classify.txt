@@ -1,0 +1,850 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__Saccharofermentans"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Saccharofermentans"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_000621765.1_9.fasta
+RS_GCF_000621765.1_8.fasta
+RS_GCF_000621765.1_7.fasta
+RS_GCF_000621765.1_6.fasta
+RS_GCF_000621765.1_5.fasta
+RS_GCF_000621765.1_4.fasta
+RS_GCF_000621765.1_3.fasta
+RS_GCF_000621765.1_2.fasta
+RS_GCF_000621765.1_19.fasta
+RS_GCF_000621765.1_18.fasta
+RS_GCF_000621765.1_17.fasta
+RS_GCF_000621765.1_16.fasta
+RS_GCF_000621765.1_15.fasta
+RS_GCF_000621765.1_14.fasta
+RS_GCF_000621765.1_13.fasta
+RS_GCF_000621765.1_12.fasta
+RS_GCF_000621765.1_11.fasta
+RS_GCF_000621765.1_10.fasta
+RS_GCF_000621765.1_1.fasta
+RS_GCF_000621765.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_001604135.1_9.fasta
+GB_GCA_001604135.1_8.fasta
+GB_GCA_001604135.1_7.fasta
+GB_GCA_001604135.1_6.fasta
+GB_GCA_001604135.1_5.fasta
+GB_GCA_001604135.1_4.fasta
+GB_GCA_001604135.1_3.fasta
+GB_GCA_001604135.1_2.fasta
+GB_GCA_001604135.1_19.fasta
+GB_GCA_001604135.1_18.fasta
+GB_GCA_001604135.1_17.fasta
+GB_GCA_001604135.1_16.fasta
+GB_GCA_001604135.1_15.fasta
+GB_GCA_001604135.1_14.fasta
+GB_GCA_001604135.1_13.fasta
+GB_GCA_001604135.1_12.fasta
+GB_GCA_001604135.1_11.fasta
+GB_GCA_001604135.1_10.fasta
+GB_GCA_001604135.1_1.fasta
+GB_GCA_001604135.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002371375.1_9.fasta
+GB_GCA_002371375.1_8.fasta
+GB_GCA_002371375.1_7.fasta
+GB_GCA_002371375.1_6.fasta
+GB_GCA_002371375.1_5.fasta
+GB_GCA_002371375.1_4.fasta
+GB_GCA_002371375.1_3.fasta
+GB_GCA_002371375.1_2.fasta
+GB_GCA_002371375.1_19.fasta
+GB_GCA_002371375.1_18.fasta
+GB_GCA_002371375.1_17.fasta
+GB_GCA_002371375.1_16.fasta
+GB_GCA_002371375.1_15.fasta
+GB_GCA_002371375.1_14.fasta
+GB_GCA_002371375.1_13.fasta
+GB_GCA_002371375.1_12.fasta
+GB_GCA_002371375.1_11.fasta
+GB_GCA_002371375.1_10.fasta
+GB_GCA_002371375.1_1.fasta
+GB_GCA_002371375.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002394605.1_9.fasta
+GB_GCA_002394605.1_8.fasta
+GB_GCA_002394605.1_7.fasta
+GB_GCA_002394605.1_6.fasta
+GB_GCA_002394605.1_5.fasta
+GB_GCA_002394605.1_4.fasta
+GB_GCA_002394605.1_3.fasta
+GB_GCA_002394605.1_2.fasta
+GB_GCA_002394605.1_19.fasta
+GB_GCA_002394605.1_18.fasta
+GB_GCA_002394605.1_17.fasta
+GB_GCA_002394605.1_16.fasta
+GB_GCA_002394605.1_15.fasta
+GB_GCA_002394605.1_14.fasta
+GB_GCA_002394605.1_13.fasta
+GB_GCA_002394605.1_12.fasta
+GB_GCA_002394605.1_11.fasta
+GB_GCA_002394605.1_10.fasta
+GB_GCA_002394605.1_1.fasta
+GB_GCA_002394605.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002450095.1_8.fasta
+GB_GCA_002450095.1_7.fasta
+GB_GCA_002450095.1_6.fasta
+GB_GCA_002450095.1_4.fasta
+GB_GCA_002450095.1_3.fasta
+GB_GCA_002450095.1_2.fasta
+GB_GCA_002450095.1_19.fasta
+GB_GCA_002450095.1_16.fasta
+GB_GCA_002450095.1_15.fasta
+GB_GCA_002450095.1_14.fasta
+GB_GCA_002450095.1_13.fasta
+GB_GCA_002450095.1_11.fasta
+GB_GCA_002450095.1_10.fasta
+GB_GCA_002450095.1_1.fasta
+GB_GCA_002450095.1_0.fasta
+GB_GCA_002394055.1_9.fasta
+GB_GCA_002394055.1_7.fasta
+GB_GCA_002394055.1_6.fasta
+GB_GCA_002394055.1_5.fasta
+GB_GCA_002394055.1_3.fasta
+GB_GCA_002394055.1_19.fasta
+GB_GCA_002394055.1_17.fasta
+GB_GCA_002394055.1_16.fasta
+GB_GCA_002394055.1_15.fasta
+GB_GCA_002394055.1_14.fasta
+GB_GCA_002394055.1_13.fasta
+GB_GCA_002394055.1_11.fasta
+GB_GCA_002394055.1_10.fasta
+GB_GCA_002394055.1_1.fasta
+GB_GCA_002394055.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_002450155.1_9.fasta
+GB_GCA_002450155.1_8.fasta
+GB_GCA_002450155.1_7.fasta
+GB_GCA_002450155.1_6.fasta
+GB_GCA_002450155.1_5.fasta
+GB_GCA_002450155.1_4.fasta
+GB_GCA_002450155.1_3.fasta
+GB_GCA_002450155.1_2.fasta
+GB_GCA_002450155.1_19.fasta
+GB_GCA_002450155.1_18.fasta
+GB_GCA_002450155.1_17.fasta
+GB_GCA_002450155.1_16.fasta
+GB_GCA_002450155.1_15.fasta
+GB_GCA_002450155.1_14.fasta
+GB_GCA_002450155.1_13.fasta
+GB_GCA_002450155.1_12.fasta
+GB_GCA_002450155.1_11.fasta
+GB_GCA_002450155.1_10.fasta
+GB_GCA_002450155.1_1.fasta
+GB_GCA_002450155.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900199645.1_9.fasta
+RS_GCF_900199645.1_7.fasta
+RS_GCF_900199645.1_6.fasta
+RS_GCF_900199645.1_5.fasta
+RS_GCF_900199645.1_17.fasta
+RS_GCF_900199645.1_16.fasta
+RS_GCF_900199645.1_14.fasta
+RS_GCF_900199645.1_11.fasta
+RS_GCF_900199645.1_1.fasta
+RS_GCF_003149065.1_8.fasta
+RS_GCF_003149065.1_4.fasta
+RS_GCF_003149065.1_3.fasta
+RS_GCF_003149065.1_18.fasta
+RS_GCF_003149065.1_17.fasta
+RS_GCF_003149065.1_15.fasta
+RS_GCF_003149065.1_14.fasta
+RS_GCF_003149065.1_13.fasta
+RS_GCF_003149065.1_10.fasta
+RS_GCF_003149065.1_1.fasta
+RS_GCF_003149065.1_0.fasta
+GB_GCA_900321115.1_9.fasta
+GB_GCA_900321115.1_7.fasta
+GB_GCA_900321115.1_6.fasta
+GB_GCA_900321115.1_2.fasta
+GB_GCA_900321115.1_16.fasta
+GB_GCA_900321115.1_15.fasta
+GB_GCA_900321115.1_14.fasta
+GB_GCA_900321115.1_13.fasta
+GB_GCA_900321115.1_12.fasta
+GB_GCA_900321115.1_11.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_003543635.1_9.fasta
+GB_GCA_003543635.1_8.fasta
+GB_GCA_003543635.1_7.fasta
+GB_GCA_003543635.1_6.fasta
+GB_GCA_003543635.1_5.fasta
+GB_GCA_003543635.1_4.fasta
+GB_GCA_003543635.1_3.fasta
+GB_GCA_003543635.1_2.fasta
+GB_GCA_003543635.1_19.fasta
+GB_GCA_003543635.1_18.fasta
+GB_GCA_003543635.1_17.fasta
+GB_GCA_003543635.1_16.fasta
+GB_GCA_003543635.1_15.fasta
+GB_GCA_003543635.1_14.fasta
+GB_GCA_003543635.1_13.fasta
+GB_GCA_003543635.1_12.fasta
+GB_GCA_003543635.1_11.fasta
+GB_GCA_003543635.1_10.fasta
+GB_GCA_003543635.1_1.fasta
+GB_GCA_003543635.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_012728275.1_9.fasta
+GB_GCA_012728275.1_8.fasta
+GB_GCA_012728275.1_7.fasta
+GB_GCA_012728275.1_6.fasta
+GB_GCA_012728275.1_5.fasta
+GB_GCA_012728275.1_4.fasta
+GB_GCA_012728275.1_3.fasta
+GB_GCA_012728275.1_2.fasta
+GB_GCA_012728275.1_19.fasta
+GB_GCA_012728275.1_18.fasta
+GB_GCA_012728275.1_17.fasta
+GB_GCA_012728275.1_16.fasta
+GB_GCA_012728275.1_15.fasta
+GB_GCA_012728275.1_14.fasta
+GB_GCA_012728275.1_13.fasta
+GB_GCA_012728275.1_12.fasta
+GB_GCA_012728275.1_11.fasta
+GB_GCA_012728275.1_10.fasta
+GB_GCA_012728275.1_1.fasta
+GB_GCA_012728275.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900099715.1_9.fasta
+RS_GCF_900099715.1_8.fasta
+RS_GCF_900099715.1_7.fasta
+RS_GCF_900099715.1_6.fasta
+RS_GCF_900099715.1_5.fasta
+RS_GCF_900099715.1_4.fasta
+RS_GCF_900099715.1_3.fasta
+RS_GCF_900099715.1_2.fasta
+RS_GCF_900099715.1_19.fasta
+RS_GCF_900099715.1_18.fasta
+RS_GCF_900099715.1_17.fasta
+RS_GCF_900099715.1_16.fasta
+RS_GCF_900099715.1_15.fasta
+RS_GCF_900099715.1_14.fasta
+RS_GCF_900099715.1_13.fasta
+RS_GCF_900099715.1_12.fasta
+RS_GCF_900099715.1_11.fasta
+RS_GCF_900099715.1_10.fasta
+RS_GCF_900099715.1_1.fasta
+RS_GCF_900099715.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900107185.1_9.fasta
+RS_GCF_900107185.1_8.fasta
+RS_GCF_900107185.1_7.fasta
+RS_GCF_900107185.1_6.fasta
+RS_GCF_900107185.1_5.fasta
+RS_GCF_900107185.1_4.fasta
+RS_GCF_900107185.1_3.fasta
+RS_GCF_900107185.1_2.fasta
+RS_GCF_900107185.1_19.fasta
+RS_GCF_900107185.1_18.fasta
+RS_GCF_900107185.1_17.fasta
+RS_GCF_900107185.1_16.fasta
+RS_GCF_900107185.1_15.fasta
+RS_GCF_900107185.1_14.fasta
+RS_GCF_900107185.1_13.fasta
+RS_GCF_900107185.1_12.fasta
+RS_GCF_900107185.1_11.fasta
+RS_GCF_900107185.1_10.fasta
+RS_GCF_900107185.1_1.fasta
+RS_GCF_900107185.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900111435.1_9.fasta
+RS_GCF_900111435.1_8.fasta
+RS_GCF_900111435.1_2.fasta
+RS_GCF_900111435.1_19.fasta
+RS_GCF_900111435.1_18.fasta
+RS_GCF_900111435.1_17.fasta
+RS_GCF_900111435.1_15.fasta
+RS_GCF_900111435.1_14.fasta
+RS_GCF_900111435.1_13.fasta
+RS_GCF_900111435.1_12.fasta
+RS_GCF_900111435.1_11.fasta
+RS_GCF_900111435.1_10.fasta
+RS_GCF_900111435.1_1.fasta
+RS_GCF_900111435.1_0.fasta
+GB_GCA_900319745.1_8.fasta
+GB_GCA_900319745.1_7.fasta
+GB_GCA_900319745.1_5.fasta
+GB_GCA_900319745.1_4.fasta
+GB_GCA_900319745.1_3.fasta
+GB_GCA_900319745.1_2.fasta
+GB_GCA_900319745.1_19.fasta
+GB_GCA_900319745.1_18.fasta
+GB_GCA_900319745.1_17.fasta
+GB_GCA_900319745.1_16.fasta
+GB_GCA_900319745.1_15.fasta
+GB_GCA_900319745.1_12.fasta
+GB_GCA_900319745.1_11.fasta
+GB_GCA_900319745.1_10.fasta
+GB_GCA_900319745.1_1.fasta
+GB_GCA_900319745.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900176545.1_9.fasta
+RS_GCF_900176545.1_8.fasta
+RS_GCF_900176545.1_6.fasta
+RS_GCF_900176545.1_5.fasta
+RS_GCF_900176545.1_3.fasta
+RS_GCF_900176545.1_2.fasta
+RS_GCF_900176545.1_19.fasta
+RS_GCF_900176545.1_18.fasta
+RS_GCF_900176545.1_17.fasta
+RS_GCF_900176545.1_15.fasta
+RS_GCF_900176545.1_14.fasta
+RS_GCF_900176545.1_12.fasta
+RS_GCF_900176545.1_10.fasta
+RS_GCF_900176545.1_0.fasta
+RS_GCF_000688035.1_9.fasta
+RS_GCF_000688035.1_8.fasta
+RS_GCF_000688035.1_7.fasta
+RS_GCF_000688035.1_6.fasta
+RS_GCF_000688035.1_5.fasta
+RS_GCF_000688035.1_4.fasta
+RS_GCF_000688035.1_3.fasta
+RS_GCF_000688035.1_2.fasta
+RS_GCF_000688035.1_19.fasta
+RS_GCF_000688035.1_17.fasta
+RS_GCF_000688035.1_16.fasta
+RS_GCF_000688035.1_14.fasta
+RS_GCF_000688035.1_12.fasta
+RS_GCF_000688035.1_11.fasta
+RS_GCF_000688035.1_1.fasta
+RS_GCF_000688035.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_900313405.1_7.fasta
+GB_GCA_900313405.1_5.fasta
+GB_GCA_900313405.1_3.fasta
+GB_GCA_900313405.1_2.fasta
+GB_GCA_900313405.1_19.fasta
+GB_GCA_900313405.1_18.fasta
+GB_GCA_900313405.1_17.fasta
+GB_GCA_900313405.1_16.fasta
+GB_GCA_900313405.1_15.fasta
+GB_GCA_900313405.1_14.fasta
+GB_GCA_900313405.1_13.fasta
+GB_GCA_900313405.1_12.fasta
+GB_GCA_900313405.1_10.fasta
+GB_GCA_900313405.1_0.fasta
+GB_GCA_002373235.1_9.fasta
+GB_GCA_002373235.1_6.fasta
+GB_GCA_002373235.1_5.fasta
+GB_GCA_002373235.1_3.fasta
+GB_GCA_002373235.1_2.fasta
+GB_GCA_002373235.1_19.fasta
+GB_GCA_002373235.1_17.fasta
+GB_GCA_002373235.1_16.fasta
+GB_GCA_002373235.1_15.fasta
+GB_GCA_002373235.1_14.fasta
+GB_GCA_002373235.1_13.fasta
+GB_GCA_002373235.1_12.fasta
+GB_GCA_002373235.1_11.fasta
+GB_GCA_002373235.1_10.fasta
+GB_GCA_002373235.1_1.fasta
+GB_GCA_002373235.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_900314745.1_9.fasta
+GB_GCA_900314745.1_8.fasta
+GB_GCA_900314745.1_7.fasta
+GB_GCA_900314745.1_6.fasta
+GB_GCA_900314745.1_5.fasta
+GB_GCA_900314745.1_4.fasta
+GB_GCA_900314745.1_3.fasta
+GB_GCA_900314745.1_2.fasta
+GB_GCA_900314745.1_19.fasta
+GB_GCA_900314745.1_18.fasta
+GB_GCA_900314745.1_17.fasta
+GB_GCA_900314745.1_16.fasta
+GB_GCA_900314745.1_15.fasta
+GB_GCA_900314745.1_14.fasta
+GB_GCA_900314745.1_13.fasta
+GB_GCA_900314745.1_12.fasta
+GB_GCA_900314745.1_11.fasta
+GB_GCA_900314745.1_10.fasta
+GB_GCA_900314745.1_1.fasta
+GB_GCA_900314745.1_0.fasta
+Generating CGRs.... 
+totalSeq is: 350
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Saccharofermentans
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 2
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 4 through 6
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 7 through 9
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'s__Saccharofer...'}
+
+  Columns 4 through 6
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 7 through 9
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 7 through 9
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 7 through 9
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'s__Saccharofer...'}
+
+  Columns 7 through 9
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'s__Saccharofer...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'10-s__Saccharo...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'10-s__Saccharo...'}    {'11-s__Saccharo...'}    {'s__Saccharofer...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'10-s__Saccharo...'}    {'11-s__Saccharo...'}    {'12-s__Saccharo...'}
+
+  Columns 13 through 15
+
+    {'s__Saccharofer...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'10-s__Saccharo...'}    {'11-s__Saccharo...'}    {'12-s__Saccharo...'}
+
+  Columns 13 through 15
+
+    {'13-s__Saccharo...'}    {'s__Saccharofer...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'10-s__Saccharo...'}    {'11-s__Saccharo...'}    {'12-s__Saccharo...'}
+
+  Columns 13 through 15
+
+    {'13-s__Saccharo...'}    {'14-s__Saccharo...'}    {'s__Saccharofer...'}
+
+
+clusterNames =
+
+  1x15 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'10-s__Saccharo...'}    {'11-s__Saccharo...'}    {'12-s__Saccharo...'}
+
+  Columns 13 through 15
+
+    {'13-s__Saccharo...'}    {'14-s__Saccharo...'}    {'15-s__Saccharo...'}
+
+  Columns 1 through 3
+
+    '1-s__Saccharofer...'    '2-s__Saccharofer...'    '3-s__Saccharofer...'
+
+  Columns 4 through 6
+
+    '4-s__Saccharofer...'    '5-s__Saccharofer...'    '6-s__Saccharofer...'
+
+  Columns 7 through 9
+
+    '7-s__Saccharofer...'    '8-s__Saccharofer...'    '9-s__Saccharofer...'
+
+  Columns 10 through 12
+
+    '10-s__Saccharofe...'    '11-s__Saccharofe...'    '12-s__Saccharofe...'
+
+  Columns 13 through 15
+
+    '13-s__Saccharofe...'    '14-s__Saccharofe...'    '15-s__Saccharofe...'
+
+
+header =
+
+  1x16 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Saccharof...'}    {'2-s__Saccharof...'}    {'3-s__Saccharof...'}
+
+  Columns 4 through 6
+
+    {'4-s__Saccharof...'}    {'5-s__Saccharof...'}    {'6-s__Saccharof...'}
+
+  Columns 7 through 9
+
+    {'7-s__Saccharof...'}    {'8-s__Saccharof...'}    {'9-s__Saccharof...'}
+
+  Columns 10 through 12
+
+    {'10-s__Saccharo...'}    {'11-s__Saccharo...'}    {'12-s__Saccharo...'}
+
+  Columns 13 through 15
+
+    {'13-s__Saccharo...'}    {'14-s__Saccharo...'}    {'15-s__Saccharo...'}
+
+  Column 16
+
+    {'prediction'}
+
+
+T3 =
+
+  2x16 table
+
+                    1-s__Saccharofermentans sp000621765    2-s__Saccharofermentans sp001604135    3-s__Saccharofermentans sp002371375    4-s__Saccharofermentans sp002394605    5-s__Saccharofermentans sp002450095    6-s__Saccharofermentans sp002450155    7-s__Saccharofermentans sp003149065    8-s__Saccharofermentans sp003543635    9-s__Saccharofermentans sp012728275    10-s__Saccharofermentans sp900099715    11-s__Saccharofermentans sp900107185    12-s__Saccharofermentans sp900111435    13-s__Saccharofermentans sp900176545    14-s__Saccharofermentans sp900313405    15-s__Saccharofermentans sp900314745    prediction
+                    ___________________________________    ___________________________________    ___________________________________    ___________________________________    ___________________________________    ___________________________________    ___________________________________    ___________________________________    ___________________________________    ____________________________________    ____________________________________    ____________________________________    ____________________________________    ____________________________________    ____________________________________    __________
+
+    RUG428.fasta                  0.02988                                0.97012                              2.2201e-14                             2.2201e-14                             2.2201e-14                             2.2201e-14                             2.2201e-14                             2.2201e-14                             2.2201e-14                              2.2201e-14                              2.2201e-14                              2.2201e-14                              2.2201e-14                              2.2201e-14                              2.2201e-14                     2     
+    RUG662.fasta                        0                                      0                                       0                                      0                                      0                                      0                                      1                                      0                                      0                                       0                                       0                                       0                                       0                                       0                                       0                     7     
+
+
+outputPath = 
+
+    "outputs-GTDB-r202/test-g__Saccharofermentans.xlsx"
+
+Process completed 
+[?1l>

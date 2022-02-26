@@ -1,0 +1,2681 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+testSet =
+
+  0x0 empty char array
+
+
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/f__Enterococcaceae_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20298_3_11_4.fasta
+label_20298_3_11_3.fasta
+label_20298_3_11_2.fasta
+label_20298_3_11_1.fasta
+label_20298_3_11_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS1952_99.fasta
+label_UMGS1952_98.fasta
+label_UMGS1952_97.fasta
+label_UMGS1952_96.fasta
+label_UMGS1952_95.fasta
+label_UMGS1952_94.fasta
+label_UMGS1952_93.fasta
+label_UMGS1952_92.fasta
+label_UMGS1952_91.fasta
+label_UMGS1952_90.fasta
+label_UMGS1952_9.fasta
+label_UMGS1952_89.fasta
+label_UMGS1952_88.fasta
+label_UMGS1952_87.fasta
+label_UMGS1952_86.fasta
+label_UMGS1952_85.fasta
+label_UMGS1952_84.fasta
+label_UMGS1952_83.fasta
+label_UMGS1952_82.fasta
+label_UMGS1952_81.fasta
+label_UMGS1952_80.fasta
+label_UMGS1952_8.fasta
+label_UMGS1952_79.fasta
+label_UMGS1952_78.fasta
+label_UMGS1952_77.fasta
+label_UMGS1952_76.fasta
+label_UMGS1952_75.fasta
+label_UMGS1952_74.fasta
+label_UMGS1952_73.fasta
+label_UMGS1952_72.fasta
+label_UMGS1952_71.fasta
+label_UMGS1952_70.fasta
+label_UMGS1952_7.fasta
+label_UMGS1952_69.fasta
+label_UMGS1952_68.fasta
+label_UMGS1952_67.fasta
+label_UMGS1952_66.fasta
+label_UMGS1952_65.fasta
+label_UMGS1952_64.fasta
+label_UMGS1952_63.fasta
+label_UMGS1952_62.fasta
+label_UMGS1952_61.fasta
+label_UMGS1952_60.fasta
+label_UMGS1952_6.fasta
+label_UMGS1952_59.fasta
+label_UMGS1952_58.fasta
+label_UMGS1952_57.fasta
+label_UMGS1952_56.fasta
+label_UMGS1952_55.fasta
+label_UMGS1952_54.fasta
+label_UMGS1952_53.fasta
+label_UMGS1952_52.fasta
+label_UMGS1952_51.fasta
+label_UMGS1952_50.fasta
+label_UMGS1952_5.fasta
+label_UMGS1952_49.fasta
+label_UMGS1952_48.fasta
+label_UMGS1952_47.fasta
+label_UMGS1952_46.fasta
+label_UMGS1952_45.fasta
+label_UMGS1952_44.fasta
+label_UMGS1952_43.fasta
+label_UMGS1952_42.fasta
+label_UMGS1952_41.fasta
+label_UMGS1952_40.fasta
+label_UMGS1952_4.fasta
+label_UMGS1952_39.fasta
+label_UMGS1952_38.fasta
+label_UMGS1952_37.fasta
+label_UMGS1952_36.fasta
+label_UMGS1952_35.fasta
+label_UMGS1952_34.fasta
+label_UMGS1952_33.fasta
+label_UMGS1952_32.fasta
+label_UMGS1952_31.fasta
+label_UMGS1952_30.fasta
+label_UMGS1952_3.fasta
+label_UMGS1952_29.fasta
+label_UMGS1952_28.fasta
+label_UMGS1952_27.fasta
+label_UMGS1952_26.fasta
+label_UMGS1952_25.fasta
+label_UMGS1952_24.fasta
+label_UMGS1952_23.fasta
+label_UMGS1952_22.fasta
+label_UMGS1952_21.fasta
+label_UMGS1952_20.fasta
+label_UMGS1952_2.fasta
+label_UMGS1952_19.fasta
+label_UMGS1952_18.fasta
+label_UMGS1952_170.fasta
+label_UMGS1952_17.fasta
+label_UMGS1952_169.fasta
+label_UMGS1952_168.fasta
+label_UMGS1952_167.fasta
+label_UMGS1952_166.fasta
+label_UMGS1952_165.fasta
+label_UMGS1952_164.fasta
+label_UMGS1952_163.fasta
+label_UMGS1952_162.fasta
+label_UMGS1952_161.fasta
+label_UMGS1952_160.fasta
+label_UMGS1952_16.fasta
+label_UMGS1952_159.fasta
+label_UMGS1952_158.fasta
+label_UMGS1952_157.fasta
+label_UMGS1952_156.fasta
+label_UMGS1952_155.fasta
+label_UMGS1952_154.fasta
+label_UMGS1952_153.fasta
+label_UMGS1952_152.fasta
+label_UMGS1952_151.fasta
+label_UMGS1952_150.fasta
+label_UMGS1952_15.fasta
+label_UMGS1952_149.fasta
+label_UMGS1952_148.fasta
+label_UMGS1952_147.fasta
+label_UMGS1952_146.fasta
+label_UMGS1952_145.fasta
+label_UMGS1952_144.fasta
+label_UMGS1952_143.fasta
+label_UMGS1952_142.fasta
+label_UMGS1952_141.fasta
+label_UMGS1952_140.fasta
+label_UMGS1952_14.fasta
+label_UMGS1952_139.fasta
+label_UMGS1952_138.fasta
+label_UMGS1952_137.fasta
+label_UMGS1952_136.fasta
+label_UMGS1952_135.fasta
+label_UMGS1952_134.fasta
+label_UMGS1952_133.fasta
+label_UMGS1952_132.fasta
+label_UMGS1952_131.fasta
+label_UMGS1952_130.fasta
+label_UMGS1952_13.fasta
+label_UMGS1952_129.fasta
+label_UMGS1952_128.fasta
+label_UMGS1952_127.fasta
+label_UMGS1952_126.fasta
+label_UMGS1952_125.fasta
+label_UMGS1952_124.fasta
+label_UMGS1952_123.fasta
+label_UMGS1952_122.fasta
+label_UMGS1952_121.fasta
+label_UMGS1952_120.fasta
+label_UMGS1952_12.fasta
+label_UMGS1952_119.fasta
+label_UMGS1952_118.fasta
+label_UMGS1952_117.fasta
+label_UMGS1952_116.fasta
+label_UMGS1952_115.fasta
+label_UMGS1952_114.fasta
+label_UMGS1952_113.fasta
+label_UMGS1952_112.fasta
+label_UMGS1952_111.fasta
+label_UMGS1952_110.fasta
+label_UMGS1952_11.fasta
+label_UMGS1952_109.fasta
+label_UMGS1952_108.fasta
+label_UMGS1952_107.fasta
+label_UMGS1952_106.fasta
+label_UMGS1952_105.fasta
+label_UMGS1952_104.fasta
+label_UMGS1952_103.fasta
+label_UMGS1952_102.fasta
+label_UMGS1952_101.fasta
+label_UMGS1952_100.fasta
+label_UMGS1952_10.fasta
+label_UMGS1952_1.fasta
+label_UMGS1952_0.fasta
+label_UMGS1367_99.fasta
+label_UMGS1367_98.fasta
+label_UMGS1367_97.fasta
+label_UMGS1367_96.fasta
+label_UMGS1367_95.fasta
+label_UMGS1367_94.fasta
+label_UMGS1367_93.fasta
+label_UMGS1367_92.fasta
+label_UMGS1367_91.fasta
+label_UMGS1367_90.fasta
+label_UMGS1367_9.fasta
+label_UMGS1367_89.fasta
+label_UMGS1367_88.fasta
+label_UMGS1367_87.fasta
+label_UMGS1367_86.fasta
+label_UMGS1367_85.fasta
+label_UMGS1367_84.fasta
+label_UMGS1367_83.fasta
+label_UMGS1367_82.fasta
+label_UMGS1367_81.fasta
+label_UMGS1367_80.fasta
+label_UMGS1367_8.fasta
+label_UMGS1367_79.fasta
+label_UMGS1367_78.fasta
+label_UMGS1367_77.fasta
+label_UMGS1367_76.fasta
+label_UMGS1367_75.fasta
+label_UMGS1367_74.fasta
+label_UMGS1367_73.fasta
+label_UMGS1367_72.fasta
+label_UMGS1367_71.fasta
+label_UMGS1367_70.fasta
+label_UMGS1367_7.fasta
+label_UMGS1367_69.fasta
+label_UMGS1367_68.fasta
+label_UMGS1367_67.fasta
+label_UMGS1367_66.fasta
+label_UMGS1367_65.fasta
+label_UMGS1367_64.fasta
+label_UMGS1367_63.fasta
+label_UMGS1367_62.fasta
+label_UMGS1367_61.fasta
+label_UMGS1367_60.fasta
+label_UMGS1367_6.fasta
+label_UMGS1367_59.fasta
+label_UMGS1367_58.fasta
+label_UMGS1367_57.fasta
+label_UMGS1367_56.fasta
+label_UMGS1367_55.fasta
+label_UMGS1367_54.fasta
+label_UMGS1367_53.fasta
+label_UMGS1367_52.fasta
+label_UMGS1367_51.fasta
+label_UMGS1367_50.fasta
+label_UMGS1367_5.fasta
+label_UMGS1367_49.fasta
+label_UMGS1367_48.fasta
+label_UMGS1367_47.fasta
+label_UMGS1367_46.fasta
+label_UMGS1367_45.fasta
+label_UMGS1367_44.fasta
+label_UMGS1367_43.fasta
+label_UMGS1367_42.fasta
+label_UMGS1367_41.fasta
+label_UMGS1367_40.fasta
+label_UMGS1367_4.fasta
+label_UMGS1367_39.fasta
+label_UMGS1367_38.fasta
+label_UMGS1367_37.fasta
+label_UMGS1367_36.fasta
+label_UMGS1367_35.fasta
+label_UMGS1367_34.fasta
+label_UMGS1367_33.fasta
+label_UMGS1367_32.fasta
+label_UMGS1367_31.fasta
+label_UMGS1367_30.fasta
+label_UMGS1367_3.fasta
+label_UMGS1367_29.fasta
+label_UMGS1367_28.fasta
+label_UMGS1367_27.fasta
+label_UMGS1367_26.fasta
+label_UMGS1367_25.fasta
+label_UMGS1367_24.fasta
+label_UMGS1367_238.fasta
+label_UMGS1367_237.fasta
+label_UMGS1367_236.fasta
+label_UMGS1367_235.fasta
+label_UMGS1367_234.fasta
+label_UMGS1367_233.fasta
+label_UMGS1367_232.fasta
+label_UMGS1367_231.fasta
+label_UMGS1367_230.fasta
+label_UMGS1367_23.fasta
+label_UMGS1367_229.fasta
+label_UMGS1367_228.fasta
+label_UMGS1367_227.fasta
+label_UMGS1367_226.fasta
+label_UMGS1367_225.fasta
+label_UMGS1367_224.fasta
+label_UMGS1367_223.fasta
+label_UMGS1367_222.fasta
+label_UMGS1367_221.fasta
+label_UMGS1367_220.fasta
+label_UMGS1367_22.fasta
+label_UMGS1367_219.fasta
+label_UMGS1367_218.fasta
+label_UMGS1367_217.fasta
+label_UMGS1367_216.fasta
+label_UMGS1367_215.fasta
+label_UMGS1367_214.fasta
+label_UMGS1367_213.fasta
+label_UMGS1367_212.fasta
+label_UMGS1367_211.fasta
+label_UMGS1367_210.fasta
+label_UMGS1367_21.fasta
+label_UMGS1367_209.fasta
+label_UMGS1367_208.fasta
+label_UMGS1367_207.fasta
+label_UMGS1367_206.fasta
+label_UMGS1367_205.fasta
+label_UMGS1367_204.fasta
+label_UMGS1367_203.fasta
+label_UMGS1367_202.fasta
+label_UMGS1367_201.fasta
+label_UMGS1367_200.fasta
+label_UMGS1367_20.fasta
+label_UMGS1367_2.fasta
+label_UMGS1367_199.fasta
+label_UMGS1367_198.fasta
+label_UMGS1367_197.fasta
+label_UMGS1367_196.fasta
+label_UMGS1367_195.fasta
+label_UMGS1367_194.fasta
+label_UMGS1367_193.fasta
+label_UMGS1367_192.fasta
+label_UMGS1367_191.fasta
+label_UMGS1367_190.fasta
+label_UMGS1367_19.fasta
+label_UMGS1367_189.fasta
+label_UMGS1367_188.fasta
+label_UMGS1367_187.fasta
+label_UMGS1367_186.fasta
+label_UMGS1367_185.fasta
+label_UMGS1367_184.fasta
+label_UMGS1367_183.fasta
+label_UMGS1367_182.fasta
+label_UMGS1367_181.fasta
+label_UMGS1367_180.fasta
+label_UMGS1367_18.fasta
+label_UMGS1367_179.fasta
+label_UMGS1367_178.fasta
+label_UMGS1367_177.fasta
+label_UMGS1367_176.fasta
+label_UMGS1367_175.fasta
+label_UMGS1367_174.fasta
+label_UMGS1367_173.fasta
+label_UMGS1367_172.fasta
+label_UMGS1367_171.fasta
+label_UMGS1367_170.fasta
+label_UMGS1367_17.fasta
+label_UMGS1367_169.fasta
+label_UMGS1367_168.fasta
+label_UMGS1367_167.fasta
+label_UMGS1367_166.fasta
+label_UMGS1367_165.fasta
+label_UMGS1367_164.fasta
+label_UMGS1367_163.fasta
+label_UMGS1367_162.fasta
+label_UMGS1367_161.fasta
+label_UMGS1367_160.fasta
+label_UMGS1367_16.fasta
+label_UMGS1367_159.fasta
+label_UMGS1367_158.fasta
+label_UMGS1367_157.fasta
+label_UMGS1367_156.fasta
+label_UMGS1367_155.fasta
+label_UMGS1367_154.fasta
+label_UMGS1367_153.fasta
+label_UMGS1367_152.fasta
+label_UMGS1367_151.fasta
+label_UMGS1367_150.fasta
+label_UMGS1367_15.fasta
+label_UMGS1367_149.fasta
+label_UMGS1367_148.fasta
+label_UMGS1367_147.fasta
+label_UMGS1367_146.fasta
+label_UMGS1367_145.fasta
+label_UMGS1367_144.fasta
+label_UMGS1367_143.fasta
+label_UMGS1367_142.fasta
+label_UMGS1367_141.fasta
+label_UMGS1367_140.fasta
+label_UMGS1367_14.fasta
+label_UMGS1367_139.fasta
+label_UMGS1367_138.fasta
+label_UMGS1367_137.fasta
+label_UMGS1367_136.fasta
+label_UMGS1367_135.fasta
+label_UMGS1367_134.fasta
+label_UMGS1367_133.fasta
+label_UMGS1367_132.fasta
+label_UMGS1367_131.fasta
+label_UMGS1367_130.fasta
+label_UMGS1367_13.fasta
+label_UMGS1367_129.fasta
+label_UMGS1367_128.fasta
+label_UMGS1367_127.fasta
+label_UMGS1367_126.fasta
+label_UMGS1367_125.fasta
+label_UMGS1367_124.fasta
+label_UMGS1367_123.fasta
+label_UMGS1367_122.fasta
+label_UMGS1367_121.fasta
+label_UMGS1367_120.fasta
+label_UMGS1367_12.fasta
+label_UMGS1367_119.fasta
+label_UMGS1367_118.fasta
+label_UMGS1367_117.fasta
+label_UMGS1367_116.fasta
+label_UMGS1367_115.fasta
+label_UMGS1367_114.fasta
+label_UMGS1367_113.fasta
+label_UMGS1367_112.fasta
+label_UMGS1367_111.fasta
+label_UMGS1367_110.fasta
+label_UMGS1367_11.fasta
+label_UMGS1367_109.fasta
+label_UMGS1367_108.fasta
+label_UMGS1367_107.fasta
+label_UMGS1367_106.fasta
+label_UMGS1367_105.fasta
+label_UMGS1367_104.fasta
+label_UMGS1367_103.fasta
+label_UMGS1367_102.fasta
+label_UMGS1367_101.fasta
+label_UMGS1367_100.fasta
+label_UMGS1367_10.fasta
+label_UMGS1367_1.fasta
+label_UMGS1367_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000159675_7.fasta
+label_GCF_000159675_6.fasta
+label_GCF_000159675_5.fasta
+label_GCF_000159675_4.fasta
+label_GCF_000159675_3.fasta
+label_GCF_000159675_2.fasta
+label_GCF_000159675_1.fasta
+label_GCF_000159675_0.fasta
+label_21673_4_43_9.fasta
+label_21673_4_43_8.fasta
+label_21673_4_43_7.fasta
+label_21673_4_43_6.fasta
+label_21673_4_43_5.fasta
+label_21673_4_43_4.fasta
+label_21673_4_43_3.fasta
+label_21673_4_43_23.fasta
+label_21673_4_43_22.fasta
+label_21673_4_43_21.fasta
+label_21673_4_43_20.fasta
+label_21673_4_43_2.fasta
+label_21673_4_43_19.fasta
+label_21673_4_43_18.fasta
+label_21673_4_43_17.fasta
+label_21673_4_43_16.fasta
+label_21673_4_43_15.fasta
+label_21673_4_43_14.fasta
+label_21673_4_43_13.fasta
+label_21673_4_43_12.fasta
+label_21673_4_43_11.fasta
+label_21673_4_43_10.fasta
+label_21673_4_43_1.fasta
+label_21673_4_43_0.fasta
+label_20298_2_33_9.fasta
+label_20298_2_33_89.fasta
+label_20298_2_33_88.fasta
+label_20298_2_33_87.fasta
+label_20298_2_33_86.fasta
+label_20298_2_33_85.fasta
+label_20298_2_33_84.fasta
+label_20298_2_33_83.fasta
+label_20298_2_33_82.fasta
+label_20298_2_33_81.fasta
+label_20298_2_33_80.fasta
+label_20298_2_33_8.fasta
+label_20298_2_33_79.fasta
+label_20298_2_33_78.fasta
+label_20298_2_33_77.fasta
+label_20298_2_33_76.fasta
+label_20298_2_33_75.fasta
+label_20298_2_33_74.fasta
+label_20298_2_33_73.fasta
+label_20298_2_33_72.fasta
+label_20298_2_33_71.fasta
+label_20298_2_33_70.fasta
+label_20298_2_33_7.fasta
+label_20298_2_33_69.fasta
+label_20298_2_33_68.fasta
+label_20298_2_33_67.fasta
+label_20298_2_33_66.fasta
+label_20298_2_33_65.fasta
+label_20298_2_33_64.fasta
+label_20298_2_33_63.fasta
+label_20298_2_33_62.fasta
+label_20298_2_33_61.fasta
+label_20298_2_33_60.fasta
+label_20298_2_33_6.fasta
+label_20298_2_33_59.fasta
+label_20298_2_33_58.fasta
+label_20298_2_33_57.fasta
+label_20298_2_33_56.fasta
+label_20298_2_33_55.fasta
+label_20298_2_33_54.fasta
+label_20298_2_33_53.fasta
+label_20298_2_33_52.fasta
+label_20298_2_33_51.fasta
+label_20298_2_33_50.fasta
+label_20298_2_33_5.fasta
+label_20298_2_33_49.fasta
+label_20298_2_33_48.fasta
+label_20298_2_33_47.fasta
+label_20298_2_33_46.fasta
+label_20298_2_33_45.fasta
+label_20298_2_33_44.fasta
+label_20298_2_33_43.fasta
+label_20298_2_33_42.fasta
+label_20298_2_33_41.fasta
+label_20298_2_33_40.fasta
+label_20298_2_33_4.fasta
+label_20298_2_33_39.fasta
+label_20298_2_33_38.fasta
+label_20298_2_33_37.fasta
+label_20298_2_33_36.fasta
+label_20298_2_33_35.fasta
+label_20298_2_33_34.fasta
+label_20298_2_33_33.fasta
+label_20298_2_33_32.fasta
+label_20298_2_33_31.fasta
+label_20298_2_33_30.fasta
+label_20298_2_33_3.fasta
+label_20298_2_33_29.fasta
+label_20298_2_33_28.fasta
+label_20298_2_33_27.fasta
+label_20298_2_33_26.fasta
+label_20298_2_33_25.fasta
+label_20298_2_33_24.fasta
+label_20298_2_33_23.fasta
+label_20298_2_33_22.fasta
+label_20298_2_33_21.fasta
+label_20298_2_33_20.fasta
+label_20298_2_33_2.fasta
+label_20298_2_33_19.fasta
+label_20298_2_33_18.fasta
+label_20298_2_33_17.fasta
+label_20298_2_33_16.fasta
+label_20298_2_33_15.fasta
+label_20298_2_33_14.fasta
+label_20298_2_33_13.fasta
+label_20298_2_33_12.fasta
+label_20298_2_33_11.fasta
+label_20298_2_33_10.fasta
+label_20298_2_33_1.fasta
+label_20298_2_33_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_001050095_5.fasta
+label_GCF_001050095_4.fasta
+label_GCF_001050095_3.fasta
+label_GCF_001050095_2.fasta
+label_GCF_001050095_1.fasta
+label_GCF_001050095_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20298_3_12_9.fasta
+label_20298_3_12_8.fasta
+label_20298_3_12_7.fasta
+label_20298_3_12_6.fasta
+label_20298_3_12_5.fasta
+label_20298_3_12_4.fasta
+label_20298_3_12_3.fasta
+label_20298_3_12_2.fasta
+label_20298_3_12_11.fasta
+label_20298_3_12_10.fasta
+label_20298_3_12_1.fasta
+label_20298_3_12_0.fasta
+label_14670_1_61_9.fasta
+label_14670_1_61_8.fasta
+label_14670_1_61_7.fasta
+label_14670_1_61_6.fasta
+label_14670_1_61_5.fasta
+label_14670_1_61_4.fasta
+label_14670_1_61_3.fasta
+label_14670_1_61_25.fasta
+label_14670_1_61_24.fasta
+label_14670_1_61_23.fasta
+label_14670_1_61_22.fasta
+label_14670_1_61_21.fasta
+label_14670_1_61_20.fasta
+label_14670_1_61_2.fasta
+label_14670_1_61_19.fasta
+label_14670_1_61_18.fasta
+label_14670_1_61_17.fasta
+label_14670_1_61_16.fasta
+label_14670_1_61_15.fasta
+label_14670_1_61_14.fasta
+label_14670_1_61_13.fasta
+label_14670_1_61_12.fasta
+label_14670_1_61_11.fasta
+label_14670_1_61_10.fasta
+label_14670_1_61_1.fasta
+label_14670_1_61_0.fasta
+Generating CGRs.... 
+totalSeq is: 581
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+testAcNum =
+
+  1x116 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 103 through 105
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 106 through 108
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 109 through 111
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 112 through 114
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 115 through 116
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 1
+classifying using QSVM
+
+score3Matrix =
+
+    0.0049    0.9790    0.0046    0.0001    0.0114    2.0000    2.0000
+    0.0027    0.9682    0.0114    0.0001    0.0177    2.0000    2.0000
+    0.0028    0.9684    0.0116    0.0001    0.0171    2.0000    2.0000
+    0.0034    0.9374    0.0468    0.0001    0.0123    2.0000    2.0000
+    0.0031    0.9524    0.0254    0.0001    0.0191    2.0000    2.0000
+    0.0039    0.8956    0.0740    0.0001    0.0264    2.0000    2.0000
+    0.0029    0.9410    0.0334    0.0001    0.0225    2.0000    2.0000
+    0.0047    0.9317    0.0154    0.0015    0.0467    2.0000    2.0000
+    0.0040    0.8931    0.0858    0.0001    0.0170    2.0000    2.0000
+    0.0027    0.9719    0.0163    0.0001    0.0091    2.0000    2.0000
+    0.0028    0.9557    0.0255    0.0001    0.0159    2.0000    2.0000
+    0.0031    0.9501    0.0305    0.0001    0.0162    2.0000    2.0000
+    0.0056    0.7552    0.2144    0.0001    0.0246    2.0000    2.0000
+    0.0049    0.9826    0.0065    0.0000    0.0059    2.0000    2.0000
+    0.0035    0.9481    0.0267    0.0002    0.0215    2.0000    2.0000
+    0.0029    0.9663    0.0033    0.0000    0.0274    2.0000    2.0000
+    0.0025    0.9318    0.0458    0.0001    0.0199    2.0000    2.0000
+    0.0029    0.9566    0.0253    0.0001    0.0151    2.0000    2.0000
+    0.0049    0.7614    0.1917    0.0002    0.0418    2.0000    2.0000
+    0.0034    0.9688    0.0161    0.0001    0.0115    2.0000    2.0000
+    0.0039    0.9618    0.0115    0.0000    0.0229    2.0000    2.0000
+    0.0025    0.8839    0.0767    0.0000    0.0369    2.0000    2.0000
+    0.0036    0.8865    0.0914    0.0001    0.0184    2.0000    2.0000
+    0.0033    0.9729    0.0089    0.0001    0.0148    2.0000    2.0000
+    0.0061    0.9737    0.0062    0.0000    0.0139    2.0000    2.0000
+    0.0032    0.9765    0.0088    0.0000    0.0115    2.0000    2.0000
+    0.0031    0.9522    0.0295    0.0001    0.0151    2.0000    2.0000
+    0.0027    0.9697    0.0025    0.0000    0.0251    2.0000    2.0000
+    0.0028    0.9750    0.0034    0.0001    0.0188    2.0000    2.0000
+    0.0009    0.9763    0.0084    0.0000    0.0144    2.0000    2.0000
+    0.0020    0.9766    0.0024    0.0001    0.0188    2.0000    2.0000
+    0.0018    0.9293    0.0568    0.0000    0.0120    2.0000    2.0000
+    0.0006    0.9669    0.0237    0.0014    0.0074    2.0000    2.0000
+    0.0007    0.9871    0.0034    0.0000    0.0088    2.0000    2.0000
+    0.0023    0.9781    0.0030    0.0000    0.0166    2.0000    2.0000
+    0.0819    0.8552    0.0018    0.0469    0.0142    2.0000    2.0000
+    0.1652    0.5895    0.0012    0.0802    0.1639    2.0000    2.0000
+    0.0027    0.9712    0.0169    0.0000    0.0092    2.0000    2.0000
+    0.0324    0.8951    0.0006    0.0020    0.0699    2.0000    2.0000
+    0.0024    0.9745    0.0065    0.0001    0.0166    2.0000    2.0000
+    0.0081    0.9194    0.0221    0.0010    0.0494    2.0000    2.0000
+    0.0013    0.9781    0.0114    0.0002    0.0091    2.0000    2.0000
+    0.0392    0.6390    0.1070    0.0101    0.2047    2.0000    2.0000
+    0.0012    0.9687    0.0120    0.0001    0.0180    2.0000    2.0000
+    0.0030    0.7580    0.2142    0.0003    0.0245    2.0000    2.0000
+    0.0135    0.8609    0.0761    0.0008    0.0487    2.0000    2.0000
+    0.0031    0.9252    0.0373    0.0005    0.0339    2.0000    2.0000
+    0.0036    0.9648    0.0129    0.0003    0.0184    2.0000    2.0000
+    0.0017    0.9798    0.0082    0.0001    0.0102    2.0000    2.0000
+    0.0054    0.8842    0.0775    0.0003    0.0326    2.0000    2.0000
+    0.0091    0.8690    0.0762    0.0006    0.0451    2.0000    2.0000
+    0.0035    0.9880    0.0025    0.0001    0.0060    2.0000    2.0000
+    0.0551    0.9257    0.0004    0.0016    0.0172    2.0000    2.0000
+    0.0022    0.9496    0.0287    0.0001    0.0193    2.0000    2.0000
+    0.0012    0.9350    0.0547    0.0000    0.0090    2.0000    2.0000
+    0.0090    0.9857    0.0009    0.0006    0.0038    2.0000    2.0000
+    0.0264    0.9685    0.0003    0.0019    0.0030    2.0000    2.0000
+    0.0121    0.9811    0.0020    0.0013    0.0035    2.0000    2.0000
+    0.0101    0.9864    0.0005    0.0001    0.0030    2.0000    2.0000
+    0.0008    0.9778    0.0100    0.0000    0.0113    2.0000    2.0000
+    0.0034    0.9472    0.0204    0.0001    0.0289    2.0000    2.0000
+    0.0064    0.9757    0.0011    0.0005    0.0163    2.0000    2.0000
+    0.0074    0.9873    0.0018    0.0001    0.0034    2.0000    2.0000
+    0.0051    0.9849    0.0052    0.0000    0.0047    2.0000    2.0000
+    0.0011    0.9660    0.0120    0.0000    0.0209    2.0000    2.0000
+    0.0058    0.9851    0.0007    0.0001    0.0084    2.0000    2.0000
+    0.0759    0.9178    0.0003    0.0046    0.0014    2.0000    2.0000
+    0.0126    0.9798    0.0004    0.0005    0.0067    2.0000    2.0000
+    0.0015    0.9496    0.0101    0.0000    0.0388    2.0000    2.0000
+    0.0291    0.9367    0.0004    0.0055    0.0283    2.0000    2.0000
+    0.0027    0.9589    0.0235    0.0001    0.0149    2.0000    2.0000
+    0.0028    0.9290    0.0531    0.0001    0.0150    2.0000    2.0000
+    0.0029    0.9532    0.0191    0.0001    0.0247    2.0000    2.0000
+    0.0027    0.9796    0.0028    0.0000    0.0149    2.0000    2.0000
+    0.0024    0.9596    0.0196    0.0000    0.0183    2.0000    2.0000
+    0.0027    0.9773    0.0108    0.0000    0.0091    2.0000    2.0000
+    0.0025    0.9309    0.0540    0.0000    0.0126    2.0000    2.0000
+    0.0022    0.9740    0.0080    0.0000    0.0158    2.0000    2.0000
+    0.0024    0.9346    0.0522    0.0001    0.0107    2.0000    2.0000
+    0.0025    0.9189    0.0570    0.0000    0.0216    2.0000    2.0000
+    0.0027    0.9652    0.0254    0.0000    0.0067    2.0000    2.0000
+    0.0016    0.9677    0.0145    0.0000    0.0162    2.0000    2.0000
+    0.0034    0.9817    0.0018    0.0001    0.0129    2.0000    2.0000
+    0.0034    0.9512    0.0376    0.0005    0.0072    2.0000    2.0000
+    0.0016    0.9805    0.0085    0.0000    0.0093    2.0000    2.0000
+    0.0120    0.0000    0.9478    0.0060    0.0341    3.0000    3.0000
+    0.0122    0.0008    0.9199    0.0094    0.0577    3.0000    3.0000
+    0.0032    0.0000    0.9793    0.0006    0.0168    3.0000    3.0000
+    0.0472    0.3633    0.5198    0.0180    0.0516    3.0000    3.0000
+    0.0145    0.0004    0.9424    0.0059    0.0368    3.0000    3.0000
+    0.0085    0.0036    0.9295    0.0035    0.0549    3.0000    3.0000
+    0.0340    0.1264    0.6337    0.0314    0.1745    3.0000    3.0000
+    0.0124    0.0038    0.9464    0.0002    0.0371    3.0000    3.0000
+    0.0177    0.7214    0.1751    0.0005    0.0852    2.0000    3.0000
+    0.0137    0.2351    0.6544    0.0007    0.0962    3.0000    3.0000
+    0.0154    0.0694    0.8600    0.0006    0.0545    3.0000    3.0000
+    0.0140    0.1970    0.7244    0.0005    0.0641    3.0000    3.0000
+    0.0113    0.1422    0.7913    0.0003    0.0549    3.0000    3.0000
+    0.0014    0.9353    0.0116    0.0001    0.0517    2.0000    3.0000
+    0.0121    0.3697    0.3774    0.0695    0.1713    3.0000    3.0000
+    0.0235    0.0003    0.8724    0.0197    0.0841    3.0000    3.0000
+    0.0175    0.0100    0.6573    0.0056    0.3096    3.0000    3.0000
+    0.0096    0.0007    0.9297    0.0021    0.0578    3.0000    3.0000
+    0.0035    0.2226    0.7207    0.0000    0.0532    3.0000    3.0000
+    0.0075    0.0000    0.9631    0.0056    0.0238    3.0000    3.0000
+    0.0201    0.0002    0.9239    0.0110    0.0448    3.0000    3.0000
+    0.0044    0.0000    0.9807    0.0057    0.0091    3.0000    3.0000
+    0.0303    0.0002    0.9364    0.0005    0.0326    3.0000    4.0000
+    0.2318    0.0025    0.3838    0.1618    0.2201    3.0000    4.0000
+    0.1586    0.0092    0.0915    0.5152    0.2255    4.0000    4.0000
+    0.1397    0.0156    0.4062    0.1079    0.3306    3.0000    5.0000
+    0.0381    0.7767    0.0362    0.0771    0.0719    2.0000    5.0000
+    0.0266    0.0185    0.1109    0.1377    0.7063    5.0000    5.0000
+    0.0380    0.0026    0.2163    0.1156    0.6275    5.0000    5.0000
+    0.0316    0.0073    0.2249    0.0907    0.6456    5.0000    5.0000
+    0.1112    0.0764    0.2764    0.0727    0.4633    5.0000    5.0000
+
+
+T3 =
+
+  116x7 table
+
+                                   g__Enterococcus    g__Enterococcus_A    g__Enterococcus_B    g__Enterococcus_C    g__Enterococcus_D    prediction    actual
+                                   _______________    _________________    _________________    _________________    _________________    __________    ______
+
+    label_UMGS1367_106.fasta          0.0049213               0.979            0.0046462            6.173e-05             0.011369            2           2   
+    label_UMGS1367_108.fasta          0.0026786             0.96819             0.011402            6.138e-05             0.017667            2           2   
+    label_UMGS1367_110.fasta          0.0028133             0.96845             0.011591           6.1257e-05             0.017089            2           2   
+    label_UMGS1367_111.fasta          0.0034334             0.93738             0.046767           9.8786e-05             0.012317            2           2   
+    label_UMGS1367_117.fasta          0.0031035              0.9524             0.025351           8.3571e-05             0.019067            2           2   
+    label_UMGS1367_118.fasta          0.0039467             0.89556             0.073968           9.4529e-05             0.026428            2           2   
+    label_UMGS1367_119.fasta          0.0029441             0.94104             0.033412           0.00010866             0.022496            2           2   
+    label_UMGS1367_12.fasta           0.0046931              0.9317             0.015423            0.0015079             0.046676            2           2   
+    label_UMGS1367_125.fasta          0.0039726             0.89313             0.085834           0.00010549             0.016953            2           2   
+    label_UMGS1367_130.fasta          0.0027099             0.97187             0.016283           5.9483e-05            0.0090801            2           2   
+    label_UMGS1367_133.fasta          0.0027848             0.95571             0.025523           6.8803e-05             0.015911            2           2   
+    label_UMGS1367_135.fasta          0.0030835             0.95011             0.030535           7.2108e-05             0.016196            2           2   
+    label_UMGS1367_137.fasta          0.0056475             0.75515              0.21444           0.00013022             0.024627            2           2   
+    label_UMGS1367_142.fasta          0.0048937             0.98264            0.0064987           4.8381e-05            0.0059203            2           2   
+    label_UMGS1367_145.fasta          0.0034638             0.94811             0.026714           0.00018601             0.021525            2           2   
+    label_UMGS1367_147.fasta          0.0029162             0.96629            0.0033207           4.5635e-05             0.027429            2           2   
+    label_UMGS1367_155.fasta          0.0024539             0.93182             0.045754           5.5043e-05             0.019914            2           2   
+    label_UMGS1367_159.fasta          0.0028875             0.95663             0.025334           8.0147e-05             0.015068            2           2   
+    label_UMGS1367_160.fasta          0.0049191             0.76139              0.19168           0.00018428             0.041835            2           2   
+    label_UMGS1367_161.fasta          0.0034224             0.96885             0.016098           8.3352e-05             0.011549            2           2   
+    label_UMGS1367_163.fasta          0.0038511             0.96176             0.011474           4.0099e-05             0.022877            2           2   
+    label_UMGS1367_165.fasta          0.0024879              0.8839             0.076663           2.9969e-05             0.036916            2           2   
+    label_UMGS1367_167.fasta           0.003571             0.88654             0.091432           0.00010005             0.018359            2           2   
+    label_UMGS1367_172.fasta          0.0033436              0.9729            0.0089307           5.0096e-05             0.014771            2           2   
+    label_UMGS1367_173.fasta          0.0061111             0.97371            0.0061972           4.3612e-05             0.013939            2           2   
+    label_UMGS1367_178.fasta          0.0031821             0.97651            0.0087725           2.8903e-05             0.011508            2           2   
+    label_UMGS1367_179.fasta          0.0030968             0.95221             0.029537            7.337e-05             0.015087            2           2   
+    label_UMGS1367_182.fasta          0.0027362             0.96968            0.0025138           1.9236e-05              0.02505            2           2   
+    label_UMGS1367_188.fasta          0.0027599             0.97501             0.003384           5.2587e-05              0.01879            2           2   
+    label_UMGS1367_190.fasta         0.00088467             0.97631            0.0083837           1.9919e-05             0.014399            2           2   
+    label_UMGS1367_196.fasta          0.0020481             0.97662            0.0024218           0.00010808               0.0188            2           2   
+    label_UMGS1367_197.fasta          0.0018354             0.92935             0.056783            2.996e-05             0.012007            2           2   
+    label_UMGS1367_2.fasta           0.00063702             0.96689             0.023674            0.0014348             0.007366            2           2   
+    label_UMGS1367_20.fasta          0.00074673             0.98708            0.0033792           4.2788e-05            0.0087543            2           2   
+    label_UMGS1367_201.fasta          0.0023278             0.97812             0.002956           2.9502e-05             0.016569            2           2   
+    label_UMGS1367_202.fasta           0.081878             0.85517            0.0017915             0.046942             0.014221            2           2   
+    label_UMGS1367_214.fasta            0.16524             0.58949            0.0012308             0.080177              0.16387            2           2   
+    label_UMGS1367_215.fasta          0.0027031             0.97121             0.016921            1.175e-05            0.0091572            2           2   
+    label_UMGS1367_225.fasta           0.032395             0.89515           0.00057115            0.0020366             0.069851            2           2   
+    label_UMGS1367_238.fasta          0.0023606             0.97447            0.0065075           0.00010444             0.016555            2           2   
+    label_UMGS1367_41.fasta           0.0080539             0.91939             0.022078            0.0010444             0.049435            2           2   
+    label_UMGS1367_43.fasta           0.0012613             0.97808             0.011371           0.00019648            0.0090945            2           2   
+    label_UMGS1367_5.fasta             0.039209             0.63903              0.10695             0.010146              0.20466            2           2   
+    label_UMGS1367_51.fasta           0.0012424             0.96869             0.011987           6.2383e-05             0.018014            2           2   
+    label_UMGS1367_53.fasta            0.003024             0.75802              0.21416           0.00034461              0.02446            2           2   
+    label_UMGS1367_55.fasta            0.013472             0.86094             0.076102           0.00083033              0.04866            2           2   
+    label_UMGS1367_59.fasta           0.0030986             0.92519             0.037331           0.00045392             0.033927            2           2   
+    label_UMGS1367_62.fasta           0.0035675             0.96484             0.012934           0.00025862             0.018402            2           2   
+    label_UMGS1367_74.fasta           0.0016749             0.97978            0.0082383           9.9213e-05             0.010207            2           2   
+    label_UMGS1367_84.fasta           0.0053533              0.8842              0.07749           0.00032607             0.032634            2           2   
+    label_UMGS1367_88.fasta            0.009141             0.86895             0.076209           0.00062747             0.045069            2           2   
+    label_UMGS1952_104.fasta          0.0034923             0.98797            0.0024776           9.7602e-05            0.0059609            2           2   
+    label_UMGS1952_106.fasta           0.055072             0.92566           0.00042472            0.0016496             0.017197            2           2   
+    label_UMGS1952_11.fasta           0.0022378             0.94961             0.028688           0.00013056             0.019338            2           2   
+    label_UMGS1952_111.fasta          0.0012475             0.93504             0.054724           2.6143e-05            0.0089644            2           2   
+    label_UMGS1952_113.fasta           0.009024             0.98568           0.00086836           0.00058956            0.0038416            2           2   
+    label_UMGS1952_115.fasta           0.026371             0.96852           0.00029219            0.0018551            0.0029617            2           2   
+    label_UMGS1952_117.fasta           0.012146             0.98107            0.0019915            0.0013144            0.0034763            2           2   
+    label_UMGS1952_120.fasta           0.010052             0.98641           0.00046801           0.00011422             0.002952            2           2   
+    label_UMGS1952_122.fasta         0.00084893             0.97781             0.010027           2.4259e-05             0.011287            2           2   
+    label_UMGS1952_127.fasta          0.0033967             0.94721             0.020371           0.00013297             0.028887            2           2   
+    label_UMGS1952_129.fasta          0.0064321             0.97567            0.0011125            0.0004684             0.016316            2           2   
+    label_UMGS1952_132.fasta          0.0074139             0.98726            0.0018161           6.6231e-05            0.0034423            2           2   
+    label_UMGS1952_137.fasta          0.0051227             0.98492            0.0052368           4.2132e-05            0.0046833            2           2   
+    label_UMGS1952_140.fasta          0.0011121             0.96601             0.011964           7.7498e-06             0.020908            2           2   
+    label_UMGS1952_141.fasta          0.0057514             0.98509           0.00066751           6.9034e-05             0.008427            2           2   
+    label_UMGS1952_147.fasta           0.075901             0.91784           0.00027501            0.0046116            0.0013697            2           2   
+    label_UMGS1952_153.fasta           0.012625             0.97983           0.00037552           0.00050722            0.0066606            2           2   
+    label_UMGS1952_155.fasta            0.00149             0.94958             0.010112           3.1559e-06             0.038811            2           2   
+    label_UMGS1952_156.fasta           0.029107             0.93667           0.00042022            0.0055098             0.028295            2           2   
+    label_UMGS1952_25.fasta           0.0026776              0.9589             0.023495           6.7692e-05             0.014861            2           2   
+    label_UMGS1952_29.fasta           0.0028226             0.92896             0.053108           6.9083e-05             0.015037            2           2   
+    label_UMGS1952_32.fasta           0.0029311             0.95318             0.019116            5.891e-05             0.024717            2           2   
+    label_UMGS1952_37.fasta           0.0026996             0.97962            0.0027716           3.8192e-05             0.014866            2           2   
+    label_UMGS1952_39.fasta           0.0024331              0.9596             0.019601           4.5786e-05             0.018321            2           2   
+    label_UMGS1952_47.fasta           0.0027439              0.9773             0.010779           4.4686e-05            0.0091299            2           2   
+    label_UMGS1952_48.fasta           0.0025312             0.93087             0.053971           4.9427e-05             0.012578            2           2   
+    label_UMGS1952_55.fasta           0.0021654             0.97401            0.0080294           3.2683e-05             0.015766            2           2   
+    label_UMGS1952_56.fasta           0.0023548             0.93464             0.052209           6.5791e-05             0.010728            2           2   
+    label_UMGS1952_57.fasta           0.0024554             0.91887             0.057047           3.9597e-05             0.021588            2           2   
+    label_UMGS1952_60.fasta           0.0026693             0.96517             0.025375           3.7089e-05            0.0067445            2           2   
+    label_UMGS1952_62.fasta            0.001571             0.96773              0.01453           1.7175e-05              0.01615            2           2   
+    label_UMGS1952_79.fasta           0.0034059             0.98175            0.0017894           0.00011935              0.01294            2           2   
+    label_UMGS1952_88.fasta           0.0034222              0.9512             0.037648           0.00051824            0.0072068            2           2   
+    label_UMGS1952_95.fasta           0.0015975             0.98052            0.0085138           4.2988e-05            0.0093251            2           2   
+    label_20298_2_33_0.fasta           0.011971          2.8994e-05              0.94782            0.0060263              0.03415            3           3   
+    label_20298_2_33_10.fasta          0.012249          0.00077764              0.91991            0.0093598             0.057707            3           3   
+    label_20298_2_33_20.fasta         0.0032424          5.7274e-06              0.97933           0.00064826             0.016776            3           3   
+    label_20298_2_33_21.fasta          0.047246             0.36333              0.51985             0.017969             0.051604            3           3   
+    label_20298_2_33_23.fasta            0.0145          0.00040628              0.94241            0.0058959             0.036784            3           3   
+    label_20298_2_33_35.fasta         0.0084831           0.0036025              0.92948            0.0035385             0.054892            3           3   
+    label_20298_2_33_38.fasta          0.034017             0.12639              0.63371             0.031421              0.17446            3           3   
+    label_20298_2_33_46.fasta          0.012448           0.0037755              0.94643           0.00022589             0.037116            3           3   
+    label_20298_2_33_60.fasta          0.017699             0.72145              0.17512           0.00049308             0.085246            2           3   
+    label_20298_2_33_63.fasta          0.013655             0.23506              0.65443           0.00069716             0.096156            3           3   
+    label_20298_2_33_64.fasta          0.015397            0.069441              0.86005           0.00063808             0.054478            3           3   
+    label_20298_2_33_65.fasta          0.014011             0.19702              0.72436           0.00050532             0.064109            3           3   
+    label_20298_2_33_72.fasta          0.011278             0.14225              0.79132           0.00026369             0.054893            3           3   
+    label_20298_2_33_80.fasta         0.0013645             0.93528             0.011628           6.0193e-05             0.051663            2           3   
+    label_20298_2_33_89.fasta          0.012106             0.36971              0.37737             0.069503              0.17131            3           3   
+    label_21673_4_43_10.fasta          0.023524          0.00027598              0.87239               0.0197             0.084106            3           3   
+    label_21673_4_43_12.fasta          0.017487           0.0099607              0.65732            0.0055965              0.30964            3           3   
+    label_21673_4_43_17.fasta         0.0096133          0.00073603              0.92971            0.0021464             0.057796            3           3   
+    label_21673_4_43_23.fasta         0.0034578             0.22257               0.7207           3.8657e-05             0.053228            3           3   
+    label_21673_4_43_7.fasta          0.0074817          9.7154e-06              0.96307            0.0056035              0.02384            3           3   
+    label_21673_4_43_8.fasta           0.020147          0.00016012              0.92386             0.010985             0.044848            3           3   
+    label_GCF_000159675_7.fasta       0.0043663          1.5266e-06              0.98075            0.0057494            0.0091369            3           3   
+    label_GCF_001050095_0.fasta        0.030315          0.00019846              0.93641           0.00050513             0.032572            3           4   
+    label_GCF_001050095_3.fasta         0.23179           0.0025208               0.3838              0.16179              0.22009            3           4   
+    label_GCF_001050095_4.fasta         0.15863           0.0091654             0.091516               0.5152              0.22548            4           4   
+    label_14670_1_61_10.fasta            0.1397            0.015595              0.40624              0.10789              0.33059            3           5   
+    label_14670_1_61_25.fasta          0.038091             0.77666             0.036223             0.077082             0.071946            2           5   
+    label_14670_1_61_6.fasta           0.026603            0.018501              0.11091              0.13767              0.70631            5           5   
+    label_20298_3_12_3.fasta           0.038041           0.0025679               0.2163              0.11564              0.62745            5           5   
+    label_20298_3_12_5.fasta           0.031554           0.0073077              0.22487             0.090704              0.64556            5           5   
+    label_20298_3_12_6.fasta            0.11124            0.076401              0.27638             0.072666              0.46332            5           5   
+
+
+testAcNum =
+
+  1x117 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 103 through 105
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 106 through 108
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 109 through 111
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 112 through 114
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 115 through 117
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 2
+classifying using QSVM
+
+score3Matrix =
+
+    0.0084    0.8929    0.0204    0.0052    0.0731    2.0000    2.0000
+    0.0045    0.8582    0.0193    0.0015    0.1164    2.0000    2.0000
+    0.0115    0.9855    0.0000    0.0017    0.0012    2.0000    2.0000
+    0.0060    0.9614    0.0173    0.0007    0.0147    2.0000    2.0000
+    0.0047    0.9238    0.0442    0.0006    0.0266    2.0000    2.0000
+    0.0052    0.9532    0.0274    0.0004    0.0137    2.0000    2.0000
+    0.0047    0.9557    0.0225    0.0004    0.0167    2.0000    2.0000
+    0.0046    0.9790    0.0086    0.0003    0.0075    2.0000    2.0000
+    0.0046    0.9549    0.0301    0.0003    0.0101    2.0000    2.0000
+    0.0051    0.9811    0.0052    0.0005    0.0082    2.0000    2.0000
+    0.0034    0.9481    0.0382    0.0002    0.0101    2.0000    2.0000
+    0.0048    0.9283    0.0123    0.0048    0.0498    2.0000    2.0000
+    0.0052    0.9281    0.0501    0.0005    0.0162    2.0000    2.0000
+    0.0055    0.9140    0.0670    0.0004    0.0132    2.0000    2.0000
+    0.0035    0.9683    0.0195    0.0002    0.0085    2.0000    2.0000
+    0.0087    0.5283    0.4336    0.0011    0.0283    2.0000    2.0000
+    0.0077    0.9207    0.0371    0.0039    0.0306    2.0000    2.0000
+    0.0041    0.9485    0.0337    0.0002    0.0135    2.0000    2.0000
+    0.0052    0.9493    0.0303    0.0003    0.0148    2.0000    2.0000
+    0.0045    0.9871    0.0026    0.0002    0.0056    2.0000    2.0000
+    0.0022    0.9794    0.0028    0.0064    0.0093    2.0000    2.0000
+    0.0051    0.9529    0.0296    0.0002    0.0122    2.0000    2.0000
+    0.0048    0.9841    0.0024    0.0002    0.0085    2.0000    2.0000
+    0.0040    0.9485    0.0391    0.0002    0.0082    2.0000    2.0000
+    0.0056    0.9765    0.0063    0.0002    0.0115    2.0000    2.0000
+    0.0032    0.9547    0.0106    0.0066    0.0249    2.0000    2.0000
+    0.0019    0.8841    0.0945    0.0001    0.0195    2.0000    2.0000
+    0.0042    0.9859    0.0011    0.0001    0.0088    2.0000    2.0000
+    0.0061    0.9671    0.0176    0.0001    0.0092    2.0000    2.0000
+    0.0089    0.9891    0.0000    0.0008    0.0012    2.0000    2.0000
+    0.0124    0.9822    0.0003    0.0001    0.0050    2.0000    2.0000
+    0.0034    0.9521    0.0055    0.0080    0.0309    2.0000    2.0000
+    0.0350    0.9604    0.0001    0.0003    0.0041    2.0000    2.0000
+    0.0015    0.9641    0.0111    0.0000    0.0233    2.0000    2.0000
+    0.0028    0.9751    0.0100    0.0001    0.0120    2.0000    2.0000
+    0.0453    0.9490    0.0000    0.0038    0.0018    2.0000    2.0000
+    0.0048    0.9699    0.0121    0.0015    0.0117    2.0000    2.0000
+    0.0141    0.8334    0.0910    0.0094    0.0522    2.0000    2.0000
+    0.0081    0.9447    0.0297    0.0013    0.0162    2.0000    2.0000
+    0.0063    0.9312    0.0406    0.0023    0.0195    2.0000    2.0000
+    0.0044    0.8808    0.0611    0.0049    0.0488    2.0000    2.0000
+    0.0070    0.8083    0.1013    0.0039    0.0795    2.0000    2.0000
+    0.0035    0.9608    0.0103    0.0026    0.0228    2.0000    2.0000
+    0.0032    0.9857    0.0015    0.0049    0.0047    2.0000    2.0000
+    0.0034    0.9887    0.0011    0.0016    0.0052    2.0000    2.0000
+    0.0033    0.9717    0.0073    0.0017    0.0160    2.0000    2.0000
+    0.0037    0.9834    0.0037    0.0016    0.0076    2.0000    2.0000
+    0.0125    0.8816    0.0797    0.0018    0.0245    2.0000    2.0000
+    0.0037    0.9453    0.0213    0.0017    0.0280    2.0000    2.0000
+    0.0044    0.9864    0.0024    0.0014    0.0054    2.0000    2.0000
+    0.0058    0.9252    0.0492    0.0004    0.0193    2.0000    2.0000
+    0.0050    0.9848    0.0010    0.0011    0.0080    2.0000    2.0000
+    0.0041    0.9809    0.0050    0.0004    0.0095    2.0000    2.0000
+    0.0046    0.9170    0.0613    0.0008    0.0162    2.0000    2.0000
+    0.0064    0.9577    0.0153    0.0002    0.0204    2.0000    2.0000
+    0.0037    0.9884    0.0032    0.0001    0.0046    2.0000    2.0000
+    0.0114    0.9562    0.0060    0.0128    0.0137    2.0000    2.0000
+    0.0066    0.9849    0.0014    0.0003    0.0068    2.0000    2.0000
+    0.0056    0.8827    0.0986    0.0004    0.0127    2.0000    2.0000
+    0.0175    0.9664    0.0000    0.0017    0.0144    2.0000    2.0000
+    0.0031    0.8939    0.0062    0.0003    0.0966    2.0000    2.0000
+    0.0066    0.9270    0.0473    0.0005    0.0186    2.0000    2.0000
+    0.0017    0.9677    0.0081    0.0003    0.0222    2.0000    2.0000
+    0.0081    0.9834    0.0010    0.0000    0.0076    2.0000    2.0000
+    0.0091    0.8956    0.0829    0.0002    0.0121    2.0000    2.0000
+    0.0166    0.9588    0.0041    0.0003    0.0202    2.0000    2.0000
+    0.0010    0.9266    0.0001    0.0000    0.0723    2.0000    2.0000
+    0.0070    0.9892    0.0003    0.0005    0.0030    2.0000    2.0000
+    0.0041    0.9452    0.0424    0.0002    0.0081    2.0000    2.0000
+    0.0050    0.9853    0.0041    0.0004    0.0052    2.0000    2.0000
+    0.0022    0.9495    0.0381    0.0008    0.0093    2.0000    2.0000
+    0.0080    0.9864    0.0012    0.0007    0.0036    2.0000    2.0000
+    0.0033    0.9838    0.0035    0.0003    0.0091    2.0000    2.0000
+    0.0081    0.9891    0.0004    0.0003    0.0021    2.0000    2.0000
+    0.0135    0.9822    0.0014    0.0004    0.0025    2.0000    2.0000
+    0.0037    0.9527    0.0249    0.0001    0.0187    2.0000    2.0000
+    0.0046    0.9836    0.0053    0.0002    0.0062    2.0000    2.0000
+    0.0067    0.9891    0.0015    0.0002    0.0025    2.0000    2.0000
+    0.0088    0.9784    0.0020    0.0002    0.0105    2.0000    2.0000
+    0.0040    0.9758    0.0144    0.0001    0.0056    2.0000    2.0000
+    0.0134    0.9810    0.0012    0.0003    0.0040    2.0000    2.0000
+    0.0046    0.9046    0.0855    0.0002    0.0051    2.0000    2.0000
+    0.0032    0.0002    0.9787    0.0029    0.0150    3.0000    3.0000
+    0.0032    0.0002    0.9380    0.0016    0.0569    3.0000    3.0000
+    0.0046    0.0005    0.9485    0.0111    0.0353    3.0000    3.0000
+    0.0031    0.0001    0.9704    0.0055    0.0209    3.0000    3.0000
+    0.0062    0.0004    0.8712    0.0963    0.0258    3.0000    3.0000
+    0.0023    0.0003    0.9575    0.0007    0.0392    3.0000    3.0000
+    0.0148    0.0096    0.8789    0.0032    0.0934    3.0000    3.0000
+    0.0052    0.0008    0.9389    0.0038    0.0513    3.0000    3.0000
+    0.0154    0.0173    0.9043    0.0176    0.0453    3.0000    3.0000
+    0.0228    0.0097    0.9075    0.0201    0.0399    3.0000    3.0000
+    0.0068    0.0031    0.8943    0.0809    0.0149    3.0000    3.0000
+    0.0068    0.0030    0.9436    0.0253    0.0212    3.0000    3.0000
+    0.0107    0.0402    0.9042    0.0046    0.0404    3.0000    3.0000
+    0.0225    0.1047    0.7803    0.0033    0.0891    3.0000    3.0000
+    0.0054    0.3104    0.6682    0.0009    0.0151    3.0000    3.0000
+    0.0124    0.0509    0.8795    0.0040    0.0532    3.0000    3.0000
+    0.0068    0.4269    0.5305    0.0010    0.0347    3.0000    3.0000
+    0.0039    0.0001    0.9826    0.0025    0.0110    3.0000    3.0000
+    0.0065    0.9553    0.0174    0.0013    0.0195    2.0000    3.0000
+    0.0180    0.6530    0.0407    0.0029    0.2854    2.0000    3.0000
+    0.0026    0.0203    0.8623    0.0349    0.0799    3.0000    3.0000
+    0.0088    0.0001    0.8886    0.0549    0.0475    3.0000    3.0000
+    0.0287    0.0389    0.7942    0.0298    0.1084    3.0000    3.0000
+    0.0245    0.0018    0.8307    0.0354    0.1076    3.0000    3.0000
+    0.0204    0.4428    0.3993    0.0080    0.1296    2.0000    3.0000
+    0.0032    0.0000    0.9793    0.0030    0.0144    3.0000    3.0000
+    0.0685    0.0283    0.0409    0.7375    0.1249    4.0000    4.0000
+    0.0041    0.1342    0.0017    0.0612    0.7989    5.0000    5.0000
+    0.0075    0.0332    0.0056    0.0509    0.9028    5.0000    5.0000
+    0.0117    0.9775    0.0019    0.0016    0.0073    2.0000    5.0000
+    0.0353    0.0226    0.1025    0.1096    0.7301    5.0000    5.0000
+    0.0055    0.1163    0.0018    0.0511    0.8253    5.0000    5.0000
+    0.0136    0.1110    0.0800    0.0386    0.7568    5.0000    5.0000
+    0.0326    0.0314    0.1636    0.0337    0.7387    5.0000    5.0000
+    0.0868    0.0334    0.5260    0.0514    0.3024    3.0000    5.0000
+
+
+T3 =
+
+  117x7 table
+
+                                   g__Enterococcus    g__Enterococcus_A    g__Enterococcus_B    g__Enterococcus_C    g__Enterococcus_D    prediction    actual
+                                   _______________    _________________    _________________    _________________    _________________    __________    ______
+
+    label_UMGS1367_1.fasta            0.0084427             0.89293             0.020365            0.0051943             0.073068            2           2   
+    label_UMGS1367_10.fasta           0.0045256             0.85822             0.019304            0.0015381              0.11641            2           2   
+    label_UMGS1367_102.fasta           0.011533             0.98553           1.7931e-05            0.0017353            0.0011865            2           2   
+    label_UMGS1367_104.fasta          0.0059783             0.96141             0.017309           0.00065255             0.014651            2           2   
+    label_UMGS1367_109.fasta          0.0047213             0.92384             0.044197           0.00062118             0.026617            2           2   
+    label_UMGS1367_116.fasta           0.005211             0.95325              0.02737           0.00042718             0.013747            2           2   
+    label_UMGS1367_122.fasta           0.004687             0.95568             0.022531           0.00039665             0.016701            2           2   
+    label_UMGS1367_123.fasta          0.0045566             0.97899             0.008593           0.00033616            0.0075264            2           2   
+    label_UMGS1367_129.fasta          0.0045855             0.95487             0.030149           0.00030676             0.010093            2           2   
+    label_UMGS1367_134.fasta          0.0050652             0.98108            0.0051687           0.00052473            0.0081632            2           2   
+    label_UMGS1367_136.fasta          0.0034249             0.94806             0.038231           0.00016266             0.010118            2           2   
+    label_UMGS1367_14.fasta           0.0048091              0.9283             0.012318            0.0047594              0.04981            2           2   
+    label_UMGS1367_140.fasta          0.0051782             0.92811              0.05008           0.00047691             0.016156            2           2   
+    label_UMGS1367_141.fasta           0.005473             0.91397             0.067018            0.0003605              0.01318            2           2   
+    label_UMGS1367_146.fasta          0.0035026             0.96829             0.019534           0.00017945            0.0084934            2           2   
+    label_UMGS1367_148.fasta          0.0086838             0.52833              0.43357            0.0010865              0.02833            2           2   
+    label_UMGS1367_15.fasta            0.007698             0.92066             0.037147            0.0038996             0.030601            2           2   
+    label_UMGS1367_153.fasta          0.0040721             0.94849             0.033703           0.00019718             0.013537            2           2   
+    label_UMGS1367_154.fasta          0.0052315             0.94933             0.030336            0.0003129              0.01479            2           2   
+    label_UMGS1367_156.fasta          0.0045448              0.9871            0.0026191           0.00017455            0.0055664            2           2   
+    label_UMGS1367_16.fasta           0.0022381             0.97935            0.0027824            0.0063624             0.009267            2           2   
+    label_UMGS1367_169.fasta          0.0051037             0.95287             0.029608           0.00019373             0.012223            2           2   
+    label_UMGS1367_170.fasta          0.0048348             0.98412            0.0023793           0.00019055            0.0084732            2           2   
+    label_UMGS1367_175.fasta          0.0039776             0.94851             0.039111           0.00018396            0.0082151            2           2   
+    label_UMGS1367_176.fasta          0.0055524             0.97645            0.0063056           0.00019996             0.011491            2           2   
+    label_UMGS1367_18.fasta           0.0031588             0.95474             0.010593            0.0065788             0.024927            2           2   
+    label_UMGS1367_180.fasta          0.0018782             0.88413             0.094457           5.0804e-05             0.019482            2           2   
+    label_UMGS1367_184.fasta          0.0041688             0.98588            0.0010647           0.00010198            0.0087885            2           2   
+    label_UMGS1367_185.fasta          0.0060665             0.96705             0.017614           0.00010005            0.0091665            2           2   
+    label_UMGS1367_194.fasta          0.0088593             0.98911           5.7815e-06           0.00080915            0.0012113            2           2   
+    label_UMGS1367_199.fasta           0.012352             0.98222           0.00026209            0.0001409            0.0050265            2           2   
+    label_UMGS1367_21.fasta           0.0034473             0.95214            0.0054756            0.0080183             0.030916            2           2   
+    label_UMGS1367_220.fasta           0.035017             0.96043           6.9572e-05           0.00032909            0.0041499            2           2   
+    label_UMGS1367_222.fasta          0.0014804             0.96408             0.011119           1.0312e-05             0.023311            2           2   
+    label_UMGS1367_229.fasta          0.0028185             0.97512            0.0099701           6.7084e-05             0.012021            2           2   
+    label_UMGS1367_237.fasta           0.045316             0.94904           6.3073e-08            0.0038305            0.0018101            2           2   
+    label_UMGS1367_25.fasta           0.0048026             0.96989             0.012057            0.0015087             0.011745            2           2   
+    label_UMGS1367_28.fasta            0.014073             0.83339             0.090977            0.0093941              0.05217            2           2   
+    label_UMGS1367_29.fasta           0.0080538             0.94473             0.029667            0.0013046             0.016244            2           2   
+    label_UMGS1367_32.fasta           0.0063265             0.93123             0.040582            0.0023451             0.019519            2           2   
+    label_UMGS1367_36.fasta           0.0044353             0.88075             0.061136            0.0049045              0.04877            2           2   
+    label_UMGS1367_37.fasta            0.006966             0.80828              0.10131            0.0039496              0.07949            2           2   
+    label_UMGS1367_38.fasta           0.0034794             0.96084              0.01034            0.0025821             0.022763            2           2   
+    label_UMGS1367_56.fasta           0.0032067              0.9857            0.0015122            0.0048609            0.0047228            2           2   
+    label_UMGS1367_57.fasta           0.0033898             0.98871             0.001094            0.0015829            0.0052215            2           2   
+    label_UMGS1367_60.fasta           0.0033194             0.97165            0.0073294            0.0017404             0.015959            2           2   
+    label_UMGS1367_66.fasta           0.0037289             0.98344            0.0036808            0.0015855            0.0075674            2           2   
+    label_UMGS1367_81.fasta             0.01255             0.88155             0.079681            0.0017565             0.024461            2           2   
+    label_UMGS1367_82.fasta           0.0037012             0.94531             0.021291            0.0016548             0.028042            2           2   
+    label_UMGS1367_86.fasta           0.0044358             0.98642            0.0023801             0.001365            0.0053986            2           2   
+    label_UMGS1367_89.fasta           0.0058265             0.92517             0.049227           0.00042725             0.019348            2           2   
+    label_UMGS1367_90.fasta           0.0050295             0.98484           0.00098873            0.0011219            0.0080229            2           2   
+    label_UMGS1367_93.fasta           0.0041329             0.98092            0.0050406           0.00037902            0.0095304            2           2   
+    label_UMGS1367_94.fasta           0.0046498             0.91699             0.061338           0.00079382             0.016228            2           2   
+    label_UMGS1952_101.fasta          0.0063723             0.95771             0.015289           0.00018258             0.020443            2           2   
+    label_UMGS1952_107.fasta          0.0036862             0.98837            0.0032437           9.1172e-05            0.0046057            2           2   
+    label_UMGS1952_116.fasta           0.011378             0.95615            0.0060004             0.012815             0.013652            2           2   
+    label_UMGS1952_118.fasta          0.0066089              0.9849            0.0014138           0.00029942            0.0067813            2           2   
+    label_UMGS1952_12.fasta           0.0056078             0.88267             0.098572           0.00042191             0.012728            2           2   
+    label_UMGS1952_133.fasta           0.017462             0.96645            1.154e-05             0.001686             0.014392            2           2   
+    label_UMGS1952_138.fasta          0.0030753             0.89391            0.0061704           0.00025145              0.09659            2           2   
+    label_UMGS1952_14.fasta           0.0066008             0.92697             0.047311           0.00050017             0.018618            2           2   
+    label_UMGS1952_143.fasta          0.0016897             0.96769            0.0081155           0.00032653             0.022177            2           2   
+    label_UMGS1952_150.fasta          0.0080558             0.98336           0.00098081           3.1497e-05              0.00757            2           2   
+    label_UMGS1952_151.fasta          0.0091497             0.89562             0.082947           0.00017224             0.012109            2           2   
+    label_UMGS1952_162.fasta           0.016576             0.95884            0.0040863           0.00025317             0.020243            2           2   
+    label_UMGS1952_169.fasta          0.0010219             0.92661           6.9582e-05           1.8044e-06               0.0723            2           2   
+    label_UMGS1952_19.fasta           0.0070281             0.98916           0.00031742           0.00053049            0.0029635            2           2   
+    label_UMGS1952_28.fasta           0.0040661             0.94522             0.042393            0.0002477            0.0080741            2           2   
+    label_UMGS1952_31.fasta           0.0049547             0.98525            0.0041293           0.00044052            0.0052216            2           2   
+    label_UMGS1952_4.fasta            0.0022457             0.94951             0.038088           0.00081798            0.0093424            2           2   
+    label_UMGS1952_41.fasta           0.0080204             0.98642            0.0012496           0.00070689            0.0036039            2           2   
+    label_UMGS1952_45.fasta           0.0033364             0.98384            0.0034515           0.00026844            0.0091009            2           2   
+    label_UMGS1952_46.fasta           0.0081347              0.9891           0.00036059           0.00033697            0.0020666            2           2   
+    label_UMGS1952_53.fasta            0.013478             0.98217            0.0014488           0.00037386            0.0025251            2           2   
+    label_UMGS1952_61.fasta           0.0036677             0.95267              0.02485           7.8975e-05             0.018729            2           2   
+    label_UMGS1952_63.fasta           0.0046179              0.9836            0.0053102           0.00024897            0.0062218            2           2   
+    label_UMGS1952_67.fasta           0.0066757             0.98911            0.0015061           0.00021327            0.0024981            2           2   
+    label_UMGS1952_75.fasta            0.008845              0.9784            0.0020087           0.00021649             0.010527            2           2   
+    label_UMGS1952_77.fasta           0.0040212             0.97584             0.014411           0.00010799            0.0056169            2           2   
+    label_UMGS1952_80.fasta            0.013381             0.98104            0.0011922           0.00034502            0.0040409            2           2   
+    label_UMGS1952_87.fasta           0.0045644             0.90456             0.085548           0.00020288            0.0051274            2           2   
+    label_20298_2_33_1.fasta          0.0032371          0.00020347              0.97869            0.0029155             0.014957            3           3   
+    label_20298_2_33_13.fasta         0.0032433          0.00024763              0.93802            0.0016325             0.056859            3           3   
+    label_20298_2_33_16.fasta         0.0045705          0.00049081              0.94852             0.011092              0.03533            3           3   
+    label_20298_2_33_17.fasta         0.0031328          8.0565e-05              0.97036            0.0054886             0.020938            3           3   
+    label_20298_2_33_27.fasta         0.0061863          0.00039937              0.87124             0.096339             0.025836            3           3   
+    label_20298_2_33_29.fasta         0.0023386          0.00025673              0.95753           0.00065503              0.03922            3           3   
+    label_20298_2_33_36.fasta          0.014838           0.0096141              0.87886            0.0032492              0.09344            3           3   
+    label_20298_2_33_39.fasta         0.0051942          0.00081666              0.93892            0.0037537             0.051316            3           3   
+    label_20298_2_33_41.fasta          0.015394            0.017335              0.90434             0.017635             0.045298            3           3   
+    label_20298_2_33_47.fasta          0.022775           0.0096747              0.90749             0.020137             0.039923            3           3   
+    label_20298_2_33_49.fasta         0.0067608           0.0030756              0.89433             0.080925             0.014913            3           3   
+    label_20298_2_33_51.fasta         0.0067905           0.0030372              0.94359             0.025334             0.021249            3           3   
+    label_20298_2_33_55.fasta          0.010683            0.040172              0.90419            0.0045717             0.040384            3           3   
+    label_20298_2_33_56.fasta          0.022542             0.10469              0.78034            0.0033198             0.089107            3           3   
+    label_20298_2_33_58.fasta         0.0053744             0.31043              0.66823           0.00088282             0.015086            3           3   
+    label_20298_2_33_71.fasta          0.012434            0.050861              0.87955            0.0039628             0.053198            3           3   
+    label_20298_2_33_79.fasta         0.0068313             0.42691              0.53053           0.00099239             0.034735            3           3   
+    label_20298_2_33_8.fasta          0.0038727          5.8653e-05              0.98262            0.0024666              0.01098            3           3   
+    label_20298_2_33_82.fasta         0.0065408             0.95527             0.017443            0.0012716             0.019473            2           3   
+    label_20298_2_33_86.fasta          0.018017             0.65299             0.040729            0.0028648              0.28539            2           3   
+    label_20298_2_33_87.fasta         0.0026363            0.020339              0.86227             0.034892             0.079861            3           3   
+    label_21673_4_43_1.fasta           0.008828          0.00013915              0.88863             0.054868             0.047534            3           3   
+    label_21673_4_43_14.fasta           0.02869            0.038875              0.79416              0.02983              0.10844            3           3   
+    label_21673_4_43_6.fasta           0.024477           0.0017764              0.83067             0.035432              0.10765            3           3   
+    label_GCF_000159675_0.fasta        0.020374             0.44277              0.39926            0.0080162              0.12958            2           3   
+    label_GCF_000159675_6.fasta       0.0031935          2.4035e-05               0.9793            0.0030428             0.014444            3           3   
+    label_GCF_001050095_5.fasta        0.068487            0.028272             0.040862               0.7375              0.12488            4           4   
+    label_14670_1_61_11.fasta         0.0040927             0.13415             0.001662             0.061182              0.79891            5           5   
+    label_14670_1_61_2.fasta           0.007466            0.033222            0.0055987             0.050881              0.90283            5           5   
+    label_14670_1_61_24.fasta          0.011651             0.97754            0.0019209            0.0015688            0.0073227            2           5   
+    label_14670_1_61_5.fasta           0.035279            0.022613              0.10245              0.10958              0.73007            5           5   
+    label_14670_1_61_7.fasta          0.0055435             0.11626             0.001806             0.051082              0.82531            5           5   
+    label_20298_3_12_10.fasta          0.013589             0.11101              0.07997             0.038599              0.75683            5           5   
+    label_20298_3_12_2.fasta            0.03257            0.031377              0.16358             0.033731              0.73874            5           5   
+    label_20298_3_12_7.fasta            0.08676            0.033437              0.52603             0.051422              0.30235            3           5   
+
+
+testAcNum =
+
+  1x116 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 103 through 105
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 106 through 108
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 109 through 111
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 112 through 114
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 115 through 116
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 3
+classifying using QSVM
+
+score3Matrix =
+
+    0.1273    0.1577    0.2317    0.2448    0.2384    4.0000    1.0000
+    0.0043    0.9784    0.0040    0.0017    0.0117    2.0000    2.0000
+    0.0168    0.6580    0.2898    0.0056    0.0298    2.0000    2.0000
+    0.0051    0.9899    0.0001    0.0029    0.0019    2.0000    2.0000
+    0.0049    0.9889    0.0001    0.0026    0.0035    2.0000    2.0000
+    0.0051    0.9714    0.0050    0.0016    0.0169    2.0000    2.0000
+    0.0051    0.9740    0.0071    0.0017    0.0121    2.0000    2.0000
+    0.0045    0.9638    0.0205    0.0013    0.0099    2.0000    2.0000
+    0.0059    0.9837    0.0006    0.0024    0.0074    2.0000    2.0000
+    0.0059    0.9754    0.0078    0.0017    0.0092    2.0000    2.0000
+    0.0200    0.6130    0.3270    0.0006    0.0395    2.0000    2.0000
+    0.0093    0.9591    0.0223    0.0006    0.0088    2.0000    2.0000
+    0.0091    0.9204    0.0349    0.0001    0.0355    2.0000    2.0000
+    0.0082    0.9129    0.0527    0.0001    0.0262    2.0000    2.0000
+    0.0093    0.9346    0.0276    0.0006    0.0279    2.0000    2.0000
+    0.0048    0.9518    0.0016    0.0002    0.0417    2.0000    2.0000
+    0.0103    0.9190    0.0418    0.0003    0.0286    2.0000    2.0000
+    0.0073    0.9806    0.0023    0.0007    0.0091    2.0000    2.0000
+    0.0084    0.9489    0.0277    0.0003    0.0147    2.0000    2.0000
+    0.0167    0.9718    0.0013    0.0087    0.0014    2.0000    2.0000
+    0.0226    0.9386    0.0000    0.0124    0.0264    2.0000    2.0000
+    0.0094    0.9701    0.0069    0.0008    0.0128    2.0000    2.0000
+    0.0318    0.9449    0.0001    0.0150    0.0082    2.0000    2.0000
+    0.0062    0.8824    0.0006    0.0001    0.1107    2.0000    2.0000
+    0.0048    0.7556    0.2349    0.0001    0.0046    2.0000    2.0000
+    0.0095    0.8398    0.0464    0.0020    0.1022    2.0000    2.0000
+    0.0063    0.9092    0.0709    0.0044    0.0093    2.0000    2.0000
+    0.0049    0.8941    0.0376    0.0045    0.0589    2.0000    2.0000
+    0.0045    0.9594    0.0022    0.0011    0.0329    2.0000    2.0000
+    0.0047    0.9436    0.0082    0.0012    0.0422    2.0000    2.0000
+    0.0083    0.7239    0.1567    0.0085    0.1026    2.0000    2.0000
+    0.0040    0.9690    0.0009    0.0010    0.0251    2.0000    2.0000
+    0.0037    0.9710    0.0064    0.0011    0.0179    2.0000    2.0000
+    0.0050    0.8800    0.0148    0.0021    0.0981    2.0000    2.0000
+    0.0052    0.9903    0.0007    0.0011    0.0027    2.0000    2.0000
+    0.0042    0.9629    0.0113    0.0021    0.0195    2.0000    2.0000
+    0.0056    0.9862    0.0001    0.0023    0.0058    2.0000    2.0000
+    0.0042    0.9569    0.0150    0.0027    0.0212    2.0000    2.0000
+    0.0048    0.9823    0.0012    0.0016    0.0102    2.0000    2.0000
+    0.0049    0.9772    0.0038    0.0020    0.0120    2.0000    2.0000
+    0.0043    0.9743    0.0079    0.0012    0.0124    2.0000    2.0000
+    0.0049    0.9863    0.0015    0.0020    0.0053    2.0000    2.0000
+    0.0047    0.9780    0.0046    0.0009    0.0118    2.0000    2.0000
+    0.0049    0.9110    0.0613    0.0037    0.0191    2.0000    2.0000
+    0.0065    0.9458    0.0097    0.0004    0.0376    2.0000    2.0000
+    0.0054    0.9597    0.0216    0.0021    0.0113    2.0000    2.0000
+    0.0049    0.9903    0.0001    0.0023    0.0024    2.0000    2.0000
+    0.0054    0.9523    0.0075    0.0017    0.0331    2.0000    2.0000
+    0.0038    0.9294    0.0500    0.0020    0.0148    2.0000    2.0000
+    0.0054    0.9765    0.0004    0.0007    0.0171    2.0000    2.0000
+    0.0112    0.9819    0.0005    0.0031    0.0033    2.0000    2.0000
+    0.0103    0.9786    0.0017    0.0020    0.0074    2.0000    2.0000
+    0.0101    0.9792    0.0015    0.0011    0.0081    2.0000    2.0000
+    0.0107    0.9841    0.0018    0.0022    0.0013    2.0000    2.0000
+    0.0096    0.9816    0.0008    0.0035    0.0045    2.0000    2.0000
+    0.0087    0.9853    0.0007    0.0015    0.0038    2.0000    2.0000
+    0.0088    0.9626    0.0021    0.0007    0.0258    2.0000    2.0000
+    0.0226    0.9612    0.0028    0.0048    0.0086    2.0000    2.0000
+    0.0096    0.9844    0.0019    0.0006    0.0034    2.0000    2.0000
+    0.0101    0.9731    0.0134    0.0010    0.0024    2.0000    2.0000
+    0.0478    0.8898    0.0009    0.0115    0.0500    2.0000    2.0000
+    0.0124    0.8553    0.0020    0.0000    0.1303    2.0000    2.0000
+    0.0067    0.6866    0.2892    0.0001    0.0174    2.0000    2.0000
+    0.0126    0.8862    0.0981    0.0002    0.0029    2.0000    2.0000
+    0.0035    0.9501    0.0147    0.0015    0.0303    2.0000    2.0000
+    0.0049    0.9671    0.0150    0.0016    0.0115    2.0000    2.0000
+    0.0047    0.9658    0.0197    0.0014    0.0085    2.0000    2.0000
+    0.0044    0.9790    0.0070    0.0012    0.0084    2.0000    2.0000
+    0.0046    0.9375    0.0481    0.0013    0.0085    2.0000    2.0000
+    0.0049    0.9361    0.0443    0.0012    0.0135    2.0000    2.0000
+    0.0064    0.9725    0.0112    0.0016    0.0082    2.0000    2.0000
+    0.0048    0.9441    0.0198    0.0028    0.0284    2.0000    2.0000
+    0.0064    0.9793    0.0054    0.0018    0.0071    2.0000    2.0000
+    0.0054    0.9086    0.0283    0.0035    0.0542    2.0000    2.0000
+    0.0086    0.9806    0.0059    0.0015    0.0034    2.0000    2.0000
+    0.0056    0.9866    0.0010    0.0015    0.0053    2.0000    2.0000
+    0.0063    0.9862    0.0024    0.0012    0.0039    2.0000    2.0000
+    0.0061    0.9835    0.0005    0.0017    0.0081    2.0000    2.0000
+    0.0064    0.9728    0.0069    0.0009    0.0130    2.0000    2.0000
+    0.0038    0.9400    0.0462    0.0016    0.0084    2.0000    2.0000
+    0.0071    0.9864    0.0007    0.0018    0.0040    2.0000    2.0000
+    0.0076    0.9738    0.0074    0.0009    0.0103    2.0000    2.0000
+    0.0073    0.9732    0.0116    0.0012    0.0067    2.0000    2.0000
+    0.0060    0.9745    0.0081    0.0003    0.0110    2.0000    2.0000
+    0.0056    0.0006    0.9546    0.0050    0.0343    3.0000    3.0000
+    0.0063    0.0038    0.9317    0.0049    0.0533    3.0000    3.0000
+    0.0044    0.0002    0.9724    0.0127    0.0104    3.0000    3.0000
+    0.0066    0.0046    0.9522    0.0039    0.0328    3.0000    3.0000
+    0.0078    0.0065    0.9555    0.0083    0.0220    3.0000    3.0000
+    0.0071    0.0103    0.9667    0.0066    0.0092    3.0000    3.0000
+    0.0070    0.0264    0.9368    0.0073    0.0225    3.0000    3.0000
+    0.0072    0.0121    0.9523    0.0053    0.0232    3.0000    3.0000
+    0.0078    0.0330    0.9275    0.0054    0.0262    3.0000    3.0000
+    0.0046    0.0005    0.9730    0.0106    0.0113    3.0000    3.0000
+    0.0088    0.4195    0.5311    0.0038    0.0367    3.0000    3.0000
+    0.0102    0.1245    0.8561    0.0006    0.0086    3.0000    3.0000
+    0.0099    0.9542    0.0192    0.0019    0.0149    2.0000    3.0000
+    0.0704    0.6320    0.2214    0.0005    0.0757    2.0000    3.0000
+    0.0209    0.0309    0.8442    0.0188    0.0853    3.0000    3.0000
+    0.0182    0.4903    0.0924    0.0202    0.3789    2.0000    3.0000
+    0.0034    0.7546    0.1804    0.0013    0.0602    2.0000    3.0000
+    0.0135    0.0289    0.7451    0.0425    0.1699    3.0000    3.0000
+    0.0117    0.0011    0.9177    0.0265    0.0430    3.0000    3.0000
+    0.0080    0.0003    0.9076    0.0264    0.0576    3.0000    3.0000
+    0.0046    0.0003    0.9709    0.0028    0.0215    3.0000    3.0000
+    0.1219    0.1047    0.2345    0.3417    0.1971    4.0000    4.0000
+    0.0699    0.2482    0.0885    0.2021    0.3913    5.0000    4.0000
+    0.0293    0.0737    0.0051    0.0073    0.8846    5.0000    5.0000
+    0.0106    0.0085    0.5962    0.0248    0.3598    3.0000    5.0000
+    0.0257    0.0355    0.5231    0.0570    0.3587    3.0000    5.0000
+    0.0095    0.7427    0.0088    0.0060    0.2330    2.0000    5.0000
+    0.0165    0.2233    0.6317    0.0263    0.1023    3.0000    5.0000
+    0.0244    0.1085    0.0021    0.0059    0.8591    5.0000    5.0000
+    0.0325    0.0655    0.0147    0.0093    0.8780    5.0000    5.0000
+    0.0630    0.1272    0.1236    0.0213    0.6650    5.0000    5.0000
+    0.0272    0.0352    0.0709    0.0038    0.8629    5.0000    5.0000
+
+
+T3 =
+
+  116x7 table
+
+                                   g__Enterococcus    g__Enterococcus_A    g__Enterococcus_B    g__Enterococcus_C    g__Enterococcus_D    prediction    actual
+                                   _______________    _________________    _________________    _________________    _________________    __________    ______
+
+    label_20298_3_11_0.fasta            0.12734             0.15775              0.23173              0.24481              0.23837            4           1   
+    label_UMGS1367_103.fasta          0.0042853             0.97835            0.0040211            0.0016878             0.011653            2           2   
+    label_UMGS1367_107.fasta           0.016759             0.65796              0.28981            0.0056495             0.029829            2           2   
+    label_UMGS1367_113.fasta          0.0051473             0.98992           0.00013306            0.0028957            0.0019037            2           2   
+    label_UMGS1367_115.fasta          0.0049281             0.98888           0.00012299            0.0025724            0.0035014            2           2   
+    label_UMGS1367_127.fasta          0.0051113             0.97143             0.005038            0.0015699              0.01685            2           2   
+    label_UMGS1367_128.fasta          0.0050669             0.97402             0.007084            0.0016918             0.012134            2           2   
+    label_UMGS1367_131.fasta          0.0044587             0.96377             0.020496            0.0013401            0.0099387            2           2   
+    label_UMGS1367_132.fasta          0.0058983             0.98373           0.00058195            0.0024314            0.0073631            2           2   
+    label_UMGS1367_164.fasta          0.0059371             0.97541            0.0077541            0.0017023            0.0091929            2           2   
+    label_UMGS1367_181.fasta           0.019981             0.61298              0.32699           0.00059643             0.039454            2           2   
+    label_UMGS1367_192.fasta          0.0092519             0.95906             0.022297           0.00063233            0.0087634            2           2   
+    label_UMGS1367_195.fasta          0.0091326             0.92042             0.034888           5.2145e-05             0.035506            2           2   
+    label_UMGS1367_200.fasta          0.0081768             0.91286              0.05266           7.1504e-05             0.026236            2           2   
+    label_UMGS1367_203.fasta          0.0093316              0.9346             0.027605           0.00060779             0.027857            2           2   
+    label_UMGS1367_204.fasta          0.0048101             0.95177            0.0015596           0.00020891              0.04165            2           2   
+    label_UMGS1367_210.fasta           0.010274               0.919             0.041842           0.00027962             0.028607            2           2   
+    label_UMGS1367_212.fasta          0.0073124             0.98058            0.0022825           0.00068128            0.0091479            2           2   
+    label_UMGS1367_213.fasta           0.008448             0.94886             0.027709             0.000315             0.014664            2           2   
+    label_UMGS1367_217.fasta           0.016736             0.97184             0.001266            0.0087182            0.0014378            2           2   
+    label_UMGS1367_221.fasta           0.022614             0.93859           7.6373e-06             0.012433             0.026351            2           2   
+    label_UMGS1367_223.fasta          0.0093664              0.9701            0.0069073           0.00082526             0.012805            2           2   
+    label_UMGS1367_230.fasta           0.031815             0.94486           0.00011883             0.015026            0.0081772            2           2   
+    label_UMGS1367_231.fasta          0.0062194             0.88241           0.00056886           0.00013828              0.11066            2           2   
+    label_UMGS1367_232.fasta           0.004835              0.7556              0.23487           6.7385e-05            0.0046195            2           2   
+    label_UMGS1367_27.fasta           0.0094895             0.83982             0.046445            0.0020002              0.10224            2           2   
+    label_UMGS1367_30.fasta           0.0062781             0.90918             0.070856            0.0044281            0.0092609            2           2   
+    label_UMGS1367_31.fasta           0.0049207             0.89412             0.037629            0.0044524              0.05888            2           2   
+    label_UMGS1367_33.fasta           0.0044838             0.95935            0.0021547            0.0010833             0.032925            2           2   
+    label_UMGS1367_34.fasta           0.0047371             0.94363            0.0081847            0.0012364             0.042211            2           2   
+    label_UMGS1367_35.fasta           0.0083125             0.72387              0.15667            0.0085121              0.10264            2           2   
+    label_UMGS1367_44.fasta           0.0040416             0.96896           0.00093791           0.00098263             0.025076            2           2   
+    label_UMGS1367_47.fasta           0.0036841             0.97096            0.0063741             0.001117             0.017864            2           2   
+    label_UMGS1367_49.fasta           0.0049504             0.87998             0.014835            0.0021385             0.098098            2           2   
+    label_UMGS1367_50.fasta           0.0052023             0.99032           0.00069404            0.0011177             0.002668            2           2   
+    label_UMGS1367_61.fasta            0.004157              0.9629              0.01134            0.0021324             0.019466            2           2   
+    label_UMGS1367_65.fasta           0.0056096             0.98619           0.00012077            0.0022971            0.0057791            2           2   
+    label_UMGS1367_68.fasta           0.0042287             0.95691             0.014964            0.0026627             0.021235            2           2   
+    label_UMGS1367_69.fasta           0.0047647             0.98226            0.0011739            0.0016312             0.010171            2           2   
+    label_UMGS1367_70.fasta           0.0049242              0.9772            0.0038327            0.0019965             0.012044            2           2   
+    label_UMGS1367_72.fasta           0.0042654             0.97426            0.0078844            0.0011964             0.012396            2           2   
+    label_UMGS1367_75.fasta           0.0048505             0.98631            0.0015242            0.0020251            0.0052916            2           2   
+    label_UMGS1367_76.fasta           0.0046788             0.97798            0.0046328           0.00093421              0.01177            2           2   
+    label_UMGS1367_79.fasta           0.0048592             0.91105             0.061252            0.0037047             0.019139            2           2   
+    label_UMGS1367_8.fasta            0.0065397             0.94575             0.009721           0.00036503             0.037621            2           2   
+    label_UMGS1367_92.fasta           0.0053727              0.9597             0.021552            0.0020794             0.011296            2           2   
+    label_UMGS1367_95.fasta            0.004925              0.9903           9.2468e-05            0.0023048            0.0023799            2           2   
+    label_UMGS1367_99.fasta            0.005449             0.95228            0.0074623            0.0017054             0.033103            2           2   
+    label_UMGS1952_10.fasta           0.0037861             0.92944             0.050001            0.0019644              0.01481            2           2   
+    label_UMGS1952_102.fasta          0.0053645             0.97649           0.00037587           0.00068625             0.017082            2           2   
+    label_UMGS1952_103.fasta           0.011185             0.98193           0.00049745            0.0031039            0.0032863            2           2   
+    label_UMGS1952_108.fasta             0.0103             0.97859            0.0017052            0.0019765            0.0074239            2           2   
+    label_UMGS1952_109.fasta           0.010061             0.97924            0.0014905            0.0011242            0.0080881            2           2   
+    label_UMGS1952_112.fasta           0.010695             0.98407            0.0017631            0.0021665            0.0013083            2           2   
+    label_UMGS1952_114.fasta          0.0095505             0.98158           0.00084581            0.0035329            0.0044905            2           2   
+    label_UMGS1952_121.fasta          0.0086514             0.98533           0.00073953             0.001526            0.0037528            2           2   
+    label_UMGS1952_136.fasta           0.008804             0.96256            0.0021487              0.00066             0.025827            2           2   
+    label_UMGS1952_148.fasta           0.022634             0.96118            0.0027574            0.0047922            0.0086375            2           2   
+    label_UMGS1952_152.fasta          0.0096453             0.98444            0.0018641           0.00060874            0.0034375            2           2   
+    label_UMGS1952_158.fasta           0.010053             0.97312             0.013384            0.0010092            0.0024381            2           2   
+    label_UMGS1952_163.fasta            0.04778             0.88981           0.00091516             0.011482             0.050017            2           2   
+    label_UMGS1952_165.fasta           0.012388             0.85526            0.0019865            2.571e-05              0.13034            2           2   
+    label_UMGS1952_167.fasta          0.0066958             0.68661              0.28917           0.00011711             0.017409            2           2   
+    label_UMGS1952_170.fasta            0.01255             0.88618             0.098135           0.00020035            0.0029332            2           2   
+    label_UMGS1952_2.fasta            0.0034884             0.95008              0.01465            0.0014527             0.030332            2           2   
+    label_UMGS1952_20.fasta           0.0048686             0.96709             0.014997            0.0015848             0.011462            2           2   
+    label_UMGS1952_24.fasta           0.0046558              0.9658             0.019697            0.0013581            0.0084923            2           2   
+    label_UMGS1952_26.fasta            0.004443             0.97897            0.0069704            0.0011996            0.0084181            2           2   
+    label_UMGS1952_38.fasta           0.0045939             0.93755             0.048086            0.0012509            0.0085236            2           2   
+    label_UMGS1952_50.fasta           0.0049456             0.93607             0.044315            0.0011828             0.013482            2           2   
+    label_UMGS1952_51.fasta            0.006444             0.97247             0.011226            0.0016378            0.0082182            2           2   
+    label_UMGS1952_6.fasta            0.0048222             0.94411             0.019848            0.0028417             0.028378            2           2   
+    label_UMGS1952_66.fasta           0.0063824             0.97928            0.0054314            0.0017946            0.0071145            2           2   
+    label_UMGS1952_7.fasta            0.0053597              0.9086             0.028314            0.0035473             0.054175            2           2   
+    label_UMGS1952_70.fasta           0.0086201             0.98059            0.0059289             0.001509            0.0033561            2           2   
+    label_UMGS1952_72.fasta           0.0055701             0.98664            0.0010086            0.0015052            0.0052715            2           2   
+    label_UMGS1952_78.fasta           0.0063229             0.98616            0.0023765            0.0011902            0.0039488            2           2   
+    label_UMGS1952_86.fasta           0.0061495             0.98352           0.00051641            0.0017435            0.0080713            2           2   
+    label_UMGS1952_89.fasta           0.0063507             0.97284             0.006939           0.00089297             0.012975            2           2   
+    label_UMGS1952_9.fasta            0.0037819             0.94004             0.046166            0.0016193            0.0083926            2           2   
+    label_UMGS1952_90.fasta           0.0071073              0.9864           0.00065322            0.0018073            0.0040364            2           2   
+    label_UMGS1952_92.fasta           0.0075648             0.97377            0.0074301           0.00093544             0.010297            2           2   
+    label_UMGS1952_93.fasta           0.0073348              0.9732             0.011608            0.0011639             0.006697            2           2   
+    label_UMGS1952_98.fasta           0.0060365             0.97453            0.0080894           0.00034386             0.011002            2           2   
+    label_20298_2_33_14.fasta         0.0055688          0.00055803               0.9546            0.0050091             0.034265            3           3   
+    label_20298_2_33_24.fasta         0.0063468           0.0038365              0.93167            0.0048764             0.053273            3           3   
+    label_20298_2_33_26.fasta         0.0043881          0.00020241              0.97236              0.01265             0.010401            3           3   
+    label_20298_2_33_32.fasta         0.0065687            0.004595              0.95221            0.0038595             0.032765            3           3   
+    label_20298_2_33_33.fasta          0.007757           0.0064623              0.95547            0.0083191             0.021991            3           3   
+    label_20298_2_33_40.fasta         0.0071226            0.010335              0.96672            0.0065943            0.0092236            3           3   
+    label_20298_2_33_43.fasta         0.0069509            0.026385              0.93678            0.0073497             0.022531            3           3   
+    label_20298_2_33_45.fasta         0.0071754            0.012105              0.95229            0.0052765             0.023152            3           3   
+    label_20298_2_33_50.fasta          0.007835            0.033043              0.92745            0.0054498             0.026218            3           3   
+    label_20298_2_33_6.fasta          0.0046061          0.00053052              0.97295             0.010629             0.011282            3           3   
+    label_20298_2_33_69.fasta         0.0088079              0.4195              0.53113            0.0038387             0.036715            3           3   
+    label_20298_2_33_76.fasta          0.010189              0.1245              0.85611           0.00062517            0.0085749            3           3   
+    label_20298_2_33_83.fasta         0.0098959             0.95418             0.019154            0.0018534              0.01492            2           3   
+    label_20298_2_33_88.fasta          0.070428             0.63197               0.2214           0.00050972             0.075701            2           3   
+    label_21673_4_43_15.fasta          0.020865            0.030876              0.84416             0.018827             0.085272            3           3   
+    label_21673_4_43_18.fasta          0.018228             0.49027             0.092361             0.020217              0.37892            2           3   
+    label_21673_4_43_19.fasta         0.0034431             0.75461              0.18044            0.0013342             0.060177            2           3   
+    label_21673_4_43_20.fasta          0.013461            0.028947              0.74514             0.042514              0.16994            3           3   
+    label_21673_4_43_3.fasta           0.011682           0.0010861              0.91775             0.026459             0.043027            3           3   
+    label_21673_4_43_9.fasta          0.0080495          0.00027432              0.90759             0.026447             0.057635            3           3   
+    label_GCF_000159675_1.fasta       0.0045514          0.00026002               0.9709            0.0028287             0.021456            3           3   
+    label_GCF_001050095_1.fasta         0.12192             0.10474              0.23454              0.34168              0.19711            4           4   
+    label_GCF_001050095_2.fasta        0.069947             0.24823             0.088468              0.20207              0.39128            5           4   
+    label_14670_1_61_0.fasta           0.029289            0.073685             0.005143            0.0072819               0.8846            5           5   
+    label_14670_1_61_12.fasta          0.010597           0.0085097              0.59621             0.024849              0.35984            3           5   
+    label_14670_1_61_13.fasta          0.025716             0.03552              0.52314             0.056951              0.35867            3           5   
+    label_14670_1_61_15.fasta         0.0094946              0.7427            0.0087603            0.0060137              0.23303            2           5   
+    label_14670_1_61_18.fasta          0.016478             0.22328              0.63167             0.026287              0.10229            3           5   
+    label_14670_1_61_3.fasta            0.02436             0.10853            0.0021313            0.0058928              0.85908            5           5   
+    label_14670_1_61_4.fasta           0.032493            0.065475             0.014687            0.0093053              0.87804            5           5   
+    label_14670_1_61_8.fasta            0.06295             0.12716              0.12361              0.02129              0.66499            5           5   
+    label_20298_3_12_1.fasta            0.02719            0.035202              0.07087            0.0037901              0.86295            5           5   
+
+
+testAcNum =
+
+  1x116 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 103 through 105
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 106 through 108
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 109 through 111
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 112 through 114
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 115 through 116
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 4
+classifying using QSVM
+
+score3Matrix =
+
+    0.0927    0.2037    0.2337    0.2312    0.2387    5.0000    1.0000
+    0.0552    0.2524    0.2140    0.2319    0.2464    2.0000    1.0000
+    0.0074    0.8848    0.0168    0.0068    0.0842    2.0000    2.0000
+    0.0030    0.9918    0.0001    0.0019    0.0031    2.0000    2.0000
+    0.0095    0.9244    0.0119    0.0030    0.0512    2.0000    2.0000
+    0.0027    0.9364    0.0513    0.0009    0.0088    2.0000    2.0000
+    0.0034    0.9248    0.0481    0.0055    0.0183    2.0000    2.0000
+    0.0023    0.9918    0.0000    0.0011    0.0047    2.0000    2.0000
+    0.0015    0.9931    0.0000    0.0029    0.0025    2.0000    2.0000
+    0.0035    0.9758    0.0107    0.0011    0.0090    2.0000    2.0000
+    0.0038    0.7519    0.2202    0.0014    0.0226    2.0000    2.0000
+    0.0037    0.9809    0.0056    0.0009    0.0090    2.0000    2.0000
+    0.0036    0.9765    0.0082    0.0011    0.0105    2.0000    2.0000
+    0.0035    0.9852    0.0001    0.0006    0.0105    2.0000    2.0000
+    0.0044    0.9443    0.0184    0.0004    0.0326    2.0000    2.0000
+    0.0043    0.9770    0.0009    0.0005    0.0173    2.0000    2.0000
+    0.0035    0.9793    0.0013    0.0007    0.0152    2.0000    2.0000
+    0.0078    0.9094    0.0659    0.0009    0.0160    2.0000    2.0000
+    0.0046    0.9675    0.0092    0.0006    0.0181    2.0000    2.0000
+    0.0046    0.9631    0.0269    0.0007    0.0047    2.0000    2.0000
+    0.0014    0.9683    0.0000    0.0001    0.0302    2.0000    2.0000
+    0.0034    0.9749    0.0000    0.0004    0.0212    2.0000    2.0000
+    0.0175    0.9509    0.0088    0.0006    0.0222    2.0000    2.0000
+    0.0038    0.9466    0.0169    0.0120    0.0207    2.0000    2.0000
+    0.0072    0.9602    0.0005    0.0037    0.0284    2.0000    2.0000
+    0.0050    0.9857    0.0005    0.0042    0.0047    2.0000    2.0000
+    0.0090    0.9735    0.0030    0.0045    0.0100    2.0000    2.0000
+    0.0052    0.9649    0.0109    0.0030    0.0160    2.0000    2.0000
+    0.0049    0.9752    0.0020    0.0024    0.0155    2.0000    2.0000
+    0.0039    0.9544    0.0066    0.0043    0.0308    2.0000    2.0000
+    0.0035    0.9597    0.0218    0.0056    0.0094    2.0000    2.0000
+    0.0052    0.9843    0.0004    0.0022    0.0079    2.0000    2.0000
+    0.0032    0.9910    0.0000    0.0031    0.0026    2.0000    2.0000
+    0.0035    0.9137    0.0301    0.0098    0.0428    2.0000    2.0000
+    0.0022    0.7238    0.1999    0.0071    0.0671    2.0000    2.0000
+    0.0050    0.7706    0.1608    0.0110    0.0526    2.0000    2.0000
+    0.0038    0.9650    0.0198    0.0021    0.0092    2.0000    2.0000
+    0.0036    0.9856    0.0015    0.0018    0.0075    2.0000    2.0000
+    0.0035    0.8750    0.0761    0.0049    0.0405    2.0000    2.0000
+    0.0028    0.9921    0.0000    0.0024    0.0027    2.0000    2.0000
+    0.0069    0.9599    0.0030    0.0038    0.0264    2.0000    2.0000
+    0.0018    0.8694    0.1171    0.0023    0.0094    2.0000    2.0000
+    0.0042    0.9859    0.0000    0.0041    0.0058    2.0000    2.0000
+    0.0061    0.9738    0.0003    0.0005    0.0192    2.0000    2.0000
+    0.0036    0.9702    0.0000    0.0011    0.0250    2.0000    2.0000
+    0.0023    0.9859    0.0000    0.0012    0.0106    2.0000    2.0000
+    0.0214    0.8767    0.0001    0.0001    0.1017    2.0000    2.0000
+    0.0026    0.9409    0.0410    0.0017    0.0138    2.0000    2.0000
+    0.0107    0.9808    0.0000    0.0061    0.0023    2.0000    2.0000
+    0.0039    0.9803    0.0000    0.0009    0.0149    2.0000    2.0000
+    0.0093    0.9804    0.0002    0.0005    0.0096    2.0000    2.0000
+    0.0049    0.9774    0.0000    0.0002    0.0175    2.0000    2.0000
+    0.0045    0.9844    0.0003    0.0003    0.0106    2.0000    2.0000
+    0.0229    0.9250    0.0006    0.0009    0.0506    2.0000    2.0000
+    0.0109    0.9783    0.0009    0.0002    0.0096    2.0000    2.0000
+    0.0057    0.9736    0.0093    0.0005    0.0109    2.0000    2.0000
+    0.0176    0.9277    0.0010    0.0011    0.0526    2.0000    2.0000
+    0.0064    0.7061    0.0001    0.0000    0.2874    2.0000    2.0000
+    0.0033    0.9785    0.0067    0.0011    0.0103    2.0000    2.0000
+    0.0032    0.9872    0.0026    0.0011    0.0060    2.0000    2.0000
+    0.0028    0.9886    0.0006    0.0011    0.0069    2.0000    2.0000
+    0.0042    0.9433    0.0174    0.0024    0.0327    2.0000    2.0000
+    0.0031    0.9799    0.0080    0.0010    0.0079    2.0000    2.0000
+    0.0048    0.9546    0.0302    0.0008    0.0096    2.0000    2.0000
+    0.0038    0.9353    0.0422    0.0010    0.0175    2.0000    2.0000
+    0.0037    0.9425    0.0434    0.0010    0.0093    2.0000    2.0000
+    0.0031    0.9599    0.0255    0.0008    0.0107    2.0000    2.0000
+    0.0031    0.9408    0.0433    0.0010    0.0118    2.0000    2.0000
+    0.0036    0.9861    0.0043    0.0007    0.0054    2.0000    2.0000
+    0.0031    0.9671    0.0231    0.0009    0.0058    2.0000    2.0000
+    0.0039    0.9905    0.0001    0.0012    0.0044    2.0000    2.0000
+    0.0031    0.9808    0.0013    0.0004    0.0144    2.0000    2.0000
+    0.0068    0.9703    0.0156    0.0005    0.0069    2.0000    2.0000
+    0.0052    0.9788    0.0039    0.0014    0.0106    2.0000    2.0000
+    0.0060    0.9656    0.0054    0.0011    0.0219    2.0000    2.0000
+    0.0038    0.9005    0.0465    0.0031    0.0462    2.0000    2.0000
+    0.0039    0.9703    0.0103    0.0003    0.0152    2.0000    2.0000
+    0.0035    0.9883    0.0004    0.0005    0.0074    2.0000    2.0000
+    0.0040    0.9603    0.0213    0.0005    0.0139    2.0000    2.0000
+    0.0037    0.9828    0.0000    0.0010    0.0125    2.0000    2.0000
+    0.0077    0.9769    0.0093    0.0006    0.0054    2.0000    2.0000
+    0.0046    0.0001    0.9562    0.0249    0.0143    3.0000    3.0000
+    0.0144    0.0321    0.8429    0.0071    0.1034    3.0000    3.0000
+    0.0087    0.0161    0.9318    0.0151    0.0283    3.0000    3.0000
+    0.0078    0.0036    0.9137    0.0108    0.0641    3.0000    3.0000
+    0.0045    0.0005    0.9670    0.0078    0.0203    3.0000    3.0000
+    0.0053    0.0003    0.9762    0.0035    0.0147    3.0000    3.0000
+    0.0070    0.0073    0.9437    0.0109    0.0311    3.0000    3.0000
+    0.0075    0.0301    0.9311    0.0103    0.0210    3.0000    3.0000
+    0.0058    0.1004    0.8524    0.0089    0.0325    3.0000    3.0000
+    0.0084    0.3623    0.5661    0.0060    0.0571    3.0000    3.0000
+    0.0060    0.0005    0.9610    0.0037    0.0289    3.0000    3.0000
+    0.0083    0.4502    0.4941    0.0029    0.0444    3.0000    3.0000
+    0.0047    0.7686    0.2068    0.0017    0.0183    2.0000    3.0000
+    0.0197    0.2473    0.5718    0.0059    0.1552    3.0000    3.0000
+    0.1080    0.3537    0.2063    0.0032    0.3288    2.0000    3.0000
+    0.0117    0.8511    0.1036    0.0033    0.0303    2.0000    3.0000
+    0.0335    0.2017    0.0004    0.0000    0.7645    5.0000    3.0000
+    0.0197    0.9042    0.0033    0.0001    0.0727    2.0000    3.0000
+    0.0071    0.0001    0.8948    0.0507    0.0473    3.0000    3.0000
+    0.0055    0.0001    0.9062    0.0300    0.0583    3.0000    3.0000
+    0.0084    0.0021    0.8571    0.0108    0.1215    3.0000    3.0000
+    0.0074    0.0001    0.8832    0.0359    0.0734    3.0000    3.0000
+    0.0050    0.0150    0.9348    0.0113    0.0339    3.0000    3.0000
+    0.0076    0.1258    0.7318    0.0417    0.0930    3.0000    3.0000
+    0.0095    0.0004    0.8606    0.0583    0.0712    3.0000    3.0000
+    0.0073    0.0003    0.8608    0.0674    0.0642    3.0000    3.0000
+    0.0072    0.0001    0.9456    0.0164    0.0306    3.0000    3.0000
+    0.0104    0.0065    0.6289    0.1423    0.2119    3.0000    3.0000
+    0.0109    0.7558    0.1234    0.0206    0.0892    2.0000    5.0000
+    0.0060    0.5447    0.3921    0.0074    0.0497    2.0000    5.0000
+    0.0041    0.9883    0.0013    0.0006    0.0057    2.0000    5.0000
+    0.0678    0.0377    0.0452    0.0741    0.7752    5.0000    5.0000
+    0.0417    0.0055    0.1221    0.0431    0.7875    5.0000    5.0000
+    0.0562    0.1946    0.1580    0.0407    0.5504    5.0000    5.0000
+    0.0197    0.0881    0.3787    0.1683    0.3451    3.0000    5.0000
+
+
+T3 =
+
+  116x7 table
+
+                                   g__Enterococcus    g__Enterococcus_A    g__Enterococcus_B    g__Enterococcus_C    g__Enterococcus_D    prediction    actual
+                                   _______________    _________________    _________________    _________________    _________________    __________    ______
+
+    label_20298_3_11_1.fasta           0.092705             0.20366              0.23374              0.23117              0.23872            5           1   
+    label_20298_3_11_2.fasta           0.055215             0.25244                0.214              0.23193              0.24642            2           1   
+    label_UMGS1367_0.fasta            0.0074219             0.88478             0.016798            0.0068369             0.084162            2           2   
+    label_UMGS1367_105.fasta          0.0030356             0.99183           0.00011131            0.0019284            0.0030941            2           2   
+    label_UMGS1367_11.fasta           0.0094875             0.92439              0.01192            0.0030358             0.051163            2           2   
+    label_UMGS1367_114.fasta          0.0026602             0.93641             0.051258           0.00089125            0.0087781            2           2   
+    label_UMGS1367_13.fasta           0.0033503              0.9248             0.048109            0.0054677             0.018277            2           2   
+    label_UMGS1367_139.fasta          0.0023482             0.99181           2.6466e-05            0.0011232            0.0046948            2           2   
+    label_UMGS1367_144.fasta          0.0015321             0.99315           6.1252e-07            0.0028671            0.0024522            2           2   
+    label_UMGS1367_149.fasta          0.0035269             0.97576             0.010679             0.001077            0.0089604            2           2   
+    label_UMGS1367_150.fasta          0.0038264             0.75191              0.22024            0.0013858             0.022643            2           2   
+    label_UMGS1367_151.fasta          0.0036503             0.98086            0.0055662           0.00087952            0.0090414            2           2   
+    label_UMGS1367_152.fasta           0.003592              0.9765            0.0082362            0.0011454             0.010522            2           2   
+    label_UMGS1367_158.fasta           0.003512             0.98518           0.00014176           0.00064213             0.010529            2           2   
+    label_UMGS1367_174.fasta          0.0043769             0.94429              0.01842            0.0003587             0.032552            2           2   
+    label_UMGS1367_177.fasta          0.0043223             0.97701           0.00086793           0.00046338             0.017335            2           2   
+    label_UMGS1367_183.fasta          0.0035054             0.97928            0.0012668           0.00072968             0.015223            2           2   
+    label_UMGS1367_189.fasta           0.007826             0.90942             0.065865           0.00093831             0.015955            2           2   
+    label_UMGS1367_191.fasta          0.0045989             0.96753            0.0091918           0.00057266             0.018107            2           2   
+    label_UMGS1367_198.fasta          0.0046342             0.96309             0.026922            0.0006966            0.0046547            2           2   
+    label_UMGS1367_205.fasta           0.001389             0.96832           4.7855e-07           0.00011816             0.030175            2           2   
+    label_UMGS1367_207.fasta           0.003427             0.97492           7.4543e-06           0.00044641               0.0212            2           2   
+    label_UMGS1367_216.fasta           0.017547              0.9509            0.0088056           0.00059551             0.022156            2           2   
+    label_UMGS1367_22.fasta            0.003785             0.94664             0.016855             0.012015             0.020705            2           2   
+    label_UMGS1367_26.fasta           0.0071572              0.9602           0.00051802            0.0036806             0.028448            2           2   
+    label_UMGS1367_39.fasta           0.0049981             0.98566            0.0004933            0.0041973            0.0046533            2           2   
+    label_UMGS1367_4.fasta            0.0089818             0.97352            0.0030072              0.00451            0.0099813            2           2   
+    label_UMGS1367_40.fasta           0.0051818             0.96489             0.010895              0.00299             0.016045            2           2   
+    label_UMGS1367_42.fasta           0.0049099             0.97518            0.0019981            0.0023702             0.015542            2           2   
+    label_UMGS1367_45.fasta           0.0038526             0.95442            0.0066151            0.0042845             0.030831            2           2   
+    label_UMGS1367_46.fasta           0.0035437             0.95974             0.021771            0.0055606            0.0093819            2           2   
+    label_UMGS1367_48.fasta           0.0052006             0.98427           0.00035362            0.0022498            0.0079241            2           2   
+    label_UMGS1367_52.fasta            0.003241             0.99101            3.697e-05            0.0030983            0.0026183            2           2   
+    label_UMGS1367_54.fasta           0.0035139             0.91372             0.030107            0.0098395             0.042817            2           2   
+    label_UMGS1367_6.fasta            0.0021555             0.72383              0.19985            0.0070814             0.067074            2           2   
+    label_UMGS1367_63.fasta           0.0050292             0.77064              0.16076             0.010985             0.052584            2           2   
+    label_UMGS1367_78.fasta            0.003844             0.96501             0.019761            0.0021394            0.0092486            2           2   
+    label_UMGS1367_80.fasta           0.0036155             0.98559            0.0014963             0.001806            0.0074927            2           2   
+    label_UMGS1367_83.fasta           0.0034614             0.87499             0.076083            0.0049493              0.04052            2           2   
+    label_UMGS1367_87.fasta           0.0027969             0.99208           2.4231e-05            0.0024166            0.0026797            2           2   
+    label_UMGS1367_9.fasta            0.0068575             0.95989            0.0030465            0.0037941             0.026412            2           2   
+    label_UMGS1367_97.fasta           0.0017817             0.86944              0.11708             0.002257            0.0094389            2           2   
+    label_UMGS1952_100.fasta          0.0041643             0.98593           2.4766e-05            0.0040888            0.0057897            2           2   
+    label_UMGS1952_110.fasta          0.0061419             0.97383            0.0003367           0.00048036              0.01921            2           2   
+    label_UMGS1952_123.fasta          0.0035885             0.97024            9.837e-06            0.0011384             0.025027            2           2   
+    label_UMGS1952_124.fasta          0.0022774             0.98594           1.6228e-07            0.0011739             0.010613            2           2   
+    label_UMGS1952_125.fasta           0.021359             0.87671            0.0001244           6.5888e-05              0.10174            2           2   
+    label_UMGS1952_13.fasta           0.0026374             0.94087             0.041028            0.0016661             0.013798            2           2   
+    label_UMGS1952_135.fasta           0.010678             0.98085           4.2843e-05            0.0061449            0.0022881            2           2   
+    label_UMGS1952_142.fasta          0.0038733             0.98026           3.2689e-07           0.00091735             0.014945            2           2   
+    label_UMGS1952_144.fasta          0.0092677             0.98042           0.00017778           0.00048287            0.0096488            2           2   
+    label_UMGS1952_146.fasta          0.0048998             0.97739           8.8651e-07           0.00020383             0.017506            2           2   
+    label_UMGS1952_149.fasta           0.004486             0.98439           0.00030797            0.0002644             0.010556            2           2   
+    label_UMGS1952_154.fasta           0.022901               0.925           0.00060785           0.00089566             0.050599            2           2   
+    label_UMGS1952_157.fasta           0.010929             0.97834           0.00090118           0.00019294            0.0096328            2           2   
+    label_UMGS1952_159.fasta           0.005728             0.97358            0.0093282           0.00046451             0.010898            2           2   
+    label_UMGS1952_161.fasta           0.017568             0.92773            0.0010311            0.0010916             0.052581            2           2   
+    label_UMGS1952_168.fasta           0.006367             0.70611           0.00010079           4.7369e-05              0.28737            2           2   
+    label_UMGS1952_17.fasta           0.0033215             0.97852            0.0067115            0.0011332             0.010316            2           2   
+    label_UMGS1952_18.fasta           0.0031971             0.98716            0.0025911            0.0010541            0.0059977            2           2   
+    label_UMGS1952_23.fasta           0.0027999             0.98855           0.00059344            0.0011085            0.0069449            2           2   
+    label_UMGS1952_3.fasta            0.0041859             0.94332              0.01739            0.0024129             0.032692            2           2   
+    label_UMGS1952_30.fasta           0.0031211              0.9799            0.0080295            0.0010481            0.0078992            2           2   
+    label_UMGS1952_34.fasta           0.0047973             0.95464             0.030158           0.00082481             0.009582            2           2   
+    label_UMGS1952_36.fasta           0.0038474             0.93533             0.042242            0.0010463             0.017533            2           2   
+    label_UMGS1952_40.fasta           0.0037246             0.94255             0.043432           0.00098442            0.0093109            2           2   
+    label_UMGS1952_43.fasta           0.0031348             0.95986             0.025465           0.00081265             0.010731            2           2   
+    label_UMGS1952_5.fasta            0.0031249             0.94075             0.043342            0.0010241             0.011755            2           2   
+    label_UMGS1952_54.fasta           0.0035619             0.98608            0.0042926            0.0007028            0.0053673            2           2   
+    label_UMGS1952_58.fasta           0.0030758              0.9671             0.023088           0.00090092            0.0058348            2           2   
+    label_UMGS1952_59.fasta           0.0039053             0.99046           6.3189e-05            0.0011519            0.0044237            2           2   
+    label_UMGS1952_64.fasta           0.0030849             0.98076            0.0013254           0.00040374             0.014424            2           2   
+    label_UMGS1952_65.fasta           0.0067586             0.97028             0.015568           0.00049328            0.0069046            2           2   
+    label_UMGS1952_71.fasta           0.0051803             0.97883            0.0039002            0.0014422             0.010645            2           2   
+    label_UMGS1952_73.fasta           0.0060402             0.96558            0.0053976             0.001053             0.021928            2           2   
+    label_UMGS1952_8.fasta             0.003758             0.90049             0.046494            0.0030809             0.046182            2           2   
+    label_UMGS1952_81.fasta           0.0038619             0.97034             0.010309           0.00025019             0.015243            2           2   
+    label_UMGS1952_84.fasta           0.0034595             0.98829           0.00043625           0.00046198            0.0073537            2           2   
+    label_UMGS1952_85.fasta           0.0039688             0.96026             0.021327            0.0005265             0.013914            2           2   
+    label_UMGS1952_91.fasta           0.0037186             0.98276           4.8548e-06            0.0010436             0.012468            2           2   
+    label_UMGS1952_94.fasta           0.0077364             0.97686            0.0093112           0.00064359            0.0054456            2           2   
+    label_20298_2_33_2.fasta          0.0045745          5.2555e-05              0.95622             0.024863              0.01429            3           3   
+    label_20298_2_33_28.fasta          0.014415            0.032139              0.84292            0.0071328              0.10339            3           3   
+    label_20298_2_33_30.fasta         0.0086726            0.016142              0.93184             0.015076             0.028267            3           3   
+    label_20298_2_33_34.fasta         0.0077801           0.0036248              0.91369             0.010796             0.064114            3           3   
+    label_20298_2_33_37.fasta         0.0044919          0.00048979              0.96698            0.0077738             0.020266            3           3   
+    label_20298_2_33_4.fasta          0.0053171          0.00031796              0.97615            0.0035274             0.014685            3           3   
+    label_20298_2_33_44.fasta         0.0070173           0.0073059               0.9437             0.010888              0.03109            3           3   
+    label_20298_2_33_48.fasta         0.0074754            0.030127              0.93115             0.010277             0.020975            3           3   
+    label_20298_2_33_57.fasta          0.005783              0.1004              0.85236            0.0089312             0.032527            3           3   
+    label_20298_2_33_66.fasta         0.0083912             0.36234              0.56615            0.0060019             0.057116            3           3   
+    label_20298_2_33_7.fasta           0.005965          0.00052807              0.96096            0.0036915             0.028855            3           3   
+    label_20298_2_33_70.fasta         0.0083036             0.45025              0.49415            0.0028665             0.044436            3           3   
+    label_20298_2_33_73.fasta         0.0046816             0.76859              0.20675            0.0017012             0.018277            2           3   
+    label_20298_2_33_75.fasta          0.019745             0.24731              0.57177            0.0059464              0.15522            3           3   
+    label_20298_2_33_78.fasta           0.10799             0.35369              0.20628            0.0032055              0.32884            2           3   
+    label_20298_2_33_81.fasta          0.011657              0.8511              0.10357            0.0033299             0.030347            2           3   
+    label_20298_2_33_84.fasta          0.033488             0.20169           0.00036237           4.4971e-06              0.76446            5           3   
+    label_20298_2_33_85.fasta          0.019727             0.90418            0.0032681           0.00010725             0.072713            2           3   
+    label_21673_4_43_0.fasta          0.0070968          0.00013376              0.89482             0.050665             0.047284            3           3   
+    label_21673_4_43_11.fasta         0.0054928          9.0001e-05              0.90619             0.029971             0.058256            3           3   
+    label_21673_4_43_16.fasta         0.0084328           0.0021422              0.85714             0.010769              0.12152            3           3   
+    label_21673_4_43_2.fasta          0.0073558          9.9705e-05              0.88321             0.035939             0.073398            3           3   
+    label_21673_4_43_21.fasta         0.0050104             0.01503              0.93475             0.011289             0.033917            3           3   
+    label_21673_4_43_22.fasta         0.0076457             0.12579              0.73183             0.041727             0.093014            3           3   
+    label_21673_4_43_4.fasta          0.0095211           0.0003801              0.86058             0.058323             0.071197            3           3   
+    label_21673_4_43_5.fasta          0.0072998          0.00028467              0.86082             0.067364             0.064229            3           3   
+    label_GCF_000159675_2.fasta       0.0072006          0.00010118               0.9456             0.016449              0.03065            3           3   
+    label_GCF_000159675_5.fasta        0.010428           0.0065228              0.62891              0.14226              0.21188            3           3   
+    label_14670_1_61_14.fasta          0.010929             0.75584              0.12344             0.020585             0.089206            2           5   
+    label_14670_1_61_20.fasta         0.0060323             0.54474              0.39211            0.0073783             0.049744            2           5   
+    label_14670_1_61_21.fasta         0.0040878             0.98834            0.0013386           0.00055861             0.005679            2           5   
+    label_14670_1_61_9.fasta             0.0678            0.037687             0.045244             0.074081              0.77519            5           5   
+    label_20298_3_12_0.fasta           0.041745           0.0055038              0.12212              0.04311              0.78753            5           5   
+    label_20298_3_12_11.fasta          0.056189             0.19462              0.15804              0.04071              0.55044            5           5   
+    label_20298_3_12_8.fasta           0.019735            0.088142              0.37868              0.16832              0.34512            3           5   
+
+
+testAcNum =
+
+  1x116 cell array
+
+  Columns 1 through 3
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 4 through 6
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 7 through 9
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 10 through 12
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 13 through 15
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 16 through 18
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 19 through 21
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 22 through 24
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 25 through 27
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 28 through 30
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 31 through 33
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 34 through 36
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 37 through 39
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 40 through 42
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 43 through 45
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 46 through 48
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 49 through 51
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 52 through 54
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 55 through 57
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 58 through 60
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 61 through 63
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 64 through 66
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 67 through 69
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 70 through 72
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 73 through 75
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 76 through 78
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 79 through 81
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 82 through 84
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 85 through 87
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 88 through 90
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 91 through 93
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 94 through 96
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 97 through 99
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 100 through 102
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 103 through 105
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 106 through 108
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 109 through 111
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 112 through 114
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+  Columns 115 through 116
+
+    {["/mnt/sda/Dee..."]}    {["/mnt/sda/Dee..."]}
+
+training QSVM, fold 5
+classifying using QSVM
+
+score3Matrix =
+
+    0.9313    0.0178    0.0154    0.0092    0.0264    1.0000    1.0000
+    0.1766    0.2822    0.1766    0.1787    0.1860    2.0000    1.0000
+    0.0000    0.9413    0.0507    0.0005    0.0075    2.0000    2.0000
+    0.0000    0.9488    0.0348    0.0009    0.0155    2.0000    2.0000
+    0.0000    0.7989    0.1877    0.0004    0.0131    2.0000    2.0000
+    0.0000    0.9949    0.0001    0.0005    0.0045    2.0000    2.0000
+    0.0000    0.9506    0.0389    0.0003    0.0102    2.0000    2.0000
+    0.0000    0.9808    0.0112    0.0003    0.0078    2.0000    2.0000
+    0.0000    0.6726    0.3053    0.0008    0.0213    2.0000    2.0000
+    0.0000    0.9726    0.0150    0.0003    0.0121    2.0000    2.0000
+    0.0000    0.7349    0.2347    0.0006    0.0297    2.0000    2.0000
+    0.0000    0.9802    0.0056    0.0001    0.0142    2.0000    2.0000
+    0.0000    0.9699    0.0121    0.0000    0.0179    2.0000    2.0000
+    0.0000    0.9818    0.0085    0.0001    0.0096    2.0000    2.0000
+    0.0000    0.9837    0.0000    0.0003    0.0160    2.0000    2.0000
+    0.0000    0.9596    0.0283    0.0006    0.0115    2.0000    2.0000
+    0.0000    0.9718    0.0208    0.0002    0.0072    2.0000    2.0000
+    0.0000    0.9834    0.0129    0.0000    0.0036    2.0000    2.0000
+    0.0000    0.3287    0.6401    0.0002    0.0310    3.0000    2.0000
+    0.0000    0.9376    0.0239    0.0049    0.0336    2.0000    2.0000
+    0.0000    0.9858    0.0002    0.0013    0.0127    2.0000    2.0000
+    0.0000    0.9656    0.0065    0.0000    0.0279    2.0000    2.0000
+    0.0000    0.9812    0.0010    0.0000    0.0178    2.0000    2.0000
+    0.0000    0.9773    0.0149    0.0002    0.0075    2.0000    2.0000
+    0.0000    0.9823    0.0007    0.0000    0.0170    2.0000    2.0000
+    0.0000    0.6312    0.2449    0.0279    0.0960    2.0000    2.0000
+    0.0000    0.9926    0.0052    0.0011    0.0011    2.0000    2.0000
+    0.0000    0.9720    0.0168    0.0000    0.0112    2.0000    2.0000
+    0.0000    0.9631    0.0068    0.0000    0.0301    2.0000    2.0000
+    0.0000    0.9848    0.0013    0.0001    0.0138    2.0000    2.0000
+    0.0000    0.9732    0.0003    0.0000    0.0265    2.0000    2.0000
+    0.0000    0.9837    0.0003    0.0019    0.0141    2.0000    2.0000
+    0.0000    0.9016    0.0000    0.0014    0.0970    2.0000    2.0000
+    0.0000    0.5622    0.0000    0.1782    0.2596    2.0000    2.0000
+    0.0000    0.9896    0.0000    0.0005    0.0099    2.0000    2.0000
+    0.0000    0.8818    0.0007    0.0353    0.0822    2.0000    2.0000
+    0.0000    0.9706    0.0049    0.0027    0.0218    2.0000    2.0000
+    0.0000    0.9107    0.0737    0.0031    0.0124    2.0000    2.0000
+    0.0000    0.9800    0.0061    0.0014    0.0125    2.0000    2.0000
+    0.0000    0.8870    0.0960    0.0005    0.0164    2.0000    2.0000
+    0.0000    0.9614    0.0279    0.0028    0.0080    2.0000    2.0000
+    0.0000    0.9504    0.0018    0.0014    0.0463    2.0000    2.0000
+    0.0000    0.9857    0.0021    0.0008    0.0114    2.0000    2.0000
+    0.0000    0.9770    0.0129    0.0010    0.0091    2.0000    2.0000
+    0.0000    0.8582    0.1088    0.0009    0.0322    2.0000    2.0000
+    0.0000    0.9596    0.0229    0.0007    0.0169    2.0000    2.0000
+    0.0000    0.9735    0.0100    0.0003    0.0162    2.0000    2.0000
+    0.0000    0.9715    0.0127    0.0004    0.0153    2.0000    2.0000
+    0.0000    0.9231    0.0636    0.0003    0.0129    2.0000    2.0000
+    0.0000    0.9592    0.0117    0.0009    0.0283    2.0000    2.0000
+    0.0000    0.9825    0.0024    0.0004    0.0147    2.0000    2.0000
+    0.0000    0.9882    0.0025    0.0028    0.0066    2.0000    2.0000
+    0.0000    0.9693    0.0117    0.0000    0.0190    2.0000    2.0000
+    0.0000    0.9711    0.0007    0.0002    0.0280    2.0000    2.0000
+    0.0000    0.9865    0.0012    0.0002    0.0122    2.0000    2.0000
+    0.0000    0.9869    0.0001    0.0000    0.0129    2.0000    2.0000
+    0.0000    0.9445    0.0467    0.0003    0.0085    2.0000    2.0000
+    0.0000    0.8012    0.1184    0.0009    0.0794    2.0000    2.0000
+    0.0000    0.8747    0.1209    0.0000    0.0044    2.0000    2.0000
+    0.0000    0.9205    0.0669    0.0001    0.0124    2.0000    2.0000
+    0.0000    0.7817    0.1752    0.0014    0.0417    2.0000    2.0000
+    0.0000    0.6921    0.2360    0.0036    0.0683    2.0000    2.0000
+    0.0000    0.9780    0.0006    0.0130    0.0084    2.0000    2.0000
+    0.0000    0.9845    0.0091    0.0007    0.0057    2.0000    2.0000
+    0.0000    0.9766    0.0001    0.0000    0.0233    2.0000    2.0000
+    0.0000    0.9900    0.0022    0.0008    0.0070    2.0000    2.0000
+    0.0000    0.9534    0.0352    0.0002    0.0112    2.0000    2.0000
+    0.0000    0.9910    0.0003    0.0007    0.0080    2.0000    2.0000
+    0.0000    0.9752    0.0150    0.0002    0.0096    2.0000    2.0000
+    0.0000    0.9948    0.0009    0.0009    0.0035    2.0000    2.0000
+    0.0000    0.9334    0.0556    0.0002    0.0108    2.0000    2.0000
+    0.0000    0.9607    0.0290    0.0002    0.0102    2.0000    2.0000
+    0.0000    0.8924    0.0985    0.0003    0.0088    2.0000    2.0000
+    0.0000    0.9840    0.0045    0.0009    0.0106    2.0000    2.0000
+    0.0000    0.9910    0.0044    0.0002    0.0044    2.0000    2.0000
+    0.0000    0.9401    0.0536    0.0000    0.0063    2.0000    2.0000
+    0.0000    0.9805    0.0108    0.0002    0.0085    2.0000    2.0000
+    0.0000    0.8483    0.1444    0.0002    0.0071    2.0000    2.0000
+    0.0000    0.9834    0.0044    0.0001    0.0121    2.0000    2.0000
+    0.0000    0.9882    0.0005    0.0007    0.0107    2.0000    2.0000
+    0.0000    0.9852    0.0100    0.0001    0.0047    2.0000    2.0000
+    0.0000    0.9718    0.0035    0.0000    0.0247    2.0000    2.0000
+    0.0000    0.9962    0.0001    0.0004    0.0034    2.0000    2.0000
+    0.0000    0.0001    0.9744    0.0041    0.0215    3.0000    3.0000
+    0.0000    0.0006    0.9364    0.0129    0.0501    3.0000    3.0000
+    0.0000    0.0488    0.8060    0.0061    0.1390    3.0000    3.0000
+    0.0000    0.0113    0.9620    0.0065    0.0202    3.0000    3.0000
+    0.0000    0.0003    0.9637    0.0106    0.0254    3.0000    3.0000
+    0.0000    0.0881    0.5532    0.2000    0.1587    3.0000    3.0000
+    0.0000    0.2762    0.6320    0.0006    0.0911    3.0000    3.0000
+    0.0000    0.0015    0.9365    0.0033    0.0587    3.0000    3.0000
+    0.0000    0.0005    0.9345    0.0304    0.0346    3.0000    3.0000
+    0.0000    0.0246    0.9410    0.0030    0.0314    3.0000    3.0000
+    0.0000    0.0003    0.9329    0.0129    0.0539    3.0000    3.0000
+    0.0000    0.0128    0.8900    0.0190    0.0781    3.0000    3.0000
+    0.0000    0.0173    0.9250    0.0089    0.0488    3.0000    3.0000
+    0.0000    0.2790    0.6439    0.0009    0.0761    3.0000    3.0000
+    0.0000    0.1337    0.8314    0.0024    0.0325    3.0000    3.0000
+    0.0000    0.5281    0.4598    0.0008    0.0113    2.0000    3.0000
+    0.0000    0.1621    0.7767    0.0076    0.0536    3.0000    3.0000
+    0.0000    0.5079    0.4670    0.0014    0.0237    2.0000    3.0000
+    0.0000    0.0603    0.8078    0.0192    0.1128    3.0000    3.0000
+    0.0000    0.4928    0.4082    0.0004    0.0986    2.0000    3.0000
+    0.0000    0.8753    0.0944    0.0001    0.0303    2.0000    3.0000
+    0.0000    0.0004    0.9704    0.0020    0.0273    3.0000    3.0000
+    0.0000    0.0656    0.7797    0.0166    0.1381    3.0000    3.0000
+    0.0000    0.0004    0.9562    0.0016    0.0418    3.0000    3.0000
+    0.0000    0.0001    0.9781    0.0032    0.0187    3.0000    3.0000
+    0.0000    0.0667    0.0906    0.1212    0.7215    5.0000    5.0000
+    0.0000    0.2572    0.6856    0.0022    0.0550    3.0000    5.0000
+    0.0000    0.8540    0.0562    0.0005    0.0893    2.0000    5.0000
+    0.0000    0.6441    0.2264    0.0092    0.1203    2.0000    5.0000
+    0.0000    0.7398    0.2304    0.0000    0.0297    2.0000    5.0000
+    0.0000    0.6421    0.3384    0.0000    0.0195    2.0000    5.0000
+    0.0000    0.0198    0.3249    0.0414    0.6138    5.0000    5.0000
+    0.0000    0.3330    0.1853    0.0073    0.4744    5.0000    5.0000
+
+
+T3 =
+
+  116x7 table
+
+                                   g__Enterococcus    g__Enterococcus_A    g__Enterococcus_B    g__Enterococcus_C    g__Enterococcus_D    prediction    actual
+                                   _______________    _________________    _________________    _________________    _________________    __________    ______
+
+    label_20298_3_11_3.fasta            0.93125            0.017761             0.015376            0.0091692             0.026441            1           1   
+    label_20298_3_11_4.fasta            0.17659             0.28217              0.17659              0.17866                0.186            2           1   
+    label_UMGS1367_100.fasta         2.2195e-14             0.94127             0.050696           0.00050206            0.0075354            2           2   
+    label_UMGS1367_101.fasta         2.2214e-14             0.94883             0.034821           0.00085479             0.015496            2           2   
+    label_UMGS1367_112.fasta         2.2227e-14             0.79885              0.18767           0.00040012              0.01308            2           2   
+    label_UMGS1367_120.fasta         2.2199e-14             0.99493           5.4838e-05           0.00053258            0.0044807            2           2   
+    label_UMGS1367_121.fasta         2.2207e-14             0.95055              0.03887           0.00034868             0.010228            2           2   
+    label_UMGS1367_124.fasta         2.2206e-14             0.98078             0.011168           0.00025465            0.0077948            2           2   
+    label_UMGS1367_126.fasta         2.2239e-14             0.67256              0.30531           0.00079044             0.021342            2           2   
+    label_UMGS1367_138.fasta         2.2208e-14             0.97259             0.014991             0.000319             0.012101            2           2   
+    label_UMGS1367_143.fasta         2.2218e-14             0.73494              0.23471           0.00062318             0.029724            2           2   
+    label_UMGS1367_157.fasta         2.2203e-14             0.98021            0.0055721           5.5046e-05             0.014165            2           2   
+    label_UMGS1367_162.fasta         2.2209e-14             0.96993             0.012094            4.201e-05             0.017939            2           2   
+    label_UMGS1367_166.fasta         2.2206e-14             0.98182            0.0084797           0.00014593             0.009555            2           2   
+    label_UMGS1367_168.fasta         2.4514e-14             0.98367           2.6076e-05           0.00026118             0.016042            2           2   
+    label_UMGS1367_17.fasta          2.2209e-14             0.95959               0.0283           0.00057509             0.011539            2           2   
+    label_UMGS1367_171.fasta         2.2203e-14             0.97185             0.020756           0.00019583            0.0072029            2           2   
+    label_UMGS1367_186.fasta         2.2201e-14             0.98339             0.012929           3.8109e-05            0.0036407            2           2   
+    label_UMGS1367_187.fasta         7.7991e-14             0.32871              0.64015           0.00018455             0.030961            3           2   
+    label_UMGS1367_19.fasta          2.2224e-14             0.93762              0.02394             0.004859             0.033585            2           2   
+    label_UMGS1367_193.fasta           2.22e-14             0.98577           0.00016095            0.0013245             0.012748            2           2   
+    label_UMGS1367_206.fasta         2.2202e-14             0.96562            0.0064649           1.3911e-05             0.027904            2           2   
+    label_UMGS1367_208.fasta         2.2199e-14              0.9812            0.0010325           1.5918e-05             0.017751            2           2   
+    label_UMGS1367_209.fasta         2.2204e-14             0.97735              0.01493           0.00017507            0.0075482            2           2   
+    label_UMGS1367_211.fasta         2.2197e-14             0.98226           0.00070525           4.4481e-05             0.016992            2           2   
+    label_UMGS1367_218.fasta          5.381e-13             0.63123              0.24488             0.027905             0.095985            2           2   
+    label_UMGS1367_219.fasta         2.5752e-14             0.99259            0.0052463            0.0010776            0.0010883            2           2   
+    label_UMGS1367_224.fasta         2.2205e-14             0.97201             0.016808           5.4676e-06             0.011173            2           2   
+    label_UMGS1367_226.fasta         2.2201e-14             0.96312            0.0068192           3.3563e-06             0.030056            2           2   
+    label_UMGS1367_227.fasta         4.6108e-14             0.98479             0.001291           0.00012612             0.013797            2           2   
+    label_UMGS1367_228.fasta         2.2195e-14             0.97317           0.00026694           4.0372e-05             0.026521            2           2   
+    label_UMGS1367_23.fasta          2.2199e-14             0.98367           0.00034444            0.0018594             0.014123            2           2   
+    label_UMGS1367_233.fasta          2.219e-14             0.90163           3.7797e-08            0.0014035             0.096967            2           2   
+    label_UMGS1367_234.fasta         7.6724e-13              0.5622           1.9292e-07               0.1782              0.25961            2           2   
+    label_UMGS1367_235.fasta         1.0757e-13             0.98961           3.3632e-06           0.00050739            0.0098759            2           2   
+    label_UMGS1367_236.fasta         6.9371e-14             0.88182           0.00070271             0.035297              0.08218            2           2   
+    label_UMGS1367_24.fasta          2.2202e-14             0.97057            0.0049304            0.0026705             0.021829            2           2   
+    label_UMGS1367_3.fasta           2.2212e-14             0.91074             0.073745            0.0030604             0.012449            2           2   
+    label_UMGS1367_58.fasta          2.2205e-14             0.97996            0.0061253            0.0014165               0.0125            2           2   
+    label_UMGS1367_64.fasta          2.2228e-14             0.88701             0.096043           0.00053211             0.016415            2           2   
+    label_UMGS1367_67.fasta          2.2206e-14             0.96139             0.027875            0.0027863            0.0079507            2           2   
+    label_UMGS1367_7.fasta           2.2185e-14             0.95039            0.0018314            0.0014437             0.046338            2           2   
+    label_UMGS1367_71.fasta            2.22e-14             0.98566            0.0020583           0.00083184             0.011445            2           2   
+    label_UMGS1367_73.fasta          2.2207e-14             0.97702             0.012874             0.001043            0.0090648            2           2   
+    label_UMGS1367_77.fasta          2.2267e-14             0.85817              0.10876           0.00086744             0.032204            2           2   
+    label_UMGS1367_85.fasta          2.2214e-14             0.95958             0.022854           0.00069645             0.016868            2           2   
+    label_UMGS1367_91.fasta          2.2208e-14             0.97354            0.0099529           0.00028541              0.01622            2           2   
+    label_UMGS1367_96.fasta          2.2209e-14             0.97153             0.012738           0.00043629             0.015292            2           2   
+    label_UMGS1367_98.fasta          2.2207e-14             0.92314             0.063644           0.00027657             0.012941            2           2   
+    label_UMGS1952_0.fasta            2.221e-14             0.95917             0.011674           0.00086395             0.028294            2           2   
+    label_UMGS1952_1.fasta           2.2198e-14             0.98245            0.0024137           0.00043146             0.014704            2           2   
+    label_UMGS1952_105.fasta         7.9209e-14              0.9882            0.0024904            0.0027552            0.0065551            2           2   
+    label_UMGS1952_119.fasta         2.2207e-14             0.96926             0.011707           7.8272e-06             0.019028            2           2   
+    label_UMGS1952_126.fasta          3.177e-14              0.9711            0.0006988           0.00020297             0.028001            2           2   
+    label_UMGS1952_128.fasta         2.7905e-14             0.98645            0.0011617           0.00018863             0.012197            2           2   
+    label_UMGS1952_130.fasta         2.2198e-14             0.98692           0.00012779           5.5955e-06              0.01295            2           2   
+    label_UMGS1952_131.fasta         3.8509e-14              0.9445             0.046706           0.00033518            0.0084556            2           2   
+    label_UMGS1952_134.fasta         9.6391e-14             0.80116              0.11845           0.00094236             0.079447            2           2   
+    label_UMGS1952_139.fasta         2.2192e-14             0.87472              0.12085           8.4922e-06            0.0044231            2           2   
+    label_UMGS1952_145.fasta         2.2201e-14             0.92051             0.066926           0.00014433             0.012421            2           2   
+    label_UMGS1952_15.fasta          2.2211e-14             0.78169              0.17519            0.0014443              0.04168            2           2   
+    label_UMGS1952_16.fasta          3.3566e-14             0.69214                0.236            0.0035738             0.068289            2           2   
+    label_UMGS1952_160.fasta         7.1629e-14             0.97803           0.00061546             0.012983             0.008373            2           2   
+    label_UMGS1952_164.fasta         1.9266e-13             0.98448             0.009117           0.00069376            0.0057047            2           2   
+    label_UMGS1952_166.fasta         2.2199e-14             0.97658           8.1798e-05           2.3432e-05             0.023319            2           2   
+    label_UMGS1952_21.fasta          2.2202e-14                0.99             0.002178           0.00083422            0.0069908            2           2   
+    label_UMGS1952_22.fasta          2.2208e-14             0.95341             0.035218           0.00021711             0.011155            2           2   
+    label_UMGS1952_27.fasta            2.22e-14               0.991           0.00031246           0.00070364            0.0079792            2           2   
+    label_UMGS1952_33.fasta          2.2207e-14             0.97521             0.014999           0.00016515            0.0096226            2           2   
+    label_UMGS1952_35.fasta            2.22e-14             0.99476           0.00086297           0.00090775             0.003471            2           2   
+    label_UMGS1952_42.fasta          2.2203e-14             0.93344             0.055574           0.00017021             0.010821            2           2   
+    label_UMGS1952_44.fasta          2.2207e-14             0.96068             0.028966           0.00015915             0.010193            2           2   
+    label_UMGS1952_49.fasta            2.22e-14             0.89238             0.098501           0.00030353            0.0088161            2           2   
+    label_UMGS1952_52.fasta          2.2203e-14               0.984            0.0044729           0.00090349             0.010621            2           2   
+    label_UMGS1952_68.fasta          2.2203e-14               0.991            0.0044107           0.00017424            0.0044135            2           2   
+    label_UMGS1952_69.fasta          2.2191e-14             0.94008             0.053553           3.7389e-05            0.0063253            2           2   
+    label_UMGS1952_74.fasta          2.2206e-14             0.98055             0.010757           0.00019708            0.0084972            2           2   
+    label_UMGS1952_76.fasta          2.2201e-14             0.84829              0.14442           0.00018905            0.0070991            2           2   
+    label_UMGS1952_82.fasta          2.2202e-14             0.98342            0.0043571           0.00012285             0.012102            2           2   
+    label_UMGS1952_83.fasta          1.1827e-13             0.98815            0.0004641           0.00072052             0.010662            2           2   
+    label_UMGS1952_96.fasta          2.2203e-14             0.98522            0.0099875           6.6732e-05            0.0047233            2           2   
+    label_UMGS1952_97.fasta            2.22e-14             0.97181            0.0035095            2.122e-05             0.024663            2           2   
+    label_UMGS1952_99.fasta          2.2247e-14              0.9962           6.5622e-05           0.00036271            0.0033668            2           2   
+    label_20298_2_33_11.fasta        2.2201e-14          9.6581e-05              0.97439            0.0040621             0.021456            3           3   
+    label_20298_2_33_12.fasta        2.2202e-14          0.00063968               0.9364             0.012865               0.0501            3           3   
+    label_20298_2_33_15.fasta        2.8828e-14            0.048835              0.80604            0.0061454              0.13898            3           3   
+    label_20298_2_33_18.fasta        2.3926e-14            0.011296              0.96196            0.0065115             0.020233            3           3   
+    label_20298_2_33_19.fasta        2.2204e-14          0.00028084              0.96374             0.010613             0.025364            3           3   
+    label_20298_2_33_22.fasta        9.3762e-14             0.08814              0.55319                  0.2              0.15868            3           3   
+    label_20298_2_33_25.fasta        2.2437e-14             0.27624              0.63198           0.00063175             0.091143            3           3   
+    label_20298_2_33_3.fasta         3.0043e-14           0.0015248               0.9365            0.0032807             0.058692            3           3   
+    label_20298_2_33_31.fasta        3.2959e-14          0.00054537              0.93449             0.030384             0.034576            3           3   
+    label_20298_2_33_42.fasta        2.5512e-14            0.024602              0.94096            0.0030027             0.031436            3           3   
+    label_20298_2_33_5.fasta         2.2202e-14          0.00033458              0.93287             0.012931              0.05386            3           3   
+    label_20298_2_33_52.fasta        5.8077e-14            0.012795              0.89002             0.019042              0.07814            3           3   
+    label_20298_2_33_53.fasta         4.239e-14            0.017343              0.92496            0.0089488             0.048751            3           3   
+    label_20298_2_33_54.fasta        2.3375e-14               0.279              0.64391           0.00094442             0.076139            3           3   
+    label_20298_2_33_59.fasta         2.721e-14             0.13373              0.83144            0.0023688              0.03246            3           3   
+    label_20298_2_33_61.fasta        2.2248e-14              0.5281              0.45982            0.0008215             0.011264            2           3   
+    label_20298_2_33_62.fasta        5.2315e-14             0.16205              0.77672            0.0076204             0.053604            3           3   
+    label_20298_2_33_67.fasta        2.2214e-14             0.50792              0.46695            0.0014145             0.023709            2           3   
+    label_20298_2_33_68.fasta        2.1975e-13            0.060308              0.80777             0.019169              0.11275            3           3   
+    label_20298_2_33_74.fasta         1.665e-13             0.49284              0.40817           0.00044158             0.098555            2           3   
+    label_20298_2_33_77.fasta        2.2209e-14             0.87525             0.094382           0.00011407             0.030253            2           3   
+    label_20298_2_33_9.fasta         2.2197e-14          0.00036914              0.97038            0.0019794              0.02727            3           3   
+    label_21673_4_43_13.fasta        6.6167e-14            0.065559              0.77968             0.016638              0.13812            3           3   
+    label_GCF_000159675_3.fasta      2.2199e-14             0.00043              0.95616            0.0015885             0.041825            3           3   
+    label_GCF_000159675_4.fasta        2.22e-14          5.8564e-05              0.97806            0.0031607             0.018721            3           3   
+    label_14670_1_61_1.fasta          2.818e-13            0.066698             0.090601              0.12124              0.72146            5           5   
+    label_14670_1_61_16.fasta        2.2238e-14             0.25722              0.68563            0.0021955             0.054953            3           5   
+    label_14670_1_61_17.fasta         2.228e-14             0.85398             0.056223           0.00048638             0.089307            2           5   
+    label_14670_1_61_19.fasta        5.5666e-14             0.64412              0.22639            0.0092127              0.12029            2           5   
+    label_14670_1_61_22.fasta        3.1829e-14             0.73984              0.23044           8.6711e-06             0.029712            2           5   
+    label_14670_1_61_23.fasta        4.7707e-14             0.64212              0.33838           3.0548e-05             0.019469            2           5   
+    label_20298_3_12_4.fasta         1.4772e-13            0.019832               0.3249             0.041436              0.61383            5           5   
+    label_20298_3_12_9.fasta         9.2854e-14             0.33295              0.18532            0.0073153              0.47441            5           5   
+
+confusion matrix for 1 is:
+     1     2     0     1     1
+     0   409     1     0     0
+     0    17   104     0     1
+     0     0     2     3     1
+     0    10     7     0    21
+
+    'QuadraticSVM'
+    'AvgAccuracy'
+
+    [92.6000]    [92.6000]
+
+    ClassifierModel     Accuracy
+    ________________    ________
+
+    {'QuadraticSVM'}      92.6  
+    {'AvgAccuracy' }      92.6  
+
+Process completed 
+[?1l>

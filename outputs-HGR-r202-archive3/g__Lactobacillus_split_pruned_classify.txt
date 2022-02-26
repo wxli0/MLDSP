@@ -1,0 +1,513 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/g__Lactobacillus_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Lactobacillus"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000159715_4.fasta
+label_GCF_000159715_3.fasta
+label_GCF_000159715_2.fasta
+label_GCF_000159715_1.fasta
+label_GCF_000159715_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_001435665_9.fasta
+label_GCF_001435665_8.fasta
+label_GCF_001435665_7.fasta
+label_GCF_001435665_6.fasta
+label_GCF_001435665_5.fasta
+label_GCF_001435665_4.fasta
+label_GCF_001435665_39.fasta
+label_GCF_001435665_38.fasta
+label_GCF_001435665_37.fasta
+label_GCF_001435665_36.fasta
+label_GCF_001435665_35.fasta
+label_GCF_001435665_34.fasta
+label_GCF_001435665_33.fasta
+label_GCF_001435665_32.fasta
+label_GCF_001435665_31.fasta
+label_GCF_001435665_30.fasta
+label_GCF_001435665_3.fasta
+label_GCF_001435665_29.fasta
+label_GCF_001435665_28.fasta
+label_GCF_001435665_27.fasta
+label_GCF_001435665_26.fasta
+label_GCF_001435665_25.fasta
+label_GCF_001435665_24.fasta
+label_GCF_001435665_23.fasta
+label_GCF_001435665_22.fasta
+label_GCF_001435665_21.fasta
+label_GCF_001435665_20.fasta
+label_GCF_001435665_2.fasta
+label_GCF_001435665_19.fasta
+label_GCF_001435665_18.fasta
+label_GCF_001435665_17.fasta
+label_GCF_001435665_16.fasta
+label_GCF_001435665_15.fasta
+label_GCF_001435665_14.fasta
+label_GCF_001435665_13.fasta
+label_GCF_001435665_12.fasta
+label_GCF_001435665_11.fasta
+label_GCF_001435665_10.fasta
+label_GCF_001435665_1.fasta
+label_GCF_001435665_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000192165_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000160855_9.fasta
+label_GCF_000160855_8.fasta
+label_GCF_000160855_7.fasta
+label_GCF_000160855_6.fasta
+label_GCF_000160855_5.fasta
+label_GCF_000160855_4.fasta
+label_GCF_000160855_3.fasta
+label_GCF_000160855_2.fasta
+label_GCF_000160855_14.fasta
+label_GCF_000160855_13.fasta
+label_GCF_000160855_12.fasta
+label_GCF_000160855_11.fasta
+label_GCF_000160855_10.fasta
+label_GCF_000160855_1.fasta
+label_GCF_000160855_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000227195_6.fasta
+label_GCF_000227195_5.fasta
+label_GCF_000227195_4.fasta
+label_GCF_000227195_3.fasta
+label_GCF_000227195_2.fasta
+label_GCF_000227195_1.fasta
+label_GCF_000227195_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_12718_7_14_9.fasta
+label_12718_7_14_8.fasta
+label_12718_7_14_7.fasta
+label_12718_7_14_6.fasta
+label_12718_7_14_5.fasta
+label_12718_7_14_4.fasta
+label_12718_7_14_3.fasta
+label_12718_7_14_2.fasta
+label_12718_7_14_14.fasta
+label_12718_7_14_13.fasta
+label_12718_7_14_12.fasta
+label_12718_7_14_11.fasta
+label_12718_7_14_10.fasta
+label_12718_7_14_1.fasta
+label_12718_7_14_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_12718_7_15_9.fasta
+label_12718_7_15_8.fasta
+label_12718_7_15_7.fasta
+label_12718_7_15_6.fasta
+label_12718_7_15_5.fasta
+label_12718_7_15_4.fasta
+label_12718_7_15_3.fasta
+label_12718_7_15_28.fasta
+label_12718_7_15_27.fasta
+label_12718_7_15_26.fasta
+label_12718_7_15_25.fasta
+label_12718_7_15_24.fasta
+label_12718_7_15_23.fasta
+label_12718_7_15_22.fasta
+label_12718_7_15_21.fasta
+label_12718_7_15_20.fasta
+label_12718_7_15_2.fasta
+label_12718_7_15_19.fasta
+label_12718_7_15_18.fasta
+label_12718_7_15_17.fasta
+label_12718_7_15_16.fasta
+label_12718_7_15_15.fasta
+label_12718_7_15_14.fasta
+label_12718_7_15_13.fasta
+label_12718_7_15_12.fasta
+label_12718_7_15_11.fasta
+label_12718_7_15_10.fasta
+label_12718_7_15_1.fasta
+label_12718_7_15_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_20427_4_22_6.fasta
+label_20427_4_22_5.fasta
+label_20427_4_22_4.fasta
+label_20427_4_22_3.fasta
+label_20427_4_22_2.fasta
+label_20427_4_22_1.fasta
+label_20427_4_22_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS896_9.fasta
+label_UMGS896_8.fasta
+label_UMGS896_7.fasta
+label_UMGS896_6.fasta
+label_UMGS896_5.fasta
+label_UMGS896_40.fasta
+label_UMGS896_4.fasta
+label_UMGS896_39.fasta
+label_UMGS896_38.fasta
+label_UMGS896_37.fasta
+label_UMGS896_36.fasta
+label_UMGS896_35.fasta
+label_UMGS896_34.fasta
+label_UMGS896_33.fasta
+label_UMGS896_32.fasta
+label_UMGS896_31.fasta
+label_UMGS896_30.fasta
+label_UMGS896_3.fasta
+label_UMGS896_29.fasta
+label_UMGS896_28.fasta
+label_UMGS896_27.fasta
+label_UMGS896_26.fasta
+label_UMGS896_25.fasta
+label_UMGS896_24.fasta
+label_UMGS896_23.fasta
+label_UMGS896_22.fasta
+label_UMGS896_21.fasta
+label_UMGS896_20.fasta
+label_UMGS896_2.fasta
+label_UMGS896_19.fasta
+label_UMGS896_18.fasta
+label_UMGS896_17.fasta
+label_UMGS896_16.fasta
+label_UMGS896_15.fasta
+label_UMGS896_14.fasta
+label_UMGS896_13.fasta
+label_UMGS896_12.fasta
+label_UMGS896_11.fasta
+label_UMGS896_10.fasta
+label_UMGS896_1.fasta
+label_UMGS896_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+label_GCF_000159415_8.fasta
+label_GCF_000159415_7.fasta
+label_GCF_000159415_6.fasta
+label_GCF_000159415_5.fasta
+label_GCF_000159415_4.fasta
+label_GCF_000159415_3.fasta
+label_GCF_000159415_2.fasta
+label_GCF_000159415_1.fasta
+label_GCF_000159415_0.fasta
+Generating CGRs.... 
+totalSeq is: 169
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/g__Lactobacillus
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+[Warning: Unable to fit posterior probabilities for learner 3 (SVM) because:
+Some classes have one observation only.] 
+[> In ClassificationECOC>localFitECOC/loopBody (line 672)
+  In internal.stats.parallel.smartForSliceout (line 174)
+  In ClassificationECOC>localFitECOC (line 571)
+  In ClassificationECOC (line 171)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In ClassificationECOC.fit (line 116)
+  In fitcecoc (line 356)
+  In classifyTestSeqExternMisList (line 45)
+  In testingExternMisList (line 9)
+  In stackedMain (line 101)] 
+numTestSeq is: 16
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Columns 4 through 6
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Columns 7 through 9
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'s__Lactobacill...'}
+
+  Columns 4 through 6
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Columns 7 through 9
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Columns 7 through 9
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Columns 7 through 9
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'5-s__Lactobaci...'}    {'s__Lactobacill...'}
+
+  Columns 7 through 9
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'5-s__Lactobaci...'}    {'6-s__Lactobaci...'}
+
+  Columns 7 through 9
+
+    {'s__Lactobacill...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'5-s__Lactobaci...'}    {'6-s__Lactobaci...'}
+
+  Columns 7 through 9
+
+    {'7-s__Lactobaci...'}    {'s__Lactobacill...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'5-s__Lactobaci...'}    {'6-s__Lactobaci...'}
+
+  Columns 7 through 9
+
+    {'7-s__Lactobaci...'}    {'8-s__Lactobaci...'}    {'s__Lactobacill...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'5-s__Lactobaci...'}    {'6-s__Lactobaci...'}
+
+  Columns 7 through 9
+
+    {'7-s__Lactobaci...'}    {'8-s__Lactobaci...'}    {'9-s__Lactobaci...'}
+
+  Column 10
+
+    {'s__Lactobacill...'}
+
+
+clusterNames =
+
+  1x10 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'5-s__Lactobaci...'}    {'6-s__Lactobaci...'}
+
+  Columns 7 through 9
+
+    {'7-s__Lactobaci...'}    {'8-s__Lactobaci...'}    {'9-s__Lactobaci...'}
+
+  Column 10
+
+    {'10-s__Lactobac...'}
+
+  Columns 1 through 3
+
+    '1-s__Lactobacill...'    '2-s__Lactobacill...'    '3-s__Lactobacill...'
+
+  Columns 4 through 6
+
+    '4-s__Lactobacill...'    '5-s__Lactobacill...'    '6-s__Lactobacill...'
+
+  Columns 7 through 9
+
+    '7-s__Lactobacill...'    '8-s__Lactobacill...'    '9-s__Lactobacill...'
+
+  Column 10
+
+    '10-s__Lactobacil...'
+
+
+header =
+
+  1x11 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Lactobaci...'}    {'2-s__Lactobaci...'}    {'3-s__Lactobaci...'}
+
+  Columns 4 through 6
+
+    {'4-s__Lactobaci...'}    {'5-s__Lactobaci...'}    {'6-s__Lactobaci...'}
+
+  Columns 7 through 9
+
+    {'7-s__Lactobaci...'}    {'8-s__Lactobaci...'}    {'9-s__Lactobaci...'}
+
+  Columns 10 through 11
+
+    {'10-s__Lactobac...'}    {'prediction'}
+
+
+T3 =
+
+  16x11 table
+
+                       1-s__Lactobacillus acidophilus    2-s__Lactobacillus amylolyticus    3-s__Lactobacillus delbrueckii    4-s__Lactobacillus helveticus    5-s__Lactobacillus iners    6-s__Lactobacillus intestinalis    7-s__Lactobacillus johnsonii    8-s__Lactobacillus paragasseri    9-s__Lactobacillus porci    10-s__Lactobacillus ultunensis    prediction
+                       ______________________________    _______________________________    ______________________________    _____________________________    ________________________    _______________________________    ____________________________    ______________________________    ________________________    ______________________________    __________
+
+    MAG-GUT31303.fa               0.032752                          0.0075453                           0.52795                         0.065916                       0.039396                       0.085701                           0.12068                          0.06207                      0.0079414                       0.050048                   3     
+    MAG-GUT31785.fa               0.029989                          0.0047407                          0.038566                         0.091189                          0.053                       0.023396                         0.0063345                         0.012757                        0.68418                       0.055842                   9     
+    MAG-GUT32654.fa                0.03271                          0.0075785                           0.55789                         0.071201                       0.039664                       0.086258                          0.083934                         0.062826                      0.0079513                       0.049985                   3     
+    MAG-GUT33530.fa               0.030149                          0.0048813                          0.040168                         0.090446                       0.053075                       0.023534                          0.006591                         0.012871                        0.68221                       0.056078                   9     
+    MAG-GUT43936.fa                0.03273                          0.0075566                           0.55848                         0.066335                       0.038934                       0.087159                          0.089271                         0.061902                      0.0079367                       0.049699                   3     
+    MAG-GUT59278.fa               0.032728                          0.0075638                           0.55616                         0.065596                       0.039118                       0.085853                           0.09314                         0.061995                      0.0079527                       0.049888                   3     
+    MAG-GUT62924.fa               0.032721                          0.0075664                           0.56457                         0.067824                        0.03892                       0.087474                          0.081311                         0.062021                      0.0079459                       0.049646                   3     
+    MAG-GUT62939.fa               0.032725                          0.0075602                           0.55883                         0.066312                       0.038861                        0.08753                          0.088683                         0.061844                      0.0079457                       0.049712                   3     
+    MAG-GUT63100.fa               0.032722                          0.0075617                           0.55995                         0.067715                       0.038946                       0.087606                          0.085815                         0.061988                       0.007945                       0.049753                   3     
+    MAG-GUT63356.fa               0.032724                          0.0075665                           0.56073                         0.065369                       0.038846                       0.087664                          0.087485                         0.061783                      0.0079548                       0.049873                   3     
+    MAG-GUT63462.fa               0.032721                          0.0075634                            0.5612                         0.067238                        0.03887                       0.087809                          0.085165                         0.061816                      0.0079469                       0.049673                   3     
+    MAG-GUT63569.fa               0.032723                          0.0075626                           0.56254                         0.067072                       0.038803                       0.088129                          0.083844                         0.061733                      0.0079477                       0.049646                   3     
+    MAG-GUT69384.fa               0.032769                          0.0077131                           0.58593                         0.091756                       0.039062                       0.088551                          0.036787                         0.061118                       0.007965                       0.048347                   3     
+    MAG-GUT86747.fa               0.032731                          0.0075585                           0.56087                         0.066127                       0.038849                       0.088282                          0.086472                         0.061707                      0.0079263                       0.049477                   3     
+    MAG-GUT86758.fa               0.032732                          0.0075545                           0.55778                         0.066465                       0.038815                       0.087996                           0.08967                         0.061642                      0.0079214                       0.049423                   3     
+    MAG-GUT88016.fa               0.032732                          0.0075574                           0.56082                         0.066443                       0.038779                       0.088442                          0.086371                         0.061538                      0.0079241                       0.049398                   3     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-g__Lactobacillus_split_pruned.xlsx"
+
+Process completed 
+[?1l>

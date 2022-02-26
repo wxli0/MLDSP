@@ -1,0 +1,1749 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/o__Acidaminococcales_split_pruned"
+
+
+testSetPath = 
+
+    "/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Acidaminococcales"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+label_UMGS983_9.fasta
+label_UMGS983_8.fasta
+label_UMGS983_7.fasta
+label_UMGS983_6.fasta
+label_UMGS983_50.fasta
+label_UMGS983_5.fasta
+label_UMGS983_49.fasta
+label_UMGS983_48.fasta
+label_UMGS983_47.fasta
+label_UMGS983_46.fasta
+label_UMGS983_45.fasta
+label_UMGS983_44.fasta
+label_UMGS983_43.fasta
+label_UMGS983_42.fasta
+label_UMGS983_41.fasta
+label_UMGS983_40.fasta
+label_UMGS983_4.fasta
+label_UMGS983_39.fasta
+label_UMGS983_38.fasta
+label_UMGS983_37.fasta
+label_UMGS983_36.fasta
+label_UMGS983_35.fasta
+label_UMGS983_34.fasta
+label_UMGS983_33.fasta
+label_UMGS983_32.fasta
+label_UMGS983_31.fasta
+label_UMGS983_30.fasta
+label_UMGS983_3.fasta
+label_UMGS983_29.fasta
+label_UMGS983_28.fasta
+label_UMGS983_27.fasta
+label_UMGS983_26.fasta
+label_UMGS983_25.fasta
+label_UMGS983_24.fasta
+label_UMGS983_23.fasta
+label_UMGS983_22.fasta
+label_UMGS983_21.fasta
+label_UMGS983_20.fasta
+label_UMGS983_2.fasta
+label_UMGS983_19.fasta
+label_UMGS983_18.fasta
+label_UMGS983_17.fasta
+label_UMGS983_16.fasta
+label_UMGS983_15.fasta
+label_UMGS983_14.fasta
+label_UMGS983_13.fasta
+label_UMGS983_12.fasta
+label_UMGS983_11.fasta
+label_UMGS983_10.fasta
+label_UMGS983_1.fasta
+label_UMGS983_0.fasta
+label_UMGS791_9.fasta
+label_UMGS791_8.fasta
+label_UMGS791_7.fasta
+label_UMGS791_6.fasta
+label_UMGS791_5.fasta
+label_UMGS791_4.fasta
+label_UMGS791_33.fasta
+label_UMGS791_32.fasta
+label_UMGS791_31.fasta
+label_UMGS791_30.fasta
+label_UMGS791_3.fasta
+label_UMGS791_29.fasta
+label_UMGS791_28.fasta
+label_UMGS791_27.fasta
+label_UMGS791_26.fasta
+label_UMGS791_25.fasta
+label_UMGS791_24.fasta
+label_UMGS791_23.fasta
+label_UMGS791_22.fasta
+label_UMGS791_21.fasta
+label_UMGS791_20.fasta
+label_UMGS791_2.fasta
+label_UMGS791_19.fasta
+label_UMGS791_18.fasta
+label_UMGS791_17.fasta
+label_UMGS791_16.fasta
+label_UMGS791_15.fasta
+label_UMGS791_14.fasta
+label_UMGS791_13.fasta
+label_UMGS791_12.fasta
+label_UMGS791_11.fasta
+label_UMGS791_10.fasta
+label_UMGS791_1.fasta
+label_UMGS791_0.fasta
+label_UMGS733_9.fasta
+label_UMGS733_8.fasta
+label_UMGS733_7.fasta
+label_UMGS733_6.fasta
+label_UMGS733_5.fasta
+label_UMGS733_4.fasta
+label_UMGS733_33.fasta
+label_UMGS733_32.fasta
+label_UMGS733_31.fasta
+label_UMGS733_30.fasta
+label_UMGS733_3.fasta
+label_UMGS733_29.fasta
+label_UMGS733_28.fasta
+label_UMGS733_27.fasta
+label_UMGS733_26.fasta
+label_UMGS733_25.fasta
+label_UMGS733_24.fasta
+label_UMGS733_23.fasta
+label_UMGS733_22.fasta
+label_UMGS733_21.fasta
+label_UMGS733_20.fasta
+label_UMGS733_2.fasta
+label_UMGS733_19.fasta
+label_UMGS733_18.fasta
+label_UMGS733_17.fasta
+label_UMGS733_16.fasta
+label_UMGS733_15.fasta
+label_UMGS733_14.fasta
+label_UMGS733_13.fasta
+label_UMGS733_12.fasta
+label_UMGS733_11.fasta
+label_UMGS733_10.fasta
+label_UMGS733_1.fasta
+label_UMGS733_0.fasta
+label_UMGS717_9.fasta
+label_UMGS717_8.fasta
+label_UMGS717_71.fasta
+label_UMGS717_70.fasta
+label_UMGS717_7.fasta
+label_UMGS717_69.fasta
+label_UMGS717_68.fasta
+label_UMGS717_67.fasta
+label_UMGS717_66.fasta
+label_UMGS717_65.fasta
+label_UMGS717_64.fasta
+label_UMGS717_63.fasta
+label_UMGS717_62.fasta
+label_UMGS717_61.fasta
+label_UMGS717_60.fasta
+label_UMGS717_6.fasta
+label_UMGS717_59.fasta
+label_UMGS717_58.fasta
+label_UMGS717_57.fasta
+label_UMGS717_56.fasta
+label_UMGS717_55.fasta
+label_UMGS717_54.fasta
+label_UMGS717_53.fasta
+label_UMGS717_52.fasta
+label_UMGS717_51.fasta
+label_UMGS717_50.fasta
+label_UMGS717_5.fasta
+label_UMGS717_49.fasta
+label_UMGS717_48.fasta
+label_UMGS717_47.fasta
+label_UMGS717_46.fasta
+label_UMGS717_45.fasta
+label_UMGS717_44.fasta
+label_UMGS717_43.fasta
+label_UMGS717_42.fasta
+label_UMGS717_41.fasta
+label_UMGS717_40.fasta
+label_UMGS717_4.fasta
+label_UMGS717_39.fasta
+label_UMGS717_38.fasta
+label_UMGS717_37.fasta
+label_UMGS717_36.fasta
+label_UMGS717_35.fasta
+label_UMGS717_34.fasta
+label_UMGS717_33.fasta
+label_UMGS717_32.fasta
+label_UMGS717_31.fasta
+label_UMGS717_30.fasta
+label_UMGS717_3.fasta
+label_UMGS717_29.fasta
+label_UMGS717_28.fasta
+label_UMGS717_27.fasta
+label_UMGS717_26.fasta
+label_UMGS717_25.fasta
+label_UMGS717_24.fasta
+label_UMGS717_23.fasta
+label_UMGS717_22.fasta
+label_UMGS717_21.fasta
+label_UMGS717_20.fasta
+label_UMGS717_2.fasta
+label_UMGS717_19.fasta
+label_UMGS717_18.fasta
+label_UMGS717_17.fasta
+label_UMGS717_16.fasta
+label_UMGS717_15.fasta
+label_UMGS717_14.fasta
+label_UMGS717_13.fasta
+label_UMGS717_12.fasta
+label_UMGS717_11.fasta
+label_UMGS717_10.fasta
+label_UMGS717_1.fasta
+label_UMGS717_0.fasta
+label_UMGS706_9.fasta
+label_UMGS706_8.fasta
+label_UMGS706_7.fasta
+label_UMGS706_6.fasta
+label_UMGS706_5.fasta
+label_UMGS706_4.fasta
+label_UMGS706_35.fasta
+label_UMGS706_34.fasta
+label_UMGS706_33.fasta
+label_UMGS706_32.fasta
+label_UMGS706_31.fasta
+label_UMGS706_30.fasta
+label_UMGS706_3.fasta
+label_UMGS706_29.fasta
+label_UMGS706_28.fasta
+label_UMGS706_27.fasta
+label_UMGS706_26.fasta
+label_UMGS706_25.fasta
+label_UMGS706_24.fasta
+label_UMGS706_23.fasta
+label_UMGS706_22.fasta
+label_UMGS706_21.fasta
+label_UMGS706_20.fasta
+label_UMGS706_2.fasta
+label_UMGS706_19.fasta
+label_UMGS706_18.fasta
+label_UMGS706_17.fasta
+label_UMGS706_16.fasta
+label_UMGS706_15.fasta
+label_UMGS706_14.fasta
+label_UMGS706_13.fasta
+label_UMGS706_12.fasta
+label_UMGS706_11.fasta
+label_UMGS706_10.fasta
+label_UMGS706_1.fasta
+label_UMGS706_0.fasta
+label_UMGS667_9.fasta
+label_UMGS667_8.fasta
+label_UMGS667_7.fasta
+label_UMGS667_6.fasta
+label_UMGS667_5.fasta
+label_UMGS667_48.fasta
+label_UMGS667_47.fasta
+label_UMGS667_46.fasta
+label_UMGS667_45.fasta
+label_UMGS667_44.fasta
+label_UMGS667_43.fasta
+label_UMGS667_42.fasta
+label_UMGS667_41.fasta
+label_UMGS667_40.fasta
+label_UMGS667_4.fasta
+label_UMGS667_39.fasta
+label_UMGS667_38.fasta
+label_UMGS667_37.fasta
+label_UMGS667_36.fasta
+label_UMGS667_35.fasta
+label_UMGS667_34.fasta
+label_UMGS667_33.fasta
+label_UMGS667_32.fasta
+label_UMGS667_31.fasta
+label_UMGS667_30.fasta
+label_UMGS667_3.fasta
+label_UMGS667_29.fasta
+label_UMGS667_28.fasta
+label_UMGS667_27.fasta
+label_UMGS667_26.fasta
+label_UMGS667_25.fasta
+label_UMGS667_24.fasta
+label_UMGS667_23.fasta
+label_UMGS667_22.fasta
+label_UMGS667_21.fasta
+label_UMGS667_20.fasta
+label_UMGS667_2.fasta
+label_UMGS667_19.fasta
+label_UMGS667_18.fasta
+label_UMGS667_17.fasta
+label_UMGS667_16.fasta
+label_UMGS667_15.fasta
+label_UMGS667_14.fasta
+label_UMGS667_13.fasta
+label_UMGS667_12.fasta
+label_UMGS667_11.fasta
+label_UMGS667_10.fasta
+label_UMGS667_1.fasta
+label_UMGS667_0.fasta
+label_UMGS663_9.fasta
+label_UMGS663_8.fasta
+label_UMGS663_7.fasta
+label_UMGS663_6.fasta
+label_UMGS663_5.fasta
+label_UMGS663_4.fasta
+label_UMGS663_3.fasta
+label_UMGS663_2.fasta
+label_UMGS663_16.fasta
+label_UMGS663_15.fasta
+label_UMGS663_14.fasta
+label_UMGS663_13.fasta
+label_UMGS663_12.fasta
+label_UMGS663_11.fasta
+label_UMGS663_10.fasta
+label_UMGS663_1.fasta
+label_UMGS663_0.fasta
+label_UMGS470_9.fasta
+label_UMGS470_8.fasta
+label_UMGS470_7.fasta
+label_UMGS470_62.fasta
+label_UMGS470_61.fasta
+label_UMGS470_60.fasta
+label_UMGS470_6.fasta
+label_UMGS470_59.fasta
+label_UMGS470_58.fasta
+label_UMGS470_57.fasta
+label_UMGS470_56.fasta
+label_UMGS470_55.fasta
+label_UMGS470_54.fasta
+label_UMGS470_53.fasta
+label_UMGS470_52.fasta
+label_UMGS470_51.fasta
+label_UMGS470_50.fasta
+label_UMGS470_5.fasta
+label_UMGS470_49.fasta
+label_UMGS470_48.fasta
+label_UMGS470_47.fasta
+label_UMGS470_46.fasta
+label_UMGS470_45.fasta
+label_UMGS470_44.fasta
+label_UMGS470_43.fasta
+label_UMGS470_42.fasta
+label_UMGS470_41.fasta
+label_UMGS470_40.fasta
+label_UMGS470_4.fasta
+label_UMGS470_39.fasta
+label_UMGS470_38.fasta
+label_UMGS470_37.fasta
+label_UMGS470_36.fasta
+label_UMGS470_35.fasta
+label_UMGS470_34.fasta
+label_UMGS470_33.fasta
+label_UMGS470_32.fasta
+label_UMGS470_31.fasta
+label_UMGS470_30.fasta
+label_UMGS470_3.fasta
+label_UMGS470_29.fasta
+label_UMGS470_28.fasta
+label_UMGS470_27.fasta
+label_UMGS470_26.fasta
+label_UMGS470_25.fasta
+label_UMGS470_24.fasta
+label_UMGS470_23.fasta
+label_UMGS470_22.fasta
+label_UMGS470_21.fasta
+label_UMGS470_20.fasta
+label_UMGS470_2.fasta
+label_UMGS470_19.fasta
+label_UMGS470_18.fasta
+label_UMGS470_17.fasta
+label_UMGS470_16.fasta
+label_UMGS470_15.fasta
+label_UMGS470_14.fasta
+label_UMGS470_13.fasta
+label_UMGS470_12.fasta
+label_UMGS470_11.fasta
+label_UMGS470_10.fasta
+label_UMGS470_1.fasta
+label_UMGS470_0.fasta
+label_UMGS457_9.fasta
+label_UMGS457_8.fasta
+label_UMGS457_7.fasta
+label_UMGS457_6.fasta
+label_UMGS457_55.fasta
+label_UMGS457_54.fasta
+label_UMGS457_53.fasta
+label_UMGS457_52.fasta
+label_UMGS457_51.fasta
+label_UMGS457_50.fasta
+label_UMGS457_5.fasta
+label_UMGS457_49.fasta
+label_UMGS457_48.fasta
+label_UMGS457_47.fasta
+label_UMGS457_46.fasta
+label_UMGS457_45.fasta
+label_UMGS457_44.fasta
+label_UMGS457_43.fasta
+label_UMGS457_42.fasta
+label_UMGS457_41.fasta
+label_UMGS457_40.fasta
+label_UMGS457_4.fasta
+label_UMGS457_39.fasta
+label_UMGS457_38.fasta
+label_UMGS457_37.fasta
+label_UMGS457_36.fasta
+label_UMGS457_35.fasta
+label_UMGS457_34.fasta
+label_UMGS457_33.fasta
+label_UMGS457_32.fasta
+label_UMGS457_31.fasta
+label_UMGS457_30.fasta
+label_UMGS457_3.fasta
+label_UMGS457_29.fasta
+label_UMGS457_28.fasta
+label_UMGS457_27.fasta
+label_UMGS457_26.fasta
+label_UMGS457_25.fasta
+label_UMGS457_24.fasta
+label_UMGS457_23.fasta
+label_UMGS457_22.fasta
+label_UMGS457_21.fasta
+label_UMGS457_20.fasta
+label_UMGS457_2.fasta
+label_UMGS457_19.fasta
+label_UMGS457_18.fasta
+label_UMGS457_17.fasta
+label_UMGS457_16.fasta
+label_UMGS457_15.fasta
+label_UMGS457_14.fasta
+label_UMGS457_13.fasta
+label_UMGS457_12.fasta
+label_UMGS457_11.fasta
+label_UMGS457_10.fasta
+label_UMGS457_1.fasta
+label_UMGS457_0.fasta
+label_UMGS411_9.fasta
+label_UMGS411_8.fasta
+label_UMGS411_7.fasta
+label_UMGS411_6.fasta
+label_UMGS411_5.fasta
+label_UMGS411_4.fasta
+label_UMGS411_3.fasta
+label_UMGS411_25.fasta
+label_UMGS411_24.fasta
+label_UMGS411_23.fasta
+label_UMGS411_22.fasta
+label_UMGS411_21.fasta
+label_UMGS411_20.fasta
+label_UMGS411_2.fasta
+label_UMGS411_19.fasta
+label_UMGS411_18.fasta
+label_UMGS411_17.fasta
+label_UMGS411_16.fasta
+label_UMGS411_15.fasta
+label_UMGS411_14.fasta
+label_UMGS411_13.fasta
+label_UMGS411_12.fasta
+label_UMGS411_11.fasta
+label_UMGS411_10.fasta
+label_UMGS411_1.fasta
+label_UMGS411_0.fasta
+label_UMGS3_9.fasta
+label_UMGS3_8.fasta
+label_UMGS3_7.fasta
+label_UMGS3_67.fasta
+label_UMGS3_66.fasta
+label_UMGS3_65.fasta
+label_UMGS3_64.fasta
+label_UMGS3_63.fasta
+label_UMGS3_62.fasta
+label_UMGS3_61.fasta
+label_UMGS3_60.fasta
+label_UMGS3_6.fasta
+label_UMGS3_59.fasta
+label_UMGS3_58.fasta
+label_UMGS3_57.fasta
+label_UMGS3_56.fasta
+label_UMGS3_55.fasta
+label_UMGS3_54.fasta
+label_UMGS3_53.fasta
+label_UMGS3_52.fasta
+label_UMGS3_51.fasta
+label_UMGS3_50.fasta
+label_UMGS3_5.fasta
+label_UMGS3_49.fasta
+label_UMGS3_48.fasta
+label_UMGS3_47.fasta
+label_UMGS3_46.fasta
+label_UMGS3_45.fasta
+label_UMGS3_44.fasta
+label_UMGS3_43.fasta
+label_UMGS3_42.fasta
+label_UMGS3_41.fasta
+label_UMGS3_40.fasta
+label_UMGS3_4.fasta
+label_UMGS3_39.fasta
+label_UMGS3_38.fasta
+label_UMGS3_37.fasta
+label_UMGS3_36.fasta
+label_UMGS3_35.fasta
+label_UMGS3_34.fasta
+label_UMGS3_33.fasta
+label_UMGS3_32.fasta
+label_UMGS3_31.fasta
+label_UMGS3_30.fasta
+label_UMGS3_3.fasta
+label_UMGS3_29.fasta
+label_UMGS3_28.fasta
+label_UMGS3_27.fasta
+label_UMGS3_26.fasta
+label_UMGS3_25.fasta
+label_UMGS3_24.fasta
+label_UMGS3_23.fasta
+label_UMGS3_22.fasta
+label_UMGS3_21.fasta
+label_UMGS3_20.fasta
+label_UMGS3_2.fasta
+label_UMGS3_19.fasta
+label_UMGS3_18.fasta
+label_UMGS3_17.fasta
+label_UMGS3_16.fasta
+label_UMGS3_15.fasta
+label_UMGS3_14.fasta
+label_UMGS3_13.fasta
+label_UMGS3_12.fasta
+label_UMGS3_11.fasta
+label_UMGS3_10.fasta
+label_UMGS3_1.fasta
+label_UMGS3_0.fasta
+label_UMGS369_9.fasta
+label_UMGS369_8.fasta
+label_UMGS369_7.fasta
+label_UMGS369_6.fasta
+label_UMGS369_54.fasta
+label_UMGS369_53.fasta
+label_UMGS369_52.fasta
+label_UMGS369_51.fasta
+label_UMGS369_50.fasta
+label_UMGS369_5.fasta
+label_UMGS369_49.fasta
+label_UMGS369_48.fasta
+label_UMGS369_47.fasta
+label_UMGS369_46.fasta
+label_UMGS369_45.fasta
+label_UMGS369_44.fasta
+label_UMGS369_43.fasta
+label_UMGS369_42.fasta
+label_UMGS369_41.fasta
+label_UMGS369_40.fasta
+label_UMGS369_4.fasta
+label_UMGS369_39.fasta
+label_UMGS369_38.fasta
+label_UMGS369_37.fasta
+label_UMGS369_36.fasta
+label_UMGS369_35.fasta
+label_UMGS369_34.fasta
+label_UMGS369_33.fasta
+label_UMGS369_32.fasta
+label_UMGS369_31.fasta
+label_UMGS369_30.fasta
+label_UMGS369_3.fasta
+label_UMGS369_29.fasta
+label_UMGS369_28.fasta
+label_UMGS369_27.fasta
+label_UMGS369_26.fasta
+label_UMGS369_25.fasta
+label_UMGS369_24.fasta
+label_UMGS369_23.fasta
+label_UMGS369_22.fasta
+label_UMGS369_21.fasta
+label_UMGS369_20.fasta
+label_UMGS369_2.fasta
+label_UMGS369_19.fasta
+label_UMGS369_18.fasta
+label_UMGS369_17.fasta
+label_UMGS369_16.fasta
+label_UMGS369_15.fasta
+label_UMGS369_14.fasta
+label_UMGS369_13.fasta
+label_UMGS369_12.fasta
+label_UMGS369_11.fasta
+label_UMGS369_10.fasta
+label_UMGS369_1.fasta
+label_UMGS369_0.fasta
+label_UMGS255_9.fasta
+label_UMGS255_8.fasta
+label_UMGS255_7.fasta
+label_UMGS255_6.fasta
+label_UMGS255_5.fasta
+label_UMGS255_4.fasta
+label_UMGS255_3.fasta
+label_UMGS255_2.fasta
+label_UMGS255_12.fasta
+label_UMGS255_11.fasta
+label_UMGS255_10.fasta
+label_UMGS255_1.fasta
+label_UMGS255_0.fasta
+label_UMGS254_9.fasta
+label_UMGS254_8.fasta
+label_UMGS254_7.fasta
+label_UMGS254_6.fasta
+label_UMGS254_56.fasta
+label_UMGS254_55.fasta
+label_UMGS254_54.fasta
+label_UMGS254_53.fasta
+label_UMGS254_52.fasta
+label_UMGS254_51.fasta
+label_UMGS254_50.fasta
+label_UMGS254_5.fasta
+label_UMGS254_49.fasta
+label_UMGS254_48.fasta
+label_UMGS254_47.fasta
+label_UMGS254_46.fasta
+label_UMGS254_45.fasta
+label_UMGS254_44.fasta
+label_UMGS254_43.fasta
+label_UMGS254_42.fasta
+label_UMGS254_41.fasta
+label_UMGS254_40.fasta
+label_UMGS254_4.fasta
+label_UMGS254_39.fasta
+label_UMGS254_38.fasta
+label_UMGS254_37.fasta
+label_UMGS254_36.fasta
+label_UMGS254_35.fasta
+label_UMGS254_34.fasta
+label_UMGS254_33.fasta
+label_UMGS254_32.fasta
+label_UMGS254_31.fasta
+label_UMGS254_30.fasta
+label_UMGS254_3.fasta
+label_UMGS254_29.fasta
+label_UMGS254_28.fasta
+label_UMGS254_27.fasta
+label_UMGS254_26.fasta
+label_UMGS254_25.fasta
+label_UMGS254_24.fasta
+label_UMGS254_23.fasta
+label_UMGS254_22.fasta
+label_UMGS254_21.fasta
+label_UMGS254_20.fasta
+label_UMGS254_2.fasta
+label_UMGS254_19.fasta
+label_UMGS254_18.fasta
+label_UMGS254_17.fasta
+label_UMGS254_16.fasta
+label_UMGS254_15.fasta
+label_UMGS254_14.fasta
+label_UMGS254_13.fasta
+label_UMGS254_12.fasta
+label_UMGS254_11.fasta
+label_UMGS254_10.fasta
+label_UMGS254_1.fasta
+label_UMGS254_0.fasta
+label_UMGS2024_9.fasta
+label_UMGS2024_8.fasta
+label_UMGS2024_7.fasta
+label_UMGS2024_6.fasta
+label_UMGS2024_5.fasta
+label_UMGS2024_4.fasta
+label_UMGS2024_3.fasta
+label_UMGS2024_28.fasta
+label_UMGS2024_27.fasta
+label_UMGS2024_26.fasta
+label_UMGS2024_25.fasta
+label_UMGS2024_24.fasta
+label_UMGS2024_23.fasta
+label_UMGS2024_22.fasta
+label_UMGS2024_21.fasta
+label_UMGS2024_20.fasta
+label_UMGS2024_2.fasta
+label_UMGS2024_19.fasta
+label_UMGS2024_18.fasta
+label_UMGS2024_17.fasta
+label_UMGS2024_16.fasta
+label_UMGS2024_15.fasta
+label_UMGS2024_14.fasta
+label_UMGS2024_13.fasta
+label_UMGS2024_12.fasta
+label_UMGS2024_11.fasta
+label_UMGS2024_10.fasta
+label_UMGS2024_1.fasta
+label_UMGS2024_0.fasta
+label_UMGS2001_9.fasta
+label_UMGS2001_8.fasta
+label_UMGS2001_70.fasta
+label_UMGS2001_7.fasta
+label_UMGS2001_69.fasta
+label_UMGS2001_68.fasta
+label_UMGS2001_67.fasta
+label_UMGS2001_66.fasta
+label_UMGS2001_65.fasta
+label_UMGS2001_64.fasta
+label_UMGS2001_63.fasta
+label_UMGS2001_62.fasta
+label_UMGS2001_61.fasta
+label_UMGS2001_60.fasta
+label_UMGS2001_6.fasta
+label_UMGS2001_59.fasta
+label_UMGS2001_58.fasta
+label_UMGS2001_57.fasta
+label_UMGS2001_56.fasta
+label_UMGS2001_55.fasta
+label_UMGS2001_54.fasta
+label_UMGS2001_53.fasta
+label_UMGS2001_52.fasta
+label_UMGS2001_51.fasta
+label_UMGS2001_50.fasta
+label_UMGS2001_5.fasta
+label_UMGS2001_49.fasta
+label_UMGS2001_48.fasta
+label_UMGS2001_47.fasta
+label_UMGS2001_46.fasta
+label_UMGS2001_45.fasta
+label_UMGS2001_44.fasta
+label_UMGS2001_43.fasta
+label_UMGS2001_42.fasta
+label_UMGS2001_41.fasta
+label_UMGS2001_40.fasta
+label_UMGS2001_4.fasta
+label_UMGS2001_39.fasta
+label_UMGS2001_38.fasta
+label_UMGS2001_37.fasta
+label_UMGS2001_36.fasta
+label_UMGS2001_35.fasta
+label_UMGS2001_34.fasta
+label_UMGS2001_33.fasta
+label_UMGS2001_32.fasta
+label_UMGS2001_31.fasta
+label_UMGS2001_30.fasta
+label_UMGS2001_3.fasta
+label_UMGS2001_29.fasta
+label_UMGS2001_28.fasta
+label_UMGS2001_27.fasta
+label_UMGS2001_26.fasta
+label_UMGS2001_25.fasta
+label_UMGS2001_24.fasta
+label_UMGS2001_23.fasta
+label_UMGS2001_22.fasta
+label_UMGS2001_21.fasta
+label_UMGS2001_20.fasta
+label_UMGS2001_2.fasta
+label_UMGS2001_19.fasta
+label_UMGS2001_18.fasta
+label_UMGS2001_17.fasta
+label_UMGS2001_16.fasta
+label_UMGS2001_15.fasta
+label_UMGS2001_14.fasta
+label_UMGS2001_13.fasta
+label_UMGS2001_12.fasta
+label_UMGS2001_11.fasta
+label_UMGS2001_10.fasta
+label_UMGS2001_1.fasta
+label_UMGS2001_0.fasta
+label_UMGS1727_9.fasta
+label_UMGS1727_8.fasta
+label_UMGS1727_7.fasta
+label_UMGS1727_6.fasta
+label_UMGS1727_5.fasta
+label_UMGS1727_4.fasta
+label_UMGS1727_3.fasta
+label_UMGS1727_2.fasta
+label_UMGS1727_16.fasta
+label_UMGS1727_15.fasta
+label_UMGS1727_14.fasta
+label_UMGS1727_13.fasta
+label_UMGS1727_12.fasta
+label_UMGS1727_11.fasta
+label_UMGS1727_10.fasta
+label_UMGS1727_1.fasta
+label_UMGS1727_0.fasta
+label_UMGS1712_99.fasta
+label_UMGS1712_98.fasta
+label_UMGS1712_97.fasta
+label_UMGS1712_96.fasta
+label_UMGS1712_95.fasta
+label_UMGS1712_94.fasta
+label_UMGS1712_93.fasta
+label_UMGS1712_92.fasta
+label_UMGS1712_91.fasta
+label_UMGS1712_90.fasta
+label_UMGS1712_9.fasta
+label_UMGS1712_89.fasta
+label_UMGS1712_88.fasta
+label_UMGS1712_87.fasta
+label_UMGS1712_86.fasta
+label_UMGS1712_85.fasta
+label_UMGS1712_84.fasta
+label_UMGS1712_83.fasta
+label_UMGS1712_82.fasta
+label_UMGS1712_81.fasta
+label_UMGS1712_80.fasta
+label_UMGS1712_8.fasta
+label_UMGS1712_79.fasta
+label_UMGS1712_78.fasta
+label_UMGS1712_77.fasta
+label_UMGS1712_76.fasta
+label_UMGS1712_75.fasta
+label_UMGS1712_74.fasta
+label_UMGS1712_73.fasta
+label_UMGS1712_72.fasta
+label_UMGS1712_71.fasta
+label_UMGS1712_70.fasta
+label_UMGS1712_7.fasta
+label_UMGS1712_69.fasta
+label_UMGS1712_68.fasta
+label_UMGS1712_67.fasta
+label_UMGS1712_66.fasta
+label_UMGS1712_65.fasta
+label_UMGS1712_64.fasta
+label_UMGS1712_63.fasta
+label_UMGS1712_62.fasta
+label_UMGS1712_61.fasta
+label_UMGS1712_60.fasta
+label_UMGS1712_6.fasta
+label_UMGS1712_59.fasta
+label_UMGS1712_58.fasta
+label_UMGS1712_57.fasta
+label_UMGS1712_56.fasta
+label_UMGS1712_55.fasta
+label_UMGS1712_54.fasta
+label_UMGS1712_53.fasta
+label_UMGS1712_52.fasta
+label_UMGS1712_51.fasta
+label_UMGS1712_50.fasta
+label_UMGS1712_5.fasta
+label_UMGS1712_49.fasta
+label_UMGS1712_48.fasta
+label_UMGS1712_47.fasta
+label_UMGS1712_46.fasta
+label_UMGS1712_45.fasta
+label_UMGS1712_44.fasta
+label_UMGS1712_43.fasta
+label_UMGS1712_42.fasta
+label_UMGS1712_41.fasta
+label_UMGS1712_40.fasta
+label_UMGS1712_4.fasta
+label_UMGS1712_39.fasta
+label_UMGS1712_38.fasta
+label_UMGS1712_37.fasta
+label_UMGS1712_36.fasta
+label_UMGS1712_35.fasta
+label_UMGS1712_34.fasta
+label_UMGS1712_33.fasta
+label_UMGS1712_32.fasta
+label_UMGS1712_31.fasta
+label_UMGS1712_30.fasta
+label_UMGS1712_3.fasta
+label_UMGS1712_29.fasta
+label_UMGS1712_28.fasta
+label_UMGS1712_27.fasta
+label_UMGS1712_26.fasta
+label_UMGS1712_25.fasta
+label_UMGS1712_24.fasta
+label_UMGS1712_23.fasta
+label_UMGS1712_22.fasta
+label_UMGS1712_21.fasta
+label_UMGS1712_20.fasta
+label_UMGS1712_2.fasta
+label_UMGS1712_19.fasta
+label_UMGS1712_18.fasta
+label_UMGS1712_17.fasta
+label_UMGS1712_16.fasta
+label_UMGS1712_15.fasta
+label_UMGS1712_14.fasta
+label_UMGS1712_13.fasta
+label_UMGS1712_127.fasta
+label_UMGS1712_126.fasta
+label_UMGS1712_125.fasta
+label_UMGS1712_124.fasta
+label_UMGS1712_123.fasta
+label_UMGS1712_122.fasta
+label_UMGS1712_121.fasta
+label_UMGS1712_120.fasta
+label_UMGS1712_12.fasta
+label_UMGS1712_119.fasta
+label_UMGS1712_118.fasta
+label_UMGS1712_117.fasta
+label_UMGS1712_116.fasta
+label_UMGS1712_115.fasta
+label_UMGS1712_114.fasta
+label_UMGS1712_113.fasta
+label_UMGS1712_112.fasta
+label_UMGS1712_111.fasta
+label_UMGS1712_110.fasta
+label_UMGS1712_11.fasta
+label_UMGS1712_109.fasta
+label_UMGS1712_108.fasta
+label_UMGS1712_107.fasta
+label_UMGS1712_106.fasta
+label_UMGS1712_105.fasta
+label_UMGS1712_104.fasta
+label_UMGS1712_103.fasta
+label_UMGS1712_102.fasta
+label_UMGS1712_101.fasta
+label_UMGS1712_100.fasta
+label_UMGS1712_10.fasta
+label_UMGS1712_1.fasta
+label_UMGS1712_0.fasta
+label_UMGS1568_99.fasta
+label_UMGS1568_98.fasta
+label_UMGS1568_97.fasta
+label_UMGS1568_96.fasta
+label_UMGS1568_95.fasta
+label_UMGS1568_94.fasta
+label_UMGS1568_93.fasta
+label_UMGS1568_92.fasta
+label_UMGS1568_91.fasta
+label_UMGS1568_90.fasta
+label_UMGS1568_9.fasta
+label_UMGS1568_89.fasta
+label_UMGS1568_88.fasta
+label_UMGS1568_87.fasta
+label_UMGS1568_86.fasta
+label_UMGS1568_85.fasta
+label_UMGS1568_84.fasta
+label_UMGS1568_83.fasta
+label_UMGS1568_82.fasta
+label_UMGS1568_81.fasta
+label_UMGS1568_80.fasta
+label_UMGS1568_8.fasta
+label_UMGS1568_79.fasta
+label_UMGS1568_78.fasta
+label_UMGS1568_77.fasta
+label_UMGS1568_76.fasta
+label_UMGS1568_75.fasta
+label_UMGS1568_74.fasta
+label_UMGS1568_73.fasta
+label_UMGS1568_72.fasta
+label_UMGS1568_71.fasta
+label_UMGS1568_70.fasta
+label_UMGS1568_7.fasta
+label_UMGS1568_69.fasta
+label_UMGS1568_68.fasta
+label_UMGS1568_67.fasta
+label_UMGS1568_66.fasta
+label_UMGS1568_65.fasta
+label_UMGS1568_64.fasta
+label_UMGS1568_63.fasta
+label_UMGS1568_62.fasta
+label_UMGS1568_61.fasta
+label_UMGS1568_60.fasta
+label_UMGS1568_6.fasta
+label_UMGS1568_59.fasta
+label_UMGS1568_58.fasta
+label_UMGS1568_57.fasta
+label_UMGS1568_56.fasta
+label_UMGS1568_55.fasta
+label_UMGS1568_54.fasta
+label_UMGS1568_53.fasta
+label_UMGS1568_52.fasta
+label_UMGS1568_51.fasta
+label_UMGS1568_50.fasta
+label_UMGS1568_5.fasta
+label_UMGS1568_49.fasta
+label_UMGS1568_48.fasta
+label_UMGS1568_47.fasta
+label_UMGS1568_46.fasta
+label_UMGS1568_45.fasta
+label_UMGS1568_44.fasta
+label_UMGS1568_43.fasta
+label_UMGS1568_42.fasta
+label_UMGS1568_41.fasta
+label_UMGS1568_40.fasta
+label_UMGS1568_4.fasta
+label_UMGS1568_39.fasta
+label_UMGS1568_38.fasta
+label_UMGS1568_37.fasta
+label_UMGS1568_36.fasta
+label_UMGS1568_35.fasta
+label_UMGS1568_34.fasta
+label_UMGS1568_33.fasta
+label_UMGS1568_32.fasta
+label_UMGS1568_31.fasta
+label_UMGS1568_30.fasta
+label_UMGS1568_3.fasta
+label_UMGS1568_29.fasta
+label_UMGS1568_28.fasta
+label_UMGS1568_27.fasta
+label_UMGS1568_26.fasta
+label_UMGS1568_25.fasta
+label_UMGS1568_24.fasta
+label_UMGS1568_23.fasta
+label_UMGS1568_22.fasta
+label_UMGS1568_21.fasta
+label_UMGS1568_20.fasta
+label_UMGS1568_2.fasta
+label_UMGS1568_19.fasta
+label_UMGS1568_18.fasta
+label_UMGS1568_17.fasta
+label_UMGS1568_16.fasta
+label_UMGS1568_15.fasta
+label_UMGS1568_14.fasta
+label_UMGS1568_13.fasta
+label_UMGS1568_12.fasta
+label_UMGS1568_118.fasta
+label_UMGS1568_117.fasta
+label_UMGS1568_116.fasta
+label_UMGS1568_115.fasta
+label_UMGS1568_114.fasta
+label_UMGS1568_113.fasta
+label_UMGS1568_112.fasta
+label_UMGS1568_111.fasta
+label_UMGS1568_110.fasta
+label_UMGS1568_11.fasta
+label_UMGS1568_109.fasta
+label_UMGS1568_108.fasta
+label_UMGS1568_107.fasta
+label_UMGS1568_106.fasta
+label_UMGS1568_105.fasta
+label_UMGS1568_104.fasta
+label_UMGS1568_103.fasta
+label_UMGS1568_102.fasta
+label_UMGS1568_101.fasta
+label_UMGS1568_100.fasta
+label_UMGS1568_10.fasta
+label_UMGS1568_1.fasta
+label_UMGS1568_0.fasta
+label_UMGS1554_99.fasta
+label_UMGS1554_98.fasta
+label_UMGS1554_97.fasta
+label_UMGS1554_96.fasta
+label_UMGS1554_95.fasta
+label_UMGS1554_94.fasta
+label_UMGS1554_93.fasta
+label_UMGS1554_92.fasta
+label_UMGS1554_91.fasta
+label_UMGS1554_90.fasta
+label_UMGS1554_9.fasta
+label_UMGS1554_89.fasta
+label_UMGS1554_88.fasta
+label_UMGS1554_87.fasta
+label_UMGS1554_86.fasta
+label_UMGS1554_85.fasta
+label_UMGS1554_84.fasta
+label_UMGS1554_83.fasta
+label_UMGS1554_82.fasta
+label_UMGS1554_81.fasta
+label_UMGS1554_80.fasta
+label_UMGS1554_8.fasta
+label_UMGS1554_79.fasta
+label_UMGS1554_78.fasta
+label_UMGS1554_77.fasta
+label_UMGS1554_76.fasta
+label_UMGS1554_75.fasta
+label_UMGS1554_74.fasta
+label_UMGS1554_73.fasta
+label_UMGS1554_72.fasta
+label_UMGS1554_71.fasta
+label_UMGS1554_70.fasta
+label_UMGS1554_7.fasta
+label_UMGS1554_69.fasta
+label_UMGS1554_68.fasta
+label_UMGS1554_67.fasta
+label_UMGS1554_66.fasta
+label_UMGS1554_65.fasta
+label_UMGS1554_64.fasta
+label_UMGS1554_63.fasta
+label_UMGS1554_62.fasta
+label_UMGS1554_61.fasta
+label_UMGS1554_60.fasta
+label_UMGS1554_6.fasta
+label_UMGS1554_59.fasta
+label_UMGS1554_58.fasta
+label_UMGS1554_57.fasta
+label_UMGS1554_56.fasta
+label_UMGS1554_55.fasta
+label_UMGS1554_54.fasta
+label_UMGS1554_53.fasta
+label_UMGS1554_52.fasta
+label_UMGS1554_51.fasta
+label_UMGS1554_50.fasta
+label_UMGS1554_5.fasta
+label_UMGS1554_49.fasta
+label_UMGS1554_48.fasta
+label_UMGS1554_47.fasta
+label_UMGS1554_46.fasta
+label_UMGS1554_45.fasta
+label_UMGS1554_44.fasta
+label_UMGS1554_43.fasta
+label_UMGS1554_42.fasta
+label_UMGS1554_41.fasta
+label_UMGS1554_40.fasta
+label_UMGS1554_4.fasta
+label_UMGS1554_39.fasta
+label_UMGS1554_38.fasta
+label_UMGS1554_37.fasta
+label_UMGS1554_36.fasta
+label_UMGS1554_35.fasta
+label_UMGS1554_34.fasta
+label_UMGS1554_33.fasta
+label_UMGS1554_32.fasta
+label_UMGS1554_31.fasta
+label_UMGS1554_30.fasta
+label_UMGS1554_3.fasta
+label_UMGS1554_29.fasta
+label_UMGS1554_28.fasta
+label_UMGS1554_27.fasta
+label_UMGS1554_26.fasta
+label_UMGS1554_25.fasta
+label_UMGS1554_24.fasta
+label_UMGS1554_23.fasta
+label_UMGS1554_22.fasta
+label_UMGS1554_21.fasta
+label_UMGS1554_20.fasta
+label_UMGS1554_2.fasta
+label_UMGS1554_19.fasta
+label_UMGS1554_18.fasta
+label_UMGS1554_17.fasta
+label_UMGS1554_16.fasta
+label_UMGS1554_15.fasta
+label_UMGS1554_14.fasta
+label_UMGS1554_13.fasta
+label_UMGS1554_12.fasta
+label_UMGS1554_112.fasta
+label_UMGS1554_111.fasta
+label_UMGS1554_110.fasta
+label_UMGS1554_11.fasta
+label_UMGS1554_109.fasta
+label_UMGS1554_108.fasta
+label_UMGS1554_107.fasta
+label_UMGS1554_106.fasta
+label_UMGS1554_105.fasta
+label_UMGS1554_104.fasta
+label_UMGS1554_103.fasta
+label_UMGS1554_102.fasta
+label_UMGS1554_101.fasta
+label_UMGS1554_100.fasta
+label_UMGS1554_10.fasta
+label_UMGS1554_1.fasta
+label_UMGS1554_0.fasta
+label_UMGS1456_9.fasta
+label_UMGS1456_8.fasta
+label_UMGS1456_7.fasta
+label_UMGS1456_6.fasta
+label_UMGS1456_5.fasta
+label_UMGS1456_4.fasta
+label_UMGS1456_3.fasta
+label_UMGS1456_21.fasta
+label_UMGS1456_20.fasta
+label_UMGS1456_2.fasta
+label_UMGS1456_19.fasta
+label_UMGS1456_18.fasta
+label_UMGS1456_17.fasta
+label_UMGS1456_16.fasta
+label_UMGS1456_15.fasta
+label_UMGS1456_14.fasta
+label_UMGS1456_13.fasta
+label_UMGS1456_12.fasta
+label_UMGS1456_11.fasta
+label_UMGS1456_10.fasta
+label_UMGS1456_1.fasta
+label_UMGS1456_0.fasta
+label_UMGS1431_9.fasta
+label_UMGS1431_8.fasta
+label_UMGS1431_7.fasta
+label_UMGS1431_6.fasta
+label_UMGS1431_5.fasta
+label_UMGS1431_4.fasta
+label_UMGS1431_31.fasta
+label_UMGS1431_30.fasta
+label_UMGS1431_3.fasta
+label_UMGS1431_29.fasta
+label_UMGS1431_28.fasta
+label_UMGS1431_27.fasta
+label_UMGS1431_26.fasta
+label_UMGS1431_25.fasta
+label_UMGS1431_24.fasta
+label_UMGS1431_23.fasta
+label_UMGS1431_22.fasta
+label_UMGS1431_21.fasta
+label_UMGS1431_20.fasta
+label_UMGS1431_2.fasta
+label_UMGS1431_19.fasta
+label_UMGS1431_18.fasta
+label_UMGS1431_17.fasta
+label_UMGS1431_16.fasta
+label_UMGS1431_15.fasta
+label_UMGS1431_14.fasta
+label_UMGS1431_13.fasta
+label_UMGS1431_12.fasta
+label_UMGS1431_11.fasta
+label_UMGS1431_10.fasta
+label_UMGS1431_1.fasta
+label_UMGS1431_0.fasta
+label_UMGS1385_99.fasta
+label_UMGS1385_98.fasta
+label_UMGS1385_97.fasta
+label_UMGS1385_96.fasta
+label_UMGS1385_95.fasta
+label_UMGS1385_94.fasta
+label_UMGS1385_93.fasta
+label_UMGS1385_92.fasta
+label_UMGS1385_91.fasta
+label_UMGS1385_90.fasta
+label_UMGS1385_9.fasta
+label_UMGS1385_89.fasta
+label_UMGS1385_88.fasta
+label_UMGS1385_87.fasta
+label_UMGS1385_86.fasta
+label_UMGS1385_85.fasta
+label_UMGS1385_84.fasta
+label_UMGS1385_83.fasta
+label_UMGS1385_82.fasta
+label_UMGS1385_81.fasta
+label_UMGS1385_80.fasta
+label_UMGS1385_8.fasta
+label_UMGS1385_79.fasta
+label_UMGS1385_78.fasta
+label_UMGS1385_77.fasta
+label_UMGS1385_76.fasta
+label_UMGS1385_75.fasta
+label_UMGS1385_74.fasta
+label_UMGS1385_73.fasta
+label_UMGS1385_72.fasta
+label_UMGS1385_71.fasta
+label_UMGS1385_70.fasta
+label_UMGS1385_7.fasta
+label_UMGS1385_69.fasta
+label_UMGS1385_68.fasta
+label_UMGS1385_67.fasta
+label_UMGS1385_66.fasta
+label_UMGS1385_65.fasta
+label_UMGS1385_64.fasta
+label_UMGS1385_63.fasta
+label_UMGS1385_62.fasta
+label_UMGS1385_61.fasta
+label_UMGS1385_60.fasta
+label_UMGS1385_6.fasta
+label_UMGS1385_59.fasta
+label_UMGS1385_58.fasta
+label_UMGS1385_57.fasta
+label_UMGS1385_56.fasta
+label_UMGS1385_55.fasta
+label_UMGS1385_54.fasta
+label_UMGS1385_53.fasta
+label_UMGS1385_52.fasta
+label_UMGS1385_51.fasta
+label_UMGS1385_50.fasta
+label_UMGS1385_5.fasta
+label_UMGS1385_49.fasta
+label_UMGS1385_48.fasta
+label_UMGS1385_47.fasta
+label_UMGS1385_46.fasta
+label_UMGS1385_45.fasta
+label_UMGS1385_44.fasta
+label_UMGS1385_43.fasta
+label_UMGS1385_42.fasta
+label_UMGS1385_41.fasta
+label_UMGS1385_40.fasta
+label_UMGS1385_4.fasta
+label_UMGS1385_39.fasta
+label_UMGS1385_38.fasta
+label_UMGS1385_37.fasta
+label_UMGS1385_36.fasta
+label_UMGS1385_35.fasta
+label_UMGS1385_34.fasta
+label_UMGS1385_33.fasta
+label_UMGS1385_32.fasta
+label_UMGS1385_31.fasta
+label_UMGS1385_30.fasta
+label_UMGS1385_3.fasta
+label_UMGS1385_29.fasta
+label_UMGS1385_28.fasta
+label_UMGS1385_27.fasta
+label_UMGS1385_26.fasta
+label_UMGS1385_25.fasta
+label_UMGS1385_24.fasta
+label_UMGS1385_23.fasta
+label_UMGS1385_22.fasta
+label_UMGS1385_21.fasta
+label_UMGS1385_20.fasta
+label_UMGS1385_2.fasta
+label_UMGS1385_19.fasta
+label_UMGS1385_18.fasta
+label_UMGS1385_17.fasta
+label_UMGS1385_16.fasta
+label_UMGS1385_15.fasta
+label_UMGS1385_14.fasta
+label_UMGS1385_13.fasta
+label_UMGS1385_12.fasta
+label_UMGS1385_11.fasta
+label_UMGS1385_109.fasta
+label_UMGS1385_108.fasta
+label_UMGS1385_107.fasta
+label_UMGS1385_106.fasta
+label_UMGS1385_105.fasta
+label_UMGS1385_104.fasta
+label_UMGS1385_103.fasta
+label_UMGS1385_102.fasta
+label_UMGS1385_101.fasta
+label_UMGS1385_100.fasta
+label_UMGS1385_10.fasta
+label_UMGS1385_1.fasta
+label_UMGS1385_0.fasta
+label_UMGS1228_99.fasta
+label_UMGS1228_98.fasta
+label_UMGS1228_97.fasta
+label_UMGS1228_96.fasta
+label_UMGS1228_95.fasta
+label_UMGS1228_94.fasta
+label_UMGS1228_93.fasta
+label_UMGS1228_92.fasta
+label_UMGS1228_91.fasta
+label_UMGS1228_90.fasta
+label_UMGS1228_9.fasta
+label_UMGS1228_89.fasta
+label_UMGS1228_88.fasta
+label_UMGS1228_87.fasta
+label_UMGS1228_86.fasta
+label_UMGS1228_85.fasta
+label_UMGS1228_84.fasta
+label_UMGS1228_83.fasta
+label_UMGS1228_82.fasta
+label_UMGS1228_81.fasta
+label_UMGS1228_80.fasta
+label_UMGS1228_8.fasta
+label_UMGS1228_79.fasta
+label_UMGS1228_78.fasta
+label_UMGS1228_77.fasta
+label_UMGS1228_76.fasta
+label_UMGS1228_75.fasta
+label_UMGS1228_74.fasta
+label_UMGS1228_73.fasta
+label_UMGS1228_72.fasta
+label_UMGS1228_71.fasta
+label_UMGS1228_70.fasta
+label_UMGS1228_7.fasta
+label_UMGS1228_69.fasta
+label_UMGS1228_68.fasta
+label_UMGS1228_67.fasta
+label_UMGS1228_66.fasta
+label_UMGS1228_65.fasta
+label_UMGS1228_64.fasta
+label_UMGS1228_63.fasta
+label_UMGS1228_62.fasta
+label_UMGS1228_61.fasta
+label_UMGS1228_60.fasta
+label_UMGS1228_6.fasta
+label_UMGS1228_59.fasta
+label_UMGS1228_58.fasta
+label_UMGS1228_57.fasta
+label_UMGS1228_56.fasta
+label_UMGS1228_55.fasta
+label_UMGS1228_54.fasta
+label_UMGS1228_53.fasta
+label_UMGS1228_52.fasta
+label_UMGS1228_51.fasta
+label_UMGS1228_50.fasta
+label_UMGS1228_5.fasta
+label_UMGS1228_49.fasta
+label_UMGS1228_48.fasta
+label_UMGS1228_47.fasta
+label_UMGS1228_46.fasta
+label_UMGS1228_45.fasta
+label_UMGS1228_44.fasta
+label_UMGS1228_43.fasta
+label_UMGS1228_42.fasta
+label_UMGS1228_41.fasta
+label_UMGS1228_40.fasta
+label_UMGS1228_4.fasta
+label_UMGS1228_39.fasta
+label_UMGS1228_38.fasta
+label_UMGS1228_37.fasta
+label_UMGS1228_36.fasta
+label_UMGS1228_35.fasta
+label_UMGS1228_34.fasta
+label_UMGS1228_33.fasta
+label_UMGS1228_32.fasta
+label_UMGS1228_31.fasta
+label_UMGS1228_30.fasta
+label_UMGS1228_3.fasta
+label_UMGS1228_29.fasta
+label_UMGS1228_28.fasta
+label_UMGS1228_27.fasta
+label_UMGS1228_26.fasta
+label_UMGS1228_25.fasta
+label_UMGS1228_24.fasta
+label_UMGS1228_23.fasta
+label_UMGS1228_22.fasta
+label_UMGS1228_21.fasta
+label_UMGS1228_20.fasta
+label_UMGS1228_2.fasta
+label_UMGS1228_19.fasta
+label_UMGS1228_18.fasta
+label_UMGS1228_17.fasta
+label_UMGS1228_16.fasta
+label_UMGS1228_15.fasta
+label_UMGS1228_14.fasta
+label_UMGS1228_13.fasta
+label_UMGS1228_12.fasta
+label_UMGS1228_119.fasta
+label_UMGS1228_118.fasta
+label_UMGS1228_117.fasta
+label_UMGS1228_116.fasta
+label_UMGS1228_115.fasta
+label_UMGS1228_114.fasta
+label_UMGS1228_113.fasta
+label_UMGS1228_112.fasta
+label_UMGS1228_111.fasta
+label_UMGS1228_110.fasta
+label_UMGS1228_11.fasta
+label_UMGS1228_109.fasta
+label_UMGS1228_108.fasta
+label_UMGS1228_107.fasta
+label_UMGS1228_106.fasta
+label_UMGS1228_105.fasta
+label_UMGS1228_104.fasta
+label_UMGS1228_103.fasta
+label_UMGS1228_102.fasta
+label_UMGS1228_101.fasta
+label_UMGS1228_100.fasta
+label_UMGS1228_10.fasta
+label_UMGS1228_1.fasta
+label_UMGS1228_0.fasta
+label_UMGS121_9.fasta
+label_UMGS121_8.fasta
+label_UMGS121_7.fasta
+label_UMGS121_60.fasta
+label_UMGS121_6.fasta
+label_UMGS121_59.fasta
+label_UMGS121_58.fasta
+label_UMGS121_57.fasta
+label_UMGS121_56.fasta
+label_UMGS121_55.fasta
+label_UMGS121_54.fasta
+label_UMGS121_53.fasta
+label_UMGS121_52.fasta
+label_UMGS121_51.fasta
+label_UMGS121_50.fasta
+label_UMGS121_5.fasta
+label_UMGS121_49.fasta
+label_UMGS121_48.fasta
+label_UMGS121_47.fasta
+label_UMGS121_46.fasta
+label_UMGS121_45.fasta
+label_UMGS121_44.fasta
+label_UMGS121_43.fasta
+label_UMGS121_42.fasta
+label_UMGS121_41.fasta
+label_UMGS121_40.fasta
+label_UMGS121_4.fasta
+label_UMGS121_39.fasta
+label_UMGS121_38.fasta
+label_UMGS121_37.fasta
+label_UMGS121_36.fasta
+label_UMGS121_35.fasta
+label_UMGS121_34.fasta
+label_UMGS121_33.fasta
+label_UMGS121_32.fasta
+label_UMGS121_31.fasta
+label_UMGS121_30.fasta
+label_UMGS121_3.fasta
+label_UMGS121_29.fasta
+label_UMGS121_28.fasta
+label_UMGS121_27.fasta
+label_UMGS121_26.fasta
+label_UMGS121_25.fasta
+label_UMGS121_24.fasta
+label_UMGS121_23.fasta
+label_UMGS121_22.fasta
+label_UMGS121_21.fasta
+label_UMGS121_20.fasta
+label_UMGS121_2.fasta
+label_UMGS121_19.fasta
+label_UMGS121_18.fasta
+label_UMGS121_17.fasta
+label_UMGS121_16.fasta
+label_UMGS121_15.fasta
+label_UMGS121_14.fasta
+label_UMGS121_13.fasta
+label_UMGS121_12.fasta
+label_UMGS121_11.fasta
+label_UMGS121_10.fasta
+label_UMGS121_1.fasta
+label_UMGS121_0.fasta
+label_GCF_900095825_1.fasta
+label_GCF_900095825_0.fasta
+label_GCF_000411395_0.fasta
+label_GCF_000188175_9.fasta
+label_GCF_000188175_8.fasta
+label_GCF_000188175_7.fasta
+label_GCF_000188175_61.fasta
+label_GCF_000188175_60.fasta
+label_GCF_000188175_6.fasta
+label_GCF_000188175_59.fasta
+label_GCF_000188175_58.fasta
+label_GCF_000188175_57.fasta
+label_GCF_000188175_56.fasta
+label_GCF_000188175_55.fasta
+label_GCF_000188175_54.fasta
+label_GCF_000188175_53.fasta
+label_GCF_000188175_52.fasta
+label_GCF_000188175_51.fasta
+label_GCF_000188175_50.fasta
+label_GCF_000188175_5.fasta
+label_GCF_000188175_49.fasta
+label_GCF_000188175_48.fasta
+label_GCF_000188175_47.fasta
+label_GCF_000188175_46.fasta
+label_GCF_000188175_45.fasta
+label_GCF_000188175_44.fasta
+label_GCF_000188175_43.fasta
+label_GCF_000188175_42.fasta
+label_GCF_000188175_41.fasta
+label_GCF_000188175_40.fasta
+label_GCF_000188175_4.fasta
+label_GCF_000188175_39.fasta
+label_GCF_000188175_38.fasta
+label_GCF_000188175_37.fasta
+label_GCF_000188175_36.fasta
+label_GCF_000188175_35.fasta
+label_GCF_000188175_34.fasta
+label_GCF_000188175_33.fasta
+label_GCF_000188175_32.fasta
+label_GCF_000188175_31.fasta
+label_GCF_000188175_30.fasta
+label_GCF_000188175_3.fasta
+label_GCF_000188175_29.fasta
+label_GCF_000188175_28.fasta
+label_GCF_000188175_27.fasta
+label_GCF_000188175_26.fasta
+label_GCF_000188175_25.fasta
+label_GCF_000188175_24.fasta
+label_GCF_000188175_23.fasta
+label_GCF_000188175_22.fasta
+label_GCF_000188175_21.fasta
+label_GCF_000188175_20.fasta
+label_GCF_000188175_2.fasta
+label_GCF_000188175_19.fasta
+label_GCF_000188175_18.fasta
+label_GCF_000188175_17.fasta
+label_GCF_000188175_16.fasta
+label_GCF_000188175_15.fasta
+label_GCF_000188175_14.fasta
+label_GCF_000188175_13.fasta
+label_GCF_000188175_12.fasta
+label_GCF_000188175_11.fasta
+label_GCF_000188175_10.fasta
+label_GCF_000188175_1.fasta
+label_GCF_000188175_0.fasta
+Generating CGRs.... 
+totalSeq is: 1518
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/DeepMicrobes-data/labeled_genome-r202/hgr_mags/o__Acidaminococcales
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 155
+
+clusterNames =
+
+  1x1 cell array
+
+    {'1-f__Acidaminococcaceae'}
+
+    '1-f__Acidaminococcaceae'
+
+
+header =
+
+  1x2 cell array
+
+    {'1-f__Acidaminococcaceae'}    {'prediction'}
+
+
+T3 =
+
+  155x2 table
+
+                       1-f__Acidaminococcaceae    prediction
+                       _______________________    __________
+
+    MAG-GUT10270.fa             55057                 1     
+    MAG-GUT10398.fa             54599                 1     
+    MAG-GUT10625.fa             53038                 1     
+    MAG-GUT11210.fa             56375                 1     
+    MAG-GUT11332.fa             54033                 1     
+    MAG-GUT11435.fa             54824                 1     
+    MAG-GUT13045.fa             54762                 1     
+    MAG-GUT14741.fa             56122                 1     
+    MAG-GUT15742.fa             53643                 1     
+    MAG-GUT1677.fa              53697                 1     
+    MAG-GUT17255.fa             53388                 1     
+    MAG-GUT17473.fa             53175                 1     
+    MAG-GUT17515.fa             54760                 1     
+    MAG-GUT20287.fa             53005                 1     
+    MAG-GUT20540.fa             53626                 1     
+    MAG-GUT20603.fa             51923                 1     
+    MAG-GUT20639.fa             33537                 1     
+    MAG-GUT2203.fa              53668                 1     
+    MAG-GUT23387.fa             52482                 1     
+    MAG-GUT24052.fa             54022                 1     
+    MAG-GUT25048.fa             52186                 1     
+    MAG-GUT25340.fa             53595                 1     
+    MAG-GUT29189.fa             54089                 1     
+    MAG-GUT29214.fa             52359                 1     
+    MAG-GUT29221.fa             53692                 1     
+    MAG-GUT29476.fa             52214                 1     
+    MAG-GUT29878.fa             34136                 1     
+    MAG-GUT32691.fa             54192                 1     
+    MAG-GUT33657.fa             33158                 1     
+    MAG-GUT34206.fa             30322                 1     
+    MAG-GUT34421.fa             30412                 1     
+    MAG-GUT34513.fa             30376                 1     
+    MAG-GUT34778.fa             30404                 1     
+    MAG-GUT35231.fa             30417                 1     
+    MAG-GUT37976.fa             54051                 1     
+    MAG-GUT43152.fa             54825                 1     
+    MAG-GUT43233.fa             52379                 1     
+    MAG-GUT43248.fa             55195                 1     
+    MAG-GUT43329.fa             53310                 1     
+    MAG-GUT43835.fa             52466                 1     
+    MAG-GUT45903.fa             56309                 1     
+    MAG-GUT47875.fa             55404                 1     
+    MAG-GUT51926.fa             56222                 1     
+    MAG-GUT51928.fa             56799                 1     
+    MAG-GUT5341.fa              51596                 1     
+    MAG-GUT56559.fa             53967                 1     
+    MAG-GUT56604.fa             52949                 1     
+    MAG-GUT5676.fa              54607                 1     
+    MAG-GUT57066.fa             55510                 1     
+    MAG-GUT57190.fa             54097                 1     
+    MAG-GUT57346.fa             52687                 1     
+    MAG-GUT57398.fa             53183                 1     
+    MAG-GUT57498.fa             54385                 1     
+    MAG-GUT57542.fa             54407                 1     
+    MAG-GUT57592.fa             52807                 1     
+    MAG-GUT57771.fa             54291                 1     
+    MAG-GUT57988.fa             53860                 1     
+    MAG-GUT58133.fa             53854                 1     
+    MAG-GUT58310.fa             54042                 1     
+    MAG-GUT58672.fa             54388                 1     
+    MAG-GUT59502.fa             52725                 1     
+    MAG-GUT59576.fa             54306                 1     
+    MAG-GUT5959.fa              55825                 1     
+    MAG-GUT59626.fa             54684                 1     
+    MAG-GUT60077.fa             52943                 1     
+    MAG-GUT60123.fa             54106                 1     
+    MAG-GUT60157.fa             53353                 1     
+    MAG-GUT60320.fa             54693                 1     
+    MAG-GUT60370.fa             55210                 1     
+    MAG-GUT60466.fa             57057                 1     
+    MAG-GUT60605.fa             55612                 1     
+    MAG-GUT60882.fa             54352                 1     
+    MAG-GUT60999.fa             56221                 1     
+    MAG-GUT61376.fa             53782                 1     
+    MAG-GUT61623.fa             54262                 1     
+    MAG-GUT61658.fa             53182                 1     
+    MAG-GUT61937.fa             54521                 1     
+    MAG-GUT62054.fa             53260                 1     
+    MAG-GUT62117.fa             54372                 1     
+    MAG-GUT62444.fa             52847                 1     
+    MAG-GUT62509.fa             54985                 1     
+    MAG-GUT62666.fa             53442                 1     
+    MAG-GUT6679.fa              52963                 1     
+    MAG-GUT69771.fa             54730                 1     
+    MAG-GUT7031.fa              52982                 1     
+    MAG-GUT7040.fa              52226                 1     
+    MAG-GUT72119.fa             54465                 1     
+    MAG-GUT72127.fa             52996                 1     
+    MAG-GUT74329.fa             54610                 1     
+    MAG-GUT74380.fa             53734                 1     
+    MAG-GUT75402.fa             54066                 1     
+    MAG-GUT75430.fa             55087                 1     
+    MAG-GUT75522.fa             53797                 1     
+    MAG-GUT79350.fa             54532                 1     
+    MAG-GUT80385.fa             50077                 1     
+    MAG-GUT80453.fa             56106                 1     
+    MAG-GUT80718.fa             50590                 1     
+    MAG-GUT80771.fa             57514                 1     
+    MAG-GUT80816.fa             56357                 1     
+    MAG-GUT81679.fa             53889                 1     
+    MAG-GUT81926.fa             54510                 1     
+    MAG-GUT81946.fa             56357                 1     
+    MAG-GUT81987.fa             54309                 1     
+    MAG-GUT82039.fa             53691                 1     
+    MAG-GUT82105.fa             56571                 1     
+    MAG-GUT82160.fa             53873                 1     
+    MAG-GUT82436.fa             56020                 1     
+    MAG-GUT82468.fa             55248                 1     
+    MAG-GUT82509.fa             55530                 1     
+    MAG-GUT82562.fa             56228                 1     
+    MAG-GUT82635.fa             56951                 1     
+    MAG-GUT82654.fa             56328                 1     
+    MAG-GUT82703.fa             54579                 1     
+    MAG-GUT82738.fa             54829                 1     
+    MAG-GUT82744.fa             55190                 1     
+    MAG-GUT84598.fa             52065                 1     
+    MAG-GUT84613.fa             53225                 1     
+    MAG-GUT85104.fa             53584                 1     
+    MAG-GUT86870.fa             54242                 1     
+    MAG-GUT87479.fa             53862                 1     
+    MAG-GUT87575.fa             55158                 1     
+    MAG-GUT87833.fa             55234                 1     
+    MAG-GUT88081.fa             54455                 1     
+    MAG-GUT88255.fa             55194                 1     
+    MAG-GUT88680.fa             53379                 1     
+    MAG-GUT88995.fa             54746                 1     
+    MAG-GUT89180.fa             52394                 1     
+    MAG-GUT89206.fa             52314                 1     
+    MAG-GUT89239.fa             53212                 1     
+    MAG-GUT89279.fa             55540                 1     
+    MAG-GUT89290.fa             52440                 1     
+    MAG-GUT89315.fa             52565                 1     
+    MAG-GUT89344.fa             55490                 1     
+    MAG-GUT89353.fa             52432                 1     
+    MAG-GUT89416.fa             55104                 1     
+    MAG-GUT89571.fa             55325                 1     
+    MAG-GUT89719.fa             52257                 1     
+    MAG-GUT89868.fa             55707                 1     
+    MAG-GUT89896.fa             55002                 1     
+    MAG-GUT90087.fa             56606                 1     
+    MAG-GUT90109.fa             52439                 1     
+    MAG-GUT90165.fa             52323                 1     
+    MAG-GUT90191.fa             52340                 1     
+    MAG-GUT90290.fa             52383                 1     
+    MAG-GUT90323.fa             55922                 1     
+    MAG-GUT90479.fa             54897                 1     
+    MAG-GUT90502.fa             55573                 1     
+    MAG-GUT90506.fa             52438                 1     
+    MAG-GUT90686.fa             55223                 1     
+    MAG-GUT90699.fa             56428                 1     
+    MAG-GUT90976.fa             52460                 1     
+    MAG-GUT91042.fa             54842                 1     
+    MAG-GUT91118.fa             52464                 1     
+    MAG-GUT91137.fa             52708                 1     
+    MAG-GUT9659.fa              54693                 1     
+
+
+outputPath = 
+
+    "outputs-HGR-r202/test-o__Acidaminococcales_split_pruned.xlsx"
+
+Process completed 
+[?1l>

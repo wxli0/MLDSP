@@ -1,0 +1,815 @@
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+              R2019b Update 5 (9.7.0.1319299) 64-bit (glnxa64)
+                             February 19, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+[H[J
+dataSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/g__Olsenella"
+
+
+testSetPath = 
+
+    "/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Olsenella"
+
+Reading sequences .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900120385.1_9.fasta
+RS_GCF_900120385.1_6.fasta
+RS_GCF_900120385.1_4.fasta
+RS_GCF_900120385.1_16.fasta
+RS_GCF_900120385.1_15.fasta
+RS_GCF_900120385.1_13.fasta
+RS_GCF_900120385.1_10.fasta
+RS_GCF_900120385.1_1.fasta
+RS_GCF_001553055.1_8.fasta
+RS_GCF_001553055.1_6.fasta
+RS_GCF_001553055.1_5.fasta
+RS_GCF_001553055.1_4.fasta
+RS_GCF_001553055.1_3.fasta
+RS_GCF_001553055.1_19.fasta
+RS_GCF_001553055.1_18.fasta
+RS_GCF_001553055.1_15.fasta
+RS_GCF_001553055.1_14.fasta
+RS_GCF_001553055.1_12.fasta
+RS_GCF_001553055.1_11.fasta
+RS_GCF_000233535.1_9.fasta
+RS_GCF_000233535.1_7.fasta
+RS_GCF_000233535.1_5.fasta
+RS_GCF_000233535.1_2.fasta
+RS_GCF_000233535.1_19.fasta
+RS_GCF_000233535.1_18.fasta
+RS_GCF_000233535.1_16.fasta
+RS_GCF_000233535.1_13.fasta
+RS_GCF_000233535.1_12.fasta
+RS_GCF_000233535.1_11.fasta
+RS_GCF_000233535.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_000468755.1_9.fasta
+RS_GCF_000468755.1_8.fasta
+RS_GCF_000468755.1_7.fasta
+RS_GCF_000468755.1_6.fasta
+RS_GCF_000468755.1_5.fasta
+RS_GCF_000468755.1_4.fasta
+RS_GCF_000468755.1_3.fasta
+RS_GCF_000468755.1_2.fasta
+RS_GCF_000468755.1_19.fasta
+RS_GCF_000468755.1_18.fasta
+RS_GCF_000468755.1_17.fasta
+RS_GCF_000468755.1_16.fasta
+RS_GCF_000468755.1_15.fasta
+RS_GCF_000468755.1_14.fasta
+RS_GCF_000468755.1_13.fasta
+RS_GCF_000468755.1_12.fasta
+RS_GCF_000468755.1_11.fasta
+RS_GCF_000468755.1_10.fasta
+RS_GCF_000468755.1_1.fasta
+RS_GCF_000468755.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902375795.1_9.fasta
+RS_GCF_902375795.1_5.fasta
+RS_GCF_902375795.1_4.fasta
+RS_GCF_902375795.1_3.fasta
+RS_GCF_902375795.1_2.fasta
+RS_GCF_902375795.1_18.fasta
+RS_GCF_902375795.1_15.fasta
+RS_GCF_902375795.1_14.fasta
+RS_GCF_902375795.1_13.fasta
+RS_GCF_902375795.1_11.fasta
+RS_GCF_902375795.1_1.fasta
+RS_GCF_902375795.1_0.fasta
+RS_GCF_001811895.1_9.fasta
+RS_GCF_001811895.1_7.fasta
+RS_GCF_001811895.1_5.fasta
+RS_GCF_001811895.1_4.fasta
+RS_GCF_001811895.1_19.fasta
+RS_GCF_001811895.1_17.fasta
+RS_GCF_001811895.1_16.fasta
+RS_GCF_001811895.1_15.fasta
+RS_GCF_001811895.1_14.fasta
+RS_GCF_001811895.1_11.fasta
+RS_GCF_001811895.1_1.fasta
+RS_GCF_001457795.1_9.fasta
+RS_GCF_001457795.1_7.fasta
+RS_GCF_001457795.1_2.fasta
+RS_GCF_001457795.1_17.fasta
+RS_GCF_001457795.1_15.fasta
+RS_GCF_001457795.1_11.fasta
+RS_GCF_001457795.1_1.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_903789455.1_8.fasta
+GB_GCA_903789455.1_7.fasta
+GB_GCA_903789455.1_6.fasta
+GB_GCA_903789455.1_5.fasta
+GB_GCA_903789455.1_2.fasta
+GB_GCA_903789455.1_19.fasta
+GB_GCA_903789455.1_16.fasta
+GB_GCA_903789455.1_15.fasta
+GB_GCA_903789455.1_14.fasta
+GB_GCA_903789455.1_13.fasta
+GB_GCA_903789455.1_11.fasta
+GB_GCA_903789455.1_10.fasta
+GB_GCA_903789455.1_0.fasta
+GB_GCA_900766035.1_9.fasta
+GB_GCA_900766035.1_6.fasta
+GB_GCA_900766035.1_4.fasta
+GB_GCA_900766035.1_2.fasta
+GB_GCA_900766035.1_18.fasta
+GB_GCA_900766035.1_17.fasta
+GB_GCA_900766035.1_11.fasta
+GB_GCA_003862195.1_9.fasta
+GB_GCA_003862195.1_7.fasta
+GB_GCA_003862195.1_5.fasta
+GB_GCA_003862195.1_3.fasta
+GB_GCA_003862195.1_2.fasta
+GB_GCA_003862195.1_19.fasta
+GB_GCA_003862195.1_18.fasta
+GB_GCA_003862195.1_12.fasta
+GB_GCA_003862195.1_10.fasta
+GB_GCA_003862195.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_902756715.1_7.fasta
+GB_GCA_902756715.1_6.fasta
+GB_GCA_902756715.1_5.fasta
+GB_GCA_902756715.1_4.fasta
+GB_GCA_902756715.1_3.fasta
+GB_GCA_902756715.1_2.fasta
+GB_GCA_902756715.1_19.fasta
+GB_GCA_902756715.1_18.fasta
+GB_GCA_902756715.1_16.fasta
+GB_GCA_902756715.1_15.fasta
+GB_GCA_902756715.1_14.fasta
+GB_GCA_902756715.1_13.fasta
+GB_GCA_902756715.1_12.fasta
+GB_GCA_902756715.1_0.fasta
+GB_GCA_900313175.1_9.fasta
+GB_GCA_900313175.1_8.fasta
+GB_GCA_900313175.1_6.fasta
+GB_GCA_900313175.1_5.fasta
+GB_GCA_900313175.1_4.fasta
+GB_GCA_900313175.1_2.fasta
+GB_GCA_900313175.1_19.fasta
+GB_GCA_900313175.1_18.fasta
+GB_GCA_900313175.1_17.fasta
+GB_GCA_900313175.1_15.fasta
+GB_GCA_900313175.1_14.fasta
+GB_GCA_900313175.1_12.fasta
+GB_GCA_900313175.1_11.fasta
+GB_GCA_900313175.1_10.fasta
+GB_GCA_900313175.1_1.fasta
+GB_GCA_900313175.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_902762985.1_8.fasta
+GB_GCA_902762985.1_7.fasta
+GB_GCA_902762985.1_6.fasta
+GB_GCA_902762985.1_5.fasta
+GB_GCA_902762985.1_4.fasta
+GB_GCA_902762985.1_3.fasta
+GB_GCA_902762985.1_15.fasta
+GB_GCA_902762985.1_12.fasta
+GB_GCA_902762985.1_11.fasta
+GB_GCA_902762985.1_10.fasta
+GB_GCA_902762985.1_1.fasta
+GB_GCA_900316105.1_8.fasta
+GB_GCA_900316105.1_6.fasta
+GB_GCA_900316105.1_5.fasta
+GB_GCA_900316105.1_4.fasta
+GB_GCA_900316105.1_19.fasta
+GB_GCA_900316105.1_18.fasta
+GB_GCA_900316105.1_17.fasta
+GB_GCA_900316105.1_13.fasta
+GB_GCA_002350085.1_9.fasta
+GB_GCA_002350085.1_6.fasta
+GB_GCA_002350085.1_4.fasta
+GB_GCA_002350085.1_2.fasta
+GB_GCA_002350085.1_19.fasta
+GB_GCA_002350085.1_18.fasta
+GB_GCA_002350085.1_16.fasta
+GB_GCA_002350085.1_15.fasta
+GB_GCA_002350085.1_12.fasta
+GB_GCA_002350085.1_10.fasta
+GB_GCA_002350085.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_012844235.1_9.fasta
+RS_GCF_012844235.1_6.fasta
+RS_GCF_012844235.1_5.fasta
+RS_GCF_012844235.1_3.fasta
+RS_GCF_012844235.1_19.fasta
+RS_GCF_012844235.1_18.fasta
+RS_GCF_012844235.1_17.fasta
+RS_GCF_012844235.1_16.fasta
+RS_GCF_012844235.1_11.fasta
+RS_GCF_012844235.1_10.fasta
+GB_GCA_900768395.1_9.fasta
+GB_GCA_900768395.1_6.fasta
+GB_GCA_900768395.1_5.fasta
+GB_GCA_900768395.1_19.fasta
+GB_GCA_900768395.1_18.fasta
+GB_GCA_900768395.1_16.fasta
+GB_GCA_900768395.1_13.fasta
+GB_GCA_900768395.1_12.fasta
+GB_GCA_900768395.1_10.fasta
+GB_GCA_900768395.1_1.fasta
+GB_GCA_900538935.1_8.fasta
+GB_GCA_900538935.1_7.fasta
+GB_GCA_900538935.1_6.fasta
+GB_GCA_900538935.1_3.fasta
+GB_GCA_900538935.1_19.fasta
+GB_GCA_900538935.1_18.fasta
+GB_GCA_900538935.1_14.fasta
+GB_GCA_900538935.1_13.fasta
+GB_GCA_900538935.1_1.fasta
+GB_GCA_900538935.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_009695875.1_9.fasta
+RS_GCF_009695875.1_3.fasta
+RS_GCF_009695875.1_2.fasta
+RS_GCF_009695875.1_17.fasta
+RS_GCF_009695875.1_16.fasta
+RS_GCF_009695875.1_15.fasta
+RS_GCF_009695875.1_12.fasta
+RS_GCF_009695875.1_11.fasta
+RS_GCF_009695875.1_10.fasta
+GB_GCA_903789555.1_7.fasta
+GB_GCA_903789555.1_5.fasta
+GB_GCA_903789555.1_4.fasta
+GB_GCA_903789555.1_19.fasta
+GB_GCA_903789555.1_10.fasta
+GB_GCA_903789545.1_7.fasta
+GB_GCA_903789545.1_19.fasta
+GB_GCA_903789545.1_13.fasta
+GB_GCA_903789545.1_1.fasta
+GB_GCA_903789485.1_5.fasta
+GB_GCA_903789485.1_3.fasta
+GB_GCA_903789485.1_2.fasta
+GB_GCA_903789485.1_19.fasta
+GB_GCA_903789485.1_18.fasta
+GB_GCA_903789485.1_17.fasta
+GB_GCA_903789485.1_14.fasta
+GB_GCA_903789485.1_10.fasta
+GB_GCA_900555995.1_8.fasta
+GB_GCA_900555995.1_4.fasta
+GB_GCA_900555995.1_13.fasta
+GB_GCA_900555995.1_11.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+GB_GCA_902789955.1_4.fasta
+GB_GCA_902789955.1_15.fasta
+GB_GCA_902787335.1_6.fasta
+GB_GCA_902787335.1_15.fasta
+GB_GCA_902787335.1_11.fasta
+GB_GCA_902786825.1_6.fasta
+GB_GCA_902786825.1_2.fasta
+GB_GCA_902786825.1_19.fasta
+GB_GCA_902786825.1_18.fasta
+GB_GCA_902786825.1_13.fasta
+GB_GCA_902786825.1_11.fasta
+GB_GCA_902786825.1_1.fasta
+GB_GCA_902780325.1_5.fasta
+GB_GCA_902780325.1_17.fasta
+GB_GCA_902780325.1_15.fasta
+GB_GCA_902780325.1_11.fasta
+GB_GCA_902769555.1_2.fasta
+GB_GCA_902769555.1_14.fasta
+GB_GCA_902769555.1_11.fasta
+GB_GCA_902769555.1_10.fasta
+GB_GCA_902769555.1_0.fasta
+GB_GCA_902768465.1_9.fasta
+GB_GCA_902768465.1_8.fasta
+GB_GCA_902768465.1_7.fasta
+GB_GCA_902768465.1_10.fasta
+GB_GCA_902768465.1_1.fasta
+GB_GCA_902763695.1_9.fasta
+GB_GCA_902763695.1_16.fasta
+GB_GCA_902763695.1_12.fasta
+GB_GCA_902763695.1_11.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_001437585.1_9.fasta
+RS_GCF_001437585.1_7.fasta
+RS_GCF_001437585.1_5.fasta
+RS_GCF_001437585.1_4.fasta
+RS_GCF_001437585.1_3.fasta
+RS_GCF_001437585.1_19.fasta
+RS_GCF_001437585.1_16.fasta
+RS_GCF_001437585.1_15.fasta
+RS_GCF_001437585.1_11.fasta
+RS_GCF_001437585.1_10.fasta
+RS_GCF_001437585.1_1.fasta
+RS_GCF_001437585.1_0.fasta
+RS_GCF_000524335.1_5.fasta
+RS_GCF_000524335.1_4.fasta
+RS_GCF_000524335.1_3.fasta
+RS_GCF_000524335.1_18.fasta
+RS_GCF_000524335.1_14.fasta
+RS_GCF_000524335.1_11.fasta
+RS_GCF_000524335.1_0.fasta
+RS_GCF_000143845.1_9.fasta
+RS_GCF_000143845.1_8.fasta
+RS_GCF_000143845.1_7.fasta
+RS_GCF_000143845.1_5.fasta
+RS_GCF_000143845.1_4.fasta
+RS_GCF_000143845.1_3.fasta
+RS_GCF_000143845.1_2.fasta
+RS_GCF_000143845.1_19.fasta
+RS_GCF_000143845.1_17.fasta
+RS_GCF_000143845.1_16.fasta
+RS_GCF_000143845.1_10.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_902786795.1_6.fasta
+RS_GCF_902786795.1_11.fasta
+RS_GCF_902780015.1_2.fasta
+RS_GCF_902773885.1_7.fasta
+RS_GCF_902773885.1_15.fasta
+RS_GCF_900101655.1_8.fasta
+RS_GCF_900101655.1_18.fasta
+RS_GCF_009695845.1_1.fasta
+GB_GCA_902799475.1_15.fasta
+GB_GCA_902799205.1_13.fasta
+GB_GCA_902776165.1_18.fasta
+GB_GCA_902776165.1_10.fasta
+GB_GCA_902771295.1_4.fasta
+GB_GCA_902762045.1_6.fasta
+GB_GCA_902760375.1_14.fasta
+GB_GCA_902757395.1_11.fasta
+GB_GCA_902757125.1_6.fasta
+GB_GCA_902755685.1_6.fasta
+GB_GCA_900321765.1_5.fasta
+GB_GCA_900321095.1_19.fasta
+GB_GCA_900313685.1_2.fasta
+GB_GCA_002394825.1_8.fasta
+GB_GCA_002394825.1_0.fasta
+GB_GCA_002391145.1_19.fasta
+GB_GCA_002391145.1_13.fasta
+GB_GCA_002391145.1_0.fasta
+GB_GCA_002373915.1_5.fasta
+GB_GCA_002373915.1_16.fasta
+GB_GCA_002373915.1_14.fasta
+GB_GCA_002372105.1_4.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900167315.1_9.fasta
+RS_GCF_900167315.1_6.fasta
+RS_GCF_900167315.1_5.fasta
+RS_GCF_900167315.1_4.fasta
+RS_GCF_900167315.1_2.fasta
+RS_GCF_900167315.1_18.fasta
+RS_GCF_900167315.1_16.fasta
+RS_GCF_900167315.1_15.fasta
+RS_GCF_900167315.1_14.fasta
+RS_GCF_900167315.1_10.fasta
+RS_GCF_900167315.1_0.fasta
+RS_GCF_900111255.1_7.fasta
+RS_GCF_900111255.1_6.fasta
+RS_GCF_900111255.1_19.fasta
+RS_GCF_900111255.1_15.fasta
+RS_GCF_900111255.1_13.fasta
+RS_GCF_900111255.1_10.fasta
+RS_GCF_900111255.1_0.fasta
+RS_GCF_900108495.1_9.fasta
+RS_GCF_900108495.1_5.fasta
+RS_GCF_900108495.1_15.fasta
+RS_GCF_900108495.1_14.fasta
+RS_GCF_900108495.1_13.fasta
+RS_GCF_900108495.1_11.fasta
+GB_GCA_902803615.1_9.fasta
+GB_GCA_902803615.1_8.fasta
+GB_GCA_902803615.1_6.fasta
+GB_GCA_902803615.1_14.fasta
+GB_GCA_902803615.1_11.fasta
+GB_GCA_902803615.1_0.fasta
+Starting parallel pool (parpool) using the 'local' profile ...
+RS_GCF_900155635.1_9.fasta
+RS_GCF_900155635.1_8.fasta
+RS_GCF_900155635.1_7.fasta
+RS_GCF_900155635.1_6.fasta
+RS_GCF_900155635.1_5.fasta
+RS_GCF_900155635.1_4.fasta
+RS_GCF_900155635.1_3.fasta
+RS_GCF_900155635.1_2.fasta
+RS_GCF_900155635.1_19.fasta
+RS_GCF_900155635.1_18.fasta
+RS_GCF_900155635.1_17.fasta
+RS_GCF_900155635.1_16.fasta
+RS_GCF_900155635.1_15.fasta
+RS_GCF_900155635.1_14.fasta
+RS_GCF_900155635.1_13.fasta
+RS_GCF_900155635.1_12.fasta
+RS_GCF_900155635.1_11.fasta
+RS_GCF_900155635.1_10.fasta
+RS_GCF_900155635.1_1.fasta
+RS_GCF_900155635.1_0.fasta
+Generating CGRs.... 
+totalSeq is: 370
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Computing disMat .... 
+Starting parallel pool (parpool) using the 'local' profile ...
+Performing classification .... 
+
+minSeqLen =
+
+     0
+
+
+maxSeqLen =
+
+     0
+
+dataSet is:/mnt/sda/MLDSP-samples-r202/rumen_mags/g__Olsenella
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+Starting parallel pool (parpool) using the 'local' profile ...
+numTestSeq is: 3
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'s__Olsenella p...'}    {'s__Olsenella s...'}
+
+  Columns 4 through 6
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 7 through 9
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'s__Olsenella s...'}
+
+  Columns 4 through 6
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 7 through 9
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 7 through 9
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 7 through 9
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'s__Olsenella s...'}
+
+  Columns 7 through 9
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'s__Olsenella s...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'s__Olsenella s...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'8-s__Olsenella...'}    {'s__Olsenella s...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'8-s__Olsenella...'}    {'9-s__Olsenella...'}
+
+  Columns 10 through 12
+
+    {'s__Olsenella uli'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'8-s__Olsenella...'}    {'9-s__Olsenella...'}
+
+  Columns 10 through 12
+
+    {'10-s__Olsenell...'}    {'s__Olsenella u...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'8-s__Olsenella...'}    {'9-s__Olsenella...'}
+
+  Columns 10 through 12
+
+    {'10-s__Olsenell...'}    {'11-s__Olsenell...'}    {'s__Olsenella u...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'8-s__Olsenella...'}    {'9-s__Olsenella...'}
+
+  Columns 10 through 12
+
+    {'10-s__Olsenell...'}    {'11-s__Olsenell...'}    {'12-s__Olsenell...'}
+
+  Column 13
+
+    {'s__Olsenella u...'}
+
+
+clusterNames =
+
+  1x13 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'8-s__Olsenella...'}    {'9-s__Olsenella...'}
+
+  Columns 10 through 12
+
+    {'10-s__Olsenell...'}    {'11-s__Olsenell...'}    {'12-s__Olsenell...'}
+
+  Column 13
+
+    {'13-s__Olsenell...'}
+
+  Columns 1 through 3
+
+    '1-s__Olsenella p...'    '2-s__Olsenella p...'    '3-s__Olsenella s...'
+
+  Columns 4 through 6
+
+    '4-s__Olsenella s...'    '5-s__Olsenella s...'    '6-s__Olsenella s...'
+
+  Columns 7 through 9
+
+    '7-s__Olsenella s...'    '8-s__Olsenella s...'    '9-s__Olsenella s...'
+
+  Columns 10 through 12
+
+    '10-s__Olsenella uli'    '11-s__Olsenella ...'    '12-s__Olsenella ...'
+
+  Column 13
+
+    '13-s__Olsenella ...'
+
+
+header =
+
+  1x14 cell array
+
+  Columns 1 through 3
+
+    {'1-s__Olsenella...'}    {'2-s__Olsenella...'}    {'3-s__Olsenella...'}
+
+  Columns 4 through 6
+
+    {'4-s__Olsenella...'}    {'5-s__Olsenella...'}    {'6-s__Olsenella...'}
+
+  Columns 7 through 9
+
+    {'7-s__Olsenella...'}    {'8-s__Olsenella...'}    {'9-s__Olsenella...'}
+
+  Columns 10 through 12
+
+    {'10-s__Olsenell...'}    {'11-s__Olsenell...'}    {'12-s__Olsenell...'}
+
+  Columns 13 through 14
+
+    {'13-s__Olsenell...'}    {'prediction'}
+
+
+T3 =
+
+  3x14 table
+
+                     1-s__Olsenella phocaeensis    2-s__Olsenella profusa    3-s__Olsenella sp001457795    4-s__Olsenella sp003862195    5-s__Olsenella sp900313175    6-s__Olsenella sp900316105    7-s__Olsenella sp900538935    8-s__Olsenella sp900555995    9-s__Olsenella sp902787335    10-s__Olsenella uli    11-s__Olsenella umbonata    12-s__Olsenella umbonata_A    13-s__Olsenella urininfantis    prediction
+                     __________________________    ______________________    __________________________    __________________________    __________________________    __________________________    __________________________    __________________________    __________________________    ___________________    ________________________    __________________________    ____________________________    __________
+
+    RUG161.fasta             2.2204e-14                  2.2204e-14                  2.2204e-14                    2.2204e-14                    2.2204e-14                             1                    2.2204e-14                    2.2204e-14                    1.0267e-08                2.2204e-14                2.2204e-14                   2.2204e-14                     2.2204e-14                 6     
+    RUG768.fasta             2.2201e-14                  2.2201e-14                  2.2201e-14                    2.2201e-14                       0.87494                    2.2201e-14                    1.4965e-12                    2.2201e-14                       0.12506                2.2201e-14                2.2201e-14                   2.2201e-14                     2.2201e-14                 5     
+    hRUG891.fasta            1.7929e-08                     0.29531                  1.7929e-08                    1.7929e-08                     7.919e-07                    1.7929e-08                       0.24121                    1.7929e-08                       0.16817                1.7929e-08                1.7929e-08                   1.7929e-08                        0.29531                 2     
+
+
+outputPath = 
+
+    "outputs-GTDB-r202/test-g__Olsenella.xlsx"
+
+Process completed 
+[?1l>
