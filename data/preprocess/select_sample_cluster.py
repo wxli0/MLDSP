@@ -10,8 +10,6 @@ Downloads GTDB representative genomes belonging to a taxon to a direcotory.\
 :param sys.argv[1]: path to a json file containing the properties of \
     the downloaded genomes
 :type sys.argv[1]: str
-:param sys.argv[2]: version, e.g r202, r95
-:type sys.arg[2]: str
 """
 
 from helpers import download_genomes, parse_json_input
@@ -24,7 +22,7 @@ import sys
 
 random.seed(0)
 sample_factor, sample_size, tax_name, use_factor, cluster_num, \
-    cluster_names, lower, upper, use_const_len, const_len, frags_num, \
+    outdir_full, cluster_names, lower, upper, use_const_len, const_len, frags_num, \
         alter, id, outdir, rep_time, full = parse_json_input(sys.argv[1])
 
 print(parse_json_input(sys.argv[1]))
@@ -45,7 +43,6 @@ if not outdir:
     if id is not None:
         outdir +="_"+id
 
-outdir_full = sys.argv[2]
 ssl._create_default_https_context = ssl._create_unverified_context
 
 indices = {"domain":0, "phylum":1, "class":2, "order":3, "family":4, "genus":5}
