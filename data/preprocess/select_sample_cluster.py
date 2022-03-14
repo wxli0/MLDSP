@@ -22,7 +22,7 @@ import sys
 
 random.seed(0)
 sample_factor, sample_size, tax_name, use_factor, cluster_num, \
-    outdir_full, cluster_names, lower, upper, use_const_len, const_len, frags_num, \
+    outdir_base, cluster_names, lower, upper, use_const_len, const_len, frags_num, \
         alter, id, outdir, rep_time, full = parse_json_input(sys.argv[1])
 
 print(parse_json_input(sys.argv[1]))
@@ -81,6 +81,7 @@ for cluster_name in cluster_names:
     print(cluster_tsv_cur)
 
     selected_genomes = []
+    outdir_full = os.path.join(outdir_base, outdir)
     if not os.path.exists(outdir_full):
         os.makedirs(outdir_full)
     real_sample_size = sample_size
