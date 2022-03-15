@@ -271,7 +271,7 @@ def parse_json_input(input_file_name):
     Parses the fields in input file (input_file_name). Potential fields are: \
         tax_name, use_factor, cluster_names, use_const_len, use_factor, \
             sample_factor, sample_size, upper, lower, frags_num, const_len, \
-                sample_factor, id, alter, outdir, rep_time. This is used for \
+                sample_factor, id, alter, outdir, rep_time, full, representative. This is used for \
                     downloading GTDB genomes
     
     :param input_file_name: file path of the input json 
