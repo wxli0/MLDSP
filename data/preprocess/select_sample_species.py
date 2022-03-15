@@ -55,7 +55,7 @@ cluster_tsv = pd.read_csv("sp_clusters_r202.tsv", sep='\t', header = 0, index_co
 cluster_tsv = cluster_tsv[['Representative_genome', 'GTDB_species','Clustered_genomes']].set_index('GTDB_species')
 
 for cluster_name in cluster_names:
-    select_genomes = []
+    selected_genomes = []
     if not representative:
         all_genome_ids = cluster_tsv.loc[cluster_name]['Clustered_genomes'].split(',')
         all_genome_size = len(all_genome_ids)
@@ -68,13 +68,12 @@ for cluster_name in cluster_names:
 
         selected_genomes = random.sample(all_genome_ids, real_sample_size)
     else:
-        select_genomes = [cluster_tsv.loc[cluster_name]['Representative_genome']]
-    print("selected_genomsee are:", select_genomes)
+        selected_genomes = [cluster_tsv.loc[cluster_name]['Representative_genome']]
+    print("selected_genomsee are:", selected_genomes)
 
     cluster_dir_full = os.path.join(outdir_full, cluster_name)
     print("cluster_dir_full is:", cluster_dir_full)
     if not os.path.exists(cluster_dir_full):
-        print("enter here")
         os.makedirs(cluster_dir_full)
     download_genomes(selected_genomes, cluster_dir_full, lower, \
         upper, use_const_len, const_len, frags_num, alter, rep_time=rep_time, full=full)
